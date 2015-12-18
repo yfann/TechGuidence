@@ -27,14 +27,15 @@
 	
 ###mongo shell  
     
-    + mongo(打开shell)
-	+ use [database name]
-	+ db(指向当前数据库)  db.[集合名]
-	+ db.[collection].insert(obj)  (插入文档)
-	+ db.[collection].find()/findOne()
-	+ db.[collection].update(obj1,obj2)  //obj1 更新条件 obj2 要替换的文档
-	+ db.[collection].remove(obj)  //obj 删除条件 可以为空
++ mongo(打开shell)
++ use [database name]
++ db(指向当前数据库)  db.[集合名]
++ db.[collection].insert(obj)  (插入文档)
++ db.[collection].find()/findOne()
++ db.[collection].update(obj1,obj2)  //obj1 更新条件 obj2 要替换的文档
++ db.[collection].remove(obj)  //obj 删除条件 可以为空
 	
 	
+
 	
 	   
