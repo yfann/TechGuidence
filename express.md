@@ -160,14 +160,7 @@ use方法可以注册中间件
             var to = req.params[1] || 'HEAD';
             res.send('commit range ' + from + '..' + to);
         });
-
-###others
-
-       //设置变量
-       app.set("views", __dirname + "/views");
-
-       
-
+     
 ###response
 
         //重定向
@@ -175,9 +168,8 @@ use方法可以注册中间件
         //发文件
         response.sendFile("/path/to/anime.mp4");
         //渲染网页
-        app.get("/", function (request, response) {
-            response.render("index", { message: "Hello World" });
-        });
+        response.render("index", { message: "Hello World" });
+
        
         
         //返回结果
@@ -325,5 +317,15 @@ use方法可以注册中间件
 
 安装multer模块
 
+###others
 
+       //设置变量
+       app.set("views", __dirname + "/views");
+       //脚本所在路径      
+       __dirname  
+       //cmd的执行路径
+       .   
+
+
+[API](http://expressjs.com/en/api.html)
 [reference](http://javascript.ruanyifeng.com/nodejs/express.html)      

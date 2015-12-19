@@ -43,19 +43,19 @@
 
 ##Node.js的创建和调试
 
-- ###创建node程序  
+创建node程序  
   - 安装nodejs
   - 安装node框架express,cmd:npm install -g express-generator
   - 创建一个express项目,cmd:express MyExpressApp
   - 安装项目的依赖项,cmd:cd MyExpressApp,cmd:npm install
   - 开启项目,cmd:npm start, 查看http://localhost:3000
   - 用vscode打开项目,cmd:code .
-- ###debug nodejs
+debug nodejs
   - launch.json 如何启动node程序
   - cmd:XXX  --nolzay 使所有断点生效
   - SourceMaps in launch.json
   - cmd:node --debug program.js,node --debug-brk program.js
-- ###集成github
+集成github
   - 安装git时要勾选windows command
   - Ctrl+Enter提交代码
   - 如果有Staged存在则提交Staged Changes,否则提交所有Changes
