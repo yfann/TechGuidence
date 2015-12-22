@@ -46,5 +46,18 @@
     - angular.fromJson/angular.toJson
     - 
     
- 
+##$resource[#](https://docs.angularjs.org/api/ngResource/service/$resource)
+
+###引用
+引入angular-resource.js文件
+angular.module('app',['ngResource']);
+
+###API 
+$resource(url, [paramDefaults], [actions], options);
+
+    url  // /api/entries/:id
+    paramDefaults //
+
+
+
  

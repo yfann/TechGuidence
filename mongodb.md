@@ -33,13 +33,16 @@
 + show collections             //查看当前数据库的所有集合
 + db.[集合名]                 //db(指向当前数据库)  
 + db.[collection].insert(obj)      //插入文档
-+ db.[collection].find()/findOne()
++ db.[collection].find()/findOne() 
+    
+	 find({},{'column':1}) //1只显示column,0排除column列
+
 + db.[collection].update(obj1,obj2)        //obj1 更新条件 obj2 要替换的文档
-+ db.[collection].remove(obj)        //obj 删除条件 可以为空
++ db.[collection].remove(obj)        //obj 删除条件    db.[collection].remove({}) 删除所有
 	
 	
 	
-[mongoose](http://mongoosejs.com/docs/api.html)
+
 
 	
 	   
