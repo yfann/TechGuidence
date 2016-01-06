@@ -54,14 +54,24 @@ Considering device features, maintenance, platform independence, content restric
 
 ###Cordova
 
+Customers: Adobe, Microsoft, IBM
+
 ###Ionic
 
-###Sencha
+It's based on cordova and angularjs including beautiful UI components
 
 ##Other Cross-Platform framework
 
 ##Appcelerator Titanium
 
+This framework use javascript to develop native and native/web apps for differnet platforms.
+
+Customers: ebay, pwc, PayPal
+
 ##Reactive Native
 
+Customers: FaceBook
+
 ##Xamarin
+
+This framework is based on mono. Use c# to develop native apps for different platforms.
