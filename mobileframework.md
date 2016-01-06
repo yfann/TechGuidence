@@ -52,26 +52,82 @@ Considering device features, maintenance, platform independence, content restric
 
 ##hybrid frameworks
 
-###Cordova
+###Apache Cordova
 
-Customers: Adobe, Microsoft, IBM
+It is an opensource and simplest cross-platform framework. This technology is based on WebBiew(WebKit-based).It wraps up web applications in a native app shell and then implements them on native stores for different platforms.
 
-###Ionic
+Used by: Adobe PhoneGap, Oracle ADF Mobile, SAP Kapsel, IBM Worklight, Microsoft
+Supports: iOS, Android, Windows, Blackberry, Firefox OS and others.
 
-It's based on cordova and angularjs including beautiful UI components
+PROS:
++ Uses common web development technologies: JavaScript, HTML5 and CSS.
++ A single, standard API works across all device platforms.
++ 100 percent of code reuse is possible.
++ rich 3rd party plugins
+CONS:
++ Too many fragmented libraries and frameworks at a very basic level
++ User interface of app varies depending on the quality of web view rendered
++ Performance doesn't come close to native apps
 
-##Other Cross-Platform framework
+###Appcelerator Titanium
+Titanium is a JavaScript-based development platform in that, it uses JavaScript to write application codes with native APIs and UI conventions of each platform. This means, it doesn’t try to accomplish the notion ‘write once and run anywhere’ but it attempts to write apps reusing JavaScript with platform-specific features and performance. Apps are written in JavaScript but must utilize custom XML and Appcelerator’s API. No HTML5 or CSS is used. It's more like a converter from web to native.
 
-##Appcelerator Titanium
+Used by: ebay, pwc, Cisco, VMware
+Supports: iOS and Android
 
-This framework use javascript to develop native and native/web apps for differnet platforms.
+PROS:
++ The resulting UI look-and-feel is close to native.
++ 100 percent code reuse is possible
++ Compiled code is a combination of native and javascript, so performance is improved
 
-Customers: ebay, pwc, PayPal
-
-##Reactive Native
-
-Customers: FaceBook
+CONS:
++ Only supports UI features that are common across all platforms
++ There is a small delay at app startup due to library loading
++ No suport for third-party libraries
++ Difficulty in developing complex apps
++ Since it doesn’t use HTML5 and CSS, the animations and DOM elements are laggy and less responsive
 
 ##Xamarin
 
-This framework is based on mono. Use c# to develop native apps for different platforms.
+This framework is based on mono. It works on C# within .NET framework and allows you to create native apps by utilizing native APIs and UIs of each platform.Xamarin comes with Xamarin.Forms library which allows you to write native UIs for once and then share and convert them to platform-specific UIs.
+
+Used by: GitHub, Microsoft, Foursquare
+Supports: Android,iOS and Windows.
+
+PROS:
++ Compiled code is platform specific, so it can achieve hight performance, use native hardware acceleration, device features and native UI components.
++ c# is used to develop for all platforms supported.
++ From 60 to 100 percent code reuse is possible.
+
+CONS:
++ Xamarin.Forms results in a lowest common denominator UI, but customization is possible.
++ Does not provide access  to certain ANdroid specific UI controls
++ Load times are slightly slower as the Xamarin runtime must be loaded at invocation.
++ Does not support sharing of codes ourside Xamarin environment for native or HTML5 development
++ Business level license is $999 per year
+
+###React Native
+
+React Native is a Facebook, and Instagram developed JavaScript library used in creating native mobile applications. This is the newly developed open source framework by Facebook, which permits someone to write iOS (this now also includes Android platform) applications using JSX, a known HTML look-a-like code, and JavaScript. This framework is created on the foundation of the React.js. You can use javascript and JSX to create a native mobile app.
+
+Customers: FaceBook
+Supports: iOS, Android
+
+PROS:
++ Renders native views with a native behavior and interaction
++ Developers only need React and javascript to create better application for Andoroid,iOS
++ Uses native architecture and concept
++ It does not require a WebView
+
+CONS:
++ Code abstraction leads to bugs and memory leaks
++ Canot work without the API, which is provided by React Native
++ It's still a new framwwork so we can't predict possible problems and downsides
++ It's not a write-once-run-anywhere framework. Code writen for iOS will not work for Android.
++ Some specific components will not have available implementation so you'll need to write them on your own.
++ When crearing proper native app, a developer will ahve more power and control regarding performance tuning.
+
+
+In reality there is no perfect mobile framework for developing. Each of the cross-development platforms above have their individual strengths and weaknesses. We should choose the one that meets the requirements and purpose of our solution. None of these are a wrong choice, however, one might be better than the other depending on our requirements. Also need to consider the balance between  cost and  performance. Currently we decide to use Cordova to write some mobile app demos. Becuase Cordova is basically pure web techonology which we are very familiar with.(We are also familiar with c# but Xamarin is not free.) The learning curve is shortter than other frameworks. We can rapidly use it to develop some demo apps. 
+
+Cordova is a underlying framwork for packaging web pages to mobile app. So there are some UI frameworks like Sencha Touch, JQuery Mobile, Ionic, Kendo UI  using cooperatively with Cordova. Among them Ionic is more suitable to the team. Ionic is based on cordova and angularjs and has rich native-styled mobile UI elements and layouts. 
