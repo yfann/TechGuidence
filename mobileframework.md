@@ -57,6 +57,7 @@ Considering device features, maintenance, platform independence, content restric
 It is an opensource and simplest cross-platform framework. This technology is based on WebBiew(WebKit-based).It wraps up web applications in a native app shell and then implements them on native stores for different platforms.
 
 Used by: Adobe PhoneGap, Oracle ADF Mobile, SAP Kapsel, IBM Worklight, Microsoft
+
 Supports: iOS, Android, Windows, Blackberry, Firefox OS and others.
 
 PROS:
@@ -64,6 +65,7 @@ PROS:
 + A single, standard API works across all device platforms.
 + 100 percent of code reuse is possible.
 + rich 3rd party plugins
+
 CONS:
 + Too many fragmented libraries and frameworks at a very basic level
 + User interface of app varies depending on the quality of web view rendered
@@ -73,12 +75,13 @@ CONS:
 Titanium is a JavaScript-based development platform in that, it uses JavaScript to write application codes with native APIs and UI conventions of each platform. This means, it doesn’t try to accomplish the notion ‘write once and run anywhere’ but it attempts to write apps reusing JavaScript with platform-specific features and performance. Apps are written in JavaScript but must utilize custom XML and Appcelerator’s API. No HTML5 or CSS is used. It's more like a converter from web to native.
 
 Used by: ebay, pwc, Cisco, VMware
+
 Supports: iOS and Android
 
 PROS:
 + The resulting UI look-and-feel is close to native.
 + 100 percent code reuse is possible
-+ Compiled code is a combination of native and javascript, so performance is improved
++ Compiled code is a combination of native and javascript, so performance is improved 
 
 CONS:
 + Only supports UI features that are common across all platforms
@@ -92,6 +95,7 @@ CONS:
 This framework is based on mono. It works on C# within .NET framework and allows you to create native apps by utilizing native APIs and UIs of each platform.Xamarin comes with Xamarin.Forms library which allows you to write native UIs for once and then share and convert them to platform-specific UIs.
 
 Used by: GitHub, Microsoft, Foursquare
+
 Supports: Android,iOS and Windows.
 
 PROS:
@@ -110,7 +114,8 @@ CONS:
 
 React Native is a Facebook, and Instagram developed JavaScript library used in creating native mobile applications. This is the newly developed open source framework by Facebook, which permits someone to write iOS (this now also includes Android platform) applications using JSX, a known HTML look-a-like code, and JavaScript. This framework is created on the foundation of the React.js. You can use javascript and JSX to create a native mobile app.
 
-Customers: FaceBook
+Used by: FaceBook 
+
 Supports: iOS, Android
 
 PROS:
@@ -130,4 +135,13 @@ CONS:
 
 In reality there is no perfect mobile framework for developing. Each of the cross-development platforms above have their individual strengths and weaknesses. We should choose the one that meets the requirements and purpose of our solution. None of these are a wrong choice, however, one might be better than the other depending on our requirements. Also need to consider the balance between  cost and  performance. Currently we decide to use Cordova to write some mobile app demos. Becuase Cordova is basically pure web techonology which we are very familiar with.(We are also familiar with c# but Xamarin is not free.) The learning curve is shortter than other frameworks. We can rapidly use it to develop some demo apps. 
 
-Cordova is a underlying framwork for packaging web pages to mobile app. So there are some UI frameworks like Sencha Touch, JQuery Mobile, Ionic, Kendo UI  using cooperatively with Cordova. Among them Ionic is more suitable to the team. Ionic is based on cordova and angularjs and has rich native-styled mobile UI elements and layouts. 
+Cordova is a underlying framwork for packaging web pages to mobile app. So there are some UI frameworks like Sencha Touch, JQuery Mobile, Ionic and AngularJS, Kendo UI  using cooperatively with Cordova.
+
+I haven't use them all. Just find there are some benefits for Ionic:
+
++ Ionic is based on cordova and angularjs with rich native-styled mobile UI elements and layouts which we can use to develop native looking apps. 
++ Before we developed many angular controls for phoenix project some of them may be reused in Ionic framework.
++ Visual Studio 2015 already integrated Cordova also it's very easy to use ionic in visual studio. So we can use the tool we are good at using to develop, debug and publish mobile project.
++ Developing on Ionic is similar to develop the web project we did before. So we can still use the same way to do the teamwork including the extensibility and modularity.
+
+So Ionic framwork is more suitable to our team to do the demo app. 
