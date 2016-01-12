@@ -1,6 +1,6 @@
 #mobile app development
 
-##mobile app technologys
+##mobile app technologies
 
 ###Native Apps
   
