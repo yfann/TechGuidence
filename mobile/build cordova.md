@@ -4,6 +4,13 @@
 
  Only select Local Device(iphone connected to windows with iTunes) or Remote Device(iphone connected to Mac) IPA is possible.
 
+1. add device to device list in developer center
+
+2. generate provisioning profiles
+
+3. log apple id(developer account) in XCode
+ 
+
 ###Troubleshooting
 
 + Command failed with exit code ENOENT
@@ -19,3 +26,6 @@
   
    Apps can run on the simulator without a profile, but they are required to run on an actual device. The project in Xcode automatically has one. For others need:
    
++ SyntaxError: Unexpected token C (Build fail)
+
+   remove  remote_ios.json under plugins folder
