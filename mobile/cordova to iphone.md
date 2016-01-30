@@ -9,7 +9,19 @@
 2. generate provisioning profiles
 
 3. log apple id(developer account) in XCode
+
+4. set Package Name in config.xml of cordova
  
+###debug on device [#](http://phonegap-tips.com/articles/debugging-ios-phonegap-apps-with-safaris-web-inspector.html)
+
+
+1. setting -> safari -> advance -> web Inspector(ON) (iphone)
+2. setting -> safari -> Private Browsing(OFF) (iphone)
+3. connect iphone to MAC
+4. safari -> preferences -> advanced -> show Develop menu in menu bar(checked)(MAC)
+5. open app(iphone)
+6. debug app safari -> select develop menu item -> iphone (MAC)
+7. use console.og() to locate the issue
 
 ###Troubleshooting
 
@@ -29,3 +41,5 @@
 + SyntaxError: Unexpected token C (Build fail)
 
    remove  remote_ios.json under plugins folder
+   
++ path case sensitive in iphone
