@@ -1,18 +1,18 @@
 #Git
 
-##git init
+###git init
 
-##git status
+###git status
 
-##git add *
+###git add *
 
-##git commit -m "commit"
+###git commit -m "commit"
 
-##git push origin master
+###git push origin master
 
-##git remote add origin <server>
+###git remote add origin <server>
 
-##git clone <repository>
+###git clone <repository>
 
 类似svn的check out 
 
@@ -23,7 +23,7 @@
 3. git fetch
 4. git checkout
 
-##Work Flow
+###Work Flow
 
 (git clone or git init) Working dir   (add to)  Stage   (commit to)  HEAD  (git push) Remote Repository
 
