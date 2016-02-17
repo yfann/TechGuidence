@@ -8,7 +8,7 @@
 
 ###git commit -m "commit"
 
-###git push origin master
+###git push/pull origin master
 
 ###git remote add origin <server>
 
@@ -25,6 +25,9 @@
 
 ###Work Flow
 
-(git clone or git init) Working dir   (add to)  Stage   (commit to)  HEAD  (git push) Remote Repository
+(git clone or git init)->  Working dir   
+(add to)->  Stage   
+(commit to)->  HEAD  
+(git push)-> Remote Repository
 
 git之间都是独立的仓库，pull/push用于仓库间协作
