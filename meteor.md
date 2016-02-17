@@ -10,6 +10,9 @@
 + cmd:meteor mongo  //open database
 + cmd:meteor deploy my_app_name.meteor.com
 + cmd for mobile [#](https://www.meteor.com/tutorials/blaze/running-on-mobile)
++ cmd:meteor add accounts-ui accounts-password   //add accounts UI
++ cmd:meteor remove insecure    //insecure is default, this command will revoke client-side database permission
++ cmd:meteor remove autopublish 
 
 
 ##Concepts
@@ -60,3 +63,24 @@ Session is a convenient place to store temporary UI state, and can be used in he
 		Session.set("name",value);
 		
 		Session.get("name");
+		
+###Publish&subscribe
+
+		Meteor.publish/Meteor.subscribe
+	
+###Built-in
+
+        //built-in helper to check if a user is logged in
+		{{currentUser}}
+		{{currentUser.username}}
+		Meteor.userId()
+		Meteor.user()
+
+###Optimistic UI[#](http://info.meteor.com/blog/optimistic-ui-with-meteor-latency-compensation)
+
+###DDP[#](https://github.com/meteor/meteor/blob/devel/packages/ddp/DDP.md)
+
+###Deploy[#](http://zh.discovermeteor.com/chapters/deploying/)
+
+
+[ref](http://zh.discovermeteor.com/chapters/reactivity/)
