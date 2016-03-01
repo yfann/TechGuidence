@@ -1,0 +1,1 @@
+#Identity [#](http://odetocode.com/blogs/scott/archive/2014/01/03/asp-net-identity-with-the-entity-framework.aspx)
