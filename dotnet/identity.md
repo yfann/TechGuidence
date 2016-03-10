@@ -52,3 +52,14 @@
 7. 用户再次访问我们需要登录的页面
 8. FormsAuthenticationModule检查到了用户身份的cookie，并生成identity对象，HttpContext.User.IsAuthenticated = true
 9. ASP.NET 管道的 Authroize授权阶段，HttpContext.User.IsAuthenticated=true，可以正常浏览
+
+##[Implementing ASP.NET Identity](http://odetocode.com/blogs/scott/archive/2014/01/20/implementing-asp-net-identity.aspx)
+
+###Core Identity
+
++ IUser
++ IUserStore(CRUD to DB,dependency on EF DbContext)
++ UserManager(Domain logic,use IUserStore)
+
+
+##Asp.net membership provider
