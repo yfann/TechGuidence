@@ -30,3 +30,7 @@ IAppBuilder.UseStageMarker:为前面添加的middleware指定在IIS管道的哪�
 
 		
 ###Owin OAuth [#](http://www.asp.net/aspnet/overview/owin-and-katana/owin-oauth-20-authorization-server)
+
+
+##Ref
++ [ASP.NET: Understanding OWIN, Katana, and the Middleware Pipeline](http://www.codeproject.com/Articles/864725/ASP-NET-Understanding-OWIN-Katana-and-the-Middlewa)

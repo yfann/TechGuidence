@@ -2,6 +2,15 @@
 
 ##[ASP.NET Claims-based Authentication](http://www.cnblogs.com/jesse2013/p/aspnet-identity-claims-based-authentication-and-owin.html)
 
+###Claim [#](https://en.wikipedia.org/wiki/Claims-based_identity)
+
++ Claim is a statement which can be about a name, group, privilege from a provider.
++ Claims-based identity decouple authentication and authorization. The authentication can be handled by a third party(Security token service).
++ Secure token envelope claim.
++ SAML Use Case [#](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language#The_SAML_Use_Case)
+
+
+###Claims-based identity in .net
 + IIdentity
    
    封装用户信息
@@ -37,7 +46,8 @@
             AuthenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = true }, identity);
         } 
         
-##Form Authentication
+##WIF(Windows Identity Foundation) [#](https://msdn.microsoft.com/en-us/library/hh377151.aspx)
+###Form Authentication [#](http://www.cnblogs.com/fish-li/archive/2012/04/15/2450571.html)
 
         //登录时生成cookie
         FormsAuthentication.SetAuthCookie("Jesse", false);
@@ -52,6 +62,10 @@
 7. 用户再次访问我们需要登录的页面
 8. FormsAuthenticationModule检查到了用户身份的cookie，并生成identity对象，HttpContext.User.IsAuthenticated = true
 9. ASP.NET 管道的 Authroize授权阶段，HttpContext.User.IsAuthenticated=true，可以正常浏览
+
+###Membership [#](http://www.cnblogs.com/jesse2013/p/membership.html)
+
+
 
 ##[Implementing ASP.NET Identity](http://odetocode.com/blogs/scott/archive/2014/01/20/implementing-asp-net-identity.aspx)
 
