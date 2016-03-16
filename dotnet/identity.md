@@ -76,4 +76,9 @@
 + UserManager(Domain logic,use IUserStore)
 
 
-##Asp.net membership provider
+##Authorization [#](http://docs.asp.net/en/latest/security/authorization)
+
+###Extension
+
++ Basic Authentication
+
