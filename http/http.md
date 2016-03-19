@@ -1,5 +1,15 @@
 
+#HTTP
 
+##Method
+
+###Post
+
+Content-Type:
++ application/x-www-form-urlencoded
++ multipart/form-data
++ application/json
++ text/xml
 
 ##Concept
 
