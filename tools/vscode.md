@@ -30,6 +30,16 @@
 - F5 运行程序
 - Ctrl+C 命令行中断
 
+##代码操作
+
++ ctrl+K+C/ctrl+K+U //注释
+
++ shit+alt+a //批量注释
+
++ ctrl+shift+b //build
+
++ ctrl+shift+u //error message
+
 ##特性
 
 - Working Files  
