@@ -15,9 +15,10 @@
 + exclude
 + compileOnSave
 + outDir   //location of built code
-+ rootDir //location of source code
++ rootDir //location of source code?
 + watch //trigger recompiliation on changes
 + out //built to a single file
++ jsx //preserve(tsx to jsx) or react(tsx to js)
 
 ###tasks.json
 
