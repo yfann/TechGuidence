@@ -46,6 +46,9 @@ F1 + Configure Task runner
  
  ###Object Types
  
+ 
+ ##[TSD](http://definitelytyped.org/tsd/)
+ 
  ##Ref
  
  + [typescriptlang](http://www.typescriptlang.org/docs/tutorial.html)
