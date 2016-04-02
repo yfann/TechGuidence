@@ -71,20 +71,26 @@ F1 + Configure Task runner
  
  class member are public by default
  
+ + private
+ 
         Class Car{
-            engine:string;
+            private _engine:string;
             
             constructor(engine:string)
             {
-                this.engine=engine;
+                this._engine=engine;
             }
         }
-        
+
++ public 
+      
         //automatically generate the field
         class Car{
             constructor(public engine:string){}
         }
         
++ get/set
+     
         //define property
         class Car{
             private _engine:string;
@@ -103,7 +109,68 @@ F1 + Configure Task runner
         }
         
         var car=new Car('test');
-        
+   
++ function
+
+        class Car{
+            
+            start():void{
+                
+            }
+        }  
+   
++ Casting
+ 
+        //convert htmlelement to HTMLTableElement
+        var table:HTMLTableElement=<HTMLTableElement>document.createElement('table');
+        //casting interface to a instance
+        var _engine=<Engine>myengine;
+    
++ interdace
+
+        interface IEngine{
+            start(callback:(startStatus:boolean,engineType:string)=>void):void;
+        }
+
+        interface IAutoOPtions{
+            engine:IEngine;
+            state:string;
+        }
+
+        //implement interface
+
+        class TestClass implements ITest{
+            private a=2;
+            public b=4;
+        }
+
+
+ + Extending Types
+
+        class ChildClass extends parentClass{
+            constructor(){
+                super();
+            }
+            
+            addAccessories(...accessory:Accessory[]){
+                
+            }
+        }
+ 
+ ###Modules
+ 
+ default is global module
+ 
+        module Shapes{
+            
+            export class Rectangle{}
+            
+        }
+ 
+        var rect=new Shapes.Rectangle();
+ 
+ 
+ 
  ##[TSD](http://definitelytyped.org/tsd/V)
  
  ##Ref
