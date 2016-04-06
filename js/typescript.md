@@ -159,19 +159,39 @@ F1 + Configure Task runner
  
  ###Modules
  
- default is global module
+ + Internal Modules   [Don't use](https://www.stevefenton.co.uk/2015/05/stop-mixing-typescript-internal-and-external-modules/)
  
-        module Shapes{
+   default is global module. Must sequence script tags properly.
+ 
+ 
+        //define module
+        //sample.js
+        namespace Shapes{
             
             export class Rectangle{}
             
         }
- 
+        //use module
+        //app.js
+        ///<reference path="./sample.js";>
         var rect=new Shapes.Rectangle();
  
+ + External Modules  
+   CommonJS/AMD
+        //define module
+        //sample.js
+        export class DataService {...}
+        
+        //use module
+        //app.js
+        import sa=require('./sample.js');
+        
+ + use 3rd lib
  
+        ///<reference path="../typings/jquery.d.ts";>
+        declare var $:JQueryStatic
  
- ##[TSD](http://definitelytyped.org/tsd/V)
+ ##[TSD](http://definitelytyped.org)
  
  ##Ref
  
