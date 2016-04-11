@@ -43,8 +43,27 @@ View -> Action -> Dispatcher -> Store -> Controller View -> View
 
 4. Controller View 订阅 Store, 让 store 在 state变化时通知自己
 
+##实践
 
-
++ Action
+    - 引用restful API
+    - 引用constants作为action type
+    - 调用restful API，然后把返回结果连同action type一起通过Dispatcher.dispatch({...})
++ Dispatcher
+    - 同步
+    - Dispatcher.waitFor()可以实现等待某些store更新完后再更新
+    - 会把action传递给所有store,store内部做过滤
++ Store
+    - 过滤action
+    - 缓存数据
+    - 接收Action返回的数据Dispatcher.register()
+    - 数据改变时触发事件，调用注册的方法(通知取数据)
++ Controller View
+    - 管理state和底层View
+    - 向UI和Store注册方法(定义event handler，何时取数据)
+    - 调用Action
+    - 错误验证
+    - 底层View,只根据props渲染UI
 
 
 [Ref](http://zhuanlan.zhihu.com/FrontendMagazine/20263396)

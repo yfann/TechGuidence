@@ -136,7 +136,8 @@ Unidrectional: Action----------->Dispatcher--------->Store------------->React Vi
 
 + Action  
 + Dispatcher   
-  Centralized callback,Broadcasts payload to registered callbacks, send payload to many stores. Allow stores updated by order.
+  Centralized callback,Broadcasts payload to registered callbacks, send payload to many stores. Allow stores updated by order.  
+  Singleton  
 + Store   
   Hold app state, logic, data retrieval. Not a model-Contains models. Registers callbacks with dispatcher.
   include:
