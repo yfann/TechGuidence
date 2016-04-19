@@ -10,7 +10,7 @@
 
 ###git commit -m "commit"
 
-###git push/pull origin master
+###git push/pull origin master   //1.pull resolve confliction 2.push to remote(has no conflict)
 
 ###git remote add origin <server>
 
