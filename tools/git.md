@@ -2,9 +2,11 @@
 
 ###git init
 
-###git status
+###git clone <repository>
 
 ###git add *
+
+###git status
 
 ###git commit -m "commit"
 
@@ -12,7 +14,11 @@
 
 ###git remote add origin <server>
 
-###git clone <repository>
+###git checkout/merge/delete   //branch
+
+###git branch
+
+###
 
 类似svn的check out 
 
@@ -31,3 +37,10 @@
 (git push)-> Remote Repository
 
 git之间都是独立的仓库，pull/push用于仓库间协作
+
+
+###Tools
+
++ gitolite //permission for login
++ gerrit //
++ Git Bash //
