@@ -38,6 +38,7 @@
 
 git之间都是独立的仓库，pull/push用于仓库间协作
 
+![](https://github.com/yfann/TechGuidence/img/git01.png)
 
 ###Tools
 
