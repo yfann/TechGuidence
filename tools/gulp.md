@@ -1,6 +1,32 @@
 #Gulp
 
-javascript task runner, streamline process
+javascript task runner, vinyl pipelines process
+
+Gulp中的流是object mode流，发送的是vinyl对象。常规流指的是Node.js中操作Strings和Buffers的流。  
+Gulp使用了vinyl-fs
+
+Vinyl object:
++ Stream
+
+        fs.createReadStream('/usr/share/dict/words').on('data', function(chunk) {  
+           console.log('Read %d bytes of data', chunk.length);
+        });
+
++ Buffer(Default)
+
+        gulp.src('/usr/share/dict/words').on('data', function(file) {  
+        console.log('Read %d bytes of data', file.contents.length);
+        });
+        
+        //禁用buffer     
+        gulp.src('/usr/share/dict/words', {buffer: false}).on('data', function(file) {  
+          var stream = file.contents;
+          stream.on('data', function(chunk) {
+            console.log('Read %d bytes of data', chunk.length);
+          });
+        });       
+
++ null
 
 ##CMD
 
@@ -37,6 +63,7 @@ javascript task runner, streamline process
 [gulpjs](http://gulpjs.com/plugins/)
 [npmjs](https://www.npmjs.com/)
 
+
 ###Code Analysis
 
 + gulp-eslint
@@ -53,6 +80,38 @@ javascript task runner, streamline process
 + wiredep   //inject from bower
 + gulp-inject //inject from application
 
+###Stream buffer
+
++ `vinyl-source-stream` 常规流(StringStream,FileStream)转换为Stream(vinyl对象)  
+ 
++ `vinyl-buffer` stream(vinyl对象)转换为Buffer(vinyl对象)   
+
+                //有些插件只依赖buffer:gulp-uglify,gulp-traceur
+                var source = require('vinyl-source-stream');  
+                var buffer = require('gulp-buffer');  
+                var uglify = require('gulp-uglify');
+
+                fs.createReadStream('./src/app.js')  
+                .pipe(source('app.min.js')) // 常规流转换成 vinyl stream
+                .pipe(buffer())  //vinyl stream to vinyl buffer
+                .pipe(uglify())
+                .pipe(gulp.dest('dist/'));
+
++ `gulp-streamify`  让只支持buffer(vinyl对象)的插件可以直接处理Stream(vinyl对象) 
+
+                var wrap = require('gulp-wrap');  
+                var streamify = require('gulp-streamify');  
+                var uglify = require('gulp-uglify');  
+                var gzip = require('gulp-gzip');
+
+                gulp.src('app.js', {buffer: false})  
+                .pipe(wrap('(function(){<%= contents %>}());'))
+                .pipe(streamify(uglify()))
+                .pipe(gulp.dest('build'))
+                .pipe(gzip())
+                .pipe(gulp.dest('build'));
+
+
 ###Common
 
 + gulp-util
@@ -61,10 +120,15 @@ javascript task runner, streamline process
 + yargs
 + gulp-load-plugins
 + del
-+ gulp-plumber //Prevent pipe breaking caused by errors from gulp plugins, pipe works and show error message
-+ gulp-nodemon //node server
++ `gulp-plumber` Prevent pipe breaking caused by errors from gulp plugins, pipe works and show error message
++ `gulp-nodemon` node server
 + browser-sync
 + gulp-task-listing
 + gulp-imagemin
++ `gulp-uglify`  Minify files
++ `gulp-concat` Concatenates files
++ `gulp-marked` Convert markdown to html with marked
+
+
 
 

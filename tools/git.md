@@ -44,6 +44,7 @@
 + `git clean -df` 移除文件以及目录
 + `git clean -xf` 包括gitignore中指定的文件
 
++ `ssh git-server` test connection after put public key in c:\users\your name\.ssh 
 
 ***
 
@@ -60,3 +61,4 @@ Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 + gitolite //permission for login
 + gerrit 
 + Git Bash 
++ gitextension
