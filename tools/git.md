@@ -53,14 +53,12 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git clean -xf` 包括gitignore中指定的文件
 ***
 + `ssh git-server` test connection after put public key in c:\users\your name\.ssh 
++ `git config --system core.longpaths true`   fix File name too long issue
 
 ###命令组合
 
-
-
 + git reset --hard
 + git clean
-
 
 
 ***
