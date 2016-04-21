@@ -46,6 +46,8 @@
 
 + `ssh git-server` test connection after put public key in c:\users\your name\.ssh 
 
+
++ `git config --system core.longpaths true`   fix File name too long issue
 ***
 
 ##Work Flow
