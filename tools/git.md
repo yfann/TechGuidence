@@ -31,7 +31,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git log -n 3` 显示3个提交
 + `git log --oneline` 每个提交压缩到一行
 ***
-+ `git checkout <file>` 把文件从stage中复制到working dir
++ `git checkout <file>` 把文件从stage中复制到working dir;把一个文件恢复到最近提交的状态
 + `git checkout <commit> <file>` 从历史版本中取出文件放入stage和working dir中
 + `git checkout <commit>` HEAD指向所选分支，stage和working dir和分支内容一致。只存在于老分支的内容会被删除，无关的文件会被忽略不受影响。
 + `git checkout -b <name>` 为HEAD的指向创建一个分支
@@ -42,7 +42,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 ***
 + `git reset <file>` 从stage中移除文件或用commited中的文件更新srage中的文件，不影响working dir
 + `git reset` 清空stage
-+ `git reset --hard` 清空stage和working dir中的更改
++ `git reset --hard` 清空stage和working dir中的更改;先删除working dir中的所有文件，再使用此命令会还原working dir;或者使用后配合`git clean -d -x -f`
 + `git reset <commit>` !!!!!!
 + `git reset --hard <commit>`
 ***
@@ -51,6 +51,8 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git clean -f <path>`
 + `git clean -df` 移除文件以及目录
 + `git clean -xf` 包括gitignore中指定的文件
++ `git clean -d -x -n` 查看要删除的文件及目录
++ `git clean -d -x -f` 删除
 ***
 + `ssh git-server` test connection after put public key in c:\users\your name\.ssh 
 + `git config --system core.longpaths true`   fix File name too long issue
