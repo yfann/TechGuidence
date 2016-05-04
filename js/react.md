@@ -145,6 +145,19 @@ Unidrectional: Action----------->Dispatcher--------->Store------------->React Vi
   - addChangeListener and removeChangeListener
   - emitChange
 
+##Components
+
++ Container component
++ UI component
++ Sateless component
+
+
+
+
+
+
+
+
 
 ##Tools
 + Browserify  (Bundler)

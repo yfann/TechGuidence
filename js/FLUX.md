@@ -4,7 +4,7 @@
 
 单向数据流
 
-View -> Action -> Dispatcher -> Store -> Controller View -> View
+UI View -> Action -> Dispatcher -> Store -> Controller/Contianer View -> UI View
 
 1. View 告知 Action Creator创建一个 Action
 

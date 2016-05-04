@@ -73,7 +73,7 @@ F1 + Configure Task runner
  
  + private
  
-        Class Car{
+        class Car{
             private _engine:string;
             
             constructor(engine:string)
@@ -126,7 +126,7 @@ F1 + Configure Task runner
         //casting interface to a instance
         var _engine=<Engine>myengine;
     
-+ interdace
++ interface
 
         interface IEngine{
             start(callback:(startStatus:boolean,engineType:string)=>void):void;
