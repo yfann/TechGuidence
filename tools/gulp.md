@@ -128,7 +128,8 @@ Vinyl object:
 + `gulp-uglify`  Minify files
 + `gulp-concat` Concatenates files
 + `gulp-marked` Convert markdown to html with marked
-
++ `gulp-util`
++ `gulp-swig`
 
 
 
