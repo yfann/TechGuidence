@@ -28,9 +28,38 @@ Vinyl object:
 
 + null
 
+
+
+
+
 ##CMD
 
 `Gulp [TaskName]`
+
+##[Task Dependency](https://github.com/gulpjs/gulp/blob/master/docs/recipes/running-tasks-in-series.md)
+
+By default tasks run with maximum concurrency. Dependency means it depends on completion of other tasks. This can decide the task sequence.
+
+        //'return' is necessary to notify other tasks it's complete
+        gulp.task('clean', function() {
+             return del(['output']);
+        });
+
+        gulp.task('templates', ['clean'], function() {
+        ....
+        });
+
+        gulp.task('styles', ['clean'], function() {
+        ....
+        });
+
+        gulp.task('build', ['templates', 'styles']);
+
+        // templates and styles will be processed in parallel.
+        // clean will be guaranteed to complete before either start.
+        // clean will not be run twice, even though it is called as a dependency twice.
+
+        gulp.task('default', ['build']);
 
 ##Gulp API
 
@@ -58,6 +87,8 @@ Vinyl object:
             console.log('watched event '+ event.type + ' for '+ event.path);
         })
 + pipe().on('error',function(error){...})
+    
+
     
 ##Plugins
 [gulpjs](http://gulpjs.com/plugins/)
