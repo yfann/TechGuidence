@@ -190,10 +190,12 @@ F1 + Configure Task runner
  
         ///<reference path="../typings/jquery.d.ts";>
         declare var $:JQueryStatic
- 
- ##[TSD](http://definitelytyped.org)
- 
- ##Ref
- 
+
+##Manage Typescript definitions  
++ [TSD](http://definitelytyped.org)
++ [typings](https://github.com/typings/typings)
+
+
+##Ref
  + [typescriptlang](http://www.typescriptlang.org/docs/tutorial.html)
  + [git typescript](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md)
