@@ -115,7 +115,7 @@ By default tasks run with maximum concurrency. Dependency means it depends on co
 
 + `vinyl-source-stream` 常规流(StringStream,FileStream)转换为Stream(vinyl对象)  
  
-+ `vinyl-buffer` stream(vinyl对象)转换为Buffer(vinyl对象)   
++ `gulp-buffer` stream(vinyl对象)转换为Buffer(vinyl对象)   
 
                 //有些插件只依赖buffer:gulp-uglify,gulp-traceur
                 var source = require('vinyl-source-stream');  
@@ -162,6 +162,8 @@ By default tasks run with maximum concurrency. Dependency means it depends on co
 + `gulp-swig` Compile to HTML
 + `merge2` Merge multiple streams, so this task is finished then other streams are done.
 + `gulp-sourcemaps`
++ `gulp-typescript` compile ts to js for node side
++ `browserify tsify vinyl-source-stream` compile ts to js for browser side
 
 
 
