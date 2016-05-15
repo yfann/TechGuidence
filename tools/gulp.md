@@ -160,7 +160,8 @@ By default tasks run with maximum concurrency. Dependency means it depends on co
 + `gulp-concat` Concatenates files
 + `gulp-marked` Convert markdown to html with marked
 + `gulp-swig` Compile to HTML
-
++ `merge2` Merge multiple streams, so this task is finished then other streams are done.
++ `gulp-sourcemaps`
 
 
 

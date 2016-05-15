@@ -191,7 +191,17 @@ F1 + Configure Task runner
         ///<reference path="../typings/jquery.d.ts";>
         declare var $:JQueryStatic
 
-##Manage Typescript definitions  
+
+##Typings reference   
+
+[Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html)
+
++ add reference in ts file
+
+`/// <reference path="../interfaces/interfaces.d.ts"/>`
+
+
+##Typings management tools
 + [TSD](http://definitelytyped.org)
 + [typings](https://github.com/typings/typings)
 
