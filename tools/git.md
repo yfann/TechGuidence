@@ -64,9 +64,9 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git branch [branchName]` 创建分支
 + `git branch -d/-D [branchName]` 删除分支
 + `git branch -m [branchName]` 当前分支改名
-+ `git checkout [branchName]` 切换分支
++ `git checkout [branchName]` 切换分支, `git checkout master`
 + `git push origin [branchName]` 本地创建分支后，把分支推送到远程仓库
-+ `git pull origin [branchName]` 从远程仓库拉分支，自动包含所有分支？？　
++ `git pull origin [branchName]` 更新分支(或者`git checkout [branchName]`,`git pull`),第一次拉仓库时会包含所有分支
 + `git merge [branchName]` 指定分支并入当前分支
 
 ##命令组合
