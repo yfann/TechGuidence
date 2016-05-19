@@ -14,7 +14,7 @@
 
 7. git branch/checkout/merge/delete   //branch
 
-###Basic CMD
+##Basic CMD
 
 checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
@@ -57,7 +57,19 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `ssh git-server` test connection after put public key in c:\users\your name\.ssh 
 + `git config --system core.longpaths true`   fix File name too long issue
 
-###命令组合
+
+##Branch
+
++ `git branch` 查看分支
++ `git branch [branchName]` 创建分支
++ `git branch -d/-D [branchName]` 删除分支
++ `git branch -m [branchName]` 当前分支改名
++ `git checkout [branchName]` 切换分支
++ `git push origin [branchName]` 本地创建分支后，把分支推送到远程仓库
++ `git pull origin [branchName]` 从远程仓库拉分支，自动包含所有分支？？　
++ `git merge [branchName]` 指定分支并入当前分支
+
+##命令组合
 
 + git reset --hard
 + git clean
@@ -73,7 +85,7 @@ git之间都是独立的仓库，pull/push用于仓库间协作
 
 Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 
-###Tools
+##Tools
 
 + gitolite //permission for login
 + gerrit 
