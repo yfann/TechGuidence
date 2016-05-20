@@ -163,7 +163,7 @@ By default tasks run with maximum concurrency. Dependency means it depends on co
 + `merge2` Merge multiple streams, so this task is finished then other streams are done.
 + `gulp-sourcemaps`
 + `gulp-typescript` compile ts to js for node side
-+ `browserify tsify vinyl-source-stream` compile ts to js for browser side, browserify is based on normal stream
++ `browserify tsify vinyl-source-stream` compile ts to js for browser side. browserify is based on normal stream,need node_modules includes corresponding libs
 
 
 
