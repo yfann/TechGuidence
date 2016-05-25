@@ -77,6 +77,14 @@
   5. 本地项目路径下cmd:git push -u origin master     //提交代码到github
 
 
+##插件开发
+
+###快捷键
+
++ `F1` 命令行
++ `F5` 运行
++ `Ctrl+R` reload the extension developemtn window
+
 [官网文档](https://code.visualstudio.com/Docs/editor/codebasics)  
 [hotkey](https://code.visualstudio.com/Docs/editor/keybindings)
 [add to github](http://michaelcrump.net/using-github-with-visualstudio-code/)
