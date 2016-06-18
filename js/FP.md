@@ -126,5 +126,30 @@
         var makes = cars.map(function(car){ return car.make; });
 
 
+##Others
+
+回调可以实现函数式!?
+
+		//纯函数
+		function receiveProducts(products) {
+		  return {
+		    type: types.RECEIVE_PRODUCTS,
+		    products: products
+		  }
+		}
+
+		shop.getProducts(products => {
+			receiveProducts(products)
+		})
+
+		//不纯
+		function receiveProducts() {
+		  return {
+		    type: types.RECEIVE_PRODUCTS,
+		    products: api.products
+		  }
+		}
+
+
 ##Ref
 + [JS函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/index.html)

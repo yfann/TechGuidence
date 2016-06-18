@@ -17,7 +17,11 @@
 + Action  
 
 把数据重应用传到store的有效荷载。store数据的唯一来源。  
-`store.dispatch()`将action传到store
+`store.dispatch(actionCreator(value))`将action传到store
+
++ State
+
+[State范式化](https://github.com/paularmstrong/normalizr)
 
 + Reducer
 
