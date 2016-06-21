@@ -2,17 +2,15 @@
 
 TypeScript Definition Manager
 
+[from npm](https://www.npmjs.com/package/typings#quick-start)
+
 ##CMD
 
-+ `npm install typings --global`
-+ `typings search [name]` search for definitions
-+ `typings search --name [name]` Find an available definition by name
-+ `typings install [name] --save` 
+`typings search [name]`
+`typings search --name [name]` match name exactly
+`typings install [name] --save` install external module from npm
+`typings install dt~[name] --save` install typings from particular registry
+`typings install dt~[name] --global --save` Using `--global` when using package as a script tag or it's part of the environment, or it has no module version.
+`typings install debug --save`
 
-##Discuss
-
-+ [How Typings Makes External Modules First Class](https://github.com/typings/typings/blob/master/docs/external-modules.md)
-+ [Ambient](https://github.com/typings/typings/issues/152)
-+ [--ambient](https://github.com/typings/typings/issues/278)
-
-  从[DT](https://github.com/DefinitelyTyped/DefinitelyTyped)获取d.ts文件
+Use 'typings/index.d.ts' (in 'tsconfig.json' or as a '///' reference)
