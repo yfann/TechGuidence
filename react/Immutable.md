@@ -22,19 +22,4 @@
 + immutable.js
 + seamless-immutable
 
-##React 优化
 
-+ shouldComponentupdate()
-
-    return true：
-        1. render（）
-        2. Virtual DOM diff
-        3. Update real DOM
-
-+ immutable
-
-    import { is } from 'immutable';
-    shouldComponentUpdate: (nextProps, nextState) => {
-    return !(this.props === nextProps || is(this.props, nextProps)) ||
-            !(this.state === nextState || is(this.state, nextState));
-    }
