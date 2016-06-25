@@ -153,3 +153,4 @@
 
 ##Ref
 + [JS函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/index.html)
++ [尾调用 尾递归](http://es6.ruanyifeng.com/#docs/function#%E5%87%BD%E6%95%B0%E7%BB%91%E5%AE%9A)
