@@ -41,12 +41,12 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git revert HEAD` 撤销刚刚的提交，改变working dir
 ***
 + `git reset <file>` 从stage中移除文件或用commited中的文件更新srage中的文件，不影响working dir
-+ `git reset` 清空stage
-+ `git reset --hard` 清空stage和working dir中的更改;先删除working dir中的所有文件，再使用此命令会还原working dir;或者使用后配合`git clean -d -x -f`
++ `git reset` 清空stage（文件stage--->unstage)
++ `git reset --hard` 清空stage(文件stage---->unstage(changed---->unchange)),不影响未在stage中的文件;(先删除working dir中的所有文件，再使用此命令会还原working dir;或者使用后配合`git clean -d -x -f`)
 + `git reset <commit>` !!!!!!
 + `git reset --hard <commit>`
 ***
-+ `git clean -n` 显示删除那些未被追踪的文件
++ `git clean -n` 显示删除那些未被追踪的文件(没有被staged/git add的文件)
 + `git clean -f ` 删除当前目录下未被追踪的文件
 + `git clean -f <path>`
 + `git clean -df` 移除文件以及目录
@@ -60,7 +60,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
 ##Branch
 
-+ `git branch` 查看分支
++ `git branch -a` 查看所有分支
 + `git branch [branchName]` 创建分支
 + `git branch -d/-D [branchName]` 删除分支
 + `git branch -m [branchName]` 当前分支改名
