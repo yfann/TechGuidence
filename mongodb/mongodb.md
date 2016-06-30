@@ -23,8 +23,14 @@
 	打开restful服务[#](https://docs.mongodb.org/ecosystem/tools/http-interfaces/
 	mongod.exe --rest
 	http://localhost:28017)
-	
-	
+
+
++ `mongod --dbpath  [path]`	 默认`C:\data\db`
++ `mongod --dbpath [dbpath] --logpath [logpath] --install --serviceName "MongoDB"`
+
+	`net start MongoDB`  启动win service服务
+
+
 ###mongo shell  
     
 + mongo(打开shell)
