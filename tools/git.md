@@ -60,7 +60,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
 ##Branch
 
-+ `git branch` 查看分支
++ `git branch -a` 查看所有分支
 + `git branch [branchName]` 创建分支
 + `git branch -d/-D [branchName]` 删除分支
 + `git branch -m [branchName]` 当前分支改名
