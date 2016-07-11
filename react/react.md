@@ -22,15 +22,15 @@
       
     - componentDidMount
     
-      After render. Good to ccess Dom, integrate framework, set timers, AJAX requests
+      After render.(only client side)Good to ccess Dom, integrate framework, set timers, AJAX requests
     
     - componentWillReceiveProps
     
-      When receiving new props. Not called on initial render. Good to set state before a render
+      When receiving new props(props的改变会触发). Not called on initial render. Good to set state before a render
     
     - shouldComponentUpdate
     
-      Before render when new props or state are being received. Not called on initial render. Good to performance(Return false to void unnecessary re-renders)
+      Before render when new props or state are being received(state,props的改变会触发). Not called on initial render. Good to performance(Return false to void unnecessary re-renders)
     
     - componentWillUpdate
      
