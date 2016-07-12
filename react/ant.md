@@ -20,3 +20,24 @@
     mount 组件第一次加载
     update 组件的更新
     willReceiverProps 
+
+
+[graphql](http://graphql.org/docs/getting-started/)
+
+
+function createStore(reducer,initialState){
+    let state=initialState;
+    let _callbacks=[];
+
+    return {
+        getState(){
+            return state
+        },
+        subscribe(callback){
+            _callbacks.push(callback);
+        }
+        dispatch(action){
+            state=reducer()
+        }
+    }
+}
