@@ -153,17 +153,7 @@ Unidrectional: Action----------->Dispatcher--------->Store------------->React Vi
 
 
 
-
-
-
-
-
-
 ##Tools
-+ Browserify  (Bundler)
-   Use Node modules in the browser.
-   
-+ Gulp  (Build)
-   Task runner
++ Browserify/webpack
    
 
