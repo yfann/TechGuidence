@@ -44,8 +44,6 @@ docker run -t -d -p 8010:5004 testName
 		
 		
 		
-		
-		
-		
-		
-#To be continue ...
+##Ref
+
++ [docker与虚拟机性能比较](http://blog.csdn.net/cbl709/article/details/43955687)

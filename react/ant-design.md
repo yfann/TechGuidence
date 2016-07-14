@@ -1,5 +1,6 @@
 ![](https://github.com/yfann/TechGuidence/blob/master/img/ant-design.png?raw=true)
 
+[PPT](http://sskyy.coding.me/suzhou/#/)
 
 
 ##3rd Libs
@@ -61,3 +62,8 @@
 ##Others
 
 + [flux-standard-action](https://github.com/acdlite/flux-standard-action)
+
+##Tools
+
++ [Redux DevTools](https://chrome.google.com/webstore/detail/lmhkpmbekcpmknklioeibfkpmmfibljd) 
++ [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)

@@ -16,3 +16,24 @@ Content-Type:
 + [PRG](https://en.wikipedia.org/wiki/Post/Redirect/Get)
 + [HTTP Tunnel](https://en.wikipedia.org/wiki/HTTP_tunnel)
 + [Proxy server](https://en.wikipedia.org/wiki/Proxy_server#Web_proxy_servers)
+
+
+##缓存
+
+1. 是否使用浏览器缓存：(都设0可以禁用浏览器缓存)
+
+    + Expires(http 1.0 response头部， 通过过期时间判断，客户端服务器可能时间不一致)
+    + Cache-control:max-age(http 1.1 response头部, 浏览器在请求完毕时记录本地时间，再次请求时用现在时间减去记录的时间，得到的值与max-age比较)
+
+2. Conditional Validation request：
+
+    当浏览器缓存过期或禁用时，请求相同的资源时会对服务端文件进行更新检测(以下两个头不存在的时候直接返回资源)
+
+    + Last-Modified(response 文件生成时间或最后修改时间,下次请求时会把这个值赋在request `If-Modified-Since`,和服务器文件时间做对比，一样的话返回304)
+    + Etag(response MD5值，下次请求时赋在request `If-None-Match`,和服务器文件对比，一样时返回304)
+
+
+3. Response:
+
+    + 200(from cache/包含response body)
+    + 304(响应头，不包含response body)
