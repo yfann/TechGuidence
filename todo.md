@@ -1,7 +1,7 @@
-Chrome React 
 
-google play
 
 [google trends](https://www.google.com/trends/)
 
-[Material-UI](http://www.material-ui.com/#/components/app-bar)
++ [time traval](https://www.youtube.com/watch?v=xsSnOQynTHs)
++ [Flux 标准 Action](https://github.com/acdlite/flux-standard-action)
+

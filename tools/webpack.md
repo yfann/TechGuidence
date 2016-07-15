@@ -176,6 +176,9 @@
 +  [react-hot-loader](https://github.com/gaearon/react-hot-loader) 
 
 
+## Hot Module Replacement([HMR](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html))
+
+
 # Ref
 
 + [Webpack 入门指迷](https://segmentfault.com/a/1190000002551952)
