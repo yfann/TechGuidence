@@ -1,9 +1,9 @@
-#Webpack
+# Webpack
 
-##介绍
+## 介绍
 一切资源皆模块,默认支持CommonJS, AMD
 
-##创建
+## 创建
 
 + npm install webpack -g
 
@@ -90,7 +90,7 @@
         
 + webpack
 
-##CMD
+## CMD
 
 + webpack --display-error-details //查看查找过程
 
@@ -102,7 +102,7 @@
 
 + webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了
 
-##pulgin&loader [#](https://webpack.github.io/docs/list-of-loaders.html)
+## pulgin&loader [#](https://webpack.github.io/docs/list-of-loaders.html)
 
 + exports-loader
 
@@ -176,7 +176,7 @@
 +  [react-hot-loader](https://github.com/gaearon/react-hot-loader) 
 
 
-#Ref
+# Ref
 
 + [Webpack 入门指迷](https://segmentfault.com/a/1190000002551952)
 
