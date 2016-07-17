@@ -1,4 +1,4 @@
-#[Redux](http://camsong.github.io/redux-in-chinese/index.html)
+# [Redux](http://camsong.github.io/redux-in-chinese/index.html)
 
 + 单一store,存储state stree
 + 没有Dispatcher
@@ -6,18 +6,13 @@
 + 有根级reducer(随应用规模拆成多个小的reducers)
 + 改变state的唯一方式是 触发action `store.dispatch({...})`
 
-##3 principles
+## 3 principles
 
 + single store
 + readonly state
 + pure function reducer
 
-##Concept
-
-+ Action  
-
-把数据重应用传到store的有效荷载。store数据的唯一来源。  
-`store.dispatch(actionCreator(value))`将action传到store
+## Concept
 
 + State
 
@@ -74,3 +69,283 @@
     import todoApp from './reducers'
 
     let store = createStore(todoApp)
+
+
+# Action
+
+action 可以被序列化
+
++ 普通action
+```
+function addTodo(text) {
+  return {
+    type: ADD_TODO,
+    text
+  }
+}
+
+dispatch(addTodo(text))
+
+const boundAddTodo = (text) => dispatch(addTodo(text))
+boundAddTodo(text);
+```
++ 有逻辑的action
+```
+export function addTodo(text) {
+  // Redux Thunk 中间件允许这种形式
+  // 在下面的 “异步 Action Creators” 段落中有写
+  return function (dispatch, getState) {
+    if (getState().todos.length === 3) {
+      // 提前退出
+      return;
+    }
+
+    dispatch(addTodoWithoutCheck(text));
+  }
+}
+```
++ generate action creator
+```
+function makeActionCreator(type, ...argNames) {
+  return function(...args) {
+    let action = { type }
+    argNames.forEach((arg, index) => {
+      action[argNames[index]] = args[index]
+    })
+    return action
+  }
+}
+
+const ADD_TODO = 'ADD_TODO'
+const EDIT_TODO = 'EDIT_TODO'
+const REMOVE_TODO = 'REMOVE_TODO'
+
+export const addTodo = makeActionCreator(ADD_TODO, 'todo')
+export const editTodo = makeActionCreator(EDIT_TODO, 'id', 'todo')
+export const removeTodo = makeActionCreator(REMOVE_TODO, 'id')
+```
+
+
+
++ 异步Action Creators
+
+actionCreators.js
+```
+export function loadPostsSuccess(userId, response) {
+  return {
+    type: 'LOAD_POSTS_SUCCESS',
+    userId,
+    response
+  };
+}
+
+export function loadPostsFailure(userId, error) {
+  return {
+    type: 'LOAD_POSTS_FAILURE',
+    userId,
+    error
+  };
+}
+
+export function loadPostsRequest(userId) {
+  return {
+    type: 'LOAD_POSTS_REQUEST',
+    userId
+  };
+}
+```
+UserInfo.js
+```
+import { Component } from 'react';
+import { connect } from 'react-redux';
+import { loadPostsRequest, loadPostsSuccess, loadPostsFailure } from './actionCreators';
+
+class Posts extends Component {
+  loadData(userId) {
+    // 调用 React Redux `connect()` 注入 props ：
+    let { dispatch, posts } = this.props;
+
+    if (posts[userId]) {
+      // 这里是被缓存的数据！啥也不做。
+      return;
+    }
+
+    // Reducer 可以通过设置 `isFetching` 响应这个 action
+    // 因此让我们显示一个 Spinner 控件。
+    dispatch(loadPostsRequest(userId));
+
+    // Reducer 可以通过填写 `users` 响应这些 actions
+    fetch(`http://myapi.com/users/${userId}/posts`).then(
+      response => dispatch(loadPostsSuccess(userId, response)),
+      error => dispatch(loadPostsFailure(userId, error))
+    );
+  }
+
+  componentDidMount() {
+    this.loadData(this.props.userId);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.userId !== this.props.userId) {
+      this.loadData(nextProps.userId);
+    }
+  }
+
+  render() {
+    if (this.props.isLoading) {
+      return <p>Loading...</p>;
+    }
+
+    let posts = this.props.posts.map(post =>
+      <Post post={post} key={post.id} />
+    );
+
+    return <div>{posts}</div>;
+  }
+}
+
+export default connect(state => ({
+  posts: state.posts
+}))(Posts);
+```
+使用redux-thunk 上面的代码：
+
+actionCreators.js
+```
+export function loadPosts(userId) {
+  // 用 thunk 中间件解释：
+  return function (dispatch, getState) {
+    let { posts } = getState();
+    if (posts[userId]) {
+      // 这里是数据缓存！啥也不做。
+      return;
+    }
+
+    dispatch({
+      type: 'LOAD_POSTS_REQUEST',
+      userId
+    });
+
+    // 异步分发原味 action
+    fetch(`http://myapi.com/users/${userId}/posts`).then(
+      response => dispatch({
+        type: 'LOAD_POSTS_SUCCESS',
+        userId,
+        respone
+      }),
+      error => dispatch({
+        type: 'LOAD_POSTS_FAILURE',
+        userId,
+        error
+      })
+    );
+  }
+}
+```
+UserInfo.js
+```
+import { Component } from 'react';
+import { connect } from 'react-redux';
+import { loadPosts } from './actionCreators';
+
+class Posts extends Component {
+  componentDidMount() {
+    this.props.dispatch(loadPosts(this.props.userId));
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.userId !== this.props.userId) {
+      this.props.dispatch(loadPosts(nextProps.userId));
+    }
+  }
+
+  render() {
+    if (this.props.isLoading) {
+      return <p>Loading...</p>;
+    }
+
+    let posts = this.props.posts.map(post =>
+      <Post post={post} key={post.id} />
+    );
+
+    return <div>{posts}</div>;
+  }
+}
+
+export default connect(state => ({
+  posts: state.posts
+}))(Posts);
+```
+
++ bindActionCreators
+## Ref
+
++ [Flux 标准 Action](https://github.com/acdlite/flux-standard-action)
+
+# Reducer
+```
+(previousState, action) => newState
+
+可以传给
+Array.prototype.reduce(reducer, ?initialValue) 
+```
++　redux用reducer纯函数代替了flux 中的event emitter
+
+## State
+
++ 把state想象成数据库
++ [normalizr](https://github.com/paularmstrong/normalizr)
+
+## 拆分Reducer
+
+```
+function todos(state = [], action) {
+  switch (action.type) {
+    case ADD_TODO:
+      return [
+        ...state,
+        {
+          text: action.text,
+          completed: false
+        }
+      ]
+    case TOGGLE_TODO:
+      return state.map((todo, index) => {
+        if (index === action.index) {
+          return Object.assign({}, todo, {
+            completed: !todo.completed
+          })
+        }
+        return todo
+      })
+    default:
+      return state
+  }
+}
+
+function visibilityFilter(state = SHOW_ALL, action) {
+  switch (action.type) {
+    case SET_VISIBILITY_FILTER:
+      return action.filter
+    default:
+      return state
+  }
+}
+
+//合并reducer
+function todoApp(state = {}, action) {
+  return {
+    visibilityFilter: visibilityFilter(state.visibilityFilter, action),
+    todos: todos(state.todos, action)
+  }
+}
+
+//或
+const todoApp = combineReducers({
+  visibilityFilter,
+  todos
+})
+
+```
+
+# Store
