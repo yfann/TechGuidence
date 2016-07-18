@@ -5,71 +5,13 @@
 + reducer函数:决定action如何改变state`(state,action)=>state`,只返回新的state不改变原state
 + 有根级reducer(随应用规模拆成多个小的reducers)
 + 改变state的唯一方式是 触发action `store.dispatch({...})`
++ 单向数据流，所有数据生命周期相同
 
 ## 3 principles
 
 + single store
 + readonly state
 + pure function reducer
-
-## Concept
-
-+ State
-
-[State范式化](https://github.com/paularmstrong/normalizr)
-
-+ Reducer
-
-无副作用的纯函数`(previousState, action) => newState`
-    //拆分reducer,每个子reducer处理state中的一部分数据，然后合并大对象。
-    function todos(state = [], action) {
-      switch (action.type) {
-        case ADD_TODO:
-          return [...state, {
-            text: action.text,
-            completed: false
-          }];
-        case COMPLETE_TODO:
-          return [
-            ...state.slice(0, action.index),
-            Object.assign({}, state[action.index], {
-              completed: true
-            }),
-            ...state.slice(action.index + 1)
-          ];
-        default:
-          return state;
-      }
-    }
-    
-    function visibilityFilter(state = SHOW_ALL, action) {
-      switch (action.type) {
-        case SET_VISIBILITY_FILTER:
-          return action.filter;
-        default:
-          return state;
-      }
-    }
-    
-    function todoApp(state = {}, action) {
-      return {
-        visibilityFilter: visibilityFilter(state.visibilityFilter, action),
-        todos: todos(state.todos, action)
-      };
-    }
-    
-+ Store 
-    - 单一store(reducer组合代替多个store)
-    - 维护state
-    - getState()获取state
-    - dispatch(action)更新state
-    - suscibe(listener)注册监听器
-    
-    import { createStore } from 'redux'
-    import todoApp from './reducers'
-
-    let store = createStore(todoApp)
-
 
 # Action
 
@@ -129,8 +71,10 @@ export const removeTodo = makeActionCreator(REMOVE_TODO, 'id')
 
 + 异步Action Creators
 
-actionCreators.js
+
 ```
+//actionCreators.js
+
 export function loadPostsSuccess(userId, response) {
   return {
     type: 'LOAD_POSTS_SUCCESS',
@@ -154,8 +98,9 @@ export function loadPostsRequest(userId) {
   };
 }
 ```
-UserInfo.js
 ```
+//UserInfo.js
+
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { loadPostsRequest, loadPostsSuccess, loadPostsFailure } from './actionCreators';
@@ -208,10 +153,10 @@ export default connect(state => ({
   posts: state.posts
 }))(Posts);
 ```
-使用redux-thunk 上面的代码：
-
-actionCreators.js
 ```
+//使用redux-thunk 上面的代码：
+//actionCreators.js
+
 export function loadPosts(userId) {
   // 用 thunk 中间件解释：
   return function (dispatch, getState) {
@@ -242,8 +187,9 @@ export function loadPosts(userId) {
   }
 }
 ```
-UserInfo.js
 ```
+//UserInfo.js
+
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import { loadPosts } from './actionCreators';
@@ -278,21 +224,24 @@ export default connect(state => ({
 ```
 
 + bindActionCreators
+
 ## Ref
 
 + [Flux 标准 Action](https://github.com/acdlite/flux-standard-action)
 
 # Reducer
+
 ```
 (previousState, action) => newState
 
 可以传给
 Array.prototype.reduce(reducer, ?initialValue) 
 ```
-+　redux用reducer纯函数代替了flux 中的event emitter
++ redux用reducer纯函数代替了flux 中的event emitter
 
 ## State
 
++ 初始化state
 + 把state想象成数据库
 + [normalizr](https://github.com/paularmstrong/normalizr)
 
@@ -331,7 +280,8 @@ function visibilityFilter(state = SHOW_ALL, action) {
       return state
   }
 }
-
+```
+```
 //合并reducer
 function todoApp(state = {}, action) {
   return {
@@ -349,3 +299,30 @@ const todoApp = combineReducers({
 ```
 
 # Store
+
++ Redux应用中只有一个store
+
+```
+import todoApp from './reducers'
+let store = createStore(todoApp)
+```
+```
+import { addTodo, toggleTodo, setVisibilityFilter, VisibilityFilters } from './actions'
+
+// 打印初始状态
+console.log(store.getState())
+
+// 每次 state 更新时，打印日志
+// 注意 subscribe() 返回一个函数用来注销监听器
+let unsubscribe = store.subscribe(() =>
+  console.log(store.getState())
+)
+
+// 发起一系列 action
+store.dispatch(addTodo('Learn about actions'))
+store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED))
+
+// 停止监听 state 更新
+unsubscribe();
+
+```

@@ -2,7 +2,7 @@
 
 ##Commands
 
-+ npm init  
++ npm init [-f]
   create package.json
  
 + npm i [xxx] --save  
