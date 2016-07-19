@@ -19,13 +19,7 @@ action 可以被序列化
 
 + 普通action
 ```
-function addTodo(text) {
-  return {
-    type: ADD_TODO,
-    text
-  }
-}
-
+...
 dispatch(addTodo(text))
 
 const boundAddTodo = (text) => dispatch(addTodo(text))
@@ -247,40 +241,7 @@ Array.prototype.reduce(reducer, ?initialValue)
 
 ## 拆分Reducer
 
-```
-function todos(state = [], action) {
-  switch (action.type) {
-    case ADD_TODO:
-      return [
-        ...state,
-        {
-          text: action.text,
-          completed: false
-        }
-      ]
-    case TOGGLE_TODO:
-      return state.map((todo, index) => {
-        if (index === action.index) {
-          return Object.assign({}, todo, {
-            completed: !todo.completed
-          })
-        }
-        return todo
-      })
-    default:
-      return state
-  }
-}
 
-function visibilityFilter(state = SHOW_ALL, action) {
-  switch (action.type) {
-    case SET_VISIBILITY_FILTER:
-      return action.filter
-    default:
-      return state
-  }
-}
-```
 ```
 //合并reducer
 function todoApp(state = {}, action) {
@@ -325,4 +286,20 @@ store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED))
 // 停止监听 state 更新
 unsubscribe();
 
+```
+
+# Container 
+
++ 可以访问store的dispatch(index中通过provider注入store)
+```
+...
+<AddTodo onAddClick={
+    text=>dispatch(addTodo(text))
+}/>
+...
+```
++ 可以注入需要的属性
+```
+...
+export default connect(select)(App);
 ```
