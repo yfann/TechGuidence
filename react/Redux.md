@@ -25,21 +25,6 @@ dispatch(addTodo(text))
 const boundAddTodo = (text) => dispatch(addTodo(text))
 boundAddTodo(text);
 ```
-+ 有逻辑的action
-```
-export function addTodo(text) {
-  // Redux Thunk 中间件允许这种形式
-  // 在下面的 “异步 Action Creators” 段落中有写
-  return function (dispatch, getState) {
-    if (getState().todos.length === 3) {
-      // 提前退出
-      return;
-    }
-
-    dispatch(addTodoWithoutCheck(text));
-  }
-}
-```
 + generate action creator
 ```
 function makeActionCreator(type, ...argNames) {
@@ -61,9 +46,16 @@ export const editTodo = makeActionCreator(EDIT_TODO, 'id', 'todo')
 export const removeTodo = makeActionCreator(REMOVE_TODO, 'id')
 ```
 
++ bindActionCreators
 
+## Ref
 
-+ 异步Action Creators
++ [Flux 标准 Action](https://github.com/acdlite/flux-standard-action)
+
+# [异步 Action](http://cn.redux.js.org/docs/advanced/AsyncActions.html)
+
++ 每个API要dispatch三种action,请求开始的action,请求成功结束的action,请求失败的action
+
 
 
 ```
@@ -123,25 +115,7 @@ class Posts extends Component {
   componentDidMount() {
     this.loadData(this.props.userId);
   }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.userId !== this.props.userId) {
-      this.loadData(nextProps.userId);
-    }
-  }
-
-  render() {
-    if (this.props.isLoading) {
-      return <p>Loading...</p>;
-    }
-
-    let posts = this.props.posts.map(post =>
-      <Post post={post} key={post.id} />
-    );
-
-    return <div>{posts}</div>;
-  }
-}
+...
 
 export default connect(state => ({
   posts: state.posts
@@ -199,29 +173,12 @@ class Posts extends Component {
     }
   }
 
-  render() {
-    if (this.props.isLoading) {
-      return <p>Loading...</p>;
-    }
+ ...
 
-    let posts = this.props.posts.map(post =>
-      <Post post={post} key={post.id} />
-    );
-
-    return <div>{posts}</div>;
-  }
-}
-
-export default connect(state => ({
-  posts: state.posts
-}))(Posts);
+  export default connect(state => ({
+    posts: state.posts
+  }))(Posts);
 ```
-
-+ bindActionCreators
-
-## Ref
-
-+ [Flux 标准 Action](https://github.com/acdlite/flux-standard-action)
 
 # Reducer
 
@@ -288,7 +245,7 @@ unsubscribe();
 
 ```
 
-# Container 
+# Container View
 
 + 可以访问store的dispatch(index中通过provider注入store)
 ```
@@ -308,6 +265,7 @@ export default connect(select)(App);
 
 ## [Redux Thunk](https://github.com/gaearon/redux-thunk)
 
-+ action creator 返回函数取代直接返回action
-+ 可以延时dispatch action
++ action creator返回函数(注入dispatch,getState)取代直接返回action
++ 可以延时dispatch action(函数替代表达式可以延迟执行)
 + 可以根据条件dispatch action
++ 
