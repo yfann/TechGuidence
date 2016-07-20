@@ -303,3 +303,11 @@ unsubscribe();
 ...
 export default connect(select)(App);
 ```
+
+# Redux Middleware
+
+## [Redux Thunk](https://github.com/gaearon/redux-thunk)
+
++ action creator 返回函数取代直接返回action
++ 可以延时dispatch action
++ 可以根据条件dispatch action
