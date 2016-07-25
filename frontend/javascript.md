@@ -28,3 +28,4 @@
 ## Think
 
 + 函数返回函数的形式是交出函数的控制权，控制反转
++ [Monkey Patch](http://cn.redux.js.org/docs/advanced/Middleware.html)

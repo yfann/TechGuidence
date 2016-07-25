@@ -261,7 +261,7 @@ unsubscribe();
 export default connect(select)(App);
 ```
 
-# Redux Middleware
+# [Redux Middleware](http://cn.redux.js.org/docs/advanced/Middleware.html)
 
 ## [Redux Thunk](https://github.com/gaearon/redux-thunk)
 
