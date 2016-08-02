@@ -261,11 +261,18 @@ unsubscribe();
 export default connect(select)(App);
 ```
 
-# Redux Middleware
+# [Redux Middleware](http://cn.redux.js.org/docs/advanced/Middleware.html)
 
 ## [Redux Thunk](https://github.com/gaearon/redux-thunk)
 
 + action creator返回函数(注入dispatch,getState)取代直接返回action
 + 可以延时dispatch action(函数替代表达式可以延迟执行)
 + 可以根据条件dispatch action
-+ 
+
+## [redux-logger](https://github.com/evgenyrodionov/redux-logger)
+
++ log actions
+
+# Tools
+
++ redux devtools
