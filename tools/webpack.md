@@ -61,35 +61,7 @@ resolve: {
 }
 ```
 
-+ entry file   
 
-  入口文件，可以直接引入未经编译的原生文件，只要配置好相应的loader.
-  
-        //index.js
-        require('../../css/reset.scss'); //加载初始化样式
-        require('../../css/allComponent.scss'); //加载组件样式
-        var React = require('react');
-        var AppWrap = require('../component/AppWrap'); //加载组件
-        var createRedux = require('redux').createRedux;
-        var Provider = require('redux/react').Provider;
-        var stores = require('AppStore');
-
-        var redux = createRedux(stores);
-
-        var App = React.createClass({
-            render: function() {
-                return (
-                    <Provider redux={redux}>
-                        {function() { return <AppWrap />; }}
-                    </Provider>
-                );
-            }
-        });
-
-        React.render(
-            <App />, document.body
-        );       
-        
 
 ## CMD
 
@@ -106,75 +78,87 @@ resolve: {
 ## pulgin&loader [#](https://webpack.github.io/docs/list-of-loaders.html)
 
 + exports-loader
-
-        //对不规范的模块shim处理
-        //config
-        { test: require.resolve("./src/js/tool/swipe.js"),  loader: "exports?swipe"}
-        //use
-        require('./tool/swipe.js');
-        swipe(); 
-
+```
+//对不规范的模块shim处理
+//config
+{ test: require.resolve("./src/js/tool/swipe.js"),  loader: "exports?swipe"}
+//use
+require('./tool/swipe.js');
+swipe(); 
+```
 + CommonsChunkPlugin
 
 提取多个页面间的公共模块，并打包为common.js
 
-        var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
-        module.exports = {
-            entry: {
-                p1: "./page1",
-                p2: "./page2",
-                p3: "./page3",
-                ap1: "./admin/page1",
-                ap2: "./admin/page2"
-            },
-            output: {
-                filename: "[name].js"
-            },
-            plugins: [
-                new CommonsChunkPlugin("admin-commons.js", ["ap1", "ap2"]),
-                new CommonsChunkPlugin("commons.js", ["p1", "p2", "admin-commons.js"])
-            ]
-        };
-        // <script>s required:
-        // page1.html: commons.js, p1.js
-        // page2.html: commons.js, p2.js
-        // page3.html: p3.js
-        // admin-page1.html: commons.js, admin-commons.js, ap1.js
-        // admin-page2.html: commons.js, admin-commons.js, ap2.js
+```
+var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
+module.exports = {
+    entry: {
+        p1: "./page1",
+        p2: "./page2",
+        p3: "./page3",
+        ap1: "./admin/page1",
+        ap2: "./admin/page2"
+    },
+    output: {
+        filename: "[name].js"
+    },
+    plugins: [
+        new CommonsChunkPlugin("admin-commons.js", ["ap1", "ap2"]),
+        new CommonsChunkPlugin("commons.js", ["p1", "p2", "admin-commons.js"])
+    ]
+};
+
+// page1.html: commons.js, p1.js
+// page2.html: commons.js, p2.js
+// page3.html: p3.js
+// admin-page1.html: commons.js, admin-commons.js, ap1.js
+// admin-page2.html: commons.js, admin-commons.js, ap2.js
+```
 
 + extract-text-webpack-plugins
 
 样式文件独立打包
 
-        var webpack = require('webpack');
-        var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
-        var ExtractTextPlugin = require("extract-text-webpack-plugin");
-    
-        module.exports = {
-            plugins: [commonsPlugin, new ExtractTextPlugin("[name].css")],
-            entry: {
-            //...省略其
+```
+var webpack = require('webpack');
+var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+module.exports = {
+    plugins: [commonsPlugin, new ExtractTextPlugin("[name].css")],
+    entry: {
+    //...省略其
+```
 
 + 使用CDN远程文件
 
 
+```
+//配置
+{
+    externals: {
+        // require("jquery") 是引用自外部模块的
+        // 对应全局变量 jQuery
+        "jquery": "jQuery"
+    }
+}
 
-        //配置
-        {
-            externals: {
-                // require("jquery") 是引用自外部模块的
-                // 对应全局变量 jQuery
-                "jquery": "jQuery"
-            }
-        }
+//确保CDN文件在打包文件引入前引入
+var $script = require("scriptjs");
+$script("//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js", function() {
+    $('body').html('It works!')
+});
+```
 
-        //确保CDN文件在打包文件引入前引入
-        var $script = require("scriptjs");
-        $script("//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js", function() {
-            $('body').html('It works!')
-        });
++ [react-hot-loader](https://github.com/gaearon/react-hot-loader) 
 
-+  [react-hot-loader](https://github.com/gaearon/react-hot-loader) 
++ [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html)
+
+    little node.js express server
+    - `webpack-dev-server`
+    - `webpack-dev-server --content-base [path]`
+    - `webpack-dev-server --inline --hot`
 
 
 ## Hot Module Replacement([HMR](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html))
