@@ -71,17 +71,18 @@ resolve: {
 
 + `webpack --watch`   //监听变动并自动打包
 
-+ `webpack -p`    //压缩混淆脚本，这个非常非常重要！
++ `webpack -p`    //压缩混淆脚本,build for production
+
+```
+"deploy": "NODE_ENV=production webpack -p"
+```
 
 + `webpack -d`    //生成map映射文件，告知哪些模块被最终打包到哪里了
 
 ## pulgin&loader [#](https://webpack.github.io/docs/list-of-loaders.html)
 
 + exports-loader
-<<<<<<< HEAD
 
-=======
->>>>>>> dd2affd53d8cfcd1572d99b362a912cdf68d615c
 ```
 //对不规范的模块shim处理
 //config
@@ -112,27 +113,21 @@ module.exports = {
         new CommonsChunkPlugin("commons.js", ["p1", "p2", "admin-commons.js"])
     ]
 };
-<<<<<<< HEAD
-=======
 
->>>>>>> dd2affd53d8cfcd1572d99b362a912cdf68d615c
 // page1.html: commons.js, p1.js
 // page2.html: commons.js, p2.js
 // page3.html: p3.js
 // admin-page1.html: commons.js, admin-commons.js, ap1.js
 // admin-page2.html: commons.js, admin-commons.js, ap2.js
 ```
-<<<<<<< HEAD
-+ extract-text-webpack-plugins
-
-样式文件独立打包
-=======
 
 + extract-text-webpack-plugins
 
 样式文件独立打包
 
->>>>>>> dd2affd53d8cfcd1572d99b362a912cdf68d615c
+
++ extract-text-webpack-plugins
+
 ```
 var webpack = require('webpack');
 var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
@@ -143,10 +138,7 @@ module.exports = {
     entry: {
     //...省略其
 ```
-<<<<<<< HEAD
-=======
 
->>>>>>> dd2affd53d8cfcd1572d99b362a912cdf68d615c
 + 使用CDN远程文件
 
 ```
@@ -159,30 +151,14 @@ module.exports = {
     }
 }
 
-<<<<<<< HEAD
-=======
-```
-//配置
-{
-    externals: {
-        // require("jquery") 是引用自外部模块的
-        // 对应全局变量 jQuery
-        "jquery": "jQuery"
-    }
-}
-
->>>>>>> dd2affd53d8cfcd1572d99b362a912cdf68d615c
 //确保CDN文件在打包文件引入前引入
 var $script = require("scriptjs");
 $script("//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js", function() {
     $('body').html('It works!')
 });
 ```
-<<<<<<< HEAD
-+ [react-hot-loader](https://github.com/gaearon/react-hot-loader) 
+
 + [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
-+ webpack-dev-server
-=======
 
 + [react-hot-loader](https://github.com/gaearon/react-hot-loader) 
 
@@ -193,8 +169,6 @@ $script("//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js", function()
     - `webpack-dev-server --content-base [path]`
     - `webpack-dev-server --inline --hot`
 
-
->>>>>>> dd2affd53d8cfcd1572d99b362a912cdf68d615c
 ## Hot Module Replacement([HMR](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html))
 
 
