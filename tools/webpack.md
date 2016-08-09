@@ -20,8 +20,8 @@ entry: {
 
 ```
 output: {
-    path: './build', // This is where images AND js will go
-    publicPath: 'http://mycdn.com/', // This is used to generate URLs to e.g. images
+    path: './build', //生成build所在的路径
+    publicPath: 'http://mycdn.com/', //html 外链的js,css路径，(也可外链path,但会使hmr失效)
     filename: '[name].bundle.js'
 }
 ```
@@ -291,6 +291,7 @@ ReactDOM.render(
     然后运行`webpack-dev-server`
 
 + open-browser-webpack-plugin会影响hot module replacement
++ 要设置publicPath,否则自动刷新后内容不变
 
 # Ref
 
