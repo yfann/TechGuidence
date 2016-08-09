@@ -120,14 +120,24 @@ module.exports = {
 // admin-page1.html: commons.js, admin-commons.js, ap1.js
 // admin-page2.html: commons.js, admin-commons.js, ap2.js
 ```
+Vendor libs 单独打包
+
+```
+  entry: {
+    app: './main.js',
+    vendor: ['jquery'],
+  },
+  output: {
+    filename: 'bundle.js'
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.js')
+  ]
+```
+
 
 + extract-text-webpack-plugins
-
 样式文件独立打包
-
-
-+ extract-text-webpack-plugins
-
 ```
 var webpack = require('webpack');
 var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
@@ -162,15 +172,125 @@ $script("//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js", function()
 
 + [react-hot-loader](https://github.com/gaearon/react-hot-loader) 
 
-+ [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html)
++ [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html) 'open-browser-webpack-plugin'
 
     little node.js express server
     - `webpack-dev-server`
     - `webpack-dev-server --content-base [path]`
     - `webpack-dev-server --inline --hot`
 
+## [Code splitting](http://webpack.github.io/docs/code-splitting.html)
+
++ [bundle-loader](https://www.npmjs.com/package/bundle-loader)
+
+## [Shim modules](http://webpack.github.io/docs/shimming-modules.html)
+
+处理jquery这种非module的库
+
++ imports-loader
+
+```
+//file.js 依赖全局变量$
+require("imports?$=jquery!./file.js")
+```
+
++ ProvidePlugin
+
+```
+//把module转换为variable,全局可用，不用写require('jquery')
+new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery",
+    "window.jQuery": "jquery"
+})
+```
+
++ exports-loader
+
+暴露文件的变量
+
+```
+//设置 window.XModule=...
+require("imports?window=>{}!exports?window.XModule!./file.js")
+```
+
++ expose-loader
+
+```
+//暴露file.js为XModule到全局中
+require("expose?XModule!./file.js")
+```
+
+## [externals](http://webpack.github.io/docs/library-and-externals.html)
+
+使用的模块作为全局变量，从外部引用，不会被webpack处理，代码不出现在bundle中
+
+```
+//data.js
+var data = 'Hello World';
+
+
+//webpack.config.js
+module.exports = {
+  entry: './main.jsx',
+  output: {
+    filename: 'bundle.js'
+  },
+  module: {
+    loaders:[
+      {
+        test: /\.js[x]?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },
+    ]
+  },
+  externals: {
+    // require('data') is external and available
+    //  on the global var data
+    'data': 'data'
+  }
+};
+
+
+// main.jsx
+var data = require('data');
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+ReactDOM.render(
+  <h1>{data}</h1>,
+  document.body
+);
+```
+
+
+
+
 ## Hot Module Replacement([HMR](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html))
 
++ 两种方式启用：
+
+    1. `webpack-dev-server --hot --inline`
+
+    2. 修改webpack.config.js
+    ```
+    entry: [
+        'webpack/hot/dev-server',
+        'webpack-dev-server/client?http://localhost:8080',
+        ...
+    ],
+    ...
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
+    ```
+    然后运行`webpack-dev-server`
+
++ open-browser-webpack-plugin会影响hot module replacement
 
 # Ref
 
