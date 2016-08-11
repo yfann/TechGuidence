@@ -32,14 +32,19 @@ output: {
 module: {
     //加载器配置
     loaders: [
-        //.css 文件使用 style-loader 和 css-loader 来处理
-        { test: /\.css$/, loader: 'style-loader!css-loader' },
-        //.js 文件使用 jsx-loader 来编译处理
-        { test: /\.js$/, loader: 'jsx-loader?harmony' },
-        //.scss 文件使用 style-loader、css-loader 和 sass-loader 来编译处理
-        { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
-        //图片文件使用 url-loader 来处理，小于8kb的直接转为base64
-        { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
+     {
+          test: /\.js(x)*$/,
+          loader: 'babel-loader',
+          exclude: function(path) {
+              // 路径中含有 node_modules 的就不去解析。
+              var isNpmModule = !!path.match(/node_modules/);
+              return isNpmModule;
+          },
+          //include
+          query: {
+              presets: ['react', 'es2015-ie', 'stage-1']
+          }
+      }
     ]
 }
 ```
@@ -49,9 +54,14 @@ module: {
 ```
 resolve: {
         //查找module的话从这里开始查找
-        root: 'E:/github/flux-example/src', //绝对路径
+        root: path.resolve(__dirname, "dll"), //绝对路径
+
+        //查找模块目录，相对路径
+        modulesDirectories:['node_modules'],
+
         //自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
         extensions: ['', '.js', '.json', '.scss'],
+
         //模块别名定义，方便后续直接引用别名，无须多写长长的地址
         alias: {
             AppStore : 'js/stores/AppStores.js',//后续直接 require('AppStore') 即可
@@ -179,9 +189,6 @@ $script("//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js", function()
     - `webpack-dev-server --content-base [path]`
     - `webpack-dev-server --inline --hot`
 
-## [Code splitting](http://webpack.github.io/docs/code-splitting.html)
-
-+ [bundle-loader](https://www.npmjs.com/package/bundle-loader)
 
 ## [Shim modules](http://webpack.github.io/docs/shimming-modules.html)
 
@@ -267,6 +274,14 @@ ReactDOM.render(
 );
 ```
 
+## [DLLPlugin](http://engineering.invisionapp.com/post/optimizing-webpack/)
+
+加快打包过程
+
+1. create vendors.js，require all dependencies
+2. create webpack.dll.js
+3. `webpack --config=webpack.dll.js`
+4. add webpack.DllReferencePlugin to webpack.config.js
 
 
 
@@ -292,6 +307,24 @@ ReactDOM.render(
 
 + open-browser-webpack-plugin会影响hot module replacement
 + 要设置publicPath,否则自动刷新后内容不变
+
+# 代码分割
+
++ CommonsChunkPlugin
+
+可以把一些库单独打包成common chunk,模块化管理，不过要每次都编译
+
++ [Code splitting](http://webpack.github.io/docs/code-splitting.html) [bundle-loader](https://www.npmjs.com/package/bundle-loader)
+
+`require.ensure()`, 可以把包分成chunks,支持lasy-loading,优化加载时间
+
++ DLLReferencePlugin
+
+一些第三方库单独打包，不用每次编译，节省编译时间
+
++ externals
+
+引入部分代码时`require('react/lib/React')`，用DLLReferencePlugin
 
 # Ref
 
