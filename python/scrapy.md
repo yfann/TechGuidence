@@ -22,6 +22,19 @@
 4. code Item Pipeline to save Item
 
 
+## Trouble Shooting
+
++ unicodedecodeerror: 'ascii' codec can't decode byte 0xb0 ...
+
+[root cause](https://docs.python.org/3/howto/unicode.html)
+
+solution:
+```
+import sys
+reload(sys)
+sys.setdefaultencoding('gbk')
+```
+
 ## Ref
 
 + [scrapy](http://scrapy-chs.readthedocs.io/zh_CN/latest/topics/shell.html)

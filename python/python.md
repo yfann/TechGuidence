@@ -19,3 +19,6 @@ Packages: [pypi](https://pypi.python.org/pypi)
 
     `easy_install [libname]`
 
+## tips
+
++ "你好".decode('utf-8'‌​).encode('utf-8') //encode converts a unicode object to string
