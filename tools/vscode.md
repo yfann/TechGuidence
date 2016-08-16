@@ -77,6 +77,10 @@
   5. 本地项目路径下cmd:git push -u origin master     //提交代码到github
 
 
+##python
+
++ 删除pythonpaht on launch.json
+
 ##插件开发
 
 ###快捷键

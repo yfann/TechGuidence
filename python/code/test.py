@@ -1,0 +1,1 @@
+print "你好".decode('utf-8').encode('utf-8')
