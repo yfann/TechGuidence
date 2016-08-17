@@ -21,4 +21,10 @@ Packages: [pypi](https://pypi.python.org/pypi)
 
 ## tips
 
-+ "你好".decode('utf-8'‌​).encode('utf-8') //encode converts a unicode object to string
+###[Encoding](https://docs.python.org/3/howto/unicode.html)
+
++ A Unicode string is a sequence of code points(0x12ca). The rules for translating a Unicode string into a sequence of bytes in memary are called an encoding
+
+```
+"你好".decode('utf-8').encode('utf-8')
+```
