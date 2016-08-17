@@ -2,9 +2,11 @@
 
 ## install
 
-## cmd
+## [cmd](http://scrapy-chs.readthedocs.io/zh_CN/latest/topics/commands.html#topics-commands-ref)
 
 + `scrapy startproject [name]` //创建项目
+
++ `scrapy list`
 
 + `scrapy crawl [name] [-o output.json]` //开启爬虫,output.json爬出的item
 
