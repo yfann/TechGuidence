@@ -160,7 +160,7 @@ gradeUrl = 'http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre'
 result = opener.open(gradeUrl)
 print result.read()
 ```
-
++ re
 
 ## Ref
 
