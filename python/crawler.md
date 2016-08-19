@@ -1,11 +1,4 @@
 
-
-##libs
-+ beautifulsoup
-+ PhantomJS 
-+ Selenium
-
-
 ## urllib2
 
 
@@ -161,6 +154,31 @@ result = opener.open(gradeUrl)
 print result.read()
 ```
 + re
+
+
+## libs
++ [requests](http://cuiqingcai.com/2556.html)
++ [beautifulsoup](http://cuiqingcai.com/1319.html)
++ [lxml](http://cuiqingcai.com/2621.html)
++ [PhantomJS](http://cuiqingcai.com/2577.html)
+
+  PhantomJS是一个无界面的,可脚本编程的WebKit浏览器引擎.
+
++ [Selenium](http://cuiqingcai.com/2599.html)
+
+  自动化测试工具,支持各种浏览器，包括PhantomJS. Python+Selenium+PhantomJS
+
++ [PyQuery](http://cuiqingcai.com/2636.html)
+
+  用jQuery语法对xml操作
+
+
+## 爬虫框架
+
++ [Scrapy](http://doc.scrapy.org/en/latest/intro/install.html)
+
++ [PySpider](http://cuiqingcai.com/2652.html)
+
 
 ## Ref
 
