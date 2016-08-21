@@ -28,3 +28,26 @@ Packages: [pypi](https://pypi.python.org/pypi)
 ```
 "你好".decode('utf-8').encode('utf-8')
 ```
+
+
+## Trouble Shooting
+
++ unicodedecodeerror: 'ascii' codec can't decode byte 0xb0 ...
+
+[root cause](https://docs.python.org/3/howto/unicode.html)
+
+solution1:
+```
+import sys
+reload(sys)
+sys.setdefaultencoding('gbk')
+```
+
+solution2:
+注释python27\lib\mimetypes.py中的
+```py
+# try:
+#     ctype = ctype.encode(default_encoding) # omit in 3.x!
+# except UnicodeEncodeError:
+#     pass
+```
