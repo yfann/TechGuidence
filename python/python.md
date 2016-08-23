@@ -19,6 +19,11 @@ Packages: [pypi](https://pypi.python.org/pypi)
 
     `easy_install [libname]`
 
+
++ [wheel](http://pythonwheels.com/)
+
+    `pip install *.whl`
+
 ## tips
 
 ###[Encoding](https://docs.python.org/3/howto/unicode.html)
