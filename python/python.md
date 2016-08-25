@@ -19,11 +19,39 @@ Packages: [pypi](https://pypi.python.org/pypi)
 
     `easy_install [libname]`
 
+
++ [wheel](http://pythonwheels.com/)
+
+    `pip install *.whl`
+
+
 ## tips
 
-###[Encoding](https://docs.python.org/3/howto/unicode.html)
++ 查看模块路径
 
-+ A Unicode string is a sequence of code points(0x12ca). The rules for translating a Unicode string into a sequence of bytes in memary are called an encoding
+```py
+import sys
+import os
+for i in sys.path:
+    print(i)
+# 添加新路径
+new_path = os.path.abspath('../')
+sys.path.append(new_path)
+```
+
++ 查看python编译后的字节码 [dis](https://docs.python.org/2/library/dis.html)
+
+```py
+import dis
+
+def myfunc(alist):
+    return len(alist)
+
+dis.dis(myfunc)
+```
+
++ [Encoding](https://docs.python.org/3/howto/unicode.html) A Unicode string is a sequence of code points(0x12ca). 
+The rules for translating a Unicode string into a sequence of bytes in memary are called an encoding
 
 ```
 "你好".decode('utf-8').encode('utf-8')
