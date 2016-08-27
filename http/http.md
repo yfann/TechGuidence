@@ -1,9 +1,9 @@
 
-#HTTP
+# HTTP
 
-##Method
+## Method
 
-###Post
+### Post
 
 Content-Type:
 + application/x-www-form-urlencoded
@@ -11,14 +11,14 @@ Content-Type:
 + application/json
 + text/xml
 
-##Concept
+## Concept
 
 + [PRG](https://en.wikipedia.org/wiki/Post/Redirect/Get)
 + [HTTP Tunnel](https://en.wikipedia.org/wiki/HTTP_tunnel)
 + [Proxy server](https://en.wikipedia.org/wiki/Proxy_server#Web_proxy_servers)
 
 
-##缓存
+## 缓存
 
 1. 是否使用浏览器缓存：(都设0可以禁用浏览器缓存)
 
@@ -37,3 +37,8 @@ Content-Type:
 
     + 200(from cache/包含response body)
     + 304(响应头，不包含response body)
+
+## header
+
++ referer  //告诉服务器访问过的上一个网页，可用于防盗链
+

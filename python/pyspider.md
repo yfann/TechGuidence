@@ -22,7 +22,7 @@
  self.crawl(each.attr.href, callback=self.detail_page,validate_cert=False,fetch_type='js')
 ```
 
-+ request会放入队列中，自动去重重试
++ request会放入队列中，自动去重重试，相同的taskid(相同的url)会被去重
 
 ## Trouble shooting
 
@@ -36,6 +36,9 @@
 self.crawl(each.attr.href, callback=self.detail_page,validate_cert=False)
 ```
 
++ python停止工作
+
+pyspider只支持32位python，用于64位python时会异常
 
 ## Ref
 
