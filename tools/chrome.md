@@ -10,7 +10,7 @@
 
 + `$x('//a')` 运算xpath
 
-+ `$('a')` 调用document.querySelector(),返回第一个匹配的元素
++ `$('a')` `$('a',context)` `$('a').href` 调用document.querySelector(),返回第一个匹配的元素
 
 + `$$('a')` 运算css selector,调用document.querySelectorAll(),返回所有匹配的元素
 

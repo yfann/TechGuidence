@@ -17,7 +17,7 @@
 ###启动
 
     1. 新建路径C:\data\db
-    2. cmd:  安装路径\mongod.exe   （Ctrl+C 停止执行）
+    2. `mongod`（Ctrl+C 停止执行）
 	3. 查看http://localhost:27017/
 	
 	打开restful服务[#](https://docs.mongodb.org/ecosystem/tools/http-interfaces/
