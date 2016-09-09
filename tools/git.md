@@ -69,10 +69,15 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git pull origin [branchName]` 更新分支(或者`git checkout [branchName]`,`git pull`),第一次拉仓库时会包含所有分支
 + `git merge [branchName]` 指定分支并入当前分支
 
-##命令组合
+## 命令组合
 
 + git reset --hard
 + git clean
+
+## Config
+
++ `cat .git/config` 查看origin信息
++ `git config [--global] --list` 查看配置
 
 
 ***
@@ -91,3 +96,8 @@ Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 + gerrit 
 + Git Bash 
 + gitextension
++ 
+
+## Ref
+
++ [git config](http://www.cnblogs.com/wanqieddy/archive/2012/08/03/2621027.html)
