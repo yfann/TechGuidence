@@ -1,4 +1,4 @@
-#javascript内存优化
+## javascript内存优化
 
 + 使用函数块，尽量少定义全局变量
 
@@ -16,6 +16,14 @@
 	// blah blah blah
 	data = null;
 
-
-
 [js内存优化](http://lifemap.in/javascript-memory-optimize/)
+
+## Event
+
++ [Event Model,Event Delegate](https://zhuanlan.zhihu.com/p/22718822)
+
++ [Event loop queue$$Job queue](https://zhuanlan.zhihu.com/p/22710155)
+
++ 非阻塞
+
+Console里的交互式输入为阻塞
