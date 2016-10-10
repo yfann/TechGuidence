@@ -1,6 +1,12 @@
 # Dojo Widget
 
-## 继承
+## Custom Widget
+
+创建自定义widget时，一般会继承以下类
+
++ _WidgetBase
++ _TemplatedMinxin
++ _WidgetsIntemplateMixin
 
 ## Widget
 
@@ -16,7 +22,8 @@ data-dojo-attach-event: 建立DOM event到widget method的连接
      "dijit/_WidgetBase", "dijit/_TemplatedMixin", "dojo/domReady!"
  ], function(declare, parser, _WidgetBase, _TemplatedMixin){
 
-      declare("FancyCounter", [dijit._WidgetBase, dijit._TemplatedMixin], {
+      declare("FancyCounter", [_WidgetBase, _TemplatedMixin], {
+             
              // counter
              _i: 0,
 
@@ -114,10 +121,19 @@ var formWidgets=registry.findWidgets(formDomNode) //查找domnode下的所有wid
 
 registry.getEnclosingWidget(dom.byId('xxx')) //查找嵌套widgets
 
-
 registry.toArray() //返回所有widgets
 
 ```
+## [life cycle](https://dojotoolkit.org/documentation/tutorials/1.10/understanding_widgetbase/index.html)
+
++ constructor
++ postscript(declare)
+    - create
+        + postMixInProperties
+        + buildRendering
+        + postCreate(渲染然前的最后一步，可以添加自定义属性)
++ startup(控件包括所有子控件的DOM生成后会调用，可以layout)
++ destroy/own
 
 ## Trouble shooting Flicker
 
