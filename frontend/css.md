@@ -1,6 +1,23 @@
-#CSS
+# CSS
 
-##priority
+## 样式文件的引入
+
++ link (会在页面加载的同时加载)
+
+```html
+<link href="blue.css" rel="stylesheet" type="text/css" />  
+```
+
++ import (会在页面全部被下载完后被加载)
+
+```html
+<style type="text/css">  
+@import url(blue.css);  
+</style> 
+```
+
+
+## priority
 
 1. inline
 2. !important
@@ -9,7 +26,7 @@
 5. element selector
 
 
-##[Responsive Web Design](http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html)
+## [Responsive Web Design](http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html)
 
 + viewport
 + css中不使用px,width使用百分比，font使用em单位
