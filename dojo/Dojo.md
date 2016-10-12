@@ -110,3 +110,4 @@ define(["dojo/dom", "dojo/domReady!"], function(dom){
 + [Configureing Dojo](https://dojotoolkit.org/documentation/tutorials/1.10/dojo_config/)
 + [Advanced AMD](https://dojotoolkit.org/documentation/tutorials/1.10/modules_advanced/)
 + [Dojo loader](https://dojotoolkit.org/reference-guide/1.10/loader/)
++ [parser](https://dojotoolkit.org/reference-guide/1.10/dojo/parser.html)

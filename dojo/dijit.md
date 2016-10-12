@@ -108,7 +108,7 @@ this.start.set('value', new Date());
 
 + registry.byId()  //返回widget instance, dijit/registry stores a collection of all the dijit widgets within a page
 
-+ data-dojo-id //全局使用this.dojoId, 返回结果和registry.byId()相同
++ data-dojo-id //全局使用this.dojoId, 返回结果和registry.byId()相同, 全局不会垃圾回收
 
 ```js
 var widget=registry.byId('xxx') //widget instance
