@@ -25,7 +25,34 @@
 + `{[id]:''}`  变量值做属性
 + `JSON.parse(JSON.stringify(obj))` clone
 
-## Think
+## javascript[内存优化]((http://lifemap.in/javascript-memory-optimize/))
+
++ 使用函数块，尽量少定义全局变量。局部变量会在执行完后释放，全局变量会活到页面关闭
+
+```js
+;(function(win, doc, $, undefined) {
+        // 主業務代碼
+})(window, document, jQuery);
+```
+
++ 不需要的变量置null,解除变量引用
+
+```js
+var data = { /* some big data */ };
+// blah blah blah
+data = null;
+```
+
+## Event
+
++ [Event Model,Event Delegate](https://zhuanlan.zhihu.com/p/22718822)
+
++ [Event loop queue$$Job queue](https://zhuanlan.zhihu.com/p/22710155)
+
++ 非阻塞(Console里的交互式输入为阻塞)
+
+## Thinking
 
 + 函数返回函数的形式是交出函数的控制权，控制反转
 + [Monkey Patch](http://cn.redux.js.org/docs/advanced/Middleware.html)
+
