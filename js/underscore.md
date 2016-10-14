@@ -1,5 +1,16 @@
 # SourceCode Reading
 
+# Implement
+
++ _.isObject
+
+```js
+ _.isObject = function(obj) {
+    var type = typeof obj;
+    return type === 'function' || type === 'object' && !!obj;
+  };
+```
+
 # Tips
 
 + `typeof exports !== ''undefined`
@@ -12,6 +23,9 @@
     };
 ```
 + `(keys || obj).length`
+
++ `hasOwnProperty.call(obj, key)`
+
 # Ref
 
 + [underscore sourcecode](http://underscorejs.org/docs/underscore.html)

@@ -1,7 +1,7 @@
-##一些第三方库的安装使用
+## 一些第三方库的安装使用
 
 
-##Glyphicons 字体图标[#](http://www.runoob.com/bootstrap/bootstrap-glyphicons.html)
+## Glyphicons 字体图标[#](http://www.runoob.com/bootstrap/bootstrap-glyphicons.html)
 
 fonts文件夹需要有以下文件
 glyphicons-halflings-regular.eot
@@ -14,7 +14,7 @@ css文件夹需要有bootstrap.css
 @font-face的使用[#](http://www.w3cplus.com/content/css3-font-face)
 
 
-##UI Bootstrap
+## UI Bootstrap
 
 依赖：
 

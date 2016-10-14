@@ -135,6 +135,8 @@ registry.toArray() //返回所有widgets
 + startup(控件包括所有子控件的DOM生成后会调用，可以layout)
 + destroy/own
 
+## [Themes](https://dojotoolkit.org/reference-guide/1.10/dijit/themes.html)
+
 ## Trouble shooting Flicker
 
 在渲染的时候可以显示widget隐藏来避免闪烁

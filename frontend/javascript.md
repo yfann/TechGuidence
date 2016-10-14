@@ -16,6 +16,8 @@
 
 + `Object.assign({},{id:11})`
 
++ `Object.keys({a:1,b:2,c:3})` return ["a","b","c"]
+
 ## Tips
 
 + `setTimeout(fn,0)`  使任务延后执行，javascript是单线程会把fn放在队尾执行
