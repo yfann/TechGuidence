@@ -11,4 +11,5 @@
 + dojo/when
 + [dojox/mvc/sync](https://dojotoolkit.org/reference-guide/1.10/dojox/mvc/sync.html#dojox-mvc-sync)
 + [dojox/mvc](https://dojotoolkit.org/reference-guide/1.10/dojox/mvc.html)
-
++ [setter](https://dojotoolkit.org/reference-guide/1.10/dijit/info.html)
++ [setter](http://dojotoolkit.org/reference-guide/1.10/quickstart/writingWidgets.html)
