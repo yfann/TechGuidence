@@ -131,6 +131,7 @@ registry.toArray() //返回所有widgets
     - create
         + postMixInProperties
         + buildRendering
+        + customer setter  _setXXXXAttr()
         + postCreate(渲染然前的最后一步，可以添加自定义属性)
 + startup(控件包括所有子控件的DOM生成后会调用，可以layout)
 + destroy/own
@@ -145,3 +146,11 @@ registry.toArray() //返回所有widgets
 + 先把widget放在视区之外
 + 把widget的height,width设为0
 + z-index
+
+## tips
+
++ watch()/_set()
+
+## ref
+
++ [setter/getter life cycle](http://dojotoolkit.org/reference-guide/1.10/quickstart/writingWidgets.html)
