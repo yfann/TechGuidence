@@ -7,8 +7,15 @@
 
 ## Dojo
 + [Dojo DOM](https://dojotoolkit.org/documentation/tutorials/1.10/dom_functions/index.html)
-+ dojo store
++ [dojo store](dojo/store/Observable)
++ [memory](dojo/store/Memory)
 + dojo/when
 + [dojox/mvc/sync](https://dojotoolkit.org/reference-guide/1.10/dojox/mvc/sync.html#dojox-mvc-sync)
 + [dojox/mvc](https://dojotoolkit.org/reference-guide/1.10/dojox/mvc.html)
 + [setter](http://dojotoolkit.org/reference-guide/1.10/quickstart/writingWidgets.html)
++ dojo/deferred
+
+
+## H5
+
++ Indexed DB
