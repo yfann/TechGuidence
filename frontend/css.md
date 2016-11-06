@@ -35,3 +35,6 @@
 + 图片自适应 max-width:100%
 
 
+## Tips
+
++ `vertical-align:top` 只对inline,inline-block起作用，对添加的元素起作用（而不是对容器内的元素起作用）

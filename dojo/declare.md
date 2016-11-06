@@ -1,0 +1,1 @@
+## [dojo/_base/declare](http://dojotoolkit.org/reference-guide/1.10/dojo/_base/declare.html)

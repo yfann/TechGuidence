@@ -97,7 +97,7 @@ this.start.set('value', new Date());
 + programmatic
 
 
-## 代码中引用Widget
+## 获取页面上的Widget
 
 + dom.byId() //返回domNode
 
@@ -149,7 +149,7 @@ registry.toArray() //返回所有widgets
 
 ## tips
 
-+ watch()/_set()
++ `watch()/_set()`  _set() will trigger watch() handler
 
 ## ref
 
