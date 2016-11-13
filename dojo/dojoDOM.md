@@ -46,7 +46,7 @@
     + first
     + last
 
-## dojo/query
+## [dojo/query](http://dojotoolkit.org/reference-guide/1.10/dojo/query.html#dojo-query)
 
 + return a [dojo/NodeList]
 
@@ -59,7 +59,69 @@ var oddA = query("a.odd");
 
 ```
 
++ `query(".someClass", node)`
+
+```js
+var node = dom.byId("someId");
+      nl = query(".someClass", node);
+```
+
 ## [dojo/dom-class](http://dojotoolkit.org/reference-guide/1.10/dojo/dom-class.html)
+
++ `domClass.contains()`
+
+```js
+    // Do something if a node with id="someNode" has class="aSillyClassName" present
+    if (domClass.contains("someNode", "aSillyClassName")){
+      /* It does */
+    }
+});
+```
+
++ `domClass.add("someNode", "newClass");`
+
++ `domClass.remove("someNode", "someClass");   domClass.remove("example1");`
+
++ `domClass.replace("someNode", "add1", "remove1");`
+
++ `domClass.toggle("someNode", "someClass");  domClass.toggle("example2", "style2", true);`
+
+## [dojo/dom-style](http://dojotoolkit.org/reference-guide/1.10/dojo/dom-style.html#dojo-dom-style-get)
+
++ `domStyle.getComputedStyle(domNode)`
+
+```js
+    var node = dom.byId("example");
+    var computedStyle = style.getComputedStyle(node);
+    var output = "computedStyle.width: " + computedStyle.width + "<br/>";
+    output += "computedStyle.height: " + computedStyle.height + "<br/>";
+    output += "computedStyle.backgroundColor: " + computedStyle.backgroundColor + "<br/>";
+    dom.byId("output").innerHTML = output;
+```
+
++ `domStyle.get("someNode", "width")` //use getComputedStyle
+
++ `domStyle.set("someNode", "width", "100px")`
+
+```js
+  domStyle.set("someNode", {
+    width: "100px",
+    backgroundColor: "blue"
+  });
+```
++ `domStyle.set("someNode", "display", "")` //remove
+
+## [dojo/dom-attr](http://dojotoolkit.org/reference-guide/1.10/dojo/dom-attr.html#dojo-dom-attr-get)
+
++ `domAttr.has("model", "baz")` //return true or false
+
++ `domAttr.set("myNode", "someAttr", "value")`
+
++ `domAttr.get("myNode", "someAttr")`
+
++ `domAttr.remove("myNode", "someAttr")`
+
++ `domAttr.getNodeProp("model", name)`
 
 ## [dojo/_base/html](http://dojotoolkit.org/reference-guide/1.10/dojo/_base/html.html#dojo-base-html)
 
