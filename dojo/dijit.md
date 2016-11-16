@@ -97,9 +97,11 @@ this.start.set('value', new Date());
 + programmatic
 
 
-## 获取页面上的Widget
+## locating Widget
 
-+ dom.byId() //返回domNode
++ dijit.byId("id")//返回widget实例，dojo.byId("id")返回domNode
+
++ dijit.getEnclosingWidget(domNode) //
 
 + data-dojo-attach-point
     - refer to widget instance rather than the Dom Node
@@ -146,6 +148,7 @@ registry.toArray() //返回所有widgets
 + 先把widget放在视区之外
 + 把widget的height,width设为0
 + z-index
+
 
 ## tips
 
