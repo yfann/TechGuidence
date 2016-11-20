@@ -26,7 +26,8 @@
 + [dojo/aspect](http://dojotoolkit.org/reference-guide/1.10/dojo/aspect.html)
 + [dojo/number](http://dojotoolkit.org/reference-guide/1.10/dojo/number.html)
 + intermediateChanges
-
++ dojox/layout/GridContainer
++ dijit/layout/ContentPane   getChildren()/addChild()/removeChild()
 
 ## H5
 

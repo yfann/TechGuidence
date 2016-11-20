@@ -102,6 +102,10 @@ define(["dojo/dom", "dojo/domReady!"], function(dom){
 });
 ```
 
+## Tips
+
++ `lang.mixin()` //可以保持同一个引用对象
+
 ## Ref
 
 + [official](https://dojotoolkit.org/)
