@@ -35,11 +35,48 @@
 + 图片自适应 max-width:100%
 
 
-## layout
+## table(div)
+
++ `display:table`
 
 
+## float
++ `float:left|right|none|inherit`
++ 文字环绕，对已有流的影响
++ 设置float后，元素升级为block元素
++ 父元素设置为float后，会包含子float元素，子float元素高度，宽度不会超出
++ `clear:none|left|right|both` clear的某侧会不会出现浮动元素，clear只会影响添加的元素本身，不会影响其他元素
+
+```html
+<div style="float:left"/>
+<div style="float:left;clear:left"/> <!--第二行换行-->
+<div style="float:left"/>
+```
+
++ 高度塌陷，父元素如果没设置高度，则高度是由子元素内容撑开的，子元素如果float之后，脱离文档流，父元素的高度会坍塌，
+
+    解决：
+    - 父元素中添加`<div style="clear:both"></div>`作为最后一个子元素
+    - 父元素添加`overflow:hidden`,触发BFC
+    - 使用after伪元素
+    ```css
+    .clear:after{
+        display:block; content:''; clear:both; height:0; visibility:hidden;
+    }
+    ```
+
+## BFC
+
+## position
+
++ `position:static` 不能用z-index
++ `position:relative` 相对于元素原先在流的位置偏移
++ `position:absolute` 相对于最近的已定位(position非static)的祖先偏移，如果没有则相对于浏览器偏移，脱离流，流中的元素填补空缺
++ `position:fixed` 相对于浏览器窗口偏移
 
 ## Tips
 
 + `vertical-align:top` 只对inline,inline-block起作用，样式添加在元素上而不是容器上
 + `text-align:center`
++ `white-space:nowrap`
++ `display:inline`width,height,top,bottom无效，*-left/*-right有效
