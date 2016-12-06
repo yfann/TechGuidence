@@ -28,6 +28,8 @@
 + intermediateChanges
 + dojox/layout/GridContainer
 + dijit/layout/ContentPane   getChildren()/addChild()/removeChild()
++ startup()
++ [charting](http://dojotoolkit.org/documentation/tutorials/1.10/charting/index.html)
 
 ## H5
 
@@ -43,4 +45,3 @@
 
 + line-height
 + outline
-+ display:flex

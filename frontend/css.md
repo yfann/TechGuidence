@@ -64,6 +64,10 @@
         display:block; content:''; clear:both; height:0; visibility:hidden;
     }
     ```
++ 两边单元格高度同步，一边div高度变化时，另一边div高度也变化
+
+    margin-bottom: -1000px;
+    padding-bottom: 1000px;
 
 ## BFC
 
@@ -80,3 +84,14 @@
 + `text-align:center`
 + `white-space:nowrap`
 + `display:inline`width,height,top,bottom无效，*-left/*-right有效
++ `box-sizing:border-box`
+    可解决widht:100%后再设置border或padding时的益出问题。
+    - `box-sizing:content-box` element实际宽度=width(css中设置的宽度)+border+padding
+    - `box-sizing:padding-box` element实际宽度=width(css中设置的宽度)+border
+    - `box-sizing:border-box` element实际宽度=width(css中设置的宽度)
+
+
+
+## Ref
+
++ [w3chtml](http://www.w3chtml.com/css3/properties/user-interface/box-sizing.html)

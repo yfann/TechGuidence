@@ -37,7 +37,7 @@
 ```
 
 + empty() //clean node's children
-
++ toDom() //string to dom
 + positions:
 
     + before
