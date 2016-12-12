@@ -157,3 +157,4 @@ registry.toArray() //返回所有widgets
 ## ref
 
 + [setter/getter life cycle](http://dojotoolkit.org/reference-guide/1.10/quickstart/writingWidgets.html)
++ [Template-based widget](http://dojotoolkit.org/documentation/tutorials/1.10/templated/index.html)
