@@ -70,6 +70,15 @@ define([
     });
 });
 ```
+
+```html
+		<script type="text/javascript">
+			dojo.require("dojo.parser");
+        </script>
+
+```
+
+
 + declare()
 
 ```js
