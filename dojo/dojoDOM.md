@@ -190,3 +190,4 @@ query(".even").style("color", "white").addClass("italic");
 + [dojo/NodeList-data](http://dojotoolkit.org/reference-guide/1.10/dojo/NodeList-data.html#dojo-nodelist-data)
 + [dojo events](http://dojotoolkit.org/documentation/tutorials/1.10/events/)
 + [DOM Utilities](http://dojotoolkit.org/reference-guide/1.7/quickstart/dom.html#quickstart-dom)
++ [dojo.NodeList-traverse](https://dojotoolkit.org/reference-guide/1.10/dojo/NodeList-traverse.html)
