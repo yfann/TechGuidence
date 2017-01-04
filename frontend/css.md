@@ -89,7 +89,7 @@
     - `box-sizing:content-box` element实际宽度=width(css中设置的宽度)+border+padding
     - `box-sizing:padding-box` element实际宽度=width(css中设置的宽度)+border
     - `box-sizing:border-box` element实际宽度=width(css中设置的宽度)
-
++ `width:20%` 可以对document上的元素设置百分比，对离线dom设置完百分比再加回document时百分比会转换为pixel
 
 
 ## Ref
