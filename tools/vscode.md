@@ -1,8 +1,8 @@
-#VSCode
+# VSCode
 
-##快捷键
+## 快捷键
 
-###基本操作
+### 基本操作
 
 - Ctrl+B 开关sidebar
 - Ctrl+鼠标选中Explore中的文件 分屏显示(Ctrl+\ 当前分屏)
@@ -14,7 +14,7 @@
 - Ctrl(+Shift)+Tab 切换最近打开的文件
 - Ctrl+G 可以跳到输入的行号
  
-###高级操作
+### 高级操作
  
 - Ctrl+Shift+] 自动跳到匹配的花括号上
 - Alt+Click 多行光标(Ctrl+Alt+Down/UP)
@@ -30,17 +30,14 @@
 - F5 运行程序
 - Ctrl+C 命令行中断
 
-##代码操作
+## 代码操作
 
 + ctrl+K+C/ctrl+K+U //注释
-
 + shit+alt+a //批量注释
-
 + ctrl+shift+b //build
-
 + ctrl+shift+u //error message
 
-##特性
+## 特性
 
 - Working Files  
   sidebar中的section,显示活动的文件，类似其他编辑器中的Tabs
@@ -51,7 +48,7 @@
 - 命令行  
   VSCode打开当前目录，cmd：Code .  
 
-##Node.js的创建和调试
+## Node.js的创建和调试
 
 - 创建node程序  
   - 安装nodejs
@@ -77,13 +74,13 @@
   5. 本地项目路径下cmd:git push -u origin master     //提交代码到github
 
 
-##python
+## python
 
 + 删除pythonpaht on launch.json
 
-##插件开发
+## 插件开发
 
-###快捷键
+### 快捷键
 
 + `F1` 命令行
 + `F5` 运行
@@ -92,3 +89,9 @@
 [官网文档](https://code.visualstudio.com/Docs/editor/codebasics)  
 [hotkey](https://code.visualstudio.com/Docs/editor/keybindings)
 [add to github](http://michaelcrump.net/using-github-with-visualstudio-code/)
+
+
+## updated
+
++ `ctrl+Q` 各个视图面板的切换
++ `ctrl+K Z` 入道
