@@ -78,7 +78,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
 + `cat .git/config` 查看origin信息
 + `git config [--global] --list` 查看配置
-
++ `git config [--global] user.name '...'` user.email
 
 ***
 
