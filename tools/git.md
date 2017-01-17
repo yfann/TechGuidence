@@ -101,3 +101,4 @@ Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 ## Ref
 
 + [git config](http://www.cnblogs.com/wanqieddy/archive/2012/08/03/2621027.html)
++ [guidence](https://github.com/geeeeeeeeek/git-recipes/wiki)

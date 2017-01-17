@@ -92,17 +92,26 @@
 + `width:20%` 可以对document上的元素设置百分比，对离线dom设置完百分比再加回document时百分比会转换为pixel
 
 
-## 对齐
+## width & height
 
-###　水平居中
-+ inline  `text-align:center`
-+ block `margin-left:auto;margin-right:auto`
++ height:100%
 
-### [垂直居中](http://www.vanseodesign.com/css/vertical-centering/)
-+ container `line-height:200px` inline `vertical-align:middle`
-+ contianer `height:300px;display:flex;align-items:center;`
+```html
+<div class='position:relative;height:800px'>
+    <div style='position:absolute;height:100%'>
+    </div>
+</div>
+```
+
++ 水平居中
+    - inline  `text-align:center`
+    - block `margin-left:auto;margin-right:auto`
++ [垂直居中](http://www.vanseodesign.com/css/vertical-centering/)
+    - containe `line-height:200px` inline `vertical-align:middle`
+    - contianer `height:300px;display:flex;align-items:center;`
 
 ## Ref
 
 + [box-sizing](http://www.w3chtml.com/css3/properties/user-interface/box-sizing.html)
 + [垂直居中6法](http://vanseodesign.com/css/vertical-centering/)
++ [flex](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
