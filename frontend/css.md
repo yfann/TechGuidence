@@ -104,14 +104,111 @@
 ```
 
 + 水平居中
-    - inline  `text-align:center`
-    - block `margin-left:auto;margin-right:auto`
-+ [垂直居中](http://www.vanseodesign.com/css/vertical-centering/)
-    - containe `line-height:200px` inline `vertical-align:middle`
-    - contianer `height:300px;display:flex;align-items:center;`
+    - 父容器block,子元素inline
+```css
+.center-children {
+  text-align: center;
+}
+```
+    - block元素居中(无法用float居中)
+```css
+.center-me {
+  margin: 0 auto;
+}
+```
+    - 多个元素居中用flex
+
++ 垂直居中(须设有height)
+    - inline元素居中(单行或多行)
+```css
+<!--使用padding-->
+
+.link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+<!--设置行高等于高度-->
+
+.center-text-trick {
+  height: 100px;
+  line-height: 100px;
+  white-space: nowrap;
+}
+
+<!--使用vertical-align-->
+
+.center-table {
+  display: table;
+  height: 250px;
+}
+.center-table p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+<!--使用flex-->
+
+.flex-center-vertically {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+
+<!--使用伪元素-->
+.ghost-center {
+  position: relative;
+}
+.ghost-center::before {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  width: 1%;
+  vertical-align: middle;
+}
+.ghost-center p {
+  display: inline-block;
+  vertical-align: middle;
+}
+```
+   - block元素居中
+
+```css
+<!--子元素高度确定-->
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: -50px; /* account for padding and border if not using box-sizing: border-box; */
+}
+
+<!--子元素高度未知-->
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+<!--flex-->
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+```
 
 ## Ref
 
 + [box-sizing](http://www.w3chtml.com/css3/properties/user-interface/box-sizing.html)
 + [垂直居中6法](http://vanseodesign.com/css/vertical-centering/)
 + [flex](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
++ [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
++ [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
