@@ -1,6 +1,6 @@
-#Git
+# Git
 
-##CMD
+## CMD
 
 3. git clone <repository>
 
@@ -14,7 +14,7 @@
 
 7. git branch/checkout/merge/delete   //branch
 
-##Basic CMD
+## Basic CMD
 
 checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
@@ -58,7 +58,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git config --system core.longpaths true`   fix File name too long issue
 
 
-##Branch
+## Branch
 
 + `git branch -a` 查看所有分支
 + `git branch [branchName]` 创建分支
@@ -82,7 +82,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
 ***
 
-##Work Flow
+## Work Flow
 
 git之间都是独立的仓库，pull/push用于仓库间协作
 
@@ -90,7 +90,7 @@ git之间都是独立的仓库，pull/push用于仓库间协作
 
 Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 
-##Tools
+## Tools
 
 + gitolite //permission for login
 + gerrit 
