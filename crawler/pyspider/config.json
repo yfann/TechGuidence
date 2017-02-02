@@ -1,0 +1,11 @@
+{
+  "taskdb": "mongodb+taskdb://super:super@127.0.0.1:27017/pyspider_taskdb",
+  "projectdb": "mongodb+projectdb://super:super@127.0.0.1:27017/pyspider_projectdb",
+  "resultdb": "mongodb+resultdb://super:super@127.0.0.1:27017/pyspider_resultdb",
+  "message_queue": "redis://127.0.0.1:6379/db",
+  "webui": {
+    "username": "xxx",
+    "password": "xxxxxx",
+    "need-auth": true
+  }
+}
