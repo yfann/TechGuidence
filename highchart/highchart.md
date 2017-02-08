@@ -15,14 +15,14 @@
 	display: none;
 }
 ```
+## properties
+
++  colorByPoint  //default true to pie, default false to bar
 
 ## topic
 
 + responsive charts
 
-## blackhole
-
-+ highcharts超过container大小或styled mode下有些样式显示不全，可以通过setTimeout解决
 
 ## ref
 

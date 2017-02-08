@@ -12,18 +12,13 @@ Packages: [pypi](https://pypi.python.org/pypi)
 管理工具:
 
 + [pip](http://pypi.python.org/pypi/pip#downloads)
-
     `pip install [libname]`
 
 + [easy installer](http://pypi.python.org/pypi/setuptools)
-
     `easy_install [libname]`
 
-
 + [wheel](http://pythonwheels.com/)
-
     `pip install *.whl`
-
 
 ## tips
 
@@ -43,7 +38,6 @@ sys.path.append(new_path)
 
 ```py
 import dis
-
 def myfunc(alist):
     return len(alist)
 
@@ -53,8 +47,11 @@ dis.dis(myfunc)
 + [Encoding](https://docs.python.org/3/howto/unicode.html) A Unicode string is a sequence of code points(0x12ca). 
 The rules for translating a Unicode string into a sequence of bytes in memary are called an encoding
 
-```
+```py
 "你好".decode('utf-8').encode('utf-8')
+
+str1 = '\u4f60\u597d'
+print str1.decode('unicode_escape') 
 ```
 
 

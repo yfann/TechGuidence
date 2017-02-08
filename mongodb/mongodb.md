@@ -34,15 +34,26 @@
 + db.[collection].update(obj1,obj2)        //obj1 更新条件 obj2 要替换的文档
 + db.[collection].remove(obj)        //obj 删除条件    db.[collection].remove({}) 删除所有
 
+## 
+
 ## auth
 
-+ `use admin`
-+ `db.createUser({"user":"super","pwd":"super","roles":["root"]})` 
++ `mongod --auth` 数据库开启权限认证
++ `db.addUser(“root”, “root”)`admin中的用户可以访问所有数据库，也可为每个数据库建立权限认证
++ root用户有最高权限
+```js
+use admin
+db.createUser({"user":"super","pwd":"super","roles":["root"]})
 
-## install wondows service for mongo
+use admin
+db.auth("super","super")
+```
+
+
+## install windows service for mongo
 
 + `"C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe" --auth --logpath "C:\Data\logs\mongodb.log" --logappend --dbpath "C:\Data\db" --serviceName "MongoDB Service" --serviceDisplayName "MongoDB Service" --install`
-+ `mongo --port 27017 -u "myUserAdmin" -p "abc123" --authenticationDatabase "admin"`
++ `mongo --port 27017 -u "myUserAdmin" -p "abc123" --authenticationDatabase "admin"` 
 
 ## [connection string url format](https://docs.mongodb.com/manual/reference/connection-string/)	
 
