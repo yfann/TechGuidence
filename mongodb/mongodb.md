@@ -39,7 +39,7 @@
 ## auth
 
 + `mongod --auth` 数据库开启权限认证
-+ `db.addUser(“root”, “root”)`admin中的用户可以访问所有数据库，也可为每个数据库建立权限认证
++ admin中的用户可以访问所有数据库，也可为每个数据库建立权限认证(选择数据库，创建用户)
 + root用户有最高权限
 ```js
 use admin
@@ -48,18 +48,16 @@ db.createUser({"user":"super","pwd":"super","roles":["root"]})
 use admin
 db.auth("super","super")
 ```
++ `mongo -u "myUserAdmin" -p "abc123" --authenticationDatabase "admin"` client端认证
++ connectionstring认证 mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]
+
+        [database]是用于认证的数据库，如果没有则[username:password@]会向admin认证
+
 
 
 ## install windows service for mongo
 
 + `"C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe" --auth --logpath "C:\Data\logs\mongodb.log" --logappend --dbpath "C:\Data\db" --serviceName "MongoDB Service" --serviceDisplayName "MongoDB Service" --install`
-+ `mongo --port 27017 -u "myUserAdmin" -p "abc123" --authenticationDatabase "admin"` 
-
-## [connection string url format](https://docs.mongodb.com/manual/reference/connection-string/)	
-
-mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]
-
-+ database是用于认证的数据库，如果没有则username:password@会向admin认证
 
 ## tools
 
@@ -70,6 +68,7 @@ mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][
 + [mongo restful](https://docs.mongodb.org/ecosystem/tools/http-interfaces/)
 + [tutorialspoint](http://www.tutorialspoint.com/mongodb/mongodb_drop_database.htm)
 + [createuser](https://docs.mongodb.com/manual/reference/command/createUser/)
++ [connection string url format](https://docs.mongodb.com/manual/reference/connection-string/)	
 
 
 
