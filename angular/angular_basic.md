@@ -1,7 +1,7 @@
-#Anuglar
+# Anuglar
 
 
-##概念
+## 概念
 
 + module [#](https://docs.angularjs.org/api/ng/type/angular.Module)
    
@@ -53,7 +53,7 @@
 
     - angular.fromJson/angular.toJson
 
-##$provide
+## $provide
 
 + provider, value, constant, service, factory 都是provider.
 + provider通过$get来注入单例.
@@ -105,17 +105,17 @@
         });
 
 
-##$injector
+## $injector
 
 
 
-##$resource[#](https://docs.angularjs.org/api/ngResource/service/$resource)
+## $resource[#](https://docs.angularjs.org/api/ngResource/service/$resource)
 
-###引用
+### 引用
 引入angular-resource.js文件
 angular.module('app',['ngResource']);
 
-###API 
+### API 
 $resource(url, [paramDefaults], [actions], options);
 
     url  // /api/entries/:id

@@ -44,14 +44,37 @@ def myfunc(alist):
 dis.dis(myfunc)
 ```
 
-+ [Encoding](https://docs.python.org/3/howto/unicode.html) A Unicode string is a sequence of code points(0x12ca). 
-The rules for translating a Unicode string into a sequence of bytes in memary are called an encoding
+## encode/decode
 
+```
+# str  -> decode('the_coding_of_str') -> unicode
+# unicode -> encode('the_coding_you_want') -> str
+# 只对unicode使用encode
+
+#unicode可以作为中间码
+#s是code_A的str
+#s.decode('code_A').encode('code_B')
+#str(code_A)->unicode->str(code_B)
+```
+例子：
 ```py
-"你好".decode('utf-8').encode('utf-8')
+ustr=u"\u8c46\u74e3\u7535\u5f71\u6392\u884c\u699c".encode('utf-8')
+print ustr
 
-str1 = '\u4f60\u597d'
-print str1.decode('unicode_escape') 
+print type('中文')
+# <type 'str'>
+print type(u'中文')
+# <type 'unicode'>
+
+
+isinstance(u'中文', unicode)
+# True
+isinstance('中文', unicode)
+# False
+isinstance(u'中文', str)
+# False
+isinstance('中文', str)
+# True
 ```
 
 
@@ -76,3 +99,9 @@ solution2:
 # except UnicodeEncodeError:
 #     pass
 ```
+
+
+##　ref
+
++ [tutorialspoint](http://www.tutorialspoint.com/python/string_decode.htm)
++ [python编码](http://wklken.me/posts/2013/08/31/python-extra-coding-intro.html)
