@@ -76,6 +76,20 @@ isinstance(u'中文', str)
 isinstance('中文', str)
 # True
 ```
++ python内部都为unicode编码
+
++ decode(外部编码转换为内部unicode) encode(内部unicode转换为外部其他编码)
+
++ 乱码是因为输出的外部编码和IDE或控制台的编码不一致
+
+```py
+print u'中文'.encode('gbk')
+print u'中文'.encode('utf-8')
+```
++ python源代码为ASCII,要修改编码需在头部声明
+```py
+#coding=utf-8
+```
 
 
 ## Trouble Shooting
