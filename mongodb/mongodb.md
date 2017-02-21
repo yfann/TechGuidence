@@ -34,6 +34,7 @@
 + db.[collection].update(obj1,obj2)        //obj1 更新条件 obj2 要替换的文档
 + db.[collection].remove(obj)        //obj 删除条件    db.[collection].remove({}) 删除所有
 
+
 ## auth
 
 + `mongod --auth` 数据库开启权限认证
@@ -69,7 +70,7 @@ db.auth("super","super")
 + [connection string url format](https://docs.mongodb.com/manual/reference/connection-string/)	
 + [mongodb聚合](http://www.runoob.com/mongodb/mongodb-aggregate.html)
 + [mongodb aggregation](https://docs.mongodb.com/manual/aggregation/)
-+ [mongodb aggregation quick reference](https://docs.mongodb.com/manual/meta/aggregation-quick-reference/)
+
 
 
 
