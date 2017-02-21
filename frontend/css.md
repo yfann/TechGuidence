@@ -205,6 +205,11 @@
 }
 ```
 
+## props list
+
++ box-shadow
++ box-sizing
+
 ## Ref
 
 + [box-sizing](http://www.w3chtml.com/css3/properties/user-interface/box-sizing.html)
