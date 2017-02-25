@@ -15,6 +15,10 @@
 	display: none;
 }
 ```
+
++ setData will call redraw
+
+
 ## properties
 
 +  colorByPoint  //default true to pie, default false to bar
