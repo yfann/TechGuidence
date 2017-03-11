@@ -4,15 +4,10 @@
 ## install
 
 + python2.7
-
 + `pip install wheel`
-
 + `pip install lxml-3.4.4-cp27-none-win32.whl`   download [lxml](https://pypi.python.org/pypi/lxml/3.4.4)  cp27:cpython2.7
-
 + `pip install pyspider`
-
 + `pip install --allow-all-external pyspider[all]` 会安装pymongo, redis等python库
-
 + [phantomjs](http://phantomjs.org/download.html),配置bin到环境变量
 
 ## Cmd
@@ -30,7 +25,6 @@
  self.crawl(each.attr.href, callback=self.detail_page,validate_cert=False,fetch_type='js')
 ```
 + request会放入队列中，自动去重重试，相同的taskid(相同的url)会被去重
-
 + [ResultWorker](http://docs.pyspider.org/en/latest/Working-with-Results/)
 
 ## Trouble shooting
@@ -58,10 +52,7 @@ pyspider只支持32位python，用于64位python时会异常
 ## Ref
 
 + [offical](http://docs.pyspider.org/en/latest/)
-
 + [pyquery](https://pythonhosted.org/pyquery/)
-
 + [pyspider 案例](http://cuiqingcai.com/2652.html)
-
 + [mongodb config](http://docs.pyspider.org/en/latest/Command-Line/#command-line)
 
