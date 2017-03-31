@@ -35,11 +35,6 @@
 + 图片自适应 max-width:100%
 
 
-## table(div)
-
-+ `display:table`
-
-
 ## float
 + `float:left|right|none|inherit`
 + 文字环绕，对已有流的影响
@@ -69,7 +64,7 @@
     margin-bottom: -1000px;
     padding-bottom: 1000px;
 
-## BFC
+## BFC/IFC(block format context/inline format context)
 
 ## position
 
@@ -77,6 +72,17 @@
 + `position:relative` 相对于元素原先在流的位置偏移
 + `position:absolute` 相对于最近的已定位(position非static)的祖先偏移，如果没有则相对于浏览器偏移，脱离流，流中的元素填补空缺
 + `position:fixed` 相对于浏览器窗口偏移
+
+## line-height && vertical-align
+
++ 文本元素是匿名内联元素
++ `font-size:100px` 文字因字体不同而大小不同,会影响content-area(background作用的范围)
++ line-box是由它所有子元素的高度（不是子元素的content-area高度）计算得出的，即line-height
++ line-height不是baseline间的距离
++ content-area处于line-height中间
++ inline 元素 height:auto 时，height==line-height,content-area==line-height
+
+
 
 ## Tips
 
@@ -219,3 +225,4 @@
 + [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
 + [CSS的垂直居中和水平居](https://zhuanlan.zhihu.com/p/24070633)
 + [CSS Transforms](https://drafts.csswg.org/css-transforms/)
++ [CSS font](https://zhuanlan.zhihu.com/p/25808995)

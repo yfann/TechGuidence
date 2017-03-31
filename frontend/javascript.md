@@ -26,6 +26,7 @@
 + input事件对contenteditable起作用
 + `{[id]:''}`  变量值做属性
 + `JSON.parse(JSON.stringify(obj))` clone
++ `'abc'.split('')`  `['a','b','c'].join('')`
 
 ## javascript[内存优化]((http://lifemap.in/javascript-memory-optimize/))
 
