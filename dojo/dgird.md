@@ -14,3 +14,4 @@
 + [Using Grids and Stores](http://dgrid.io/tutorials/1.0/grids_and_stores/)
 + [Rendering All Store Data at Once](http://dgrid.io/tutorials/1.0/single_query/)
 + [farOffRemoval](http://dgrid.io/tutorials/1.0/grids_and_stores/demo/OnDemandGrid-comparison.html)
++ [dgrid/List](https://github.com/SitePen/dgrid/blob/v1.1.0/doc/components/core-components/List.md)
