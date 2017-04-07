@@ -95,3 +95,10 @@
 
 + `ctrl+Q` 各个视图面板的切换
 + `ctrl+K Z` 入道
+
+
+## features
+
++ `"editor.minimap.enabled":true`
++ `"editor.dragAndDrop":true`
++ `"editor.wordWrap":"on"`  //on off wordWrapColumn bounded
