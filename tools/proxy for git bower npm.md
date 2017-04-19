@@ -1,12 +1,14 @@
 ## Git
 
 `git config --global http.proxy http://xxxxxx`
-`git config [--global] --list`
+`git config --global --list`
 
 ```js
 //.gitconfig
 [http]
    proxy = http://165.225.96.34:10015
+[credential]        
+    helper = store 
 ```
 
 ## NPM

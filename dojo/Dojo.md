@@ -124,3 +124,4 @@ define(["dojo/dom", "dojo/domReady!"], function(dom){
 + [Advanced AMD](https://dojotoolkit.org/documentation/tutorials/1.10/modules_advanced/)
 + [Dojo loader](https://dojotoolkit.org/reference-guide/1.10/loader/)
 + [parser](https://dojotoolkit.org/reference-guide/1.10/dojo/parser.html)
++ [dojox.json.query](https://dojotoolkit.org/reference-guide/1.10/dojox/json/query.html#dojox-json-query)
