@@ -6,7 +6,7 @@
 
 ## start project
 + `scrapy startproject <project name>`
-+ `scrapy genspider <spidername> <url>`
++ `scrapy genspider <spidername> <url>` *新建爬虫*
 + `settings.py` update `ROBOTSTXT_OBEY = False` *是否遵循爬虫规则*
 + `settings.py` add `DEFAULT_REQUEST_HEADERS` `user-agent` *伪装浏览器*
 
@@ -27,6 +27,7 @@
 + 自动过滤重复请求`DUPEFILTER_CLASS`
 + yield request ??
 + yield item ??
++ `scrapy.cfg`所在的目录为根目录
 
 ## 存储
 + json file *append后就不能用了*
@@ -36,3 +37,4 @@
 + [scrapy](https://scrapy.org/)
 + [scrapy and mongodb](https://realpython.com/blog/python/web-scraping-with-scrapy-and-mongodb/)
 + [depends](https://doc.scrapy.org/en/latest/intro/install.html)
++ [commands](https://docs.scrapy.org/en/latest/topics/commands.html#topics-commands-ref)
