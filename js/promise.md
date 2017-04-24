@@ -169,4 +169,5 @@
 
 ##[Ref]
 
-+ [深入理解Promise实现细节](https://segmentfault.com/a/1190000002591145)     
++ [深入理解Promise实现细节](https://segmentfault.com/a/1190000002591145)  
++ [deferred](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)   

@@ -129,6 +129,7 @@ reload(sys)
 sys.setdefaultencoding('gbk')
 ```
 + No module named 'win32api'
+pip install pypiwin32
 
 ## Ref
 
