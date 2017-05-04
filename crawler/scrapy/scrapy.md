@@ -12,7 +12,7 @@
 
 ## cmd
 + `scrapy startproject <project name>`
-+ `scrapy crawl <spider name> [-o <output.json>] [-a <paramName>=<param>]`  *-a 传参 self.<paramName>*
++ `scrapy crawl <spider name> [-o <output.json>] [-a <paramName>=<param>]`  *-a 传参 self.paramName*
 + `scrapy runspider <spider.py> [-o <output.json>]`
 + `scrapy shell "<url>"` *test for extracting data*
 
