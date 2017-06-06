@@ -11,11 +11,12 @@
 
 + `var element=document.elementFromPoint(x,y)` 返回坐标位置最顶层元素
 + `window.getSelection()` [#](https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection)
++ `getComputedStyle(element,pseudo)` *只读*   `element.style` *读写，只能获取style中的css*
+
 
 ## ES6
 
 + `Object.assign({},{id:11})`
-
 + `Object.keys({a:1,b:2,c:3})` return ["a","b","c"]
 
 ## Tips

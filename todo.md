@@ -36,9 +36,9 @@
 + Indexed DB
 + div table
 
-## Unknow
+## new tech
++ jsDOC
 
-+ JSON.query
 
 
 ## css
