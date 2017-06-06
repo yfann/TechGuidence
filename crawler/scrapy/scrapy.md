@@ -1,6 +1,6 @@
 ## setup
 + install python3
-+ `pip3 install scrapy` need [visual c++]
++ `pip3 install scrapy` need [visual c++](http://landinghub.visualstudio.com/visual-cpp-build-tools)
 + `pip3 install pypiwin32`
 + `pip3 install pymongo`
 
@@ -28,6 +28,9 @@
 + yield request ??
 + yield item ??
 + `scrapy.cfg`所在的目录为根目录
+
+## debug
++ self.logger.info()
 
 ## 存储
 + json file *append后就不能用了*
