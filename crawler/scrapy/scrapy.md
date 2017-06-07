@@ -31,6 +31,7 @@
 
 ## debug
 + self.logger.info()
++ `scrapy shell -s USER_AGENT='xxx' <url>`
 
 ## 存储
 + json file *append后就不能用了*
