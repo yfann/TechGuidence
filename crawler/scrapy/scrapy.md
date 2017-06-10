@@ -29,6 +29,15 @@
 + yield item ??
 + `scrapy.cfg`所在的目录为根目录
 
+## [selector](https://docs.scrapy.org/en/latest/topics/selectors.html)
++ xpath()
++ css()
++ re()
+
++ extract()
++ extract_first()
+
+
 ## debug
 + self.logger.info()
 + `scrapy shell -s USER_AGENT='xxx' <url>`
