@@ -38,6 +38,7 @@
 + extract_first()
 
 
+
 ## debug
 + self.logger.info()
 + `scrapy shell -s USER_AGENT='xxx' <url>`
@@ -51,3 +52,5 @@
 + [scrapy and mongodb](https://realpython.com/blog/python/web-scraping-with-scrapy-and-mongodb/)
 + [depends](https://doc.scrapy.org/en/latest/intro/install.html)
 + [commands](https://docs.scrapy.org/en/latest/topics/commands.html#topics-commands-ref)
++ [ban](https://doc.scrapy.org/en/latest/topics/practices.html#bans)
++ [防ban](http://blog.csdn.net/u012150179/article/details/35774323)
