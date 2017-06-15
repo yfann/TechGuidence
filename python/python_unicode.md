@@ -4,7 +4,7 @@
 + python2中包含unicode str和非unicode str
 + python3中只有unicode str
 
-## encode/decode
+## encode/decode(python2)
 
 >str和uniocde都是basestring的子类. `'中文'` str   `u'中文'` unicode
 ```py
@@ -51,13 +51,10 @@ isinstance('中文', str)
 ```py
 print u'中文'.encode('gbk')
 print u'中文'.encode('utf-8')
-```
-+ python源代码为ASCII,要修改编码需在头部声明
-```py
-#coding=utf-8
-```
 
-
+# if type(text) is bytes
+text.decode('unicode_escape')
+```
 
 ## encode/decode
 
