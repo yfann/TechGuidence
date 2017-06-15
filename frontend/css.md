@@ -98,6 +98,10 @@
 + `width:20%` 可以对document上的元素设置百分比，对离线dom设置完百分比再加回document时百分比会转换为pixel
 
 
+## z-index
++ 只能作用于`position:relative/absolute/fixed`
++ 只能同级比较，父级之外要父级之间比较
+
 ## width & height
 
 + height:100%
