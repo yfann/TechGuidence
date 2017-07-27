@@ -54,3 +54,4 @@
 + [commands](https://docs.scrapy.org/en/latest/topics/commands.html#topics-commands-ref)
 + [ban](https://doc.scrapy.org/en/latest/topics/practices.html#bans)
 + [防ban](http://blog.csdn.net/u012150179/article/details/35774323)
++ [Using TOR and Multiple Agents](http://pkmishra.github.io/blog/2013/03/18/how-to-run-scrapy-with-TOR-and-multiple-browser-agents-part-1-mac/)
