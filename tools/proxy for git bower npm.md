@@ -18,6 +18,9 @@
 
 ```js
 //.npmrc
+//proxy=http://165.225.96.34:10015/
+//registry=https://registry.npmjs.org/
+//registry=https://registry.npm.taobao.org/
 ```
 
 ## bowerrc
