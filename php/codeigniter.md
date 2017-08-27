@@ -12,7 +12,7 @@
  ...
 </COntext>
 ```
-+ tomcat webapps\root\web-inf\web.xml (<web-app>下)中添加
++ tomcat webapps\root\web-inf\web.xml (<web-app>下)中添加,注意替换其中的引用路径
 ```
 <servlet>  
     <servlet-name>php</servlet-name>  
