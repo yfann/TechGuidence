@@ -308,6 +308,9 @@ ReactDOM.render(
 + open-browser-webpack-plugin会影响hot module replacement
 + 要设置publicPath,否则自动刷新后内容不变
 
+## webpack-dev-server
++ bundle to memory(url/webpack-dev-server 查看内存文件列表)
+
 # 代码分割
 
 + CommonsChunkPlugin
