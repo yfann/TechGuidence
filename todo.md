@@ -44,8 +44,11 @@
 ## css
 
 + line-height
+  - [segmentfault](https://segmentfault.com/a/1190000003038583)
+  - [行高](http://www.zhangxinxu.com/wordpress/2009/11/css%E8%A1%8C%E9%AB%98line-height%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%8F%8A%E5%BA%94%E7%94%A8/)
 + outline
 + transform
++ [collapsing margins](https://www.w3.org/TR/CSS2/box.html#collapsing-margins)
 
 
 ## python
