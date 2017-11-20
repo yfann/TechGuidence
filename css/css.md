@@ -48,17 +48,6 @@
 <div style="float:left"/>
 ```
 
-+ 高度塌陷，父元素如果没设置高度，则高度是由子元素内容撑开的，子元素如果float之后，脱离文档流，父元素的高度会坍塌，
-
-    解决：
-    - 父元素中添加`<div style="clear:both"></div>`作为最后一个子元素
-    - 父元素添加`overflow:hidden`,触发BFC
-    - 使用after伪元素
-    ```css
-    .clear:after{
-        display:block; content:''; clear:both; height:0; visibility:hidden;
-    }
-    ```
 + 两边单元格高度同步，一边div高度变化时，另一边div高度也变化
 
     margin-bottom: -1000px;
