@@ -14,3 +14,7 @@
       1. 父盒子设border
       2. 父盒子设overflow:hidden
       3. 父盒子设padding        
+
++ width:100%后margin-right失效
+  解决：
+       去掉width:100%
