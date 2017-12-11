@@ -1,5 +1,9 @@
 # Angular
 
++ [(ngModel)]
+    - 需要导入FormsModule
+    - 只支持实现了ControlValueAccessor的元素
+
 ## ecosystem
 + [angular china](https://angular.cn/guide/quickstart)
 + [Angular CLI](https://cli.angular.io/)
