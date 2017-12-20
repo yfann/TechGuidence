@@ -96,7 +96,19 @@ Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 + gerrit 
 + Git Bash 
 + gitextension
-+ 
+
+
+## issue
+
++ git merge
+
+```
+press "i"
+write your merge message
+press "esc"
+write ":wq"
+then press enter
+```
 
 ## Ref
 
