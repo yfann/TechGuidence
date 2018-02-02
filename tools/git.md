@@ -114,3 +114,5 @@ then press enter
 
 + [git config](http://www.cnblogs.com/wanqieddy/archive/2012/08/03/2621027.html)
 + [guidence](https://github.com/geeeeeeeeek/git-recipes/wiki)
++ [csdn](http://blog.csdn.net/codectq/article/details/50777934)
++ [revert merge](http://blog.csdn.net/hongchangfirst/article/details/49472913)
