@@ -127,4 +127,7 @@ $resource(url, [paramDefaults], [actions], options);
 + [angular学习笔记](http://www.cnblogs.com/liulangmao/tag/angular/default.html?page=4)
 + [AngularJS学习笔记](https://www.zouyesheng.com/angular.html)
 + [angular 1.x doc](http://devdocs.io/angularjs~1.5/api/ng/function/angular.foreach)
-+ [official angular](https://code.angularjs.org/1.3.20/docs/api/ng/service/$document) 
++ [official angular](https://code.angularjs.org/1.3.20/docs/api/ng/service/$document)
++ [compile link](http://www.cnblogs.com/liulangmao/p/3980256.html) 
++ [scope](http://www.cnblogs.com/liulangmao/p/3990720.html)
++ [angular的五种服务](http://www.cnblogs.com/liulangmao/p/4078246.html)

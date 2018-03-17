@@ -42,3 +42,7 @@ Content-Type:
 
 + referer  //告诉服务器访问过的上一个网页，可用于防盗链
 
+
+## ref
+
++ [content type](http://www.cnblogs.com/liulangmao/p/3889568.html)
