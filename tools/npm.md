@@ -5,10 +5,10 @@
 + npm init [-f]
   create package.json
  
-+ npm i [xxx] --save  
++ `npm i <package@version> --save`  
   save dependencies to package.json
   
-+ npm i [xxx] --save-dev 
++ `npm i <package@version> --save-dev` 
   save devDependencies to package.json
 
 + npm install  
@@ -16,6 +16,8 @@
   
 + npm install --production
   install dependencies in package.json except devDependencies
+
++ `npm uninstall <package> --save`
 
 + `npm info <package> [version]` 查看发布的包
 
