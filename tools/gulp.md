@@ -87,13 +87,7 @@ By default tasks run with maximum concurrency. Dependency means it depends on co
             console.log('watched event '+ event.type + ' for '+ event.path);
         })
 + pipe().on('error',function(error){...})
-    
-
-    
-##Plugins
-[gulpjs](http://gulpjs.com/plugins/)
-[npmjs](https://www.npmjs.com/)
-
+  
 
 ###Code Analysis
 
@@ -166,4 +160,6 @@ By default tasks run with maximum concurrency. Dependency means it depends on co
 + `browserify tsify vinyl-source-stream` compile ts to js for browser side. browserify is based on normal stream,need node_modules includes corresponding libs
 
 
-
+## ref
+[gulpjs](http://gulpjs.com/plugins/)
+[npmjs](https://www.npmjs.com/)
