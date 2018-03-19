@@ -140,3 +140,9 @@ $resource(url, [paramDefaults], [actions], options);
 + [angular的五种服务](http://www.cnblogs.com/liulangmao/p/4078246.html)
 + [表单验证](http://www.cnblogs.com/liulangmao/p/4118868.html)
 + [ngModelController](http://www.cnblogs.com/liulangmao/p/4110137.html)
+
+## UI
+
++ [angular UI](https://github.com/angular-ui)
++ [10 Best AngularJS Frameworks](https://codegeekz.com/10-best-angularjs-frameworks/)
++ [angular UI bootstrap](https://www.npmjs.com/package/angular-ui-bootstrap)
