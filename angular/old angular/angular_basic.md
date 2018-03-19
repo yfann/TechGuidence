@@ -146,3 +146,12 @@ $resource(url, [paramDefaults], [actions], options);
 + [angular UI](https://github.com/angular-ui)
 + [10 Best AngularJS Frameworks](https://codegeekz.com/10-best-angularjs-frameworks/)
 + [angular UI bootstrap](https://www.npmjs.com/package/angular-ui-bootstrap)
+
+## demos
+
++ [ng-admin](https://github.com/marmelab/ng-admin)
++ [angularjs+bootstrap](https://www.cnblogs.com/fenghun/articles/5522964.html)
++ [Minovate](https://themeforest.net/item/minovate-angular-admin-dashboard/10068009)
++ [angulr](http://www.bootstrapstage.com/angulr-bootstrap-admin-web-app-with-angularjs/)
++ [BlurAdmin](https://akveo.github.io/blur-admin/)
++ [16个良好的 Bootstrap Angularjs 管理后台主题](https://www.cnblogs.com/yujinbin/p/5200762.html)
