@@ -107,29 +107,17 @@
 
 ## $injector
 
-
-
-## $resource[#](https://docs.angularjs.org/api/ngResource/service/$resource)
-
-### 引用
-引入angular-resource.js文件
-angular.module('app',['ngResource']);
-
-### API 
-$resource(url, [paramDefaults], [actions], options);
-
-    url  // /api/entries/:id
-    paramDefaults //
-
 ## tips
 
 + ng-model-options 
     *双向绑定使用了ng-model-options时,UI会根据特定条件同步到model,UI的值和model的值会存在不一致的时刻*
 + $rollbackViewValue() 
     *model中的值同步到UI*
++ module.config()
+    *可以传入provider,constant,实例化之前配置*
+
 
 ## ref
-
 + [angular中文社区](http://angularjs.cn/tag/AngularJS)
 + [angular学习笔记](http://www.cnblogs.com/liulangmao/tag/angular/default.html?page=4)
 + [AngularJS学习笔记](https://www.zouyesheng.com/angular.html)
@@ -140,15 +128,19 @@ $resource(url, [paramDefaults], [actions], options);
 + [angular的五种服务](http://www.cnblogs.com/liulangmao/p/4078246.html)
 + [表单验证](http://www.cnblogs.com/liulangmao/p/4118868.html)
 + [ngModelController](http://www.cnblogs.com/liulangmao/p/4110137.html)
++ [$resource](https://docs.angularjs.org/api/ngResource/service/$resource)
++ [依赖注入](http://www.html-js.com/article/Understand-the-dependency-injection-in-AngularJS-with-Angular-development-web-application)
+
+## plugin
++ [oclazyload](https://oclazyload.readme.io/docs)
++ [uiRouter](http://bubkoo.com/2014/01/01/angular/ui-router/guide/state-manager/)
 
 ## UI
-
 + [angular UI](https://github.com/angular-ui)
 + [10 Best AngularJS Frameworks](https://codegeekz.com/10-best-angularjs-frameworks/)
 + [angular UI bootstrap](https://www.npmjs.com/package/angular-ui-bootstrap)
 
 ## demos
-
 + [ng-admin](https://github.com/marmelab/ng-admin)
 + [angularjs+bootstrap](https://www.cnblogs.com/fenghun/articles/5522964.html)
 + [Minovate](https://themeforest.net/item/minovate-angular-admin-dashboard/10068009)
