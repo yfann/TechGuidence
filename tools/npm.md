@@ -18,10 +18,9 @@
   install dependencies in package.json except devDependencies
 
 + `npm uninstall <package> --save`
-
 + `npm info <package> [version]` 查看发布的包
-
 + `npm list [-g] --depth 0`  查看安装的包，除去-g查看local
++ `npm view <package> versions`
 
 ## config
 
