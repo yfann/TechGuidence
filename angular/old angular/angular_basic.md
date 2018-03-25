@@ -115,7 +115,7 @@
     *model中的值同步到UI*
 + module.config()
     *可以传入provider,constant,实例化之前配置*
-
++ lazyload时会自动引入modul
 
 ## ref
 + [angular中文社区](http://angularjs.cn/tag/AngularJS)
@@ -139,6 +139,10 @@
 + [angular UI](https://github.com/angular-ui)
 + [10 Best AngularJS Frameworks](https://codegeekz.com/10-best-angularjs-frameworks/)
 + [angular UI bootstrap](https://www.npmjs.com/package/angular-ui-bootstrap)
+
+## grid
+
++ [ui-grid](http://ui-grid.info/)
 
 ## demos
 + [ng-admin](https://github.com/marmelab/ng-admin)
