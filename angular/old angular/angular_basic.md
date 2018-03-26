@@ -142,7 +142,7 @@
 
 ## grid
 
-+ [ui-grid](http://ui-grid.info/)
++ [ui-grid](http://ui-grid.info/)   [#](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
 
 ## demos
 + [ng-admin](https://github.com/marmelab/ng-admin)
