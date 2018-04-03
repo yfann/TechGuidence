@@ -19,3 +19,4 @@
 + [python 学习资料](https://zhuanlan.zhihu.com/p/22333205?refer=it1024)
 + [python 模块](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013868200196665403ac40fac14536939dd5af20810782000)
 + [python 模块2](http://www.cnblogs.com/feixuelove1009/p/5562856.html)
++ [kite](https://kite.com/)
