@@ -37,8 +37,8 @@
 
 ## float
 + `float:left|right|none|inherit`
-+ 文字环绕，对已有流的影响
 + 设置float后，元素升级为block元素
++ 相邻元素是block则无视浮动元素（被浮动元素覆盖），相邻元素是inline则环绕浮动元素（文字环绕）
 + 父元素设置为float后，会包含子float元素，子float元素高度，宽度不会超出
 + `clear:none|left|right|both` clear的某侧会不会出现浮动元素，clear只会影响添加的元素本身，不会影响其他元素
 
@@ -54,6 +54,16 @@
     padding-bottom: 1000px;
 
 ## BFC/IFC(block format context/inline format context)
+
+[Ref](http://kayosite.com/demo/clearfloat.html#float-1)
+
++ BFC:隔离的独立容器，容器内的元素不会在布局上影响外面的元素
+
++ 触发BFC（化外之地）
+  - 浮动元素，float 除 none 以外的值
+  - 绝对定位元素，position（absolute，fixed）
+  - display 为以下其中之一的值 inline-blocks，table-cells，table-captions
+  - overflow 除了 visible 以外的值（hidden，auto，scroll）
 
 ## position
 
