@@ -107,6 +107,25 @@
 
 ## $injector
 
+## directive
+
++ scope设值
+    - false：儿子继承父亲的值，改变父亲的值，儿子的值也随着改变，反之亦然，这就是继承且不隔离
+    - true：儿子继承父亲的值，改变父亲的值，儿子的值也随着改变，但是改变儿子的值，父亲的值并没有改变，这就是继承但是隔离
+    - {}：没有继承父亲的值，所以儿子的值为空，改变任何一方的值都不会影响另一方，这就是不继承且隔离
+        + {}中@，单向绑定
+        + {}中=，双向绑定
+        + {}中&，调用父作用域中的函数
+            ```js
+            scope:{
+                start:'&'
+            }
+            ```
++ directive中的controller：主要对外提供交互接口，可以用来与不同指令间通信
++ compile和link互斥，如果配置了compile则compile返回的函数作为link,忽略原有的link函数
++ compile:指令和实时数据被放到DOM之前进行DOM操作
++ link函数:负责将作用域与DOM进行链接
+
 ## tips
 
 + ng-model-options 
@@ -116,6 +135,10 @@
 + module.config()
     *可以传入provider,constant,实例化之前配置*
 + lazyload时会自动引入modul
+
+
+
+
 
 ## ref
 + [angular中文社区](http://angularjs.cn/tag/AngularJS)
@@ -130,20 +153,25 @@
 + [ngModelController](http://www.cnblogs.com/liulangmao/p/4110137.html)
 + [$resource](https://docs.angularjs.org/api/ngResource/service/$resource)
 + [依赖注入](http://www.html-js.com/article/Understand-the-dependency-injection-in-AngularJS-with-Angular-development-web-application)
++ [Angular directive 实例详解](https://segmentfault.com/a/1190000005851663)
 
 ## plugin
 + [oclazyload](https://oclazyload.readme.io/docs)
-+ [uiRouter](http://bubkoo.com/2014/01/01/angular/ui-router/guide/state-manager/)
++ [uiRouter](https://github.com/angular-ui/ui-router/wiki) 
+    + [#](http://bubkoo.com/2014/01/01/angular/ui-router/guide/state-manager/)
+    + [#](https://ui-router.github.io/)
+    + [Quick Reference](https://github.com/angular-ui/ui-router/wiki/Quick-Reference)
+    + [api](https://ui-router.github.io/ng1/docs/0.3.1/index.html#/api)
++ [ui-select](http://angular-ui.github.io/ui-select/#top)
+    + [wiki](https://github.com/angular-ui/ui-select/wiki)
++ [ui-grid](http://ui-grid.info/)   [#](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
+
 
 ## UI
 + [angular UI](https://github.com/angular-ui)
 + [angular UI](https://angular-ui.github.io/)
 + [10 Best AngularJS Frameworks](https://codegeekz.com/10-best-angularjs-frameworks/)
 + [angular UI bootstrap](https://www.npmjs.com/package/angular-ui-bootstrap)
-
-## grid
-
-+ [ui-grid](http://ui-grid.info/)   [#](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
 
 ## demos
 + [ng-admin](https://github.com/marmelab/ng-admin)
