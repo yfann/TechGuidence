@@ -126,6 +126,19 @@
 + compile:指令和实时数据被放到DOM之前进行DOM操作
 + link函数:负责将作用域与DOM进行链接
 
+## ng-form
+
++ 可以嵌套
++ 需要设置form name和控件name,控件要绑定变量
++ form会对应FormController实例，其中控件会对应NgModelController实例
++ 控件上的样式：ng-valid，ng-invalid, ng-pristine(没动过), ng-dirty(动过)
++ form属性
+    - $pristine 表单是否未被动过
+    - $dirty 表单是否被动过
+    - $valid 表单是否验证通过
+    - $invalid 表单是否验证失败
+    - $error 表单的验证错误
+
 ## tips
 
 + ng-model-options 
@@ -141,19 +154,23 @@
 
 
 ## ref
-+ [angular中文社区](http://angularjs.cn/tag/AngularJS)
-+ [angular学习笔记](http://www.cnblogs.com/liulangmao/tag/angular/default.html?page=4)
-+ [AngularJS学习笔记](https://www.zouyesheng.com/angular.html)
-+ [angular 1.x doc](http://devdocs.io/angularjs~1.5/api/ng/function/angular.foreach)
-+ [official angular](https://code.angularjs.org/1.3.20/docs/api/ng/service/$document)
-+ [compile link](http://www.cnblogs.com/liulangmao/p/3980256.html) 
-+ [scope](http://www.cnblogs.com/liulangmao/p/3990720.html)
-+ [angular的五种服务](http://www.cnblogs.com/liulangmao/p/4078246.html)
-+ [表单验证](http://www.cnblogs.com/liulangmao/p/4118868.html)
-+ [ngModelController](http://www.cnblogs.com/liulangmao/p/4110137.html)
-+ [$resource](https://docs.angularjs.org/api/ngResource/service/$resource)
-+ [依赖注入](http://www.html-js.com/article/Understand-the-dependency-injection-in-AngularJS-with-Angular-development-web-application)
-+ [Angular directive 实例详解](https://segmentfault.com/a/1190000005851663)
+- angular
+    + [angular中文社区](http://angularjs.cn/tag/AngularJS)
+    + [angular学习笔记](http://www.cnblogs.com/liulangmao/tag/angular/default.html?page=4)
+    + [AngularJS学习笔记](https://www.zouyesheng.com/angular.html)
+    + [angular 1.x doc](http://devdocs.io/angularjs~1.5/api/ng/function/angular.foreach)
+    + [official angular](https://code.angularjs.org/1.3.20/docs/api/ng/service/$document)
+
+- angular feature
+    + [compile link](http://www.cnblogs.com/liulangmao/p/3980256.html) 
+    + [scope](http://www.cnblogs.com/liulangmao/p/3990720.html)
+    + [angular的五种服务](http://www.cnblogs.com/liulangmao/p/4078246.html)
+    + [表单验证](http://www.cnblogs.com/liulangmao/p/4118868.html)
+    + [ngModelController](http://www.cnblogs.com/liulangmao/p/4110137.html)
+    + [$resource](https://docs.angularjs.org/api/ngResource/service/$resource)
+    + [依赖注入](http://www.html-js.com/article/Understand-the-dependency-injection-in-AngularJS-with-Angular-development-web-application)
+    + [Angular directive 实例详解](https://segmentfault.com/a/1190000005851663)
+    + [directive require](https://my.oschina.net/u/2342955/blog/411508)
 
 ## plugin
 + [oclazyload](https://oclazyload.readme.io/docs)
@@ -164,7 +181,8 @@
     + [api](https://ui-router.github.io/ng1/docs/0.3.1/index.html#/api)
 + [ui-select](http://angular-ui.github.io/ui-select/#top)
     + [wiki](https://github.com/angular-ui/ui-select/wiki)
-+ [ui-grid](http://ui-grid.info/)   [#](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
++ [ui-grid](http://ui-grid.info/)   
+    + [#](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
 
 
 ## UI
