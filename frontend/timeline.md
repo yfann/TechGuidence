@@ -8,6 +8,9 @@
     + [#1](http://www.iftekhar.me/ibm/ibm-project-timeline/#about)
     + [sample list](http://visjs.org/timeline_examples.html)
 
-
 + simile
   - [simile timeline](http://www.simile-widgets.org/timeline/)
+
++ CHAP Links Timeline
+  - [doc](https://almende.github.io/chap-links-library/timeline.html)
+
