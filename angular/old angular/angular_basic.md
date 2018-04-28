@@ -183,7 +183,7 @@
     + [wiki](https://github.com/angular-ui/ui-select/wiki)
 + [ui-grid](http://ui-grid.info/)   
     + [#](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
-
++ [ui.bootstrap](http://angular-ui.github.io/bootstrap/)
 
 ## UI
 + [angular UI](https://github.com/angular-ui)
