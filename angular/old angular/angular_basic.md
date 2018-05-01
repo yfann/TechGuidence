@@ -181,8 +181,9 @@
     + [api](https://ui-router.github.io/ng1/docs/0.3.1/index.html#/api)
 + [ui-select](http://angular-ui.github.io/ui-select/#top)
     + [wiki](https://github.com/angular-ui/ui-select/wiki)
-+ [ui-grid](http://ui-grid.info/)   
-    + [#](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
++ [ui-grid](http://ui-grid.info/)  
+    + [#1](https://www.cnblogs.com/freeliver54/p/6868752.html) 
+    + [#2](https://blog.csdn.net/Inuyasha1121/article/details/55187415)
 + [ui.bootstrap](http://angular-ui.github.io/bootstrap/)
 
 ## UI
