@@ -45,8 +45,7 @@
 - encoding  
   单击右下角UTF-8,可以更改文件编码
   
-- 命令行  
-  VSCode打开当前目录，cmd：Code .  
+- `code .`  
 
 ## Node.js的创建和调试
 
