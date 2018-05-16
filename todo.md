@@ -1,3 +1,10 @@
+## java
+
++ JPA
++ JP-QL
+
+
+
 ## big picture
 
 + [google trends](https://www.google.com/trends/)
