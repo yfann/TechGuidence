@@ -2,6 +2,7 @@
 
 + JPA
 + JP-QL
++ java8 streams
 
 
 
