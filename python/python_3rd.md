@@ -12,6 +12,8 @@
 
 + ipython
 + [anaconda](https://www.continuum.io/downloads) //科学计算
++ Bobo http微框架
+
 
 ## ref
 
