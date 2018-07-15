@@ -45,3 +45,34 @@ make_element('item', 'Albatross', size='large', quantity=6)
 def clip(text:str,max_len:'int > 0'=80) -> str:
     pass
 ```
+
+## 装饰器
+
++ 装饰器在被装饰的函数定义时执行
+
+```py
+
+@decorate
+def target():
+    print('')
+
+def target():
+    print('')
+target=decorate(target)
+```
+
++ nonlocal /*把变量标记为自由变量，被闭包的变量是自由变量*/
+
+```py
+def make_avg():
+    count=0
+    total=0
+
+    def avg(new_value):
+        nonlocal count,total
+        count+=1
+        total+=new_value
+        return total/count
+
+    return avg
+```
