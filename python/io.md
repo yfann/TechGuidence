@@ -67,3 +67,5 @@ with open('xxx','rb') as f:
         ...
 #partial(f.read,SIZE) 为可调用对象，iter为其创建迭代器，当其返回b''时停止调用
 ```
+
++ readinto
