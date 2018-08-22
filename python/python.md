@@ -71,3 +71,5 @@ solution2:
 
 + [tutorialspoint](http://www.tutorialspoint.com/python/string_decode.htm)
 + [python编码](http://wklken.me/posts/2013/08/31/python-extra-coding-intro.html)
++ [official doc](https://docs.python.org/3.8/library/index.html)
++ [python3 cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/c04/p04_implement_iterator_protocol.html)

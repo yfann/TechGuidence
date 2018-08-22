@@ -223,3 +223,9 @@ data = pickle.load(f)
 data = pickle.loads(s)
 
 ```
+
+
+## tools
+
++ `os.walk()`
++ `fnmatch.filter()`
