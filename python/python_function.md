@@ -10,7 +10,7 @@
 
 ## 参数
 
-+ `*rest` 传递任意个数参数
++ `*rest` 传递任意个数参数,`rest`是tuple
 
 ```py
 def avg(first, *rest):
@@ -29,7 +29,7 @@ def tag(name,cls=None):
 tag(cls='abc','aaa')
 ```
 
-+ `**arrs`传递任意数量的关键字参数
++ `**arrs`传递任意数量的关键字参数,`arrs`是dict
 
 ```py
 def make_element(name, value, **attrs):
