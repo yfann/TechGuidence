@@ -4,6 +4,7 @@
 + lambda是匿名函数
 + callable()可以判断对象是否可调用`callable(obj)`,obj实现了__call__则可调用`obj()`
 + `dir()`内省
++ *参数只能在最后一个位置参数之后，其后的参数为关键字参数
 + **参数只能出现在最后一个参数
 + 可以通关装饰器或闭包创建有状态的函数
 
@@ -19,6 +20,14 @@ def avg(first, *rest):
 avg(1,2,3,4)
 
 #rest==(2,3,4)
+
+
+def recv(maxsize, *, block):
+    'Receives a message'
+    pass
+
+recv(1024, True) # TypeError
+recv(1024, block=True) # Ok
 ```
 + 关键字参数
 
