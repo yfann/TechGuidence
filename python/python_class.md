@@ -1,6 +1,6 @@
 ## tips
 
-+ `__repr__()` `__str__()`  *repr的一般用法`eval(repr(x)) == x`*
++ `__repr__()` , `__str__()`  *repr的一般用法`eval(repr(x)) == x`*
 
 ```py
 class Pair:
@@ -139,7 +139,7 @@ class SubPerson(Person):
         return super().name
 ```
 
-+ 描述器
++ 描述器(实现了get,set,delete),只能在类级别定义，不能在实例中单独定义
 
 ```py
 class Integer:
@@ -177,3 +177,12 @@ class Point:
 # <__main__.Integer object at 0x100671890>
 
 ```
+
++ `with` __enter__()/__exit__()
+
++ `setattr()` 
+
+```py
+setattr(self, name, value)
+```
++ `isinstance(x, collections.Mapping)`
