@@ -111,6 +111,8 @@ write ":wq"
 then press enter
 ```
 
++ `git rm -r --cached .`
+
 ## Ref
 
 + [git config](http://www.cnblogs.com/wanqieddy/archive/2012/08/03/2621027.html)
