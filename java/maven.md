@@ -7,7 +7,7 @@
 + mvn package /*生成jar或war*/
 + mvn install /*jar安装到本地仓库*/
 + mvn clean /*删除target*/
-
++ mvn clean compile /*先清理 后编译*/
 ## others
 
 + 坐标(groupId,artifactId,version)   /*maven项目的唯一标识*/
@@ -21,3 +21,5 @@
 ## ref
 + [Maven——快速入门手册（学习记录）](http://www.cnblogs.com/qbzf-Blog/p/6539161.html)
 + [maven教程](http://www.yiibai.com/maven/)
++ [查找](https://mvnrepository.com/)
++ [Maven入门，读完这篇就够了](https://www.jianshu.com/p/41d07cf95482)

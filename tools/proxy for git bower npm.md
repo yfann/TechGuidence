@@ -33,3 +33,13 @@
   "strict-ssl":  false
 }
 ```
+
+## pip3
+
+set http_proxy=http://xxxx:xxx
+set https_proxy=http://xxxx:xxx
+pip3 install xxxx
+
+## maven
+
+.m2/settings.xml
