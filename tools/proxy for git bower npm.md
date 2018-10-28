@@ -6,7 +6,7 @@
 ```js
 //.gitconfig
 [http]
-   proxy = http://165.225.96.34:10015
+   proxy = http://xxxx
 [credential]        
     helper = store 
 ```
@@ -18,7 +18,7 @@
 
 ```js
 //.npmrc
-//proxy=http://165.225.96.34:10015/
+//proxy=http://xxxx
 //registry=https://registry.npmjs.org/
 //registry=https://registry.npm.taobao.org/
 ```
@@ -33,3 +33,13 @@
   "strict-ssl":  false
 }
 ```
+
+## pip3
+
+set http_proxy=http://xxxx:xxx
+set https_proxy=http://xxxx:xxx
+pip3 install xxxx
+
+## maven
+
+.m2/settings.xml
