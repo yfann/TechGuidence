@@ -8,6 +8,8 @@
 + mvn install /*jar安装到本地仓库*/
 + mvn clean /*删除target*/
 + mvn clean compile /*先清理 后编译*/
++ mvn dependency:tree /*查看依赖项*/
+
 ## others
 
 + 坐标(groupId,artifactId,version)   /*maven项目的唯一标识*/
