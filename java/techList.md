@@ -5,3 +5,4 @@
 + [flyway](https://www.jianshu.com/p/5b3ee67e3598) /*数据库版本管理工具*/
 + spring mvc 注解
 + 可执行jar /*fat jar,完全自包含可执行jar,包含编译类和依赖的其他jar*/
++ [Mybatis](https://www.jianshu.com/p/c2bab03484f4)

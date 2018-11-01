@@ -7,6 +7,7 @@
 ## shortcut
 
 + `Alt + Enter`  导入包
++ `Ctrl+Alt+L`  格式化代码
 
 ## ref
 
