@@ -8,6 +8,8 @@
 
 + `Alt + Enter`  导入包
 + `Ctrl+Alt+L`  格式化代码
++ `Ctrl + space` 代码提示
++ `Ctrl + alt + left` 返回上次代码
 
 ## ref
 

@@ -37,6 +37,10 @@
 + ctrl+shift+b //build
 + ctrl+shift+u //error message
 
+## shortcut
+
++ `ctrl+shift+k` 删除行
+
 ## 特性
 
 - Working Files  
