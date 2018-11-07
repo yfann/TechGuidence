@@ -56,7 +56,7 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 ***
 + `ssh git-server` test connection after put public key in c:\users\your name\.ssh 
 + `git config --system core.longpaths true`   fix File name too long issue
-
++ `git remote -v` 查看远程地址
 
 ## Branch
 

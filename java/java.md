@@ -9,6 +9,7 @@
 
 + 一个java文件只允许一个public class,文件名要与public class相同(大小写敏感)
 + transient：只修饰属性，不会被序列化(Serializable)
++ static{} /*类加载时执行一次*/
 + `System.out::println` 等于`x -> System.out.println(x)`,是lambda的简写,叫eta-conversion/eta-expansion,'类名::方法名'
 
 ## ref
@@ -17,3 +18,6 @@
 + [廖雪峰](https://www.feiyangedu.com/category/JavaSE)
 + [Stream](https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/index.html)
 + [Java 8 新特性](http://www.runoob.com/java/java8-new-features.html)
+
+
++ [类加载](https://www.cnblogs.com/caolaoshi/p/7824748.html)

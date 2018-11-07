@@ -3,12 +3,15 @@
 ## cli
 
 + mvn archetype:generate /*目录建立*/
-+ mvn compile /*生成target文件夹*/
++ mvn compile /*target文件夹下生成class*/
 + mvn package /*生成jar或war*/
 + mvn install /*jar安装到本地仓库*/
-+ mvn clean /*删除target*/
++ mvn clean /*清空target文件夹*/
 + mvn clean compile /*先清理 后编译*/
 + mvn dependency:tree /*查看依赖项*/
+
+## practice
++ `mvn clean install`
 
 ## others
 
