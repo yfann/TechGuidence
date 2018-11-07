@@ -10,7 +10,9 @@
 + `Ctrl+Alt+L`  格式化代码
 + `Ctrl + space` 代码提示
 + `Ctrl + alt + left` 返回上次代码
-
++ `ctrl + N` 查找类
++ `ctrl + shift + N` 查找文件
++ `alt+F7` 查看类的使用 
 ## ref
 
 + [IntelliJ IDEA使用教程](https://blog.csdn.net/qq_27093465/article/details/77449117?utm_source=blogxgwz2)
