@@ -97,6 +97,19 @@
 + `width:20%` 可以对document上的元素设置百分比，对离线dom设置完百分比再加回document时百分比会转换为pixel
 + `pointer-events: none;` 可用于触发下层元素的hover事件
 + `content: attr(data-before-content)` 通过属性伪元素动态显示内容
+
+```css
+/* 添加竖线 */
+h2:after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  background-color: #242424;
+  width: 2px;
+  margin-left: 15px;
+  top: 50%;
+}
+```
 ## z-index
 + 只能作用于`position:relative/absolute/fixed`
 + 只能同级比较，父级之外要父级之间比较

@@ -113,6 +113,8 @@ then press enter
 
 + `git rm -r --cached .`
 
++ 需要用户名密码时,改过windows密码后，需要清除windows缓存的密码
+
 ## Ref
 
 + [git config](http://www.cnblogs.com/wanqieddy/archive/2012/08/03/2621027.html)
