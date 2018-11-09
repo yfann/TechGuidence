@@ -22,6 +22,7 @@
 + 仓库(根据坐标先从本地仓库查找，然后是中央仓库) /*setting.xml中更改localRepository修改本地仓库位置*/
 + 配置({M2_HOME}\conf\setting.xml) /*proxy,仓库位置*/
 + 中央仓库(http://search.maven.org/)
++ profile /*通过active激活 以适应不同环境*/
 
 ## ref
 + [Maven——快速入门手册（学习记录）](http://www.cnblogs.com/qbzf-Blog/p/6539161.html)
