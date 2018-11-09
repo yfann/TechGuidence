@@ -27,3 +27,11 @@ def serialize(obj, stream):
         raise TypeError('Expected an IStream')
     pass
 ```
+
+
+
+## ref
+
++ pandas jieba xlrd snownlp gensim sklearn xlsxwriter
++ tensorflow(3.6.2x64)
++ keras
