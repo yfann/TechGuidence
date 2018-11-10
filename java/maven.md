@@ -1,4 +1,8 @@
+## Maven
 
+## 介绍
+
++ 本地仓库(${user.home}/.m2/repository) 统一管理jar包,maven会从maven的中央仓库拉取相关库放到本地仓库缓存起来
 
 ## cli
 
@@ -9,9 +13,9 @@
 + mvn clean /*清空target文件夹*/
 + mvn clean compile /*先清理 后编译*/
 + mvn dependency:tree /*查看依赖项*/
++ `mvn install` 部署(clean -> compile -> test -> package ->jar包放入本地仓库)
 
-## practice
-+ `mvn clean install`
+
 
 ## others
 
@@ -31,3 +35,6 @@
 + [Maven入门，读完这篇就够了](https://www.jianshu.com/p/41d07cf95482)
 + [runoob](http://www.runoob.com/maven/maven-tutorial.html)
 + [Maven 使用教程](https://www.jianshu.com/p/1eff16f60297)
++ [offical](http://maven.apache.org/run.html)
++ [中央仓库](http://search.maven.org/)
++ [maven教程](http://www.cnblogs.com/xdp-gacl/category/544719.html)
