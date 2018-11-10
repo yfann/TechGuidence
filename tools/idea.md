@@ -13,6 +13,7 @@
 + `ctrl + N` 查找类
 + `ctrl + shift + N` 查找文件
 + `alt+F7` 查看类的使用 
++ `ctrl + Q` 查看说明文档
 
 ## ref
 
