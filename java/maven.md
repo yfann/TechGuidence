@@ -28,13 +28,23 @@
 + 中央仓库(http://search.maven.org/)
 + profile /*通过active激活 以适应不同环境*/
 
+
+## 配置
+
++ `<optional>` 不传递依赖
+
++ `<exclusion>` 排除依赖项
+
+
 ## ref
-+ [Maven——快速入门手册（学习记录）](http://www.cnblogs.com/qbzf-Blog/p/6539161.html)
+
 + [maven教程](http://www.yiibai.com/maven/)
-+ [查找](https://mvnrepository.com/)
+
 + [Maven入门，读完这篇就够了](https://www.jianshu.com/p/41d07cf95482)
 + [runoob](http://www.runoob.com/maven/maven-tutorial.html)
 + [Maven 使用教程](https://www.jianshu.com/p/1eff16f60297)
 + [offical](http://maven.apache.org/run.html)
-+ [中央仓库](http://search.maven.org/)
 + [maven教程](http://www.cnblogs.com/xdp-gacl/category/544719.html)
+
++ [中央仓库](http://search.maven.org/)
++ [查找](https://mvnrepository.com/)
