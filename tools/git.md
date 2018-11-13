@@ -85,8 +85,6 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
 ## Work Flow
 
-git之间都是独立的仓库，pull/push用于仓库间协作
-
 ![](https://github.com/yfann/TechGuidence/blob/master/img/git01.png?raw=true)
 
 Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
@@ -111,7 +109,12 @@ write ":wq"
 then press enter
 ```
 
-+ `git rm -r --cached .`
++ ignore已经提交了的文件
+
+```
+$ git rm -r --cached .
+$ git add .
+```
 
 + 需要用户名密码时,改过windows密码后，需要清除windows缓存的密码
 
