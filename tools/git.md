@@ -69,10 +69,6 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git pull origin [branchName]` 更新分支(或者`git checkout [branchName]`,`git pull`),第一次拉仓库时会包含所有分支
 + `git merge [branchName]` 指定分支并入当前分支
 
-## 命令组合
-
-+ git reset --hard
-+ git clean
 
 ## Config
 
@@ -82,6 +78,11 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git config --global --unset user.password`
 
 ***
+
+## 高级
+
++ `git rm <file>` 同时删除缓存区，分支，工作区的文件
++ `git rm --cached <file>` 同时删除缓存区，分支的文件,工作区保留
 
 ## Work Flow
 
