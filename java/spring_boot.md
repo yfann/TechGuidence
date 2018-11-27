@@ -50,6 +50,10 @@
 ## todo
 
 + HandlerInterceptor
++ [embedded](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-embedded-web-servers.html)
++ [Spring Boot and Embedded Servers - Tomcat, Jetty and Undertow](http://www.springboottutorial.com/spring-boot-with-embedded-servers-tomcat-jetty)
++ yml
++ embedded jar or war(standalone tomecat)
 
 ## ref
 
@@ -65,3 +69,4 @@
 + [Spring Boot 数据库迁移](http://412887952-qq-com.iteye.com/blog/2425506)
 + [Spring Boot简介](https://www.yiibai.com/spring-boot/)
 + [Thymeleaf 教程](https://waylau.gitbooks.io/thymeleaf-tutorial/content/)
++ [set config in standalone tomecat](https://stackoverflow.com/questions/43657626/server-session-timeout-in-application-yml-is-not-used-when-deployed-to-a-tomcat)
