@@ -69,10 +69,6 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git pull origin [branchName]` 更新分支(或者`git checkout [branchName]`,`git pull`),第一次拉仓库时会包含所有分支
 + `git merge [branchName]` 指定分支并入当前分支
 
-## 命令组合
-
-+ git reset --hard
-+ git clean
 
 ## Config
 
@@ -83,9 +79,12 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 
 ***
 
-## Work Flow
+## 高级
 
-git之间都是独立的仓库，pull/push用于仓库间协作
++ `git rm <file>` 同时删除缓存区，分支，工作区的文件
++ `git rm --cached <file>` 同时删除缓存区，分支的文件,工作区保留
+
+## Work Flow
 
 ![](https://github.com/yfann/TechGuidence/blob/master/img/git01.png?raw=true)
 
@@ -111,7 +110,12 @@ write ":wq"
 then press enter
 ```
 
-+ `git rm -r --cached .`
++ ignore已经提交了的文件
+
+```
+$ git rm -r --cached .
+$ git add .
+```
 
 + 需要用户名密码时,改过windows密码后，需要清除windows缓存的密码
 

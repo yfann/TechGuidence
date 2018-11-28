@@ -11,6 +11,8 @@
 + `Ctrl + space` 代码提示
 + `Ctrl + alt + left` 返回上次代码
 + `shift + f6` rename
++ `alter + insert` 生产getter,setter
+
 <!-- 查找 -->
 + `ctrl + N` 查找类
 + `ctrl + shift + N` 查找文件

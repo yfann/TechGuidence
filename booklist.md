@@ -1,1 +1,0 @@
-[python book list](http://mp.weixin.qq.com/s/uRqsDGDJCFYFHVRj1dGORQ)
