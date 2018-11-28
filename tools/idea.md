@@ -25,6 +25,7 @@
 + `ctrl + F` 本页查找
 + `ctrl + shift + F` 全局查找
 + `shift + shift` 搜索任何东西
++ `alt + F1` 切换视图
 
 ## ref
 
