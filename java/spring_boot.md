@@ -7,6 +7,8 @@
 
 + `java -jar  <JARFILE> --spring.profiles.active=dev`
 
++ `java -jar -Dspring.profiles.active=prod <*.jar>`
+
 + `java –jar demo.jar --debug` application.properties中debug = true
 
 
