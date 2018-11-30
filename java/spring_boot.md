@@ -1,16 +1,4 @@
 
-## cli
-
-+ `mvn spring-boot:run`
-
-+ `java -jar -Dspring.config.location=**.properties <JARFILE> --server.port=8080`
-
-+ `java -jar  <JARFILE> --spring.profiles.active=dev`
-
-+ `java -jar -Dspring.profiles.active=prod <*.jar>`
-
-+ `java –jar demo.jar --debug` application.properties中debug = true
-
 
 ## 注解
 
