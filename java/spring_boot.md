@@ -72,3 +72,4 @@
 + [Thymeleaf 教程](https://waylau.gitbooks.io/thymeleaf-tutorial/content/)
 + [set config in standalone tomecat](https://stackoverflow.com/questions/43657626/server-session-timeout-in-application-yml-is-not-used-when-deployed-to-a-tomcat)
 + [YAML](https://www.jianshu.com/p/97222440cd08)
++ [TaskExecutor](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/scheduling.html)
