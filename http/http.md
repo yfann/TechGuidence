@@ -46,3 +46,6 @@ Content-Type:
 ## ref
 
 + [content type](http://www.cnblogs.com/liulangmao/p/3889568.html)
++ [https](http://www.cnblogs.com/chyingp/p/https-introduction.html)
++ [SSL/TLS](http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
++ [OpenSSL 与 SSL 数字证书概念贴](http://seanlook.com/2015/01/15/openssl-certificate-encryption/)

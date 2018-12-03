@@ -62,3 +62,8 @@
 ## python
 
 + ipython
+
+
+## 特效
+
++ [code-blast](https://kushagragour.in/code-blast-codemirror/demo/index.html)

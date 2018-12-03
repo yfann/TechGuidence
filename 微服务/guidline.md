@@ -13,6 +13,9 @@
 
 + 水平拆分（功能维度）
 
+>例如把Message表拆成1024张表，message属于哪张表要根据messageId/1024计算，所以要得到messageId才能找到对应的表。
+>实际场景会有根据productId查找messageId的情况，这时要创建大量的映射表才能关联相应数据。
+
 
 ## 高可用
 
@@ -45,7 +48,23 @@
 
 + push/pull (微博不太适合数据推送，大V有千万粉丝，发一条信息就会推送千万次，造成性能问题。适合数据拉取)
 
++ Codis基于Redis，方便做Sharding
+
++ NoSQL sharding可在DB层做，New SQL不用做Sharding了
+
++ 原来两层为同步架构，中间加了一层Message Queue后就会变为异步架构
+
+>MQ加到离前端越近越好  
+>读请求不做异步（当用户使用查询后要立刻返回结果，而不是空白页)  
+>写请求如果是数据若一致性可做异步(如社交数据)，强一致性不做异步(如金融数据)
+
 ## keywords
 
 + Protocol Buffers
 + IDC(internet data center) 云以IDC机房为基础
++ IO模型
++ Service Mesh
++ Sharding(分库分表)
++ LAMP架构(Linux-Apache-MySQL-PHP)
++ MQ异步使用
++ VIP(虚拟ip,可以在物理机挂掉后,指向其他物理机)
