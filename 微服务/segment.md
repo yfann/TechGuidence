@@ -26,3 +26,22 @@
 |IO模型|BIO|Netty|epoll|epoll|AIO|AIO|
 |技术生态|Netflix|Spring Cloud|Nginx社区|OpenRestry|Go社区|NodeJS社区|
 |适应场景|网关|网关|负载均衡|网关|网关|网关|
+
+## 链式架构模式
+
+![](img/chain_arch.png)
++ 阻塞模型
++ 一般用于交易系统
+
+## 聚合器架构模式
+
+![](img/aggregate_arch.png)
++ APP只发送一次请求
+
+## 数据共享架构模式
+
+![](img/share_arch.png)
++ 一般场景是读写分离
+>当读服务请求量大时，把读服务从对数据库的CRUD操作拆出来，作为单独的为服务  
+>request->IO thread->thread queue->work thread  
+>当读请求太多时会把thread queue撑暴，进而影响写请求，所以要读写分离
