@@ -19,5 +19,20 @@
 + [Stream](https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/index.html)
 + [Java 8 新特性](http://www.runoob.com/java/java8-new-features.html)
 
+## tips ref
 
 + [类加载](https://www.cnblogs.com/caolaoshi/p/7824748.html)
++ [SpringBoot打jar包或war包获取不到资源文件解决办法](https://juejin.im/post/5be14d11f265da612d18bbf4)
+>jar里读文件一般用stream去读，而不是路径(linux无法直接访问未解压的文件),通过`ClassLoader`的`getResourceAsStream()`方法获取流
+
+>Class.getResource(String path)
+>+ path以/开头：则是从ClassPath根下获取
+>+ path不以/开头：默认是从此类所在的包下取资源
+
+>ClassLoader.getResource(String path)
+>+ path默认从根目录下读取，path不能以`/`开头
+
+>`Test.class.getClassLoader().getResource("")=Test.class.getResource("/")`
+>`Class.getResource()`里会调用`ClassLoader.getResource()`
+
++ [不学无数——Java动态代理](https://juejin.im/post/5b9877a2e51d450e9e43e5cb)
