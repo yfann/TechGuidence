@@ -2,11 +2,15 @@
 
 ## 注解
 
-+ `@ComponentScan` 查找 @bean,注入@Autowired
++ `@ResponseBody` 加上后返回值作为数据返回，不加则返回值作为页面名称
 
-+ `@EnableAutoConfiguration`
++ `@RestController` = `@Controller` + `@ResponseBody`
 
-+ `@SpringBootApplication`
++ `@ComponentScan` 注入@bean,@Autowired
+
++ `@EnableAutoConfiguration` 扫描启动类所在的文件夹及子文件夹
+
++ `@SpringBootApplication` 包括`@SpringBootConfiguration`,`EnableAutoConfiguration`,`@ComponentScan`
 
 + `@RestController` `@RequestMapping` `@RequestBody` `@PathVariable` `@RequestParam`
 
@@ -49,6 +53,7 @@
 ## ref
 
 + [SPRING INITIALIZR](https://start.spring.io/)
+
 + [spring boot](https://github.com/ityouknow/spring-boot-examples)
 + [official spring boot](https://spring.io/projects/spring-boot)
 + [spring boot索引](http://springboot.fun/)
