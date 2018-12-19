@@ -25,7 +25,10 @@
 
 + `@ControllerAdvice` /*全局异常*/  `@ExceptionHandler`
 
+## config
 
++ 调试mongo
+>logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG
 
 ## tips
 
@@ -40,6 +43,8 @@
 + RestTemplate
 
 + Actuator
+
+
 
 ## todo
 
