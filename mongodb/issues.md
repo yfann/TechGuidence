@@ -1,7 +1,9 @@
-+ shell 查日期
++ shell 日期查询
 
->使用shell脚本命令查询时不能使用“2016-07-08”这种格式的日期，应该使用
->db.interface_invoke_info.find({insertTime:{$gte:new Date(2016,05,27,8,0,0),$lt:new Date(2016,05,28,8,0,0)}}
->因为mongodb的日期格式和系统日期格式不一致，所在在查询的时候月份要-1，小时你输入几点就是查询的几点的，但是显示的数据却是在你查询的时间>上-8，例：
-> db.interface_invoke_info.find({insertTime:{$gte:new Date(2016,05,27,8,44,0),$lt:new Date(2016,05,27,8,45,0)}})
->上述查询是2016-06-27 8:44:00——2016-06-27 8:45:00的数据，但是显示的日期格式是："insertTime" : ISODate>("2016-06-27T00:44:25.630Z")；
+> mongodb中日期存的是ISODate,映射为java.util.Date类型，比本地时间早8小时  
+>当在shell中查询大于2018-01-01时  
+>直接用ISODate查询  
+>`find({ "post_date" : { "$gte" : ISODate("2018-01-01T00:00:000Z"))}})`  
+>或用new Date,month-1,hour+8  
+>`find({ "post_date" : { "$gte" : new Date(2018,0,1,8,0,0)}})`
+
