@@ -32,7 +32,7 @@
 
 ## tips
 
-+ runner /*实现ApplicationRunner或CommandLineRunner，启动后立即执行一些代码*/
++ runner /*实现ApplicationRunner或CommandLineRunner，两者参数不同，启动后立即执行一些代码*/
 
 + 拦截器 @Component + HandlerInterceptor
 
