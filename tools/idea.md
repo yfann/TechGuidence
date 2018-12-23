@@ -12,6 +12,7 @@
 + `Ctrl + alt + left` 返回上次代码
 + `shift + f6` rename
 + `alter + insert` 生产getter,setter
++ `ctrl + alt + T` surround code
 
 <!-- 查找 -->
 + `ctrl + N` 查找类
@@ -26,6 +27,8 @@
 + `ctrl + shift + F` 全局查找
 + `shift + shift` 搜索任何东西
 + `alt + F1` 切换视图
+
+
 
 ## ref
 
