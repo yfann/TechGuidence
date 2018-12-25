@@ -3,6 +3,10 @@
 
 + tain
 
+## pin
+
++ [kingofthepin](https://kingofthepin.com/)
+
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
 
