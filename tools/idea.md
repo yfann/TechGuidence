@@ -13,6 +13,7 @@
 + `shift + f6` rename
 + `alter + insert` 生产getter,setter
 + `ctrl + alt + T` surround code
++ `ctrl + shift + Space` new后面自动补全
 
 <!-- 查找 -->
 + `ctrl + N` 查找类
