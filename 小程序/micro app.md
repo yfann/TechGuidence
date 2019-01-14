@@ -1,34 +1,34 @@
 ## 数据分析
 
-API|属性|说明
---|--|--
-getAnalysisDailyRetain|visit_uv_new|新增用户留存
-getAnalysisDailyRetain|visit_uv|活跃用户留存
-getAnalysisDailySummary|visit_total|累计用户数
-getAnalysisDailySummary|share_pv|转发次数
-getAnalysisDailySummary|share_uv|转发人数
-getAnalysisDailyVisitTrend|session_cnt|打开次数
-getAnalysisDailyVisitTrend|visit_pv|访问次数
-getAnalysisDailyVisitTrend|visit_uv|访问人数
-getAnalysisDailyVisitTrend|visit_uv_new|新用户数
-getAnalysisDailyVisitTrend|stay_time_uv|人均停留时长 
-getAnalysisDailyVisitTrend|stay_time_session|次均停留时长
-getAnalysisDailyVisitTrend|visit_depth|平均访问深度
-getAnalysisUserPortrait|uv/uv_new.province|省份
-getAnalysisUserPortrait|uv/uv_new.city|城市
-getAnalysisUserPortrait|uv/uv_new.genders|性别
-getAnalysisUserPortrait|uv/uv_new.platforms|终端类型(iPhone,android)
-getAnalysisUserPortrait|uv/uv_new.devices|机型
-getAnalysisUserPortrait|uv/uv_new.ages|年龄
-getAnalysisVisitDistribution|。。。|不同场景的pv,uv,时长,深度
-getAnalysisVisitPage|page_path|页面路径
-getAnalysisVisitPage|page_visit_pv|访问次数
-getAnalysisVisitPage|page_visit_uv|访问人数
-getAnalysisVisitPage|page_staytime_pv|停留时长
-getAnalysisVisitPage|entrypage_pv|进入页次数
-getAnalysisVisitPage|exitpage_pv|退出页次数
-getAnalysisVisitPage|page_share_pv|转发次数
-getAnalysisVisitPage|page_share_uv|转发人数
+维度|API|属性|说明
+--|--|--|--
+访问存留|getAnalysisDailyRetain|visit_uv_new|新增用户留存
+访问存留|getAnalysisDailyRetain|visit_uv|活跃用户留存
+概况|getAnalysisDailySummary|visit_total|累计用户数
+概况|getAnalysisDailySummary|share_pv|转发次数
+概况|getAnalysisDailySummary|share_uv|转发人数
+访问分析|getAnalysisDailyVisitTrend|session_cnt|打开次数
+访问分析|getAnalysisDailyVisitTrend|visit_pv|访问次数
+访问分析|getAnalysisDailyVisitTrend|visit_uv|访问人数
+访问分析|getAnalysisDailyVisitTrend|visit_uv_new|新用户数
+访问分析|getAnalysisDailyVisitTrend|stay_time_uv|人均停留时长 
+访问分析|getAnalysisDailyVisitTrend|stay_time_session|次均停留时长
+访问分析|getAnalysisDailyVisitTrend|visit_depth|平均访问深度
+用户画像|getAnalysisUserPortrait|uv/uv_new.province|省份
+用户画像|getAnalysisUserPortrait|uv/uv_new.city|城市
+用户画像|getAnalysisUserPortrait|uv/uv_new.genders|性别
+用户画像|getAnalysisUserPortrait|uv/uv_new.platforms|终端类型(iPhone,android)
+用户画像|getAnalysisUserPortrait|uv/uv_new.devices|机型
+用户画像|getAnalysisUserPortrait|uv/uv_new.ages|年龄
+来源分析|getAnalysisVisitDistribution|。。。|不同场景的pv,uv,时长,深度
+页面访问|getAnalysisVisitPage|page_path|页面路径
+页面访问|getAnalysisVisitPage|page_visit_pv|访问次数
+页面访问|getAnalysisVisitPage|page_visit_uv|访问人数
+页面访问|getAnalysisVisitPage|page_staytime_pv|停留时长
+页面访问|getAnalysisVisitPage|entrypage_pv|进入页次数
+页面访问|getAnalysisVisitPage|exitpage_pv|退出页次数
+页面访问|getAnalysisVisitPage|page_share_pv|转发次数
+页面访问|getAnalysisVisitPage|page_share_uv|转发人数
 
 
 
