@@ -19,7 +19,13 @@
 + [official](http://www.mybatis.org/mybatis-3/zh/getting-started.html)
 + [MyBatis教程](https://www.yiibai.com/mybatis)
 
+## Quartz
++ [java调度框架Quartz](https://www.jianshu.com/p/628c674de5c4)
 
+## Gradle
+
++ [Gradle教程](https://www.jianshu.com/p/ff5d9c33c108)
++ [Gradle](https://www.yiibai.com/gradle)
 
 ## ref
 

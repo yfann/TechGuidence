@@ -25,6 +25,8 @@
 
 + `@ControllerAdvice` /*全局异常*/  `@ExceptionHandler`
 
++ `@Scheduled`
+
 ## config
 
 + 调试mongo

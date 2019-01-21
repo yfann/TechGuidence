@@ -36,3 +36,5 @@
 >`Class.getResource()`里会调用`ClassLoader.getResource()`
 
 + [不学无数——Java动态代理](https://juejin.im/post/5b9877a2e51d450e9e43e5cb)
+
++ [定时任务几种实现方式](https://blog.csdn.net/revitalizing/article/details/61420556)
