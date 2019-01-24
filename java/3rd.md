@@ -27,6 +27,12 @@
 + [Gradle教程](https://www.jianshu.com/p/ff5d9c33c108)
 + [Gradle](https://www.yiibai.com/gradle)
 
+## cron
+
++ [QuartZ Cron表达式详解](https://www.jianshu.com/p/f03b1497122a)
++ [cron表达式详解](https://www.cnblogs.com/linjiqin/p/3178452.html)
++ [生成器](http://cron.qqe2.com/)
+
 ## ref
 
 + TestNG
