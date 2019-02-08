@@ -26,6 +26,7 @@
 
 + [Gradle教程](https://www.jianshu.com/p/ff5d9c33c108)
 + [Gradle](https://www.yiibai.com/gradle)
++ [Gradle user guide](https://dongchuan.gitbooks.io/gradle-user-guide-/overview/features.html)
 
 ## ref
 
