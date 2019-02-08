@@ -1,0 +1,28 @@
+
+## cmd
++ `bin\elasticsearch.bat`  运行
++ `curl http://localhost:9200/` 测试是否安装成功
++ `curl -X PUT localhost:9200/test` 新建`test` index(数据库)
++ `curl -X DELETE localhost:9200/test` 删除`test` index
+
+## plugin
+
+
+
++ [analysis](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis.html) 默认分词器
++ [ik](https://github.com/medcl/elasticsearch-analysis-ik/) 中文分词插件
++ marvel
+    - `elasticsearch-plugin`
+## ref
+
++ [offical](https://www.elastic.co/cn/downloads/elasticsearch)
++ [offical start](https://www.elastic.co/start)
++ [Match Query](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-match-query.html)
++ [Elasticsearch: 权威指南](https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html)
+
++ [Windows 下安装 ElasticSearch & ElasticSearch head](https://www.jianshu.com/p/4467cfe4e651)
++ [ELASTIC SEARCH: HOW TO INSTALL MARVEL PLUGIN MANUALLY ON WINDOWS OS](https://hassantariqblog.wordpress.com/2016/09/19/elastic-search-how-to-install-marvel-plugin-manually-on-windows-os/)
+
++ [全文搜索引擎 Elasticsearch 入门教程](http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html)
+
++ [curl](https://www.jianshu.com/p/07c4dddae43a)

@@ -30,6 +30,13 @@
 - F5 运行程序
 - Ctrl+C 命令行中断
 
+<!-- advance -->
++ `ctrl+K`+`ctrl+s` 快捷键说明
++ `ctrl+P`打开搜索栏
+    - 所有文件搜索
+    - `@`当前文件搜索
+    - `>`搜索命令
+
 ## 代码操作
 
 + ctrl+K+C/ctrl+K+U //注释
@@ -105,3 +112,8 @@
 + `"editor.minimap.enabled":true`
 + `"editor.dragAndDrop":true`
 + `"editor.wordWrap":"on"`  //on off wordWrapColumn bounded
+
+
+## 3rd
+
++ bookmarks 代码打标签

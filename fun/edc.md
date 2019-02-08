@@ -6,6 +6,7 @@
 ## pin
 
 + [kingofthepin](https://kingofthepin.com/)
++ [zenmonkeystudios](https://www.zenmonkeystudios.com/collections/all)
 
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
