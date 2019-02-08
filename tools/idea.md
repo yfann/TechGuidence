@@ -14,7 +14,12 @@
 + `alter + insert` 生产getter,setter
 + `ctrl + alt + T` surround code
 + `ctrl + shift + Space` new后面自动补全
+<<<<<<< HEAD
 + `ctrl + w` 选择扩展
+=======
++ `/** + 回车`
++ `ctrl + /`
+>>>>>>> 8fe4cdea5f548f59265df8d8eaa04becde2eebaf
 
 <!-- 查找 -->
 + `ctrl + N` 查找类
