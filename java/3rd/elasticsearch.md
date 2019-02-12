@@ -4,6 +4,7 @@
 + `curl http://localhost:9200/` 测试是否安装成功
 + `curl -X PUT localhost:9200/test` 新建`test` index(数据库)
 + `curl -X DELETE localhost:9200/test` 删除`test` index
++ `Get host:port/index/type/_search` 查询记录
 
 ## plugin
 
