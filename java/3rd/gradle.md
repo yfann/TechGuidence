@@ -19,3 +19,4 @@
 ## ref
 + [Gradle User Guide](https://dongchuan.gitbooks.io/gradle-user-guide-/build_script_basics/hello_world.html)
 + [插件门户](https://plugins.gradle.org/)
++ [为gradle项目配置多种开发环境](https://chenkaihua.com/2016/04/25/configure-multiple-development-environments-for-gradle-projects/)

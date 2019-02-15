@@ -59,18 +59,19 @@
 
 ## ref
 
++ [Spring Boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/)
+
 + [SPRING INITIALIZR](https://start.spring.io/)
 
 + [spring boot](https://github.com/ityouknow/spring-boot-examples)
 + [official spring boot](https://spring.io/projects/spring-boot)
 + [spring boot索引](http://springboot.fun/)
-+ [Spring Boot Tutorial](https://www.tutorialspoint.com/spring_boot/index.htm)
-+ [纯洁的微笑](http://www.ityouknow.com/spring-boot.html)
-+ [Spring boot参考指南](https://www.jianshu.com/p/67a0e41dfe05)
-+ [Spring Boot 2 官方指导手册译文](https://www.jianshu.com/p/e7e3ff541bfb)
 
-+ [Spring Boot 数据库迁移](http://412887952-qq-com.iteye.com/blog/2425506)
++ [Spring Boot 2 官方指导手册译文](https://www.jianshu.com/p/e7e3ff541bfb)
++ [Spring Boot 系列文章](http://www.ityouknow.com/spring-boot.html)
 + [Spring Boot简介](https://www.yiibai.com/spring-boot/)
+
+
 + [Thymeleaf 教程](https://waylau.gitbooks.io/thymeleaf-tutorial/content/)
 + [set config in standalone tomecat](https://stackoverflow.com/questions/43657626/server-session-timeout-in-application-yml-is-not-used-when-deployed-to-a-tomcat)
 + [YAML](https://www.jianshu.com/p/97222440cd08)
