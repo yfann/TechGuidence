@@ -42,6 +42,16 @@ public class MyBean {
 + 调试mongo
 >logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG
 
+## profiles
+
++ `PropertyResource`
++ 读取property后添加到Spring Environment中
++ `@Profile("production")` @Configuration类上加
++ application.properties中使用`spring.profiles.active=dev,hsqldb`或命令行使用`--spring.profiles.active=dev,hsqldb`
++ `SpringApplication.setAdditionalProfiles(…)`编程方式激活
++ `@ConfigurationProperties`可以引入文件
+
+
 ## 注解
 
 + `@ComponentScan` 查找bean,配合`@Autowired`注入
@@ -83,11 +93,10 @@ public class MyBean {
 ## ref
 
 + [Spring Boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/)
-
 + [SPRING INITIALIZR](https://start.spring.io/)
-
 + [spring boot](https://github.com/ityouknow/spring-boot-examples)
 + [official spring boot](https://spring.io/projects/spring-boot)
++ [official spring boot](https://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/#boot-features-external-config-profile-specific-properties)
 + [spring boot索引](http://springboot.fun/)
 
 + [Spring Boot 2 官方指导手册译文](https://www.jianshu.com/p/e7e3ff541bfb)
