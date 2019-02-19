@@ -26,40 +26,29 @@ public class MyBean {
 + runner /*实现ApplicationRunner或CommandLineRunner，两者参数不同，启动后立即执行一些代码*/
 
 
-## 配置
-
-+ `@Configuration`代替XML
-+ 可以把配置放在不同的类中通过`@Import`导入
-+ `@ComponentScan`可以收集`@Configuration`类
-+ `@Configuration`类中通过`@ImportResource`导入XML配置
-+ spring将搜索`@EnableAutoConfiuration`类所在的包
-+ 自动配置,在`@Configuration`类上加`@EnableAutoConfiguration`或`@SpringBootApplication`
-```java
-//exclude 可以禁用某些自动配置
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-```
-+ 运行应用时打开`--debug`,查看启动了哪些自动配置
-+ 调试mongo
->logging.level.org.springframework.data.mongodb.core.MongoTemplate=DEBUG
-
-## profiles
-
-+ `PropertyResource`
-+ 读取property后添加到Spring Environment中
-+ `@Profile("production")` @Configuration类上加
-+ application.properties中使用`spring.profiles.active=dev,hsqldb`或命令行使用`--spring.profiles.active=dev,hsqldb`
-+ `SpringApplication.setAdditionalProfiles(…)`编程方式激活
-+ `@ConfigurationProperties`可以引入文件
-
-
 ## 注解
-
+<!-- 系统 -->
 + `@ComponentScan` 查找bean,配合`@Autowired`注入
 + `@SpringBootApplication` 等价于`@Configuration`,`EnableAutoConfiguration`,`@ComponentScan`
-+ `@ResponseBody` 加上后返回值作为数据返回，不加则返回值作为页面名称
-+ `@RestController` = `@Controller` + `@ResponseBody`
-+ `@RestController` `@RequestMapping` `@RequestBody` `@PathVariable` `@RequestParam`
-+ `@Value`  读取属性值
++ `@ControllerAdvice` /*全局异常*/  `@ExceptionHandler`
+<!-- 配置 -->
++ `@ConfigurationProperties("foo")` 可在类或@Bean上，支持Relaxed绑定
+```java
+//注入
+// my:
+//    servers:
+//        - dev.bar.com
+//        - foo.bar.com
+
+@ConfigurationProperties(prefix="my")
+public class Config {
+    private List<String> servers = new ArrayList<String>();
+    public List<String> getServers() {
+        return this.servers;
+    }
+}
+```
++ `@Value`  读取属性值,支持SpEL
 ```java
    @Value("${spring.application.name}")
    private String name;
@@ -67,7 +56,11 @@ public class MyBean {
    @Value("${property_key_name:default_value}")
    @Value("${spring.application.name:demoservice}")
 ```
-+ `@ControllerAdvice` /*全局异常*/  `@ExceptionHandler`
+<!-- MVC -->
++ `@ResponseBody` 加上后返回值作为数据返回，不加则返回值作为页面名称
++ `@RestController` = `@Controller` + `@ResponseBody`
++ `@RestController` `@RequestMapping` `@RequestBody` `@PathVariable` `@RequestParam`
+<!-- 其他 -->
 + `@Scheduled`
 
 
