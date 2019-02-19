@@ -64,6 +64,10 @@ public class Config {
 + `@Scheduled`
 
 
+## MVC
+
++ spring-boot-starter-web
++ Tomcat,Jetty,Undertow
 
 ## tips
 

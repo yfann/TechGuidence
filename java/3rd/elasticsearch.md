@@ -8,12 +8,15 @@
 
 ## plugin
 
-
-
 + [analysis](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis.html) 默认分词器
 + [ik](https://github.com/medcl/elasticsearch-analysis-ik/) 中文分词插件
 + marvel
     - `elasticsearch-plugin`
+
+## tips
++ 默认返回10条记录,需要设置`size`参数
++ 查询时curl可以在get时发送request body,postman可以用post查询
+
 ## ref
 
 + [offical](https://www.elastic.co/cn/downloads/elasticsearch)
