@@ -56,18 +56,12 @@ public class Config {
    @Value("${property_key_name:default_value}")
    @Value("${spring.application.name:demoservice}")
 ```
-<!-- MVC -->
-+ `@ResponseBody` 加上后返回值作为数据返回，不加则返回值作为页面名称
-+ `@RestController` = `@Controller` + `@ResponseBody`
-+ `@RestController` `@RequestMapping` `@RequestBody` `@PathVariable` `@RequestParam`
 <!-- 其他 -->
 + `@Scheduled`
 
 
-## MVC
 
-+ spring-boot-starter-web
-+ Tomcat,Jetty,Undertow
+
 
 ## tips
 
