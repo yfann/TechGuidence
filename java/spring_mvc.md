@@ -24,6 +24,8 @@ public class MyConfiguration {
 
 + `@JsonComponent`将自定义的序列化器注册为Sping Bean
 + MessageCodesResolver渲染错误
++ WebBindingInitializer为每个特殊的请求初始化相应的WebDataBinder,ConfigurableWebBindingInitializer用于自定义
++ `src/main/resources/templates` 模板路径
 
 ## 静态资源
 
@@ -42,7 +44,19 @@ public class MyConfiguration {
 <link href="/css/spring-2a2d595e6ed9a0b24f027f2b63b134d6.css"/>
 ```
 
+## 安全
+
++ 添加Spring Security依赖，web引用会对所以的Http路径使用basic认证
++ `@EnableGlobalMethodSecurity`应用方法级别保护
++ `AuthenticationManager`,`SecurityProperties.User`
++ OAuth2
+    - `spring-security-oauth2`添加依赖
+    - `@EnableAuthorizationServer`创建授权服务器,提供access token,/token端点basic形式的认证证书是`security.oauth2.client.client-id`和`security.oauth2.client.client-secret`，用户证书通常是Spring Security的user详情（Spring Boot中默认是"user"和一个随机的密码）。`AuthorizationServerConfigurer`自定义授权服务器特性。
+    - `@EnableResourceServer`创建资源服务器(可以和授权服务器同一个),使用access token。如果应用也是授权服务器，不需要配置解码token。如何使独立服务需要配置`security.oauth2.resource.user-info-uri` 用于/me资源或`security.oauth2.resource.token-info-uri`用于token解码
+
 ## ref
 
 + [MVC framework](https://docs.spring.io/spring/docs/4.3.3.RELEASE/spring-framework-reference/htmlsingle/#mvc)
 + [spring boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/IV.%20Spring%20Boot%20features/27.%20Developing%20web%20applications.html)
++ [OAuth 2 Developers Guide](http://projects.spring.io/spring-security-oauth/docs/oauth2.html)
++ [JWT](http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
