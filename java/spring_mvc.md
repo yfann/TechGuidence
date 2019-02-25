@@ -53,6 +53,8 @@ public class MyConfiguration {
     - `spring-security-oauth2`添加依赖
     - `@EnableAuthorizationServer`创建授权服务器,提供access token,/token端点basic形式的认证证书是`security.oauth2.client.client-id`和`security.oauth2.client.client-secret`，用户证书通常是Spring Security的user详情（Spring Boot中默认是"user"和一个随机的密码）。`AuthorizationServerConfigurer`自定义授权服务器特性。
     - `@EnableResourceServer`创建资源服务器(可以和授权服务器同一个),使用access token。如果应用也是授权服务器，不需要配置解码token。如何使独立服务需要配置`security.oauth2.resource.user-info-uri` 用于/me资源或`security.oauth2.resource.token-info-uri`用于token解码
++ Bearer默认token类型
++ 设置user-info-uri后，OAuth2RestTemplate用于抓取用户信息
 
 ## ref
 
