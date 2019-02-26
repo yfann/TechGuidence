@@ -10,6 +10,7 @@
 
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
++ [kp](https://segmentfault.com/a/1190000015140923)
 
 
 ## paracord

@@ -46,10 +46,12 @@ docker run -t -d -p 8010:5004 testName
 + `docker --version` 
 + `docker pull [image name]`
 + `docker image ls`
-+ `docker container ls` 列出running的container, --all 列出所有
++ `docker ps -a`或`docker container ls [--all]` 列出running的container, --all 列出所有
 + `docker container stop\rm [contianer name]`
-+ `docker run [image name]`
-
++ `docker run -p [host port]:[app port] -d [image name]:[tag] [command] --name=[ali name]` 创建新容器,-d后台运行返回容器id
++ `docker start/stop/restart [container id]` 操作已有容器
++ `docker build -t [image name]:[tag] <path>/<url>` 指定包含Dockerfile的路径
+<!-- example -->
 + `docker run --interactive --tty ubuntu bash`
 
 
@@ -61,10 +63,13 @@ docker run -t -d -p 8010:5004 testName
 + `ENV <key>=<value> ...`容器内被脚本使用
 + `ADD <src>... <dest>``COPY <src>... <dest>`复制文件到目标目录，ADD可以是url
 + `ENTRYPOINT ["exe","param1","param2"]` 容器启动后执行，Dockerfile只能有一个ENTRYPOINT，`docker run --entrypoint`
-+ `docker build <path>/<url>` 指定包含Dockerfile的路径
+
 
 ## Ref
 
 + [hub](https://hub.docker.com)
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
++ [docker ip映射](https://www.cnblogs.com/brock0624/p/9788710.html)
++ [docker](https://docs.docker.com/docker-for-windows/)
 + [docker与虚拟机性能比较](http://blog.csdn.net/cbl709/article/details/43955687)
++ [Docker 命令大全](http://www.runoob.com/docker/docker-command-manual.html)
