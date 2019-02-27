@@ -45,12 +45,14 @@ docker run -t -d -p 8010:5004 testName
 
 + `docker --version` 
 + `docker pull [image name]`
-+ `docker image ls`
++ `docker image ls`或`docker images -a`
 + `docker ps -a`或`docker container ls [--all]` 列出running的container, --all 列出所有
 + `docker container stop\rm [contianer name]`
 + `docker run -p [host port]:[app port] -d [image name]:[tag] [command] --name=[ali name]` 创建新容器,-d后台运行返回容器id
 + `docker start/stop/restart [container id]` 操作已有容器
 + `docker build -t [image name]:[tag] <path>/<url>` 指定包含Dockerfile的路径
+<!-- 清除 -->
++ `docker system prune [-a]` 清除不使用的镜像
 <!-- example -->
 + `docker run --interactive --tty ubuntu bash`
 
@@ -73,3 +75,4 @@ docker run -t -d -p 8010:5004 testName
 + [docker](https://docs.docker.com/docker-for-windows/)
 + [docker与虚拟机性能比较](http://blog.csdn.net/cbl709/article/details/43955687)
 + [Docker 命令大全](http://www.runoob.com/docker/docker-command-manual.html)
++ [How To Remove Docker Images, Containers, and Volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
