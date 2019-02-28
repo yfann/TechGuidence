@@ -20,3 +20,13 @@
 ## tag
 
 + peak eiger
++ keybar
++ magnuts
++ keychain flashlight
++ quick release keychain
+
+## ref
++ [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
+<!-- sites -->
++ [gearmoose](https://gearmoose.com)
++ [edc shop](https://www.optiongray.com/flashlights/)
