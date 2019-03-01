@@ -24,6 +24,7 @@
 + magnuts
 + keychain flashlight
 + quick release keychain
++ Bottle Opener, EDC multi tool, keychain, pocket gear 
 
 ## ref
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
