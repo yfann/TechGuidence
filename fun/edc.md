@@ -1,8 +1,4 @@
 
-## flashlight
-
-+ tain
-
 ## pin
 
 + [kingofthepin](https://kingofthepin.com/)
@@ -29,10 +25,16 @@
 ## flashlight
 
 + Rovyvon Aurora 
++ tain
++ [foursevens](https://gallantry.com/collections/foursevens)
++ [photonfanatic](http://photonfanatic.com/GroovyFS.html)
++ [eiger flashlight](https://gallantry.com/products/peak-led-solutions-eiger-flashlight-stainless-steel)
++ [cpf](http://www.candlepowerforums.com)
 
 ## pens
 
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
++ [fellhoelter](https://fellhoelter.com/product-category/fellhoelter-pens/)
 
 ## handkerchief
 
@@ -40,13 +42,16 @@
 + [maphank](https://www.imgrum.pw/tag/maphank)
 + [godspeed](http://www.godspeedtactical.com/gjsveh8lj6im0bfu9h6p4j1rhoots0)
 
+## keychain
+
++ [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
+
 ## ref
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
 <!-- forums -->
-+ [edcforums.](https://www.edcforums.com/forums/keychain-tools.81/)
-+ [cpf](http://www.candlepowerforums.com)
-+ [custom flashlight](http://www.candlepowerforums.com/vb/forumdisplay.php?136-WTS-Custom-Titanium-amp-Exotic-Metals-Flashlights)
++ [edcforums](https://www.edcforums.com/forums/keychain-tools.81/)
 <!-- sites -->
 + [gearmoose](https://gearmoose.com)
 + [edc shop](https://www.optiongray.com/flashlights/)
 + [oveready](https://www.oveready.com)
++ [kp](http://www.kpgears.com/)
