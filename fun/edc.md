@@ -25,12 +25,12 @@
 ## flashlight
 
 + Rovyvon Aurora 
-+ tain
++ [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [foursevens](https://gallantry.com/collections/foursevens)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 + [eiger flashlight](https://gallantry.com/products/peak-led-solutions-eiger-flashlight-stainless-steel)
 + [cpf](http://www.candlepowerforums.com)
-
++ [blf](http://budgetlightforum.com/)
 ## pens
 
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -50,8 +50,9 @@
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
 <!-- forums -->
 + [edcforums](https://www.edcforums.com/forums/keychain-tools.81/)
-<!-- sites -->
+<!-- shop -->
 + [gearmoose](https://gearmoose.com)
 + [edc shop](https://www.optiongray.com/flashlights/)
 + [oveready](https://www.oveready.com)
 + [kp](http://www.kpgears.com/)
++ [skylumen](https://skylumen.com)
