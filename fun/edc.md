@@ -29,6 +29,7 @@
 + [foursevens](https://gallantry.com/collections/foursevens)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 + [eiger flashlight](https://gallantry.com/products/peak-led-solutions-eiger-flashlight-stainless-steel)
++ [veleno designs](http://www.velenodesigns.com/)
 + [cpf](http://www.candlepowerforums.com)
 + [blf](http://budgetlightforum.com/)
 ## pens
@@ -45,6 +46,10 @@
 ## keychain
 
 + [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
+
+## knives
+
++ [Derek Lee Knives](https://derekleeknives.com/)
 
 ## ref
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)

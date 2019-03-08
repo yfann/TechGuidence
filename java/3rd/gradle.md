@@ -16,6 +16,11 @@
 + [tasks](https://dongchuan.gitbooks.io/gradle-user-guide-/the_java_plugin/java_plugin_tasks.html)
 
 
+## update gradle version for a project
+
++ `gradlew --version` check current version
++ `gradle/wrapper/gradle-wraper.properties` change version
+
 ## ref
 + [Gradle User Guide](https://dongchuan.gitbooks.io/gradle-user-guide-/build_script_basics/hello_world.html)
 + [插件门户](https://plugins.gradle.org/)
