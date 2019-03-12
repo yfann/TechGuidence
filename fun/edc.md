@@ -33,6 +33,7 @@
 + [cpf](http://www.candlepowerforums.com)
 + [blf](http://budgetlightforum.com/)
 + [cwf](https://www.cwfcustomflashlights.com/)
+
 ## pens
 
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -55,6 +56,8 @@
 ## preorder
 
 + [veleno designs](http://www.velenodesigns.com/)
++ [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
++ [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 
 ## ref
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
