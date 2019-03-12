@@ -32,6 +32,7 @@
 + [veleno designs](http://www.velenodesigns.com/)
 + [cpf](http://www.candlepowerforums.com)
 + [blf](http://budgetlightforum.com/)
++ [cwf](https://www.cwfcustomflashlights.com/)
 ## pens
 
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -50,6 +51,10 @@
 ## knives
 
 + [Derek Lee Knives](https://derekleeknives.com/)
+
+## preorder
+
++ [veleno designs](http://www.velenodesigns.com/)
 
 ## ref
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
