@@ -33,7 +33,10 @@
 + [cpf](http://www.candlepowerforums.com)
 + [blf](http://budgetlightforum.com/)
 + [cwf](https://www.cwfcustomflashlights.com/)
-+ [Tnc flashlight](https://em-mgt.com/newsite/tnc-flashlights/)
+
++ [RMSK, INC.](https://em-mgt.com/newsite/tnc-flashlights/)
++ [Peak](http://peakledsolutions.net/)
++ [Tnc products](https://ogazent.com/store/)
 
 ## pens
 
