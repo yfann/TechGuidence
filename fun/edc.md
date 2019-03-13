@@ -38,6 +38,8 @@
 + [RMSK, INC.](https://em-mgt.com/newsite/tnc-flashlights/)
 + [Peak](http://peakledsolutions.net/)
 + [Tnc products](https://ogazent.com/store/)
++ [rotablade](https://rotablade.myshopify.com/collections/rotablade-vision)
++ [arizona custom knives shop](https://www.arizonacustomknives.com/catalogsearch/result/index/?p=1&q=flashlight)
 
 ## pens
 
