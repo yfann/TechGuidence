@@ -76,3 +76,5 @@
 + [oveready](https://www.oveready.com)
 + [kp](http://www.kpgears.com/)
 + [skylumen](https://skylumen.com)
+<!-- picture -->
++ [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
