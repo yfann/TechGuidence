@@ -8,6 +8,8 @@
     - `cmd + shift + H` 打开个人目录
     - `cmd + shift + D` 打开桌面
     - `cmd + shift + A` 打开程序
++ `cmd + space` 搜索`ter`
++ `cmd + del`
 
 ## terminal
 
@@ -17,8 +19,14 @@
 + `ls -R`
 + `man <cmd>` help
 
+## 触摸板
+
++ 四指内滑->控制台
+
 ## ref
 + bash/shell
 + homebrew
 + [每天一个linux命令目录](https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html)
 + [mac－改造你的terminal](https://www.jianshu.com/p/bb1c97269b11)
++ [设置快捷键打开terminal](https://jingyan.baidu.com/article/20b68a88832140796cec623d.html)
++ [Terminal shortcut](https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac)
