@@ -2,22 +2,24 @@
 
 + `option + cmd + esc` 可以结束进程
 + `cmd + N` terminal 得到焦点后执行此命令打开新的terminal
-+ finder
-    - `cmd + shift + G` 打开输入路径面板
++ 打开finder
+    - `cmd + shift + G` 打开输入路径面板，可以访问隐藏文件
     - `cmd + shift + C` 打开电脑
     - `cmd + shift + H` 打开个人目录
     - `cmd + shift + D` 打开桌面
     - `cmd + shift + A` 打开程序
 + `cmd + space` 搜索`ter`
 + `cmd + del`
++ `cmd + shift + .`显示/隐藏文件
 
 ## terminal
 
-+ `open /`  `open ~`
++ `open /`根目录  `open ~`home路径 '/Users/yfann'
 + `cd/ls/echo/clear`
 + `pwd` 查看当前路径'/Users/apple/docuemnt'
 + `ls -R`
 + `man <cmd>` help
++ `cmd up/down` 选择命令
 
 ## 触摸板
 
