@@ -15,13 +15,14 @@
 
 + `open /`  `open ~`
 + `cd/ls/echo/clear`
-+ `pwd` 查看当前路径
++ `pwd` 查看当前路径'/Users/apple/docuemnt'
 + `ls -R`
 + `man <cmd>` help
 
 ## 触摸板
 
-+ 四指内滑->控制台
++ `四指内滑`->控制台
++ `三手指上下左右滑动`
 
 ## ref
 + bash/shell
