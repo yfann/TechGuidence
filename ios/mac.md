@@ -22,6 +22,13 @@
 ## 浏览器
 + `cmd + w`关闭tab
 + `cmd + N`new tab
++ `ctrl + tab` `ctrl + shift + tab` 切换tab
++ `cmd + L`地址栏获得焦点
++ `cmd + click`new tab打开链接
++ `shift + click`阅读列表添加链接
++ `cmd + R`刷新页面
++ `cmd + .`停止载入页面
++ `两指左右滑动`前进后退
 
 ## 应用程序
 + `ctrl + cmd + f` 全屏切换
@@ -51,9 +58,4 @@ Command-Option-esc 打开“强制退出”窗口，如果有应用程序无响�
 + `二指按下` 右键
 
 ## ref
-+ bash/shell
-+ homebrew
-+ [每天一个linux命令目录](https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html)
-+ [mac－改造你的terminal](https://www.jianshu.com/p/bb1c97269b11)
-+ [设置快捷键打开terminal](https://jingyan.baidu.com/article/20b68a88832140796cec623d.html)
-+ [Terminal shortcut](https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac)
++ [程序员如何优雅地使用 macOS](https://www.zhihu.com/question/20873070)
