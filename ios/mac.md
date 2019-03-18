@@ -41,14 +41,7 @@ Command-Shift-Z 重做，也就是撤销的逆向操作　　
 Command-Tab 在打开的应用程序列表中转到下一个最近使用的应用程序，相当于Windows中（Alt+Tab）　　
 Command-Option-esc 打开“强制退出”窗口，如果有应用程序无响应，可在窗口列表中选择强制退出
 
-## terminal
-+ `cmd + N` terminal 得到焦点后执行此命令打开新的terminal
-+ `open /`根目录  `open ~`home路径 '/Users/yfann'
-+ `cd/ls/echo/clear`
-+ `pwd` 查看当前路径'/Users/apple/docuemnt'
-+ `ls -R`
-+ `man <cmd>` help
-+ `cmd up/down` 选择命令
+
 
 ## 触摸板
 
