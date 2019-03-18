@@ -7,6 +7,7 @@
 + ruby?
 + curl
 + wget
++ applescript
 
 ## ref
 + [terminal 代理](https://blog.csdn.net/u011537073/article/details/71125571)
@@ -16,3 +17,7 @@
 + [mac－改造你的terminal](https://www.jianshu.com/p/bb1c97269b11)
 + [设置快捷键打开terminal](https://jingyan.baidu.com/article/20b68a88832140796cec623d.html)
 + [Terminal shortcut](https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac)
++ [Mac OS X Terminal 101：终端使用初级教程](https://www.renfei.org/blog/mac-os-x-terminal-101.html)
+
++ [Mac OS X巧用AppleScript 制作网络位置切换自动化脚本（自动配置PAC 文件）](https://devework.com/automatic-proxy-configuration-pac-applescript.html)
++ [如何优雅地一键实现macOS网络代理切换](https://zhuanlan.zhihu.com/p/23910924)

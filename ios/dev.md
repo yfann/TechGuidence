@@ -16,6 +16,11 @@
     - `brew info <package>`
 
 
-## idea
-
-+ gradle home
+## ref
++ [Dash + Alfred](https://www.jianshu.com/p/77d2bf8df81f) **查API文档**
++ Alfred/spotLight 本机网络搜索
++ [oh-my-zsh](https://www.jianshu.com/p/d194d29e488c)
++ [iTerm2](http://wulfric.me/2015/08/iterm2/)
++ tmux
++ navicat
++ automator
