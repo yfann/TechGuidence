@@ -4,7 +4,6 @@
 
 ### 基本操作
 
-- Ctrl+B 开关sidebar
 - Ctrl+鼠标选中Explore中的文件 分屏显示(Ctrl+\ 当前分屏)
 - Ctrl+Shift+V 预览markdown
 - Ctrl+Shift+C 打开当前文件位置命令行
