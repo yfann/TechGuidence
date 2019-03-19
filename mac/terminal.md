@@ -2,7 +2,7 @@
 ## config
 + `export http_proxy=XXX` `export https_proxy=XXX`
 + 安装XCode或安装Command Line Tools for Xcode`xcode-select --install`
-+ shell配置文件.bashrc或.zshrc,`source ~/.bashrc`
++ shell配置文件.bashrc或.zshrc,bash每次启动时都会加载，`source ~/.bashrc`立即生效
 
 ## cmd
 
@@ -48,6 +48,7 @@
 + [每天一个linux命令目录](https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html)
 + [Vim命令合集](https://www.jianshu.com/p/117253829581)
 + [Linux vi/vim](http://www.runoob.com/linux/linux-vim.html)
++ [linux下.bashrc文件修改和生效](https://blog.csdn.net/eleanoryss/article/details/70207767)
 <!-- terminal 配置 -->
 + [terminal 代理](https://blog.csdn.net/u011537073/article/details/71125571)
 + [利用 Privoxy 让命令行下的 wget 和 curl 等命令实现自动代理](https://fengqi.me/unix/328.html)
