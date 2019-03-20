@@ -22,6 +22,38 @@
 + powermock mock私有方法
 + 用protected和spy代替私有方法
 + 可以创建一个继承源测试类的类，来mock protected方法
++ FieldSetter
+
+
+## example
+
+<!-- powermockito -->
+```java
+class Test {
+    // mock
+    private Person person = new Person();
+    ...
+    public void testMethod() {
+        person.someMethod();
+        ...
+    }
+}
+
+@RunWith(PowerMockRunner.class)
+@PrepareForTest({ Test.class })
+public class SampleTest {
+@Mock
+Person person;
+@Test
+public void testPrintName() throws Exception {
+    PowerMockito.whenNew(Person.class).withNoArguments().thenReturn(person);
+    Test test= new Test();
+    test.testMethod();
+    }
+}
+```
+
+
 
 ## ref
 
