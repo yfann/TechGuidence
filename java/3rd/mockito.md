@@ -7,14 +7,23 @@
 + `@Mock`可以注入到测试类中的模拟类，方法都返回null
 + `@Spy`同@Mock，可以跑完实际代码返回模拟结果
 <!-- method -->
-+ `Mockito.when(wechatAggregateLogService.getToken("1","1")).thenReturn("123")`
++ `Mockito.when(wechatAggregateLogService.getToken(Mockito.anyString(),Mockito.<EncryptRequest> any())).thenReturn("123")`
++ `Mockito.any(EncryptRequest.class)`
 + `verify(wechatAggregateLogService,times(1)).getDailyRetain("123")`
 + Mockito.when时,如果参数都用any可能引起异常
 + `doNothing().when([instance]).[method(params...)]`
++ `Class obj=Mockito.mock(Class)`
+<!-- example -->
++ `restTemplate.exchange(Mockito.anyString(),Mockito.eq(HttpMethod.GET),Mockito.any(),Mockito.<Class<String>> any()`
 
 ## tips for mocking
 + private 变量设值`ReflectionTestUtils.setField(jarainUserLoginServiceImpl, "jarainLoginUrl", "http://foo");`
++ private method `eflectionTestUtils.invokeMethod(tFoo, "onStarted");`
++ powermock mock私有方法
++ 用protected和spy代替私有方法
++ 可以创建一个继承源测试类的类，来mock protected方法
 
 ## ref
 
 + [Mockito examples](https://www.programcreek.com/java-api-examples/index.php?source_dir=androidannotations-master/functional-test-1-5/src/test/java/org/androidannotations/test15/rest/HttpMethodServiceTest.java)
++ [powermock](https://github.com/powermock/powermock/wiki/Mockito)
