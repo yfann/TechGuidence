@@ -22,6 +22,7 @@
 + quick release keychain
 + Bottle Opener, EDC multi tool, keychain, pocket gear 
 + damasteel
++ turboglow
 
 ## flashlight
 
