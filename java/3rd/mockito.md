@@ -72,3 +72,4 @@ public void testPrintName() throws Exception {
 
 + [Mockito examples](https://www.programcreek.com/java-api-examples/index.php?source_dir=androidannotations-master/functional-test-1-5/src/test/java/org/androidannotations/test15/rest/HttpMethodServiceTest.java)
 + [powermock](https://github.com/powermock/powermock/wiki/Mockito)
++ [使用 Mockito 修改私有属性](https://yanbin.blog/mockito-modify-private-field/)

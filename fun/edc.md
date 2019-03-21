@@ -22,7 +22,8 @@
 + quick release keychain
 + Bottle Opener, EDC multi tool, keychain, pocket gear 
 + damasteel
-+ turboglow
++ [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
++ edc hank
 
 ## flashlight
 
