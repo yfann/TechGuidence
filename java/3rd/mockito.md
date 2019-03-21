@@ -27,16 +27,12 @@
 
 ## example
 
-<!-- powermockito -->
+<!-- mock 行内实例 -->
 ```java
 class Test {
     // mock
     private Person person = new Person();
     ...
-    public void testMethod() {
-        person.someMethod();
-        ...
-    }
 }
 
 @RunWith(PowerMockRunner.class)
@@ -53,7 +49,24 @@ public void testPrintName() throws Exception {
 }
 ```
 
+<!-- mock 被测试对象方法 -->
+```java
+    @Spy
+    @InjectMocks
+    private RequestHandler requestHandler;
+    //decryptPayload 会执行
+    Mockito.when(requestHandler.decryptPayload(Mockito.anyString())).thenReturn("123");
+    //decryptPayload 不会执行
+    Mockito.doReturn("123").when(requestHandler).decryptPayload(Mockito.anyString());
 
+```
+<!-- mock 私有属性 -->
+```java
+    UserService userService = new UserService(Mockito.mock(UserDao.class));
+    Field apiField = UserService.class.getDeclaredField("external");
+    ExternalApi external = Mockito.mock(ExternalApi.class);
+    FieldSetter.setField(userService, apiField, external);
+```
 
 ## ref
 
