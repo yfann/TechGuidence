@@ -26,7 +26,7 @@
 ## tips
 
 + 输入路径时首字母+`tab`可以补全文件名
-+ `git\ hub`路径有空格时加反斜杠
++ `priject/git\ hub/my`路径有空格时加反斜杠
 + `cmd up/down` 选择命令
 + `cmd + N` terminal 得到焦点后执行此命令打开新的terminal
 + `ctrl + c`终止执行
@@ -36,11 +36,17 @@
 
 + `Esc + :wq`保存文件
 
+## shell
++ `#!/bin/sh`第一行,指定bash解释器,ubuntu中用的是dash
++ 保存脚本.sh，shell脚本
++ `bash XXX.sh`
++ `chmod +x XXX.sh`开启文件的可执行权限，拖入终端+回车执行
+
+
 ## keyword
 + ruby?
 + curl
 + wget
-+ applescript
 
 ## ref
 <!-- bash  -->
@@ -49,6 +55,8 @@
 + [Vim命令合集](https://www.jianshu.com/p/117253829581)
 + [Linux vi/vim](http://www.runoob.com/linux/linux-vim.html)
 + [linux下.bashrc文件修改和生效](https://blog.csdn.net/eleanoryss/article/details/70207767)
++ [Shell 教程](http://www.runoob.com/linux/linux-shell.html)
++ [脚本语言语法规则](https://blog.csdn.net/oqqhutu12345678/article/details/71319006)
 <!-- terminal 配置 -->
 + [terminal 代理](https://blog.csdn.net/u011537073/article/details/71125571)
 + [利用 Privoxy 让命令行下的 wget 和 curl 等命令实现自动代理](https://fengqi.me/unix/328.html)
