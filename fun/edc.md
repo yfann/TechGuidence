@@ -42,7 +42,8 @@
 + [Tnc products](https://ogazent.com/store/)
 + [rotablade](https://rotablade.myshopify.com/collections/rotablade-vision)
 + [arizona custom knives shop](https://www.arizonacustomknives.com/catalogsearch/result/index/?p=1&q=flashlight)
-
++ [frelux](https://frelux.com/collections)
++ [muyshondt](https://shop.muyshondt.net/collections)
 ## pens
 
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -68,6 +69,9 @@
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 
+## bead
+
++ [grumpysedc](https://www.grumpysedc.com/products)
 ## ref
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
 <!-- forums -->
