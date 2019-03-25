@@ -71,6 +71,59 @@ greeting_1="hello, ${your_name} !"
     + `array_name[0]=value0`
     + `valuen=${array_name[n]}`
     + `length=${#array_name[*]}`
++ 参数
+    - `test.sh 1 2 3`
+    - `$0`脚本名 `$1`第一个参数 `$2`第二个参数
++ val=`expr $a + $b`
++ `$a -eq $b`
++ `read name`读取输入到变量name
++ `echo -e ok \n` -e开启转义`\c`不换行
+    - echo `date`
++ `test`
+```sh
+if test "asd" = "asd"
+then
+    echo 'equal'
+else
+    echo 'not equal'
+fi
+```
++ `f [ $(ps -ef | grep -c "ssh") -gt 1 ]; then echo "true"; fi`
+```sh
+if [$a == $b]
+then
+    ...
+fi
+```
++ `for var in item1 item2 ... itemN; do command1; command2… done;`
+```sh
+for var in item1 item2 ... itemN
+do
+    command1
+    command2
+    ...
+    commandN
+done
+
+int=1
+while(( $int<=5 ))
+do
+    echo $int
+    let "int++"
+done
+```
++ function 
+```sh
+demoFun(){
+    echo "这是我的第一个 shell 函数!"
+     return $(($aNum+$anotherNum))
+}
+
+demoFun
+echo "输入的两个数字之和为 $? !"
+# 返回值通过$?获取
+
+```
 
 ## keyword
 + ruby?
