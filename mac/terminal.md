@@ -43,9 +43,34 @@
 ## shell
 + `#!/bin/sh`第一行,指定bash解释器,ubuntu中用的是dash
 + 保存脚本.sh，shell脚本
-+ `bash XXX.sh`
-+ `chmod +x XXX.sh`开启文件的可执行权限，拖入终端+回车执行
+<!-- 执行脚本 -->
++ `bash <XXX.sh>` 
++ `./<XXX.sh>`执行脚本，当前路径在PATH时可以直接运行`XXX.sh`
++ `/bin/sh <XXX.sh>` 解释器直接运行脚本
++ `chmod +x <XXX.sh>`开启文件的可执行权限，拖入终端+回车执行
 
+## 语法
++ `your_name="xxx"`=两侧不能有空格
++ `echo ${your_name}`使用变量
++ 只读变量
+```sh
+your_name="xxxx"
+readonly your_name
+```
++ `unset your_name`删除变量
++ 拼接字符串
+```sh
+greeting="hello, "$your_name" !"
+greeting_1="hello, ${your_name} !"
+```
++ `${#your_name}`获取字串长度
++ `${your_name:1:4}`第二个字符开始截取4个字符
++ echo `expr index "$your_name" io`查找字符 i 或 o 的位置(哪个字母先出现就计算哪个)
++ 数组
+    - `array_name=(value0 value1 value2 value3)`
+    + `array_name[0]=value0`
+    + `valuen=${array_name[n]}`
+    + `length=${#array_name[*]}`
 
 ## keyword
 + ruby?
