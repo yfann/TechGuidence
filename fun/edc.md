@@ -28,6 +28,7 @@
 ## flashlight
 
 + Rovyvon Aurora 
++ Jumbo Knurly
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [foursevens](https://gallantry.com/collections/foursevens)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
@@ -44,6 +45,9 @@
 + [arizona custom knives shop](https://www.arizonacustomknives.com/catalogsearch/result/index/?p=1&q=flashlight)
 + [frelux](https://frelux.com/collections)
 + [muyshondt](https://shop.muyshondt.net/collections)
++ [hdssystems](https://www.hdssystems.com/)
++ [coolfall](http://www.coolfall.com/)
+
 ## pens
 
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -82,5 +86,10 @@
 + [oveready](https://www.oveready.com)
 + [kp](http://www.kpgears.com/)
 + [skylumen](https://skylumen.com)
++ [fidgethq](https://fidgethq.com/collections)
 <!-- picture -->
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
+
+
+## todo
++ [Omicron](http://www.candlepowerforums.com/vb/showthread.php?442104-Full-featured-10180-size-flashlight-Ti-and-Exotics)
