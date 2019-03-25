@@ -41,6 +41,16 @@ Command-Shift-Z 重做，也就是撤销的逆向操作　　
 Command-Tab 在打开的应用程序列表中转到下一个最近使用的应用程序，相当于Windows中（Alt+Tab）　　
 Command-Option-esc 打开“强制退出”窗口，如果有应用程序无响应，可在窗口列表中选择强制退出
 
+## spotlight
+
++ `cmd + space`
+<!-- 选中文件后 -->
+  - `cmd + enter` 打开文件夹
+  - `cmd`显示文件路径
+  - `option + cmd + space` smart folder
++ `1+2*3`输入表达式
++ `$100`单位转换
++ `kind:imgage` 查找图片
 
 
 ## 触摸板

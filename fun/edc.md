@@ -37,7 +37,6 @@
 + [cpf](http://www.candlepowerforums.com)
 + [blf](http://budgetlightforum.com/)
 + [cwf](https://www.cwfcustomflashlights.com/)
-
 + [RMSK, INC.](https://em-mgt.com/newsite/tnc-flashlights/)
 + [Peak](http://peakledsolutions.net/)
 + [Tnc products](https://ogazent.com/store/)
@@ -49,33 +48,28 @@
 + [coolfall](http://www.coolfall.com/)
 
 ## pens
-
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
 + [fellhoelter](https://fellhoelter.com/product-category/fellhoelter-pens/)
 
 ## handkerchief
-
 + [bigcartel](https://hanksbyhank.bigcartel.com/category/edc-hanks)
 + [maphank](https://www.imgrum.pw/tag/maphank)
 + [godspeed](http://www.godspeedtactical.com/gjsveh8lj6im0bfu9h6p4j1rhoots0)
 
 ## keychain
-
 + [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
 
 ## knives
-
 + [Derek Lee Knives](https://derekleeknives.com/)
 
 ## preorder
-
 + [veleno designs](http://www.velenodesigns.com/)
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 
 ## bead
-
 + [grumpysedc](https://www.grumpysedc.com/products)
+
 ## ref
 + [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
 <!-- forums -->
@@ -91,5 +85,3 @@
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
 
 
-## todo
-+ [Omicron](http://www.candlepowerforums.com/vb/showthread.php?442104-Full-featured-10180-size-flashlight-Ti-and-Exotics)
