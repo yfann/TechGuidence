@@ -7,6 +7,7 @@
     - `cmd + shift + H` 打开个人目录
     - `cmd + shift + D` 打开桌面
     - `cmd + shift + A` 打开程序
+    - `cmd + .` 缩小窗口
 + `cmd + space` 搜索`ter`  **快速打开terminal**
 + `cmd + del`
 + `cmd + shift + .`显示/隐藏文件
@@ -51,7 +52,23 @@ Command-Option-esc 打开“强制退出”窗口，如果有应用程序无响�
 + `1+2*3`输入表达式
 + `$100`单位转换
 + `kind:imgage` 查找图片
++ sh文件改command文件，可以直接在spotlight中执行(需要chmod付权限)
 
+## 环境变量
+
++ 加载顺序
+    <!-- 系统级，系统启动加载 -->
+    1. `/etc/profile`
+    2. `/etc/paths` 
+    <!-- 如果文件存在，后面的文件忽略 -->
+    3. `~/.bash_profile`
+    4. `~/.bash_login`
+    5. `~/.profile`
+    <!-- bash打开时自动加载 -->
+    6. `~/bashrc`
++ 拖动文件夹到terminal会生成路径
++ `export PATH=$PATH:<path 1>:<path 2>`原来路径+自定义路径
++ `echo $PATH`查看
 
 ## 触摸板
 
@@ -62,3 +79,4 @@ Command-Option-esc 打开“强制退出”窗口，如果有应用程序无响�
 
 ## ref
 + [程序员如何优雅地使用 macOS](https://www.zhihu.com/question/20873070)
++ [MAC 设置环境变量PATH 和 查看PATH](https://www.jianshu.com/p/acb1f062a925)

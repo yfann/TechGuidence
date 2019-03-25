@@ -33,8 +33,12 @@
 + `ctrl + L` clear
 
 ## 文本编辑
-
-+ `Esc + :wq`保存文件
++ `touch <file>`创建文件
++ `Esc + :wq`保存退出
++ `:q`退出
++ `sudo vim <txt file>`编辑文件
++ `i`插入模式
++ `:!q`不保存退出
 
 ## shell
 + `#!/bin/sh`第一行,指定bash解释器,ubuntu中用的是dash
