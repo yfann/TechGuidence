@@ -7,7 +7,7 @@
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
 + [kp](https://segmentfault.com/a/1190000015140923)
-
++ [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
 
 ## paracord
 + [60款伞绳编织](http://www.360doc.com/content/16/1229/01/16156855_618553052.shtml)
@@ -22,7 +22,6 @@
 + quick release keychain
 + Bottle Opener, EDC multi tool, keychain, pocket gear 
 + damasteel
-+ [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
 + edc hank
 
 ## flashlight

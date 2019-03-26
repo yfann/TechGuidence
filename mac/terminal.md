@@ -50,6 +50,7 @@
 + `chmod +x <XXX.sh>`开启文件的可执行权限，拖入终端+回车执行
 
 ## 语法
+
 + `your_name="xxx"`=两侧不能有空格
 + `echo ${your_name}`使用变量
 + 只读变量
@@ -88,9 +89,11 @@ else
     echo 'not equal'
 fi
 ```
+<!-- 控制语句 -->
 + `f [ $(ps -ef | grep -c "ssh") -gt 1 ]; then echo "true"; fi`
 ```sh
-if [$a == $b]
+#保留空格
+if [ $a == $b ]
 then
     ...
 fi
@@ -124,9 +127,26 @@ echo "输入的两个数字之和为 $? !"
 # 返回值通过$?获取
 
 ```
++ 重定向(右侧只能是文件)
+    - `cmd > file`输出到文件
+    - `cmd >> file`输出追加到文件
+    - `cmd < file`文件输入
+    + `n >& m` n m 合并到m
+    - `<< tag` 	将开始标记 tag 和结束标记 tag 之间的内容作为输入
+        ```sh
+        $ wc -l << EOF
+            sss
+            xxx
+            ttt
+        EOF
+        #输出结果，查看行数
+        3
+        ```
+    - `command > /dev/null`啥都不输出
++ `. ./test1.sh`引用文件
++ `cmd | cmd`左侧标准输出，右侧标准输入
 
 ## keyword
-+ ruby?
 + curl
 + wget
 

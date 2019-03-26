@@ -13,7 +13,7 @@
 
 ## 启动
 
-+ `mongod --dbpath  [path]`	 默认`C:\data\db`, 启动后查看 `http://localhost:27017/`
++ `mongod --port [port] --dbpath  [path]`	 默认`C:\data\db`, 启动后查看 `http://localhost:27017/`
 + `mongod --dbpath [dbpath] --logpath [logpath] --install --serviceName "MongoDB"`
 + `mongod --rest` 打开restful服务，查看`http://localhost:28017`
 + `net start MongoDB`  启动win service服务

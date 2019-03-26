@@ -1,4 +1,10 @@
-cat <path> | while read line
+
+gitconfig=''
+
+cat $gitconfig | while read line
 do 
-    echo "${line}"
+    if [ "$line" == "[http]" ]
+    then
+        echo $line
+    fi
 done
