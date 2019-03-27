@@ -39,8 +39,12 @@
 + `sudo vim <txt file>`编辑文件
 + `i`插入模式
 + `:!q`不保存退出
++ `nl <file>` 添加行号
 
-## shell
+### sed
+
+
+## shell文件
 + `#!/bin/sh`第一行,指定bash解释器,ubuntu中用的是dash
 + 保存脚本.sh，shell脚本
 <!-- 执行脚本 -->
@@ -49,7 +53,7 @@
 + `/bin/sh <XXX.sh>` 解释器直接运行脚本
 + `chmod +x <XXX.sh>`开启文件的可执行权限，拖入终端+回车执行
 
-## 语法
+## 基础语法
 
 + `your_name="xxx"`=两侧不能有空格
 + `echo ${your_name}`使用变量
@@ -80,7 +84,7 @@ greeting_1="hello, ${your_name} !"
 + `read name`读取输入到变量name
 + `echo -e ok \n` -e开启转义`\c`不换行
     - echo `date`
-+ `test`
++ `test` 代替if中的方括号
 ```sh
 if test "asd" = "asd"
 then
@@ -127,31 +131,35 @@ echo "输入的两个数字之和为 $? !"
 # 返回值通过$?获取
 
 ```
-+ 重定向(右侧只能是文件)
-    - `cmd > file`输出到文件
-    - `cmd >> file`输出追加到文件
-    - `cmd < file`文件输入
-    + `n >& m` n m 合并到m
-    - `<< tag` 	将开始标记 tag 和结束标记 tag 之间的内容作为输入
-        ```sh
-        $ wc -l << EOF
-            sss
-            xxx
-            ttt
-        EOF
-        #输出结果，查看行数
-        3
-        ```
-    - `command > /dev/null`啥都不输出
+
 + `. ./test1.sh`引用文件
 + `cmd | cmd`左侧标准输出，右侧标准输入
+
+## 重定向(右侧只能是文件)
+
+- `cmd > file`输出到文件
+- `cmd >> file`输出追加到文件
+- `cmd < file`文件输入
++ `n >& m` n m 合并到m
+- `<< tag` 	将开始标记 tag 和结束标记 tag 之间的内容作为输入
+    ```sh
+    $ wc -l << EOF
+        sss
+        xxx
+        ttt
+    EOF
+    #输出结果，查看行数
+    3
+    ```
+- `command > /dev/null`啥都不输出
+
 
 ## keyword
 + curl
 + wget
 
 ## ref
-<!-- bash  -->
+<!-- shell bash  -->
 + [Mac OS X Terminal 101：终端使用初级教程](https://www.renfei.org/blog/mac-os-x-terminal-101.html)
 + [每天一个linux命令目录](https://www.cnblogs.com/peida/archive/2012/12/05/2803591.html)
 + [Vim命令合集](https://www.jianshu.com/p/117253829581)
@@ -159,6 +167,9 @@ echo "输入的两个数字之和为 $? !"
 + [linux下.bashrc文件修改和生效](https://blog.csdn.net/eleanoryss/article/details/70207767)
 + [Shell 教程](http://www.runoob.com/linux/linux-shell.html)
 + [脚本语言语法规则](https://blog.csdn.net/oqqhutu12345678/article/details/71319006)
++ [shell 脚本编程](https://wiki.jikexueyuan.com/project/shell-learning/sed-search-and-replace.html)
++ [Linux 命令大全](http://www.runoob.com/linux/linux-command-manual.html)
++ [search linux command](http://man.linuxde.net/)
 <!-- terminal 配置 -->
 + [terminal 代理](https://blog.csdn.net/u011537073/article/details/71125571)
 + [利用 Privoxy 让命令行下的 wget 和 curl 等命令实现自动代理](https://fengqi.me/unix/328.html)

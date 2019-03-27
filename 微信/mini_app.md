@@ -40,3 +40,4 @@
 + [入坑微信小程序](https://sunmengyuan.github.io/garden/2018/01/04/xcx-gm.html)
 + [小程序登录鉴权](https://juejin.im/post/5ac9b72cf265da23906c486a)
 + [微信OAuth2.0](https://www.jianshu.com/p/1c48ec65936b)
++ [小程序分享](https://www.jianshu.com/p/c100d21bcc9c)
