@@ -41,3 +41,5 @@
 + [小程序登录鉴权](https://juejin.im/post/5ac9b72cf265da23906c486a)
 + [微信OAuth2.0](https://www.jianshu.com/p/1c48ec65936b)
 + [小程序分享](https://www.jianshu.com/p/c100d21bcc9c)
++ [微信小程序如何裁剪图片作为转发封面](https://www.jianshu.com/p/12fdfb152906)
++ [微信小程序canvas生成分享图到相册](https://www.jianshu.com/p/01f526a4f948)
