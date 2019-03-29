@@ -1,18 +1,18 @@
 # Git
 
-## CMD
+## init
 
-3. git clone <repository>
++ `git clone <repository>`
 
-4. git add *
++ `git add *`
 
-5. git commit -m "commit"
++ `git commit -m "commit"`
 
-6. git pull origin master   //pull resolve confliction
++ `git pull origin master`   //pull resolve confliction
 
-7. git push origin master //push to remote(has no conflict)
++ `git push origin master` //push to remote(has no conflict)
 
-7. git branch/checkout/merge/delete   //branch
++ `git remote add origin <url>`
 
 ## Basic CMD
 
