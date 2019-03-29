@@ -3,6 +3,10 @@
 
 + [kingofthepin](https://kingofthepin.com/)
 + [zenmonkeystudios](https://www.zenmonkeystudios.com/collections/all)
++ [Airbender](https://kolorspun.com/collections/limited-stock-pins)
++ [Jessica](https://www.pinunion.com/product-category/jessica-rabbit/)
++ [witchsy](https://www.witchsy.com/pins-and-patches/lapel-pins/page-26/)
++ [strikegently](https://www.strikegently.co)
 
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
