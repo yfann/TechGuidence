@@ -7,6 +7,8 @@
 + [Jessica](https://www.pinunion.com/product-category/jessica-rabbit/)
 + [witchsy](https://www.witchsy.com/pins-and-patches/lapel-pins/page-26/)
 + [strikegently](https://www.strikegently.co)
++ [pinlord](https://www.pinlordshop.com/)
++ [Cthulhu](https://www.necronomiconpopup.com/)
 
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
@@ -86,5 +88,6 @@
 + [fidgethq](https://fidgethq.com/collections)
 <!-- picture -->
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
++ [warhammer](https://warhammer-crafts.ru/)
 
 
