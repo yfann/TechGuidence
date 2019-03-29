@@ -9,6 +9,7 @@
 + [strikegently](https://www.strikegently.co)
 + [pinlord](https://www.pinlordshop.com/)
 + [Cthulhu](https://www.necronomiconpopup.com/)
++ [??](https://comeinpce.com/collections)
 
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
