@@ -11,6 +11,7 @@
 + [Cthulhu](https://www.necronomiconpopup.com/)
 + [??](https://comeinpce.com/collections)
 + [pinhippy](http://pinhippy.com/fun-stuff/?sort=featured&page=8)
++ [pintrill](https://www.pintrill.com/collections/all-categories)
 
 ## edc
 + [urban edc](https://urbanedcsupply.com/collections/all-available)
