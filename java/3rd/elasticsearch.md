@@ -59,12 +59,9 @@ POST <index>/_delete_by_query
 <!-- kibana -->
 + [curl](https://www.jianshu.com/p/07c4dddae43a)
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
-<<<<<<< HEAD
 + [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420)
 <!-- issues -->
 + [Elasticsearch 时间类型总结](https://zhuanlan.zhihu.com/p/34240906)
 + [Elasticsearch索引mapping的写入、查看与修改](https://blog.csdn.net/napoay/article/details/52012249)
-=======
 + [Kibana可视化 官方](https://www.elastic.co/guide/cn/kibana/current/createvis.html)
 + [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420)
->>>>>>> 827aa5a2e6f5e0dad2cd4f953a4f2496d53c8317
