@@ -18,6 +18,7 @@
 + [kp](https://segmentfault.com/a/1190000015140923)
 + [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
 + [lawson](https://www.jllawsonco.com/collections/in-stock)
++ [butterfield](https://www.butterfield-machine.com/collections/frontpage)
 
 ## paracord
 + [60款伞绳编织](http://www.360doc.com/content/16/1229/01/16156855_618553052.shtml)
@@ -33,6 +34,7 @@
 + Bottle Opener, EDC multi tool, keychain, pocket gear 
 + damasteel
 + edc hank
++ edc top
 
 ## flashlight
 
