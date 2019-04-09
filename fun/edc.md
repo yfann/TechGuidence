@@ -64,6 +64,7 @@
 
 ## keychain
 + [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
++ [keybar](https://www.keybar.us/product-category/all-keybars/)
 
 ## knives
 + [Derek Lee Knives](https://derekleeknives.com/)
@@ -76,11 +77,15 @@
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
 
+## toys
++ [unbox](http://store.unboxindustries.info/products)
++ [Toycon UK](http://www.toyconuk.com/)
++ [martiantoys](https://martiantoys.com/collections/designer-vinyl)
+
 ## ref
-+ [quick release keychain](https://www.bestreviews.guide/detachable-key-rings)
 <!-- forums -->
 + [edcforums](https://www.edcforums.com/forums/keychain-tools.81/)
-<!-- shop -->
+<!--edc shop -->
 + [optiongray](https://www.optiongray.com/flashlights/)
 + [kp](http://www.kpgears.com/)
 + [skylumen](https://skylumen.com)
@@ -91,9 +96,9 @@
 + [butterfield](https://www.butterfield-machine.com/collections/frontpage)
 + [darksucks](https://darksucks.com)
 + [arizonacustomknives](https://www.arizonacustomknives.com)
-<!-- picture -->
+<!-- other -->
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
 + [warhammer](https://warhammer-crafts.ru/)
-+ [Toycon UK](http://www.toyconuk.com/)
+
 
 
