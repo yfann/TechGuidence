@@ -13,13 +13,6 @@
 + [pinhippy](http://pinhippy.com/fun-stuff/?sort=featured&page=8)
 + [pintrill](https://www.pintrill.com/collections/all-categories)
 
-## edc
-+ [urban edc](https://urbanedcsupply.com/collections/all-available)
-+ [kp](https://segmentfault.com/a/1190000015140923)
-+ [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
-+ [lawson](https://www.jllawsonco.com/collections/in-stock)
-+ [butterfield](https://www.butterfield-machine.com/collections/frontpage)
-+ [darksucks](https://darksucks.com)
 
 ## paracord
 + [60款伞绳编织](http://www.360doc.com/content/16/1229/01/16156855_618553052.shtml)
@@ -58,6 +51,7 @@
 + [muyshondt](https://shop.muyshondt.net/collections)
 + [hdssystems](https://www.hdssystems.com/)
 + [coolfall](http://www.coolfall.com/)
++ [boss](https://www.oveready.com)
 
 ## pens
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -87,12 +81,16 @@
 <!-- forums -->
 + [edcforums](https://www.edcforums.com/forums/keychain-tools.81/)
 <!-- shop -->
-+ [gearmoose](https://gearmoose.com)
-+ [edc shop](https://www.optiongray.com/flashlights/)
-+ [oveready](https://www.oveready.com)
++ [optiongray](https://www.optiongray.com/flashlights/)
 + [kp](http://www.kpgears.com/)
 + [skylumen](https://skylumen.com)
 + [fidgethq](https://fidgethq.com/collections)
++ [urban edc](https://urbanedcsupply.com/collections/all-available)
++ [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
++ [lawson](https://www.jllawsonco.com/collections/in-stock)
++ [butterfield](https://www.butterfield-machine.com/collections/frontpage)
++ [darksucks](https://darksucks.com)
++ [arizonacustomknives](https://www.arizonacustomknives.com)
 <!-- picture -->
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
 + [warhammer](https://warhammer-crafts.ru/)
