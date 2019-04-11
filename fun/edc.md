@@ -84,6 +84,7 @@
 + [Toycon UK](http://www.toyconuk.com/)
 + [martiantoys](https://martiantoys.com/collections/designer-vinyl)
 + [art toy gama](http://arttoygama.storenvy.com/products)
++ [katyushka](https://www.katyushka-dolls.com/)
 
 ## ref
 <!-- forums -->
