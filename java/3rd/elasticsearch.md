@@ -46,6 +46,13 @@ POST <index>/_delete_by_query
     - `elasticsearch-plugin`
 + [x-pack](https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html)
 
+
+## kibana
+
++ download->unzip
++ `.\bin\kibana.bat`
++ `http://localhost:5601/`
+
 ## ref
 <!-- elastic search -->
 + [offical](https://www.elastic.co/cn/downloads/elasticsearch)
@@ -59,9 +66,13 @@ POST <index>/_delete_by_query
 <!-- kibana -->
 + [curl](https://www.jianshu.com/p/07c4dddae43a)
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
-+ [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420)
++ [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420) 
++ [config kibana](https://www.elastic.co/guide/en/kibana/current/settings.html)
 <!-- issues -->
 + [Elasticsearch 时间类型总结](https://zhuanlan.zhihu.com/p/34240906)
 + [Elasticsearch索引mapping的写入、查看与修改](https://blog.csdn.net/napoay/article/details/52012249)
 + [Kibana可视化 官方](https://www.elastic.co/guide/cn/kibana/current/createvis.html)
 + [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420)
+<!-- space -->
++ [Organize your work with Kibana spaces](https://www.elastic.co/blog/introducing-kibana-spaces-for-organization-and-security)
++ [migrate object to space](https://www.elastic.co/blog/how-to-migrate-to-kibana-spaces)
