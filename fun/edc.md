@@ -32,6 +32,7 @@
 + edc hank
 + spin top
 + knuck
++ utility cutter
 
 ## flashlight
 
@@ -66,9 +67,11 @@
 + [maphank](https://www.imgrum.pw/tag/maphank)
 + [godspeed](http://www.godspeedtactical.com/gjsveh8lj6im0bfu9h6p4j1rhoots0)
 
-## keychain
+## keychain spin openner
 + [keybar](https://www.keybar.us/product-category/all-keybars/)
 + [KeyGrip](https://www.ravenworkshop.com/store/c2/KeyGrip.html)
++ [opener](https://rusticedc.bigcartel.com/products)
++ [phoenix spinner](https://www.cineik.com/phoenix-titanium-spinner.html)
 
 ## knives
 + [Derek Lee Knives](https://derekleeknives.com/)
