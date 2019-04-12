@@ -29,6 +29,7 @@
 + damasteel
 + edc hank
 + spin top
++ toy droid
 
 ## flashlight
 
@@ -52,6 +53,10 @@
 + [hdssystems](https://www.hdssystems.com/)
 + [coolfall](http://www.coolfall.com/)
 + [boss](https://www.oveready.com)
++ [barrel](https://www.barrelflashlights.com/)
++ [hds](https://www.hdssystems.com)
+<!-- flashlight parts -->
++ [Tritium-Ready HDS EDC Flashlight Bezel](https://yourlittlecncshop.com/products/tritium-ready-hds-edc-flashlight-bezel)
 
 ## pens
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -81,6 +86,8 @@
 + [unbox](http://store.unboxindustries.info/products)
 + [Toycon UK](http://www.toyconuk.com/)
 + [martiantoys](https://martiantoys.com/collections/designer-vinyl)
++ [DROID FOUNDRY](https://insta-stalker.com/profile/bensmatt9090/)
++ [fugi](https://fugi.me)
 
 ## ref
 <!-- forums -->
