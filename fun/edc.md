@@ -31,11 +31,13 @@
 + damasteel
 + edc hank
 + spin top
++ knuck
 
 ## flashlight
 
 + Rovyvon Aurora 
 + Jumbo Knurly
++ Jeff Hanko D10
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [foursevens](https://gallantry.com/collections/foursevens)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
@@ -65,16 +67,17 @@
 + [godspeed](http://www.godspeedtactical.com/gjsveh8lj6im0bfu9h6p4j1rhoots0)
 
 ## keychain
-+ [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
 + [keybar](https://www.keybar.us/product-category/all-keybars/)
++ [KeyGrip](https://www.ravenworkshop.com/store/c2/KeyGrip.html)
 
 ## knives
 + [Derek Lee Knives](https://derekleeknives.com/)
 
-## preorder
+## GetOne
 + [veleno designs](http://www.velenodesigns.com/)
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
++ [TiBolt Light](https://www.edcaddiction.com/collections/brian-fellhoelter)
 
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
@@ -85,6 +88,9 @@
 + [martiantoys](https://martiantoys.com/collections/designer-vinyl)
 + [art toy gama](http://arttoygama.storenvy.com/products)
 + [katyushka](https://www.katyushka-dolls.com/)
+
+## keyboard
++ [wasd](http://www.wasdkeyboards.com/)
 
 ## ref
 <!-- forums -->
@@ -100,9 +106,15 @@
 + [butterfield](https://www.butterfield-machine.com/collections/frontpage)
 + [darksucks](https://darksucks.com)
 + [arizonacustomknives](https://www.arizonacustomknives.com)
++ [**edcaddiction](https://www.edcaddiction.com/)
++ [fellhoelter](https://fellhoelter.com/product-category/fellhoelter-pens/)
++ [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
 <!-- other -->
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
 + [warhammer](https://warhammer-crafts.ru/)
+<!-- images -->
++ [imgrumweb](https://www.imgrumweb.com/hashtag/FourSevens)
++ [imglogy](http://imglogy.com/tag/darrel_ralph_ddr)
 
 
 

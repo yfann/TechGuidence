@@ -66,7 +66,8 @@ POST <index>/_delete_by_query
 <!-- kibana -->
 + [curl](https://www.jianshu.com/p/07c4dddae43a)
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
-+ [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420)
++ [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420) 
++ [config kibana](https://www.elastic.co/guide/en/kibana/current/settings.html)
 <!-- issues -->
 + [Elasticsearch 时间类型总结](https://zhuanlan.zhihu.com/p/34240906)
 + [Elasticsearch索引mapping的写入、查看与修改](https://blog.csdn.net/napoay/article/details/52012249)
