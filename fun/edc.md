@@ -34,12 +34,15 @@
 + toy droid
 + knuck
 + utility cutter
++ mokume
++ torch
 
 ## flashlight
 
 + Rovyvon Aurora 
 + Jumbo Knurly
 + Jeff Hanko D10
++ Strong light rollbar
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [foursevens](https://gallantry.com/collections/foursevens)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
@@ -125,6 +128,9 @@
 <!-- images -->
 + [imgrumweb](https://www.imgrumweb.com/hashtag/FourSevens)
 + [imglogy](http://imglogy.com/tag/darrel_ralph_ddr)
++ [picclick](https://picclick.co.uk/?q=edc+flashlight)
++ [sinner flashlight](https://insta-stalker.com/tag/sinnerflashlight/)
++ [customflashlight](https://www.instagweb.com/tag/customflashlight)
 
 
 
