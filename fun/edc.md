@@ -123,7 +123,7 @@
 + [*****edcaddiction](https://www.edcaddiction.com/)
 + [fellhoelter](https://fellhoelter.com/product-category/fellhoelter-pens/)
 + [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
-+ [monarch precious metals](https://www.monarchpreciousmetals.com/)
++ [monarch egyptian relic silver bar](https://www.monarchpreciousmetals.com/)
 <!-- other -->
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
 + [warhammer](https://warhammer-crafts.ru/)
