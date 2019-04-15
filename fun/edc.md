@@ -33,6 +33,7 @@
 + spin top
 + knuck
 + utility cutter
++ tab dock
 
 ## flashlight
 
@@ -103,13 +104,13 @@
 + [kp](http://www.kpgears.com/)
 + [skylumen](https://skylumen.com)
 + [fidgethq](https://fidgethq.com/collections)
-+ [urban edc](https://urbanedcsupply.com/collections/all-available)
++ [**urban edc](https://urbanedcsupply.com/collections/all-available)
 + [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
 + [lawson](https://www.jllawsonco.com/collections/in-stock)
 + [butterfield](https://www.butterfield-machine.com/collections/frontpage)
 + [darksucks](https://darksucks.com)
-+ [arizonacustomknives](https://www.arizonacustomknives.com)
-+ [**edcaddiction](https://www.edcaddiction.com/)
++ [**arizonacustomknives](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
++ [*****edcaddiction](https://www.edcaddiction.com/)
 + [fellhoelter](https://fellhoelter.com/product-category/fellhoelter-pens/)
 + [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
 <!-- other -->
