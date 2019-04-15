@@ -31,15 +31,19 @@
 + damasteel
 + edc hank
 + spin top
++ toy droid
 + knuck
 + utility cutter
 + tab dock
++ mokume
++ torch
 
 ## flashlight
 
 + Rovyvon Aurora 
 + Jumbo Knurly
 + Jeff Hanko D10
++ Strong light rollbar
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [foursevens](https://gallantry.com/collections/foursevens)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
@@ -58,6 +62,10 @@
 + [hdssystems](https://www.hdssystems.com/)
 + [coolfall](http://www.coolfall.com/)
 + [boss](https://www.oveready.com)
++ [barrel](https://www.barrelflashlights.com/)
++ [hds](https://www.hdssystems.com)
+<!-- flashlight parts -->
++ [Tritium-Ready HDS EDC Flashlight Bezel](https://yourlittlecncshop.com/products/tritium-ready-hds-edc-flashlight-bezel)
 
 ## pens
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -90,6 +98,8 @@
 + [unbox](http://store.unboxindustries.info/products)
 + [Toycon UK](http://www.toyconuk.com/)
 + [martiantoys](https://martiantoys.com/collections/designer-vinyl)
++ [DROID FOUNDRY](https://insta-stalker.com/profile/bensmatt9090/)
++ [fugi](https://fugi.me)
 + [art toy gama](http://arttoygama.storenvy.com/products)
 + [katyushka](https://www.katyushka-dolls.com/)
 
@@ -119,6 +129,9 @@
 <!-- images -->
 + [imgrumweb](https://www.imgrumweb.com/hashtag/FourSevens)
 + [imglogy](http://imglogy.com/tag/darrel_ralph_ddr)
++ [picclick](https://picclick.co.uk/?q=edc+flashlight)
++ [sinner flashlight](https://insta-stalker.com/tag/sinnerflashlight/)
++ [customflashlight](https://www.instagweb.com/tag/customflashlight)
 
 
 
