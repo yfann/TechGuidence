@@ -22,7 +22,6 @@
 
 ## tag
 
-+ peak eiger
 + keybar
 + magnuts
 + keychain flashlight
