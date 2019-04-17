@@ -43,7 +43,7 @@
 + Rovyvon Aurora 
 + Jumbo Knurly
 + Jeff Hanko D10
-+ Strong light rollbar
++ [Strong light rollbar](http://stronglightsllc.com/roll-bar/)
 + [tain](https://www.arizonacustomknives.com/knives-by-maker/tain-flashlights.html)
 + [foursevens](https://gallantry.com/collections/foursevens)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
