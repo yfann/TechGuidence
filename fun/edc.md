@@ -49,7 +49,7 @@
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 + [eiger flashlight](https://gallantry.com/products/peak-led-solutions-eiger-flashlight-stainless-steel)
 + [veleno designs](http://www.velenodesigns.com/)
-+ [cpf](http://www.candlepowerforums.com)
++ [cpf](https://www.candlepowerforums.com/vb/forumdisplay.php?136-WTS-Custom-Titanium-amp-Exotic-Metals-Flashlights)
 + [blf](http://budgetlightforum.com/)
 + [cwf](https://www.cwfcustomflashlights.com/)
 + [RMSK, INC.](https://em-mgt.com/newsite/tnc-flashlights/)
