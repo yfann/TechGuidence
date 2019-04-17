@@ -87,9 +87,10 @@
 
 ## GetOne
 + [veleno designs](http://www.velenodesigns.com/)
-+ [tain](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
++ [Small Titanium Flashlight w/ Tritium](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 + [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
++ [lawson](https://www.jllawsonco.com/collections/in-stock)
 
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
