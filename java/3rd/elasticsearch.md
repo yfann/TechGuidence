@@ -63,6 +63,7 @@ POST <index>/_delete_by_query
 + [Windows 下安装 ElasticSearch & ElasticSearch head](https://www.jianshu.com/p/4467cfe4e651)
 + [ELASTIC SEARCH: HOW TO INSTALL MARVEL PLUGIN MANUALLY ON WINDOWS OS](https://hassantariqblog.wordpress.com/2016/09/19/elastic-search-how-to-install-marvel-plugin-manually-on-windows-os/)
 + [全文搜索引擎 Elasticsearch 入门教程](http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html)
++ [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math)
 <!-- kibana -->
 + [curl](https://www.jianshu.com/p/07c4dddae43a)
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
