@@ -64,6 +64,7 @@
 + [boss](https://www.oveready.com)
 + [barrel](https://www.barrelflashlights.com/)
 + [hds](https://www.hdssystems.com)
++ [TLX-P6](http://www.texaslumens.com/)
 <!-- flashlight parts -->
 + [Tritium-Ready HDS EDC Flashlight Bezel](https://yourlittlecncshop.com/products/tritium-ready-hds-edc-flashlight-bezel)
 
