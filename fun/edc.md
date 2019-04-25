@@ -65,8 +65,10 @@
 + [barrel](https://www.barrelflashlights.com/)
 + [hds](https://www.hdssystems.com)
 + [TLX-P6](http://www.texaslumens.com/)
++ [Knolanplay](https://knolanplay.bigcartel.com/products)
 <!-- flashlight parts -->
 + [Tritium-Ready HDS EDC Flashlight Bezel](https://yourlittlecncshop.com/products/tritium-ready-hds-edc-flashlight-bezel)
+
 
 ## pens
 + [investigator pen](https://www.rickhindererknives.com/product-category/rick-hinderer-pens/rick-hinderer-investigator-pens/)
@@ -112,17 +114,17 @@
 <!-- forums -->
 + [edcforums](https://www.edcforums.com/forums/keychain-tools.81/)
 <!--edc shop -->
++ [*****edcaddiction](https://www.edcaddiction.com/)
++ [***arizonacustomknives](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
++ [**urban edc](https://urbanedcsupply.com/collections/all-available)
 + [optiongray](https://www.optiongray.com/flashlights/)
 + [kp](http://www.kpgears.com/)
 + [skylumen](https://skylumen.com)
 + [fidgethq](https://fidgethq.com/collections)
-+ [**urban edc](https://urbanedcsupply.com/collections/all-available)
 + [turboglow/CarbonWaves](https://carbonwaves.nl/product-category/turboglow/)
 + [lawson](https://www.jllawsonco.com/collections/in-stock)
 + [butterfield](https://www.butterfield-machine.com/collections/frontpage)
 + [darksucks](https://darksucks.com)
-+ [**arizonacustomknives](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
-+ [*****edcaddiction](https://www.edcaddiction.com/)
 + [fellhoelter](https://fellhoelter.com/product-category/fellhoelter-pens/)
 + [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
 + [monarch egyptian relic silver bar](https://www.monarchpreciousmetals.com/)
