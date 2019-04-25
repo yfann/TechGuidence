@@ -69,6 +69,7 @@ POST <index>/_delete_by_query
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
 + [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420) 
 + [config kibana](https://www.elastic.co/guide/en/kibana/current/settings.html)
++ [Histogram to show current and last week data](https://github.com/elastic/kibana/issues/1244)
 <!-- issues -->
 + [Elasticsearch 时间类型总结](https://zhuanlan.zhihu.com/p/34240906)
 + [Elasticsearch索引mapping的写入、查看与修改](https://blog.csdn.net/napoay/article/details/52012249)
