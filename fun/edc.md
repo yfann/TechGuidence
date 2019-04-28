@@ -88,6 +88,7 @@
 + [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
 + [rexford](http://www.rexfordknives.com)
 + [Tibolt handle](https://zerofeud.myshopify.com)
+
 ## GetOne
 + [veleno designs](http://www.velenodesigns.com/)
 + [Small Titanium Flashlight w/ Tritium](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
