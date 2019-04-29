@@ -38,6 +38,7 @@
 + torch
 + Rexford Knives RUT
 
+
 ## flashlight
 
 + Rovyvon Aurora 
@@ -86,6 +87,7 @@
 + [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
 + [rexford](http://www.rexfordknives.com)
 + [STICK SPINNER](http://www.mountaintopsedc.com/products)
++ [roman booteen](https://hotco.co/collections/roman-booteen)
 
 ## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)
