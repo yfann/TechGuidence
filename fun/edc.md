@@ -66,8 +66,6 @@
 + [hds](https://www.hdssystems.com)
 + [TLX-P6](http://www.texaslumens.com/)
 + [Knolanplay](https://knolanplay.bigcartel.com/products)
-<!-- flashlight parts -->
-+ [Tritium-Ready HDS EDC Flashlight Bezel](https://yourlittlecncshop.com/products/tritium-ready-hds-edc-flashlight-bezel)
 
 
 ## pens
@@ -87,7 +85,12 @@
 + [Derek Lee Knives](https://derekleeknives.com/)
 + [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
 + [rexford](http://www.rexfordknives.com)
++ [STICK SPINNER](http://www.mountaintopsedc.com/products)
+
+## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)
++ [bolt handle](https://www.barnettprototyping.com/products)
++ [Tritium-Ready HDS EDC Flashlight Bezel](https://yourlittlecncshop.com/products/tritium-ready-hds-edc-flashlight-bezel)
 
 ## GetOne
 + [veleno designs](http://www.velenodesigns.com/)
@@ -95,6 +98,7 @@
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 + [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
 + [lawson](https://www.jllawsonco.com/collections/in-stock)
++ [STICK SPINNER](http://www.mountaintopsedc.com/products)
 
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
@@ -118,6 +122,7 @@
 + [*****edcaddiction](https://www.edcaddiction.com/)
 + [***arizonacustomknives](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
 + [**urban edc](https://urbanedcsupply.com/collections/all-available)
++ [**monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
 + [optiongray](https://www.optiongray.com/flashlights/)
 + [kp](http://www.kpgears.com/)
 + [skylumen](https://skylumen.com)
@@ -127,8 +132,8 @@
 + [butterfield](https://www.butterfield-machine.com/collections/frontpage)
 + [darksucks](https://darksucks.com)
 + [fellhoelter](https://fellhoelter.com/product-category/fellhoelter-pens/)
-+ [monkeyedge](https://www.monkeyedge.com/Monkey-Edge-Misc-Gear-s/162.htm)
 + [monarch egyptian relic silver bar](https://www.monarchpreciousmetals.com/)
+
 <!-- other -->
 + [picclick](https://picclick.com/Collectibles/Knives-Swords-Blades/?q=titanium)
 + [warhammer](https://warhammer-crafts.ru/)
@@ -138,5 +143,6 @@
 + [picclick](https://picclick.co.uk/?q=edc+flashlight)
 + [sinner flashlight](https://insta-stalker.com/tag/sinnerflashlight/)
 + [customflashlight](https://www.instagweb.com/tag/customflashlight)
-
++ [TiBolt](https://deskgram.net/explore/tags/TiBolt)
++ [mountaintops](https://www.toopics.com/mountain_tops_edc/)
 
