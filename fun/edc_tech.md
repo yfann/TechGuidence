@@ -17,3 +17,8 @@
 + 阳极黑
 + 陶瓷涂层
 + 淬火泡油
+
+
++ [电解电压对钛阳极氧化色彩的影响](http://www.cnki.com.cn/Article/CJFDTotal-SYKQ200106031.htm)
++ [给钛挂件镀一层彩色外衣](https://www.guokr.com/article/437010/)
++ [手工镜面抛光](https://www.douban.com/note/657969109/)

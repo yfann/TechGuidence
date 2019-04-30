@@ -98,9 +98,8 @@
 + [veleno designs](http://www.velenodesigns.com/)
 + [Small Titanium Flashlight w/ Tritium](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
 + [photonfanatic](http://photonfanatic.com/GroovyFS.html)
-+ [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
 + [lawson](https://www.jllawsonco.com/collections/in-stock)
-+ [STICK SPINNER](http://www.mountaintopsedc.com/products)
++ [*STICK SPINNER](http://www.mountaintopsedc.com/products)
 
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
