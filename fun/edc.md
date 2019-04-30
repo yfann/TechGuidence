@@ -52,7 +52,6 @@
 + [veleno designs](http://www.velenodesigns.com/)
 + [cpf](https://www.candlepowerforums.com/vb/forumdisplay.php?136-WTS-Custom-Titanium-amp-Exotic-Metals-Flashlights)
 + [blf](http://budgetlightforum.com/)
-+ [cwf](https://www.cwfcustomflashlights.com/)
 + [RMSK, INC.](https://em-mgt.com/newsite/tnc-flashlights/)
 + [Peak](http://peakledsolutions.net/)
 + [Tnc products](https://ogazent.com/store/)
@@ -93,6 +92,7 @@
 + [Tibolt handle](https://zerofeud.myshopify.com)
 + [bolt handle](https://www.barnettprototyping.com/products)
 + [Tritium-Ready HDS EDC Flashlight Bezel](https://yourlittlecncshop.com/products/tritium-ready-hds-edc-flashlight-bezel)
++ [cwf](https://www.cwfcustomflashlights.com/)
 
 ## GetOne
 + [veleno designs](http://www.velenodesigns.com/)
