@@ -87,6 +87,7 @@
 + [rexford](http://www.rexfordknives.com)
 + [STICK SPINNER](http://www.mountaintopsedc.com/products)
 + [roman booteen](https://hotco.co/collections/roman-booteen)
++ [pocket-pawns](https://cdpeterson.bigcartel.com/category/pocket-pawns?page=5)
 
 ## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)
@@ -97,7 +98,6 @@
 ## GetOne
 + [veleno designs](http://www.velenodesigns.com/)
 + [Small Titanium Flashlight w/ Tritium](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
-+ [photonfanatic](http://photonfanatic.com/GroovyFS.html)
 + [lawson](https://www.jllawsonco.com/collections/in-stock)
 + [*STICK SPINNER](http://www.mountaintopsedc.com/products)
 
