@@ -1,2 +1,14 @@
-[python book list](http://mp.weixin.qq.com/s/uRqsDGDJCFYFHVRj1dGORQ)
-[前端 a list part](https://alistapart.com/topic/css)
+
+<!-- java -->
++ [programcreek](https://www.programcreek.com/)
++ [leetcode](http://leetcode.com/)
++ [coursera](https://www.coursera.org/)
++ [python book list](http://mp.weixin.qq.com/s/uRqsDGDJCFYFHVRj1dGORQ)
++ [前端 a list part](https://alistapart.com/topic/css)
+
+<!-- project -->
++ [linux-command](https://github.com/jaywcjlove/linux-command)
++ [python-100-days](https://github.com/jackfrued/python-100-days)
+
+<!-- article -->
++ [『浅入浅出』MySQL 和 InnoDB](https://blog.csdn.net/enmotech/article/details/80249131)
