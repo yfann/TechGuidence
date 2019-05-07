@@ -40,3 +40,8 @@
 + [史上最简单的 IntelliJ IDEA 教程](https://blog.csdn.net/qq_35246620/article/details/61191375)
 + [IntelliJ IDEA教程](https://www.yiibai.com/intellij_idea)
 + [gitbook idea](https://youmeek.gitbooks.io/intellij-idea-tutorial/content/)
+
+
+## issue
+
++ `Error: Could not find or load main class <class>`    sdk没配
