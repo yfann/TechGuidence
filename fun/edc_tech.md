@@ -1,6 +1,8 @@
 
 
+## anode oxidization
 
++ [ti color](https://www.horieusa.com/colors.htm)
 
 
 ## ref
