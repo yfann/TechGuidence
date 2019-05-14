@@ -24,3 +24,6 @@ css文件夹需要有bootstrap.css
 
 引用:
     angular.module('myModule', ['ui.bootstrap']);
+
+## ref
++ [lodash](https://www.lodashjs.com/)
