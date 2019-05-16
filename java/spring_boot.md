@@ -76,10 +76,25 @@ public class Config {
 
 + Actuator
 
++ 目录结构
+```java
+// 录结构的约定，现在继续介绍资源文件的约定目录结构 
+// Maven的资源文件目录：/src/java/resources 
+// spring-boot项目静态文件目录：/src/java/resources/static 
+// spring-boot项目模板文件目录：/src/java/resources/templates 
+// spring-boot静态首页的支持，即index.html放在以下目录结构会直接映射到应用的根目录下： 
+// classpath:/META-INF/resources/index.html  
+// classpath:/resources/index.html  
+// classpath:/static/index.html  
+// calsspath:/public/index.html  
+```
+
 ## 模块
 
 + spring-boot-devtools
 + [Starters](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/III.%20Using%20Spring%20Boot/13.5.%20Starters.html)
+
+
 
 ## ref
 
@@ -93,9 +108,9 @@ public class Config {
 + [Spring Boot 2 官方指导手册译文](https://www.jianshu.com/p/e7e3ff541bfb)
 + [Spring Boot 系列文章](http://www.ityouknow.com/spring-boot.html)
 + [Spring Boot简介](https://www.yiibai.com/spring-boot/)
++ [深入学习spring-boot系列（二）--使用spring-data-jpa](https://jisonami.iteye.com/blog/2298372)
 
 
-+ [Thymeleaf 教程](https://waylau.gitbooks.io/thymeleaf-tutorial/content/)
 + [set config in standalone tomecat](https://stackoverflow.com/questions/43657626/server-session-timeout-in-application-yml-is-not-used-when-deployed-to-a-tomcat)
 + [YAML](https://www.jianshu.com/p/97222440cd08)
 + [TaskExecutor](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/scheduling.html)
@@ -108,4 +123,3 @@ public class Config {
 + [Spring Boot and Embedded Servers - Tomcat, Jetty and Undertow](http://www.springboottutorial.com/spring-boot-with-embedded-servers-tomcat-jetty)
 + yml
 + embedded jar or war(standalone tomecat)
-+ [后端传值](https://blog.csdn.net/bear_lam/article/details/80278590)
