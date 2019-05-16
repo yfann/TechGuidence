@@ -35,6 +35,7 @@
 
 + `<exclusion>` 排除依赖项
 
++ `<resource>`
 
 ## ref
 
@@ -45,6 +46,7 @@
 + [Maven 使用教程](https://www.jianshu.com/p/1eff16f60297)
 + [offical](http://maven.apache.org/run.html)
 + [maven教程](http://www.cnblogs.com/xdp-gacl/category/544719.html)
++ [resources标签介绍](https://my.oschina.net/anxiaole/blog/1613348)
 
 + [中央仓库](http://search.maven.org/)
 + [查找](https://mvnrepository.com/)
