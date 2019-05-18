@@ -1,6 +1,56 @@
 
 
 ## keywords
++ 数组
+```js
+//扩展运算符，任何定义了遍历器（Iterator）接口的对象，都可以用扩展运算符转为真正的数组。
+let args=[1,2,3];
+f(...args);
+//复制数组
+const a1=[1,2];
+const a2=[...a1];
+//解构赋值，扩展运算符只能放在最后
+[a,...rest]=a1;
+//字符串
+[...'x\uD83D\uDE80y'].length // 3
+let str = 'x\uD83D\uDE80y';
+str.split('').reverse().join('')
+// 'y\uDE80\uD83Dx'
+[...str].reverse().join('')
+// 'y\uD83D\uDE80x'
+//iterator
+Number.prototype[Symbol.iterator] = function*() {
+  let i = 0;
+  let num = this.valueOf();
+  while (i < num) {
+    yield i++;
+  }
+}
+console.log([...5]) // [0, 1, 2, 3, 4]
+//*********************************
+
+Array.from()
+//类似数组的对象（array-like object）和可遍历（iterable）的对象转成数组
+
+let arrayLike = {
+    '0': 'a',
+    '1': 'b',
+    '2': 'c',
+    length: 3
+};
+
+// ES5的写法
+var arr1 = [].slice.call(arrayLike); // ['a', 'b', 'c']
+
+// ES6的写法
+let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
+//**************************
+//把值转换为数组
+Array.of(3, 11, 8) // [3,11,8]
+//***********
+[1, [2, [3]]].flat(Infinity)
+// [1, 2, 3]
+```
 
 + Symbol(表示独一无二的值)
 ```js
