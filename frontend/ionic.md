@@ -1,9 +1,15 @@
 ## cmd
 
 + `npm install` 安装依赖package.json
-+ `npm install -g ionic`
-+ `ionic start myApp [blank]` 创建应用,starters
-+ `ionic serve`
++ `npm install -g ionic` 
++ `ionic start [project name] [template name]` 创建ionic应用
++ `ionic generate` 添加新的feature
++ `ionic serve` 启动ionic应用
+
+## Storage
+
++ Native app use SQLite
++ Web app use IndexedDB,WebSQL,localstorage
 
 ## ref
 
