@@ -12,7 +12,7 @@
 + Web app use IndexedDB,WebSQL,localstorage
 
 ## ref
-
++ [ionic2](http://ionic.io/2)
 + [started](https://ionicframework.com/getting-started)
 + [starters](https://github.com/ionic-team/starters)
 + [彻底解决Ionic项目中的跨域问题](https://hao5743.github.io/2016/12/03/Handling-CORS-issues-in%20Ionic/)

@@ -210,3 +210,4 @@ F1 + Configure Task runner
  + [typescriptlang](http://www.typescriptlang.org/docs/tutorial.html)
  + [git typescript](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md)
  + [TypeScript 入门教程](https://ts.xcatliu.com/)
+ + [TypeScript Handbook](https://www.runoob.com/manual/gitbook/TypeScript/_book/index.html)
