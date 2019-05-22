@@ -42,6 +42,14 @@ export class AppComponent {
 ```
 
 ## Modules
++ angular内置库以`@angular`开头
++ AppModule根模块
++ NgModule 为其中的组件提供了一个编译上下文环境
++ declarations,该应用拥有的组件(components,directives,pipes)
++ exports(declarations的子集,其他NgModule的component要使用的)
++ imports(当前NgModule declaraed的compoent要使用的)
++ providers,提供服务
++ bootstrap 应用的主视图，根组件，根模块才能设置
 
 ## Components
 
@@ -119,6 +127,10 @@ export class AppComponent {
 ## Services
 
 ## Dependency Injection
+
+## build
+
++ angular.json
 
 ## ref
 + [angular china](https://angular.cn/guide/quickstart)
