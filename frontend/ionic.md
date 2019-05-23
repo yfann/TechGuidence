@@ -6,6 +6,10 @@
 + `ionic generate` 添加新的feature
 + `ionic serve` 启动ionic应用
 
+## tips
+
++ ionic page module要引入IonicModule
+
 ## Storage
 
 + Native app use SQLite
