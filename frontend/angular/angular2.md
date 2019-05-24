@@ -68,6 +68,9 @@ export class AppComponent {
     - 可以被惰性加载
     - 不会导出任何东西
     - 不会出现在外部组件模板中
++ Shared Module
+    - 模块可以直接放入exports，不用先放入imports
+    - 组件要先入declarations再exports
 
 ## Components
 
@@ -144,6 +147,42 @@ export class AppComponent {
 
 ## Services
 
++ providedIn
+```js
+import { UserModule } from './user.module';
+
+@Injectable({
+  providedIn: UserModule,
+})
+```
++ 模块使用（导入模块会产生新的服务实例）
+```js
+@NgModule({
+  providers: [UserService],
+})
+```
+
++ 组件使用
+```js
+@Component({
+/* . . . */
+  providers: [UserService]
+})
+```
+
++ 单例,root为单例服务
+```js
+@Injectable({
+  providedIn: 'root',
+})
+export class UserService {
+}
+```
+
++ forRoot 单例
+
+
+
 ## Dependency Injection
 
 ## build
@@ -151,9 +190,10 @@ export class AppComponent {
 + angular.json
 
 ## CLI
-
++ `ng new [customer-app] --routing` 创建customer-app应用，包含app-routing.module.ts
 + `ng generate module [CustomerDashboard]` 创建模块，生成文件夹customer-dashboard
-+ `ng generate component customer-dashboard/CustomerDashboard` declare CustomerDashboardComponent
++ `ng generate component [customer-dashboard/CustomerDashboard]` declare CustomerDashboardComponent
++ `ng generate service [User]`create UserService
 
 ## issues
 
@@ -171,3 +211,4 @@ export class AppComponent {
 + [awesome angular list](https://github.com/AngularClass/awesome-angular)
 + [angular_风格指南](https://angular.cn/guide/styleguide)
 + [NgModules](https://angular.cn/guide/ngmodules)
++ [Shared Module](https://angular.cn/guide/sharing-ngmodules)
