@@ -185,6 +185,27 @@ export class UserService {
 
 ## Dependency Injection
 
++ `providedIn:'root'` AppModule的Injector
++ injector(`@Injectable`) 创建服务实例，并注入实例到component
++ root injector在bootstrap过程创建
++ provider(`providedIn`)告诉injector如何创建service
++ injector 只生成一个服务实例
++ module,component的injector彼此独立，生成不同的service实例
++ injector可继承，可以查找parent component的Injector直到 root injector(AppModule)
++ `Optional() private logger: Logger`注入可以不存在
++ root provide提供单例服务实例,root provider全局只有一个,每个provider只产生一个服务实例
++ scope
+  - root `providedIn:'root'`
+  - module`providedIn:NgModule`
+  - component 
+  ```js
+  @Component({
+  selector: 'app-heroes',
+  providers: [ HeroService ],
+  ...
+  ```
++ `[{ provide: Logger, useClass: BetterLogger }]`注入Logger类型时，如何创建实例(useClass,useValue,useFactory)
+
 ## build
 
 + angular.json
@@ -194,7 +215,7 @@ export class UserService {
 + `ng generate module [CustomerDashboard]` 创建模块，生成文件夹customer-dashboard
 + `ng generate component [customer-dashboard/CustomerDashboard]` declare CustomerDashboardComponent
 + `ng generate service [User]`create UserService
-
++
 ## issues
 
 + "Can't bind to 'x' since it isn't a known property of 'y'"
