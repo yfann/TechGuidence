@@ -210,6 +210,38 @@ export class UserService {
 
 + angular.json
 
+## tips
+
++ 单向数据流
++ {{expression}} 不支持`=`
++ (event)="statement" statement支持`=` `;`
++ HTML attribute/DOM property`模板绑定是property`
+    - html 定义attribute,dom 定义 property
+    - attribute初始化property, property值会变,attribute值不变
+    ```js
+    <input type="text" value="Bob">
+    //value attribute "Bob" 初始化 value property "Bob"
+    //input 输入 sam时
+    //value property "sam"
+    //value attribute 还是"Bob"  input.getAttribute('value')
+    ```
++ `[(ngModel)]` 需要mport { FormsModule } from '@angular/forms'，只支持实现了ControlValueAccessor的元素
+```html
+<input [value]="currentHero.name"
+       (input)="currentHero.name=$event.target.value" >
+
+<input
+  [ngModel]="currentHero.name"
+  (ngModelChange)="currentHero.name=$event">
+```
++ 管道`{{currentHero | json}}`
++ 安全导航操作符`{{currentHero?.name}}`currentHero为空时不会报错
++ 非空断言操作符`{{hero!.name}}` 告诉 TypeScript 的类型检查器对特定的属性表达式，不做 "严格空值检测"。
++ `{{$any(hero).marker}}`$any 转换函数来把表达式转换成 any 类型。
+
+
+
+`
 ## CLI
 + `ng new [customer-app] --routing` 创建customer-app应用，包含app-routing.module.ts
 + `ng generate module [CustomerDashboard]` 创建模块，生成文件夹customer-dashboard
