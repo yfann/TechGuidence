@@ -73,6 +73,71 @@ export class AppComponent {
     - 组件要先入declarations再exports
 
 ## Components
++ `@Input`修饰子组件属性，父组件通过属性把数据传入子组件
+    - `@Input('master') masterName: string;`
+    -  传入的属性变化时触发的操作
+    ```js
+    @Input()
+    set name(name: string) {
+        this._name = (name && name.trim()) || '<no name set>';
+    }
+    ```
+    - 通过`ngOnChanges`监听属性变化
+    ```js
+     ngOnChanges(changes: {[propKey: string]: SimpleChange}) {
+        let log: string[] = [];
+        for (let propName in changes) {
+        let changedProp = changes[propName];
+        let to = JSON.stringify(changedProp.currentValue);
+        if (changedProp.isFirstChange()) {
+            log.push(`Initial value of ${propName} set to ${to}`);
+        } else {
+            let from = JSON.stringify(changedProp.previousValue);
+            log.push(`${propName} changed from ${from} to ${to}`);
+        }
+        }
+        this.changeLog.push(log.join(', '));
+    }
+    ```
++ `@Output`子组件暴露事件,可让父组件监听
+```js
+//app-voter.js
+  @Output() voted = new EventEmitter<boolean>();
+  vote(agreed: boolean) {
+    this.voted.emit(agreed);
+  }
+// <app-voter *ngFor="let voter of voters"
+//       [name]="voter"
+//       (voted)="onVoted($event)">
+```
+
++ 父组件通过`模板引用子组件`的属性和方法(父组件不能通过数据绑定来访问子组件)
+```html
+  <button (click)="timer.start()">Start</button>
+  <button (click)="timer.stop()">Stop</button>
+  <div class="seconds">{{timer.seconds}}</div>
+  <app-countdown-timer #timer></app-countdown-timer>
+```
+
++ `ViewChild`,父组件代码引用子组件(必须引入生命周期钩子AfterViewInit，被注入的组件只有在 Angular 显示了父组件视图之后才能访问)
+```JS
+export class CountdownViewChildParentComponent implements AfterViewInit {
+  @ViewChild(CountdownTimerComponent)
+  private timerComponent: CountdownTimerComponent;
+  seconds() { return 0; }
+  ngAfterViewInit() {
+    // Redefine `seconds()` to get from the `CountdownTimerComponent.seconds` ...
+    // but wait a tick first to avoid one-time devMode
+    // unidirectional-data-flow-violation error
+    setTimeout(() => this.seconds = () => this.timerComponent.seconds, 0);//单向数据流规则会阻止在同一个周期内更新父组件视图，用timeout等待下一轮更新
+  }
+ 
+  start() { this.timerComponent.start(); }
+  stop() { this.timerComponent.stop(); }
+}
+```
+
++ 父子组件通过服务来通讯
 
 ## Templates
 
@@ -181,7 +246,35 @@ export class UserService {
 
 + forRoot 单例
 
+## Event
 
++ `$event`标准DOM事件对象都有target,下面例子target指向`<input>`
+
+```html
+<input (keyup)="onKey($event)">
+  <p>{{values}}</p>
+
+<!-- onKey(event: any) { // without type info
+    this.values += event.target.value + ' | ';
+  } -->
+
+<!-- onKey(event: KeyboardEvent) { // with type info
+    this.values += (<HTMLInputElement>event.target).value + ' | ';
+  } -->
+```
++ 模板引用要绑定事件才生效
+```js
+@Component({
+  selector: 'app-loop-back',
+  template: `
+    <input #box (keyup)="0">
+    <p>{{box.value}}</p>
+  `
+})
+export class LoopbackComponent { }
+```
+
++ 绑定按键`<input #box (keyup.enter)="onEnter(box.value)">`
 
 ## Dependency Injection
 
@@ -241,13 +334,13 @@ export class UserService {
 
 
 
-`
+
 ## CLI
 + `ng new [customer-app] --routing` 创建customer-app应用，包含app-routing.module.ts
 + `ng generate module [CustomerDashboard]` 创建模块，生成文件夹customer-dashboard
 + `ng generate component [customer-dashboard/CustomerDashboard]` declare CustomerDashboardComponent
 + `ng generate service [User]`create UserService
-+
+
 ## issues
 
 + "Can't bind to 'x' since it isn't a known property of 'y'"
@@ -265,3 +358,4 @@ export class UserService {
 + [angular_风格指南](https://angular.cn/guide/styleguide)
 + [NgModules](https://angular.cn/guide/ngmodules)
 + [Shared Module](https://angular.cn/guide/sharing-ngmodules)
++ [lifecycle-hooks](https://angular.cn/guide/lifecycle-hooks)

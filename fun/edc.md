@@ -14,8 +14,10 @@
 + [pintrill](https://www.pintrill.com/collections/all-categories)
 + [portal](https://www.boxlunch.com/product/rick-and-morty-portal-enamel-pin/11179736.html)
 + [space ship](https://shitttystufff.com/collections/types?q=Pins)
-
-
++ [chun-li pin](https://rollingdeathmaui.com/collections/pins?page=1)(se)
++ [chun-li pin2](https://www.storenvy.com/stores/1028909-xaciddropx)(se)
++ [8-bit pixel pin](https://www.stamistudios.co.uk/product/all-5-sailor-scouts-8-bit-glitter-pixel-pins-copy/)
++ [sailor moon pin](https://www.etsy.com/listing/592720891/sailor-mercury-enamel-pins-sailor-moon?ref=user_profile)
 ## paracord
 + [60款伞绳编织](http://www.360doc.com/content/16/1229/01/16156855_618553052.shtml)
 
