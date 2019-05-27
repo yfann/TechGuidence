@@ -137,7 +137,7 @@ export class CountdownViewChildParentComponent implements AfterViewInit {
 }
 ```
 
-+ 父子组件通过服务来通讯
++ 父子组件通过服务来通讯(父组件配置`providers`,子组件可以直接注入父组件的service实例)
 
 ## Templates
 
@@ -298,6 +298,95 @@ export class LoopbackComponent { }
   ...
   ```
 + `[{ provide: Logger, useClass: BetterLogger }]`注入Logger类型时，如何创建实例(useClass,useValue,useFactory)
+
+
+
+## Observable
+
++ `Observer`含有`subscriber`,调用subscribe()会触发Observer的执行
+```js
+// Create an Observable that will start listening to geolocation updates
+// when a consumer subscribes.
+const locations = new Observable((observer) => {
+  // Get the next and error callbacks. These will be passed in when
+  // the consumer subscribes.
+  const {next, error} = observer;
+  let watchId;
+ 
+  // Simple geolocation API check provides values to publish
+  if ('geolocation' in navigator) {
+    watchId = navigator.geolocation.watchPosition(next, error);
+  } else {
+    error('Geolocation not available');
+  }
+ 
+  // When the consumer unsubscribes, clean up data ready for next subscription.
+  return {unsubscribe() { navigator.geolocation.clearWatch(watchId); }};
+});
+ 
+// Call subscribe() to start listening for updates.
+const locationsSubscription = locations.subscribe({
+  next(position) { console.log('Current Position: ', position); },
+  error(msg) { console.log('Error Getting Location: ', msg); }
+});
+ 
+// Stop listening for location after 10 seconds
+setTimeout(() => { locationsSubscription.unsubscribe(); }, 10000);
+```
+
++ subscriber负责如何调用observer
+```js
+// This function runs when subscribe() is called
+function sequenceSubscriber(observer) {
+  // synchronously deliver 1, 2, and 3, then complete
+  observer.next(1);
+  observer.next(2);
+  observer.next(3);
+  observer.complete();
+ 
+  // unsubscribe function doesn't need to do anything in this
+  // because values are delivered synchronously
+  return {unsubscribe() {}};
+}
+ 
+// Create a new Observable that will deliver the above sequence
+const sequence = new Observable(sequenceSubscriber);
+ 
+// execute the Observable and print the result of each notification
+sequence.subscribe({
+  next(num) { console.log(num); },
+  complete() { console.log('Finished sequence'); }
+});
+```
+
++ form事件
+```js
+function fromEvent(target, eventName) {
+  return new Observable((observer) => {
+    const handler = (e) => observer.next(e);
+ 
+    // Add the event handler to the target
+    target.addEventListener(eventName, handler);
+ 
+    return () => {
+      // Detach the event handler from the target
+      target.removeEventListener(eventName, handler);
+    };
+  });
+}
+
+const ESC_KEY = 27;
+const nameInput = document.getElementById('name') as HTMLInputElement;
+
+const subscription = fromEvent(nameInput, 'keydown')
+  .subscribe((e: KeyboardEvent) => {
+    if (e.keyCode === ESC_KEY) {
+      nameInput.value = '';
+    }
+  });
+```
+
++ 多播(每次订阅都是一个独立的执行，比如计数，每次订阅都是从1开始。`多播`可以共享执行，比如计数，会从当前数字开始)
 
 ## build
 

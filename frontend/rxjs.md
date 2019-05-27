@@ -1,16 +1,16 @@
 
 ## rxjs
 
-+ Observer订阅Observable(Rx.Observable.create创建,通过next,error,complete向Observer传值)，Observable通过next发送消息到Observer
++ `Observer`订阅`Observable`(`Rx.Observable.create`创建,通过`next`,`error`,`complete`向Observer传值)，Observable通过`next`发送消息到Observer
 
-+ Observable,单播，每个已订阅的Observer都拥有 Observable 的独立执行
++ `Observable`,单播，每个已订阅的Observer都拥有 Observable 的独立执行
 
 ||单个值|多个值|
 |--|--|--|
 |拉取|Function|Iterator|
 |推送|Promise|Observable|
 
-+ Observer 观察者只是一组回调函数的集合,使用`observable.subscribe(observer);`
++ `Observer` 观察者只是一组回调函数的集合,使用`observable.subscribe(observer);`
 
 ```js
 var observer = {
@@ -20,7 +20,7 @@ var observer = {
 };
 ```
 
-+ Subscription 
++ `Subscription`调用subscribte()执行的函数
 
 ```js
 var observable = Rx.Observable.interval(1000);
@@ -55,9 +55,11 @@ observable.subscribe(subject); // 你可以提供一个 Subject 进行订阅
 + pull consumer->producer
 + push producer->consumer
 + func.call() 意思是 "同步地给我一个值"
-+ observable.subscribe() 意思是 "给我任意数量的值，无论是同步还是异步"
++ `observable.subscribe()` 意思是 "给我任意数量的值，无论是同步还是异步",可以出发Observable的执行
++ `next()`Obervable调用向Observer传值
 + 订阅 Observable 像是调用函数, 并提供接收数据的回调函数。
 + Observable 甚至不会去维护一个附加的观察者列表
++ `Obserable->Subscription(subscribe())->Observer(next())`
 + obervable原理
 ```js
 function subscribe(observer) {
