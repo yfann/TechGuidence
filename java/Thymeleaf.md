@@ -1,6 +1,7 @@
 
 ## url
 
++ `@{/js/html5.js}`会自动引入/static目录下的/js/html5.js文件
 + 绝对路径`<a th:href="@{http://www.thymeleaf/documentation.html}">`
 + context relative url(relative to the application root)
 ```html
@@ -40,9 +41,15 @@
 <!-- out put -->
 <a href="/home?action=show#all_info">
 
-
 <a th:href="@{/order/details(id=${order.id})}">
 ```
+
++ css url
+```html
+<li style="background-image:url(../static/images/1.jpg);" th:style="'background:url(' + @{/images/1.jpg} + ');'">
+```
+
++ `<script type="text/javascript" src="../static/js/html5.js" th:src="@{js/html5.js}"/>`  ` th:src`项目启动时才会解析
 
 ## tips
 
