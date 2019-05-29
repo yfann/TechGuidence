@@ -92,6 +92,8 @@
 + [STICK SPINNER](http://www.mountaintopsedc.com/products)
 + [roman booteen](https://hotco.co/collections/roman-booteen)
 + [pocket-pawns](https://cdpeterson.bigcartel.com/category/pocket-pawns?page=5)
++ [cruz custom tools](https://www.cruzcustomtools.com/products)
++ [combat beads](https://www.combatbeads.com/beads)
 
 ## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)

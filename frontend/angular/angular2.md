@@ -247,7 +247,7 @@ export class UserService {
 + forRoot 单例
 
 ## Event
-
++ EventEmitter派生自observable
 + `$event`标准DOM事件对象都有target,下面例子target指向`<input>`
 
 ```html
@@ -448,3 +448,6 @@ const subscription = fromEvent(nameInput, 'keydown')
 + [NgModules](https://angular.cn/guide/ngmodules)
 + [Shared Module](https://angular.cn/guide/sharing-ngmodules)
 + [lifecycle-hooks](https://angular.cn/guide/lifecycle-hooks)
+<!-- best practice -->
++ [Creating Reusable Components with NgTemplateOutlet in Angular](https://alligator.io/angular/reusable-components-ngtemplateoutlet/)
++ [Angular ng-template, ng-container and ngTemplateOutlet - The Complete Guide To Angular Templates](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
