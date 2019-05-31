@@ -195,9 +195,149 @@ addAlias() {
 
 ## validation
 
+1. 模板驱动验证(`#name="ngModel"` #name="ngModel" 把 NgModel 导出成了一个名叫 name 的局部变量)
+```html
+<input id="name" name="name" class="form-control"
+      required minlength="4" appForbiddenName="bob"
+      [(ngModel)]="hero.name" #name="ngModel" >
+<div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert alert-danger">
+  <div *ngIf="name.errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors.minlength">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors.forbiddenName">
+    Name cannot be Bob.
+  </div>
 
-## dynamic form
+</div>
+```
++ 属性验证器(required,minlength)
++ 模板驱动自定义验证(可以用指令保证验证函数)
+```js
+@Directive({
+  selector: '[appForbiddenName]',
+  providers: [{provide: NG_VALIDATORS, useExisting: ForbiddenValidatorDirective, multi: true}]
+})
+export class ForbiddenValidatorDirective implements Validator {
+  @Input('appForbiddenName') forbiddenName: string;
+ 
+  validate(control: AbstractControl): {[key: string]: any} | null {
+    return this.forbiddenName ? forbiddenNameValidator(new RegExp(this.forbiddenName, 'i'))(control)
+                              : null;
+  }
+}
+
+// <input id="name" name="name" class="form-control"
+//       required minlength="4" appForbiddenName="bob"
+//       [(ngModel)]="hero.name" #name="ngModel" >
+```
+
++ 跨字段验证
+
+```js
+@Directive({
+  selector: '[appIdentityRevealed]',
+  providers: [{ provide: NG_VALIDATORS, useExisting: IdentityRevealedValidatorDirective, multi: true }]
+})
+export class IdentityRevealedValidatorDirective implements Validator {
+  validate(control: AbstractControl): ValidationErrors {
+    return identityRevealedValidator(control)
+  }
+}
+```
+
+```html
+<form #heroForm="ngForm" appIdentityRevealed>
+<div *ngIf="heroForm.errors?.identityRevealed && (heroForm.touched || heroForm.dirty)" class="cross-validation-error-message alert alert-danger">
+    Name cannot match alter ego.
+</div>
+```
++ 异步验证
+```html
+<!-- 异步验证完成时pending状态会变更 -->
+<input [(ngModel)]="name" #model="ngModel" appSomeAsyncValidator>
+<app-spinner *ngIf="model.pending"></app-spinner>
+```
+```js
+@Injectable({ providedIn: 'root' })
+export class UniqueAlterEgoValidator implements AsyncValidator {
+  constructor(private heroesService: HeroesService) {}
+
+  validate(
+    ctrl: AbstractControl
+  ): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> {
+    return this.heroesService.isAlterEgoTaken(ctrl.value).pipe(
+      map(isTaken => (isTaken ? { uniqueAlterEgo: true } : null)),
+      catchError(() => null)
+    );
+  }
+}
+
+interface HeroesService {
+  isAlterEgoTaken: (alterEgo: string) => Observable<boolean>;
+}
+```
+
++ `<input [(ngModel)]="name" [ngModelOptions]="{updateOn: 'blur'}">`
+
+2. 响应式表单的验证（不应该在模板上加验证器，应该加到FormControl上）
++ 验证器函数
+    - 同步验证器函数(返回结果，第二参数)
+    - 异步验证器函数（返回Promise或Observable，第三参数）
+    - 同步通过后执行异步
+```js
+ngOnInit(): void {
+  this.heroForm = new FormGroup({
+    'name': new FormControl(this.hero.name, [
+      Validators.required,
+      Validators.minLength(4),
+      forbiddenNameValidator(/bob/i) // <-- Here's how you pass in the custom validator.
+    ]),
+    'alterEgo': new FormControl(this.hero.alterEgo),
+    'power': new FormControl(this.hero.power, Validators.required)
+  });
+}
+get name() { return this.heroForm.get('name'); }
+```
+
+```js
+//自定义验证
+export function forbiddenNameValidator(nameRe: RegExp): ValidatorFn {
+  return (control: AbstractControl): {[key: string]: any} | null => {
+    const forbidden = nameRe.test(control.value);
+    return forbidden ? {'forbiddenName': {value: control.value}} : null;
+  };
+}
+```
+
++ 跨字段验证
+```js
+const heroForm = new FormGroup({
+  'name': new FormControl(),
+  'alterEgo': new FormControl(),
+  'power': new FormControl()
+}, { validators: identityRevealedValidator });
+
+/** A hero's name can't match the hero's alter ego */
+export const identityRevealedValidator: ValidatorFn = (control: FormGroup): ValidationErrors | null => {
+  const name = control.get('name');
+  const alterEgo = control.get('alterEgo');
+
+  return name && alterEgo && name.value === alterEgo.value ? { 'identityRevealed': true } : null;
+};
+
+// <div *ngIf="heroForm.errors?.identityRevealed && (heroForm.touched || heroForm.dirty)" class="cross-validation-error-message alert alert-danger">
+//     Name cannot match alter ego.
+// </div>
+```
++ `new FormControl('', {updateOn: 'blur'});`
+
 
 ## ref
 
 + [angular form](https://angular.cn/guide/forms-overview)
++ [内置验证器](https://angular.cn/api/forms/Validators)
++ [动态表单](https://angular.cn/guide/dynamic-form)

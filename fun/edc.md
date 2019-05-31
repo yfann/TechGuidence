@@ -94,6 +94,7 @@
 + [pocket-pawns](https://cdpeterson.bigcartel.com/category/pocket-pawns?page=5)
 + [cruz custom tools](https://www.cruzcustomtools.com/products)
 + [combat beads](https://www.combatbeads.com/beads)
++ [ti-edc-wrench](https://bigidesign.com/products/ti-edc-wrench)
 
 ## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)
