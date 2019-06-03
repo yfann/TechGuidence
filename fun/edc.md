@@ -70,6 +70,7 @@
 + [hds](https://www.hdssystems.com)
 + [TLX-P6](http://www.texaslumens.com/)
 + [Knolanplay](https://knolanplay.bigcartel.com/products)
++ [mcgizmo](https://www.pro-light.jp/mcgizmo/mcgizmo_1.html)
 
 
 ## pens
