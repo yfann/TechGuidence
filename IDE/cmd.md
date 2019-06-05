@@ -15,3 +15,7 @@
 + bowershell
 
 + Hyper(elctron)
+
+## cmd
+
++ 换行(windows`^`,linux`\`)

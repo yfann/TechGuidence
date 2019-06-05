@@ -53,6 +53,16 @@ POST <index>/_delete_by_query
 + `.\bin\kibana.bat`
 + `http://localhost:5601/`
 
+## elasticdump(export/import data)
+
++ `npm install elasticdump -g`
++ `elasticdump --input=http://<name>:<pwd>@<host>:<port>/<index> --output=aggregate_data.json --type=data`
++ import data
+```js
+// import data
+curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
+```
+
 ## ref
 <!-- elastic search -->
 + [offical](https://www.elastic.co/cn/downloads/elasticsearch)
@@ -78,3 +88,6 @@ POST <index>/_delete_by_query
 <!-- space -->
 + [Organize your work with Kibana spaces](https://www.elastic.co/blog/introducing-kibana-spaces-for-organization-and-security)
 + [migrate object to space](https://www.elastic.co/blog/how-to-migrate-to-kibana-spaces)
+
+<!-- plugin -->
++ [elasticsearch-dump](https://github.com/taskrabbit/elasticsearch-dump)
