@@ -57,7 +57,7 @@ POST <index>/_delete_by_query
 
 + `npm install elasticdump -g`
 + `elasticdump --input=http://<name>:<pwd>@<host>:<port>/<index> --output=aggregate_data.json --type=data`
-+ import data
++ `elasticdump --input=./aggregate_data.json --output=http://localhost:9200/wechat_aggregate --type=data`
 ```js
 // import data
 curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
