@@ -12,7 +12,9 @@
 + [python3 cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 <!-- terminal -->
 + [linux-command](https://github.com/jaywcjlove/linux-command)
-
+<!-- 机器学习 -->
++ [《统计学习方法》的代码实现](https://github.com/fengdu78/lihang-code)
++ [动手学深度学习](http://zh.d2l.ai/chapter_preface/preface.html)
 
 
 
