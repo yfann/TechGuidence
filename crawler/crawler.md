@@ -185,7 +185,15 @@ print result.read()
 
 + [PySpider](http://cuiqingcai.com/2652.html)
 
+## 动态内容爬取
+
++ restful API分析
++ selenium
++ phantomJS
+
+
 
 ## Ref
 
 + [爬虫入门](https://zhuanlan.zhihu.com/p/21479334?refer=passer)
++ PhantomJS

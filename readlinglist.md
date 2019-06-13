@@ -10,6 +10,7 @@
 + [python book list](http://mp.weixin.qq.com/s/uRqsDGDJCFYFHVRj1dGORQ)
 + [python-100-days](https://github.com/jackfrued/python-100-days)
 + [python3 cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
++ [Python 3 Module of the Week](https://pymotw.com/3/index.html)
 <!-- terminal -->
 + [linux-command](https://github.com/jaywcjlove/linux-command)
 <!-- 机器学习 -->

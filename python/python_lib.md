@@ -1,33 +1,18 @@
-+ `abc` 定义抽象类
 
-```py
-from abc import ABCMeta, abstractmethod
+## install 3rd libs
 
-class IStream(metaclass=ABCMeta):
-    @abstractmethod
-    def read(self, maxbytes=-1):
-        pass
+Packages: [pypi](https://pypi.python.org/pypi)
 
-    @abstractmethod
-    def write(self, data):
-        pass
+管理工具:
 
++ [pip](http://pypi.python.org/pypi/pip#downloads)
+    `pip install [libname]`
 
-#继承
-class SocketStream(IStream):
-    def read(self, maxbytes=-1):
-        pass
++ [easy installer](http://pypi.python.org/pypi/setuptools)
+    `easy_install [libname]`
 
-    def write(self, data):
-        pass
-
-#类型检测
-def serialize(obj, stream):
-    if not isinstance(stream, IStream):
-        raise TypeError('Expected an IStream')
-    pass
-```
-
++ [wheel](http://pythonwheels.com/)
+    `pip install *.whl`
 
 
 ## ref
