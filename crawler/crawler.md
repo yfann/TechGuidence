@@ -156,12 +156,29 @@ print result.read()
 + re
 
 
+
+
+
+## 动态内容爬取
+
++ restful API分析
++ selenium
++ phantomJS
+
+## 爬虫框架
+
++ [Scrapy](http://doc.scrapy.org/en/latest/intro/install.html)
+
++ [PySpider](http://cuiqingcai.com/2652.html)
+
+
+
 ## libs
 
 + [requests](http://cuiqingcai.com/2556.html)
-
++ [Requests: 让 HTTP 服务人类](http://cn.python-requests.org/zh_CN/latest/)
 + [beautifulsoup](http://cuiqingcai.com/1319.html)
-
++ [beautifulsoup 4.2.0](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html)
 + [lxml](http://cuiqingcai.com/2621.html)
 
 + [PyQuery](http://cuiqingcai.com/2636.html)
@@ -176,24 +193,8 @@ print result.read()
 
   自动化测试工具,支持各种浏览器，包括PhantomJS. Python+Selenium+PhantomJS
 
-
-
-
-## 爬虫框架
-
-+ [Scrapy](http://doc.scrapy.org/en/latest/intro/install.html)
-
-+ [PySpider](http://cuiqingcai.com/2652.html)
-
-## 动态内容爬取
-
-+ restful API分析
-+ selenium
-+ phantomJS
-
-
-
 ## Ref
 
 + [爬虫入门](https://zhuanlan.zhihu.com/p/21479334?refer=passer)
-+ PhantomJS
++ [python3爬虫实战](https://www.w3cschool.cn/python3/python3-draw2yye.html)
++ python网络数据采集
