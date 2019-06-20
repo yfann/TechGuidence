@@ -12,3 +12,4 @@
 <!-- 效率 -->
 + [Python语法速查](https://wklchris.github.io/Py3-basic.html)
 + [python dict](https://www.w3cschool.cn/python/dict)
++ [The Best of the Best Practices (BOBP) Guide for Python](https://gist.github.com/sloria/7001839)

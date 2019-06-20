@@ -20,3 +20,4 @@ Packages: [pypi](https://pypi.python.org/pypi)
 + pandas jieba xlrd snownlp gensim sklearn xlsxwriter
 + tensorflow(3.6.2x64)
 + keras
++ [Python读写Excel表格](https://zhuanlan.zhihu.com/p/38492442)

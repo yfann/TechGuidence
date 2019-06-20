@@ -34,3 +34,20 @@ def myfunc(alist):
 
 dis.dis(myfunc)
 ```
+
++ 代码换行
+```py
+a = 22 + \
+       33
+print a
+#or
+a = (22+
+       33)
+print a
+#or
+a = '''32 +
+    45'''
+print a
+
+
+```
