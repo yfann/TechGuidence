@@ -420,15 +420,8 @@ const subscription = fromEvent(nameInput, 'keydown')
 + 安全导航操作符`{{currentHero?.name}}`currentHero为空时不会报错
 + 非空断言操作符`{{hero!.name}}` 告诉 TypeScript 的类型检查器对特定的属性表达式，不做 "严格空值检测"。
 + `{{$any(hero).marker}}`$any 转换函数来把表达式转换成 any 类型。
-
-
-
-
-## CLI
-+ `ng new [customer-app] --routing` 创建customer-app应用，包含app-routing.module.ts
-+ `ng generate module [CustomerDashboard]` 创建模块，生成文件夹customer-dashboard
-+ `ng generate component [customer-dashboard/CustomerDashboard]` declare CustomerDashboardComponent
-+ `ng generate service [User]`create UserService
++ ViewChild
++ElementRef
 
 ## issues
 
