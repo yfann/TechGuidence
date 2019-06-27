@@ -1,4 +1,8 @@
 
+## tips
+
++ `@JsonProperty` jackson-databind 序列化成其他名称
+
 ## flyway
 
 + [简书](https://www.jianshu.com/p/5b3ee67e3598)
