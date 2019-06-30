@@ -236,7 +236,6 @@ h2:after {
 
 + [box-sizing](http://www.w3chtml.com/css3/properties/user-interface/box-sizing.html)
 + [垂直居中6法](http://vanseodesign.com/css/vertical-centering/)
-+ [flex](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 + [CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 + [Centering in CSS](https://css-tricks.com/centering-css-complete-guide/)
 + [CSS的垂直居中和水平居](https://zhuanlan.zhihu.com/p/24070633)
