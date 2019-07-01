@@ -93,3 +93,4 @@ curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
 
 <!-- plugin -->
 + [elasticsearch-dump](https://github.com/taskrabbit/elasticsearch-dump)
++ [Hateoas](https://blog.betomorrow.com/crud-api-with-powerful-search-in-15-minutes-using-spring-and-elasticsearch-183f5a3d77eb)
