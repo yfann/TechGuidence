@@ -47,6 +47,9 @@ POST <index>/_delete_by_query
 + [x-pack](https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html)
 
 
+
+
+
 ## kibana
 
 + download->unzip
