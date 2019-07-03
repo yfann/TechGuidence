@@ -66,6 +66,12 @@ POST <index>/_delete_by_query
 curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
 ```
 
+## tips
+
++ join（Elasticsearch 这样的分布式计算系统执行全 SQL 风格的联结操作代价昂贵。相应地，Elasticsearch 提供了两种形式的联结可以实现水平规模的扩展。）
+  - nested 查询效率高,更新时会删除整个文档再建
+  - parent-child 更新效率高，`has_child` `has_parent`
+
 ## ref
 <!-- elastic search -->
 + [offical](https://www.elastic.co/cn/downloads/elasticsearch)
@@ -77,6 +83,8 @@ curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
 + [ELASTIC SEARCH: HOW TO INSTALL MARVEL PLUGIN MANUALLY ON WINDOWS OS](https://hassantariqblog.wordpress.com/2016/09/19/elastic-search-how-to-install-marvel-plugin-manually-on-windows-os/)
 + [全文搜索引擎 Elasticsearch 入门教程](http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html)
 + [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math)
++ [Elasticsearch 联结查询(joining queries)](https://www.jianshu.com/p/632363278be4)
++ [elasticsearch 关联查询](https://www.cnblogs.com/double-yuan/p/9798103.html)
 <!-- api -->
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 <!-- kibana -->

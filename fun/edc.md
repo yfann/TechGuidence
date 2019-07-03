@@ -96,6 +96,8 @@
 + [cruz custom tools](https://www.cruzcustomtools.com/products)
 + [combat beads](https://www.combatbeads.com/beads)
 + [ti-edc-wrench](https://bigidesign.com/products/ti-edc-wrench)
++ [serge](http://www.sergeknives.com/knives.html)
++ [mishakatools](https://mishkatools.bigcartel.com/)
 
 ## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)
