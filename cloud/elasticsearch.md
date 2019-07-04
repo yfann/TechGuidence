@@ -5,7 +5,7 @@
 + `curl -X PUT localhost:9200/test` 新建`test` index(数据库)
 + `curl -X DELETE localhost:9200/test` 删除`test` index
 
-## 语句
+## kibana dev tools
 
 + `GET _cat/indices`
 + `GET <index>/_search` 查询记录
@@ -22,6 +22,11 @@ POST <index>/_delete_by_query
   }
 }
 ```
+
+## postman
+
++ `Get {host}/_cat/indices`
++ `Post {host}/{index}/_search`+ payload prameter
 
 ## 日期查询
 
@@ -85,6 +90,7 @@ curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
 + [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math)
 + [Elasticsearch 联结查询(joining queries)](https://www.jianshu.com/p/632363278be4)
 + [elasticsearch 关联查询](https://www.cnblogs.com/double-yuan/p/9798103.html)
++ [使用kibana或postman操作Elasticsearch的常用命令](https://blog.csdn.net/qq_26230421/article/details/80366649)
 <!-- api -->
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 <!-- kibana -->
