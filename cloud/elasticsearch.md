@@ -6,11 +6,48 @@
 + `curl -X DELETE localhost:9200/test` 删除`test` index
 
 ## kibana dev tools
-
++ `.\bin\kibana.bat`
++ `http://localhost:5601/`
 + `GET _cat/indices`
 + `GET <index>/_search` 查询记录
+```js
+GET {index}/_search
+{
+	"query":{"match_all":{}},
+	"size":"100"
+}
+GET {index}/_search
+{
+	"query":{"match":{
+	  "beginDate":"20190401"
+	}},
+	"size":"100"
+}
+```
++ `PUT {index}` 新建index
+```js
+PUT {index}
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 3, 
+            "number_of_replicas" : 2 
+        }
+    }
+}
+```
 + `GET <index>/_mapping` 查看index结构
 + `DELETE <index>` 删除index
++ `POST <index>` 插入数据
+```js
+POST <index>/_doc
+{"name":"yfann"}
+
+PUT <index>/_doc/1?refresh
+{
+...
+}
+```
 + delete by query
 ```js
 POST <index>/_delete_by_query
@@ -22,26 +59,101 @@ POST <index>/_delete_by_query
   }
 }
 ```
++ `POST {index}/_bulk`  批量导入数据
+```js
+POST {index}/_bulk
+{ "index": { "_type": "wx" }}
+{data...}
+{ "index": { "_type": "wx" }}
+{data...}
+...
 
-## postman
+//example
+POST /company/branch/_bulk
+{ "index": { "_id": "london" }}
+{ "name": "London Westminster", "city": "London", "country": "UK" }
+{ "index": { "_id": "liverpool" }}
+{ "name": "Liverpool Central", "city": "Liverpool", "country": "UK" }
+{ "index": { "_id": "paris" }}
+{ "name": "Champs Élysées", "city": "Paris", "country": "France" }
+```
++ Discover查询`account_number:<100 AND balance:>47500`
++ 日期查询 `beginDate:{"now-6h" TO "now"}``beginDate:[2019-01-01 TO 2019-04-04]`
+
+## postman 查询
 
 + `Get {host}/_cat/indices`
 + `Post {host}/{index}/_search`+ payload prameter
 
-## 日期查询
+## parent/child relation                              
++ 一个index只支持一个join field
++ parent and child documents必须在一个shard上,getting,deleting,updating时要提供同样的routing值
++ 建立父子mapping
+```js
+PUT my_index
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "{relation field name}": { 
+          "type": "join",
+          "relations": {
+            "{father relation name}": "{child relation name}" 
+          }
+        }
+      }
+    }
+  }
+}
+```
 
-+ `beginDate:{"now-6h" TO "now"}`
-+ `beginDate:[2019-01-01 TO 2019-04-04]`
++ 插入父document
+```js
+PUT <index>/_doc/1?refresh
+{
+  ...
+  "{relation field name}": "{father relation name}" 
+}
+```
+
++ 插入子document
+```js
+//The routing value is mandatory because parent and child documents must be indexed on the same shard
+PUT <index>/_doc/4?routing=1&refresh
+{
+  ...
+  "{relation field name}": {
+    "name": "{father relation name}",
+    "parent": "{father id}"
+  }
+}
+```
+
++ 根据子查父
+```js
+GET {index}/_search
+{
+  "query": {
+    "has_child": {
+      "type": "{child relation name}",
+      "query": {
+        "match":{
+            //{child expression}
+        }
+      }
+    }
+  }
+}
+```
 
 
 ## tips
 + 默认返回10条记录,需要设置`size`参数
 + 查询时curl可以在get时发送request body,postman可以用post查询
++ join（Elasticsearch 这样的分布式计算系统执行全 SQL 风格的联结操作代价昂贵。相应地，Elasticsearch 提供了两种形式的联结可以实现水平规模的扩展。）
+  - nested 查询效率高,更新时会删除整个文档再建
+  - parent-child 更新效率高，`has_child` `has_parent`
 
-## kibana
-
-+ Discover查询
-    - `account_number:<100 AND balance:>47500`
 
 ## plugin
 
@@ -51,38 +163,19 @@ POST <index>/_delete_by_query
     - `elasticsearch-plugin`
 + [x-pack](https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html)
 
++ elasticdump(export/import data)
+    + `npm install elasticdump -g`
+    + `elasticdump --input=http://<name>:<pwd>@<host>:<port>/<index> --output=aggregate_data.json --type=data`
+    + `elasticdump --input=./aggregate_data.json --output=http://localhost:9200/wechat_aggregate --type=data`
+    ```js
+    // import data
+    curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
+    ```
 
-
-
-
-## kibana
-
-+ download->unzip
-+ `.\bin\kibana.bat`
-+ `http://localhost:5601/`
-
-## elasticdump(export/import data)
-
-+ `npm install elasticdump -g`
-+ `elasticdump --input=http://<name>:<pwd>@<host>:<port>/<index> --output=aggregate_data.json --type=data`
-+ `elasticdump --input=./aggregate_data.json --output=http://localhost:9200/wechat_aggregate --type=data`
-```js
-// import data
-curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
-```
-
-## tips
-
-+ join（Elasticsearch 这样的分布式计算系统执行全 SQL 风格的联结操作代价昂贵。相应地，Elasticsearch 提供了两种形式的联结可以实现水平规模的扩展。）
-  - nested 查询效率高,更新时会删除整个文档再建
-  - parent-child 更新效率高，`has_child` `has_parent`
 
 ## ref
 <!-- elastic search -->
-+ [offical](https://www.elastic.co/cn/downloads/elasticsearch)
-+ [offical start](https://www.elastic.co/start)
-+ [Match Query](https://www.elastic.co/guide/en/elasticsearch/reference/5.5/query-dsl-match-query.html)
-+ [Elasticsearch: 权威指南](https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html)
++ [es documents](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
 + [ES document API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html)
 + [Windows 下安装 ElasticSearch & ElasticSearch head](https://www.jianshu.com/p/4467cfe4e651)
 + [ELASTIC SEARCH: HOW TO INSTALL MARVEL PLUGIN MANUALLY ON WINDOWS OS](https://hassantariqblog.wordpress.com/2016/09/19/elastic-search-how-to-install-marvel-plugin-manually-on-windows-os/)
@@ -91,6 +184,9 @@ curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
 + [Elasticsearch 联结查询(joining queries)](https://www.jianshu.com/p/632363278be4)
 + [elasticsearch 关联查询](https://www.cnblogs.com/double-yuan/p/9798103.html)
 + [使用kibana或postman操作Elasticsearch的常用命令](https://blog.csdn.net/qq_26230421/article/details/80366649)
++ [parent child join](https://www.elastic.co/guide/en/elasticsearch/reference/6.3/parent-join.html)
++ [**Elasticsearch 中 Parent-Child 关系](https://www.jianshu.com/p/0f0ac93c2fea)
++ [Routing a Document to a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/routing-value.html)
 <!-- api -->
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 <!-- kibana -->
