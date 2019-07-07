@@ -119,7 +119,7 @@ PUT <index>/_doc/1?refresh
 + 插入子document
 ```js
 //The routing value is mandatory because parent and child documents must be indexed on the same shard
-PUT <index>/_doc/4?routing=1&refresh
+PUT <index>/_doc/4?routing={parent id}&refresh
 {
   ...
   "{relation field name}": {
@@ -187,6 +187,9 @@ GET {index}/_search
 + [parent child join](https://www.elastic.co/guide/en/elasticsearch/reference/6.3/parent-join.html)
 + [**Elasticsearch 中 Parent-Child 关系](https://www.jianshu.com/p/0f0ac93c2fea)
 + [Routing a Document to a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/routing-value.html)
++ [ElasticSearch 中的索引与类型的前生今世](https://www.do1618.com/archives/1276/elasticsearch-%E4%B8%AD%E7%9A%84%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%89%8D%E7%94%9F%E4%BB%8A%E4%B8%96/)
++ [Java Clients for Elasticsearch](https://www.elastic.co/cn/blog/found-java-clients-for-elasticsearch)
++ [ElasticSearch Joins: Has_Child, Has_parent query python](https://www.bmc.com/blogs/elasticsearch-joins-child-parent/)
 <!-- api -->
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 <!-- kibana -->
