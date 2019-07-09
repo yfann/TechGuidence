@@ -123,7 +123,7 @@ PUT <index>/_doc/4?routing={parent id}&refresh
 {
   ...
   "{relation field name}": {
-    "name": "{father relation name}",
+    "name": "{child relation name}",
     "parent": "{father id}"
   }
 }
@@ -189,6 +189,7 @@ GET {index}/_search
 + [Java Clients for Elasticsearch](https://www.elastic.co/cn/blog/found-java-clients-for-elasticsearch)
 + [?refresh](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html)
 + [elasticsearch中 refresh 和flush区别](https://blog.csdn.net/u011686226/article/details/78531900)
++ [三种操作ES的框架,9300设置认证](https://www.jianshu.com/p/1bfd33ab7a38)
 <!-- api -->
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 <!-- kibana -->

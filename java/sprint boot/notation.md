@@ -4,3 +4,8 @@
 + `@Qualifier("videoB")` 注入名称
 + `@NoRepositoryBean`
 + `@Primary` 优先被注入
++ `@ConfigurationProperties`
+```java
+
+
+```

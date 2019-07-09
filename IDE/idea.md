@@ -1,7 +1,7 @@
-
+## tips
 + help-> Find Action
     - maven projects
-
++ Run->Edit configuration->Application:VM options:`-Dspring.profiles.active=local`
 
 
 ## shortcut
