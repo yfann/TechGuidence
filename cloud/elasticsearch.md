@@ -190,6 +190,7 @@ GET {index}/_search
 + [?refresh](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html)
 + [elasticsearch中 refresh 和flush区别](https://blog.csdn.net/u011686226/article/details/78531900)
 + [三种操作ES的框架,9300设置认证](https://www.jianshu.com/p/1bfd33ab7a38)
++ [ElasticSearch入门 第六篇：复合数据类型——数组，对象和嵌套](https://www.cnblogs.com/ljhdo/p/4904430.html)
 <!-- api -->
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 <!-- kibana -->

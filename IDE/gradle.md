@@ -9,6 +9,14 @@
 + `apply from: 'other.gradle'`脚本插件,本地路径或远程
 + `apply plugin: 'java'`二进制插件，通过插件ID
 
+## config
+
++ application.yml
+```yml
+spring:
+  profiles:
+    active: local
+```
 
 ## java
 
