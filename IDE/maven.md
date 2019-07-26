@@ -14,7 +14,7 @@
 + mvn clean compile /*先清理 后编译*/
 + mvn dependency:tree /*查看依赖项*/
 + `mvn install` 部署(clean -> compile -> test -> package ->jar包放入本地仓库)
-
++ `mvn dependency:tree -Doutput=*.txt`
 
 
 ## others

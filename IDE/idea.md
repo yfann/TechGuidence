@@ -45,3 +45,6 @@
 ## issue
 
 + `Error: Could not find or load main class <class>`    sdk没配
++ lombok不能识别
+    - settings->Plugins->安装lombok插件
+    - settings->Build->Compiler->Annotation Processors->Enable annotation processing
