@@ -66,7 +66,17 @@ POST {index}/_bulk
 {data...}
 { "index": { "_type": "wx" }}
 {data...}
-...
+```
+
++ `GET /test/_doc/_mget` returns multiple documents
+
+```js
+//带id的查询
+GET /test/_doc/_mget
+{
+    "ids" : ["1", "2"]
+}
+```
 
 //example
 POST /company/branch/_bulk
@@ -193,6 +203,7 @@ GET {index}/_search
 + [ElasticSearch入门 第六篇：复合数据类型——数组，对象和嵌套](https://www.cnblogs.com/ljhdo/p/4904430.html)
 <!-- api -->
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
++ [mget](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-multi-get.html)
 <!-- kibana -->
 + [curl](https://www.jianshu.com/p/07c4dddae43a)
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
