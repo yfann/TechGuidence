@@ -11,6 +11,7 @@
 + `hlep(<module name>.<function name>)`
 + `sys.bultin_modulenames`查看内部模块
 + `dir(<module name>)`查看模块下的所有方法
++ `type()`
 
 ## tips
 + 查看模块路径

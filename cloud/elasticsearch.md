@@ -66,17 +66,7 @@ POST {index}/_bulk
 {data...}
 { "index": { "_type": "wx" }}
 {data...}
-```
 
-+ `GET /test/_doc/_mget` returns multiple documents
-
-```js
-//带id的查询
-GET /test/_doc/_mget
-{
-    "ids" : ["1", "2"]
-}
-```
 
 //example
 POST /company/branch/_bulk
@@ -87,6 +77,16 @@ POST /company/branch/_bulk
 { "index": { "_id": "paris" }}
 { "name": "Champs Élysées", "city": "Paris", "country": "France" }
 ```
+
++ `GET /test/_doc/_mget` returns multiple documents
+
+```js
+//带id的查询
+GET /test/_doc/_mget
+{
+    "ids" : ["1", "2"]
+}
+``` 
 + Discover查询`account_number:<100 AND balance:>47500`
 + 日期查询 `beginDate:{"now-6h" TO "now"}``beginDate:[2019-01-01 TO 2019-04-04]`
 
