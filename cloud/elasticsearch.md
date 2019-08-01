@@ -163,7 +163,12 @@ GET {index}/_search
 + join（Elasticsearch 这样的分布式计算系统执行全 SQL 风格的联结操作代价昂贵。相应地，Elasticsearch 提供了两种形式的联结可以实现水平规模的扩展。）
   - nested 查询效率高,更新时会删除整个文档再建
   - parent-child 更新效率高，`has_child` `has_parent`
-
++ `doc['price']`可以加到内存中,`params['_source']`每次都重源文档解析
+```js
+"source": "doc['price'].value * params.factor"
+...
+"script" : "params['_source']['message']"
+```
 
 ## plugin
 
@@ -186,25 +191,31 @@ GET {index}/_search
 ## ref
 <!-- elastic search -->
 + [es documents](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
-+ [ES document API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html)
 + [全文搜索引擎 Elasticsearch 入门教程](http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html)
++ [ES权威指南](https://www.elastic.co/guide/cn/elasticsearch/guide/cn/_who_should_read_this_book.html)
++ [ElasticSearch 中的索引与类型的前生今世](https://www.do1618.com/archives/1276/elasticsearch-%E4%B8%AD%E7%9A%84%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%89%8D%E7%94%9F%E4%BB%8A%E4%B8%96/)
++ [Java Clients for Elasticsearch](https://www.elastic.co/cn/blog/found-java-clients-for-elasticsearch)
++ [java调用ES的框架,9300设置认证](https://www.jianshu.com/p/1bfd33ab7a38)
++ [ElasticSearch入门 第六篇：复合数据类型——数组，对象和嵌套](https://www.cnblogs.com/ljhdo/p/4904430.html)
+<!-- 原理 -->
++ [dynamic field mapping](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/dynamic-field-mapping.html#dynamic-field-mapping)
++ [索引原理](https://www.elastic.co/guide/cn/elasticsearch/guide/cn/making-text-searchable.html)
++ [倒排索引](https://www.elastic.co/guide/cn/elasticsearch/guide/cn/inverted-index.html)
++ [Routing a Document to a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/routing-value.html)
++ [?refresh](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html)
++ [elasticsearch中 refresh 和flush区别](https://blog.csdn.net/u011686226/article/details/78531900)
+<!-- 查询 -->
 + [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math)
 + [Elasticsearch 联结查询(joining queries)](https://www.jianshu.com/p/632363278be4)
 + [elasticsearch 关联查询](https://www.cnblogs.com/double-yuan/p/9798103.html)
 + [使用kibana或postman操作Elasticsearch的常用命令](https://blog.csdn.net/qq_26230421/article/details/80366649)
 + [parent child join](https://www.elastic.co/guide/en/elasticsearch/reference/6.3/parent-join.html)
 + [**Elasticsearch 中 Parent-Child 关系](https://www.jianshu.com/p/0f0ac93c2fea)
-+ [Routing a Document to a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/routing-value.html)
-+ [ElasticSearch 中的索引与类型的前生今世](https://www.do1618.com/archives/1276/elasticsearch-%E4%B8%AD%E7%9A%84%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%89%8D%E7%94%9F%E4%BB%8A%E4%B8%96/)
-+ [Java Clients for Elasticsearch](https://www.elastic.co/cn/blog/found-java-clients-for-elasticsearch)
-+ [?refresh](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html)
-+ [elasticsearch中 refresh 和flush区别](https://blog.csdn.net/u011686226/article/details/78531900)
-+ [三种操作ES的框架,9300设置认证](https://www.jianshu.com/p/1bfd33ab7a38)
-+ [ElasticSearch入门 第六篇：复合数据类型——数组，对象和嵌套](https://www.cnblogs.com/ljhdo/p/4904430.html)
 <!-- api -->
++ [ES document API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html)
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 + [mget](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-multi-get.html)
-<!-- kibana -->
+<!-- feature -->
 + [curl](https://www.jianshu.com/p/07c4dddae43a)
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
 + [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420) 
@@ -218,7 +229,6 @@ GET {index}/_search
 <!-- space -->
 + [Organize your work with Kibana spaces](https://www.elastic.co/blog/introducing-kibana-spaces-for-organization-and-security)
 + [migrate object to space](https://www.elastic.co/blog/how-to-migrate-to-kibana-spaces)
-
 <!-- plugin -->
 + [elasticsearch-dump](https://github.com/taskrabbit/elasticsearch-dump)
 + [Hateoas](https://blog.betomorrow.com/crud-api-with-powerful-search-in-15-minutes-using-spring-and-elasticsearch-183f5a3d77eb)
