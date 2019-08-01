@@ -204,6 +204,7 @@ GET {index}/_search
 + [Routing a Document to a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/routing-value.html)
 + [?refresh](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html)
 + [elasticsearch中 refresh 和flush区别](https://blog.csdn.net/u011686226/article/details/78531900)
++ [doc_values](https://www.elastic.co/guide/en/elasticsearch/reference/current/doc-values.html#doc-values)
 <!-- 查询 -->
 + [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math)
 + [Elasticsearch 联结查询(joining queries)](https://www.jianshu.com/p/632363278be4)
