@@ -169,6 +169,33 @@ GET {index}/_search
 ...
 "script" : "params['_source']['message']"
 ```
++ `stored fields`optimised for returning several fields per result `doc values` optimised for accessing the value of a specific field in many documents
++ `text` 文本字段会被analyzer分词生成全文索引标记为 `analyzed`，这种字段不会被用来排序或aggregation
+```js
+PUT my_index
+{
+  "mappings": {
+    "properties": {
+      "full_name": {
+        "type":  "text"
+      }
+    }
+  }
+}
+```
++ `keyword` 可用来filtering,sorting,aggregation
+```js
+PUT my_index
+{
+  "mappings": {
+    "properties": {
+      "tags": {
+        "type":  "keyword"
+      }
+    }
+  }
+}
+```
 
 ## plugin
 
@@ -197,14 +224,7 @@ GET {index}/_search
 + [Java Clients for Elasticsearch](https://www.elastic.co/cn/blog/found-java-clients-for-elasticsearch)
 + [java调用ES的框架,9300设置认证](https://www.jianshu.com/p/1bfd33ab7a38)
 + [ElasticSearch入门 第六篇：复合数据类型——数组，对象和嵌套](https://www.cnblogs.com/ljhdo/p/4904430.html)
-<!-- 原理 -->
-+ [dynamic field mapping](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/dynamic-field-mapping.html#dynamic-field-mapping)
-+ [索引原理](https://www.elastic.co/guide/cn/elasticsearch/guide/cn/making-text-searchable.html)
-+ [倒排索引](https://www.elastic.co/guide/cn/elasticsearch/guide/cn/inverted-index.html)
-+ [Routing a Document to a Shard](https://www.elastic.co/guide/en/elasticsearch/guide/current/routing-value.html)
-+ [?refresh](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-refresh.html)
-+ [elasticsearch中 refresh 和flush区别](https://blog.csdn.net/u011686226/article/details/78531900)
-+ [doc_values](https://www.elastic.co/guide/en/elasticsearch/reference/current/doc-values.html#doc-values)
+
 <!-- 查询 -->
 + [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math)
 + [Elasticsearch 联结查询(joining queries)](https://www.jianshu.com/p/632363278be4)
