@@ -232,24 +232,29 @@ PUT my_index
 + [使用kibana或postman操作Elasticsearch的常用命令](https://blog.csdn.net/qq_26230421/article/details/80366649)
 + [parent child join](https://www.elastic.co/guide/en/elasticsearch/reference/6.3/parent-join.html)
 + [**Elasticsearch 中 Parent-Child 关系](https://www.jianshu.com/p/0f0ac93c2fea)
+
 <!-- api -->
 + [ES document API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html)
 + [_bulk](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bulk.html)
 + [mget](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-multi-get.html)
+
 <!-- feature -->
 + [curl](https://www.jianshu.com/p/07c4dddae43a)
 + [Kibana可视化](https://segmentfault.com/a/1190000015140923)
 + [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420) 
 + [config kibana](https://www.elastic.co/guide/en/kibana/current/settings.html)
 + [Histogram to show current and last week data](https://github.com/elastic/kibana/issues/1244)
+
 <!-- issues -->
 + [Elasticsearch 时间类型总结](https://zhuanlan.zhihu.com/p/34240906)
 + [Elasticsearch索引mapping的写入、查看与修改](https://blog.csdn.net/napoay/article/details/52012249)
 + [Kibana可视化 官方](https://www.elastic.co/guide/cn/kibana/current/createvis.html)
 + [kibana使用的lucene查询语法](https://segmentfault.com/a/1190000002972420)
+
 <!-- space -->
 + [Organize your work with Kibana spaces](https://www.elastic.co/blog/introducing-kibana-spaces-for-organization-and-security)
 + [migrate object to space](https://www.elastic.co/blog/how-to-migrate-to-kibana-spaces)
+
 <!-- plugin -->
 + [elasticsearch-dump](https://github.com/taskrabbit/elasticsearch-dump)
 + [Hateoas](https://blog.betomorrow.com/crud-api-with-powerful-search-in-15-minutes-using-spring-and-elasticsearch-183f5a3d77eb)
