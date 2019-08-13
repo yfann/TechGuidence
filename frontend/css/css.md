@@ -242,6 +242,6 @@ h2:after {
 + [CSS Transforms](https://drafts.csswg.org/css-transforms/)
 + [CSS font](https://zhuanlan.zhihu.com/p/25808995)
 + [z-index](https://webdesign.tutsplus.com/zh-hans/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892)
-
++ [calc](https://www.jianshu.com/p/a92de09a1af5)
 + [awesome-css](https://github.com/sotayamashita/awesome-css)
 + [awesome-css-cn](https://github.com/jobbole/awesome-css-cn)

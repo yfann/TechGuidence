@@ -1,39 +1,11 @@
-## 数据分析
 
-维度|API|属性|说明
---|--|--|--
-访问存留|getAnalysisDailyRetain|visit_uv_new|新增用户留存
-访问存留|getAnalysisDailyRetain|visit_uv|活跃用户留存
-概况|getAnalysisDailySummary|visit_total|累计用户数
-概况|getAnalysisDailySummary|share_pv|转发次数
-概况|getAnalysisDailySummary|share_uv|转发人数
-访问分析|getAnalysisDailyVisitTrend|session_cnt|打开次数
-访问分析|getAnalysisDailyVisitTrend|visit_pv|访问次数
-访问分析|getAnalysisDailyVisitTrend|visit_uv|访问人数
-访问分析|getAnalysisDailyVisitTrend|visit_uv_new|新用户数
-访问分析|getAnalysisDailyVisitTrend|stay_time_uv|人均停留时长 
-访问分析|getAnalysisDailyVisitTrend|stay_time_session|次均停留时长
-访问分析|getAnalysisDailyVisitTrend|visit_depth|平均访问深度
-用户画像|getAnalysisUserPortrait|uv/uv_new.province|省份
-用户画像|getAnalysisUserPortrait|uv/uv_new.city|城市
-用户画像|getAnalysisUserPortrait|uv/uv_new.genders|性别
-用户画像|getAnalysisUserPortrait|uv/uv_new.platforms|终端类型(iPhone,android)
-用户画像|getAnalysisUserPortrait|uv/uv_new.devices|机型
-用户画像|getAnalysisUserPortrait|uv/uv_new.ages|年龄
-来源分析|getAnalysisVisitDistribution|。。。|不同场景的pv,uv,时长,深度
-页面访问|getAnalysisVisitPage|page_path|页面路径
-页面访问|getAnalysisVisitPage|page_visit_pv|访问次数
-页面访问|getAnalysisVisitPage|page_visit_uv|访问人数
-页面访问|getAnalysisVisitPage|page_staytime_pv|停留时长
-页面访问|getAnalysisVisitPage|entrypage_pv|进入页次数
-页面访问|getAnalysisVisitPage|exitpage_pv|退出页次数
-页面访问|getAnalysisVisitPage|page_share_pv|转发次数
-页面访问|getAnalysisVisitPage|page_share_uv|转发人数
 
 
 
 ## ref
-+ [start](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/introduction.html)
++ [start](https://developers.weixin.qq.com/miniprogram/dev/framework/)
++ [小程序开发指南](https://developers.weixin.qq.com/ebook?action=get_post_info&docid=0008aeea9a8978ab0086a685851c0a)
++ [全局配置](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html)
 + [微信小程序数据分析](https://developers.weixin.qq.com/miniprogram/dev/api-backend/analysis.getDailyRetain.html)
 + [Taro](https://nervjs.github.io/taro/docs/GETTING-STARTED.html)
 + [WePY](https://tencent.github.io/wepy/document.html#/?id=%e5%be%ae%e4%bf%a1%e5%b0%8f%e7%a8%8b%e5%ba%8f%e7%bb%84%e4%bb%b6%e5%8c%96%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6wepy%e5%ae%98%e6%96%b9%e6%96%87%e6%a1%a3)
