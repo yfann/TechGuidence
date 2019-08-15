@@ -19,11 +19,6 @@
 + 容器自动装箱
 + 存储编排
 + 自动容器恢复
-+ Pod
-    - 最小调度资源
-    - 包含一个或多个容器
-    - 定义容器运行变量
-    - 容器间共享环境
 + Service
     - 提供访问一个或多个Pod实例的稳定访问地址
     - ClusterIP
@@ -31,6 +26,16 @@
     - LoadBalance
 + Namespace(BU间的隔离)
 
+### Pod
+- 最小调度资源
+- 包含一个或多个容器
+- 定义容器运行变量
+- 容器间共享环境
+- "进程组" 容器组5
+- pod里的容器超亲密关系 
+- infra Container(其他容器加入此容器以共享网络)
+- InitContainer(容器设计模式：Sidecar，定义专门容器执行主容器需要的辅助工作)
++ Sidecar:从主容器解耦,重用相关业务
 
 ## keyword
 
@@ -43,10 +48,12 @@
 + golang
 + alpine
 + etcd
-<!-- 隔离进程 -->
+<!-- liunux -->
 + namespace
 + cgroup
 + chroot
++ pstree -p
++ systemd
 
 ## ref
 + [阿里云](https://edu.aliyun.com/roadmap/cloudnative)
