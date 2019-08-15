@@ -83,20 +83,7 @@
 
 
 
-## Tips
 
-+ `vertical-align:top` 只对inline,inline-block起作用，样式添加在元素上而不是容器上
-+ `text-align:center`
-+ `white-space:nowrap`
-+ `display:inline`width,height,top,bottom无效，*-left/*-right有效
-+ `box-sizing:border-box`
-    可解决widht:100%后再设置border或padding时的益出问题。
-    - `box-sizing:content-box` element实际宽度=width(css中设置的宽度)+border+padding
-    - `box-sizing:padding-box` element实际宽度=width(css中设置的宽度)+border
-    - `box-sizing:border-box` element实际宽度=width(css中设置的宽度)
-+ `width:20%` 可以对document上的元素设置百分比，对离线dom设置完百分比再加回document时百分比会转换为pixel
-+ `pointer-events: none;` 可用于触发下层元素的hover事件
-+ `content: attr(data-before-content)` 通过属性伪元素动态显示内容
 
 ```css
 /* 添加竖线 */

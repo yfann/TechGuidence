@@ -1,6 +1,17 @@
 
 
 
+## issue
+
++ picker中`indicator-style`单位需为px,子节点高度会自动一致(用rpx,子节点view的高度会是默认的34px)
+```js
+    <picker-view indicator-style="height:25px;" class="year-list" value="{{year}}" bindchange="bindChange">
+     <picker-view-column>
+        <view wx:for="{{years}}" style="line-height:50rpx;" class="picker-text">{{item}}</view>
+     </picker-view-column>
+  </picker-view>
+```
+
 
 ## ref
 + [start](https://developers.weixin.qq.com/miniprogram/dev/framework/)
