@@ -1,4 +1,6 @@
-f+　高度塌陷，父元素如果没设置高度，则高度是由子元素内容撑开的，子元素如果float之后，脱离文档流，父元素的高度会坍塌
+
+## issues
++　高度塌陷，父元素如果没设置高度，则高度是由子元素内容撑开的，子元素如果float之后，脱离文档流，父元素的高度会坍塌
 
 解决([Ref](http://kayosite.com/remove-floating-style-in-detail.html))：
 
@@ -45,3 +47,15 @@ f+　高度塌陷，父元素如果没设置高度，则高度是由子元素内
 + `width:20%` 可以对document上的元素设置百分比，对离线dom设置完百分比再加回document时百分比会转换为pixel
 + `pointer-events: none;` 可用于触发下层元素的hover事件
 + `content: attr(data-before-content)` 通过属性伪元素动态显示内容
++ `calc`
+```css
+/* viewport 可视窗口
+1vw viewport 宽度的1%
+1vh viewport 高度的1% */
+
+/* 当前窗口高度-100px */
+div{
+    height:calc(100vh-100px)
+    /* height:calc(100%-100px) */
+}
+```
