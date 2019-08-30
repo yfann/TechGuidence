@@ -3,6 +3,7 @@
 
 ## cmd
 + `python -m http.server [port]`
++ `pip freeze > requirements.txt`  `pip install -r requirements.txt`
 
 
 ## help
