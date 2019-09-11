@@ -1,3 +1,0 @@
-
-
-+ [KD](https://kingdomdeath.com/)
