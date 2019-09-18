@@ -7,3 +7,4 @@
 + [spring boot](https://github.com/ityouknow/spring-boot-examples)
 + [official spring boot](https://spring.io/projects/spring-boot)
 + [how to do in java  spring aop](https://howtodoinjava.com/spring-aop-tutorial/)
++ [Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
