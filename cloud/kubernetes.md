@@ -23,7 +23,7 @@
     - Pod
     - ReplicaSet
     - Ingress
-
++ Sidecar
 ## Kubectl
 
 ## tips
@@ -39,3 +39,4 @@
 + [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 + [Windows下的包管理器Chocolatey](https://www.jianshu.com/p/831aa4a280e7)
 + [helm](https://www.hi-linux.com/posts/21466.html)
++ [K8S从懵圈到熟练](https://yq.aliyun.com/search?q=K8S%E4%BB%8E%E6%87%B5%E5%9C%88%E5%88%B0%E7%86%9F%E7%BB%83&type=ARTICLE)

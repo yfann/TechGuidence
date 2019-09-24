@@ -86,7 +86,6 @@
 + [keybar](https://www.keybar.us/product-category/all-keybars/)
 + [KeyGrip](https://www.ravenworkshop.com/store/c2/KeyGrip.html)
 + [opener](https://rusticedc.bigcartel.com/products)
-+ [phoenix spinner](https://www.cineik.com/phoenix-titanium-spinner.html)
 + [Derek Lee Knives](https://derekleeknives.com/)
 + [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
 + [rexford](http://www.rexfordknives.com)

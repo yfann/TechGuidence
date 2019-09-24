@@ -4,6 +4,7 @@
 + [API网关](https://help.aliyun.com/document_detail/29475.html?spm=a2c4g.11186623.2.11.13487355z3WvjM)
 + [ES6](http://es6.ruanyifeng.com/#docs/generator)
 + [ES](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/dynamic-field-mapping.html#dynamic-field-mapping)
++ NLP
 
 ## big picture
 
