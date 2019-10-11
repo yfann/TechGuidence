@@ -7,6 +7,7 @@
 + [mini weapons](https://www.brickwarriors.com/sale/)
 + [outsidebrick](https://www.outsidebrick.com/pages/crystal)
 + [rexminibrick](http://www.rexminibrick.com/dragon-brick.html)
++ [crazyminifigs](https://www.crazyminifigs.com/)
 
 ## 文具
 + [#1](http://www.xiangqu.com/uc/share/product?userId=17111904&spm=3_3131085.1.0.1)
