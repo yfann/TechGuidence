@@ -3,6 +3,7 @@
 + springCloud
 + DDD
 + Elasticsearch
++ WebSocket
 
 ## new
 
@@ -10,6 +11,5 @@
 + DynamoDB
 + Eventuate Tram
 + Apache Spark
++ graphQL
 
-## tips
-+ 异步消息传递是最终一致性
