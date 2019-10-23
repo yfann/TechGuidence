@@ -205,6 +205,9 @@ PUT my_index
     - `elasticsearch-plugin`
 + [x-pack](https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html)
 
+
+## export/import data
+
 + elasticdump(export/import data)
     + `npm install elasticdump -g`
     + `elasticdump --input=http://<name>:<pwd>@<host>:<port>/<index> --output=aggregate_data.json --type=data`
@@ -213,6 +216,26 @@ PUT my_index
     // import data
     curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
     ```
+
++ `POST {index}/_bulk`  批量导入数据
+```js
+POST {index}/_bulk
+{ "index": { "_type": "wx" }}
+{data...}
+{ "index": { "_type": "wx" }}
+{data...}
+
+//example
+POST /company/branch/_bulk
+{ "index": { "_id": "london" }}
+{ "name": "London Westminster", "city": "London", "country": "UK" }
+{ "index": { "_id": "liverpool" }}
+{ "name": "Liverpool Central", "city": "Liverpool", "country": "UK" }
+{ "index": { "_id": "paris" }}
+{ "name": "Champs Élysées", "city": "Paris", "country": "France" }
+```
+
++ [File Data Visualizer](https://www.elastic.co/cn/blog/importing-csv-and-log-data-into-elasticsearch-with-file-data-visualizer)
 
 
 ## ref
@@ -258,3 +281,4 @@ PUT my_index
 <!-- plugin -->
 + [elasticsearch-dump](https://github.com/taskrabbit/elasticsearch-dump)
 + [Hateoas](https://blog.betomorrow.com/crud-api-with-powerful-search-in-15-minutes-using-spring-and-elasticsearch-183f5a3d77eb)
++ [elasticdump](https://www.npmjs.com/package/elasticdump)
