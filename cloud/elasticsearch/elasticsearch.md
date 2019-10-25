@@ -234,8 +234,21 @@ POST /company/branch/_bulk
 { "index": { "_id": "paris" }}
 { "name": "Champs Élysées", "city": "Paris", "country": "France" }
 ```
-
 + [File Data Visualizer](https://www.elastic.co/cn/blog/importing-csv-and-log-data-into-elasticsearch-with-file-data-visualizer)
+
++ 批量删除
+```js
+// 根据id批量删除
+GET index1/_delete_by_query
+{
+    "query": {
+        "ids" : {
+            "type" : "_doc",
+            "values" : ["X2qhwm0BTMpMVyc5H7sB"]
+        }
+    }
+}
+```
 
 
 ## ref
