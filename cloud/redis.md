@@ -29,6 +29,9 @@
 
 ## ref
 
++ [redis document](https://redis.io/documentation)
 + [MSOpenTech/redis](https://github.com/MSOpenTech/redis)
 + [ServiceStack/redis-windows](https://github.com/ServiceStack/redis-windows)
 + [Windows下安装并设置Redis](http://blog.csdn.net/renfufei/article/details/38474435)
++ [Redis【入门】就这一篇](https://zhuanlan.zhihu.com/p/37982685)
++ [Redis分布式锁](https://juejin.im/post/5ce5638ef265da1b91636a56)
