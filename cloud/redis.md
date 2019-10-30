@@ -1,5 +1,7 @@
 ## redis
 
+
+
 ## install on windows
 - redis with vagrant
     + download [vagrant](https://www.vagrantup.com/downloads.html)
@@ -18,6 +20,11 @@
         "bar"
         redis 127.0.0.1:6379>
     ```
+
+## cmd
+
++ `flushall`
+
 ## tools
 
 + [ServiceStackApps/RedisReact](https://github.com/ServiceStackApps/RedisReact#download)  UI
