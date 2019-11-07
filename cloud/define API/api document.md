@@ -1,12 +1,4 @@
 
-+ 基础设施即代码
-+ CloudFormation
-+ OpenAPI Specfication
-+ Google API Design Guide
-
-
-## api
-+ AWS Spot Instance
 
 ## api document
 + [staticgen](https://www.staticgen.com/)
@@ -53,9 +45,17 @@
 + [OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md#requestBodyObject)
 + [RAML](https://raml.org/)
 + [API blueprint](https://apiblueprint.org/)
+<!-- samples -->
++ [Stripe API documentation](https://stripe.com/docs/api)
++ [Twilio docs](https://nordicapis.com/5-examples-of-excellent-api-documentation/)
++ [Twitter API Documentation](https://developer.twitter.com/en/docs/tweets/search/overview)
 
-## sample code generate
-+ [REST API made easy](https://restunited.com/)
++ [google](https://developers.google.com/apis-explorer/)
++ [ibm](https://developer.ibm.com/api/list)
++ [dailymotion](https://developer.dailymotion.com/tools/)
+
+## tools
++ [sample api code generate](https://restunited.com/)
 
 
 ## ref
@@ -78,5 +78,7 @@
 + [Free and Open Source API Documentation Tools](https://pronovix.com/blog/free-and-open-source-api-documentation-tools)
 + [Understanding the Differences Between API Documentation, Specifications, and Definitions](https://swagger.io/resources/articles/difference-between-api-documentation-specification/)
 + [Free and Open Source API Documentation Tools](https://pronovix.com/blog/free-and-open-source-api-documentation-tools)
-
-
++ [5 Examples of Excellent API Documentation](https://nordicapis.com/5-examples-of-excellent-api-documentation/)
++ [7 Items No API Documentation Can Live Without](https://nordicapis.com/7-items-no-api-documentation-can-live-without/)
++ [8 Great Examples of Developer Documentation](https://zapier.com/engineering/great-documentation-examples/)
++ [API Design Guide](https://google-cloud.gitbook.io/api-design-guide/)
