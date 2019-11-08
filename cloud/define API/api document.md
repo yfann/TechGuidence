@@ -9,7 +9,9 @@
 
 + [Spring REST Docs](https://spring.io/projects/spring-restdocs)
 + [小幺鸡](http://www.xiaoyaoji.cn/doc/1n6N0lgsSmW)
-+ [RAP](http://thx.github.io/RAP/index_zh.html)
+
++ [RAP](https://github.com/thx/RAP/wiki/user_manual_cn)
++ [RAP 教程](https://thx.github.io/RAP/index_zh.html)
 
 + [leancloud](https://leancloud.cn/docs/rest_api.html#hash-1794863242)
 + [leancloud git](https://github.com/leancloud/docs)

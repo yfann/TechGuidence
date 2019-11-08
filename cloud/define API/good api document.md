@@ -11,8 +11,6 @@
 + [swagger UI](https://swagger.io/tools/swagger-ui/)
 + [demo](https://petstore.swagger.io/)
 
-+ [RAP](https://github.com/thx/RAP/wiki/user_manual_cn)
-+ [RAP 教程](https://thx.github.io/RAP/index_zh.html)
-
 + [apidoc](https://github.com/apidoc/apidoc)
 + [demo](https://apidocjs.com/#demo)
++ [example](https://apidocjs.com/example/#api-User-GetUser)
