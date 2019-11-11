@@ -20,9 +20,6 @@
 + [Showdoc 部署](http://blog.star7th.com/2016/05/2007.html)
 + [showdoc-git](https://github.com/star7th/showdoc)
 
-+ [apiary](https://apiary.io/)
-+ [apiary demo](https://pandurangpatil.docs.apiary.io/#introduction/allowed-https-requests:)
-
 + [sphinx-demo](https://readthedocs.org/projects/sphinx-demo/)
 + [Sphinx demo-python document](https://docs.python.org/3/)
 + [sphinx](http://www.sphinx-doc.org/en/master/index.html)
