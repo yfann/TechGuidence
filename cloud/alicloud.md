@@ -61,3 +61,4 @@
 + [阿里云](https://edu.aliyun.com/roadmap/cloudnative)
 + [Ingress](https://www.jianshu.com/p/189fab1845c5)
 + [API网关](https://help.aliyun.com/document_detail/29475.html?spm=a2c4g.11186623.2.11.13487355z3WvjM)
++ [云盘存储卷使用说明](https://www.alibabacloud.com/help/zh/doc-detail/86612.htm)

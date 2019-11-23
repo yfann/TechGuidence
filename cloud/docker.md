@@ -42,37 +42,62 @@ docker run -t -d -p 8010:5004 testName
 		
 		
 ## windows 10
-
-+ `docker --version` 
-+ `docker pull [image name]`
-+ `docker image ls`或`docker images -a`
-+ `docker ps -a`或`docker container ls [--all]` 列出running的container, --all 列出所有
-+ `docker container stop\rm [contianer name]`
-+ `docker run -p [host port]:[app port] -d [image name]:[tag] [command] --name=[ali name]` 创建新容器,-d后台运行返回容器id
-+ `docker start/stop/restart [container id]` 操作已有容器
++ `docker --version`  查看是否安装成功
+<!-- image -->
++ `docker image ls` or `docker images -a` 列出安装的image
++ `docker image rm [imageName]` 删除image
++ `docker image pull library/[imageName]` or `docker image pull [imageName]` library默认官方组
++ `docker image build -t [imageName]:[tagName] [.]`默认标签是latest,最后是dockerfile文件所在路径
+<!-- container -->
++ `docker container run <-p> [hostPort]:[containerPort] <-it> [cmd]` 新建容器,本地没有的image会从仓库取,`-it`shell映射,`cmd`容器启动后执行,`-d`后台运行返回容器id
++ `docker start/stop/restart [containerID]` 操作已有容器
++ `docker container kill [containID]` 强行终止容器
++ `docker container ls` 列出正在运行的容器
++ `docker contianer ls --all`列出所有容器包括终止运行的容器
++ `docker container rm [containerID]`删除容器文件
++ `docker container logs [containerID]` 查看docker容器的输出内容
++ `docker container exec -it [containerID] /bin/bash`进入一个正在运行的容器
++ `ctrl+d`or`exit`退出容器
+<!-- deploy -->
++ `docker login`
++ `docker image tag [imgName] [userName]/[repository]:[tag]`
++ `docker image build -t [userName]/[repo]:[tag]`
 + `docker build -t [image name]:[tag] <path>/<url>` 指定包含Dockerfile的路径
++ `docker image push [userName]/[repo]:[tag]`
 <!-- 清除 -->
 + `docker system prune [-a]` 清除不使用的镜像
 <!-- example -->
 + `docker run --interactive --tty ubuntu bash`
+<!-- other -->
++ `docker container cp [containID]:[/path/to/file] .`拷贝容器内容到本机
 
 
 ## DockerFile
++ 用来生成image文件
 + `FROM <image>`基础源镜像，必须在第一行
-+ `RUN "exe","param1","param2"` build时运行
-+ `CMD ["exe","param1","param2"]` 容器启动时运行
++ `WORKDIR [/app]`工作路径为image里的app目录
++ `COPY [.] [/app]`当前目录下的文件copy到image文件的/app目录里
++ `RUN "exe","param1","param2"` build时运行`RUN npm install`,可以多条
++ `CMD ["exe","param1","param2"]` 容器启动后运行,只能一条
 + `EXPOSE <port> [<port>...]` 容器对外映射的端口,`docker run -p <port>`
 + `ENV <key>=<value> ...`容器内被脚本使用
 + `ADD <src>... <dest>``COPY <src>... <dest>`复制文件到目标目录，ADD可以是url
 + `ENTRYPOINT ["exe","param1","param2"]` 容器启动后执行，Dockerfile只能有一个ENTRYPOINT，`docker run --entrypoint`
 
 
-## Ref
+## tips
++ local Docker image registry
++ windows 需要先启动docker
++ windows docker desktop 设代理
 
+## Ref
++ [Docker 入门教程](https://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 + [hub](https://hub.docker.com)
++ [Get started with Docker for Windows](https://docs.docker.com/docker-for-windows/)
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
-+ [docker ip映射](https://www.cnblogs.com/brock0624/p/9788710.html)
-+ [docker](https://docs.docker.com/docker-for-windows/)
-+ [docker与虚拟机性能比较](http://blog.csdn.net/cbl709/article/details/43955687)
 + [Docker 命令大全](http://www.runoob.com/docker/docker-command-manual.html)
+<!-- other -->
++ [docker ip映射](https://www.cnblogs.com/brock0624/p/9788710.html)
++ [docker与虚拟机性能比较](http://blog.csdn.net/cbl709/article/details/43955687)
 + [How To Remove Docker Images, Containers, and Volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
++ [install docker desktop on windows](https://docs.docker.com/docker-for-windows/install/)

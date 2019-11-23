@@ -10,8 +10,19 @@
 
 ```
 
+## sping cache
+
++ `@Cacheable`
++ `@CachePut`
++ `@CacheEvict`
++ [spirng cache](https://my.oschina.net/u/3452433/blog/1831026)
+
 ## Lombok
 
 + `@NoArgsConstructor` 生成无参构造
 + `@AllArgsContructor`
 + `@RequiredArgsConstructor`
+
+## ref
++ [@transactional](https://www.ibm.com/developerworks/cn/java/j-master-spring-transactional-use/index.html)
+
