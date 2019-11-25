@@ -23,9 +23,12 @@
 
 ## plugin
 + `pip3 install jupyter` ipython notbook 网页版
-+ `jypyter notebook`  
++ `jypyter notebook` 
++ `jypyter notebook --generate-config` 
 
 ## ref
 + [official ipython](https://ipython.org/)
 + [学习IPython进行交互式编程和数据可视化ipython教程](https://itacey.gitbooks.io/learning_ipython/content/%E7%AC%AC%E9%9B%B6%E7%AB%A0.html)
 + [ipython doc](http://ipython.readthedocs.io/en/stable/interactive/tutorial.html)
++ [jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)
++ [jupyter notebook 快捷键](https://opus.konghy.cn/ipynb/jupyter-notebook-keyboard-shortcut.html)
