@@ -25,4 +25,4 @@
 
 ## ref
 + [@transactional](https://www.ibm.com/developerworks/cn/java/j-master-spring-transactional-use/index.html)
-
++ [@Retryable](https://chinalhr.github.io/tags/java_springboot_component1/)

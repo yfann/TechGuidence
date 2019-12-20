@@ -37,6 +37,10 @@
 
 + `<resource>`
 
+## 版本依赖
++ 依赖树上，深度越浅，越被优先选择
++ 依赖如果在同一层，在前的被选择
+
 ## ref
 
 + [maven教程](http://www.yiibai.com/maven/)
@@ -50,3 +54,4 @@
 
 + [中央仓库](http://search.maven.org/)
 + [查找](https://mvnrepository.com/)
++ [maven传递依赖的版本确定规则](https://blog.csdn.net/bluishglc/article/details/6584678)
