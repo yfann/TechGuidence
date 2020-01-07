@@ -23,7 +23,13 @@
 + 用protected和spy代替私有方法
 + 可以创建一个继承源测试类的类，来mock protected方法
 + FieldSetter
++ spy 里的属性无法用@Mock注入
++ spy下
+```java
+Mockito.when(oSSConfigService.getOSSConfigByBucketName("111")).thenReturn(oss);//跑完代码返回mock值
+ Mockito.doReturn(response).when(aliOSSServiceImpl).assumeRole(oss);//直接返回mock值不执行代码
 
+```
 
 ## example
 
