@@ -5,7 +5,7 @@
 
 
 ## Prometheus
-+ [prometheus](https://prometheus.io/)
++ [prometheus API](https://prometheus.io/docs/introduction/overview/)
 + [prometheus 入门](https://www.hi-linux.com/posts/25047.html)
 + [Prometheus 中文文档](https://ryanyang.gitbook.io/prometheus/di-yi-zhang-jie-shao/overview)
 
@@ -21,3 +21,4 @@
 + [Prometheus监控数据格式学习](https://www.cnblogs.com/afterdawn/p/9025052.html)
 + [基于Grafana和Prometheus的监视系统](https://www.jianshu.com/p/339db34e4afe)
 + [Prometheus监控数据格式](https://www.jianshu.com/p/15f929160f38)
++ [一文搞懂 Prometheus 的直方图](https://juejin.im/post/5d492d1d5188251dff55b0b5)
