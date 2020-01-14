@@ -8,6 +8,7 @@
 + [prometheus API](https://prometheus.io/docs/introduction/overview/)
 + [prometheus 入门](https://www.hi-linux.com/posts/25047.html)
 + [Prometheus 中文文档](https://ryanyang.gitbook.io/prometheus/di-yi-zhang-jie-shao/overview)
++ [Prometheus Book](https://yunlzheng.gitbook.io/prometheus-book/)
 
 + [微服务实战之Prometheus使用分享](https://www.jianshu.com/p/67ec2643c963)
 + [End-toend monitoring with Prometheus](https://www.kancloud.cn/huyipow/prometheus/527563)
