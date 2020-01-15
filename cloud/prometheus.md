@@ -4,6 +4,9 @@
 + `http://localhost:9090/metrics`
 
 
+## tips
++ 记录趋势
+
 ## Prometheus
 + [prometheus API](https://prometheus.io/docs/introduction/overview/)
 + [prometheus 入门](https://www.hi-linux.com/posts/25047.html)

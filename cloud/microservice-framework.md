@@ -8,3 +8,9 @@
     - 可用性(Availability)
     - 分区容忍性(Partition tolerance)，保证数据可持久存储
     - 分区容忍性必须保证，在一致性和可用性之间找平衡
+
+
++ 微服务可观测性
+    - Logs
+    - Metrics
+    - Traces(APM)
