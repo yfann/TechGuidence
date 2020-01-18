@@ -268,6 +268,7 @@ GET index1/_delete_by_query
 + [使用kibana或postman操作Elasticsearch的常用命令](https://blog.csdn.net/qq_26230421/article/details/80366649)
 + [parent child join](https://www.elastic.co/guide/en/elasticsearch/reference/6.3/parent-join.html)
 + [**Elasticsearch 中 Parent-Child 关系](https://www.jianshu.com/p/0f0ac93c2fea)
++ [组合查询](https://www.elastic.co/guide/cn/elasticsearch/guide/current/bool-query.html)
 
 <!-- api -->
 + [ES document API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html)

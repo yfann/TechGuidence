@@ -4,11 +4,20 @@
 + `http://localhost:9090/metrics`
 
 
+## tips
++ 记录趋势
+
+
 ## Prometheus
 + [prometheus API](https://prometheus.io/docs/introduction/overview/)
 + [prometheus 入门](https://www.hi-linux.com/posts/25047.html)
 + [Prometheus 中文文档](https://ryanyang.gitbook.io/prometheus/di-yi-zhang-jie-shao/overview)
 + [Prometheus Book](https://yunlzheng.gitbook.io/prometheus-book/)
+
+<!-- pull -->
++ [Pull doesn't scale - or does it?](https://prometheus.io/blog/2016/07/23/pull-does-not-scale-or-does-it/)
++ [Prometheus and the Debate Over ‘Push’ Versus ‘Pull’ Monitoring](https://thenewstack.io/exploring-prometheus-use-cases-brian-brazil/)
++ [Push vs. Pull Monitoring Configs](https://medium.com/@steve.mushero/push-vs-pull-configs-for-monitoring-c541eaf9e927)
 
 + [微服务实战之Prometheus使用分享](https://www.jianshu.com/p/67ec2643c963)
 + [End-toend monitoring with Prometheus](https://www.kancloud.cn/huyipow/prometheus/527563)
