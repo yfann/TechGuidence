@@ -14,6 +14,7 @@
 + cmd
     - `brew install <package>`
     - `brew info <package>`
+    - `brew search <pkg>`
 
 
 ## NPM

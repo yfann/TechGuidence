@@ -155,5 +155,3 @@
 + [TiBolt](https://deskgram.net/explore/tags/TiBolt)
 + [mountaintops](https://www.toopics.com/mountain_tops_edc/)
 + [sinner](http://picdeer.com/sinnercustoms)
-<!-- new -->
-https://knifehabit.com/custom-knives/zebralight-sc63-1300-lumens-cool-white-18650-battery-edc-flashlight/

@@ -1,11 +1,16 @@
 
 ## config
-+ `export http_proxy=XXX` `export https_proxy=XXX`
++ `export http_proxy=XXX` `export https_proxy=XXX` 直接在terminal中或写入.bashrc中
 + 安装XCode或安装Command Line Tools for Xcode`xcode-select --install`
 + shell配置文件.bashrc或.zshrc,bash每次启动时都会加载，`source ~/.bashrc`立即生效
++ `chsh -s /bin/zsh` 使用zsh
++ `chsh -s /bin/bash` 使用bash
+
+
 
 ## cmd
 
++ `open /`根目录  `open ~`home路径 '/Users/yfann'
 + `man <cmd>` help
 + `pwd`查看路径
 + `ls -la -R`显示隐藏文件，`l`表示格式化, `-R`递归执行，显示子文件夹
@@ -20,7 +25,6 @@
 + `su`切换用户
 + `who -m`当前是什么用户
 + `sudo <cmd>`管理员权限执行命令
-+ `open /`根目录  `open ~`home路径 '/Users/yfann'
 + `history`查看历史
 
 ## tips
@@ -176,6 +180,7 @@ echo "输入的两个数字之和为 $? !"
 + [mac－改造你的terminal](https://www.jianshu.com/p/bb1c97269b11)
 + [设置快捷键打开terminal](https://jingyan.baidu.com/article/20b68a88832140796cec623d.html)
 + [Terminal shortcut](https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac)
+
 <!-- 实例 -->
 + [Mac OS X巧用AppleScript 制作网络位置切换自动化脚本（自动配置PAC 文件）](https://devework.com/automatic-proxy-configuration-pac-applescript.html)
 + [如何优雅地一键实现macOS网络代理切换](https://zhuanlan.zhihu.com/p/23910924)
