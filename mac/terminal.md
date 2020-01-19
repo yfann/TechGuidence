@@ -180,7 +180,7 @@ echo "输入的两个数字之和为 $? !"
 + [mac－改造你的terminal](https://www.jianshu.com/p/bb1c97269b11)
 + [设置快捷键打开terminal](https://jingyan.baidu.com/article/20b68a88832140796cec623d.html)
 + [Terminal shortcut](https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac)
-
 <!-- 实例 -->
 + [Mac OS X巧用AppleScript 制作网络位置切换自动化脚本（自动配置PAC 文件）](https://devework.com/automatic-proxy-configuration-pac-applescript.html)
 + [如何优雅地一键实现macOS网络代理切换](https://zhuanlan.zhihu.com/p/23910924)
++ [OSX 下面用 networksetup 切换代理](https://www.v2ex.com/t/158198)
