@@ -1,35 +1,38 @@
 
-## Kubernetes
+## k8s(container orchestration)
 
-+ container orchestration
-+ 基于容器的应用集群管理解决方案
-+ Master Components
-    - Kube-apiserver
-    - Etcd
-    - Kube-controller-manager
-    - Cloud-controller-manager
-    - Kube-scheduler
-    - kubelet
-    - kube-proxy
-    - kube-dns
++ master
+    - API server
+    - Controller
+    - Scheduler
+    - etcd
++ node
+    - Pod(包含Contianer,Volume)
+    - Kubelet
     - Container Runtime
-+ Node Components
-    - kubelet
-    - kube-proxy
-    - Container Runtime
+
++ Deployment(包含多个Pod)
++ Service(一个或多个Pod的稳定访问地址)
+    - ClusterIP
+    - NodePort
+    - LoadBlance
++ Namespace(集群内的逻辑隔离,pod都有Namespace)
 + Classic F5
     - Service
     - Deployment
     - Pod
     - ReplicaSet
     - Ingress
-+ Sidecar
-## Kubectl
 
+## install
++ virtualBox
+ 
 ## tips
 
 + kubectl config
     - c:\users\[account]\.kube\config
+
+
 
 ## ref
 + [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
