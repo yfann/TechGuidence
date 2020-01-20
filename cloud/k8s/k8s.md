@@ -79,7 +79,11 @@
     - 声明式API(按目标)
     - 控制循环
     - sensor
-
++ Deployment
+    - 管理部署发布的控制器
+    - 定义一组Pod
+    - 批量更新一组Pod
+    - 一键回滚
 ## ref
 + [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
 + [k8s](https://www.kubernetes.org.cn/doc-11)

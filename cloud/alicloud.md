@@ -58,7 +58,7 @@
 + systemd
 
 ## 实操
-+ 3,5
++ 3,5,6
 
 ## ref
 + [阿里云](https://edu.aliyun.com/roadmap/cloudnative)
