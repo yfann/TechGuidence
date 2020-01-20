@@ -35,7 +35,50 @@
 + kubectl config
     - c:\users\[account]\.kube\config
 
-
++ 容器(单进程模型)
+    - 视图隔离资源受限的进程
+    - 容器里PID=1的进程就是应用本身
+    - 管理虚拟机=管理基础设施
+    - 管理容器=管理应用
+    - kubernetes=操作系统
+    - 镜像=软件包
+    - pod=进程组
++ Pod(逻辑单位，进程组)
+    - 包含多个容器(容器间超亲密关系，容器之间通信，localhost调用...,共享)
+    - 原子调度单位
+    - 容器共享Pod资源
+    - 共享网络 Infra Container
+    - 共享存储 Pod级别volume
++ 容器设计模式
+    - 部署Tomcat+WAR
+        + Init Container 先启动，拷贝war到volume
+        + Tomcat容器使用该volume
+    - Sidecar
+        + Pod中定义专门容器为主容器做辅助工作（Init Container）
+        + 辅助功能与业务解耦
+        + 重用辅助功能
+        + 日志,代理容器,适配器容器
++ k8s资源对象
+    - Spec 期望的状态
+    - Status 观察到的状态
+    - Metadata
+        + Labels
+            - key:Value
+            - 可以被select
+        + Annotations(资源注解)
+            - key:Value
+            - 存储非表示信息
+            - 比label大
+            - 可以包含特殊字符
+            - 可以包含JSON等结构数据
+        + OwnerReference(描述资源间关系)
+            - 谁创建了pod谁拥有pod
++ 控制器模式(声明式)
+    - 每个资源都对于一个控制器(可以自定义控制器),控制器使资源的status趋向Spec
+    - 命令式API(按步骤执行)
+    - 声明式API(按目标)
+    - 控制循环
+    - sensor
 
 ## ref
 + [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
