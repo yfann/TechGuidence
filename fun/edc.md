@@ -112,17 +112,6 @@
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
 
-## toys
-+ [unbox](http://store.unboxindustries.info/products)
-+ [Toycon UK](http://www.toyconuk.com/)
-+ [martiantoys](https://martiantoys.com/collections/designer-vinyl)
-+ [DROID FOUNDRY](https://insta-stalker.com/profile/bensmatt9090/)
-+ [fugi](https://fugi.me)
-+ [art toy gama](http://arttoygama.storenvy.com/products)
-+ [katyushka](https://www.katyushka-dolls.com/)
-
-## keyboard
-+ [wasd](http://www.wasdkeyboards.com/)
 
 ## ref
 <!-- forums -->
