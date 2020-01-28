@@ -23,14 +23,16 @@
     - Pod
     - ReplicaSet
     - Ingress
+## docker容器
++ 容器：视图隔离，资源可限制，独立文件系统的进程集合(镜像的实例)
+    - docker run(init容器)
+    - 数据卷（docker volume）：容器产生的数据持久化到特定的目录，生命周期独立于容器
++ 容器镜像：运行容器的所有文件集合（模板）
++ Dockerfile: 描述镜像构建步骤（分层，复用）
++ changeset: 构建步骤产生的文件系统的变化(节约资源，提高分发效率)
 
- 
 ## tips
-
-+ kubectl config
-    - c:\users\[account]\.kube\config
-
-+ 容器(单进程模型)
++ Container(单进程模型)
     - 视图隔离资源受限的进程
     - 容器里PID=1的进程就是应用本身
     - 管理虚拟机=管理基础设施
@@ -69,7 +71,7 @@
         + OwnerReference(描述资源间关系)
             - 谁创建了pod谁拥有pod
 + 控制器模式(声明式)
-    - 每个资源都对于一个控制器(可以自定义控制器),控制器使资源的status趋向Spec
+    - 每个资源都对应一个控制器(可以自定义控制器),控制器使资源的status趋向Spec
     - 命令式API(按步骤执行)
     - 声明式API(按目标)
     - 控制循环

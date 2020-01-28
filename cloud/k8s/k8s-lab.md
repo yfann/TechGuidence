@@ -3,7 +3,12 @@
 + virtualBox(为了安装hypervisor)
 + kubectl
 + MiniKube
+    - `minikube start --vm-driver virtualbox`
 
+
+## tips
++ kubectl config
+    - c:\users\[account]\.kube\config
 
 ## ref
 
