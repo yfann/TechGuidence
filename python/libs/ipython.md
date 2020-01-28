@@ -21,6 +21,10 @@
 + 快捷键
     - `dd` 删除选中的cell,`shift+click`+`dd` del all
 
+## jupyter-lab
++ `pip3 install jupyterlab`
++ `jupyter-lab`
+
 ## ref
 + [official ipython](https://ipython.org/)
 + [学习IPython进行交互式编程和数据可视化ipython教程](https://itacey.gitbooks.io/learning_ipython/content/%E7%AC%AC%E9%9B%B6%E7%AB%A0.html)
@@ -28,3 +32,4 @@
 + [jupyter notebook](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)
 + [jupyter notebook 快捷键](https://opus.konghy.cn/ipynb/jupyter-notebook-keyboard-shortcut.html)
 + [jupyter notebook 快捷键2](http://maxmelnick.com/2016/04/19/python-beginner-tips-and-tricks.html)
++ [jupyterlab](https://mp.weixin.qq.com/s/U0GtZkc9a7xZhy8EgVXW2w)
