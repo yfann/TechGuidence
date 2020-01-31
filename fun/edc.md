@@ -97,6 +97,7 @@
 + [ti-edc-wrench](https://bigidesign.com/products/ti-edc-wrench)
 + [serge](http://www.sergeknives.com/knives.html)
 + [mishakatools](https://mishkatools.bigcartel.com/)
++ [pinning-wallets](https://www.kickstarter.com/projects/jsdesigns/revolution-minimalist-spinning-wallets)
 
 ## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)
@@ -112,6 +113,8 @@
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
 
+## keychain
++ [edcapparatus](https://www.edcapparatus.com/?page=1)
 
 ## ref
 <!-- forums -->
