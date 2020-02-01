@@ -21,6 +21,11 @@
 
 + `sudo npm i`
 
+
+## tools
+
++ `unrar x <file>` 解压rar文件
+
 ## ref
 + [Dash + Alfred](https://www.jianshu.com/p/77d2bf8df81f) **查API文档**
 + Alfred/spotLight 本机网络搜索
