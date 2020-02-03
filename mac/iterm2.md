@@ -29,12 +29,19 @@
 + `cmd+shift+A`复制命令输出
 
 
+## clear history
+run sqlite3 ~/Library/Application\ Support/iTerm2/ShellHistory.sqlite
+identify the line you want to delete with select * from ZCOMMANDHISTORYENTRY;
+delete it with delete from ZCOMMANDHISTORYENTRY where Z_PK = <id of entry, in first column>
+restart iTerm
+
 ## tools
 + mosh (ssh工具)
 + imgcat
     - `imgcat <file>` 打开图片
 
 ## ref
++ [home](https://iterm2.com/documentation.html)
 + [你应该知道的 iTerm2 使用方法--MAC终端工具](http://wulfric.me/2015/08/iterm2/)
 + [iTerm2 + Oh My Zsh 打造舒适终端体验](https://zhuanlan.zhihu.com/p/37195261)
 + [Running a Scrip](https://www.iterm2.com/python-api/tutorial/running.html#running-a-script)

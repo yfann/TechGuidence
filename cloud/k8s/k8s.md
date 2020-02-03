@@ -10,8 +10,6 @@
     - Pod(包含Contianer,Volume)
     - Kubelet
     - Container Runtime
-
-+ Deployment(包含多个Pod)
 + Service(一个或多个Pod的稳定访问地址)
     - ClusterIP
     - NodePort
@@ -23,6 +21,7 @@
     - Pod
     - ReplicaSet
     - Ingress
+
 ## docker容器
 + 容器：视图隔离，资源可限制，独立文件系统的进程集合(镜像的实例)
     - docker run(init容器)
@@ -30,6 +29,101 @@
 + 容器镜像：运行容器的所有文件集合（模板）
 + Dockerfile: 描述镜像构建步骤（分层，复用）
 + changeset: 构建步骤产生的文件系统的变化(节约资源，提高分发效率)
+
+## Pod(逻辑主机，进程组)
+- Pod是一个服务的多个进程的聚合单位
+- 创建后分配UID
+- 一般一个pod一个容器（Docker）
+- 可包含多个容器(容器间超亲密关系，容器间通过localhost，进程间通信(IPC,Inter-process communication)，共享网络和存储)
+- k8s的原子调度单位
+- 容器共享Pod资源
+- 共享网络 Infra Container，容器共享IP和端口
+- 共享存储 Pod级别volume，Pod是临时实体
+- 唯一IP
+- 在node中
+- namespace,cgroup隔离
+- controller创建管理过个pod
+    + 例如Deployment,StatefulSet,DaemonSet
+    + 集群级别的自愈，复制和升级管理
+    + 一个Node故障，Controller自动将该节点的Pod调度到其他Node上,创建新的UID
+- Pod删除 Volume也会被删除
+- init container(修改init容器会导致pod重启)
+- pod hook(kubelet发起，容器进程启动前或终止前执行,执行前kubelet或锁住容器)
+    + 类型：exec，HTTP
+    + 执行完成后容器才会改变状态
+    + hook失败会导致容器失败
+- Pod Preset
+    + pod创建时注入特定信息(如环境变量)
+    + 不需要改Pod template
+
+## 集群资源
++ 集群在网络防火墙后面
++ Node(k8s集群的工作节点)
+    - 物理机或虚拟机
+    - ExternalIP 集群外访问
+    - InternalIP 集群内访问
++ Namespace
+    - 创建虚拟集群
+    - 可将生产，测试，开发分为不同Namespace，隔离环境
+    - `kubectl get ns`
+    - default,kube-system两个默认的Namespace
+    - 不是所有资源都有NS,node和persistentVolume没有NS
++ Label 
+    - 元数据关联到k8s资源对象上
+    - 用于选择对象
+    - Label selector 可以选择一个集合
+    - 不唯一
++ Annotation
+    - 不能用于选择
+    - 可结构化或非结构化数据
++ Taint,Toleration
+    - 避免pod被分配到不适合的node上
+    - node定义多个Taint
+    - pod上定义toleration
++ Owner,Dependent
+    - metadata.ownerReferences
+    - 删除对象的Dependent称为级联删除
+    - 例子：ReplicaSet(Owner) pods(Dependent)
+
+## controller(状态机，控制pod的状态和行为)
++ Deployment
++ StatefulSet
++ DaemonSet
+    - 确保全部或部分Node上运行一个Pod
+    - 新增Node会为它新增一个Pod
+    - 例如：在每个Node上运行日志手机daemon(fluentd,logstash)
++ ReplicationController
++ Job
++ CronJob
+
+## 网络
++ Service
+    - 使用标签选择器标识一组pod成为的K8s服务
+    - 一般只能在集群内通过VIP访问
+    - 解耦frontend到backend的访问
+    - REST对象
+    - Node中的kube-proxy为Service实现了VIPS
+    - userspace
+    - iptables
+    - ipvs
++ Ingress
+    - 集群外部访问集群内部的入口
+    - ingress controller
+## 存储
++ secret
++ ConfigMap
+    - 存在etcd
+    - ENV是容器启动后注入，启动后就不会改变环境变量的值
+    - CnofigMap更新后，要滚动更新pod来枪支重新挂载configmap
++ Volume
+    - 容器磁盘的文件生命周期短，容器重启后丢失文件
+    - volume可以使多个容器共享文件
+    - volume的生命周期和pod一致，比pod中的contianer生命周期长
+    - 容器中的进程看到的是由其 Docker 镜像和卷组成的文件系统视图
+    - volume之间无法连接
++ Persistent Volume
+    - PersistentVolume 管理员设置，PV是集群资源，独立于pod
+    - PersistentVolumeClaim PVC对PV的请求
 
 ## tips
 + Container(单进程模型)
@@ -40,12 +134,6 @@
     - kubernetes=操作系统
     - 镜像=软件包
     - pod=进程组
-+ Pod(逻辑单位，进程组)
-    - 包含多个容器(容器间超亲密关系，容器之间通信，localhost调用...,共享)
-    - 原子调度单位
-    - 容器共享Pod资源
-    - 共享网络 Infra Container
-    - 共享存储 Pod级别volume
 + 容器设计模式
     - 部署Tomcat+WAR
         + Init Container 先启动，拷贝war到volume

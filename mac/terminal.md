@@ -6,7 +6,10 @@
 + `chsh -s /bin/zsh` 使用zsh
 + `chsh -s /bin/bash` 使用bash
 
-
+## shortcut
++ `option+del`删除word
++ `cmd+del`删除行
++ `cmd+right`光标到行尾
 
 ## cmd
 

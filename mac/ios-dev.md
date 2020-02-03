@@ -23,8 +23,9 @@
 
 
 ## tools
-
-+ `unrar x <file>` 解压rar文件
+- unrar
+    + `brew install unrar`
+    + `unrar x <file>` 解压rar文件
 
 ## ref
 + [Dash + Alfred](https://www.jianshu.com/p/77d2bf8df81f) **查API文档**
