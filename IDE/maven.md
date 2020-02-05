@@ -32,14 +32,15 @@
 ## 配置
 
 + `<optional>` 不传递依赖
-
 + `<exclusion>` 排除依赖项
-
 + `<resource>`
 
 ## 版本依赖
 + 依赖树上，深度越浅，越被优先选择
 + 依赖如果在同一层，在前的被选择
+
+## 修改mirror
++ `.m2/`下建settings.xml
 
 ## ref
 

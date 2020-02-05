@@ -1,47 +1,9 @@
 ## Docker
-
-
 + Hub: 中央仓库 
 + Image: 容器的镜像 保存在Hub
 + Container: Image 生成container, container修改后提交回Image
 
-# 插件
-
-docker UI
-
-
-
-安装模板镜像
-docker pull  microsoft/aspnet
-
-
-
-在要部署的程序中创建dockerfile
-dockerfile
-
-		FROM microsoft/aspnet
-		
-		COPY . /app
-		WORKDIR /app
-		RUN ["dnu","restore"]
-		
-		EXPOSE 5004
-		ENTRYPOINT["dnx","-p","project.json","kestrel"]
-
-
-
-为部署的程序生成镜像
-docker build -t testName ./app/web  (dockerfile path)
-
-
-运行镜像
-docker run -t -d -p 8010:5004 testName
-
-		8010 系统的端口
-		5004 dockerfile中暴露出的端口
-		
-		
-## windows 10
+## cmd
 + `docker --version`  查看是否安装成功
 <!-- image -->
 + `docker image ls` or `docker images -a` 列出安装的image
@@ -70,6 +32,10 @@ docker run -t -d -p 8010:5004 testName
 + `docker run --interactive --tty ubuntu bash`
 <!-- other -->
 + `docker container cp [containID]:[/path/to/file] .`拷贝容器内容到本机
+<!-- practice -->
++ `docker pull  microsoft/aspnet`
++ `docker build -t testName ./app/web  (dockerfile path)`为部署的程序生成镜像
++ `docker run -t -d -p 8010:5004 testName`运行镜像  8010 系统的端口,5004 dockerfile中暴露出的端口
 
 
 ## DockerFile
@@ -84,6 +50,10 @@ docker run -t -d -p 8010:5004 testName
 + `ADD <src>... <dest>``COPY <src>... <dest>`复制文件到目标目录，ADD可以是url
 + `ENTRYPOINT ["exe","param1","param2"]` 容器启动后执行，Dockerfile只能有一个ENTRYPOINT，`docker run --entrypoint`
 
+## Mac
++ `sudo usermod -aG docker $USER` 避免每次都sudo
++ `sudo service docker start` 启动docker
+
 
 ## tips
 + local Docker image registry
@@ -91,7 +61,7 @@ docker run -t -d -p 8010:5004 testName
 + windows docker desktop 设代理
 
 ## Ref
-+ [Docker 入门教程](https://www.ruanyifeng.com/blog/ 2018/02/docker-tutorial.html)
++ [Docker 入门教程](https://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 + [hub](https://hub.docker.com)
 + [Get started with Docker for Windows](https://docs.docker.com/docker-for-windows/)
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)

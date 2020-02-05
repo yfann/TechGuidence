@@ -48,3 +48,4 @@
 + lombok不能识别
     - settings->Plugins->安装lombok插件
     - settings->Build->Compiler->Annotation Processors->Enable annotation processing
++ `cannot resolve xxx` 按`alter+Enter`导入包

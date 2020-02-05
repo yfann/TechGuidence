@@ -30,10 +30,12 @@
 
 
 ## clear history
-run sqlite3 ~/Library/Application\ Support/iTerm2/ShellHistory.sqlite
-identify the line you want to delete with select * from ZCOMMANDHISTORYENTRY;
-delete it with delete from ZCOMMANDHISTORYENTRY where Z_PK = <id of entry, in first column>
-restart iTerm
++ `history` 查看历史
++ `history -c`清空历史（linux下有效？？）
+
++ `hist+<tab>`查看hist开头的系统变量
++ `echo $HISTFILE`查看history文件路径
++ `echo > ~/.zsh_history`清空完历史重启iterm2
 
 ## tools
 + mosh (ssh工具)

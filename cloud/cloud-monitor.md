@@ -2,10 +2,15 @@
 
 
 
-
-
-## tips
+## monitoring
++ log 
 + metrics
++ tracing
+
++ 基础监控
++ 中间件监控
++ 业务监控
+## tips
 + moinitor push vs pull
 
 
@@ -25,4 +30,5 @@
 + [云监控](https://help.aliyun.com/document_detail/44584.html?spm=a2c4g.11186623.6.621.696c5c4aIg4TnM)
 + [API网关访问日志](https://help.aliyun.com/document_detail/64803.html)
 + [日志服务](https://help.aliyun.com/product/28958.html)
-
++ [Kubernetes主机和容器的监控方案](https://www.kubernetes.org.cn/2432.html)
++ [监控系统概要](https://juejin.im/post/5bee22c051882528c4466334)
