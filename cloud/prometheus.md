@@ -5,9 +5,11 @@
     - `.../metrics`
     - `.../targets`
 
++ `docker run -d --name=grafana -p 3000:3000 grafana/grafana `
+    - `http://localhost:3000` admin/admin  111111
 
 ## tips
-+ 记录趋势
++ grafana datasource 要用Mac 局域网ip不能用localhost
 
 
 ## Prometheus
@@ -44,3 +46,4 @@
 + [通过gitlab-ci自动添加prometheus业务监控](https://zhuanlan.zhihu.com/p/54026576)
 + [Spring Boot 使用 Micrometer 集成 Prometheus 监控 Java 应用性能](https://blog.csdn.net/aixiaoyang168/article/details/100866159)
 + [Prometheus 监控报警系统 AlertManager 之邮件告警](https://blog.csdn.net/aixiaoyang168/article/details/98474494#3_Prometheus_19)
++ [Spring Boot Metrics监控之Prometheus&Grafana](https://www.jianshu.com/p/afc3759e75b9)

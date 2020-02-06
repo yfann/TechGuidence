@@ -47,6 +47,7 @@
 	- `--name [name]`别名
 	- `-p [host port]:[container port]`端口映射
 	- `--network host`容器内可以通过localhost访问主机网络
+	- `-v [host path]:[container path]`volume挂载路径
 
 
 ## DockerFile
@@ -70,12 +71,11 @@
 + local Docker image registry
 + windows 需要先启动docker
 + windows docker desktop 设代理
++ Mac上没有docker0桥接,不支持host网络模式,用`docker.for.mac.host.internal`代替mac ip
 
 ## Ref
-+ [Docker 入门教程](https://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 + [hub](https://hub.docker.com)
-+ [Get started with Docker for Windows](https://docs.docker.com/docker-for-windows/)
-+ [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
++ [Docker 入门教程](https://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 + [Docker 命令大全](http://www.runoob.com/docker/docker-command-manual.html)
 + [Docker —— 从入门到实践](https://yeasy.gitbooks.io/docker_practice/container/attach_exec.html)
 <!-- other -->
@@ -84,6 +84,8 @@
 + [How To Remove Docker Images, Containers, and Volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
 + [install docker desktop on windows](https://docs.docker.com/docker-for-windows/
 + [Docker 容器中的数据管理](https://www.jianshu.com/p/d7e5ea39cc39)
-+ [Docker容器访问宿主机网络]()
++ [Docker容器访问宿主机网络](https://jingsam.github.io/2018/10/16/host-in-docker.html)
++ [Get started with Docker for Windows](https://docs.docker.com/docker-for-windows/)
++ [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
 <!-- 命令 -->
 + [Docker命令-docker exec](https://www.jianshu.com/p/d858d3cfd427)
