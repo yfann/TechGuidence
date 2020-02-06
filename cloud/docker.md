@@ -14,7 +14,7 @@
 + `docker container run <-p> [hostPort]:[containerPort] <-it> [cmd]` 新建容器,本地没有的image会从仓库取,`-it`shell映射,`cmd`容器启动后执行,`-d`后台运行返回容器id
 + `docker start/stop/restart [containerID]` 操作已有容器
 + `docker container kill [containID]` 强行终止容器
-+ `docker container ls` 列出正在运行的容器
++ `docker container ls` 列出正在运行的容器 `docker ps`
 + `docker contianer ls --all`列出所有容器包括终止运行的容器
 + `docker container rm [containerID]`删除容器文件
 + `docker container logs [containerID]` 查看docker容器的输出内容
@@ -28,14 +28,25 @@
 + `docker image push [userName]/[repo]:[tag]`
 <!-- 清除 -->
 + `docker system prune [-a]` 清除不使用的镜像
-<!-- example -->
-+ `docker run --interactive --tty ubuntu bash`
 <!-- other -->
 + `docker container cp [containID]:[/path/to/file] .`拷贝容器内容到本机
 <!-- practice -->
 + `docker pull  microsoft/aspnet`
 + `docker build -t testName ./app/web  (dockerfile path)`为部署的程序生成镜像
 + `docker run -t -d -p 8010:5004 testName`运行镜像  8010 系统的端口,5004 dockerfile中暴露出的端口
+
+<!-- 进入container -->
++ `docker exec -it [--user root] [containerID] /bin/bash` 进入正在运行的容器目录 /bin/sh
++ `docker container cp [containID]:[/path/to/file] .` 拷贝容器中的文件到本地
++ `docker inspect [contianerID]` 获取容器元数据
+
+<!-- docker run -->
+
++ `docker run [params] [image]`
+	- `-d`后端运行
+	- `--name [name]`别名
+	- `-p [host port]:[container port]`端口映射
+	- `--network host`容器内可以通过localhost访问主机网络
 
 
 ## DockerFile
@@ -66,8 +77,13 @@
 + [Get started with Docker for Windows](https://docs.docker.com/docker-for-windows/)
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
 + [Docker 命令大全](http://www.runoob.com/docker/docker-command-manual.html)
++ [Docker —— 从入门到实践](https://yeasy.gitbooks.io/docker_practice/container/attach_exec.html)
 <!-- other -->
 + [docker ip映射](https://www.cnblogs.com/brock0624/p/9788710.html)
 + [docker与虚拟机性能比较](http://blog.csdn.net/cbl709/article/details/43955687)
 + [How To Remove Docker Images, Containers, and Volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
-+ [install docker desktop on windows](https://docs.docker.com/docker-for-windows/install/)
++ [install docker desktop on windows](https://docs.docker.com/docker-for-windows/
++ [Docker 容器中的数据管理](https://www.jianshu.com/p/d7e5ea39cc39)
++ [Docker容器访问宿主机网络]()
+<!-- 命令 -->
++ [Docker命令-docker exec](https://www.jianshu.com/p/d858d3cfd427)

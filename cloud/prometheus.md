@@ -1,7 +1,9 @@
 ## cmd
 + `docker pull prom/prometheus`
 + `docker run -p 9090:9090 prom/prometheus`
-+ `http://localhost:9090/metrics`
++ `http://localhost:9090`
+    - `.../metrics`
+    - `.../targets`
 
 
 ## tips
@@ -41,3 +43,4 @@
 + [基于Prometheus的微服务应用监控](https://zhuanlan.zhihu.com/p/51611454)
 + [通过gitlab-ci自动添加prometheus业务监控](https://zhuanlan.zhihu.com/p/54026576)
 + [Spring Boot 使用 Micrometer 集成 Prometheus 监控 Java 应用性能](https://blog.csdn.net/aixiaoyang168/article/details/100866159)
++ [Prometheus 监控报警系统 AlertManager 之邮件告警](https://blog.csdn.net/aixiaoyang168/article/details/98474494#3_Prometheus_19)
