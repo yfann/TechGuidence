@@ -12,7 +12,6 @@
 + `%pylab` 激活Numpy,matplotlib
 + `%lsmagic` 查看所有magic
 
-
 ## jupyther notebook
 + `pip3 install jupyter` ipython notbook 网页版
 + `jypyter notebook` 
@@ -20,6 +19,7 @@
 + `%debug` `exit()`  进入退出debug
 + 快捷键
     - `dd` 删除选中的cell,`shift+click`+`dd` del all
+    - `z` 撤销删除
 
 ## jupyter-lab
 + `pip3 install jupyterlab`

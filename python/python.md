@@ -57,3 +57,8 @@ print a
 ## code
 
 + `type(1.2)==float` 判断类型
+
+## functions
+
++ enumerate()
++ range()
