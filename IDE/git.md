@@ -104,16 +104,7 @@ Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 
 ## issue
 
-+ git merge
-
-```
-press "i"
-write your merge message
-press "esc"
-write ":wq"
-then press enter
-```
-
++ `git config --global credential.helper osxkeychain` Mac 清除用户名密码
 + ignore已经提交了的文件
 
 ```

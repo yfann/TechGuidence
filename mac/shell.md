@@ -25,6 +25,9 @@
     - `set` 显示当前shell变量（包括用户变量),`set <key>=<val>`设置shell变量
     - `export` 显示导出成用户变量的shell变量, `export <key>=<val>`把shell变量导成用户变量
     - `unset <var>`删除环境变量
++ `>` redirect output(overwrite file)
++ `>>` append to a file(create file if not exists)
++ `|` 管道，进程间通信，一个进程的stdout是另一个进程的 stdin
 ## tips
 
 + shell function 加到`.zshrc`中,可在窗口中直接调用

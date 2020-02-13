@@ -70,6 +70,7 @@ db.auth("super","super")
 + [connection string url format](https://docs.mongodb.com/manual/reference/connection-string/)	
 + [mongodb聚合](http://www.runoob.com/mongodb/mongodb-aggregate.html)
 + [mongodb aggregation](https://docs.mongodb.com/manual/aggregation/)
++ [mongoose](http://mongoosejs.com/docs/api.html)
 
 
 

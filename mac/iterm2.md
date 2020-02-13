@@ -11,22 +11,24 @@
 + `vi ~/.zshrc`修改zsh的配置文件
 
 ## tips
-+ 双击选中，三击整行
-+ 选中即复制
++ 双击选中，三击整行,选中即复制
 + `cmd+,`config
 + `cmd+t`建tab
 + `cmd+w`关tab
-+ `cmd+left`切换tab
++ `cmd+<-`切换tab
 + `cmd+d` `cmd+shift+d`分割屏幕
 + `cmd+[`切换pane
 + `cmd+f`查找
 + `cmd+;`命令补全
++ `cmd+shift+A`复制命令输出
+
+<!-- not frequent -->
++ `option+cmd+b` 开启时间回溯，`shift+<-`时间倒流
 + `cmd+shift+h`显示历史粘贴命令
 + `cmd+shift+;`显示历史命令
 + `cmd+option+e`搜索所以窗口
 + `cmd+/`找到光标
 + `open+<file>`可以打开图片
-+ `cmd+shift+A`复制命令输出
 
 
 ## clear history
