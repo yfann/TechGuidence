@@ -53,6 +53,10 @@ db.auth("super","super")
         [database]是用于认证的数据库，如果没有则[username:password@]会向admin认证
 
 
+## mac
++ `brew tap mongodb/brew`
++ `brew install mongodb-community@4.2`
++ `brew services start mongodb-community@4.2`run mongoDB as a macOS serviceß
 
 ## install windows service for mongo
 

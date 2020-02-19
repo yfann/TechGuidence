@@ -24,6 +24,8 @@ db.inventory.find( { price: { $ne: 1.99, $exists: true } } )
 ```
 
 ## Ref
-
++ [MongoDB 查询文档](https://www.runoob.com/mongodb/mongodb-query.html)
++ [MongoDB查询总结](https://www.jianshu.com/p/dbf965f8d314)
++ [$map](https://docs.mongodb.com/manual/reference/operator/aggregation/map/)
 + [$and](https://docs.mongodb.com/manual/reference/operator/query/and/)
 + [mongodb aggregation quick reference](https://docs.mongodb.com/manual/meta/aggregation-quick-reference/)
