@@ -62,3 +62,13 @@ public class MyConfiguration {
 + [spring boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/IV.%20Spring%20Boot%20features/27.%20Developing%20web%20applications.html)
 + [OAuth 2 Developers Guide](http://projects.spring.io/spring-security-oauth/docs/oauth2.html)
 + [JWT](http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
+
++ [java-springmvc4-几种获取 HttpServletRequest 对象的方式](https://blog.csdn.net/xxj_jing/article/details/70754428)
++ [SpringMVC的生命周期](https://blog.csdn.net/WuLex/article/details/77649944)
++ [深入理解SpringMVC原理及源码解析](https://zhuanlan.zhihu.com/p/39607030)
++ [由DispatcherServlet看spring mvc请求处理过程](https://segmentfault.com/a/1190000008471934)
++ [doDispatch请求分发流程源码分析](https://blog.csdn.net/shanchahua123456/article/details/87541241)
++ [Spring MVC 原理 - DispatcherServlet调用完整过程](https://blog.csdn.net/qq_33314107/article/details/79121809?utm_source=distribute.pc_relevant.none-task)
++ [Spring MVC Servlet 生命周期、工作原理](https://blog.csdn.net/yelllowcong/article/details/78510083)
++ [SpringMVC 方法顺序](https://www.jianshu.com/p/8a20c547e245)
++ [Servlet Filter和Spring mvc Interceptor](https://www.jianshu.com/p/685c65ed6944)
