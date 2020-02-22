@@ -72,3 +72,6 @@ public class MyConfiguration {
 + [Spring MVC Servlet 生命周期、工作原理](https://blog.csdn.net/yelllowcong/article/details/78510083)
 + [SpringMVC 方法顺序](https://www.jianshu.com/p/8a20c547e245)
 + [Servlet Filter和Spring mvc Interceptor](https://www.jianshu.com/p/685c65ed6944)
+
++ [SpringMVC常用接口之HandlerMethodArgumentResolver](https://www.jianshu.com/p/ac976b9fd8d7)
++ [SpringMVC源码之参数解析绑定原理](https://zhuanlan.zhihu.com/p/33780880)
