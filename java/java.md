@@ -12,13 +12,6 @@
 + static{} /*类加载时执行一次*/
 + `System.out::println` 等于`x -> System.out.println(x)`,是lambda的简写,叫eta-conversion/eta-expansion,'类名::方法名'
 
-## ref
-
-+ [funbook](http://www.runoob.com/java/java-tutorial.html)
-+ [廖雪峰](https://www.feiyangedu.com/category/JavaSE)
-+ [Stream](https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/index.html)
-+ [Java 8 新特性](http://www.runoob.com/java/java8-new-features.html)
-
 ## tips ref
 
 + [类加载](https://www.cnblogs.com/caolaoshi/p/7824748.html)
@@ -38,3 +31,15 @@
 + [不学无数——Java动态代理](https://juejin.im/post/5b9877a2e51d450e9e43e5cb)
 
 + [定时任务几种实现方式](https://blog.csdn.net/revitalizing/article/details/61420556)
+
+## ref
+
++ [funbook](http://www.runoob.com/java/java-tutorial.html)
++ [廖雪峰](https://www.feiyangedu.com/category/JavaSE)
++ [Stream](https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/index.html)
++ [Java 8 新特性](http://www.runoob.com/java/java8-new-features.html)
++ [Java 注解（Annotation）](https://www.runoob.com/w3cnote/java-annotation.html)
+<!-- AOP -->
++ [ASM](https://www.jianshu.com/p/a1e6b3abd789)
++ [Byte Buddy 教程](https://notes.diguage.com/byte-buddy-tutorial/)
++ [「Byte Buddy」20行代码实现AOP](https://zhuanlan.zhihu.com/p/84514959)
