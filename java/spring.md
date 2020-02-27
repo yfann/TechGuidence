@@ -8,3 +8,4 @@
 + [official spring boot](https://spring.io/projects/spring-boot)
 + [how to do in java  spring aop](https://howtodoinjava.com/spring-aop-tutorial/)
 + [Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
++ [如何在Spring Boot中处理HTTP OPTIONS请求](http://www.voidcn.com/article/p-mupyhcrp-btd.html)

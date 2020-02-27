@@ -5,9 +5,6 @@
     - `.../metrics`
     - `.../targets`
 
-+ `docker run -d --name=grafana -p 3000:3000 grafana/grafana `
-    - `http://localhost:3000` admin/admin  111111
-
 ## tips
 + grafana datasource 要用Mac 局域网ip不能用localhost
 

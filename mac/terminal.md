@@ -48,6 +48,9 @@
 + `:!q`不保存退出
 + `nl <file>` 添加行号
 
+## sudo
++ `sudo spctl --master-disable`
+
 ## 安装redis
 + `tar zxvf *.tar.gz`
 + `mv [folder] /usr/local`

@@ -16,7 +16,5 @@
 + `brew services list`
 + `brew services start/run/stop/restart [service name]` start 开机启动，run 运行一次
 
-brew services start mysql
-
 ## ref
 + [Homebrew](https://www.jianshu.com/p/934edae009e1)
