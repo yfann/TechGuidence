@@ -28,8 +28,8 @@
 + `docker image push [userName]/[repo]:[tag]`
 <!-- 清除 -->
 + `docker system prune [-a]` 清除不使用的镜像
-<!-- other -->
-+ `docker container cp [containID]:[/path/to/file] .`拷贝容器内容到本机
+
+
 <!-- practice -->
 + `docker pull  microsoft/aspnet`
 + `docker build -t testName ./app/web  (dockerfile path)`为部署的程序生成镜像
@@ -39,9 +39,9 @@
 + `docker exec -it [--user root] [containerID] /bin/bash` 进入正在运行的容器目录 /bin/sh
 + `docker container cp [containID]:[/path/to/file] .` 拷贝容器中的文件到本地
 + `docker inspect [contianerID]` 获取容器元数据
++ `docker container cp [containID]:[/path/to/file] .`拷贝容器内容到本机
 
 <!-- docker run -->
-
 + `docker run [params] [image]`
 	- `-d`后端运行
 	- `--name [name]`别名
