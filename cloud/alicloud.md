@@ -40,3 +40,5 @@
 + [***云原生***](https://jimmysong.io/)
 <!-- 日志服务 -->
 + [日志服务](https://help.aliyun.com/document_detail/63459.html)
++ [search query](https://help.aliyun.com/document_detail/29060.html?spm=a2c4g.11186623.2.15.1a796f20ZBi4W6)
++ [实时分析简介](https://help.aliyun.com/document_detail/53608.html?spm=a2c4g.11186623.2.23.18253e00uXOGpc)

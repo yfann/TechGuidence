@@ -89,3 +89,6 @@
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
 <!-- 命令 -->
 + [Docker命令-docker exec](https://www.jianshu.com/p/d858d3cfd427)
+
+<!-- 技巧 -->
++ [mac中使用docker搭建linux开发服](https://www.jianshu.com/p/d26140d20cc0)
