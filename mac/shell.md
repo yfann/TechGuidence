@@ -28,6 +28,7 @@
 + `>` redirect output(overwrite file)
 + `>>` append to a file(create file if not exists)
 + `|` 管道，进程间通信，一个进程的stdout是另一个进程的 stdin
+
 ## tips
 
 + shell function 加到`.zshrc`中,可在窗口中直接调用
