@@ -107,3 +107,4 @@
 + [【CentOS7快速上手】1、基础命令/常用命令](https://ken.io/note/centos-quickstart-basiccommand)
 + [Linux 教程](https://www.runoob.com/linux/linux-tutorial.html)
 + [Linux链接](https://www.runoob.com/linux/linux-file-content-manage.html)
++ [鸟哥的Linux私房菜](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/)
