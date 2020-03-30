@@ -83,8 +83,7 @@
 + [godspeed](http://www.godspeedtactical.com/gjsveh8lj6im0bfu9h6p4j1rhoots0)
 
 ## gear
-+ [keybar](https://www.keybar.us/product-category/all-keybars/)
-+ [KeyGrip](https://www.ravenworkshop.com/store/c2/KeyGrip.html)
+
 + [opener](https://rusticedc.bigcartel.com/products)
 + [Derek Lee Knives](https://derekleeknives.com/)
 + [Titanium Pocket Tool "TPT"](https://bigidesign.com/products/titanium-pocket-tool)
@@ -98,6 +97,7 @@
 + [serge](http://www.sergeknives.com/knives.html)
 + [mishakatools](https://mishkatools.bigcartel.com/)
 + [pinning-wallets](https://www.kickstarter.com/projects/jsdesigns/revolution-minimalist-spinning-wallets)
++ [umburry](https://umburry.com/fidgets)
 
 ## parts
 + [Tibolt handle](https://zerofeud.myshopify.com)
@@ -109,12 +109,14 @@
 + [Small Titanium Flashlight w/ Tritium](https://www.arizonacustomknives.com/catalogsearch/result/?q=flashlight)
 + [lawson](https://www.jllawsonco.com/collections/in-stock)
 + [*STICK SPINNER](http://www.mountaintopsedc.com/products)
-+ [](https://umburry.com/fidgets)
+
 ## bead
 + [grumpysedc](https://www.grumpysedc.com/products)
  
 ## keychain
 + [edcapparatus](https://www.edcapparatus.com/?page=1)
++ [keybar](https://www.keybar.us/product-category/all-keybars/)
++ [KeyGrip](https://www.ravenworkshop.com/store/c2/KeyGrip.html)
 
 ## ref
 <!-- forums -->
