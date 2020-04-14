@@ -25,6 +25,12 @@
 + `pip3 install jupyterlab`
 + `jupyter-lab`
 
+
+## plugin
+
++ [nbdev](https://github.com/fastai/nbdev/)
+    - 运行在jupyter notebook中导出lib,方便在不同环境中重用lib
+
 ## ref
 + [official ipython](https://ipython.org/)
 + [学习IPython进行交互式编程和数据可视化ipython教程](https://itacey.gitbooks.io/learning_ipython/content/%E7%AC%AC%E9%9B%B6%E7%AB%A0.html)
@@ -33,3 +39,4 @@
 + [jupyter notebook 快捷键](https://opus.konghy.cn/ipynb/jupyter-notebook-keyboard-shortcut.html)
 + [jupyter notebook 快捷键2](http://maxmelnick.com/2016/04/19/python-beginner-tips-and-tricks.html)
 + [jupyterlab](https://mp.weixin.qq.com/s/U0GtZkc9a7xZhy8EgVXW2w)
++ [首款 Jupyter 官方可视化 Debug 工具，JupyterLab 未来可默认支持 Debug](https://zhuanlan.zhihu.com/p/120215615)
