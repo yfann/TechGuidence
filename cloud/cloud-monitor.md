@@ -35,6 +35,9 @@
 + [日志服务](https://help.aliyun.com/product/28958.html)
 + [Kubernetes主机和容器的监控方案](https://www.kubernetes.org.cn/2432.html)
 + [监控系统概要](https://juejin.im/post/5bee22c051882528c4466334)
++ [为 Java 应用安装探针的常见问题](https://help.aliyun.com/knowledge_detail/66214.html?spm=5176.13910061.0.0.575e5bd7u7J4Ea)
+
+<!-- 指标告警 -->
 + [服务器性能及业务监控指标](https://www.chinasa.net/archives/303.html）
 + [grafana设置Alert阈值和邮件报警](https://yq.aliyun.com/articles/683256)
 <!-- 框架 -->
