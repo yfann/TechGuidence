@@ -9,8 +9,9 @@
 + [outsidebrick](https://www.outsidebrick.com/pages/crystal)
 + [rexminibrick](http://www.rexminibrick.com/dragon-brick.html)
 + [crazyminifigs](https://www.crazyminifigs.com/)
-
-
++ [minimochahk](https://minimochahk.com/shop-all/)
++ [legendcmoc](https://www.legendcmoc.com/shop?Collection=All)
++ [lootabrick](https://www.lootabrick.com/)
 ## market
 + [coin](https://coinmarketcap.com/coins/)
 + [小恶魔集市](https://www.mobile01.com/marketindex.php)  测评外设

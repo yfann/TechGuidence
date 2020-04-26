@@ -6,10 +6,12 @@
 + log 
 + metrics
 + tracing
-
++ 度量埋点
 + 基础监控
 + 中间件监控
 + 业务监控
++ 吞吐率(如 QPS
+
 ## tips
 + moinitor push vs pull
 
@@ -21,7 +23,8 @@
 + [Transaction view](https://www.elastic.co/guide/en/kibana/7.5/transactions.html)
 
 ## ref
-+ [grafana设置Alert阈值和邮件报警](https://yq.aliyun.com/articles/683256)
++ [微服务架构之「 监控系统 」](https://zhuanlan.zhihu.com/p/66487165)
+
 + [全链路监控（一）：方案概述与比较](https://juejin.im/post/5a7a9e0af265da4e914b46f1#heading-23)
 + [微服务架构之「 调用链监控 ](https://www.javazhiyin.com/38512.html)
 + [微服务架构之「 监控系统 」](https://www.cnblogs.com/jsjwk/p/10899175.html)
@@ -32,8 +35,10 @@
 + [日志服务](https://help.aliyun.com/product/28958.html)
 + [Kubernetes主机和容器的监控方案](https://www.kubernetes.org.cn/2432.html)
 + [监控系统概要](https://juejin.im/post/5bee22c051882528c4466334)
-
-<!-- 指标告警 -->
 + [服务器性能及业务监控指标](https://www.chinasa.net/archives/303.html）
++ [grafana设置Alert阈值和邮件报警](https://yq.aliyun.com/articles/683256)
 <!-- 框架 -->
 + [bee apm](https://gitee.com/beetle082/bee-apm)
+
++ [Metrics.NET](https://www.infoq.cn/article/architecture-practice-05-metrics)
++ [Dubbo Metrics](https://developer.aliyun.com/article/693569)
