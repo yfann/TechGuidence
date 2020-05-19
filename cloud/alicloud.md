@@ -25,9 +25,40 @@
 + chroot
 + pstree -p
 + systemd
++ ECS
++ VPC
 
-## 实操
-+ 3,5,6
+## 日志
+
++ 日志查询：$Search |$Analytics
+```sql
+status>200 |select avg(latency),max(latency) ,count(1) as c GROUP BY  method  ORDER BY c DESC  LIMIT 20
+```
++ 日志投递OSS,MaxCompute
+
+## 网关
+
++ app 是api的调用者
++ api属于一个api分组
++ 可以绑定独立域名到api分组上
++ www.[独立域名].com/[Path]?[HTTPMethod]。
+    - api网关通过域名寻址定位唯一的分组
+    - 通过path+method 定位分组下的唯一api
++ 认证方式
+    - OpenId Connect/JWT(基于OAuth2)
+    - 阿里云APP认证
+        + 签名认证
+        + 简单认证（APPCode）
+            - 免去了复杂签名
+            - AppCode明文在网络传递
+    - JWT认证插件
+
+
+## tips
+
++ 自定义日志追踪(API网关>分组管理)
+    - 工作在共享实例(VPC)模式下
+    - customTraceId(日志中的key)
 
 ## ref
 + [阿里云公开课](https://edu.aliyun.com/roadmap/cloudnative)
@@ -42,3 +73,22 @@
 + [日志服务](https://help.aliyun.com/document_detail/63459.html)
 + [search query](https://help.aliyun.com/document_detail/29060.html?spm=a2c4g.11186623.2.15.1a796f20ZBi4W6)
 + [实时分析简介](https://help.aliyun.com/document_detail/53608.html?spm=a2c4g.11186623.2.23.18253e00uXOGpc)
++ [日志服务(SLS)用户手册](https://promotion.aliyun.com/ntms/act/logdoclist.html?spm=5176.55536.1250727.1.9690121ekqhREz&aly_as=sArNaHyCc)
++ [消费-通过Consumer Library实现高可靠消费](https://help.aliyun.com/document_detail/43841.html?spm=a2c4g.11186623.2.7.428623ffE9g9k2#section-lfd-woz-kjz)
++ [查询语法](https://help.aliyun.com/document_detail/29060.html)
++ [日志服务触发器概述](https://www.alibabacloud.com/help/zh/doc-detail/84386.htm?spm=a2c63.p38356.b99.132.247c2136NrHK0r)
+<!-- 网关 -->
++ [API网关访问日志](https://help.aliyun.com/document_detail/64803.html)
++ [1分钟构建API网关日志解决方案](https://developer.aliyun.com/article/326155)
++ [ALIYUN::ApiGateway::Api](https://www.alibabacloud.com/help/zh/doc-detail/61459.htm)
++ [访问控制插件](https://help.aliyun.com/document_detail/154200.html?spm=5176.13794939.0.0.7a426d18LTqQ85)
++ [API网关监控配置](https://yq.aliyun.com/articles/69134?spm=a2c4g.11186623.2.11.739e65602QVWRO)
+
+<!-- 网关认证 -->
++ [使用简单认证（AppCode）方式调用API](https://help.aliyun.com/document_detail/115437.html?spm=a2c4g.11186623.2.22.2e27de9cOqBwSw)
++ [JWT认证插件](https://help.aliyun.com/document_detail/103228.html?spm=a2c4g.11186623.2.19.c68b33daFA9ehU)
++ [OpenId Connect](https://help.aliyun.com/document_detail/48019.html?spm=a2c4g.11186623.6.569.60071335hSXp1s)
++ [阿里云专有网络和经典网络和有什么区别？](https://www.vpsss.net/11489.html)
+
++ [专有网络 VPC](https://help.aliyun.com/product/27706.html)
++ [云服务器 ECS](https://help.aliyun.com/document_detail/108467.html)

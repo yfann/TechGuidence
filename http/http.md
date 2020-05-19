@@ -49,3 +49,4 @@ Content-Type:
 + [https](http://www.cnblogs.com/chyingp/p/https-introduction.html)
 + [SSL/TLS](http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
 + [OpenSSL 与 SSL 数字证书概念贴](http://seanlook.com/2015/01/15/openssl-certificate-encryption/)
++ [keepAlive](https://51write.github.io/2014/04/09/keepalive/)
