@@ -61,7 +61,7 @@ public class MyConfiguration {
 + [MVC framework](https://docs.spring.io/spring/docs/4.3.3.RELEASE/spring-framework-reference/htmlsingle/#mvc)
 + [spring boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/IV.%20Spring%20Boot%20features/27.%20Developing%20web%20applications.html)
 + [OAuth 2 Developers Guide](http://projects.spring.io/spring-security-oauth/docs/oauth2.html)
-+ [JWT](http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
+
 
 + [java-springmvc4-几种获取 HttpServletRequest 对象的方式](https://blog.csdn.net/xxj_jing/article/details/70754428)
 + [SpringMVC的生命周期](https://blog.csdn.net/WuLex/article/details/77649944)

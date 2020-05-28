@@ -77,17 +77,24 @@ status>200 |select avg(latency),max(latency) ,count(1) as c GROUP BY  method  OR
 + [消费-通过Consumer Library实现高可靠消费](https://help.aliyun.com/document_detail/43841.html?spm=a2c4g.11186623.2.7.428623ffE9g9k2#section-lfd-woz-kjz)
 + [查询语法](https://help.aliyun.com/document_detail/29060.html)
 + [日志服务触发器概述](https://www.alibabacloud.com/help/zh/doc-detail/84386.htm?spm=a2c63.p38356.b99.132.247c2136NrHK0r)
++ [loghub](https://www.alibabacloud.com/help/zh/doc-detail/29088.html?spm=a2c5t.10695662.1996646101.searchclickresult.5d4be0b1xj8RBV)
 <!-- 网关 -->
 + [API网关访问日志](https://help.aliyun.com/document_detail/64803.html)
 + [1分钟构建API网关日志解决方案](https://developer.aliyun.com/article/326155)
 + [ALIYUN::ApiGateway::Api](https://www.alibabacloud.com/help/zh/doc-detail/61459.htm)
 + [访问控制插件](https://help.aliyun.com/document_detail/154200.html?spm=5176.13794939.0.0.7a426d18LTqQ85)
 + [API网关监控配置](https://yq.aliyun.com/articles/69134?spm=a2c4g.11186623.2.11.739e65602QVWRO)
-
++ [VPC访问API网关](https://help.aliyun.com/document_detail/127226.html?spm=a2c4g.11186623.6.577.624f3d6dWxEUoQ)
++ [查询可配置的系统参数](https://help.aliyun.com/document_detail/43677.html?spm=5176.10695662.1996646101.searchclickresult.3c034526NI1yMW)
++ [阿里云API网关（6）用户指南（开放 API ）](https://www.cnblogs.com/lexiaofei/p/7212199.html)
 <!-- 网关认证 -->
 + [使用简单认证（AppCode）方式调用API](https://help.aliyun.com/document_detail/115437.html?spm=a2c4g.11186623.2.22.2e27de9cOqBwSw)
 + [JWT认证插件](https://help.aliyun.com/document_detail/103228.html?spm=a2c4g.11186623.2.19.c68b33daFA9ehU)
 + [OpenId Connect](https://help.aliyun.com/document_detail/48019.html?spm=a2c4g.11186623.6.569.60071335hSXp1s)
++ [客户端签名说明文档](https://help.aliyun.com/document_detail/29475.html?spm=a2c4g.11186623.2.16.4ad854749UU3iq)
++ [后端签名密钥说明文档](https://help.aliyun.com/document_detail/29485.html?spm=a2c4g.11186623.2.11.b4d86288Du20Um)
++ [通过Postman实现API网关的请求签名与调试](https://yq.aliyun.com/articles/629830)
+<!-- 网络 -->
 + [阿里云专有网络和经典网络和有什么区别？](https://www.vpsss.net/11489.html)
 
 + [专有网络 VPC](https://help.aliyun.com/product/27706.html)
