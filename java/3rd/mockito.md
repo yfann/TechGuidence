@@ -18,7 +18,7 @@
 
 ## tips for mocking
 + private 变量设值`ReflectionTestUtils.setField(jarainUserLoginServiceImpl, "jarainLoginUrl", "http://foo");`
-+ private method `eflectionTestUtils.invokeMethod(tFoo, "onStarted");`
++ private method `ReflectionTestUtils.invokeMethod(tFoo, "onStarted");`
 + powermock mock私有方法
 + 用protected和spy代替私有方法
 + 可以创建一个继承源测试类的类，来mock protected方法
