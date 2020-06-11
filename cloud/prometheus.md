@@ -7,7 +7,8 @@
 
 ## tips
 + grafana datasource 要用Mac 局域网ip不能用localhost
-
++ prometheus
+    - servicemonitor
 
 ## Prometheus
 <!-- API document -->
