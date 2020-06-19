@@ -16,6 +16,7 @@
 + [How to Monitor Kafka](https://blog.serverdensity.com/how-to-monitor-kafka/?spm=a2c4g.11186623.2.10.5c266b04cFWFdb)
 + [Monitoring Kafka performance metrics](https://www.datadoghq.com/blog/monitoring-kafka-performance-metrics/?spm=a2c4g.11186623.2.11.5c266b04cFWFdb)
 + [kafka_exporter](https://github.com/danielqsj/kafka_exporter)
++ [danielqsj/kafka-exporter](https://hub.docker.com/r/danielqsj/kafka-exporter)
 <!-- backup -->
 + [Kafka 多数据中心部署灾备三要素](https://www.infoq.cn/article/vE2SyMz7sRSATS*BRP1d)
 + [Kafka的备份机制](https://blog.csdn.net/qq_34796981/article/details/80820302)
