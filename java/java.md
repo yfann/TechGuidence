@@ -39,6 +39,7 @@
 + [Stream](https://www.ibm.com/developerworks/cn/java/j-lo-java8streamapi/index.html)
 + [Java 8 新特性](http://www.runoob.com/java/java8-new-features.html)
 + [Java 注解（Annotation）](https://www.runoob.com/w3cnote/java-annotation.html)
++ [Java:Annotation(注解)--原理到案例](https://www.jianshu.com/p/28edf5352b63)
 <!-- AOP -->
 + [ASM](https://www.jianshu.com/p/a1e6b3abd789)
 + [Byte Buddy 教程](https://notes.diguage.com/byte-buddy-tutorial/)

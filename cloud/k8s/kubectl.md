@@ -8,11 +8,14 @@
     - `kubectl get svc`
     - `kubectl get namespace`
     - `kubectl describe pods <pod name>`
++ `create`
+    - `kubectl create -f <name>.yaml`
+    - `kubectl create namespace <name>`
 + `kubectl port-forward <source name> <from port>:<to port>`
 + `kubectl [-f] logs <name>` -f 流式输出
 + `kubctl exc -it <pod name> sh`
 + `kubectl describe pod <pod name> > xxx.yaml` 明细输出到yaml,可以用来排查问题
-+ `kubectl create -f <name>.yaml`
+
 
 ### parameters
 + `--namespace <namespace>` `-n <namespace>`
