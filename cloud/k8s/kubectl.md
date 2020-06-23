@@ -2,19 +2,21 @@
 ## cmd
 + `get`
     - `kubectl get pods`
-    - `kubectl get node`
-    - `kubectl get deployment`
+    - `kubectl get nodes`
+    - `kubectl get deployments`
     - `kubectl get rs` check replicaset status
     - `kubectl get svc`
     - `kubectl get namespace`
-    - `kubectl describe pods <pod name>`
+    - `kubectl describe [pod||node] <pod name>`
+        + `kubectl describe pod <pod name> > xxx.yaml` 明细输出到yaml,可以用来排查问题
 + `create`
     - `kubectl create -f <name>.yaml`
     - `kubectl create namespace <name>`
++ `kubectl expose deployment <dep name> --external-ip="xxx.xx" --port=8000 --target-port=80`
 + `kubectl port-forward <source name> <from port>:<to port>`
 + `kubectl [-f] logs <name>` -f 流式输出
-+ `kubctl exc -it <pod name> sh`
-+ `kubectl describe pod <pod name> > xxx.yaml` 明细输出到yaml,可以用来排查问题
++ `kubectl exc -it <pod name> sh`
++ `kubectl run <deployment name> <--images=...> --replicas=1`
 
 
 ### parameters

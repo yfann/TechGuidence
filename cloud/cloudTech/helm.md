@@ -13,7 +13,7 @@
 + `<command> --help`
 + `repo`
     - `helm search <repo name> <chart name>` 查询可用的charts
-    - `helm show chart/readme <repo name>/<chart name>`
+    - `helm show [chart||readme] <repo name>/<chart name>`
     - `helm repo list` 查看配置了哪些repo
     - `helm repo add <name> <repo url>` 
     ```bash
@@ -23,15 +23,15 @@
 + `helm list --all-namespaces`
 + `helm ls -n <namespace>` 查看release
 + `helm install <name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
-+ `helm delete <release name>` 从集群中删除release
++ `helm delete <release name> -n <namespace>` 从集群中删除release
 + `helm status <chart name>`查看release状态
 + `helm inspect`
     - `helm inspect <chart name>`
     - `helm inspect values <char name>` 修改chart配置
 
-
-
-
++ `helm env` ~/.kube/config
++ `helm create <chart name>`
+    - `tree <chart name>`
 
 
 ## ref
