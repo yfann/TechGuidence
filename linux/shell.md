@@ -40,6 +40,12 @@ echo `expr index "$string" io`  # 输出 4
     - `valuen=${array_name[n]}`
     - `echo ${array_name[@]}`获取数组所有元素
     - `length=${#array_name[@]}` 获取数组长度
+## cat
++ `cat <<EOF xxx.txt` 
+之间内容输入到文件
+`EOF`
+
+
 ## tips
 + `#!/bin/sh/#!/bin/bash`在shell脚本第一行指定解释器
 + `chmod +x ./test.sh`使脚本有执行权限
@@ -48,7 +54,8 @@ echo `expr index "$string" io`  # 输出 4
         - `test.sh` 系统会去PATH中查找`test.sh`，一般只有`/bin`,`/sbin`,`/usr/sbin`在PATH中
     + `/bin/sh <file>`打开一个子shell执行
     + `source <file>`当前shell下执行file中的命令
-
++ stdin
 ## ref
 + [Shell 教程](https://www.runoob.com/linux/linux-shell.html)
 + [online shell](https://www.runoob.com/try/runcode.php?filename=helloworld&type=bash)
++ [bash 教程](https://wangdoc.com/bash/intro.html)

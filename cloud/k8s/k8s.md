@@ -174,9 +174,14 @@
     - 为node分配subnet
     - node加入网络时，为node增加路由配置
 
+## keywords
++ manifests
++ cluster
+
 ## ref
++ [k8s 官网](https://kubernetes.io/docs/concepts/overview/)
+
 + [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
-+ [k8s 官网](https://www.kubernetes.org.cn/doc-11)
 + [Kubernetes 中文文档](http://hardocs.com/d/kubernetes/145-kubectl_config.html)
 
 + [十分钟带你理解Kubernetes核心概念](http://www.dockone.io/article/932)
@@ -188,3 +193,5 @@
 + [从零开始入门 K8s | 手把手带你理解 etcd](https://zhuanlan.zhihu.com/p/96721097)
 + [Pod的生命周期](https://jimmysong.io/posts/pod-lifecycle/)
 
++ [ConfigMap](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/)
++ [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
