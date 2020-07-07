@@ -47,3 +47,5 @@
 + [Prometheus 监控报警系统 AlertManager 之邮件告警](https://blog.csdn.net/aixiaoyang168/article/details/98474494#3_Prometheus_19)
 + [Spring Boot Metrics监控之Prometheus&Grafana](https://www.jianshu.com/p/afc3759e75b9)
 + [Monitor Apache Kafka Using Grafana and Prometheus](https://medium.com/@mousavi310/monitor-apache-kafka-using-grafana-and-prometheus-873c7a0005e2)
+<!-- detail -->
++ [Scrape data from pod upon annotation](https://www.weave.works/docs/cloud/latest/tasks/monitor/configuration-k8s/#per-pod-prometheus-annotations)
