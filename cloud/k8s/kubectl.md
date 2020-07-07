@@ -23,6 +23,12 @@
     - `kubectl create configmap game-config --from-file=<directory>`   `--from-file`可多次使用
 + `kubectl describe configmaps <map-name> [-o yaml]` 查看map
 
+## k8s obj
++ `kubectl create <obj>`
++ `kubectl get <obj>`
++ `kubectl describe <obj>`
++ `kubectl delete <obj>`
+
 ### parameters
 + `--namespace <namespace>` `-n <namespace>`
 + `|grep <exp>` 匹配
