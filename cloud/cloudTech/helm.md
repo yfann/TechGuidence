@@ -24,7 +24,7 @@
     -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
     -  `helm install -f xx.yaml <chart name>`
     -  `helm install --debug --dry-run <chart name>` debug
-+ `helm delete <release name> -n <namespace>` 从集群中删除release
++ `helm delete <release name> -n <namespace> --purge` 从集群中删除release,--purge删干净
 + `helm status <release name>`查看release状态（在集群内）
 + `helm inspect`
     - `helm inspect <chart name>`
@@ -187,3 +187,6 @@ global:
 + [Helm 入门指南](https://www.hi-linux.com/posts/21466.html)
 + [使用Helm管理kubernetes原生应用](https://jimmysong.io/posts/manage-kubernetes-native-app-with-helm/)
 + [YAML技巧](https://whmzsu.github.io/helm-doc-zh-cn/chart_template_guide/yaml_techniques-zh_cn.html)
+
+
++ [stable repo](https://github.com/helm/charts/tree/master/stable)
