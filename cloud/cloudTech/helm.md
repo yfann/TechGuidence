@@ -15,17 +15,20 @@
 
 
 ## cmd
-+ `<command> --help`
++ `<command> -h`
++ `helm version`
 + `helm list`
     - `helm list --all` 显示所有release包括删除的
     - `helm list --all-namespaces`
-    - `helm ls -n <namespace>` 查看release
+    - `helm list --namespace <namespace>` 查看release
 + `heml install`
     -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
     -  `helm install -f xx.yaml <chart name>`
     -  `helm install --debug --dry-run <chart name>` debug
 + `helm delete <release name> -n <namespace> --purge` 从集群中删除release,--purge删干净
+
 + `helm status <release name>`查看release状态（在集群内）
+
 + `helm inspect`
     - `helm inspect <chart name>`
     - `helm inspect values <char name>` 修改chart配置
@@ -183,10 +186,10 @@ global:
 ## ref
 + [Helm docs](https://helm.sh/docs/helm/helm_show_values/)
 + [Helm 用户指南](https://whmzsu.github.io/helm-doc-zh-cn/)
-+ [Helm Hub](https://hub.helm.sh/charts)
 + [Helm 入门指南](https://www.hi-linux.com/posts/21466.html)
+<!-- detail -->
 + [使用Helm管理kubernetes原生应用](https://jimmysong.io/posts/manage-kubernetes-native-app-with-helm/)
 + [YAML技巧](https://whmzsu.github.io/helm-doc-zh-cn/chart_template_guide/yaml_techniques-zh_cn.html)
-
-
+<!-- repo -->
++ [Helm Hub](https://hub.helm.sh/charts)
 + [stable repo](https://github.com/helm/charts/tree/master/stable)
