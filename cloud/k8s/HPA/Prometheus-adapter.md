@@ -10,3 +10,4 @@ resources:
 ## ref
 + [stable/prometheus-adapter](https://github.com/helm/charts/tree/master/stable/prometheus-adapter)
 + [prometheus-adapter-docs](https://github.com/DirectXMan12/k8s-prometheus-adapter/tree/master/docs)
++ [Custom-metrics API](https://knative.dev/docs/serving/custom-metrics-api/)

@@ -49,3 +49,6 @@
 + [Monitor Apache Kafka Using Grafana and Prometheus](https://medium.com/@mousavi310/monitor-apache-kafka-using-grafana-and-prometheus-873c7a0005e2)
 <!-- detail -->
 + [Scrape data from pod upon annotation](https://www.weave.works/docs/cloud/latest/tasks/monitor/configuration-k8s/#per-pod-prometheus-annotations)
+
++ [query](https://prometheus.io/docs/prometheus/latest/querying/basics/)
++ [query](https://prometheus.io/docs/prometheus/latest/querying/basics/)

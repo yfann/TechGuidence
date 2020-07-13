@@ -20,6 +20,10 @@
 + `kubectl exc -it <pod name> sh`
 + `kubectl run <deployment name> <--images=...> --replicas=1`
 
+## apiservice
++ `kubectl get apiservice`
++ `kubectl api-versions`
+
 ## configMap
 + `kubectl create configmap <map-name> <data-source>` 
     - `kubectl create configmap game-config --from-file=<directory>`   `--from-file`可多次使用
@@ -31,8 +35,16 @@
 + `kubectl describe <obj>`
 + `kubectl delete <obj>`
 
-### parameters
-+ `--namespace <namespace>` `-n <namespace>`
+## logs
++ `kubectl logs -f xxx `
+
+## k8s monitoring
++ `kubectl top node <node name>`显示cpu和memory的metrics
+
+## parameters
++ `--namespace <namespace>` 
+    - `-n <namespace>`
++ `-l xx=xxx` label
 + `|grep <exp>` 匹配
 
 ## issues

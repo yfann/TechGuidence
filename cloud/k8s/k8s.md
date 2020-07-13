@@ -177,6 +177,8 @@
 ## keywords
 + manifests
 + cluster
++ Kubernetes API
++ config map
 
 ## ref
 + [k8s 官网](https://kubernetes.io/docs/concepts/overview/)
