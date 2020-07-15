@@ -192,12 +192,11 @@
 + [K8S从懵圈到熟练 – 集群网络详解](https://zhuanlan.zhihu.com/p/67894883)
 <!-- detail -->
 + [Windows下的包管理器Chocolatey](https://www.jianshu.com/p/831aa4a280e7)
-+ [从零开始入门 K8s | 手把手带你理解 etcd](https://zhuanlan.zhihu.com/p/96721097)
 + [Pod的生命周期](https://jimmysong.io/posts/pod-lifecycle/)
 
 + [ConfigMap](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/)
 + [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
-
++ [secret:从私有仓库拉取镜像](https://kubernetes.io/zh/docs/tasks/configure-pod-container/pull-image-private-registry/)
 + [调试 DNS 问题](https://kubernetes.io/zh/docs/tasks/administer-cluster/dns-debugging-resolution/)
 
 + [日志架构](https://kubernetes.io/zh/docs/concepts/cluster-administration/logging/)

@@ -16,7 +16,7 @@
 + `cmd+,`config
 + `cmd+t`建tab
 + `cmd+w`关tab
-+ `cmd+<-`切换tab
++ `cmd+left`切换tab
 + `cmd+d` `cmd+shift+d`分割屏幕
 + `cmd+[`切换pane
 <!-- 文本 -->
@@ -28,7 +28,7 @@
 <!-- 命令 -->
 + `cmd+;`命令补全
 <!-- not frequent -->
-+ `option+cmd+b` 开启时间回溯，`shift+<-`时间倒流
++ `option+cmd+b` 开启时间回溯，`shift+left`时间倒流
 + `cmd+shift+h`显示历史粘贴命令
 + `cmd+shift+;`显示历史命令
 + `cmd+option+e`搜索所以窗口

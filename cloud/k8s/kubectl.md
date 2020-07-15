@@ -19,7 +19,9 @@
 + `kubectl [-f] logs <name>` -f 流式输出
 + `kubectl exc -it <pod name> sh`
 + `kubectl run <deployment name> <--images=...> --replicas=1`
-
++ `kubectl create -f myapp.yaml`
+    - `kubectl get -f myapp.yaml`
+    - `kubectl describe -f myapp.yaml`
 ## apiservice
 + `kubectl get apiservice`
 + `kubectl api-versions`
@@ -46,7 +48,8 @@
     - `-n <namespace>`
 + `-l xx=xxx` label
 + `|grep <exp>` 匹配
-
++ `--output=yaml` 导出yaml
++ `--output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode` json中的base64解码
 ## issues
 + CrashLoopBackOff
 ## ref

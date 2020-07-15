@@ -115,7 +115,7 @@ public class Config {
 + [YAML](https://www.jianshu.com/p/97222440cd08)
 + [TaskExecutor](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/scheduling.html)
 
-
++ [Spring Boot Actuator](http://www.ityouknow.com/springboot/2018/02/06/spring-boot-actuator.html)
 ## todo
 
 + HandlerInterceptor

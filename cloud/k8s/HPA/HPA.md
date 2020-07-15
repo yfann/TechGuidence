@@ -22,6 +22,7 @@
         averageValue: 1k
     ```
     - Object(描述相同namespace的其他对象,并非获取,target支持Value和AverageValue。对于AverageValue类型,API返回的度量指标将按照 Pod 数量拆分，然后再与target值比较)
+        + describedObject的配置可以参考`kubectl get --raw "/apis/custom.metrics.k8s.io/v1beta1/namespaces/<namespace>/pods/*/<metrics name>" | jq`的返回值
     ```yml
     type: Object
     object:
