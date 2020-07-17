@@ -54,9 +54,7 @@
     ```
 
 
-## Charts
-
-### 依赖关系
+## charts依赖关系
 - requirements.yaml
     + condition
     + tags
@@ -113,10 +111,10 @@ myimports:
     mybool: true
     mystring: "helm rocks!"
 ```
-### 模板
+## 模板
 + values.yaml或--set 提供的值通过`.Values`访问
 
-### values
+## values
 + 用户提供的包含值的yaml文件`helm install -f xx.yaml`会覆盖values.yaml 文件中的值
 + `--values` 与chart中的values.yaml合并
 ```sh
@@ -151,8 +149,10 @@ apache:
     - 不能用helm delete删除这部分资源
     - pre-delete,post-delte中手动删除
     - helm.sh/hook-delete-policy
+
 ## tips
-+ `{{ - `删除左空格
++ `{{- `删除左空格，将空白左移
+    - 否则会产生空行
 + `$.`全局变量
     - `$.Release.Name`
 + `templates/`里的文件为K8s manifests
@@ -187,6 +187,7 @@ global:
 + [Helm docs](https://helm.sh/docs/helm/helm_show_values/)
 + [Helm 用户指南](https://whmzsu.github.io/helm-doc-zh-cn/)
 + [Helm 入门指南](https://www.hi-linux.com/posts/21466.html)
++ [空白处理](https://www.qikqiak.com/k8s-book/docs/46.Helm%E6%A8%A1%E6%9D%BF%E4%B9%8B%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B.html)
 <!-- detail -->
 + [使用Helm管理kubernetes原生应用](https://jimmysong.io/posts/manage-kubernetes-native-app-with-helm/)
 + [YAML技巧](https://whmzsu.github.io/helm-doc-zh-cn/chart_template_guide/yaml_techniques-zh_cn.html)

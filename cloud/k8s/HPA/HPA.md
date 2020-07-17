@@ -11,7 +11,7 @@
                     type: Utilization
                     averageUtilization: 50
         ```
-    - pod(不同Pod间平均,仅支持AverageValue)
+    - pod(不同Pod间平均,仅支持AverageValue,和resource metrics类似)
     ```yml
     type: Pods
     pods:
@@ -21,7 +21,7 @@
         type: AverageValue
         averageValue: 1k
     ```
-    - Object(描述相同namespace的其他对象,并非获取,target支持Value和AverageValue。对于AverageValue类型,API返回的度量指标将按照 Pod 数量拆分，然后再与target值比较)
+    - Object(metrics是描述相同namespace的其他对象,并非获取,target支持Value和AverageValue。对于AverageValue类型,API返回的度量指标将按照 Pod 数量拆分，然后再与target值比较)
         + describedObject的配置可以参考`kubectl get --raw "/apis/custom.metrics.k8s.io/v1beta1/namespaces/<namespace>/pods/*/<metrics name>" | jq`的返回值
     ```yml
     type: Object
@@ -63,7 +63,9 @@
 + [Pod 水平自动伸缩](https://kubernetes.io/zh/docs/tasks/run-application/horizontal-pod-autoscale/)
 + [资源指标管道](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/resource-metrics-pipeline/)
 + [Kubernetes Metrics Serve](https://github.com/kubernetes-sigs/metrics-server)
-+ [Kubernetes monitoring architecture](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/monitoring_architecture.md)
 + [Metrics](https://github.com/kubernetes/metrics)
 + [Metrics API Implementations](https://github.com/kubernetes/metrics/blob/master/IMPLEMENTATIONS.md)
 + [Aggregation layer](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/)
+<!-- API pth -->
++ [Custom Metrics API](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/custom-metrics-api.md)
++ [Resource Metrics API](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/resource-metrics-api.md)
