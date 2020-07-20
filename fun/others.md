@@ -4,8 +4,8 @@
 + keiko's line beauty collection
 
 ## lego
-+ [mini figures](https://www.customminifig.co.uk/maxbrick-custom-minifigures/)
 + [outsidebrick](https://www.outsidebrick.com/pages/crystal)
++ [mini figures](https://www.customminifig.co.uk/maxbrick-custom-minifigures/)
 + [rexminibrick](http://www.rexminibrick.com/dragon-brick.html)
 + [crazyminifigs](https://www.crazyminifigs.com/)
 + [minimochahk](https://minimochahk.com/shop-all/)
