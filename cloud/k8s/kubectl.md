@@ -36,7 +36,8 @@
 + `kubectl get <obj>`
 + `kubectl describe <obj>`
 + `kubectl delete <obj>`
-
+<!-- instance -->
++ `kubectl get rc`
 ## logs
 + `kubectl logs -f xxx `
 
@@ -50,6 +51,7 @@
 + `|grep <exp>` 匹配
 + `--output=yaml` 导出yaml
 + `--output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode` json中的base64解码
++ `kubectl get pods -o wide` 显示ip,node信息
 ## issues
 + CrashLoopBackOff
 ## ref
