@@ -24,13 +24,15 @@
     - IPC namespace
         + process communicate
     - PID namespace(posible,`ps aux`)
-+ In a pod,Volume(shere file directories)
++ In a pod,Volume(shere file directories)  
 + pods are in a flat,shared network-address space
     - then can access each other,no matter worker nodes
     - an additional software-defined network layered
     - don't need NAT(Network Address Translation)
     - like they are in a local area network(LAN)
 + like a VM
++ splitting multi-tier apps into multiple pods
+    - pod is the basic unit of scaling
 ## tips
 
 + contianer share the linux kernel(VM doesn't)
