@@ -25,6 +25,11 @@
     -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
     -  `helm install -f xx.yaml <chart name>`
     -  `helm install --debug --dry-run <chart name>` debug
+
++ `helm upgrade [RELEASE] [CHART] [flags]`
+    - e.g.`helm upgrade -f myvalues.yaml -f override.yaml redis ./redis`
+
+
 + `helm delete <release name> -n <namespace> --purge` 从集群中删除release,--purge删干净
 
 + `helm status <release name>`查看release状态（在集群内）
@@ -183,6 +188,7 @@ global:
 ## .Values.global.app  访问方式
 ```
 + `.helmignore`
++ `<chart name>/<./chart directory>`
 ## ref
 + [Helm docs](https://helm.sh/docs/helm/helm_show_values/)
 + [Helm 用户指南](https://whmzsu.github.io/helm-doc-zh-cn/)
