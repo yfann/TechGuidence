@@ -3,3 +3,4 @@
 + `vi`
     - `:q!` 强制退出 vi
 + `ps aux` 显示所有进程
++ `ssh root@xx.xxx.xx.xx`

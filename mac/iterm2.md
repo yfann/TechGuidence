@@ -9,7 +9,8 @@
 
 ## config
 + `vi ~/.zshrc`修改zsh的配置文件
-
++ `chsh -s /bin/zsh`
+    - `chsh -s /bin/bash`
 ## tips
 + 双击选中，三击整行,选中即复制
 <!-- 标签 -->

@@ -5,14 +5,9 @@
 + `/usr` 
 
 
-
-
 ## NPM
 
 + `sudo npm i`
-
-
-## tools
 
 
 ## ref

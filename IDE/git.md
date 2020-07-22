@@ -116,6 +116,8 @@ $ git add .
 
 + The following untracked working tree files would be overwritten by checkout `git clean -d -fx`
 
++ Network is unreachable
+    - `git push -4 origin master`
 
 ## Ref
 
