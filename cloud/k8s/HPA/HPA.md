@@ -59,6 +59,7 @@
 + [Horizontal Pod Autoscaling (HPA) triggered by Kafka event](https://medium.com/@ranrubin/horizontal-pod-autoscaling-hpa-triggered-by-kafka-event-f30fe99f3948)
 + [Autoscaling on multiple metrics and custom metrics](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics)
 + [Kubernetes HPA 使用详解](https://www.qikqiak.com/post/k8s-hpa-usage/)
++ [探索Kubernetes HPA:HPA metrics type](https://zhuanlan.zhihu.com/p/89453704)
 <!-- detail -->
 + [Pod 水平自动伸缩](https://kubernetes.io/zh/docs/tasks/run-application/horizontal-pod-autoscale/)
 + [资源指标管道](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/resource-metrics-pipeline/)

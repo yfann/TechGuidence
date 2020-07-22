@@ -11,5 +11,6 @@
 + [Spring Cloud Open Service Broker](https://spring.io/projects/spring-cloud-open-service-broker#overview)
 + [服务目录](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)
 + [Serverce catalog Walkthrough](https://svc-cat.io/docs/walkthrough/#step-1---installing-the-ups-broker-server)
++ [spring-cloud-samples/bookstore-service-broker](https://github.com/spring-cloud-samples/bookstore-service-broker)
 <!-- ali cloud -->
 + [阿里云Kubernetes服务 - Service Broker快速入门指南](https://developer.aliyun.com/article/592156)
