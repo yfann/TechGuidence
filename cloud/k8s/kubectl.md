@@ -22,6 +22,7 @@
 + `kubectl create -f myapp.yaml`
     - `kubectl get -f myapp.yaml`
     - `kubectl describe -f myapp.yaml`
+
 ## apiservice
 + `kubectl get apiservice`
 + `kubectl api-versions`
@@ -53,6 +54,9 @@
 + `--output=yaml` 导出yaml
 + `--output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode` json中的base64解码
 + `kubectl get pods -o wide` 显示ip,node信息
+
+## pod
++ `kubectl get po <pod-name> -o yaml`
 
 ## node
 + `kubectl get nodes`
