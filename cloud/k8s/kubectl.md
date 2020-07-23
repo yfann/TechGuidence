@@ -38,6 +38,7 @@
 + `kubectl delete <obj>`
 <!-- instance -->
 + `kubectl get rc`
+
 ## logs
 + `kubectl logs -f xxx `
 
@@ -52,8 +53,16 @@
 + `--output=yaml` 导出yaml
 + `--output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode` json中的base64解码
 + `kubectl get pods -o wide` 显示ip,node信息
+
+## node
++ `kubectl get nodes`
++ `kubectl label nodes <node-name> <label-key>=<label-value>` add label
++ `kubectl describe node <node-name>`
+    - `kubectl get nodes --show-labels`
+
 ## issues
 + CrashLoopBackOff
+
 ## ref
 + [Kubernetes kubectl 命令表](http://docs.kubernetes.org.cn/683.html)
 + [kubectl](https://kubernetes.io/zh/docs/reference/kubectl/)
