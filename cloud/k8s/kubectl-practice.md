@@ -6,3 +6,4 @@
 + `kubectl get secret regcred --output=yaml` 导出yaml
     - `kubectl get secret regcred --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode` base64解码
 + `kubectl scale rc kubia --replicas=3`
++ `kubectl get pods -o wide`

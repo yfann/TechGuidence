@@ -10,6 +10,7 @@
     - Pod(包含Contianer,Volume)
     - Kubelet
     - Container Runtime
+    - 没有namespace
 + Service(一个或多个Pod的稳定访问地址)
     - ClusterIP
     - NodePort
@@ -181,6 +182,7 @@
 + config map
 
 ## ref
+<!-- overview -->
 + [k8s 官网](https://kubernetes.io/docs/concepts/overview/)
 + [k8s 中文](https://kubernetes.io/zh/docs/tasks/administer-cluster/dns-debugging-resolution/)
 
@@ -191,12 +193,13 @@
 + [K8S从懵圈到熟练](https://yq.aliyun.com/search?q=K8S%E4%BB%8E%E6%87%B5%E5%9C%88%E5%88%B0%E7%86%9F%E7%BB%83&type=ARTICLE)
 + [K8S从懵圈到熟练 – 集群网络详解](https://zhuanlan.zhihu.com/p/67894883)
 <!-- detail -->
-+ [Windows下的包管理器Chocolatey](https://www.jianshu.com/p/831aa4a280e7)
 + [Pod的生命周期](https://jimmysong.io/posts/pod-lifecycle/)
-
 + [ConfigMap](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/)
 + [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 + [secret:从私有仓库拉取镜像](https://kubernetes.io/zh/docs/tasks/configure-pod-container/pull-image-private-registry/)
 + [调试 DNS 问题](https://kubernetes.io/zh/docs/tasks/administer-cluster/dns-debugging-resolution/)
++ [Assigning Pods to Nodes](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/)
 
-+ [日志架构](https://kubernetes.io/zh/docs/concepts/cluster-administration/logging/)
+<!-- labels -->
++ [Well-Known Labels, Annotations and Taints](https://kubernetes.io/docs/reference/kubernetes-api/labels-annotations-taints/#kubernetes-io-hostname)
++ [Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)

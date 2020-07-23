@@ -32,7 +32,10 @@
     - like they are in a local area network(LAN)
 + like a VM
 + splitting multi-tier apps into multiple pods
++ one pod one container
     - pod is the basic unit of scaling
++ one pod multiple containers
+    - sidecar
 ## tips
 
 + contianer share the linux kernel(VM doesn't)
