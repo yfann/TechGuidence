@@ -1,16 +1,65 @@
 
 
-## install
+## install&customize
 
-+ iTerminal2
-+ zsh
-+ on-my-zsh
-+ powerfonts
++ 安装iTerm2
++ 切换到zsh `chsh -s /bin/zsh`
+    - `chsh -s /bin/bash`切换回bash
++ 安装Oh my zsh`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
++ 安装pip`sudo easy_install pip`
+    - 或`brew install python`  `pip3`
++ 安装powerline`pip install powerline-status --user`
++ 安装PowerFonts
+    - `git clone https://github.com/powerline/fonts.git --depth=1`
+    - `cd fonts`
+    - `./install.sh`
+    - iTerm2 -> Preferences -> Profiles -> Text
+        + Change Font>Meslo LG S for Powerline
++ 安装配色
+    - `git clone https://github.com/altercation/solarized`
+    - `cd solarized/iterm2-colors-solarized/`
+    - `open .`
+    - 双击Solarized Dark.itermcolors和Solarized Light.itermcolors
+    - iTerm2 -> Preferences -> Profiles -> Colors -> Color Presets
+        + Color Presets>Solarized Dark
++ 安装主题
+    - `git clone https://github.com/fcamblor/oh-my-zsh-agnoster-fcamblor.git`
+    - `cd oh-my-zsh-agnoster-fcamblor/`
+    - `./install`
+    + `vi ~/.zshrc`
+        ```sh
+        ZSH_THEME="agnoster"
+        ```
+    - iTerm2 -> Preferences -> Profiles -> Window -> BackGround Image
++ 安装高亮插件
+    - `cd ~/.oh-my-zsh/custom/plugins/`
+    - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
+    - `vi ~/.zshrc`
+    ```sh
+    plugins=(
+        git
+        zsh-syntax-highlighting
+    )
+    source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    ```
+    - `source ~/.zshrc`
++ 补全命令
+    - `cd ~/.oh-my-zsh/custom/plugins/`
+    - `git clone https://github.com/zsh-users/zsh-autosuggestions`
+    - `vi ~/.zshrc`
+    ```sh
+    plugins=(
+        git
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+    )
+    ```
+    - Preferences -> Profiles -> Colors 中有Foreground是标准字体颜色，ANSI Colors中Bright的第一个是补全的字体颜色。
 
-## config
-+ `vi ~/.zshrc`修改zsh的配置文件
-+ `chsh -s /bin/zsh`
-    - `chsh -s /bin/bash`
++ tips
+    - `vi ~/.zshrc`修改zshrc
+    - `source ~/.zshrc`修改生效
+    - `sudo ...`授权
 ## tips
 + 双击选中，三击整行,选中即复制
 <!-- 标签 -->
@@ -59,3 +108,6 @@
 + [iTerm2 + Oh My Zsh 打造舒适终端体验](https://zhuanlan.zhihu.com/p/37195261)
 + [Running a Scrip](https://www.iterm2.com/python-api/tutorial/running.html#running-a-script)
 + [iTerm2 快捷键大全](https://cnbin.github.io/blog/2015/06/20/iterm2-kuai-jie-jian-da-quan/)
+<!-- install -->
++ [iTerm2](https://www.iterm2.com/)
++ [powerline](https://powerline.readthedocs.io/en/latest/installation.html)
