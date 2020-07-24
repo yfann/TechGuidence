@@ -57,7 +57,7 @@ public class MyConfiguration {
 + 设置user-info-uri后，OAuth2RestTemplate用于抓取用户信息
 
 ## ref
-+ [Spring WebMVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html)
++ [Official Spring WebMVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html)
 + [MVC framework](https://docs.spring.io/spring/docs/4.3.3.RELEASE/spring-framework-reference/htmlsingle/#mvc)
 + [spring boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/IV.%20Spring%20Boot%20features/27.%20Developing%20web%20applications.html)
 + [OAuth 2 Developers Guide](http://projects.spring.io/spring-security-oauth/docs/oauth2.html)
