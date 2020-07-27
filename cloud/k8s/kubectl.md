@@ -26,22 +26,38 @@
 ## apiservice
 + `kubectl get apiservice`
 + `kubectl api-versions`
++ `kubectl explain <k8s obj>`
+    - `kubectl explain pods`  
+        + `kubectl explain pods.spec`  
 
 ## configMap
 + `kubectl create configmap <map-name> <data-source>` 
     - `kubectl create configmap game-config --from-file=<directory>`   `--from-file`可多次使用
 + `kubectl describe configmaps <map-name> [-o yaml]` 查看map
 
-## k8s obj
+## operate k8s obj
 + `kubectl create <obj>`
-+ `kubectl get <obj>`
+    - `kubectl create -f kubia-manual.yaml`
++ `kubectl get <obj> [-o yaml]`
 + `kubectl describe <obj>`
 + `kubectl delete <obj>`
 <!-- instance -->
 + `kubectl get rc`
++ `kubectl delete all --all`first all means all types,--all means all instances
+
+## labels
++ `kubectl get po --show-labels`
++ `kubectl get po -L <label-name>,<label-name>`
++ `kubectl label po <pod-name> <label-name>=<label-value>`
+    - `kubectl label po <pod-name> <label-name>=<label-value> --overwrite` update exsiting label
++ `kubectl get po -l <label-name>=<label-value>,<label-name>=<label-value>`
+    - `-l <label-name>`
+    - `-l '!<label-name>'` select those don't have the label name,单引号在bash中转义！
++ `kubectl delete po -l <label-name>=<label-value>`
 
 ## logs
-+ `kubectl logs -f xxx `
++ `kubectl logs <pod-name> [-f xxx]` pod logs(contianer log)
+    - `kubectl logs <pod-name> -c <contianer-name>`
 
 ## k8s monitoring
 + `kubectl top node <node name>`显示cpu和memory的metrics
@@ -57,6 +73,10 @@
 
 ## pod
 + `kubectl get po <pod-name> -o yaml`
++ `kubectl delete po <pod-name> <pod-name>`
++ `kubectl delete po --all`
+
+
 
 ## node
 + `kubectl get nodes`
@@ -64,8 +84,15 @@
 + `kubectl describe node <node-name>`
     - `kubectl get nodes --show-labels`
 
-## issues
-+ CrashLoopBackOff
+## namespace
++ `kubectl get ns`
++ `kubectl get po -n <namespace>`
++ `kubectl create namespace custom-namespace`
++ `kubectl delete ns custom-namespace` also delete the resource under that namespace
+
+## net
++ `kubectl port-forward <pod-name> <local-port>:<pod-port>`
+    - `curl localhost:<local-port>`
 
 ## ref
 + [Kubernetes kubectl 命令表](http://docs.kubernetes.org.cn/683.html)

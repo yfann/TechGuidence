@@ -7,6 +7,13 @@ resources:
   overrides:
     microservice: {group: "apps", resource: "deployment"}
 ```
++ rules 支持custom和external
+```yml
+rules:
+  default: false
+  external:
+```
+
 ## ref
 + [stable/prometheus-adapter](https://github.com/helm/charts/tree/master/stable/prometheus-adapter)
 + [prometheus-adapter-docs](https://github.com/DirectXMan12/k8s-prometheus-adapter/tree/master/docs)

@@ -61,8 +61,8 @@
 + `docker run -t -d -p 8010:5004 testName`运行镜像  8010 系统的端口,5004 dockerfile中暴露出的端口
 
 
-
-
+<!-- log -->
++ `docker logs <container id>`
 
 
 

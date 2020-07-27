@@ -36,6 +36,7 @@
             type: Value
             value: 2k
     ```
+    - External(metrics不和k8s object关联，会扫描所有返回多个metrics,结果按sum计算)
 
 + aggregated API
     - metrics.k8s.io
@@ -60,6 +61,9 @@
 + [Autoscaling on multiple metrics and custom metrics](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics)
 + [Kubernetes HPA 使用详解](https://www.qikqiak.com/post/k8s-hpa-usage/)
 + [探索Kubernetes HPA:HPA metrics type](https://zhuanlan.zhihu.com/p/89453704)
++ [Horizontal Pod Autoscaler Walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
++ [使用k8s-prometheus-adapter实现HPA](https://www.cnblogs.com/charlieroro/p/11898521.html)
++ [Kubernetes HPA : ExternalMetrics+Prometheus](https://blog.kloia.com/kubernetes-hpa-externalmetrics-prometheus-acb1d8a4ed50)
 <!-- detail -->
 + [Pod 水平自动伸缩](https://kubernetes.io/zh/docs/tasks/run-application/horizontal-pod-autoscale/)
 + [资源指标管道](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/resource-metrics-pipeline/)
@@ -67,6 +71,7 @@
 + [Metrics](https://github.com/kubernetes/metrics)
 + [Metrics API Implementations](https://github.com/kubernetes/metrics/blob/master/IMPLEMENTATIONS.md)
 + [Aggregation layer](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/)
-<!-- API pth -->
++ [HPA v2 API extension proposal](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/autoscaling/hpa-external-metrics.md)
+<!-- API -->
 + [Custom Metrics API](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/custom-metrics-api.md)
 + [Resource Metrics API](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/instrumentation/resource-metrics-api.md)
