@@ -61,3 +61,4 @@
 + [@transactional](https://www.ibm.com/developerworks/cn/java/j-master-spring-transactional-use/index.html)
 + [@Retryable](https://chinalhr.github.io/tags/java_springboot_component1/)
 + [Spring Boot轻松理解动态注入，删除bean](https://www.jianshu.com/p/916800fdd52d)
++ [@ConditionalOn](https://zhuanlan.zhihu.com/p/78251301)

@@ -17,3 +17,6 @@
 + [elasticsearch 倒排索引原理](https://zhuanlan.zhihu.com/p/33671444)
 + [索引原理](https://www.elastic.co/guide/cn/elasticsearch/guide/cn/making-text-searchable.html)
 + [倒排索引](https://www.elastic.co/guide/cn/elasticsearch/guide/cn/inverted-index.html)
++ [反向索引，为什么称之为反向索引？](https://mednoter.com/inverted-index.html)
+<!-- others -->
++ [探究| Elasticsearch 与传统数据库界限- 云+社区- 腾讯云](https://cloud.tencent.com/developer/article/1554951)

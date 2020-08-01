@@ -99,9 +99,10 @@ public class Config {
 ## ref
 <!-- official -->
 + [Official Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-first-application)
++ [SPRING INITIALIZR](https://start.spring.io/)
 <!-- others -->
 + [Spring Boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/)
-+ [SPRING INITIALIZR](https://start.spring.io/)
+
 + [spring boot](https://github.com/ityouknow/spring-boot-examples)
 + [official spring boot](https://spring.io/projects/spring-boot)
 + [official spring boot](https://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/#boot-features-external-config-profile-specific-properties)

@@ -9,6 +9,7 @@
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
 <!-- k8s -->
 + [service-catalog](https://github.com/kubernetes-sigs/service-catalog)
++ [服务目录（Service Catalog）](https://jimmysong.io/kubernetes-handbook/concepts/service-catalog.html)
 + [PaaS平台的服务目录(一):Service Broker的前世今生](https://www.jianshu.com/p/52b3bc647996)
 + [PaaS平台的服务目录(二): Service Catalog in K8S/OpenShift Origin](https://www.jianshu.com/p/e4615868adac)
 + [Spring Cloud Open Service Broker](https://spring.io/projects/spring-cloud-open-service-broker#overview)
@@ -20,5 +21,7 @@
 + [spring-cloud-samples/bookstore-service-broker](https://github.com/spring-cloud-samples/bookstore-service-broker)
 + [BookStore Service Broker Overview](https://spring.io/blog/2020/01/14/reactive-bookstore-service-broker)
 + [Spring Cloud Open Service Broker 3.2.0-SNAPSHOT API](https://docs.spring.io/spring-cloud-open-service-broker/docs/3.2.0-SNAPSHOT/apidocs/)
+<!-- sample -->
++ [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/gettingStarted.md#sample-service-brokers)
 <!-- ali cloud -->
 + [阿里云Kubernetes服务 - Service Broker快速入门指南](https://developer.aliyun.com/article/592156)

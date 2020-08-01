@@ -44,3 +44,4 @@ spring:
 + [插件门户](https://plugins.gradle.org/)
 + [为gradle项目配置多种开发环境](https://chenkaihua.com/2016/04/25/configure-multiple-development-environments-for-gradle-projects/)
 + [Spring Boot Gradle Plugin Reference Guide](https://gradle.org/next-steps/?version=6.5&format=bin)
++ [Declaring repositories](https://docs.gradle.org/current/userguide/declaring_repositories.html)
