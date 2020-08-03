@@ -80,6 +80,7 @@
 + `ENTRYPOINT ["exe","param1","param2"]` 容器启动后执行，Dockerfile只能有一个ENTRYPOINT，`docker run --entrypoint`
 
 ## Mac
++ `brew install docker`
 + `sudo usermod -aG docker $USER` 避免每次都sudo
 + `sudo service docker start` 启动docker
 

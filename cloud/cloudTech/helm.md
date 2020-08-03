@@ -196,7 +196,6 @@ global:
 + [空白处理](https://www.qikqiak.com/k8s-book/docs/46.Helm%E6%A8%A1%E6%9D%BF%E4%B9%8B%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B.html)
 <!-- detail -->
 + [使用Helm管理kubernetes原生应用](https://jimmysong.io/posts/manage-kubernetes-native-app-with-helm/)
-+ [YAML技巧](https://whmzsu.github.io/helm-doc-zh-cn/chart_template_guide/yaml_techniques-zh_cn.html)
 <!-- repo -->
 + [Helm Hub](https://hub.helm.sh/charts)
 + [stable repo](https://github.com/helm/charts/tree/master/stable)
