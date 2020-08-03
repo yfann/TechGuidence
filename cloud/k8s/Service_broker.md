@@ -36,9 +36,6 @@ curl -X PUT
 + [PaaS平台的服务目录(一):Service Broker的前世今生](https://www.jianshu.com/p/52b3bc647996)
 + [PaaS平台的服务目录(二): Service Catalog in K8S/OpenShift Origin](https://www.jianshu.com/p/e4615868adac)
 + [Spring Cloud Open Service Broker](https://spring.io/projects/spring-cloud-open-service-broker#overview)
-
-<!-- blogs -->
-+ [kubernetes笔记：Service Catalog](https://ieevee.com/tech/2019/09/19/service-catalog.html)
 <!-- spring Cloud Open Service Broker -->
 + [Spring Cloud Open Service Broker Homepage](https://spring.io/projects/spring-cloud-open-service-broker#overview)
 + [Spring Cloud Open Service Broker](https://docs.spring.io/spring-cloud-open-service-broker/docs/3.2.0-SNAPSHOT/reference/)
@@ -48,6 +45,7 @@ curl -X PUT
 + [spring-cloud-samples/bookstore-service-broker](https://github.com/spring-cloud-samples/bookstore-service-broker)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/gettingStarted.md#sample-service-brokers)
 + [kubernetes-sigs/minibroker](https://github.com/kubernetes-sigs/minibroker)
++ [kubernetes笔记：Service Catalog](https://ieevee.com/tech/2019/09/19/service-catalog.html)
 <!-- ali cloud -->
 + [阿里云Kubernetes服务 - Service Broker快速入门指南](https://developer.aliyun.com/article/592156)
 <!-- install -->
