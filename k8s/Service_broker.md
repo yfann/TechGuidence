@@ -25,20 +25,46 @@ curl -X PUT
   }'
  
 ```
+## ClusterServiceBroker
+- cluster scope
+
+## ServiceBroker
+- namespace scope
+- url
+```yml
+spec:
+  url: http://broker-url.com
+```
+## ServiceInstance
++ parameters, Service Catalog passes this metadata to the service broker
+  - raw JSON
+  - Secret(name and key,key in the named secret must conaint the JSON to pass to the broker)
+    + UpdateRequests(Service catalog will update the broker after secret is updated)
+```yml
+parameters:
+  max: 10
+```
+
+## tips
++ process
+  - Service Broker created
+  - a corresponding ServiceClass created(Cluster matches cluster)
+  - a ServiceClass may have one or more ServicePlan created
+  - Service Instance use ServiceClass and ServicePlan to provision a new service(If not cluster they should be in the same namespace)
+  - After ServiceBinding created, Service catalog will issue a bind request to the appropriate broker.After the broker responds, Service Catalog will write the credential it responds
+  - credential(username,password,hostname,etc...), bind application pods to secret to start using the servie
 
 ## ref
 + [official Open Service Broker API](https://www.openservicebrokerapi.org/)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
 <!-- k8s -->
++ [service catalog resource](https://svc-cat.io/docs/resources/)
 + [服务目录](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)
-+ [service-catalog](https://github.com/kubernetes-sigs/service-catalog)
++ [kubernetes-sigs/service-catalog documents](https://github.com/kubernetes-sigs/service-catalog/tree/master/docs)
 + [服务目录（Service Catalog）](https://jimmysong.io/kubernetes-handbook/concepts/service-catalog.html)
 + [PaaS平台的服务目录(一):Service Broker的前世今生](https://www.jianshu.com/p/52b3bc647996)
 + [PaaS平台的服务目录(二): Service Catalog in K8S/OpenShift Origin](https://www.jianshu.com/p/e4615868adac)
 + [Spring Cloud Open Service Broker](https://spring.io/projects/spring-cloud-open-service-broker#overview)
-
-<!-- blogs -->
-+ [kubernetes笔记：Service Catalog](https://ieevee.com/tech/2019/09/19/service-catalog.html)
 <!-- spring Cloud Open Service Broker -->
 + [Spring Cloud Open Service Broker Homepage](https://spring.io/projects/spring-cloud-open-service-broker#overview)
 + [Spring Cloud Open Service Broker](https://docs.spring.io/spring-cloud-open-service-broker/docs/3.2.0-SNAPSHOT/reference/)
@@ -48,6 +74,7 @@ curl -X PUT
 + [spring-cloud-samples/bookstore-service-broker](https://github.com/spring-cloud-samples/bookstore-service-broker)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/gettingStarted.md#sample-service-brokers)
 + [kubernetes-sigs/minibroker](https://github.com/kubernetes-sigs/minibroker)
++ [kubernetes笔记：Service Catalog](https://ieevee.com/tech/2019/09/19/service-catalog.html)
 <!-- ali cloud -->
 + [阿里云Kubernetes服务 - Service Broker快速入门指南](https://developer.aliyun.com/article/592156)
 <!-- install -->
