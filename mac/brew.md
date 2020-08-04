@@ -10,11 +10,14 @@
     - `brew -v`
 
 - `brew install <package>`
+    - `brew uninstall <pkg>`
 - `brew info <package>`
 - `brew search <pkg>`
 
++ `brew list`
 + `brew services list`
 + `brew services start/run/stop/restart [service name]` start 开机启动，run 运行一次
 
++ `man brew` help
 ## ref
 + [Homebrew](https://www.jianshu.com/p/934edae009e1)

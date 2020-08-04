@@ -25,8 +25,7 @@
     -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
     -  `helm install -f xx.yaml <chart name>`
     -  `helm install --debug --dry-run <chart name>` debug
-
-+ `helm upgrade [RELEASE] [CHART] [flags]`
+ + `helm upgrade [RELEASE] [CHART] [flags]`
     - e.g.`helm upgrade -f myvalues.yaml -f override.yaml redis ./redis`
 
 
@@ -50,6 +49,7 @@
 + `repo`
     - `helm search`
     - `helm search <repo name> <chart name>` 查询可用的charts
+        + add以后才能search
     - `helm show [chart||readme] <repo name>/<chart name>`
     - `helm repo list` 查看配置了哪些repo
     - `helm repo add <name> <repo url>` 
@@ -57,7 +57,8 @@
     $ helm repo add gkarthiks https://gkarthiks.github.io/helm-charts
     $ helm fetch gkarthiks/prometheus-kafka-exporter
     ```
-
+<!-- download -->
++ `helm pull <chart name>`
 
 ## charts依赖关系
 - requirements.yaml

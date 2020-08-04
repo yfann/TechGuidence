@@ -19,19 +19,25 @@
     - on fail
         + `brew cask remove minikube`
         + `brew link minikube`
-    - `minikube start`
++ `minikube start`
+    - `--docker-env HTTP_PROXY=xxxx` need proxy
 + `brew install docker`
-+ `eval $(minikube docker-env)` 使用本地docker
 + helm
-    - `brew install kubernetes-helm`
+    - `brew install kubernetes-helm` 最新版本不用tiller
+
     
 ## cmd
 + `minikube start`
     -  `--vm-driver virtualbox`
+    - `--docker-env HTTP_PROXY=xxxx`
+    - `--docker-env HTTPS_PROXY=xxxx`
+    - `--docker-env NO_PROXY=xxxx`
 + `minikube stop`
 + `minikube status`
 + `minikube delete`
 + `minikube dashboard`
++ `minikube service list`
++ `minikube docker-env`
 <!-- update -->
 + `minikube kubectl -- get pods` update kubectl version
 + `minikube ip`
@@ -41,6 +47,13 @@
 + `minikube addons enable registry` minikube的VM暴露5000端口
 
 
+## docker-env
++ configure environment to use minikube's Docker daemon
++ `minikube docker-env`
++ `eval $(minikube docker-env)` 使用本地docker
+    - `eval $(minikube docker-env -u)`
+
+
 ## tips
 + kubectl config
     - c:\users\[account]\.kube\config
@@ -48,6 +61,9 @@
 + `set no_proxy=localhost,127.0.0.1,192.168.99.0/24,192.168.39.0/24,10.96.0.0/12,172.30.103.201`
 + windows
     - `c:/Users` is mapped into vm as `/c/Users`
+
+
+
 ## ref
 <!-- cmd -->
 + [minikube commands](https://minikube.sigs.k8s.io/docs/commands/ssh/)
