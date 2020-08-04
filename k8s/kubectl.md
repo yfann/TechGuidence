@@ -94,6 +94,9 @@
 + `kubectl port-forward <pod-name> <local-port>:<pod-port>`
     - `curl localhost:<local-port>`
 
+## exec
++ `kubectl exec mypod -it sh`
+
 ## ref
 + [Kubernetes kubectl 命令表](http://docs.kubernetes.org.cn/683.html)
 + [kubectl](https://kubernetes.io/zh/docs/reference/kubectl/)
