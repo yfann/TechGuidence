@@ -27,6 +27,9 @@
 + tree 展开目录
     - `tree` 
 
+## 变量
++ `export`查看系统变量
++ `env`
 
 ## ref
 + [玩转Mac常用命令、zsh等技巧，挖掘Mac潜力](https://www.jianshu.com/p/28de342f5ecc)
