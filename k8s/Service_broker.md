@@ -58,9 +58,9 @@ parameters:
 + [official Open Service Broker API](https://www.openservicebrokerapi.org/)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
 <!-- k8s -->
-+ [service catalog resource](https://svc-cat.io/docs/resources/)
++ [service catalog config](https://svc-cat.io/docs/resources/)
 + [服务目录](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)
-+ [kubernetes-sigs/service-catalog documents](https://github.com/kubernetes-sigs/service-catalog/tree/master/docs)
++ [Service Catalog Documentation](https://github.com/kubernetes-sigs/service-catalog/tree/master/docs)
 + [服务目录（Service Catalog）](https://jimmysong.io/kubernetes-handbook/concepts/service-catalog.html)
 + [PaaS平台的服务目录(一):Service Broker的前世今生](https://www.jianshu.com/p/52b3bc647996)
 + [PaaS平台的服务目录(二): Service Catalog in K8S/OpenShift Origin](https://www.jianshu.com/p/e4615868adac)
