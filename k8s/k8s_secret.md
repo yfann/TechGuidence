@@ -118,3 +118,4 @@ spec:
 + [Secret](https://kubernetes.io/zh/docs/concepts/configuration/secret/)
 + [静态加密 Secret 数据](https://kubernetes.io/zh/docs/tasks/administer-cluster/encrypt-data/)
 + [对象名称和IDs](https://kubernetes.io/zh/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names)
++ [springboot读取配置信息、环境变量](https://blog.csdn.net/ggaofengg/article/details/79380055)

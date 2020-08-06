@@ -3,8 +3,10 @@
     - 使k8s上的application可以使用service broker代理的外部服务
 
 ## spring cloud OSB tips
+
 +  catalog
     - `curl http://localhost:8080/broker/v2/catalog`
+
 + service instance
 ```
 curl -X PUT http://localhost:8080/broker/v2/service_instances/[instance_id]
@@ -14,6 +16,7 @@ curl -X PUT http://localhost:8080/broker/v2/service_instances/[instance_id]
     "plan_id": "fd81196c-a414-43e5-bd81-1dbb082a3c55"
   }'
 ```
+
 + service binding
 ```
 curl -X PUT 
@@ -25,6 +28,16 @@ curl -X PUT
   }'
  
 ```
+
++ `instances_retrievable`
+  - if true
+    + need to implement `getServiceInstance()`
++ `plan_updateable`
+  - if true
+    + need `updateServiceInstance()`
++ `bindable`
+  - if true
+    + need `ServiceInstanceBindingService`
 ## ClusterServiceBroker
 - cluster scope
 
@@ -45,6 +58,22 @@ parameters:
   max: 10
 ```
 
+## ServiceBinding
++ ServiceBinding返回的内容会存在secret里
++ 如果spec.SecretName为空则secret name为metadata.name
++ secret和ServiceBinding同namespace
+```yaml
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceBinding
+metadata:
+  namespace: example-ns
+  name: test-database-binding
+spec:
+  instanceRef:
+    name: test-database
+  secretName: db-secret
+```
+
 ## tips
 + process
   - Service Broker created
@@ -58,23 +87,27 @@ parameters:
 + [official Open Service Broker API](https://www.openservicebrokerapi.org/)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
 <!-- k8s -->
-+ [service catalog resource](https://svc-cat.io/docs/resources/)
++ [*****service catalog config*****](https://svc-cat.io/docs/resources/)
 + [服务目录](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)
-+ [kubernetes-sigs/service-catalog documents](https://github.com/kubernetes-sigs/service-catalog/tree/master/docs)
++ [Service Catalog Documentation](https://github.com/kubernetes-sigs/service-catalog/tree/master/docs)
 + [服务目录（Service Catalog）](https://jimmysong.io/kubernetes-handbook/concepts/service-catalog.html)
 + [PaaS平台的服务目录(一):Service Broker的前世今生](https://www.jianshu.com/p/52b3bc647996)
 + [PaaS平台的服务目录(二): Service Catalog in K8S/OpenShift Origin](https://www.jianshu.com/p/e4615868adac)
 + [Spring Cloud Open Service Broker](https://spring.io/projects/spring-cloud-open-service-broker#overview)
+
 <!-- spring Cloud Open Service Broker -->
 + [Spring Cloud Open Service Broker Homepage](https://spring.io/projects/spring-cloud-open-service-broker#overview)
 + [Spring Cloud Open Service Broker](https://docs.spring.io/spring-cloud-open-service-broker/docs/3.2.0-SNAPSHOT/reference/)
 + [BookStore Service Broker Overview](https://spring.io/blog/2020/01/14/reactive-bookstore-service-broker)
 + [Spring Cloud Open Service Broker 3.2.0-SNAPSHOT API](https://docs.spring.io/spring-cloud-open-service-broker/docs/3.2.0-SNAPSHOT/apidocs/)
+
 <!-- sample -->
 + [spring-cloud-samples/bookstore-service-broker](https://github.com/spring-cloud-samples/bookstore-service-broker)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/gettingStarted.md#sample-service-brokers)
 + [kubernetes-sigs/minibroker](https://github.com/kubernetes-sigs/minibroker)
 + [kubernetes笔记：Service Catalog](https://ieevee.com/tech/2019/09/19/service-catalog.html)
++ [cloudfoundry-community/cf-mysql-java-broker](https://github.com/cloudfoundry-community/cf-mysql-java-broker)
+
 <!-- ali cloud -->
 + [阿里云Kubernetes服务 - Service Broker快速入门指南](https://developer.aliyun.com/article/592156)
 <!-- install -->
