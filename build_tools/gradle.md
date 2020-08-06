@@ -37,10 +37,15 @@ spring:
   - 检查命令行或IDE中的gradle版本是否和项目一致
     + e.g.
 
+## spring boot plugin
++ bootJar/bootWar 可执行jar/war
+
+
 ## ref
 + [Official Command-Line Interface](https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:command_line_warnings)
 + [Gradle User Guide](https://dongchuan.gitbooks.io/gradle-user-guide-/build_script_basics/hello_world.html)
 <!-- plugin -->
++ [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/)
 + [插件门户](https://plugins.gradle.org/)
 + [为gradle项目配置多种开发环境](https://chenkaihua.com/2016/04/25/configure-multiple-development-environments-for-gradle-projects/)
 + [Spring Boot Gradle Plugin Reference Guide](https://gradle.org/next-steps/?version=6.5&format=bin)
