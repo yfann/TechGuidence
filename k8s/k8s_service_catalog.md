@@ -8,7 +8,7 @@
     - `curl http://localhost:8080/broker/v2/catalog`
 
 + service instance
-```
+```sh
 curl -X PUT http://localhost:8080/broker/v2/service_instances/[instance_id]
   -H 'Content-Type: application/json' 
   -d '{
@@ -16,6 +16,12 @@ curl -X PUT http://localhost:8080/broker/v2/service_instances/[instance_id]
     "plan_id": "fd81196c-a414-43e5-bd81-1dbb082a3c55"
   }'
 ```
+  - external name 为Catalog对象中的name
+  ```yaml
+  spec:
+    clusterServiceClassExternalName: oss-broker
+    clusterServicePlanExternalName: standard
+  ```
 
 + service binding
 ```
@@ -101,12 +107,17 @@ spec:
 + [BookStore Service Broker Overview](https://spring.io/blog/2020/01/14/reactive-bookstore-service-broker)
 + [Spring Cloud Open Service Broker 3.2.0-SNAPSHOT API](https://docs.spring.io/spring-cloud-open-service-broker/docs/3.2.0-SNAPSHOT/apidocs/)
 
+<!-- sourcecode -->
++ [spring-cloud/spring-cloud-open-service-broker](https://github.com/spring-cloud/spring-cloud-open-service-broker)
+
 <!-- sample -->
 + [spring-cloud-samples/bookstore-service-broker](https://github.com/spring-cloud-samples/bookstore-service-broker)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/gettingStarted.md#sample-service-brokers)
 + [kubernetes-sigs/minibroker](https://github.com/kubernetes-sigs/minibroker)
 + [kubernetes笔记：Service Catalog](https://ieevee.com/tech/2019/09/19/service-catalog.html)
 + [cloudfoundry-community/cf-mysql-java-broker](https://github.com/cloudfoundry-community/cf-mysql-java-broker)
+
++ [Cloud Foundry Service Broker and Service](https://developer.ibm.com/recipes/tutorials/cloud-foundry-service-broker-and-service/)
 
 <!-- ali cloud -->
 + [阿里云Kubernetes服务 - Service Broker快速入门指南](https://developer.aliyun.com/article/592156)
