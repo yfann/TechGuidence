@@ -6,3 +6,4 @@
 + `ssh root@xx.xxx.xx.xx`
 + `ls -l`
     - `ls -la`可以看到隐藏文件
++ `mv xxx bbb`  change name
