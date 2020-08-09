@@ -94,6 +94,9 @@
 + `kubectl port-forward <pod-name> <local-port>:<pod-port>`
     - `curl localhost:<local-port>`
 
+## dashboard
++ `kubectl proxy`
+
 ## exec
 + `kubectl exec mypod -it sh`
 

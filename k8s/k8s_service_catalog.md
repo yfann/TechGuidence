@@ -88,10 +88,9 @@ spec:
   - Service Instance use ServiceClass and ServicePlan to provision a new service(If not cluster they should be in the same namespace)
   - After ServiceBinding created, Service catalog will issue a bind request to the appropriate broker.After the broker responds, Service Catalog will write the credential it responds
   - credential(username,password,hostname,etc...), bind application pods to secret to start using the servie
-
++ 删除binding，secret也会被删除
 ## ref
-+ [official Open Service Broker API](https://www.openservicebrokerapi.org/)
-+ [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
++ [Serverce catalog Walkthrough](https://svc-cat.io/docs/walkthrough/#step-1---installing-the-ups-broker-server)
 <!-- k8s -->
 + [*****service catalog config*****](https://svc-cat.io/docs/resources/)
 + [服务目录](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/service-catalog/)
@@ -125,4 +124,6 @@ spec:
 + [install service-catalog](https://svc-cat.io/docs/install/)
 + [install service-catalog](https://github.com/kubernetes-sigs/service-catalog/blob/master/docs/install.md)
 + [Deploy bookstore-service-broker to Kubernetes](https://github.com/spring-cloud-samples/bookstore-service-broker/blob/master/deploy/kubernetes/README.adoc)
-+ [Serverce catalog Walkthrough](https://svc-cat.io/docs/walkthrough/#step-1---installing-the-ups-broker-server)
+<!-- design -->
++ [official Open Service Broker API](https://www.openservicebrokerapi.org/)
++ [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
