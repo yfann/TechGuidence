@@ -1,6 +1,7 @@
 
 ## cmd
-+ `kubectl version --short=true`
++ `kubectl version`
+    -  `--short=true`
 + `get`
     - `kubectl get pods`
     - `kubectl get nodes`

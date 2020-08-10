@@ -46,25 +46,24 @@
 + `minikube ip`
 + `minikube ssh`    
     - `exit`
-
 <!-- clean -->
 + `minikube delete`
 + `brew uninstall minikube`
-
+<!-- others -->
 + `minikube ip`
++ `minikube addons enable registry` minikube的VM暴露5000端口
 
 ## minikube start
 <!-- registry mirror -->
 + `minikube ssh | docker info` 查看registry-mirror
 + `minikube start --logtostderr --v=3 --image-mirror-country=cn --registry-mirror https://dockerhub.azk8s.cn`
     - 默认装docker里
-    - `--vm-driver virtualbox` 使用kubectl时会报错
+    - `--vm-driver virtualbox` 使用kubectl时会报错??
+        + `minikube status`
+            - `minikube update-context` fix kubeconfig
 <!-- proxy -->
 + `minikube start --vm-driver virtualbox --docker-env HTTP_PROXY=xxxx:xx --docker-env HTTPS_PROXY=xxxx:xx --docker-env NO_PROXY=localhost,127.0.0.1`
 
-<!-- check -->
-+ `minikube status`
-    - `minikube update-context` fix kubeconfig
 
 ## push image to Minikube
 + `eval $(minikube docker-env)`
@@ -75,10 +74,8 @@
     - 使用`imagePullPolicy:IfNotPresent` or `imagePullPolicy:Never`
         + 镜像版本为:latest时，拉取策略为Always时，会出现ErrImagePull
     - 关闭窗口后，docker还是使用的本地的docker daemon
-+ `eval $(minikube docker-env)`
-+ `docker ps`
 
-+ `minikube addons enable registry` minikube的VM暴露5000端口
+
 ## docker-env
 + configure environment to use minikube's Docker daemon
 + `minikube docker-env`
