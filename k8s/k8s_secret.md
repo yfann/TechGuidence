@@ -119,3 +119,4 @@ spec:
 + [静态加密 Secret 数据](https://kubernetes.io/zh/docs/tasks/administer-cluster/encrypt-data/)
 + [对象名称和IDs](https://kubernetes.io/zh/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names)
 + [springboot读取配置信息、环境变量](https://blog.csdn.net/ggaofengg/article/details/79380055)
++ [Mount Environment Variables Safely with Kubernetes Secrets and Helm chart](https://medium.com/gammastack/mounting-environment-variables-safely-with-kubernetes-secrets-and-helm-chart-764420dc787b)

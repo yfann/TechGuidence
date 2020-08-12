@@ -98,7 +98,7 @@
 ## dashboard
 + `kubectl proxy`
 
-## exec
+## exe
 + `kubectl exec mypod -it sh`
 
 ## ref
