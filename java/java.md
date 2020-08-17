@@ -1,5 +1,10 @@
 # Java
-
++ final
+    + final 变量,初始化后不能修改
+        - 构造器中初始化
+        - blank final variable
+    + static binding,修饰方法,子类不能改写
+    + final class,不能继承
 ## cli
 
 + `jar tvf *.jar` /*查看jar*/
