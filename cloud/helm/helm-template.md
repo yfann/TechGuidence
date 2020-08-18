@@ -10,6 +10,16 @@
     - `value: {{ required "A valid .Values.who entry required!" .Values.who }}`
 + `include`一个templdate中引入另一个template
     - `value: {{ include "mytpl" . | lower | quote }}`
+
++ `range`
+```go
+{{- range .Values.serviceBinding.instances -}}
+{{ . }}
+{{ end }}
+
+{{- range $key, $val := .envMapping }}
+...
+```
 ## ref
 + [Variables](https://helm.sh/docs/chart_template_guide/variables/#helm)
 + [Named Templates](https://helm.sh/docs/chart_template_guide/named_templates/)
