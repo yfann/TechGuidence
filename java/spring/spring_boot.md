@@ -89,24 +89,21 @@ public class Config {
 // calsspath:/public/index.html  
 ```
 
-## 模块
-
-+ spring-boot-devtools
-+ [Starters](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/III.%20Using%20Spring%20Boot/13.5.%20Starters.html)
 
 
 
 ## ref
 <!-- official -->
 + [Official Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-first-application)
-+ [SPRING INITIALIZR](https://start.spring.io/)
-<!-- others -->
-+ [Spring Boot参考指南](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/)
-
-+ [spring boot](https://github.com/ityouknow/spring-boot-examples)
++ [Spring Boot参考指南](http://blog.didispace.com/books/spring-boot-reference/III.%20Using%20Spring%20Boot/14.1.%20Using%20the%20%E2%80%9Cdefault%E2%80%9D%20package.html)
 + [official spring boot](https://spring.io/projects/spring-boot)
-+ [official spring boot](https://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/#boot-features-external-config-profile-specific-properties)
-+ [spring boot索引](http://springboot.fun/)
+
+<!-- example -->
++ [SPRING INITIALIZR](https://start.spring.io/)
++ [spring boot](https://github.com/ityouknow/spring-boot-examples)
++ [Starters](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/III.%20Using%20Spring%20Boot/13.5.%20Starters.html)
+
+<!-- otehrs -->
 
 + [Spring Boot 2 官方指导手册译文](https://www.jianshu.com/p/e7e3ff541bfb)
 + [Spring Boot 系列文章](http://www.ityouknow.com/spring-boot.html)
@@ -119,8 +116,9 @@ public class Config {
 + [TaskExecutor](https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/scheduling.html)
 
 + [Spring Boot Actuator](http://www.ityouknow.com/springboot/2018/02/06/spring-boot-actuator.html)
-## todo
 
+
+## todo
 + HandlerInterceptor
 + [embedded](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-embedded-web-servers.html)
 + [Spring Boot and Embedded Servers - Tomcat, Jetty and Undertow](http://www.springboottutorial.com/spring-boot-with-embedded-servers-tomcat-jetty)

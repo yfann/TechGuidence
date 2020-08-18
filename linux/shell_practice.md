@@ -3,7 +3,14 @@
 + `vi`
     - `:q!` 强制退出 vi
 + `ps aux` 显示所有进程
-+ `ssh root@xx.xxx.xx.xx`
 + `ls -l`
     - `ls -la`可以看到隐藏文件
-+ `mv xxx bbb`  change name
+
+
++ mv
+    + `mv xxx bbb`  change name
+    + `mv xxx <dir>` 移动文件
+
++ ssh
+    + `ssh root@xx.xxx.xx.xx`
+    + `scp -r  xx@xxxx:/home/xxx  C:\backup\` 远端copy文件到本地

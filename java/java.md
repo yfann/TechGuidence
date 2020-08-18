@@ -1,5 +1,10 @@
 # Java
-
++ final
+    + final 变量,初始化后不能修改
+        - 构造器中初始化
+        - blank final variable
+    + static binding,修饰方法,子类不能改写
+    + final class,不能继承
 ## cli
 
 + `jar tvf *.jar` /*查看jar*/
@@ -44,5 +49,3 @@
 + [ASM](https://www.jianshu.com/p/a1e6b3abd789)
 + [Byte Buddy 教程](https://notes.diguage.com/byte-buddy-tutorial/)
 + [「Byte Buddy」20行代码实现AOP](https://zhuanlan.zhihu.com/p/84514959)
-<!-- others -->
-+ [java 的 System.getenv() 和 System.getProperty()](https://blog.csdn.net/jijianshuai/article/details/78863032)

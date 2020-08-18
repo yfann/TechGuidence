@@ -117,8 +117,7 @@ myimports:
     mybool: true
     mystring: "helm rocks!"
 ```
-## 模板
-+ values.yaml或--set 提供的值通过`.Values`访问
+
 
 ## values
 + 用户提供的包含值的yaml文件`helm install -f xx.yaml`会覆盖values.yaml 文件中的值
@@ -200,3 +199,5 @@ global:
 <!-- repo -->
 + [Helm Hub](https://hub.helm.sh/charts)
 + [stable repo](https://github.com/helm/charts/tree/master/stable)
+
+

@@ -2,6 +2,10 @@
 + Service Catalog
     - 使k8s上的application可以使用service broker代理的外部服务
 
+## cmd
++ `kubectl get clusterserviceplan -o yaml PLAN > custom-plan.yaml`
+    - ` kubectl apply -f custom-plan.yaml`
+
 ## spring cloud OSB tips
 
 +  catalog
@@ -44,6 +48,8 @@ curl -X PUT
 + `bindable`
   - if true
     + need `ServiceInstanceBindingService`
+
+
 ## ClusterServiceBroker
 - cluster scope
 
@@ -89,7 +95,11 @@ spec:
   - After ServiceBinding created, Service catalog will issue a bind request to the appropriate broker.After the broker responds, Service Catalog will write the credential it responds
   - credential(username,password,hostname,etc...), bind application pods to secret to start using the servie
 + 删除binding，secret也会被删除
+
+
+
 ## ref
++ [Service Catalog Documentation](https://svc-cat.io/docs/)
 + [Serverce catalog Walkthrough](https://svc-cat.io/docs/walkthrough/#step-1---installing-the-ups-broker-server)
 <!-- k8s -->
 + [*****service catalog config*****](https://svc-cat.io/docs/resources/)
@@ -120,10 +130,15 @@ spec:
 
 <!-- ali cloud -->
 + [阿里云Kubernetes服务 - Service Broker快速入门指南](https://developer.aliyun.com/article/592156)
+
 <!-- install -->
 + [install service-catalog](https://svc-cat.io/docs/install/)
 + [install service-catalog](https://github.com/kubernetes-sigs/service-catalog/blob/master/docs/install.md)
 + [Deploy bookstore-service-broker to Kubernetes](https://github.com/spring-cloud-samples/bookstore-service-broker/blob/master/deploy/kubernetes/README.adoc)
+
 <!-- design -->
 + [official Open Service Broker API](https://www.openservicebrokerapi.org/)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
+
+
+[catalog 字段](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
