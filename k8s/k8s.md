@@ -207,3 +207,4 @@
 + [The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 <!-- 资源管理 -->
 + [管理资源](https://kubernetes.io/zh/docs/concepts/cluster-administration/manage-deployment/)
+
