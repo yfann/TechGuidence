@@ -208,3 +208,10 @@
 <!-- 资源管理 -->
 + [管理资源](https://kubernetes.io/zh/docs/concepts/cluster-administration/manage-deployment/)
 
+<!-- k8s结构 -->
++ [控制器](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
++ [Kubernetes 调度器](https://kubernetes.io/zh/docs/concepts/scheduling-eviction/kube-scheduler/)
++ [Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
++ [概念](https://kubernetes.io/zh/docs/concepts/#kubernetes-objects)
++ [Kubernetes API](https://kubernetes.io/zh/docs/concepts/overview/kubernetes-api/)
++ [使用 Kubernetes 对象](https://kubernetes.io/zh/docs/concepts/overview/working-with-objects/)

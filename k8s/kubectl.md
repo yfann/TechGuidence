@@ -1,4 +1,11 @@
 
+## 概念
+
++ 命令式命令
++ 命令式对象配置
+    - `kubectl create -f <filename|url>`
++ 声明式对象配置
+
 ## cmd
 + `kubectl version`
     -  `--short=true`
@@ -38,13 +45,43 @@
 
 ## operate k8s obj
 + `kubectl create <obj>`
-    - `kubectl create -f kubia-manual.yaml`
+
 + `kubectl get <obj> [-o yaml]`
 + `kubectl describe <obj>`
 + `kubectl delete <obj>`
 <!-- instance -->
 + `kubectl get rc`
 + `kubectl delete all --all`first all means all types,--all means all instances
+
+## Imperative object configuration
+- `kubectl create -f <file>`
+- `kubectl replace -f <filename|url>` 
+    + update
+    + config中未配置的资源,更新时会被删除
+    + `kubectl apply`更新不会丢失更改
+- `kubectl delete -f <filename|url>`
+- `kubectl get -f <filename|url> -o yaml`
+- `kubectl get -h` help
+- imperative commands
+    - `kubectl get <kind>/<name> -o yaml > <kind>_<name>.yaml`
+    - remove status field
+    - `kubectl replace -f <kind>_<name>.yaml`
+
+
+## Declarative object configuration
++ live object configuration
+    - configuration osbserved by the k8s cluster
+    - configuration stored in cluster storage like etch
++ `kubectl apply -f <directory>/ [-R]`
+    - create/update
+    - manage live object configuration
+    - config写入 annotation kubectl.kubernetes.io/last-applied-configuration用作计算
+    - 不支持和`kubectl craete` `kubectl replace`混用
++ `kubectl diff -f https://k8s.io/examples/application/simple_deployment.yaml`
+    - server-side dry-run
++ `kubectl delete -f <filename>`
+
+
 
 ## labels
 + `kubectl get po --show-labels`
@@ -77,8 +114,6 @@
 + `kubectl delete po <pod-name> <pod-name>`
 + `kubectl delete po --all`
 
-
-
 ## node
 + `kubectl get nodes`
 + `kubectl label nodes <node-name> <label-key>=<label-value>` add label
@@ -101,7 +136,13 @@
 ## exe
 + `kubectl exec mypod -it sh`
 
+## resource
++ `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
+
 ## ref
++ [kubectlbook](https://kubectl.docs.kubernetes.io/)
++ [kubectl 命令式](https://kubernetes.io/zh/docs/tasks/manage-kubernetes-objects/imperative-config/)
++ [kubectl 声明式](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/)
 + [Kubernetes kubectl 命令表](http://docs.kubernetes.org.cn/683.html)
 + [kubectl](https://kubernetes.io/zh/docs/reference/kubectl/)
 + [kubectl docs](https://kubectl.docs.kubernetes.io/pages/container_debugging/port_forward_to_pods.html)

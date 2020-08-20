@@ -3,6 +3,7 @@
 ## ref
 + 自定义资源类型
 + 自定义控制器
++ [扩展 Kubernetes](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/#user-defined-types)
 + [深入理解 Kubernetes Admission Webhook](https://www.qikqiak.com/post/k8s-admission-webhook/)
 + [准入控制器 admission controller](https://kubernetes.io/zh/docs/reference/access-authn-authz/admission-controllers/)
 + [Webhook Mode](https://kubernetes.cn/docs/reference/access-authn-authz/webhook/)
