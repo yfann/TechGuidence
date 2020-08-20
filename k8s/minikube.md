@@ -22,9 +22,8 @@
     - on fail
         + `brew cask remove minikube`
         + `brew link minikube`
-+ `minikube start`
-    - `--docker-env HTTP_PROXY=xxxx` need proxy
-+ docker desktop（minikube start --vm-driver virtualbox...，否则minikube会装到docker里）
++ docker desktop
++ `minikube start --logtostderr --v=3 --image-mirror-country=cn --registry-mirror https://dockerhub.azk8s.cn`
 + `eval $(minikube docker-env)`
 + `brew install kubernetes-helm` 最新版本不用tiller
 
