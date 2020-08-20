@@ -7,3 +7,10 @@
     - `kubectl get secret regcred --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode` base64解码
 + `kubectl scale rc kubia --replicas=3`
 + `kubectl get pods -o wide`
+
++ variable
+```sh
+pods=$(kubectl get pods --selector=job-name=pi --output=jsonpath='{.items[*].metadata.name}')
+echo $pods
+kubectl logs $pods
+```
