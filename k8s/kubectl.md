@@ -148,3 +148,4 @@
 + [kubectl docs](https://kubectl.docs.kubernetes.io/pages/container_debugging/port_forward_to_pods.html)
 + [通过describe命令学习Kubernetes的pod属性详解](https://developer.aliyun.com/article/672167?spm=a2c6h.14164896.0.0.46eb6d11HeMlD1)
 + [kubectl-commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs)
++ [Kubernetes Object Management](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/)

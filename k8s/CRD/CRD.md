@@ -26,6 +26,7 @@
 <!-- CustomResourceDefinitions -->
 + [Extend the Kubernetes API with CustomResourceDefinitions](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 + [DNS subdomain name(Custom Resource 命名规范)](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names)
+
 <!-- API server aggregation -->
 + [Extending the Kubernetes API with the aggregation layer](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/)
 
@@ -34,12 +35,18 @@
 + [Update API Objects in Place Using kubectl patch](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/)
 + [The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
+
 <!-- API -->
 + [Kubernetes API Reference(k8s obj spec format)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core)
 + [API Reference](https://kubernetes.io/docs/reference/kubernetes-api/)
 + [Client Libraries](https://kubernetes.io/docs/reference/using-api/client-libraries/)
+
+
+<!-- code -->
++ [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
++ [kubernetes/apiserver](https://github.com/kubernetes/apiserver)
 + [kubernetes/client-go](https://github.com/kubernetes/client-go/)
-+ [kubernetes/code-generator](https://github.com/kubernetes/code-generator)
+
 <!-- TLDR -->
 + [API Conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
-+ [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
+
