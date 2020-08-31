@@ -37,7 +37,12 @@ const (
 ```
 + `a,b = b,a`
     - `_,b=5,7`  `_`只写变量，用于丢弃值
-
++ 类型转换
+```go
+var sum int = 17
+var mean float32
+mean = float32(sum)
+```
 
 ## 表达式
 + `a == b`
@@ -61,6 +66,7 @@ type struct_variable_type struct {
    ...
    member definition
 }
+
 ```
 ```go
 type Books struct {
@@ -73,6 +79,11 @@ type Books struct {
 var Book1 Books 
 
 Books{title: "Go 语言", author: "www.runoob.com"}
+
+e2 := example{
+    falg: true,
+    counter: 10
+}
 ```
 
 
@@ -138,8 +149,82 @@ c1.getArea()
 ```
 
 
+## 切片
+
++ 动态数组,长度不固定
+<!-- 定义 -->
++ `var identifier []type`
++ `slice1 := make([]type, len, cap)`
+    - `var numbers = make([]int,3,5)`
+    - `append(numbers, 0)`
+    - `copy(numbers1,numbers)` copy numbers to nubmers1
+    - `len(numbers)`
+    - `cap(numbers)`
++ `s :=[] int {1,2,3 }`
++ `s := arr[:]`
+
+
+## range
+
+```go
+nums := []int{2, 3, 4}
+sum := 0
+for _, num := range nums {
+    sum += num
+}
+```
+
+## map
++ `var map_variable map[key_data_type]value_data_type`
++ `map_variable := make(map[key_data_type]value_data_type)`
++ `countryCapitalMap := map[string]string{"France": "Paris", "Italy": "Rome", "Japan": "Tokyo", "India": "New delhi"}`
++  键值是否存在
+```go
+capital, ok := countryCapitalMap [ "American" ]
+if (ok) {
+    fmt.Println("American 的首都是", capital)
+} else {
+    fmt.Println("American 的首都不存在")
+}
+```
++ `delete(map, key)`
+
+## 接口
+```go
+/* 定义接口 */
+type interface_name interface {
+   method_name1 [return_type]
+   method_name2 [return_type]
+   method_name3 [return_type]
+   ...
+   method_namen [return_type]
+}
+
+/* 定义结构体 */
+type struct_name struct {
+   /* variables */
+}
+
+/* 实现接口方法 */
+func (struct_name_variable struct_name) method_name1() [return_type] {
+   /* 方法实现 */
+}
+...
+func (struct_name_variable struct_name) method_namen() [return_type] {
+   /* 方法实现*/
+}
+```
+
+
 ## ref
 + [Go 语言教程](https://www.runoob.com/go/go-tutorial.html)
 + [Go语言简介](http://c.biancheng.net/golang/intro/)
 + [the-way-to-go_ZH_CN](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/preface.md)
 + [Package template](https://golang.org/pkg/text/template/)
++ [Ultimate Go Programming](https://github.com/ardanlabs/gotraining)
++ [go design](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design)
++ [The Go Programming Language](http://www.gopl.io/)
++ [深入解析Go](https://tiancaiamao.gitbooks.io/go-internals/content/zh/)
+<!-- tools -->
++ [vscode go](https://github.com/golang/vscode-go/blob/master/docs/commands.md#go-locate-configured-go-tools)
++ [online go](https://play.golang.org/)
