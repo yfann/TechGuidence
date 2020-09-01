@@ -35,6 +35,7 @@
 + [Update API Objects in Place Using kubectl patch](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/)
 + [The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
++ [k8s 认证授权](https://cloud.tencent.com/developer/article/1557565)
 
 <!-- API -->
 + [Kubernetes API Reference(k8s obj spec format)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core)
@@ -45,7 +46,7 @@
 <!-- code -->
 + [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
 + [kubernetes/apiserver](https://github.com/kubernetes/apiserver)
-+ [kubernetes/client-go](https://github.com/kubernetes/client-go/)
+
 
 <!-- TLDR -->
 + [API Conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
