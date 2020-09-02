@@ -44,6 +44,30 @@ var mean float32
 mean = float32(sum)
 ```
 
++ package level variable会在main开始前初始化
+    + local variable在function执行时初始化
+
++ new(T)
+    + creates an unnamed variable of type T
+    + initializes it to the zero value of T
+    + return *T
+```go
+p := new(int)   
+fmt.Println(*p)
+```
++ variable escape from function
+    + need heap-allocated(before it's in stack)
+```go
+var global *int
+
+func f() {                      
+    var x int                  
+    x = 1                       
+    global = &x              
+}
+```
+
+
 ## 表达式
 + `a == b`
 + `!(A && B)`
