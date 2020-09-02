@@ -45,6 +45,7 @@
 
 <!-- code -->
 + [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
++ [kubernetes/apiextensions-apiserver](https://github.com/kubernetes/apiextensions-apiserver/tree/master/examples/client-go)
 + [kubernetes/apiserver](https://github.com/kubernetes/apiserver)
 
 
