@@ -105,6 +105,7 @@
 + [Docker容器访问宿主机网络](https://jingsam.github.io/2018/10/16/host-in-docker.html)
 + [Get started with Docker for Windows](https://docs.docker.com/docker-for-windows/)
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
++ [Deploy on Kubernetes](https://docs.docker.com/docker-for-windows/kubernetes/)
 <!-- 命令 -->
 + [Docker命令-docker exec](https://www.jianshu.com/p/d858d3cfd427)
 

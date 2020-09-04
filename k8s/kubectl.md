@@ -44,11 +44,11 @@
 + `kubectl describe configmaps <map-name> [-o yaml]` 查看map
 
 ## operate k8s obj
-+ `kubectl create <obj>`
-
-+ `kubectl get <obj> [-o yaml]`
-+ `kubectl describe <obj>`
-+ `kubectl delete <obj>`
++ `kubectl create -f <file>.yaml`
++ `kubectl get <types>`
++ `kubectl get <type> <obj> [-o yaml]`
++ `kubectl describe <type> <obj>`
++ `kubectl delete <type> <obj>`
 <!-- instance -->
 + `kubectl get rc`
 + `kubectl delete all --all`first all means all types,--all means all instances
