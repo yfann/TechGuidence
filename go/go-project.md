@@ -4,11 +4,13 @@
 
 ## cmd
 
-+ `go mod init <example.com/user/hello>` reate go.mod
 + `go build`
-	+ 如果pkg是main,则创建可执行程序
-	+ `$GOPATH/src`下的目录go build
+	+ src code 目录下执行
 	+ 会丢弃除exe外的lib
+	+ 如果pkg是main,则创建可执行程序
+		+ `go build -o ./app` 如果是windows则`go build -o ./app.exe`
+			+ `./app`运行,必须带路径执行
+
 
 + `go install <example.com/user/hello>`
   + go build a executable binary
@@ -53,12 +55,10 @@
 + `go mod init <module path>` 创建go.mod
 + `go mod download` 下载所有依赖包
 + `go mod tidy` 删除没有用到的包
-+ `go mod edit --module=github.com/islishude/gomodtest/v2` 发布版本
++ `go mod edit --module=github.com/islishude/gomodtest/v2` 改module path,打标签(版本号加路径里)，发布版本
 + `go mod edit --droprequire=golang.org/x/crypto`删除包，仅修改go.mod
 + `go mod edit --require=rsc.io/quote@v3.1.0` 拉取指定版本
 + `go mod edit -fmt`格式化go.mod
-+ `go mod edit --module=github.com/islishude/gomodtest/v2`打标签,更改module path
-	+ 打标前写入相应版本号
 
 ## GOPATH
 + 环境变量

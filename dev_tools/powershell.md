@@ -13,9 +13,15 @@
 <!-- 别名 -->
 + `New-Alias np c:\windows\notepad.exe` 别名
 + `get-alias`
+
+
+## 环境变量
 + `$env:<name>`查看环境变量
-    + `Get-ChildItem env:` 获取所有
-    + `$Env:path=$Env:Path+";C:\Go\bin"` 设置环境变量
++ `Get-ChildItem env:` 获取所有
++ `$Env:path=$Env:Path+";C:\Go\bin"` 设置环境变量
++ `"$env:USERPROFILE\.go"` 拼接环境变量
+
+
 
 ## sample
 + `get-process -Name notepad | stop-process`

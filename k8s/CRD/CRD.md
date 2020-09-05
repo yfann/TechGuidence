@@ -36,6 +36,7 @@
 + [The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
 + [k8s 认证授权](https://cloud.tencent.com/developer/article/1557565)
++ [Writing Controllers](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-api-machinery/controllers.md)
 
 <!-- API -->
 + [Kubernetes API Reference(k8s obj spec format)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core)
