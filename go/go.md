@@ -4,6 +4,7 @@
 + `var intVal int = 1`
     - `intVal := 1` 简写，声明语句
         + `intVal,intVal1 := 1,2`
+
 + `var ptr *int` 指针变量
     - `&i` 取内存地址
     - `*ptr` 取值
@@ -35,8 +36,10 @@ const (
         i          //8
 )
 ```
+
 + `a,b = b,a`
     - `_,b=5,7`  `_`只写变量，用于丢弃值
+
 + 类型转换
 ```go
 var sum int = 17
@@ -66,12 +69,6 @@ func f() {
     global = &x              
 }
 ```
-
-
-## 表达式
-+ `a == b`
-+ `!(A && B)`
-
 
 ## others
 + select
