@@ -9,7 +9,7 @@
 	+ 会丢弃除exe外的lib
 	+ 如果pkg是main,则创建可执行程序
 		+ `go build -o ./app` 如果是windows则`go build -o ./app.exe`
-			+ `./app`运行,必须带路径执行
+			+ `./app`执行程序,必须带路径执行
 
 
 + `go install <example.com/user/hello>`
@@ -17,7 +17,7 @@
   + install the binary as `$HOME/go/bin/hello`(windows:`%USERPROFILE%\go\bin\hello.exe`) to GOPATH
   + 会保存编译结果到`$GOPATH/pkg`
 	
-+ `go run`
++ `go run <main.go>`
 
 + `go clean [-modcache]` 参数清空所有下载的modules
 
@@ -154,8 +154,8 @@ replace (
 ```	
 
 + go module proxy
-	+ `go env -w GOPROXY=https://goproxy.cn,direct`go 抓取模块时如果404，则退回到direct,直接去模块的源头(github)抓取
 	+ `go env -w GO111MODULE=on`
+	+ `go env -w GOPROXY=https://goproxy.cn,direct` go 抓取模块时如果404，则退回到direct,直接去模块的源头(github)抓取
 	<!-- export GO111MODULE=on
 	     https://goproxy.io 
 	     export GOPROXY=https://goproxy.cn,direct  -->
