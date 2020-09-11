@@ -35,6 +35,7 @@
     - main放在最顶层rootpackage
 + `@Autowired`
     - 注入集合时，找到所有该类型的bean的集合再注入
+    - `@Autowired(required = false)` 允许注入null
     - 属性名即为注入的bean名
     ```java
     //注入 bean name=logPrint的bean

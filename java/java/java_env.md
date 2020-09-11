@@ -4,9 +4,10 @@
 + `System.getenv()` 所有环境变量
     - `System.getenv("Path")` 获取环境变量
 
-+ yaml中配置环境变量
++ yaml中配置环境变量`${COMPUTERNAME:default value}`
 ```yaml
-name: ${COMPUTERNAME:default value}
+# 默认空值
+name: ${TEST:}
 ```
 
 + `@Value` 默认不能注入static变量

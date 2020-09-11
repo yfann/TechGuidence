@@ -33,7 +33,7 @@
 
 + `repo`
     - `helm search`
-    - `helm search <repo name> <chart name>` 查询可用的charts
+    - `helm search repo <chart name>` 查询可用的charts
         + add以后才能search
     - `helm show [chart||readme] <repo name>/<chart name>`
     - `helm repo list` 查看配置了哪些repo

@@ -51,4 +51,12 @@
 + [Scrape data from pod upon annotation](https://www.weave.works/docs/cloud/latest/tasks/monitor/configuration-k8s/#per-pod-prometheus-annotations)
 
 + [query](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-+ [query](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+<!-- install -->
++ [helm-charts/stable/prometheus/](https://github.com/openthings/helm-charts/tree/master/stable/prometheus)
++ [k8s 安装 prometheus 过程记录](https://www.cnblogs.com/dudu/p/12146344.html)
++ [prometheus-helm](https://github.com/prometheus-community/helm-charts)
+
+<!-- mock data -->
++ [给Prometheus造假数据的方法](https://www.shangmayuan.com/a/964aace4f33f4ab19685ec1f.html)
++ [little-angry-clouds/prometheus-data-generator](https://github.com/little-angry-clouds/prometheus-data-generator)
++ [chanjarster/prometheus-mock-data](https://github.com/chanjarster/prometheus-mock-data)

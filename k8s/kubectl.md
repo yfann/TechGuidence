@@ -1,14 +1,9 @@
 
-## 概念
-
-+ 命令式命令
-+ 命令式对象配置
-    - `kubectl create -f <filename|url>`
-+ 声明式对象配置
-
 ## cmd
 + `kubectl version`
     -  `--short=true`
++ `kubectl cluster-info`
+
 + `get`
     - `kubectl get pods`
     - `kubectl get nodes`
@@ -133,10 +128,17 @@
 ## dashboard
 + `kubectl proxy`
 
-## exe
-+ `kubectl exec mypod -it sh`
+## exec
++ `kubectl exec -it <pod name> bash`
+    + `kubectl exec -it shell-demo -- /bin/bash` 
+        - `--` 传递给命令的参数，不是kubectl的参数
+        - `--container [container name]`如果pod有多个容器`--c [container name]`
+            - `kubectl describe pod/[pod name]` 查看容器数
 
-## resource
+
+## API
++ `kubectl api-versions`
++ `kubectl api-resources`
 + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
 
 ## ref
@@ -148,4 +150,5 @@
 + [kubectl docs](https://kubectl.docs.kubernetes.io/pages/container_debugging/port_forward_to_pods.html)
 + [通过describe命令学习Kubernetes的pod属性详解](https://developer.aliyun.com/article/672167?spm=a2c6h.14164896.0.0.46eb6d11HeMlD1)
 + [kubectl-commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs)
-+ [Kubernetes Object Management](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/)
++ [Kubernetes Object Management](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/) 
++ [获取正在运行容器的 Shell](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/get-shell-running-container/)

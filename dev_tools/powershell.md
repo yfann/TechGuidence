@@ -34,6 +34,13 @@
 + ssh下不能自动向下滚动
     - properties>layout>screen buffer size>height(改小)
 
+
+## proxy
++ `netsh winhttp set proxy <proxy>:<port>`
++ `netsh winhttp reset proxy`
++ `netsh winhttp show proxy`
+
 ## ref
 + [install](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
 + [Command-Line Options](https://docs.microsoft.com/en-us/windows/win32/msi/command-line-options)
++ [使用PowerShell Profile快速设置 HTTP 代理](https://async.sh/2018/07/30/quick-setup-http-proxy-using-powershell-profile/)

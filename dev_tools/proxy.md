@@ -43,3 +43,11 @@ pip3 install xxxx
 ## maven
 
 .m2/settings.xml
+
+
+## windows
++ ping 不通的原因，ping的协议不是http，也不是https，是ICMP协议。(代理无用)用curl代替
++ 验证用`curl http://www.google.com`
+
+## ref
++ [给 Windows 的终端配置代理](https://zcdll.github.io/2018/01/27/proxy-on-windows-terminal/)
