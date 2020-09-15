@@ -141,6 +141,13 @@
 + `kubectl api-resources`
 + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
 
+## context
++ `kubectl config view`
++ `kubectl config --kubeconfig=<config name> use-context <context>`
+
+## serviceaccounts
++ `kubectl get serviceaccounts -n <namespace>`
+
 ## ref
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)
 + [kubectl 命令式](https://kubernetes.io/zh/docs/tasks/manage-kubernetes-objects/imperative-config/)
@@ -152,3 +159,5 @@
 + [kubectl-commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs)
 + [Kubernetes Object Management](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/) 
 + [获取正在运行容器的 Shell](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/get-shell-running-container/)
+
++ [配置对多集群的访问](https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)

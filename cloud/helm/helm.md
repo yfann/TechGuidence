@@ -155,4 +155,6 @@ global:
 + [Helm Hub](https://hub.helm.sh/charts)
 + [stable repo](https://github.com/helm/charts/tree/master/stable)
 
+<!-- helm install tiller -->
++ [install Helm tiller](https://developer.aliyun.com/article/159601)
 

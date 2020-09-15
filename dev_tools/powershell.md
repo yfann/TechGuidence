@@ -40,7 +40,30 @@
 + `netsh winhttp reset proxy`
 + `netsh winhttp show proxy`
 
+
+## PROFILE
++ 可以customise环境，PowerShell启动时执行的脚本
++ `$PROFILE`
+    + 存储的profiles的路径
+    + `$PROFILE | Get-Member -Type NoteProperty` 查看内容
+    + `notepad $PROFILE` 编辑当前用户的profile
+        + `notepad $PROFILE.AllUsersAllHosts`
+
+
+## execution policy
++ `Get-ExecutionPolicy`
++ `Get-ExecutionPolicy -List`
++ `Set-ExecutionPolicy -ExecutionPolicy Bypass`
+
 ## ref
++ [PowerShell 101](https://docs.microsoft.com/zh-cn/powershell/scripting/learn/ps101/00-introduction?view=powershell-7)
+
 + [install](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
 + [Command-Line Options](https://docs.microsoft.com/en-us/windows/win32/msi/command-line-options)
 + [使用PowerShell Profile快速设置 HTTP 代理](https://async.sh/2018/07/30/quick-setup-http-proxy-using-powershell-profile/)
++ [给 Windows 的终端配置代理](https://zcdll.github.io/2018/01/27/proxy-on-windows-terminal/)
+<!-- profile -->
++ [About Profiles](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6#the-profile-files)
++ [About Execution Policies](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7)
+
+<!-- 安全权限 -->

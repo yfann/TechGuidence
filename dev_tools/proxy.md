@@ -46,7 +46,7 @@ pip3 install xxxx
 
 
 ## windows
-+ ping 不通的原因，ping的协议不是http，也不是https，是ICMP协议。(代理无用)用curl代替
++ ping 不通的原因，ping的协议不是http，也不是https，是ICMP协议。设Http代理不会影响ping
 + 验证用`curl http://www.google.com`
 
 ## ref

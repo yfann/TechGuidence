@@ -44,3 +44,9 @@
     ```
 <!-- download -->
 + `helm pull <chart name>`
+
+
+## tiller
+
++ `helm reset --force` 删除tiller
++ `helm create serviceaccount --namespace <namespace> tiller`
