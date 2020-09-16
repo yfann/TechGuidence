@@ -1,9 +1,11 @@
+## crd
++ 创建新的CRD，API Server会创建新的路径
++ CRD没有命名空间
 
 ## tips
-
-+ 添加custom resources到k8s cluster(与built-in Kubernetes resources不同,like pod)的两种方式
++ 添加custom resources到k8s cluster(与built-in Kubernetes resources不同)的两种方式
     + CRD(CustomResourceDefinitions)
-        + user can create new tyhpes of resources without adding another API server
+        + user can create new types of resources without adding another API server
         + 定义custom resources
         + Kubernetes API server会存储custom resources(不需要实现自己的APi server),存在etcd里
         + 没有API Aggregation 灵活
