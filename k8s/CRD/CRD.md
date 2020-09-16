@@ -1,9 +1,11 @@
+## crd
++ 创建新的CRD，API Server会创建新的路径
++ CRD没有命名空间
 
 ## tips
-
-+ 添加custom resources到k8s cluster(与built-in Kubernetes resources不同,like pod)的两种方式
++ 添加custom resources到k8s cluster(与built-in Kubernetes resources不同)的两种方式
     + CRD(CustomResourceDefinitions)
-        + user can create new tyhpes of resources without adding another API server
+        + user can create new types of resources without adding another API server
         + 定义custom resources
         + Kubernetes API server会存储custom resources(不需要实现自己的APi server),存在etcd里
         + 没有API Aggregation 灵活
@@ -34,8 +36,11 @@
 + [Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
 + [Update API Objects in Place Using kubectl patch](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/)
 + [The Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
-+ [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
 + [k8s 认证授权](https://cloud.tencent.com/developer/article/1557565)
++ [Writing Controllers](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-api-machinery/controllers.md)
+
+<!-- operator -->
++ [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
 
 <!-- API -->
 + [Kubernetes API Reference(k8s obj spec format)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core)

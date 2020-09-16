@@ -4,6 +4,7 @@
 + `var intVal int = 1`
     - `intVal := 1` 简写，声明语句
         + `intVal,intVal1 := 1,2`
+
 + `var ptr *int` 指针变量
     - `&i` 取内存地址
     - `*ptr` 取值
@@ -35,8 +36,10 @@ const (
         i          //8
 )
 ```
+
 + `a,b = b,a`
     - `_,b=5,7`  `_`只写变量，用于丢弃值
+
 + 类型转换
 ```go
 var sum int = 17
@@ -66,12 +69,6 @@ func f() {
     global = &x              
 }
 ```
-
-
-## 表达式
-+ `a == b`
-+ `!(A && B)`
-
 
 ## others
 + select
@@ -173,20 +170,6 @@ c1.getArea()
 ```
 
 
-## 切片
-
-+ 动态数组,长度不固定
-<!-- 定义 -->
-+ `var identifier []type`
-+ `slice1 := make([]type, len, cap)`
-    - `var numbers = make([]int,3,5)`
-    - `append(numbers, 0)`
-    - `copy(numbers1,numbers)` copy numbers to nubmers1
-    - `len(numbers)`
-    - `cap(numbers)`
-+ `s :=[] int {1,2,3 }`
-+ `s := arr[:]`
-
 
 ## range
 
@@ -213,31 +196,7 @@ if (ok) {
 ```
 + `delete(map, key)`
 
-## 接口
-```go
-/* 定义接口 */
-type interface_name interface {
-   method_name1 [return_type]
-   method_name2 [return_type]
-   method_name3 [return_type]
-   ...
-   method_namen [return_type]
-}
 
-/* 定义结构体 */
-type struct_name struct {
-   /* variables */
-}
-
-/* 实现接口方法 */
-func (struct_name_variable struct_name) method_name1() [return_type] {
-   /* 方法实现 */
-}
-...
-func (struct_name_variable struct_name) method_namen() [return_type] {
-   /* 方法实现*/
-}
-```
 
 
 ## ref

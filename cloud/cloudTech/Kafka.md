@@ -1,6 +1,8 @@
 
 
-
+## issues
++ kafka-exporter 连不上 kafka
+    + 查看白名单
 
 ## ref
 + [Kafka 入门一篇文章就够了](https://juejin.im/post/5ddf5659518825782d599641)

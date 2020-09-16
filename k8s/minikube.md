@@ -1,16 +1,15 @@
 
-## install miniKube
-+ windows
-    + Hypervisor 
-        -`systeminfo`查看是否有hypervisor
-        - 没有则安装virtualBox(为了安装hypervisor)
-    + kubectl
-        - `choco install kubernetes-cli`
-        - `kubectl version --client`
-    + MiniKube
-        - `choco install minikube`
-    + `kubectl cluster-info dump` check the kubectl connection(setting proxy and no_proxy)
-        - `~/.kube/config`
+## windows install miniKube
++ Hypervisor 
+    -`systeminfo`查看是否有hypervisor
+    - 没有则安装virtualBox(为了安装hypervisor)
++ kubectl
+    - `choco install kubernetes-cli`
+    - `kubectl version --client`
++ MiniKube
+    - `choco install minikube`
++ `kubectl cluster-info dump` check the kubectl connection(setting proxy and no_proxy)
+    - `~/.kube/config`
 
 ## mac instll
 + `sysctl -a | grep -E --color 'machdep.cpu.features|VMX'`查看macOS是否支持虚化技术
@@ -23,7 +22,8 @@
         + `brew cask remove minikube`
         + `brew link minikube`
 + docker desktop
-+ `minikube start --logtostderr --v=3 --image-mirror-country=cn --registry-mirror https://dockerhub.azk8s.cn`
++ `minikube start --registry-mirror https://dockerhub.azk8s.cn`
+    + `minikube start --logtostderr --v=3 --image-mirror-country=cn --registry-mirror https://dockerhub.azk8s.cn`
 + `eval $(minikube docker-env)`
 + `brew install kubernetes-helm` 最新版本不用tiller
 
@@ -104,6 +104,7 @@
 + [--vm-driver <driver>](https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver)
 + [Minikube + Helm 搭建本地 k8s 环境(worked)](https://zhuanlan.zhihu.com/p/69274854)
 + [通过 Minikube 在本地运行 Kubernetes](https://k8smeetup.github.io/docs/getting-started-guides/minikube/)
++ [使用 Helm 和 Operator 快速部署 Prometheus](https://www.chenshaowen.com/blog/quickly-deploy-prometheus-using-helm-and-operator.html)
 <!-- online -->
 + [play-with-k8s](https://labs.play-with-k8s.com/)
 + [Katacoda：免费学习 Kubernetes 利器](https://developer.aliyun.com/article/752183)

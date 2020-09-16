@@ -35,6 +35,7 @@
     - main放在最顶层rootpackage
 + `@Autowired`
     - 注入集合时，找到所有该类型的bean的集合再注入
+    - `@Autowired(required = false)` 允许注入null
     - 属性名即为注入的bean名
     ```java
     //注入 bean name=logPrint的bean
@@ -84,3 +85,4 @@
 + [@Retryable](https://chinalhr.github.io/tags/java_springboot_component1/)
 + [Spring Boot轻松理解动态注入，删除bean](https://www.jianshu.com/p/916800fdd52d)
 + [@ConditionalOn](https://zhuanlan.zhihu.com/p/78251301)
++ [@ConfigurationProperties](https://juejin.im/post/6844903901607493646)
