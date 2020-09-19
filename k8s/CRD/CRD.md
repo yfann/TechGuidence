@@ -20,6 +20,9 @@
         + 可以支持`exec`
 
 + Operator(enabling users to create, configure, and manage applications. Like Kubernetes's built-in resources)
++ kube-apiserver
+    + embedded apiextensions-apiserver 
+        + 提供CRD支持
 
 ## ref
 

@@ -2,6 +2,13 @@
 
 + Why need code generator? client-go requires that `runtime.Object` types (CustomResources in golang have to implement the runtime.Object interface) must have DeepCopy methods
 
++ `// +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object` 兼容k8s 1.8
+
++ top-level types
+    + run as runtime.Object
+    + metav1.TypeMeta embedded
+    + client-gen create
+
 ## ref
 + [*****Kubernetes Deep Dive: Code Generation for CustomResources](https://www.openshift.com/blog/kubernetes-deep-dive-code-generation-customresources)
 + [使用 code-generator 为 CustomResources 生成代码](https://www.jianshu.com/p/b2ceb9aff597)

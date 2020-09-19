@@ -161,7 +161,9 @@ replace (
 	     export GOPROXY=https://goproxy.cn,direct  -->
 
 
-
+## mac install
++ brew install go
++ go version
 
 ## ref
 
@@ -173,6 +175,7 @@ replace (
 
 <!-- install -->
 + [Linux下安装Go环境](https://www.jianshu.com/p/c43ebab25484)
++ [mac安装go](https://www.jianshu.com/p/ad57228c6e6a)
 
 <!-- go module-->
 + [Using Go Modules](https://blog.golang.org/using-go-modules)
