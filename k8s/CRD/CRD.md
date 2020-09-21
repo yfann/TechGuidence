@@ -31,10 +31,11 @@
 <!-- CustomResourceDefinitions -->
 + [Extend the Kubernetes API with CustomResourceDefinitions](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 + [DNS subdomain name(Custom Resource 命名规范)](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names)
++ [k8s自定义controller三部曲之一:创建CRD（Custom Resource Definition）](https://blog.csdn.net/boling_cavalry/article/details/88917818)
 
 <!-- API server aggregation -->
 + [Extending the Kubernetes API with the aggregation layer](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/)
-
+  
 <!-- others -->
 + [Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
 + [Update API Objects in Place Using kubectl patch](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/)
