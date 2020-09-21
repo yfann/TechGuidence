@@ -160,6 +160,20 @@ replace (
 	     https://goproxy.io 
 	     export GOPROXY=https://goproxy.cn,direct  -->
 
++ godep project 使用(project安装在GOPATH中)
+```go
+go get -d k8s.io/sample-controller
+cd $GOPATH/src/k8s.io/sample-controller
+godep restore
+```
+
++ go module project 使用
+```go
+git clone https://github.com/kubernetes/sample-controller.git
+cd sample-controller
+```
+
+
 
 ## mac install
 + brew install go
