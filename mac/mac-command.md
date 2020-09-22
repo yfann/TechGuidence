@@ -33,3 +33,4 @@
 
 ## ref
 + [玩转Mac常用命令、zsh等技巧，挖掘Mac潜力](https://www.jianshu.com/p/28de342f5ecc)
++ [MAC小技巧--sudo免密](https://www.jianshu.com/p/f5b1630ebfcc)

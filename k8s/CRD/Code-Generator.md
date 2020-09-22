@@ -11,11 +11,15 @@
 
 
 ## generate under go mod
+
 + create hack folder under project
     + create `update-codegen.sh`
 + `go mod vendor`
 + `chmod -R 777 vendor`为vendor中的code-generator赋权限
 + `cd hack && ./update-codegen.sh`
+    + mac
+        + `chmod +x update-codegen.sh`
+        + `sudo -E ./update-codegen.sh`
 
 
 ## generate（old style）
