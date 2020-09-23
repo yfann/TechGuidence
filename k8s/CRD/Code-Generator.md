@@ -11,24 +11,31 @@
 
 
 ## generate under go mod
-
++ `env GOPATH=xxx`
 + create hack folder under project
     + create `update-codegen.sh`
++ go.mod中添加`k8s.io/code-generator`
 + `go mod vendor`
-+ `chmod -R 777 vendor`为vendor中的code-generator赋权限
-+ `cd hack && ./update-codegen.sh`
-    + mac
+    + project中会生成vendor目录存放第三方库
++ mac
+    + `chmod -R 777 vendor`为vendor中的code-generator赋权限
+    + `cd hack && ./update-codegen.sh`
         + `chmod +x update-codegen.sh`
-        + `sudo -E ./update-codegen.sh`
+        + `sudo -E ./update-codegen.sh`  sudo环境变量与默认不同,`-E`保存当前环境变量(GOPATH) 
 
 
-## generate（old style）
-+ `go get k8s.io/code-generator`
-+ `./generate-groups.sh all C:/p/Jupiter/hsc-vcap-services-converter/pkg/client C:/p/Jupiter/hsc-vcap-services-converter/pkg/apis  hsc:v1`
-    + all  所有模块（clientset,informers,listers）
-    + client 生成代码的目录
-    + apis 源目录
-    + group:version
+## update-codegen.sh
+```sh
+bash ../vendor/k8s.io/code-generator/generate-groups.sh "deepcopy,client,informer,lister" \
+  hsc-vcap-services-converter/pkg/generated hsc-vcap-services-converter/pkg/apis \
+  hsc:v1 \
+  --output-base $(pwd)/../../ \
+  --go-header-file $(pwd)/boilerplate.go.txt
+```
++ all  所有模块（clientset,informers,listers）
++ generated 生成代码的目录
++ apis 源目录
++ group:version
 
 
 

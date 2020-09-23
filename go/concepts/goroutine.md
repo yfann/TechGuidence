@@ -7,6 +7,7 @@
 
 
 ## 通道
+
 + 可以使一个goroutine发送特定值到另一个goroutine
 + `ch := make(chan int)`无缓存通道
     + `make(chan int,0)`无缓存通道

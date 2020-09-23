@@ -59,6 +59,8 @@
 + `go mod edit --droprequire=golang.org/x/crypto`删除包，仅修改go.mod
 + `go mod edit --require=rsc.io/quote@v3.1.0` 拉取指定版本
 + `go mod edit -fmt`格式化go.mod
+<!-- vendor -->
++ `go mod vendor`
 
 ## GOPATH
 + 环境变量
@@ -84,7 +86,7 @@ source ~/.bash_profile
 	+ 不会因为没有使用包而报错
 
 + import internal pkg
-	+ `import <module name>/<pkg name>`
+	+ `import <module name>/path/<pkg name>`
 
 + import package from remote modules
 ```go
