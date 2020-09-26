@@ -1,11 +1,21 @@
 
 
 ## install 
++ brew install kustomize
++ kubebuilder
 ```sh
 os=$(go env GOOS)
 arch=$(go env GOARCH)
 curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 ```
+
+
+## create project
+
++ go mod init xxx
++ kubebuilder init --domain vcap.domain
++ kubebuilder create api --group hsc.philips.com --version v1 --kind VcapServicesConverter
+
 
 ## ref
 + [kuberbuilder](https://book.kubebuilder.io/introduction.html)
@@ -21,3 +31,4 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 + [Manager](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/manager#Manager)
 <!-- dependency -->
 + [kubernetes-sigs/kustomize](https://github.com/kubernetes-sigs/kustomize)
++ [install kustomize](https://kubernetes-sigs.github.io/kustomize/installation/homebrew/)
