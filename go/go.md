@@ -197,9 +197,19 @@ if (ok) {
 + `delete(map, key)`
 
 
+## linux install
++ `curl -LO  https://golang.org/dl/go1.15.2.linux-amd64.tar.gz`
++ `sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz`
++ `export PATH=$PATH:/usr/local/go/bin`
++ `go version`
++ `go env -w GO111MODULE=on`
++ `go env -w GOPROXY=https://goproxy.cn,direct`
+
 
 
 ## ref
++ [official](https://golang.org/doc/)
+
 + [Go Packages](https://godoc.org/)
 + [Go 语言教程](https://www.runoob.com/go/go-tutorial.html)
 + [Go语言简介](http://c.biancheng.net/golang/intro/)
