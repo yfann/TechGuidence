@@ -22,8 +22,17 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 + `make docker-build docker-push IMG=<some-registry>/<project-name>:tag`
 + `make deploy IMG=<some-registry>/<project-name>:tag`
 
+
+## cmd
++ `controller-gen -h`
+    + `controller-gen -hhh`
++ `make manifests` generates CRD under `config/crd/bases` also webhook,RBAC
++ `make generate` generate code
+
+
 ## controller tool
 + object generator
++ controller-gen
 
 
 ## controller-runtime
@@ -50,15 +59,16 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 + [利用 kubebuilder 优化 Kubernetes Operator 开发体验](https://zhuanlan.zhihu.com/p/67406200)
 + [《 Kubebuilder v2 使用指南 》-P3-认识Kubebuilder](https://blog.csdn.net/ywq935/article/details/106311583)
 
+
 <!-- controller runtime -->
 + [controller-runtime](https://godoc.org/sigs.k8s.io/controller-runtime)
 + [kubernetes-sigs/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime)
 + [controller-runtime/FAQ.md](https://github.com/kubernetes-sigs/controller-runtime/blob/master/FAQ.md)
 
-<!-- webhook -->
-+ [使用 Kubebuilder 创建自定义 K8s AdmissionWebhooks](https://blog.hdls.me/15708754600835.html)
+
 <!-- sample -->
 + [cronjob-tutorial](https://github.com/kubernetes-sigs/kubebuilder/tree/master/docs/book/src/cronjob-tutorial/testdata/project)
+
 
 <!-- libs -->
 + [Scheme](https://godoc.org/k8s.io/apimachinery/pkg/runtime#Scheme)
@@ -67,19 +77,32 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 + [context](https://golang.org/pkg/context/)
 + [logr](https://github.com/go-logr/logr)
 
+
 <!-- markers -->
++ [Markers for Config/Code Generation](https://book.kubebuilder.io/reference/markers.html)
 + [kubebuilder:rbac](https://book.kubebuilder.io/reference/markers/rbac.html)
++ [package markers](https://godoc.org/sigs.k8s.io/controller-tools/pkg/markers)
+
+<!-- controller-gen for building controller -->
++ [controller-tools](https://github.com/kubernetes-sigs/controller-tools)
++ [controller-gen CLI](https://book.kubebuilder.io/reference/controller-gen.html)
+
+***
 
 <!-- dependency -->
 + [kubernetes-sigs/kustomize](https://github.com/kubernetes-sigs/kustomize)
 + [install kustomize](https://kubernetes-sigs.github.io/kustomize/installation/homebrew/)
 
+
 <!-- cert manager -->
 + [Deploying the cert manager](https://book.kubebuilder.io/cronjob-tutorial/cert-manager.html#deploying-the-cert-manager)
 + [cert-manager ](https://cert-manager.io/docs/installation/kubernetes/)
 
+
 <!-- test -->
 + [fake](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/client/fake)
 + [envtest](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/envtest#Environment)
-<!-- TLDR -->
-+ [controller-tools](https://github.com/kubernetes-sigs/controller-tools)
+
+
+<!-- webhook -->
++ [使用 Kubebuilder 创建自定义 K8s AdmissionWebhooks](https://blog.hdls.me/15708754600835.html)
