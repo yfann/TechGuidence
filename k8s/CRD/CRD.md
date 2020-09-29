@@ -19,7 +19,7 @@
         + GO编写
         + 可以支持`exec`
 
-+ Operator(enabling users to create, configure, and manage applications. Like Kubernetes's built-in resources)
+
 + kube-apiserver
     + embedded apiextensions-apiserver 
         + 提供CRD支持
@@ -43,8 +43,7 @@
 + [k8s 认证授权](https://cloud.tencent.com/developer/article/1557565)
 + [Writing Controllers](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-api-machinery/controllers.md)
 
-<!-- operator -->
-+ [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
+
 
 <!-- API -->
 + [Kubernetes API Reference(k8s obj spec format)](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#pod-v1-core)
