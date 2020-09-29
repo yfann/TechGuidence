@@ -109,6 +109,10 @@
 + `kubectl delete po <pod-name> <pod-name>`
 + `kubectl delete po --all`
 
+## crd
++ `kubectl get crd`
++ `kubectl get <crd-name> -n <namespace>`
+
 ## node
 + `kubectl get nodes`
 + `kubectl label nodes <node-name> <label-key>=<label-value>` add label
@@ -144,6 +148,10 @@
 ## context
 + `kubectl config view`
 + `kubectl config --kubeconfig=<config name> use-context <context>`
+
+## resource
++ `kubectl api-resources -o wide`
++ `kubectl api-versions`
 
 ## serviceaccounts
 + `kubectl get serviceaccounts -n <namespace>`
