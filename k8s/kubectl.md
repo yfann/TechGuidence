@@ -140,18 +140,16 @@
             - `kubectl describe pod/[pod name]` 查看容器数
 
 
-## API
+## API & resources
 + `kubectl api-versions`
 + `kubectl api-resources`
+    + `kubectl api-resources -o wide`
 + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
 
 ## context
 + `kubectl config view`
 + `kubectl config --kubeconfig=<config name> use-context <context>`
 
-## resource
-+ `kubectl api-resources -o wide`
-+ `kubectl api-versions`
 
 ## serviceaccounts
 + `kubectl get serviceaccounts -n <namespace>`
