@@ -36,7 +36,12 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 
 
 ## controller-runtime
-+ manager
++ controller manager
+    + reconciler注册到manager
+    + manager watching for changes to the obj
+    + caching retrieved obj
+    + queuing and rate limiting reconciliations
+    + call registered reconciler
     + run controllers and webhooks
     + setting up shared cache and clients, managing leader election
 
@@ -102,7 +107,7 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 <!-- test -->
 + [fake](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/client/fake)
 + [envtest](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/envtest#Environment)
-
++ [How we built a controller using KubeBuilder with test-driven development, Part 2](https://engineering.pivotal.io/post/gp4k-kubebuilder-tdd/)
 
 <!-- webhook -->
 + [使用 Kubebuilder 创建自定义 K8s AdmissionWebhooks](https://blog.hdls.me/15708754600835.html)
