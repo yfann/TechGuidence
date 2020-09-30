@@ -81,6 +81,7 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 + [reconciler](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/reconcile)
 + [context](https://golang.org/pkg/context/)
 + [logr](https://github.com/go-logr/logr)
++ [builder](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/builder)
 
 
 <!-- markers -->
