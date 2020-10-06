@@ -1,4 +1,4 @@
-## contianeri;s isolation
+## contianer isolation
 + Linux Namespace(isolate resources,make sure each process sees its own personal view of the system)
     - namespace type
         - Mount(mnt)
@@ -36,6 +36,10 @@
     - pod is the basic unit of scaling
 + one pod multiple containers
     - sidecar
+
+## Services
++ enabling clients to discoer and talk to pods
+
 ## tips
 
 + contianer share the linux kernel(VM doesn't)

@@ -135,10 +135,10 @@
 ## exec
 + `kubectl exec -it <pod name> bash`
     + `kubectl exec -it shell-demo -- /bin/bash` 
-        - `--` 传递给命令的参数，不是kubectl的参数
+        - ` -- ` 后面的命令在目标pod中执行
         - `--container [container name]`如果pod有多个容器`--c [container name]`
             - `kubectl describe pod/[pod name]` 查看容器数
-
++ `kubectl exec kubia-3inly env`
 
 ## API & resources
 + `kubectl api-versions`
@@ -153,6 +153,17 @@
 
 ## serviceaccounts
 + `kubectl get serviceaccounts -n <namespace>`
+
+
+## servicves
++ `kubectl get svc`
++ `kubectl get endpoints <service-name>`
++ `kubectl describe svc <service-name>`
++ `kubectl get ingresses`
+
+
+## tips
++ `--all-namespaces`
 
 ## ref
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)
