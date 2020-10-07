@@ -169,7 +169,11 @@
 
 ## configmap
 + `kubectl create configmap <config-name> --from-literal=<key>=<val> --from-literal=<key>=<val>`
-+ `kubectl create configmap my-config --from-file=config-file.conf`
++ `kubectl create configmap my-config --from-file=mykey=config-file.conf`
++ `kubectl create configmap my-config --from-file=/path/to/dir`
+
++ `kubectl edit configmap <name>`
+
 + `kubectl get configmap fortune-config -o yaml`
 + `kubectl create -f fortune-config.yaml`
 
