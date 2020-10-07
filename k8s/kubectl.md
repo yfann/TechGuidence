@@ -167,6 +167,11 @@
 + `kubectl delete pvc mongodb-pvc`
 + `kubectl get sc` storage class
 
+## configmap
++ `kubectl create configmap <config-name> --from-literal=<key>=<val> --from-literal=<key>=<val>`
++ `kubectl create configmap my-config --from-file=config-file.conf`
++ `kubectl get configmap fortune-config -o yaml`
++ `kubectl create -f fortune-config.yaml`
 
 ## tips
 + `--all-namespaces`
