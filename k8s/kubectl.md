@@ -161,6 +161,12 @@
 + `kubectl describe svc <service-name>`
 + `kubectl get ingresses`
 
+## pv&pvc
++ `kubectl get pv`
++ `kubectl get pvc`
++ `kubectl delete pvc mongodb-pvc`
++ `kubectl get sc` storage class
+
 
 ## tips
 + `--all-namespaces`
