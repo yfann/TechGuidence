@@ -2,7 +2,7 @@
 ## cmd
 + `kubectl version`
     -  `--short=true`
-+ `kubectl cluster-info`
+
 
 + `get`
     - `kubectl get pods`
@@ -145,7 +145,11 @@
 + `kubectl api-resources`
     + `kubectl api-resources -o wide`
 + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
++ `kubectl cluster-info`
++ `kubectl proxy`
+    + `curl localhost:8001`
 
+    
 ## context
 + `kubectl config view`
 + `kubectl config --kubeconfig=<config name> use-context <context>`
@@ -177,8 +181,14 @@
 + `kubectl get configmap fortune-config -o yaml`
 + `kubectl create -f fortune-config.yaml`
 
+## secret
++ `kubectl get secrets`
++ `kubectl describe secrets`
++ `kubectl create secret generic <name> --from-file=<file name>`
+
 ## tips
 + `--all-namespaces`
+
 
 ## ref
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)

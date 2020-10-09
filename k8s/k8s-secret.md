@@ -113,6 +113,47 @@ spec:
 + 通过 API 创建 Pod 时，不会检查引用的 Secret 是否存在。一旦 Pod 被调度，kubelet 就会尝试获取该 Secret 的值. Kubelet会重试直到获取Secret值
 + Secret 不会被写入磁盘，而是被 kubelet 存储在 tmpfs 中。 一旦依赖于它的 Pod 被删除，Secret 数据的本地副本就被删除。
 + 你可以为 Secret 数据开启静态加密， 这样 Secret 数据就不会以明文形式存储到etcd 中。
++ By default, the default-token Secret is mounted into every container
+  + pod.spec.automountService-AccountToken:false 可以关掉
++ secret data是base64编码
+  + base64支持二进制数据
+  + 1MB 大小限制
+  +  ❶支持string类型的数据
+```yaml
+kind: Secret
+apiVersion: v1
+stringData:                                    ❶
+  foo: plain text                              ❷
+data:
+  https.cert: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCekNDQ...
+  https.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcE...
+```
+
++ use env
+  + 没有secret volumn安全
+  + env 有可能会被log记录
+```yaml
+    env:
+    - name: FOO_SECRET
+      valueFrom:                   ❶
+        secretKeyRef:              ❶
+          name: fortune-https      ❷
+          key: foo                 ❸
+```
+
+
+## test
+
++  secret volume uses an in-memory filesystem (tmpfs) for the Secret files. 
+  + `kubectl exec fortune-https -c web-server -- mount | grep certs`
+
++ curl get Server certificate log
+```sh
+$ kubectl port-forward fortune-https 8443:443 &
+Forwarding from 127.0.0.1:8443 -> 443
+Forwarding from [::1]:8443 -> 443
+$ curl https://localhost:8443 -k -v
+```
 
 ## ref
 + [Secret](https://kubernetes.io/zh/docs/concepts/configuration/secret/)

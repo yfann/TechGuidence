@@ -1,6 +1,7 @@
 ## cmd
 
 + `curl --insecure https://www.baidu.com`
+    + 或`-k` 跳过https检查
 
 + `-O` 服务器返回内容保存成文件,并将URL的最后作为文件名
 + `-I` head请求，并打印返回的http头
