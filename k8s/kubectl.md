@@ -87,6 +87,8 @@
     - `-l <label-name>`
     - `-l '!<label-name>'` select those don't have the label name,单引号在bash中转义！
 + `kubectl delete po -l <label-name>=<label-value>`
++ `kubectl label pod <pod-name> app=foo --overwrite`
+
 
 ## logs
 + `kubectl logs <pod-name> [-f xxx]` pod logs(contianer log)
@@ -186,9 +188,35 @@
 + `kubectl describe secrets`
 + `kubectl create secret generic <name> --from-file=<file name>`
 
+## replicationController
++ `kubectl get rc`
++ `kubectl edit rc <name>` edit pod template or replicas
+    + `export KUBE_EDITOR="/usr/bin/nano"` 选择editor
++ `kubectl scale rc kubia --replicas=10`
++ `kubectl delete rc kubia --cascade=false` 删除RC 保留pods
+
+## replicaSet
++ `kubectl get rs`
++ `kubectl describe rs`
++ `kubectl delete rs kubia`
+
+## daemonSet
++ `kubectl get ds`
+
+## jobs
++ `kubectl get jobs`
++ `kubectl get po -a` 查看运行完的pod
++ `kubectl scale job multi-completion-batch-job --replicas 3`
+
+## Node
++ `kubectl get node`
++ `kubectl label node minikube disk=ssd`
+
 ## tips
 + `--all-namespaces`
-
++ `--previous` 
+    + `kubectl logs <pod name> --previous`可以查看之前的log,查找重启原因
+    + `kubectl describe po kubia-liveness` 查看重启原因
 
 ## ref
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)

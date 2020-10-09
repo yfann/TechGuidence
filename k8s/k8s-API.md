@@ -10,13 +10,14 @@
 ## details
 <!-- core api resources:pods,services... -->
 + /api/v1   
-<!-- job -->
+<!-- job resource-->
 + apis/batch/v1
 <!-- name:jobs -->
    + /apis/batch/v1/jobs 
 <!-- kubectl get job my-job -o json -->
    + `curl http://localhost:8001/apis/batch/v1/namespaces/default/jobs/my-job`
-
+<!-- <group>/<version> -->
++ apps/v1beta2 
 
 ## pod中访问k8s API
 
