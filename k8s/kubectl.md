@@ -26,12 +26,7 @@
     - `kubectl get -f myapp.yaml`
     - `kubectl describe -f myapp.yaml`
 
-## apiservice
-+ `kubectl get apiservice`
-+ `kubectl api-versions`
-+ `kubectl explain <k8s obj>`
-    - `kubectl explain pods`  
-        + `kubectl explain pods.spec`  
+ 
 
 ## configMap
 + `kubectl create configmap <map-name> <data-source>` 
@@ -146,11 +141,14 @@
 + `kubectl api-versions`
 + `kubectl api-resources`
     + `kubectl api-resources -o wide`
-+ `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
+    + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
 + `kubectl cluster-info`
 + `kubectl proxy`
     + `curl localhost:8001`
-
++ `kubectl get apiservice`
++ `kubectl explain <k8s obj>`
+    - `kubectl explain pods`  
+        + `kubectl explain pods.spec` 
     
 ## context
 + `kubectl config view`

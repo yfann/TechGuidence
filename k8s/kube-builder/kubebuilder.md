@@ -34,9 +34,32 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 + object generator
 + controller-gen
 
+## concept
++ GVK(GroupVersionKind)
+    + 创建GVR，一般1：1
+    + scale kind 可能会1:n
++ GVR(GroupVersionResource)
++ Scheme
+    + 提供GVK与go type的映射
 
-## controller-runtime
-+ controller manager
++ reconcile
+    + controler logic
+    + take reconcile request(name,namespace of the object)
+```go
+for {
+actualState := GetResourceActualState(rsvc)
+expectState := GetResourceExpectState(rsvc)
+if actualState == expectState {
+// do nothing
+} else {
+Reconcile(rsvc)
+}
+}
+```
++ manager
+    + 运行controller
+    + 初始化cache,listAndWatch
+    + 初始化clients
     + reconciler注册到manager
     + manager watching for changes to the obj
     + caching retrieved obj
@@ -47,23 +70,40 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 
 + controllers
     +  events->reconcile requests
-
-+ reconcilers
-    + controler logic
-    + take reconcile request(name,namespace of the object)
+    + 只需关注reconcile的实现
 
 + clients
     + use by reconciler
     + write object to API objects
 + cache
     + read object
+    + GVK -> Informer 映射
+    + 监听对GVR的更改,触发reconcile
+    + index提供索引
+
++ Finalizer
+    + 不为空时可以在cache中获取要删除的对象
+    + 处理完后设置为空,可以删除对象
++ OwnerReference
+    + 删除对象时，会把OwnerReference是该对象的对象一并删除
+
+## tips
+
++ schema
+    + 注册schema后，cache才会为schema中的每个GVK创建对应的informer
+```go
+// main中注册对应GV的Scheme可以获取对应的GVK
+// v1beta1.ServiceInstance
+_ = v1beta1.AddToScheme(scheme)
+```
 
 ## ref
-+ [kuberbuilder](https://book.kubebuilder.io/introduction.html)
++ [深入解析 Kubebuilder：让编写 CRD 变得更简单****************](https://juejin.im/post/6844903952241131534)
++ [kuberbuilder****************](https://book.kubebuilder.io/introduction.html)
 + [kubernetes-sigs/kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
 + [利用 kubebuilder 优化 Kubernetes Operator 开发体验](https://zhuanlan.zhihu.com/p/67406200)
-+ [《 Kubebuilder v2 使用指南 》-P3-认识Kubebuilder](https://blog.csdn.net/ywq935/article/details/106311583)
-
++ [《 KUBEBUILDER V2 使用指南 》](https://blog.upweto.top/gitbooks/kubebuilder/)
++ [yinwenqin/kubeSourceCodeNote](https://github.com/yinwenqin/kubeSourceCodeNote/tree/master/controller)
 
 <!-- controller runtime -->
 + [controller-runtime](https://godoc.org/sigs.k8s.io/controller-runtime)
@@ -103,7 +143,6 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 <!-- cert manager -->
 + [Deploying the cert manager](https://book.kubebuilder.io/cronjob-tutorial/cert-manager.html#deploying-the-cert-manager)
 + [cert-manager ](https://cert-manager.io/docs/installation/kubernetes/)
-
 
 <!-- test -->
 + [fake](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/client/fake)

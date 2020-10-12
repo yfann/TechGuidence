@@ -19,6 +19,8 @@
 <!-- <group>/<version> -->
 + apps/v1beta2 
 
++ `curl http://localhost:8001/apis/servicecatalog.k8s.io/v1beta1`
+
 ## pod中访问k8s API
 
 + POD中访问一个service
