@@ -5,7 +5,14 @@
     + RAFT 
     + 奇数个实例(分成两半后其中多数的一方可以更新state)
 + API server
-    + the only component that communicates with etcdß
+    + 操作etcd的唯一入口
+    + request->Authentications->Authorizations->Admission controls
+        + Admission Control会修改资源，添加或修改字段
+    + request如果只是获取数据,不会经过Admission controls
+    + clients 通过HTTP connection watch资源
+        + 如果资源发生变化，API server会发送新版本的资源到HTTP connection到clients
+        + clients包括kubectl,control plane components
+
 + Scheduler
 + Controller Manager
 
@@ -21,3 +28,7 @@
 + `etcdctl ls /registry/pods/default`  etcd中的key是个directory，可以看到内部的key
     + `etcdctl get /registry --prefix=true` etcd version3 不支持文件夹作为key，可以做为前缀
 + `etcdctl get /registry/pods/default/kubia-159041347-wt6ga`
+<!-- API server -->
++ `kubectl get pods --watch`
+## ref
++ [admission controllers](https://kubernetes.io/docs/admin/admission-controllers/)

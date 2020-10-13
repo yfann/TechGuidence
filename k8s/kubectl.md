@@ -230,7 +230,9 @@
     + `kubectl delete rc --all`
 + `--record`  history的一部分
     + `kubectl create -f kubia-deployment-v1.yaml --record`
-
++ `--watch` 监控资源的变化
+    + `kubectl get pods -o yaml --watch`
+    + `kubectl get pods --watch`
 
 + `kubectl edit`	Opens the object’s manifest in your default editor. After making changes, saving the file, and exiting the editor, the object is updated. Example: kubectl edit deployment kubia
 + `kubectl patch`	Modifies individual properties of an object. Example: kubectl patch deployment kubia -p '{"spec": {"template": {"spec": {"containers": [{"name": "nodejs", "image": "luksa/kubia:v2"}]}}}}'
