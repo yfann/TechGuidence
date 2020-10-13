@@ -15,6 +15,7 @@ kubectl create secret generic db-user-pass \
 + `kubectl edit secrets <secret name>`
 
 + `echo -n 'admin' | base64`
++ `echo 'MWYyZDFlMmU2N2Rm' | base64 --decode`
 
 ## Secret
 

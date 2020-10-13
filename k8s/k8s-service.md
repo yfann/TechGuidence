@@ -177,8 +177,10 @@ spec:
 ```
 
 + Ingress
-  + 每个load balancer都需要个IP
-  + Ingerss只需要一个IP,可以转发所有services(根据request的host,path决定)
+  + 每个load balancer都需要个IP.Ingerss只需要一个IP,可以转发所有services(根据request的host,path决定)
+  + ingress controller 运行反向代理(Nginx)
+    + Ingress controller forward traffic to ther service's pod directly instead of going throught the service IP
+      + 这种方式获取不到client IP
   + 工作在application level,可以cookie-based sessio affinity(service不可以)
   + `kubectl get po --all-namespaces` ingress controller 是否开启
   + `kubectl get ingresses` 查看域名的ingress controller IP
@@ -203,6 +205,7 @@ spec:
           serviceName: kubia-nodeport     ❷
           servicePort: 80                 ❷
 ```
+
 
 ## readiness probes
 + 决定Pod什么时候可以接受请求

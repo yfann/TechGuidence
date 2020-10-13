@@ -30,8 +30,32 @@
         + run a reconciliation loop
             + reconciles the actual state with the desired state,writes the actual state to the resource's status section
 
+
+
+
 ## worker node
 + kubelete 只能运行在system上，其他component可以运行在pod上
+    + responsible for everything running on a worker node
+    + monitor running contianers
+    + run liveness probes
+        + restart containers when i't fail
+
++ kube-proxy
+    + userspace proxy
+        + client---------iptables---------->kube-proxy-->pod
+            + round-robin
+    + iptable proxy
+        + client-------iptables----->pod
+            + randomly
+
+## add-ons
++ enable feature
++ deployed as pods
+    + deploy by Deployment,RC,DaemonSet
+
++ DNS add-on
+    + pods use the cluster's internal DNS server by default
+    + exposed by kube-dns service
 
 ## cmd
 + `kubectl get componentstatuses`
