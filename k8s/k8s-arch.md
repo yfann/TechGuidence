@@ -25,6 +25,7 @@
 
 + Controller Manager
     + controller
+        + controller之间不知道彼此的存在只和API server交互
         + make resources' actual state towards the desired state(reconciliation)
         + watch the API server for changes to resources
         + run a reconciliation loop
@@ -57,6 +58,87 @@
     + pods use the cluster's internal DNS server by default
     + exposed by kube-dns service
 
+
+## kubectl create a deployment
+1. kubectl post deployment to API server
+2. Deployment controller 通过API server watch到了新创建的资源，创建ReplicaSets
+3. ReplicaSet controller watch到了新的resource, 开始创建pods
+4. Scheduler watch到新的pods， 为他们挑选合适的nodes，设置pods的nodeName
+5. 对应node上的kubelet 通过API server watch到pods的调度信息，构建docker(container),运行pod的container
+
+## cluster events
+
++ control plane components and kubelet emit events to API server as they perform actions
+    + create event resources
+    + `kubectl describe pods`
+    + `kubectl get events`
+
+## running pod
+
++ pause container(Infrastructure container) 
+    + ssh to a worker node
+        + `docker ps`
+            + list pause container
+    + holds all contianers in a pod(hold all linux namespaces)
+    + lifecycle is tied to the pod
++ pod network
+    + each pod has a IP
+    + pod can communicate with each other(无论是否在同一个worker node
+    + NAT-less communication between pods
+        + 发送的packet的IP不用改
+        + pod to pod
+        + pod to node
+    + pod to internet
+        + pod 发送的packet的IP(私有IP,pod IP)要换成host worker node的IP
+
++ virtual Ethernet interface pair (a veth pair)
+    + vethXXX in host's namespace
+        + attached to a network bridge that the container runtime is configured to use
+    + eth0 in container's network namespace
+        + assigned an IP address from the bridge’s address range
+        + node 的网络出口
+    + app(in container)-->eth0-->vethxxx--->bridge-->received by any network interface connecd to the bridge
+        + pod A's veth pair--->bridge-->pod b's veth pair
+    + 同一个node中的container连接着同一个bridge
+    + `ifconfig` on the node
+
++ nodes comunication
+    + pod IP在cluster中唯一
+    + plain layer 3 networking
+        + physical network
+        + Routing table
+    + 不同node的bridge要保证不同node 中pod IP不会冲突
+        +  non-overlapping address 
+            + bridge1 10.1.1.0/24
+            + bridge2 10.1.2.0/24
+    + same network switch
+        + pod A's veth pair-->node A bridge-->node A physical adapter--->node B physical adapter--->node B bridge--->container B veth pair
+    + Software Defined Network (SDN)
+        + 看起来像在同一个network switch
+
+## Container Network Interface (CNI)
++ To make it easier to connect containers into a network
+    + Calico
+    + Flannel
+    + Romanna
+
+
+## kube-proxy
++ kube-proxy process running on each node 
+    + userspace proxy mode
+    + iptables proxy mode
++ service IP is virtual
+    + can't ping
++ iptables
+    + kube-proxy uses iptables to make service available on each node
+        + each packet destined for the sservice IP----->intercepted(modified dest address)--> pods backing the service
+    + kube-proxy watch services
++ endpoints
+    + holds IP/port pairs for pods backing the service
+    + kube-proxy watch endpoints
+
++ packet(dest: service IP)------>kube-proxy(iptables,endpoints)---->packet(dest: pod IP)
+
 ## cmd
 + `kubectl get componentstatuses`
 + `kubectl attach`
@@ -70,3 +152,4 @@
 + `kubectl get pods --watch`
 ## ref
 + [admission controllers](https://kubernetes.io/docs/admin/admission-controllers/)
++ [CNI](https://kubernetes.io/docs/concepts/cluster-administration/addons/)

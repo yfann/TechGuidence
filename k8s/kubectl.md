@@ -219,6 +219,13 @@
 + `kubectl get node`
 + `kubectl label node minikube disk=ssd`
 
+## events
++ `kubectl get events --watch`
+
+## debug
++ ssh a worker node
+    + `docker ps`
+
 ## tips
 + `--all-namespaces`
 + `--previous` 
