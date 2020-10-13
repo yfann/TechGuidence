@@ -36,10 +36,23 @@
 
 
 ## proxy
-+ `netsh winhttp set proxy <proxy>:<port>`
+<!-- + `netsh winhttp set proxy <proxy>:<port>`
 + `netsh winhttp reset proxy`
-+ `netsh winhttp show proxy`
-
++ `netsh winhttp show proxy` -->
++ `notepad $Profile`
+```sh
+# 粘贴
+function Clear-proxy{
+    $env:HTTP_PROXY=$null
+    $env:HTTPS_PROXY=$null
+    $env:NO_PROXY=$null
+}
+function Set-Proxy{
+    $env:HTTP_PROXY=""
+    $env:HTTPS_PROXY=""S
+    $env:NO_PROXY= "kubernetes.docker.internal:6443"
+}
+```
 
 ## PROFILE
 + 可以customise环境，PowerShell启动时执行的脚本

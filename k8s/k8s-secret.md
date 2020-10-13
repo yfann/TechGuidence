@@ -1,5 +1,6 @@
 
 ## cmd 
+
 + `kubectl create secret`
 ```bash
 # 设置键名
@@ -7,15 +8,22 @@ kubectl create secret generic db-user-pass \
   --from-file=username=./username.txt \
   --from-file=password=./password.txt
 ```
+
 + `kubectl get secrets`
     - `kubectl get secret <secret name> -o yaml`
 + `kubectl describe secrets/db-user-pass`
 + `kubectl edit secrets <secret name>`
 
++ `echo -n 'admin' | base64`
+
 ## Secret
+
 + 保存敏感信息
+
 + 服务账号使用 API 凭证自动创建和附加 Secret
+
 + Secret 对象的名称必须是合法的 DNS 子域名
+
 + 数据
     + data,存储base64编码的任意数据
         - `echo -n 'admin' | base64`
@@ -27,7 +35,9 @@ data:
   config.yaml: YXBpVXJsOiAiaHR0c...
 # ......
 ```
+
 + 挂载的 Secret 会被自动更新
+
 + 不可变类型(关闭 kube-apiserver 对其的监视)
 ```yaml
 apiVersion: v1
@@ -38,7 +48,9 @@ data:
   ...
 immutable: true
 ```
+
 ## 使用
+
 + 挂载到容器上的卷中的文件(Pod使用放在卷上的Secret)
   - secret对象会先于依赖他的Pod创建
 ```yaml
@@ -67,6 +79,7 @@ spec:
         path: my-group/my-username
         mode: 511
 ```
+
 + 作为容器的环境变量
   - 必须先创建 Secret，Pod引用不存在的Secret时无法启动
   - `echo $SECRET_USERNAME`
@@ -106,15 +119,21 @@ spec:
           name: mysecret
   restartPolicy: Never
 ```
+
 + kubelet 为Pod拉取镜像时使用
   - `imagePullSecrets`
 
+
 ## tips
 + 通过 API 创建 Pod 时，不会检查引用的 Secret 是否存在。一旦 Pod 被调度，kubelet 就会尝试获取该 Secret 的值. Kubelet会重试直到获取Secret值
+
 + Secret 不会被写入磁盘，而是被 kubelet 存储在 tmpfs 中。 一旦依赖于它的 Pod 被删除，Secret 数据的本地副本就被删除。
+
 + 你可以为 Secret 数据开启静态加密， 这样 Secret 数据就不会以明文形式存储到etcd 中。
+
 + By default, the default-token Secret is mounted into every container
   + pod.spec.automountService-AccountToken:false 可以关掉
+
 + secret data是base64编码
   + base64支持二进制数据
   + 1MB 大小限制

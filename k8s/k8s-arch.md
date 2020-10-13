@@ -5,6 +5,7 @@
     + RAFT 
     + 奇数个实例(分成两半后其中多数的一方可以更新state)
 + API server
+    + store resources in etcd and notify chients about the change
     + 操作etcd的唯一入口
     + request->Authentications->Authorizations->Admission controls
         + Admission Control会修改资源，添加或修改字段
@@ -13,8 +14,21 @@
         + 如果资源发生变化，API server会发送新版本的资源到HTTP connection到clients
         + clients包括kubectl,control plane components
 
-+ Scheduler
++ Scheduler 
+    + wait new pod through the API server's watch mechanism
+    + assign a node to new pod
+    + update the pod definition throught API server for scheduled pod
+    + scheduling algorithm
+        + filter nodes which the pods can be scheduled to
+        + Prioritizing the acceptable nodes
+    + pod can set schedulerName(pod is scheduled using a named Scheduler)
+
 + Controller Manager
+    + controller
+        + make resources' actual state towards the desired state(reconciliation)
+        + watch the API server for changes to resources
+        + run a reconciliation loop
+            + reconciles the actual state with the desired state,writes the actual state to the resource's status section
 
 ## worker node
 + kubelete 只能运行在system上，其他component可以运行在pod上

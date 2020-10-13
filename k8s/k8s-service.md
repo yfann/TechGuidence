@@ -136,6 +136,9 @@ spec:
   - port: 80
 ```
 
++ endpoint controller会watch service 和 pod的变化
+  + 把pod selector对应的pods的IP 加入到endpoints的list中
+
 ## external client使用cluster中的service
 
 + NodePort service
