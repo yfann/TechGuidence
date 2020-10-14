@@ -37,3 +37,7 @@
     + 发送和接收都是阻塞操作，直到另一个goroutine接收或发送值
     + 发送和接收同步
 
+
+
+## ref
++ [Goroutines和Channels](https://docs.hacknode.org/gopl-zh/ch8/ch8.html)
