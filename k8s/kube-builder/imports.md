@@ -19,3 +19,10 @@ appslisters "k8s.io/client-go/listers/apps/v1"
 ## ref
 + [k8s.io/api/apps/v1](https://pkg.go.dev/k8s.io/api/apps/v1#ControllerRevision)
 + [k8s.io/api/core/v1](https://pkg.go.dev/k8s.io/api/core/v1#pkg-overview)
+<!-- libs -->
++ [Scheme](https://godoc.org/k8s.io/apimachinery/pkg/runtime#Scheme)
++ [Manager](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/manager#Manager)
++ [reconciler](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/reconcile)
++ [context](https://golang.org/pkg/context/)
++ [logr](https://github.com/go-logr/logr)
++ [builder](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/builder)

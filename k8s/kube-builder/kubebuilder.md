@@ -15,11 +15,16 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 + `go mod init xxx`
 + `kubebuilder init --domain vcap.domain`
 + `kubebuilder create api --group hsc.philips.com --version v1 --kind VcapServicesConverter`
-+ `make install` generate CRD and install CRD to k8s(proxy,mac verification->mac ->security&privacy->General->allow apps download from ...) 
+
++ `make install` generate CRD and install CRD to k8s(mac的环境配置proxy,mac verification->mac ->security&privacy->General->allow apps download from ...) 
     + `make` generate CRD
+
 + `make run ENABLE_WEBHOOKS=false` running webhooks locally needs to generate certificate for the webhooks`/tmp/k8s-webhook-server/serving-certs/tls.{crt,key}` and proxy traffic from remote cluster to your local webhook server
+
 + `kubectl create -f config/samples/xxx.yaml`
+<!-- docker build -->
 + `make docker-build docker-push IMG=<some-registry>/<project-name>:tag`
+    + `make docker-build IMG=<project-name>:tag`
 + `make deploy IMG=<some-registry>/<project-name>:tag`
 
 
@@ -100,7 +105,7 @@ _ = v1beta1.AddToScheme(scheme)
 ## ref
 + [深入解析 Kubebuilder：让编写 CRD 变得更简单****************](https://juejin.im/post/6844903952241131534)
 + [kuberbuilder****************](https://book.kubebuilder.io/introduction.html)
-+ [kubernetes-sigs/kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
++ [kubernetes-sigs/kubebuilder](https://github.com/kubernetes-sigs/kubebuilder/blob/master/docs/book/getting_started/hello_world.md)
 + [利用 kubebuilder 优化 Kubernetes Operator 开发体验](https://zhuanlan.zhihu.com/p/67406200)
 + [《 KUBEBUILDER V2 使用指南 》](https://blog.upweto.top/gitbooks/kubebuilder/)
 + [yinwenqin/kubeSourceCodeNote](https://github.com/yinwenqin/kubeSourceCodeNote/tree/master/controller)
@@ -113,16 +118,7 @@ _ = v1beta1.AddToScheme(scheme)
 
 <!-- sample -->
 + [cronjob-tutorial](https://github.com/kubernetes-sigs/kubebuilder/tree/master/docs/book/src/cronjob-tutorial/testdata/project)
-
-
-<!-- libs -->
-+ [Scheme](https://godoc.org/k8s.io/apimachinery/pkg/runtime#Scheme)
-+ [Manager](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/manager#Manager)
-+ [reconciler](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/reconcile)
-+ [context](https://golang.org/pkg/context/)
-+ [logr](https://github.com/go-logr/logr)
-+ [builder](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/builder)
-
++ [Controller Example](https://book-v1.book.kubebuilder.io/basics/simple_controller.html)
 
 <!-- markers -->
 + [Markers for Config/Code Generation](https://book.kubebuilder.io/reference/markers.html)

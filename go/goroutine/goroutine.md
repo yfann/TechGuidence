@@ -3,8 +3,21 @@
 + 每一个并发执行的活动为goroutine
 + main为主goroutine
 + main退出后所有goroutine强制退出
-+ `go method()`
++ 比线程轻量
+    + goroutine栈内存2KB，可以扩大到1GB
+        + 线程固定2MB
+    + goroutine的调度由go自身的调度器完成(go内部事件，通道，互斥量)
+        + 线程的调度由OS的内核完成
+    + 协程同线程类似于线程同进程
+        + 多个协程绑到同一个线程上执行
 
+
+
+## tips
++ `go method()`启动一个goroutine
++ 每个request被一个goroutine处理
+    + 可能一个goroutine会创建出多个goroutine
+        + context来来处理goroutine间的切换，cancel
 
 ## 通道
 
@@ -23,3 +36,4 @@
 + 无缓存通道（同步通道）
     + 发送和接收都是阻塞操作，直到另一个goroutine接收或发送值
     + 发送和接收同步
+

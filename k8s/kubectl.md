@@ -183,6 +183,11 @@
 + `kubectl get secrets`
 + `kubectl describe secrets`
 + `kubectl create secret generic <name> --from-file=<file name>`
++ `kubectl get secret regcred --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode`
+    + `kubectl get secrets/vcap-services -n crd --template={{.data.SomeKey}}|base64 -D`
++ `echo -n 'admin' | base64`
++ `echo 'MWYyZDFlMmU2N2Rm' | base64 --decode`
+
 
 ## replicationController
 + `kubectl get rc`
@@ -226,6 +231,8 @@
 + ssh a worker node
     + `docker ps`
 
++ `kubectl get events --watch`
+
 ## tips
 + `--all-namespaces`
 + `--previous` 
@@ -239,6 +246,9 @@
     + `kubectl get pods -o yaml --watch`
     + `kubectl get pods --watch`
 + `-f` 后面文件或文件夹
++ `--output=yaml`
++ `-o yaml`
+    + `-o wide`
 
 + `kubectl edit`	Opens the object’s manifest in your default editor. After making changes, saving the file, and exiting the editor, the object is updated. Example: kubectl edit deployment kubia
 + `kubectl patch`	Modifies individual properties of an object. Example: kubectl patch deployment kubia -p '{"spec": {"template": {"spec": {"containers": [{"name": "nodejs", "image": "luksa/kubia:v2"}]}}}}'

@@ -206,6 +206,10 @@ for _, num := range nums {
 + [go design](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design)
 + [The Go Programming Language](http://www.gopl.io/)
 + [深入解析Go](https://tiancaiamao.gitbooks.io/go-internals/content/zh/)
+
+<!-- books -->
++ [Go语言圣经（中文版)](https://docs.hacknode.org/gopl-zh/index.html)
+
 <!-- tools -->
 + [vscode go](https://github.com/golang/vscode-go/blob/master/docs/commands.md#go-locate-configured-go-tools)
 + [online go](https://play.golang.org/)
