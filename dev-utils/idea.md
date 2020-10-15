@@ -48,6 +48,7 @@
 + lombok不能识别
     - settings->Plugins->安装lombok插件
     - settings->Build->Compiler->Annotation Processors->Enable annotation processing
-+ `cannot resolve xxx` 按`alter+Enter`导入包
++ `cannot resolve xxx` 
+    + 按`alter+Enter`导入包
 + `Failed to notify build listener.`
     + idea 版本和gradle版本不匹配

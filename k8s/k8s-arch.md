@@ -150,6 +150,50 @@
 + `etcdctl get /registry/pods/default/kubia-159041347-wt6ga`
 <!-- API server -->
 + `kubectl get pods --watch`
+
+
+
+## development on k8s
+
+### pod's lifecycle
+
++ apps in a pod can be killed and relocated
+    + run app in a new pod
+    + pod的IP会变
+    + statefulSet的hostname不会变
+    + 写在container filesystem上的文件会丢失（be killed,restarted ...）
+        + 可以写在volumn上
+            + volumn的生命周期随pod
+    + RS controller doesn't reschedule dead pods
+
++ start pods in order
+    + init container
+        + writing data-->volumn-->mount to main container
+        + can delay the start of main container
+```yaml
+spec:
+  initContainers:                                                        
+  - name: init
+    image: busybox
+    command:
+    - sh
+    - -c
+    - 'while true; do echo "Waiting for fortune service to come up...";  
+      wget http://fortune -q -T 1 -O /dev/null >/dev/null 2>/dev/null   
+      && break; sleep 1; done; echo "Service is up! Starting main       
+      container."'
+```
+
++ readiness prob
+    + affect app is added as sevice endpoint
+    + also deployment controller performs a rolling update
+
++
+
+## tips
++ CrashLoopBackOff
+    + kubelet is delaying the restart because the container keeps crashing
+
 ## ref
 + [admission controllers](https://kubernetes.io/docs/admin/admission-controllers/)
 + [CNI](https://kubernetes.io/docs/concepts/cluster-administration/addons/)

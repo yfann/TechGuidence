@@ -52,7 +52,7 @@
     - `@ImportResource`导入XML配置
 + `@Component`
     - `@Component("bean name")`
-+ `@ComponentScan` 搜集所有Spring组件
+    - ComponentScan 搜集所有Spring组件
 + `@EnableAutoConfiguration`
     - 自动配置
     - 添加在`@Configuration`类上
@@ -85,4 +85,4 @@
 + [@Retryable](https://chinalhr.github.io/tags/java_springboot_component1/)
 + [Spring Boot轻松理解动态注入，删除bean](https://www.jianshu.com/p/916800fdd52d)
 + [@ConditionalOn](https://zhuanlan.zhihu.com/p/78251301)
-+ [@ConfigurationProperties](https://juejin.im/post/6844903901607493646)
++ [@ConfigurationProperties](https://segmentfault.com/a/1190000020183307)

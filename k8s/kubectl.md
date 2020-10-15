@@ -127,13 +127,13 @@
 ## dashboard
 + `kubectl proxy`
 
-## exec
+## exec 
 + `kubectl exec -it <pod name> bash`
     + `kubectl exec -it shell-demo -- /bin/bash` 
         - ` -- ` 后面的命令在目标pod中执行
         - `--container [container name]`如果pod有多个容器`--c [container name]`
             - `kubectl describe pod/[pod name]` 查看容器数
-+ `kubectl exec kubia-3inly env`
++ `kubectl exec <pod name> env -n namespace`
 
 ## API & resources
 + `kubectl api-versions`
