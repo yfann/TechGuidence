@@ -1,6 +1,6 @@
 
 
-## install 
+## mac install 
 + brew install kustomize
 + kubebuilder
 ```sh
@@ -8,6 +8,12 @@ os=$(go env GOOS)
 arch=$(go env GOARCH)
 curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 ```
+
+## linux install
++ download https://raw.githubusercontent.com/\
+kubernetes-sigs/kustomize/master/hack/install_kustomize.sh
++ chmod +x ./install_kustomize.sh 
++ sudo mv kustomize /usr/local/bin
 
 
 ## create project
