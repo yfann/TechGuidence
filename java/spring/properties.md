@@ -114,6 +114,9 @@ private String jdbcUrl;
 
 ```
 + SpEL evaluation support
+```java
+@Value("#{'${spring.profiles.active}' == 'local'}") 
+```
 + 字段不需要setter
 
 

@@ -152,10 +152,7 @@
 + `kubectl get pods --watch`
 
 
-
-## development on k8s
-
-### pod's lifecycle
+## pod's lifecycle
 
 + apps in a pod can be killed and relocated
     + run app in a new pod
@@ -188,9 +185,44 @@ spec:
     + affect app is added as sevice endpoint
     + also deployment controller performs a rolling update
 
-+ lifecycle hooks(per container)
-    + post-start hooks(when container starts)
-    + pre-stop hooks(before container stops)
++ lifecycle hooks
+    + container level
+        + 在pod的生命周期中container可能会多次重启（liveness probe fail）
+    + can execute a command inside the container
+    + perform an HTTP GET reqeust against a URL
+    + types
+        + post-start hooks(when container starts)
+            + execute after main process is started(Parallel)
+            + 可以为第三方application提供additional operations
+            + hook 的log 只能保存在文件中需要自己创建
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-with-poststart-hook
+spec:
+  containers:
+  - image: luksa/kubia
+    name: kubia
+    lifecycle:                                                             ❶
+      postStart:                                                           ❶
+        exec:                                                              ❷
+          command:                                                         ❷
+          - sh                                                             ❷
+          - -c                                                             ❷
+          - "echo 'hook will fail with exit code 15'; sleep 5; exit 15"    ❷
+# container中执行 /bin/postStart.sh  存储在镜像中
+```
+        + pre-stop hooks(before container stops)
+```yaml
+   lifecycle:
+      preStop:                ❶
+        httpGet:              ❶
+          port: 8080          ❷
+          path: shutdown      ❷
+# send get request to http://POD_IP:8080/shutdown
+# 不能设置localhost(指向node)
+```
 
 ## tips
 + CrashLoopBackOff
@@ -200,7 +232,7 @@ spec:
     + deployment(依赖secret)
         + deployment先创建
         + 取不到secret时，pod会创建失败
-        + 然后重试
+        + 然后重试(一段时间后停止重试,有新资源建立后会触发reconcile)
         + 直到servicebinding创建成功后能获取到secret
     + servicebinding(创建secret)
 

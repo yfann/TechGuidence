@@ -35,7 +35,9 @@ spring:
 ## issues
 + gradle build 失败时
   - 检查命令行或IDE中的gradle版本是否和项目一致
-    + e.g.
++ gradle拉取失败时
+  - 检查idea的proxy
+  - gradle-wrapper.properties url中改可用地址
 
 ## spring boot plugin
 + bootJar/bootWar 可执行jar/war

@@ -18,6 +18,8 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 
 + `make install` generate CRD and install CRD to k8s(mac的环境配置proxy,mac verification->mac ->security&privacy->General->allow apps download from ...) 
     + `make` generate CRD
+<!-- under project dir -->
++ `make uninstall`
 
 + `make run ENABLE_WEBHOOKS=false` running webhooks locally needs to generate certificate for the webhooks`/tmp/k8s-webhook-server/serving-certs/tls.{crt,key}` and proxy traffic from remote cluster to your local webhook server
 
@@ -91,6 +93,10 @@ Reconcile(rsvc)
     + 处理完后设置为空,可以删除对象
 + OwnerReference
     + 删除对象时，会把OwnerReference是该对象的对象一并删除
+
+## debug
+
++ 需要先安装对应的crd
 
 ## tips
 

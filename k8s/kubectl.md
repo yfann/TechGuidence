@@ -230,8 +230,9 @@
 ## debug
 + ssh a worker node
     + `docker ps`
-
 + `kubectl get events --watch`
++ `kubectl logs <pod name> --previous`可以查看之前的log,查找重启原因
++ `kubectl exec <pod name> env -n namespace`
 
 ## tips
 + `--all-namespaces`
