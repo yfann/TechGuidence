@@ -144,6 +144,19 @@ global:
 ```
 + `.helmignore`
 + `<chart name>/<./chart directory>`
+
+
+## resource的安装顺序
+
++ 同kind的安装顺序
+```yaml
+ annotations:
+    helm.sh/hook: pre-install
+    helm.sh/hook-weight: "10"
+# low value has higher priority
+```
+
+
 ## ref
 + [Helm docs](https://helm.sh/docs/helm/helm_show_values/)
 + [Helm 用户指南](https://whmzsu.github.io/helm-doc-zh-cn/)
@@ -151,6 +164,11 @@ global:
 + [空白处理](https://www.qikqiak.com/k8s-book/docs/46.Helm%E6%A8%A1%E6%9D%BF%E4%B9%8B%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B.html)
 <!-- detail -->
 + [使用Helm管理kubernetes原生应用](https://jimmysong.io/posts/manage-kubernetes-native-app-with-helm/)
+
+<!-- helm in order -->
++ [resource安装顺序](https://github.com/helm/helm/blob/release-2.10/pkg/tiller/kind_sorter.go#L29)
++ [chart order](https://helm.sh/docs/topics/charts/#operational-aspects-of-using-dependencies)
+
 <!-- repo -->
 + [Helm Hub](https://hub.helm.sh/charts)
 + [stable repo](https://github.com/helm/charts/tree/master/stable)

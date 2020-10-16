@@ -188,12 +188,25 @@ spec:
     + affect app is added as sevice endpoint
     + also deployment controller performs a rolling update
 
-+
++ lifecycle hooks(per container)
+    + post-start hooks(when container starts)
+    + pre-stop hooks(before container stops)
 
 ## tips
 + CrashLoopBackOff
     + kubelet is delaying the restart because the container keeps crashing
 
++ 安装有依赖的k8s resource时(获取不到依赖时，重试直到依赖资源ready)
+    + deployment(依赖secret)
+        + deployment先创建
+        + 取不到secret时，pod会创建失败
+        + 然后重试
+        + 直到servicebinding创建成功后能获取到secret
+    + servicebinding(创建secret)
+
 ## ref
 + [admission controllers](https://kubernetes.io/docs/admin/admission-controllers/)
 + [CNI](https://kubernetes.io/docs/concepts/cluster-administration/addons/)
+
+<!-- cases -->
++ [helm安装deployment，servicebinding顺序不对时为何不会失败](https://stackoverflow.com/questions/63472047/helm-3-deployment-order-of-kubernetes-service-catalog-resources)
