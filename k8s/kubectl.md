@@ -86,6 +86,8 @@
 ## logs
 + `kubectl logs <pod-name> [-f xxx]` pod logs(contianer log)
     - `kubectl logs <pod-name> -c <contianer-name>`
++ `kubectl exec <pod> cat <logfile>`
++ `kubectl logs <pod name> --previous`
 
 ## k8s monitoring
 + `kubectl top node <node name>`显示cpu和memory的metrics
@@ -134,6 +136,8 @@
         - `--container [container name]`如果pod有多个容器`--c [container name]`
             - `kubectl describe pod/[pod name]` 查看容器数
 + `kubectl exec <pod name> env -n namespace`
++ `kubectl cp <pod>:/var/log/foo.log foo.log` copy container文件
+    + `kubectl cp localfile foo-pod:/etc/remotefile` copy文件到container
 
 ## API & resources
 + `kubectl api-versions`
@@ -250,6 +254,9 @@
 + `--output=yaml`
 + `-o yaml`
     + `-o wide`
++ `--grace-period`
+    + `kubectl delete po mypod --grace-period=5`
+    + `kubectl delete po mypod --grace-period=0 --force`
 
 + `kubectl edit`	Opens the object’s manifest in your default editor. After making changes, saving the file, and exiting the editor, the object is updated. Example: kubectl edit deployment kubia
 + `kubectl patch`	Modifies individual properties of an object. Example: kubectl patch deployment kubia -p '{"spec": {"template": {"spec": {"containers": [{"name": "nodejs", "image": "luksa/kubia:v2"}]}}}}'

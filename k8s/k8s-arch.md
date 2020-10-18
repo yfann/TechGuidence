@@ -184,6 +184,10 @@ spec:
 + readiness prob
     + affect app is added as sevice endpoint
     + also deployment controller performs a rolling update
+    + connection refused
+        + 这里错误是Pod启动时就设置了endpoint，还没准备好接受request
+            + 设置readiness prob避免此类型错误
+                + HTTP GET readiness probe指向base url
 
 + lifecycle hooks
     + container level
@@ -222,8 +226,71 @@ spec:
           path: shutdown      ❷
 # send get request to http://POD_IP:8080/shutdown
 # 不能设置localhost(指向node)
+---
+ lifecycle:
+      preStop:
+        exec:
+          command:
+          - sh
+          - -c
+          - "sleep 5"
 ```
 
++ shutdown pod
+    + API server receives HTTP DELETE request
+    + set deletionTimestamp field on pods
+    + kubelet starts terminating pod's contianers(termination grace period,30sec in default)
+        + pre-stop hook
+        + send the SIGTERM  signal to main processs of the container
+        + wait the container shuts down or the termination grace period runs out
+        + kill the process with SIGKILL if it hasn't terminated gracefully
+    + `kubectl delete po mypod --grace-period=5`
+
+
++ data migration on pod deletion(StatefulSets scale down)
+    + 需要有个long runing pod检查orphaned data.当发现orphaned data时，把data迁移到现存的pod上
+        + 延迟执行，防止Statfulsets update时迁移数据
+
+## pod's images
++ Go language 的image不需要保护额外的库
++ image要打tag 不要用latest
++ imagePullPolicy:always
+    + 每次新建pod都会连接image registry去查看image是否改变
++ add multiple labels to resources(方便不同维度选择资源)
++ annotation添加额外信息（微服务描述依赖服务）
++ 提供terminated原因
+    + `kubectl describe pod`
+    + `terminationMessagePath: /var/termination-reason`默认/dev/termination-log
+    + `terminationMessagePolicy:FallbackToLogsOnError`he last few lines of the container’s log are used as its termination message (but only when the container terminates unsuccessfully).
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-with-termination-message
+spec:
+  containers:
+  - image: busybox
+    name: main
+    terminationMessagePath: /var/termination-reason                  ❶
+    command:
+    - sh
+    - -c
+    - 'echo "I''ve had enough" > /var/termination-reason ; exit 1'   ❷
+# 在退出前写message
+```
+
+## application logs
++ `kubectl logs`
+    + write log to standard output
+    + `--previous` container被替换后查看之前container的log
+    + `kubectl exec <pod> cat <logfile>`
+    + `kubectl cp foo-pod:/var/log/foo.log foo.log`
++ centralized logging
+    + ELK(ElasticSearch, Logstash, and Kibana)
+    + EFK(ElasticSearch, FluentD, and Kibana)
+        + FluentD
+            + log中的每一行对应ES中的一个item
+                + java中的多行stack trace不太好查看(解决：application输出json代替多行文本)
 ## tips
 + CrashLoopBackOff
     + kubelet is delaying the restart because the container keeps crashing
@@ -235,6 +302,15 @@ spec:
         + 然后重试(一段时间后停止重试,有新资源建立后会触发reconcile)
         + 直到servicebinding创建成功后能获取到secret
     + servicebinding(创建secret)
+
+## development
++ application outide k8s连接k8s API server
+    + 用ServiceAccount’s token认证
+        + `kubectl cp`copy ServiceAccount’s Secret’s files to local
+    + 或者用`kubectl proxy` on local
++ application需要在k8s里运行
+    + 可以用Docker volumes mount local filesystem to image
+        + 不用每次改代码都重新发布image
 
 ## ref
 + [admission controllers](https://kubernetes.io/docs/admin/admission-controllers/)
