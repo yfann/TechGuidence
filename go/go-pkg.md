@@ -7,6 +7,13 @@
     + 如果request超时，则所有的goroutine都应该被终止
 
 
+
+## imports
++ io
++ log
++ time
++ net
+
 ## tips
 
 + reflect.DeepEqual
