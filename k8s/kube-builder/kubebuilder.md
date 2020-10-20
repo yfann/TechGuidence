@@ -14,7 +14,7 @@ curl -L https://go.kubebuilder.io/dl/2.3.1/${os}/${arch} | tar -xz -C /tmp/
 kubernetes-sigs/kustomize/master/hack/install_kustomize.sh
 + chmod +x ./install_kustomize.sh 
 + sudo mv kustomize /usr/local/bin
-
++ curl -L https://go.kubebuilder.io/dl/2.3.1/linux/amd64 | tar -xz -C /tmp/
 
 ## create project
 
