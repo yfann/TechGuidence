@@ -153,8 +153,10 @@
         + `kubectl explain pods.spec` 
     
 ## context
+<!-- ~/.kube/config -->
 + `kubectl config view`
 + `kubectl config --kubeconfig=<config name> use-context <context>`
+    + `kubectl config user-context <context>`
 
 
 ## serviceaccounts
