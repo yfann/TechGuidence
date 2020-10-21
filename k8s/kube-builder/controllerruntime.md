@@ -22,11 +22,7 @@ mutate(obj)
         + CR controller创建的obj应该加上ownerReferences，这样CustomResource删除时，相关的资源也会被删除
         + garbage collector
 
-+ Reconcile()
-    + return error
-        + 会被log
-        + reconciliation will be requeued
-        + client.IgnoreNotFound(err)  忽略错误,不会requeue
+
 
 ## ref
 + [Package controllerruntime](https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.6.3)
