@@ -56,3 +56,16 @@ func Balance() int {
     return balance
 }
 ```
+
+## sync.Once
+
++ 用來解決一次性初始化問題，避免在变量被构建完成之前和其它goroutine共享该变量
+```go
+var loadIconsOnce sync.Once
+var icons map[string]image.Image
+// Concurrency-safe.
+func Icon(name string) image.Image {
+    loadIconsOnce.Do(loadIcons)
+    return icons[name]
+}
+```
