@@ -24,10 +24,12 @@ SyncPeriod *time.Duration -->
 + Reconcile()
 	+ return empty result and no error
 		+ tell controller-runtime successfully reconciled and don't need to try again until there's some changes
+		+ client.IgnoreNotFound(err)  忽略错误,不会requeue
+		+ 会打印 Successfully Reconciled
     + return error
         + 会被log
         + reconciliation will be requeued
-        + client.IgnoreNotFound(err)  忽略错误,不会requeue
+ 
 
 + reconcile()中获取或操作其他资源要设置RBAC
 <!-- // +kubebuilder:rbac:groups=deployment.hsc.philips.com.cn,resources=vcapservicesconverters/status,verbs=get;update;patch -->

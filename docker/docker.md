@@ -64,8 +64,11 @@
 <!-- log -->
 + `docker logs <container id>`
 
-
-
+<!-- repo -->
++ `docker login`
++ `docker push <repo>/<img name>:tag`
++ `docker pull <repo>/<img name>:tag`
++ `docker logout`
 
 ## DockerFile
 + 用来生成image文件
