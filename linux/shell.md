@@ -59,3 +59,4 @@ echo `expr index "$string" io`  # 输出 4
 + [Shell 教程](https://www.runoob.com/linux/linux-shell.html)
 + [online shell](https://www.runoob.com/try/runcode.php?filename=helloworld&type=bash)
 + [bash 教程](https://wangdoc.com/bash/intro.html)
++ [编写Shell 脚本编程最佳实践](https://zhuanlan.zhihu.com/p/264120455)
