@@ -48,3 +48,6 @@ var buf io.Writer
 ```
 
 + `fmt.Printf("%T\n",x)` 查看类型，内部反射
+
+## ref
++ [golang的struct里面嵌入interface](https://www.jianshu.com/p/a5bc8add7c6e)
