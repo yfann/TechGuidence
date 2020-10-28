@@ -44,3 +44,5 @@ $ GOMAXPROCS=2 go run hacker-cliché.go
 ## ref
 + [Goroutines和Channels](https://docs.hacknode.org/gopl-zh/ch8/ch8.html)
 + [Goroutines和线程](https://docs.hacknode.org/gopl-zh/ch9/ch9-08.html)
++ [什么是协程 ？](https://juejin.im/post/6844903921471717389)
++ [Go的CSP并发模型实现：M, P, G](https://developer.aliyun.com/article/611313)
