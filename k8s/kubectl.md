@@ -1,5 +1,6 @@
 
 ## cmd
+
 + `kubectl version`
     -  `--short=true`
 
@@ -24,11 +25,11 @@
     - `kubectl get -f myapp.yaml`
     - `kubectl describe -f myapp.yaml`
 
- 
 
 ## configMap
 + `kubectl create configmap <map-name> <data-source>` 
-    - `kubectl create configmap game-config --from-file=<directory>`   `--from-file`可多次使用
+    - `kubectl create configmap game-config --from-file=<directory>`   
+        - `--from-file`可多次使用
 + `kubectl describe configmaps <map-name> [-o yaml]` 查看map
 
 ## operate k8s obj
@@ -118,9 +119,10 @@
 
 ## namespace
 + `kubectl get ns`
++ `kubectl create ns <namespace>`
++ `kubectl delete ns <namespace>` also delete the resource under that namespace
++ `kubectl get all -n <namespace>`
 + `kubectl get po -n <namespace>`
-+ `kubectl create namespace custom-namespace`
-+ `kubectl delete ns custom-namespace` also delete the resource under that namespace
 
 ## net
 + `kubectl port-forward <pod-name> <local-port>:<pod-port>`
@@ -179,9 +181,7 @@
 + `kubectl create configmap <config-name> --from-literal=<key>=<val> --from-literal=<key>=<val>`
 + `kubectl create configmap my-config --from-file=mykey=config-file.conf`
 + `kubectl create configmap my-config --from-file=/path/to/dir`
-
 + `kubectl edit configmap <name>`
-
 + `kubectl get configmap fortune-config -o yaml`
 + `kubectl create -f fortune-config.yaml`
 
@@ -226,6 +226,7 @@
 + `kubectl rollout undo deployment kubia --to-revision=1`
 + `kubectl rollout pause deployment kubia`
 + `kubectl rollout resume deployment kubia`
+
 ## Node
 + `kubectl get node`
 + `kubectl label node minikube disk=ssd`

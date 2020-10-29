@@ -12,6 +12,11 @@
    - `mklink /d "%userprofile%\AppData\Local\Google\Chrome\User Data\Default" "E:\dropbox\Dropbox\default"`  更改chrome存储的位置
 + 换行(windows`^`,linux`\`)
 
+
+## shortcut
+
++ `win+x` 超级菜单
+
 ## choco(run as admin)
 
 + `choco list -l` -local-only
