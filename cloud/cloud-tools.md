@@ -44,3 +44,5 @@
 
 ## tools
 + fluentbit
++ [vault](https://www.jianshu.com/p/267f2d9ae87e)
++ [consul](https://www.hi-linux.com/posts/6132.html)
