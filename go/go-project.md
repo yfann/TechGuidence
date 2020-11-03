@@ -189,8 +189,6 @@ cd sample-controller
 + [Environment variables](https://golang.org/cmd/go/#hdr-Environment_variables)
 + [SettingGOPATH](https://github.com/golang/go/wiki/SettingGOPATH)
 
-+ [Make 命令教程](http://www.ruanyifeng.com/blog/2015/02/make.html)
-
 <!-- install -->
 + [Linux下安装Go环境](https://www.jianshu.com/p/c43ebab25484)
 + [mac安装go](https://www.jianshu.com/p/ad57228c6e6a)
