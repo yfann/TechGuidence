@@ -241,6 +241,9 @@
 + `kubectl logs <pod name> --previous`可以查看之前的log,查找重启原因
 + `kubectl exec <pod name> env -n namespace`
 
+## patch
++ `kubectl patch deployment website --patch "$(cat patch-website.yml)"`
+
 ## tips
 + `--all-namespaces`
 + `--previous` 
