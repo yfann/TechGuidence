@@ -1,0 +1,1 @@
++ [一致性协议raft](http://thesecretlivesofdata.com/raft/)
