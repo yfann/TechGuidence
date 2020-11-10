@@ -78,14 +78,17 @@ export GOPATH=$HOME/go
 source ~/.bash_profile
 ```
 
-## 包管理
+## 包管理(import)
 
 + package 中的成员大写开头可以导出
 
 + `import _ "image/png"`
 	+ 不会因为没有使用包而报错
+	+ 只想引入包并执行包中的init()
 
-+ import internal pkg
++ `import . "image/png"`可以不加前缀使用包
+
++ import 同项目pkg
 	+ `import <module name>/path/<pkg name>`
 
 + import package from remote modules
@@ -93,6 +96,7 @@ source ~/.bash_profile
 package main
 //远程pkg, go install,build run时会自动下载
 //并记录在go.mod中
+//在项目目录中使用go get <pkg>,会下载包并记录在go.mod中
 import (
 	"fmt"
 
@@ -182,7 +186,6 @@ cd sample-controller
 + go version
 
 ## ref
-
 + [查找Go包](https://godoc.org/?q=k8s.io)
 
 + [How to Write Go Code](https://golang.org/doc/code.html)
