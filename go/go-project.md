@@ -110,11 +110,23 @@ func main() {
 }
 ```
 
-<!-- 过时的 -->
-<!-- + dep(社区维护的包管理工具)
+
+<!-- + dep(社区维护的包管理工具) -->
+
+
+## vendor
+
 + vendor 包
 	+ go v1.5
-	+ 项目下有vendor目录，go工具链会优先使用vendor内的包 -->
+	+ 项目下有vendor目录，go工具链会优先使用vendor内的包 
+
++ 项目代码需要在 <go path>/src 下
+
++ 包查找路径
+	1. 当前包下的vendor
+	2. 上级目录查找直到找到src的vendor
+	3. GOPATH
+	4. GOROOT
 
 ## Go Modules
 + go v1.11
