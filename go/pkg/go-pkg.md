@@ -41,8 +41,14 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 <!-- 3rd pkg -->
 + [viper](https://github.com/spf13/viper)
     + configuration solution for Go application
++ [kelseyhightower/envconfig](https://github.com/kelseyhightower/envconfig)
+    + get environment variables to struct
 + [errors](github.com/pkg/errors)
     + add context to the failure path
+
+<!-- sync -->
+
+
 
 <!-- k8s -->
 + [package v1beta1](https://pkg.go.dev/github.com/kubernetes-sigs/service-catalog/pkg/apis/servicecatalog/v1beta1)
