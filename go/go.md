@@ -206,14 +206,19 @@ for _, num := range nums {
 + [go design](https://github.com/ardanlabs/gotraining/tree/master/topics/go/design)
 + [The Go Programming Language](http://www.gopl.io/)
 + [深入解析Go](https://tiancaiamao.gitbooks.io/go-internals/content/zh/)
+
 <!-- features -->
 + [Golang 中的标签（Tags in Golang）](https://zhuanlan.zhihu.com/p/260642112)
++ [go匿名组合](https://zhuanlan.zhihu.com/p/53846600)
+
 <!-- books -->
 + [Go语言圣经（中文版)](https://docs.hacknode.org/gopl-zh/index.html)
 + [Go 语言设计与实现](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-make-and-new/)
 + [Go 语言实战: 编写可维护 Go 语言代码建议](https://github.com/llitfkitfk/go-best-practice#23-%E4%B8%8D%E8%A6%81%E7%94%A8%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B%E5%91%BD%E5%90%8D%E4%BD%A0%E7%9A%84%E5%8F%98%E9%87%8F)
-+ [Go语言标准库***************](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/)
 
+<!-- pkg -->
++ [Go语言标准库***************](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/)
++ [tnent GO](https://cloud.tencent.com/developer/section/1145004)
 
 <!-- tools -->
 + [vscode go](https://github.com/golang/vscode-go/blob/master/docs/commands.md#go-locate-configured-go-tools)

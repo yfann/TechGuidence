@@ -31,7 +31,7 @@
 <!-- go pkg -->
 + `go doc rsc.io/quote/v3` 查看package
 + `go get <pkg>@<version>` 拉取指定版本
-+ `go get ./...` 下载安装所有依赖,go.mod目录下执行
++ `go get ./...` 下载安装所有依赖,go.mod目录下执行,更新go.mod
 	+ 默认`@latest`
 	+ 拉取指定版本`go mod edit --require=rsc.io/quote@v3.1.0`
 	+ `go mod edit --droprequire=golang.org/x/crypto`删除包，仅修改go.mod
@@ -196,6 +196,9 @@ cd sample-controller
 ## mac install
 + brew install go
 + go version
+
+
+
 
 ## ref
 + [查找Go包](https://godoc.org/?q=k8s.io)

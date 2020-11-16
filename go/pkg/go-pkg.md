@@ -37,6 +37,9 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [Package base64](https://golang.org/pkg/encoding/base64/#example_Encoding_EncodeToString)
 + [Package reflect](https://golang.org/pkg/reflect/)
 + [context](https://juejin.im/post/6844903555145400334)
++ [text/template](https://juejin.im/post/6844903762901860360)
++ [html/template](https://golang.org/pkg/html/template/)
+
 
 <!-- 3rd pkg -->
 + [viper](https://github.com/spf13/viper)
@@ -46,7 +49,6 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [errors](github.com/pkg/errors)
     + add context to the failure path
 
-<!-- sync -->
 
 
 
