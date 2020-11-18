@@ -128,6 +128,12 @@ func main() {
 	3. GOPATH
 	4. GOROOT
 
++ `go mod vendor`
+	+ go modules模式下，用vendor目录管理包
+	+ 不兼容godep
+	+ 把go.sum中的依赖放在vendor目录中
+	+ `go build -mod=vendor`构建项目（go modules模式下go build会屏蔽vendor）
+
 ## Go Modules
 + go v1.11
 
@@ -178,12 +184,12 @@ replace (
 	     https://goproxy.io 
 	     export GOPROXY=https://goproxy.cn,direct  -->
 
-+ godep project 使用(project安装在GOPATH中)
+<!-- + godep project 使用(project安装在GOPATH中)
 ```go
 go get -d k8s.io/sample-controller
 cd $GOPATH/src/k8s.io/sample-controller
 godep restore
-```
+``` -->
 
 + go module project 使用
 ```go
