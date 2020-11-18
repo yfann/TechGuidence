@@ -51,3 +51,4 @@ pip3 install xxxx
 
 ## ref
 + [给 Windows 的终端配置代理](https://zcdll.github.io/2018/01/27/proxy-on-windows-terminal/)
++ [在 Windows 上给 Git SSH 设置代理](https://walkedby.com/sshwindowsproxy/)

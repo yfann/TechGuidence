@@ -51,3 +51,4 @@ var buf io.Writer
 
 ## ref
 + [golang的struct里面嵌入interface](https://www.jianshu.com/p/a5bc8add7c6e)
++ [Go语言接口和类型之间的转换](http://c.biancheng.net/view/83.html)

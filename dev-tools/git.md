@@ -125,3 +125,5 @@ $ git add .
 + [guidence](https://github.com/geeeeeeeeek/git-recipes/wiki)
 + [csdn](http://blog.csdn.net/codectq/article/details/50777934)
 + [revert merge](http://blog.csdn.net/hongchangfirst/article/details/49472913)
+<!-- proxy -->
++ [在 Windows 上给 Git SSH 设置代理](https://walkedby.com/sshwindowsproxy/)
