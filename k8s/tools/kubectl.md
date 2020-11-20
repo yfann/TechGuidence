@@ -128,9 +128,6 @@
 + `kubectl port-forward <pod-name> <local-port>:<pod-port>`
     - `curl localhost:<local-port>`
 
-## dashboard
-+ `kubectl proxy`
-
 ## exec 
 + `kubectl exec -it <pod name> bash`
     + `kubectl exec -it shell-demo -- /bin/bash` 
@@ -147,8 +144,8 @@
     + `kubectl api-resources -o wide`
     + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
 + `kubectl cluster-info`
-+ `kubectl proxy`
-    + `curl localhost:8001`
++ `kubectl proxy  [--port=8080]`  用代理访问kubernetes API
+    + `curl http://localhost:8080/api/`
 + `kubectl get apiservice`
 + `kubectl explain <k8s obj>`
     - `kubectl explain pods`  

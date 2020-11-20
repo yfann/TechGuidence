@@ -10,8 +10,12 @@
 
 ## cmdlet
 + `clear`
-<!-- 别名 -->
++ `ii .` 打开当前文件夹
+
+
+## 别名
 + `New-Alias np c:\windows\notepad.exe` 别名
++ `Set-Alias list get-childitem`
 + `get-alias`
 
 
@@ -80,3 +84,6 @@ function Set-Proxy{
 + [About Execution Policies](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7)
 
 <!-- 安全权限 -->
+
+<!-- details -->
++ [PowerShell设置命令别名Alias](https://segmentfault.com/a/1190000015928399)
