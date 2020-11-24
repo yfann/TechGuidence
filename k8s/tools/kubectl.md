@@ -129,12 +129,13 @@
     - `curl localhost:<local-port>`
 
 ## exec 
-+ `kubectl exec -it <pod name> bash`
-    + `kubectl exec -it shell-demo -- /bin/bash` 
+
++ `kubectl exec -it shell-demo -- /bin/bash` 
         - ` -- ` 后面的命令在目标pod中执行
         - `--container [container name]`如果pod有多个容器`--c [container name]`
             - `kubectl describe pod/[pod name]` 查看容器数
-+ `kubectl exec <pod name> env -n namespace`
++ `kubectl exec <pod name> -n namespace -- printenv`
++ `kubectl exec <pod name> -n namespace -- sh`
 + `kubectl cp <pod>:/var/log/foo.log foo.log` copy container文件
     + `kubectl cp localfile foo-pod:/etc/remotefile` copy文件到container
 
@@ -155,7 +156,7 @@
 <!-- ~/.kube/config -->
 + `kubectl config view`
 + `kubectl config --kubeconfig=<config name> use-context <context>`
-    + `kubectl config user-context <context>`
+    + `kubectl config use-context <context>`
 
 
 ## serviceaccounts
@@ -236,7 +237,7 @@
     + `docker ps`
 + `kubectl get events --watch`
 + `kubectl logs <pod name> --previous`可以查看之前的log,查找重启原因
-+ `kubectl exec <pod name> env -n namespace`
++ `kubectl exec <pod name>  -n namespace -- printenv` 查看环境变量
 
 ## patch
 + `kubectl patch deployment website --patch "$(cat patch-website.yml)"`
