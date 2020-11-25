@@ -2,6 +2,9 @@
 
 + sed + grep
 
+## nslookup
++ `nslookup <domain name> <DNS IP>`
+
 ## ref
 
 

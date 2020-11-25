@@ -243,7 +243,7 @@ spec:
 + 检查是否连接的service的port,而不是target port
 + 查看pod IP:port是否能连
 
-## testing
+## debug
 + `kubectl exec kubia-7nog1 -- curl -s http://10.111.249.153`
   + `curl http://kubia.default.svc.cluster.local`
   + `curl http://kubia.default`
@@ -252,5 +252,17 @@ spec:
 + `kubectl exec -it kubia-3inly bash`
   + `cat /etc/resolv.conf` 查看pod配置
 
+<!-- Pod是否可以通过DNS name访问service -->
++ `nslookup <service-name>` 
+  + `nslookup <service-name>.<namespace>` 如果运行命令的pod和service不在同一个namespace
++ `cat /etc/resolv.conf`
+<!-- Pod中是否可以通过IP访问service -->
++ `wget -qO- 172.21.4.97:8200`
+<!-- 查看service配置 -->
++ `kubectl get service <service name> -o json`
+<!-- 查看endpoints -->
++ `kubectl get endpoints <service name>`
+
 ## ref
 + [服务、负载均衡和联网](https://kubernetes.io/zh/docs/concepts/services-networking/)
++ [调试service](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/debug-service/)
