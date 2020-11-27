@@ -48,7 +48,7 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
     + get environment variables to struct
 + [errors](github.com/pkg/errors)
     + add context to the failure path
-
++ [glog](github.com/golang/glog)
 
 
 

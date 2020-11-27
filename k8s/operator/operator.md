@@ -1,5 +1,5 @@
-+ Operator(enabling users to create, configure, and manage applications. Like Kubernetes's built-in resources)
-+  Operator 是 Kubernetes API 的客户端，充当Custome resource的控制器。
+## install
++ `brew install operator-sdk`
 
 ## ref
 + [Operator 模式](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/operator/)
@@ -12,5 +12,6 @@
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)
 
-<!-- code -->
-+ [Operator Framework](https://github.com/operator-framework)
+<!-- operator framework -->
++ [operator docs](https://sdk.operatorframework.io/docs/installation/install-operator-sdk/)
++ [operator source code](https://github.com/operator-framework)
