@@ -1,6 +1,6 @@
 
 ## RBAC
-
++ serviceaccount,role,rolebinding
 + 权限为累加(不会拒绝)
 + 非system: 开头的。这些是面向用户的角色
 + Role作用于namespace

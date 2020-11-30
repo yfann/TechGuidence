@@ -215,3 +215,6 @@
 + [概念](https://kubernetes.io/zh/docs/concepts/#kubernetes-objects)
 + [Kubernetes API](https://kubernetes.io/zh/docs/concepts/overview/kubernetes-api/)
 + [使用 Kubernetes 对象](https://kubernetes.io/zh/docs/concepts/overview/working-with-objects/)
+
+<!-- book -->
++ [kubernetes指南](https://feisky.gitbooks.io/kubernetes/content/introduction/)
