@@ -31,6 +31,7 @@
 + [什么是 Kubernetes Operator](https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator)
 + [Kubernetes Operator 快速入门教程](https://www.qikqiak.com/post/k8s-operator-101/)
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
++ [What is the difference between kubebuilder and operator-sdk](https://github.com/operator-framework/operator-sdk/issues/1758)
 
 
 <!-- details -->
