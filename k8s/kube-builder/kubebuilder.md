@@ -114,6 +114,25 @@ Reconcile(rsvc)
 _ = v1beta1.AddToScheme(scheme)
 ```
 
++ watch(A watch indicates that Kubernetes should invoke this controller when changes to the “watched” resources occur.)
+```go
+// watch defined type
+err = c.Watch(&source.Kind{Type: &examplev1.VisitorsApp{}},
+              &handler.EnqueueRequestForObject{})
+if err != nil {
+    return err
+}
+// watch child type 
+err = c.Watch(&source.Kind{Type: &appsv1.Deployment{}},
+              &handler.EnqueueRequestForOwner{
+    IsController: true,
+    OwnerType:    &examplev1.VisitorsApp{},
+})
+if err != nil {
+    return err
+}
+```
+
 ## ref
 + [深入解析 Kubebuilder：让编写 CRD 变得更简单****************](https://juejin.im/post/6844903952241131534)
 + [kuberbuilder****************](https://book.kubebuilder.io/introduction.html)
