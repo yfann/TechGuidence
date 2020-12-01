@@ -26,11 +26,11 @@
 + `operator-sdk up local --watches-file ./local-watches.yaml`
 
 ## ref
++ [operator framework](https://sdk.operatorframework.io/docs/)
 + [Operator 模式](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/operator/)
 + [什么是 Kubernetes Operator](https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator)
 + [Kubernetes Operator 快速入门教程](https://www.qikqiak.com/post/k8s-operator-101/)
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
-+ [getting start](https://github.com/operator-framework/getting-started#overview)
 
 
 <!-- details -->
