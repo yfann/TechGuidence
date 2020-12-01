@@ -8,6 +8,8 @@
 + should be idempotent
 	+ prevent the creation of duplicate child
 
++ 
+
 + builder 构建控制器的合法入口
 
 + triggered by watch impementations
