@@ -102,6 +102,9 @@ spec:
 + [Kubernetes API Overview](https://kubernetes.io/docs/reference/using-api/api-overview/)
 + [Kubernetes API Reference v1.19](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/)
 + [Reference](https://kubernetes.io/docs/reference/)
+
++ [API versioning](https://kubernetes.io/docs/reference/using-api/#api-groups)
+
 <!-- client libraries -->
 + [Golang client](https://github.com/kubernetes/client-go)
 + [Python client](https://github.com/kubernetes-incubator/client-python)

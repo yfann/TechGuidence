@@ -5,8 +5,10 @@
 ## nslookup
 + `nslookup <domain name> <DNS IP>`
 
-## ref
+## others
++ tree(sudo apt install tree)
 
+## ref
 
 + [chmod](http://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
     + man chmod

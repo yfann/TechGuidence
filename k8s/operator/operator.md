@@ -5,10 +5,11 @@
 ## init
 
 + `go mod init <domain>`
-+ `operator-sdk init --domain example.com --license apache2 --owner "The Kubernetes authors"`
++ `operator-sdk init --domain example.com`
 + `operator-sdk create api --group ship --version v1beta1 --kind Frigate`
 
-
++ `make install` install CRD to k8s(kubectl apply)
++ `make run` run against the Kubernetes cluster configured by ~/.kube/config
 ## debug
 + `kubectl apply -f deploy/crds/*_crd.yaml` Deploy CRD
 + `export OPERATOR_NAME=<operator-name>`Start the Operator in local mode

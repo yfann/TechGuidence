@@ -13,6 +13,7 @@
     + Ansible Operator
 
 + Cluster Service Version (CSV)
+    + 
 + pillars
     + operator sdk
     + OLM(Operator Lifesyle Manager)   An operator that installs, manages, and upgrades other Operators.
