@@ -1,0 +1,2 @@
+# Circuit Breaker
++ Circuit Breaker automatically degrades service functions in response to a likely fault, preventing larger or cascading failures by eliminating recurring errors and providing reasonable error responses.
