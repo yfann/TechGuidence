@@ -4,12 +4,24 @@
 
 ## init
 
-+ `go mod init <domain>`
-+ `operator-sdk init --domain example.com`
++ `operator-sdk init --domain=example.com --repo=github.com/example-inc/memcached-operator`
+    + 会生成go.mod
+    + --repo=<path>(如果项目在$GOPATH/src之外，则参数是必要的的)
 + `operator-sdk create api --group ship --version v1beta1 --kind Frigate`
 
++ `operator-sdk generate -h`
+
+
++ `make docker-build docker-push IMG=<some-registry>/<project-name>:<tag>` build push镜像
 + `make install` install CRD to k8s(kubectl apply)
++ `make deploy IMG=<some-registry>/<project-name>:<tag>` 安装镜像到k8s
 + `make run` run against the Kubernetes cluster configured by ~/.kube/config
+<!-- Uninstall the operator and its CRDs: -->
++ `kustomize build config/default | kubectl delete -f -` 
+
+
+
+
 ## debug
 + `kubectl apply -f deploy/crds/*_crd.yaml` Deploy CRD
 + `export OPERATOR_NAME=<operator-name>`Start the Operator in local mode
