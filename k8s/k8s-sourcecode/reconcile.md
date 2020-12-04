@@ -51,6 +51,8 @@ SyncPeriod *time.Duration -->
 + reconcile()中获取或操作其他资源要设置RBAC
 <!-- // +kubebuilder:rbac:groups=deployment.hsc.philips.com.cn,resources=vcapservicesconverters/status,verbs=get;update;patch -->
 
++ reconcile request(Namespace/Name) 用于查询资源
+
 ## code 
 
 + retrieve the primary resource that triggered the reconcile request

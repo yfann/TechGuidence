@@ -1,4 +1,11 @@
 
+## process
+
++ A Site 页面 request(header:{Origin:"..."}) ---->b site server
++ b site server response(header:{Access-Control-Allow-Credentials:true,Access-Control-Allow-Origin:"..."})
+    + Access-Control-Allow-Origin 如果和 Origin不一致则浏览器会驳回请求
++ server 端设置header('Access-Control-Allow-Origin:*')则任何域名都能访问你的服务器
+
 ## tips
 + spring boot加`@CrossOrigin(allowCredentials="true",maxAge = 3600)`
 + localhost 前必须加`http://`
