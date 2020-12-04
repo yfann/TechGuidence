@@ -63,3 +63,5 @@ func init() {
 + [Adding 3rd Party Resources To Your Operator](https://sdk.operatorframework.io/docs/building-operators/golang/advanced-topics/)
 
 + [SchemeBuilder](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/scheme#Builder)
+<!-- api -->
++ [core](https://godoc.org/k8s.io/api/core/v1)

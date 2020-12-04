@@ -1,13 +1,11 @@
-
-
-
-
-
-
 ## tips
 
 + `client.Client`: implementers perform CRUD operations on a Kubernetes cluster.
+
 + `manager.Manager`: manages shared dependencies, such as Caches and Clients.
+    + manage `client.Client`
+    + manage Cache
+
 + `reconcile.Reconciler`: compares provided state with actual cluster state and updates the cluster on finding state differences using a Client.
 
 + CreateOrUpdate()

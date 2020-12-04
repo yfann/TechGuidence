@@ -3,6 +3,8 @@
 
 ## reconcile loop
 
++ 比较目标对象的 actual state 和 spec state , update
+
 + The purpose of this function is to resolve the actual state of the system against the desired state requested by the resource.
 
 + should be idempotent
