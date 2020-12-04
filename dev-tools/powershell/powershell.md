@@ -33,6 +33,7 @@
 ## tips
 + 可以使用.Net类和COM对象
 + `$profile` 配置文件路径
++ `. C:\scripts\UtilityFunctions.ps1` run script in current scope instead of script scope
 
 ## issues
 + ssh下不能自动向下滚动
@@ -87,3 +88,6 @@ function Set-Proxy{
 
 <!-- details -->
 + [PowerShell设置命令别名Alias](https://segmentfault.com/a/1190000015928399)
+
+<!-- scope -->
++ [Script scope and dot sourcing](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_scripts?view=powershell-7.1&viewFallbackFrom=powershell-6#script-scope-and-dot-sourcing)
