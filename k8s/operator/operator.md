@@ -40,7 +40,41 @@
 + `--helm-chart`
 + `--helm-chart-repo`
 + `--helm-chart-version`
-
++ `ARGS`
+    + `make run ARGS="--zap-encoder=console" ENABLE_WEBHOOKS=false` 传参
+    ```sh
+    # Run against the configured Kubernetes cluster in ~/.kube/config
+    run: generate fmt vet manifests
+	go run ./main.go $(ARGS)
+    ```
+<!-- args array -->
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: controller-manager
+  namespace: system
+spec:
+  template:
+    spec:
+      containers:
+      - name: kube-rbac-proxy
+        image: gcr.io/kubebuilder/kube-rbac-proxy:v0.5.0
+        args:
+        - "--secure-listen-address=0.0.0.0:8443"
+        - "--upstream=http://127.0.0.1:8080/"
+        - "--logtostderr=true"
+        - "--v=10"
+        ports:
+        - containerPort: 8443
+          name: https
+      - name: manager
+        args:
+        - "--metrics-addr=127.0.0.1:8080"
+        - "--enable-leader-election"
+        - "--zap-encoder=console"
+        - "--zap-log-level=debug"
+```
 
 
 ## running Helm Operator outside of the cluster
