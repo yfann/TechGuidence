@@ -31,9 +31,10 @@
 
 ## debug
 + `kubectl apply -f deploy/crds/*_crd.yaml` Deploy CRD
-+ `export OPERATOR_NAME=<operator-name>`Start the Operator in local mode
-    + `operator-sdk up local --namespace default`
-+ `kubectl apply -f deploy/crds/*_cr.yaml` Deploy an example resource
++ goland: `go build main.go`
+<!-- + `export OPERATOR_NAME=<operator-name>`Start the Operator in local mode
+    + `operator-sdk up local --namespace default`-->
++ `kubectl apply -f deploy/crds/*_cr.yaml` Deploy an example resource 
 
 ## tips
 + `--type=helm`

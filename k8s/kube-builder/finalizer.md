@@ -1,8 +1,13 @@
 ## tips
 
-+ CR设置了finalizer后,finalizer会阻止CR被删除,除非finalizer被清除
++ CR设置了finalizer后,finalizer会阻止CR被删除.
+    + 在删除CR时，reconcile()中还是可以获取CR,可以通过<crObj>.GetDeletionTimestamp()!=nil判断CR正在被删除
+    + 在执行完相关的删除操作后，移除finalizer，可以使CR正常被删除
+
++ `controllerutil.SetControllerReference(&vcapsc, &secret, r.Scheme);` 设置后,CRD删除后关联资源会自动删除
 
 ## code
+
 ```go
 import (
     ...
@@ -102,4 +107,5 @@ func contains(list []string, s string) bool {
 ```
 
 ## ref
++ [Handle Cleanup on Deletion](https://sdk.operatorframework.io/docs/building-operators/golang/advanced-topics/)
 + [official Kubernetes documentation on finalizers](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers)
