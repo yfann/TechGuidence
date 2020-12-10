@@ -136,6 +136,8 @@ if err != nil {
 ## ref
 + [深入解析 Kubebuilder：让编写 CRD 变得更简单****************](https://juejin.im/post/6844903952241131534)
 + [kuberbuilder****************](https://book.kubebuilder.io/introduction.html)
+
+
 + [kubernetes-sigs/kubebuilder](https://github.com/kubernetes-sigs/kubebuilder/blob/master/docs/book/getting_started/hello_world.md)
 + [利用 kubebuilder 优化 Kubernetes Operator 开发体验](https://zhuanlan.zhihu.com/p/67406200)
 + [《 KUBEBUILDER V2 使用指南 》](https://blog.upweto.top/gitbooks/kubebuilder/)

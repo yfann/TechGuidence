@@ -1,6 +1,6 @@
 <!-- windows WSL -->
 
-## set proxy
+## set http proxy
 + `ls -a`
 + `~/.bashrc` 当前用户
 + `/etc/.bashrc` 所有用户

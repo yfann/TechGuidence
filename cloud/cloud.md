@@ -16,7 +16,7 @@
 + [Cloud Foundry](https://www.cloudfoundry.org/)
 + [IBM Bluemix](https://link.jianshu.com/?t=https://console.bluemix.net/)
 <!-- 基于k8s的PaaS -->
-+ [OpenShift/OpenShift Origin](https://www.openshift.com/)
+
 + [蜂巢](https://www.163yun.com/?h=fc)
 
 
