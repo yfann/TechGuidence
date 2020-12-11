@@ -57,3 +57,8 @@ c, err := client.New(cfg, client.Options{})
 
 + [controller runtime client](https://sdk.operatorframework.io/docs/building-operators/golang/references/client/)
 + [client](https://godoc.org/github.com/kubernetes-sigs/controller-runtime/pkg/client#DelegatingClient)
+
+
+<!-- sample -->
++ [clientSet for in-cluster and out-cluster](https://medium.com/swlh/clientset-module-for-in-cluster-and-out-cluster-3f0d80af79ed)
++ [out-of-cluster-client-configuration](https://github.com/kubernetes/client-go/blob/master/examples/out-of-cluster-client-configuration/main.go)
