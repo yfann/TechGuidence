@@ -2,6 +2,8 @@
 
 + k8s.io/apimachinery
 
++ go type---(schema)--->GVK---(rest mapping)-->GVR------->http endpoint
+
 + implements the basics of the Kubernetes type system
 
 + 包含代码片段用于实现 Kubernetes-like API

@@ -262,6 +262,9 @@
     + `kubectl delete po mypod --grace-period=5`
     + `kubectl delete po mypod --grace-period=0 --force`
 
++ verbosity level
+    + `kubectl get ats -v=7`
+
 + `kubectl edit`	
 <!-- Opens the object’s manifest in your default editor. After making changes, saving the file, and exiting the editor, the object is updated. Example: kubectl edit deployment kubia -->
 + `kubectl patch`	

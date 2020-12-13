@@ -1,6 +1,7 @@
 
 ## Work Queue
 
++ a work queue is a component that can be used by the event handler to handle queuing of state changes and help to implement retries
 + priority queue
 + `k8s.io/client-go/util/workqueue`
 <!-- 延迟添加到work queue -->
