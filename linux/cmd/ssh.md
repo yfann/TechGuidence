@@ -1,0 +1,42 @@
+
+## OpenSSH
++ `ssh user@host`
+    + 默认端口22
+    + `ssh -p 2222 user@host`
+
++ `ssh-keygen` 生成公钥
+    + HOME/.ssh/
+        + id_rsa.pub
+        + id_rsa
++ `ssh-copy-id user@host`上传公钥
+    + 公钥会被放在远程主机的`$HOME/.ssh/authorized_keys`
+    + `ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub`
+        + 登录远程主机，在远程主机执创建authorized_keys，本地公钥重定向输出到authorized_keys中
++ `service ssh restart` 重启远程主机的ssh服务(ubuntu)
+
+
+
+
+## process
++ 客户端发送登录请求，服务端发送公钥给客户端
++ 客服端发送公钥加密后的密码给服务端
++ 服务端私钥解密密码
+
++ ssh的公钥没有CA认证，自己签发
+    + Man-in-the-middle attack（中间人攻击,冒充服务端发公钥以获取密码）
++ `$HOME/.ssh/known_hosts`保存接收的公钥
+
++ 公钥登录
+    + 用户提交自己的公钥到服务器
+    + 服务器向用户发随机字符串
+    + 用户私钥加密后发给服务端
+    + 服务端用用户的公钥解密对比
+
+## tips
++ PuTTY(windows)
+
+## ref
+
++ [SSH原理与运用（一）：远程登录](http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html)
++ [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
++

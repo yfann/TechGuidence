@@ -33,3 +33,6 @@
 + `sudo tar -C /usr/local -xzf /home/nikhita/Downloads/go1.8.1.linux-amd64.tar.gz`
 + `export PATH=$PATH:/usr/local/go/bin`
 + `echo $PATH | grep "/usr/local/go/bin"`
+
+## ref
++ [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
