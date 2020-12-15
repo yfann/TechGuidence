@@ -33,8 +33,5 @@
 + [OAuth 2.0 的四种方式](http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
 + [GitHub OAuth 第三方登录示例教程](http://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
 <!-- other -->
-+ [数字签名,数字证书,https](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
-+ [digital signature](http://www.youdzone.com/signature.html)
-+ [什么是数字签名和证书？](https://www.jianshu.com/p/9db57e761255)
 + [JWT](http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
 + [OpenId](https://www.biaodianfu.com/learn-openid.html)

@@ -55,3 +55,9 @@ Content-Type:
 + [https](http://www.cnblogs.com/chyingp/p/https-introduction.html)
 + [SSL/TLS](http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
 + [OpenSSL 与 SSL 数字证书概念贴](http://seanlook.com/2015/01/15/openssl-certificate-encryption/)
+
+<!-- 数字签名 -->
++ [数字签名是什么](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
++ [数字签名,数字证书,https](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
++ [digital signature](http://www.youdzone.com/signature.html)
++ [什么是数字签名和证书？](https://www.jianshu.com/p/9db57e761255)
