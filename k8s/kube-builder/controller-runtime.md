@@ -47,3 +47,6 @@ cl, _ := runtimeclient.New(config, client.Options{
 list := &cnatv1alpha1.AtList{}
 err := cl.List(context.TODO(), client.InNamespace("default"), list)
 ```
+
+## ref
++ [Controller Runtime Client API](https://sdk.operatorframework.io/docs/building-operators/golang/references/client/)

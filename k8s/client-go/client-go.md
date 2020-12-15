@@ -157,6 +157,51 @@ type Config struct {
     + list
     + udpate
 
+## sample-controller
++ The sample-controller uses the k8s.io/code-generator to generate a typed client, informers, listers, and deep-copy functions.
++ 任何改动如加新字段,都要用 update-codegen.sh重新生成
+ <!-- implement our cnat operator using client-go, following the sample-controller  -->
++ `go get k8s.io/sample-controller`
++ sample-controller的内容copy到自己的文件夹中
++ `go build -o cnat-controller .`
++ `./cnat-controller -kubeconfig=$HOME/.kube/config`
+    + launch the custom controller and wait for you to register the CRD and create a custom resource
++ ` kubectl apply -f artifacts/examples/crd.yaml`
++ `kubectl get crds`
++ rename pkg/apis/samplecontroller to pkg/apis/cnat
++ 修改types.go
++ 修改controller.go
++ `./hack/update-codegen.sh`
+    + pkg/apis/cnat/v1alpha1/zz_generated.deepcopy.go
+    + pkg/generated/*
+
+
+
+
++ code
+```go
+if when, err := c.syncHandler(key); err != nil {
+    c.workqueue.AddRateLimited(key)
+    return fmt.Errorf("error syncing '%s': %s, requeuing", key, err.Error())
+} else if when != time.Duration(0) {
+    c.workqueue.AddAfter(key, when)
+} else {
+    // Finally, if no error occurs we Forget this item so it does not
+    // get queued again until another change happens.
+    c.workqueue.Forget(obj)
+}
+
+
+// syncHandler compares the actual state with the desired state and attempts
+// to converge the two. It then updates the Status block of the At resource
+// with the current status of the resource. It returns how long to wait
+// until the schedule is due.
+func (c *Controller) syncHandler(key string) (time.Duration, error) {
+    ...
+}
+```
+
+
 
 ## tips
 
