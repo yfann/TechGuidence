@@ -1,3 +1,4 @@
 
 
-image: centos:7
++ centos
++ busybox

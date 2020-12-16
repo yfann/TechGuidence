@@ -48,12 +48,7 @@
 	- `ctrl+d`or`exit`退出容器
 + `docker container cp [containID]:[/path/to/file] .` 拷贝容器中的文件到本地
 
-<!-- deploy -->
-+ `docker login`
-+ `docker image tag [imgName] [userName]/[repository]:[tag]`
-+ `docker image build -t [userName]/[repo]:[tag]`
-+ `docker build -t [image name]:[tag] <path>/<url>` 指定包含Dockerfile的路径
-+ `docker image push [userName]/[repo]:[tag]`
+
 
 <!-- practice -->
 + `docker pull  microsoft/aspnet`
@@ -64,10 +59,12 @@
 <!-- log -->
 + `docker logs <container id>`
 
-<!-- repo -->
+<!-- docker hub -->
++ `dcoker build -t <img name> .` Dockerfile所在目录
++ `docker tag <img>:latest <docker id>/<img>:tag`
 + `docker login`
-+ `docker push <repo>/<img name>:tag`
-+ `docker pull <repo>/<img name>:tag`
++ `docker push <docker id>/<img name>:tag`
++ `docker pull <docker id>/<img name>:tag`
 + `docker logout`
 
 ## DockerFile
