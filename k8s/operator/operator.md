@@ -76,7 +76,13 @@ spec:
         - "--zap-encoder=console"
         - "--zap-log-level=debug"
 ```
+## packing
 
++ manifest(yaml)
+    + static
+    + templatize(helm)
+    + variable input(Kustomize)
++ OLM
 
 ## running Helm Operator outside of the cluster
 
