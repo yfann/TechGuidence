@@ -39,7 +39,21 @@
     + `operator-sdk olm uninstall`
     + `--version`
 
-## bundle
+## deploy to openshift
+
++ `make docker-build IMG=<remote-repo>/<operator-name>:<tag>`
+    + `docker build -t <remote-repo>/<operator-name>:<tag> .`
++ `make docker-push IMG=<remote-repo>/<operator-name>:<tag>`
+    + `docker push <remote-repo>/<bundle-name>:<tag>`
++ `make bundle IMG=<remote-repo>/<operator-name>:<tag>`
++ `make bundle-build BUNDLE_IMG=<remote-repo>/<bundle-name>:<tag>`
++ `docker push <remote-repo>/<bundle-name>:<tag>`
++ `oc login <openshift-url>`
++ `operator-sdk run  bundle <remote-repo>/<bundle-name>:<tag>`
+
+
+
+## bundle format
 + An Operator Bundle is built as a scratch (non-runnable) container image that contains operator manifests and specific metadata in designated directories inside the image. Then, it can be pushed and pulled from an OCI-compliant container registry. Ultimately, an operator bundle will be used by Operator Registry and OLM to install an operator in OLM-enabled clusters.
 
 + `make bundle` create bundle
@@ -61,7 +75,7 @@
 + `docker push <some-registry>/memcached-operator-bundle:<tag>`
     + `operator-sdk bundle validate <some-registry>/memcached-operator-bundle:<tag>`
 
-## package manifests
+## package manifests format
 + bundle's metadata
 + `make packagemanifests`
     + packagemanifests/0.0.1
@@ -102,6 +116,7 @@
 
 + [CSV marker](https://sdk.operatorframework.io/docs/building-operators/golang/references/markers/)
 
+<!-- source -->
 + [operator-framework/operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager/)
 + [Operator Bundle](https://github.com/operator-framework/operator-registry/blob/v1.12.6/docs/design/operator-bundle.md)
 + [operator-registry](https://github.com/operator-framework/operator-registry)
