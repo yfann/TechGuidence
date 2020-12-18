@@ -113,6 +113,7 @@
 
 ## ref
 + [OLM Integration Bundle Quickstart](https://sdk.operatorframework.io/docs/olm-integration/quickstart-bundle/)
++ [Operator Lifecycle Manager concepts](https://docs.openshift.com/container-platform/4.5/operators/understanding/olm/olm-understanding-olm.html)
 
 + [CSV marker](https://sdk.operatorframework.io/docs/building-operators/golang/references/markers/)
 

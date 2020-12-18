@@ -27,3 +27,6 @@ kubectl logs $pods
 
 + 查看容器环境变量??
     - `kubectl exec <pod name> env -n namespace`
+
++ 查询
+    - `kb get po --all-namespaces| grep olm`

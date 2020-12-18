@@ -8,7 +8,7 @@
 ## others
 + tree(sudo apt install tree)
 
-## ref
+## cmd
 
 + [chmod](http://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
     + man chmod
@@ -24,5 +24,10 @@
     + [awk 实用学习指南 | Linux 中国](https://zhuanlan.zhihu.com/p/261886766)
     + 文本分析工具
 
++ wc
+    + `wc -l` 计算行数
+    + [Linux wc命令](https://www.runoob.com/linux/linux-comm-wc.html)
+    + 计算字数
 
+## ref
 + [超全的 Linux Shell 文本处理工具集锦](https://zhuanlan.zhihu.com/p/265869157)
