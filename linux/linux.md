@@ -1,10 +1,16 @@
-<!-- windows WSL -->
+# linux
++ `cat /proc/version` 查看内核
 
-## set http proxy
+
+## setting
+<!-- set http proxy -->
 + `ls -a`
 + `~/.bashrc` 当前用户
 + `/etc/.bashrc` 所有用户
 + `source ~/.bashrc`
+
++ `/etc/profile`
++ `$HOME/.profile`
 
 
 ## export

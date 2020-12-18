@@ -161,6 +161,8 @@
 
 ## serviceaccounts
 + `kubectl get serviceaccounts -n <namespace>`
++ `kubectl get rolebindings`
++ `kubectl get roles`
 
 
 ## servicves
