@@ -15,6 +15,7 @@
 ## install helm
 ```sh
 curl -LO https://www.cnrancher.com/download/helm/helm-v2.14.3-linux-amd64.tar.gz
+# 解压tar
 tar -xvf helm-v2.14.3-linux-amd64.tar.gz
 sudo cp linux-amd64/helm /usr/local/bin/
 ```

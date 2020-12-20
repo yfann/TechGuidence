@@ -48,12 +48,7 @@
 	- `ctrl+d`or`exit`退出容器
 + `docker container cp [containID]:[/path/to/file] .` 拷贝容器中的文件到本地
 
-<!-- deploy -->
-+ `docker login`
-+ `docker image tag [imgName] [userName]/[repository]:[tag]`
-+ `docker image build -t [userName]/[repo]:[tag]`
-+ `docker build -t [image name]:[tag] <path>/<url>` 指定包含Dockerfile的路径
-+ `docker image push [userName]/[repo]:[tag]`
+
 
 <!-- practice -->
 + `docker pull  microsoft/aspnet`
@@ -64,23 +59,15 @@
 <!-- log -->
 + `docker logs <container id>`
 
-<!-- repo -->
+<!-- docker hub -->
++ `dcoker build -t <img name> .` Dockerfile所在目录
++ `docker tag <img>:latest <docker id>/<img>:tag`
 + `docker login`
-+ `docker push <repo>/<img name>:tag`
-+ `docker pull <repo>/<img name>:tag`
++ `docker push <docker id>/<img name>:tag`
++ `docker pull <docker id>/<img name>:tag`
 + `docker logout`
 
-## DockerFile
-+ 用来生成image文件
-+ `FROM <image>`基础源镜像，必须在第一行
-+ `WORKDIR [/app]`工作路径为image里的app目录
-+ `COPY [.] [/app]`当前目录下的文件copy到image文件的/app目录里
-+ `RUN "exe","param1","param2"` build时运行`RUN npm install`,可以多条
-+ `CMD ["exe","param1","param2"]` 容器启动后运行,只能一条
-+ `EXPOSE <port> [<port>...]` 容器对外映射的端口,`docker run -p <port>`
-+ `ENV <key>=<value> ...`容器内被脚本使用
-+ `ADD <src>... <dest>``COPY <src>... <dest>`复制文件到目标目录，ADD可以是url
-+ `ENTRYPOINT ["exe","param1","param2"]` 容器启动后执行，Dockerfile只能有一个ENTRYPOINT，`docker run --entrypoint`
+
 
 ## Mac
 + `brew install docker`
@@ -88,11 +75,23 @@
 + `sudo service docker start` 启动docker
 
 
+## PROXY
++ Docker Desktop proxy
+	+ 拉取image的代理
++ `docker build --build-arg http_proxy=.... --build-arg https_proxy=.... .`
+	+ build中拉取第三方库的代理,例如 go get ....
++ `ENV http_proxy ....` Dockerfile中设置
+
+
 ## tips
 + local Docker image registry
 + windows 需要先启动docker
 + windows docker desktop 设代理
 + Mac上没有docker0桥接,不支持host网络模式,用`docker.for.mac.host.internal`代替mac ip
+
+
+
+
 
 ## Ref
 + [hub](https://hub.docker.com)
@@ -114,3 +113,6 @@
 
 <!-- 技巧 -->
 + [mac中使用docker搭建linux开发服](https://www.jianshu.com/p/d26140d20cc0)
+
+<!-- proxy -->
++ [Configure Docker to use a proxy server](https://docs.docker.com/network/proxy/)

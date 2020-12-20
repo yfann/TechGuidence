@@ -89,6 +89,12 @@
     - `kubectl logs <pod-name> -c <contianer-name>`
 + `kubectl exec <pod> cat <logfile>`
 + `kubectl logs <pod name> --previous`
++ `kubectl logs <pod name> > ~/log` 输出到文件
++ tips
+    + `--tail=20`
+    + `--since=1h`最近一小时
+    + `-f` 持续输出
+    + `-p` 停止的容器
 
 ## k8s monitoring
 + `kubectl top node <node name>`显示cpu和memory的metrics
@@ -155,12 +161,18 @@
 ## context
 <!-- ~/.kube/config -->
 + `kubectl config view`
-+ `kubectl config --kubeconfig=<config name> use-context <context>`
-    + `kubectl config use-context <context>`
++ `kubectl config use-context <context>`
+    + `kubectl config --kubeconfig=<config name> use-context <context>`
++ `kubectl config set-context --current --namespace=<namespace>` 
+    + switch namespace
++ `kubectl config set-context gce-dev --user=cluster-admin --namespace=dev`
+    + set context
 
 
 ## serviceaccounts
 + `kubectl get serviceaccounts -n <namespace>`
++ `kubectl get rolebindings`
++ `kubectl get roles`
 
 
 ## servicves

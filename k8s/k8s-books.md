@@ -3,6 +3,7 @@
 ## ref
 + [kubebuilder-v1](https://book-v1.book.kubebuilder.io/)
 + [kuberbuilder](https://book.kubebuilder.io/introduction.html)
++ [Kubernetes中文文档](https://hardocs.com/d/kubernetes/index.html)
 
 + [operator](https://sdk.operatorframework.io/docs/building-operators/golang/)
 

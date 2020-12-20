@@ -1,4 +1,16 @@
 
+## DockerFile
++ 用来生成image文件
++ `FROM <image>`基础源镜像，必须在第一行
++ `WORKDIR [/app]`工作路径为image里的app目录
++ `COPY [.] [/app]`当前目录下的文件copy到image文件的/app目录里
++ `RUN "exe","param1","param2"` build时运行`RUN npm install`,可以多条
++ `CMD ["exe","param1","param2"]` 容器启动后运行,只能一条
++ `EXPOSE <port> [<port>...]` 容器对外映射的端口,`docker run -p <port>`
++ `ENV <key>=<value> ...`容器内被脚本使用
++ `ADD <src>... <dest>``COPY <src>... <dest>`复制文件到目标目录，ADD可以是url
++ `ENTRYPOINT ["exe","param1","param2"]` 容器启动后执行，Dockerfile只能有一个ENTRYPOINT，`docker run --entrypoint`
+
 ## issues
 + docker when using add with more than one source file, the destination must be a directory and end with a /
     - source下可能有多个匹配的文件

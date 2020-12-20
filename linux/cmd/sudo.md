@@ -1,6 +1,5 @@
 ## sudo
-+ sudo 的环境变量和默认环境不一样
-    + `sudo -E xxx` 保留当前环境变量
+
 
 ## 脚本权限
 + `ls -l xxx.sh`
@@ -11,6 +10,25 @@
 + `sudo env | grep ^PATH` sudo的path和普通用户的不一样
 
 
+## sudo环境变量
++ sudo 的环境变量和默认环境不一样
+    + `sudo -E xxx` 保留当前环境变量？？？？
+    + `sudo env "PATH=$PATH" env "http_proxy=..." <cmd>`
+        + `alias sp='sudo env "https_proxy=...."env "PATH=$PATH"'`
+        
++ `sudo vim /etc/sudoers`
+    + Defaults env_reset 
+
+## chmod
++ `chmod -R 777 <folder>`
+
+## su
++ `sudo passwd`
++ `su -`超级用户
+    + `-`切换环境变量
+    + `exit`
++ `chmod u+w /etc/sudoers`
++ ``
 
 ## ref
 + [Command not found when using sudo](https://stackoverflow.com/questions/12996397/command-not-found-when-using-sudo)

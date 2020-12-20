@@ -1,3 +1,24 @@
+# Operator-SDK
+
++ stateless->interchangeable
+    + pod -> basic unit of work and replication
++ Stateful Is Hard
++ Operators Are Software SREs(Site Reliability Engineering)
+    + writing software to run your software
++ atop controller-runtime
+
++ Adapter Operators
+    + `--type=helm` Helm Operator
+        + new CR  ---values-->  values.yaml  ----> helm install
+    + Ansible Operator
+
++ Cluster Service Version (CSV)
+
++ pillars
+    + operator sdk
+    + OLM(Operator Lifesyle Manager)   An operator that installs, manages, and upgrades other Operators.
+    + Operator Metering
+
 ## install
 + `brew install operator-sdk`
 
@@ -76,7 +97,13 @@ spec:
         - "--zap-encoder=console"
         - "--zap-log-level=debug"
 ```
+## packing
 
++ manifest(yaml)
+    + static
+    + templatize(helm)
+    + variable input(Kustomize)
++ OLM
 
 ## running Helm Operator outside of the cluster
 
@@ -104,4 +131,4 @@ spec:
 
 + [controller-gen](https://github.com/kubernetes-sigs/controller-tools)
 <!-- sample code -->
-+ [sample memcached_controller](https://github.com/operator-framework/operator-sdk/blob/master/testdata/go/memcached-operator/controllers/memcached_controller.go)
++ [sample memcached_controller](https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator)
