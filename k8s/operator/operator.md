@@ -124,6 +124,7 @@ spec:
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)
 + [Adding 3rd Party Resources To Your Operator](https://sdk.operatorframework.io/docs/building-operators/golang/advanced-topics/)
++ [condition](https://sdk.operatorframework.io/docs/building-operators/golang/advanced-topics/)
 
 <!--source code -->
 + [operator docs](https://sdk.operatorframework.io/docs/installation/install-operator-sdk/)
