@@ -4,6 +4,7 @@
     + 默认端口22
     + `ssh -p 2222 user@host`
 
+<!-- 公钥登录 -->
 + `ssh-keygen` 生成公钥
     + HOME/.ssh/
         + id_rsa.pub
@@ -34,6 +35,8 @@
 
 ## 远程操作
 + `cd && tar czv src | ssh user@host 'tar xz'` $HOME/sr/下的所有文件 copy到 远程主机的 $HOME/src下
+    + 单引号中间的操作表示在远程服务器执行
++ `ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub`
 
 ## tips
 + PuTTY(windows)

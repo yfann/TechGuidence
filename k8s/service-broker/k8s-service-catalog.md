@@ -140,5 +140,6 @@ spec:
 + [official Open Service Broker API](https://www.openservicebrokerapi.org/)
 + [openservicebrokerapi/servicebroker](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
 
++ [Open Service Broker API](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#orphan-mitigation)
 
 [catalog 字段](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#catalog-management)
