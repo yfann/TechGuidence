@@ -118,7 +118,7 @@ spec:
 + [Kubernetes Operator 快速入门教程](https://www.qikqiak.com/post/k8s-operator-101/)
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
 + [What is the difference between kubebuilder and operator-sdk](https://github.com/operator-framework/operator-sdk/issues/1758)
-
++ [Kubernetes Operators Best Practices](https://www.openshift.com/blog/kubernetes-operators-best-practices)
 
 <!-- details -->
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
