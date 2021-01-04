@@ -118,12 +118,13 @@ spec:
 + [Kubernetes Operator 快速入门教程](https://www.qikqiak.com/post/k8s-operator-101/)
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
 + [What is the difference between kubebuilder and operator-sdk](https://github.com/operator-framework/operator-sdk/issues/1758)
-
++ [Kubernetes Operators Best Practices](https://www.openshift.com/blog/kubernetes-operators-best-practices)
 
 <!-- details -->
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)
 + [Adding 3rd Party Resources To Your Operator](https://sdk.operatorframework.io/docs/building-operators/golang/advanced-topics/)
++ [condition](https://sdk.operatorframework.io/docs/building-operators/golang/advanced-topics/)
 
 <!--source code -->
 + [operator docs](https://sdk.operatorframework.io/docs/installation/install-operator-sdk/)

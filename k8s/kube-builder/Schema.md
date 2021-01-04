@@ -65,3 +65,6 @@ func init() {
 + [SchemeBuilder](https://godoc.org/sigs.k8s.io/controller-runtime/pkg/scheme#Builder)
 <!-- api -->
 + [core](https://godoc.org/k8s.io/api/core/v1)
+
+<!-- sample -->
++ [creat SchemeBuilder](https://github.com/kubernetes/api/blob/master/apps/v1/register.go#L41)

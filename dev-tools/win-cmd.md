@@ -24,6 +24,8 @@
 + `choco install <pkg>`
 + `choco uninstall <pkg>`
 
++ `choco upgrade <pkg>`
+
 
 ## ref
 + [BAT文件语法和技巧](http://www.jb51.net/article/5828.htm)
