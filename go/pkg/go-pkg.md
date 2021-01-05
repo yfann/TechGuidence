@@ -51,7 +51,6 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [glog](github.com/golang/glog)
 
 
-
 <!-- k8s -->
 + [package v1beta1](https://pkg.go.dev/github.com/kubernetes-sigs/service-catalog/pkg/apis/servicecatalog/v1beta1)
 + [Package controllerruntime](https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.6.3)
