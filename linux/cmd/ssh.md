@@ -4,6 +4,7 @@
     + 默认端口22
     + `ssh -p 2222 user@host`
 
+<!-- 公钥登录 -->
 + `ssh-keygen` 生成公钥
     + HOME/.ssh/
         + id_rsa.pub
@@ -16,21 +17,26 @@
 
 
 
+## 登录
 
-## process
-+ 客户端发送登录请求，服务端发送公钥给客户端
-+ 客服端发送公钥加密后的密码给服务端
-+ 服务端私钥解密密码
-
-+ ssh的公钥没有CA认证，自己签发
-    + Man-in-the-middle attack（中间人攻击,冒充服务端发公钥以获取密码）
-+ `$HOME/.ssh/known_hosts`保存接收的公钥
++ 密码登录
+    + 客户端发送登录请求，服务端发送公钥给客户端
+    + 客服端发送公钥加密后的密码给服务端
+    + 服务端私钥解密密码
+    + ssh的公钥没有CA认证，自己签发
+        + Man-in-the-middle attack（中间人攻击,冒充服务端发公钥以获取密码）
+    + `$HOME/.ssh/known_hosts`保存接收的公钥
 
 + 公钥登录
     + 用户提交自己的公钥到服务器
     + 服务器向用户发随机字符串
     + 用户私钥加密后发给服务端
     + 服务端用用户的公钥解密对比
+
+## 远程操作
++ `cd && tar czv src | ssh user@host 'tar xz'` $HOME/sr/下的所有文件 copy到 远程主机的 $HOME/src下
+    + 单引号中间的操作表示在远程服务器执行
++ `ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub`
 
 ## tips
 + PuTTY(windows)
