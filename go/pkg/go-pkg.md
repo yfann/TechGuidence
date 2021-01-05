@@ -58,3 +58,6 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [kubernetes-sigs/go-open-service-broker-client](https://github.com/kubernetes-sigs/go-open-service-broker-client/tree/master/docs)
 + [k8s.io/apimachinery/pkg/types](https://pkg.go.dev/k8s.io/apimachinery/pkg/types)
 + [brokerapi](https://github.com/pivotal-cf/brokerapi)
+
+<!-- fun -->
++ [logrusorgru/aurora](https://github.com/logrusorgru/aurora)
