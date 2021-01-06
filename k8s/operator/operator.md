@@ -113,6 +113,7 @@ spec:
 
 ## ref
 + [operator framework***********](https://sdk.operatorframework.io/docs/)
++ [Operator SDK Documentation](https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator)
 + [Operator 模式](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/operator/)
 + [什么是 Kubernetes Operator](https://www.redhat.com/zh/topics/containers/what-is-a-kubernetes-operator)
 + [Kubernetes Operator 快速入门教程](https://www.qikqiak.com/post/k8s-operator-101/)
@@ -134,3 +135,7 @@ spec:
 <!-- sample code -->
 + [sample memcached_controller](https://github.com/operator-framework/operator-sdk/tree/master/testdata/go/v3/memcached-operator)
 
+
+<!-- communities -->
++ [operator-framework/community-operators](https://github.com/operator-framework/community-operators)
++ [operatorhub](https://operatorhub.io/)
