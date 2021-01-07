@@ -29,3 +29,5 @@
 + [2020，你需掌握go 单元测试进阶篇](https://zhuanlan.zhihu.com/p/150487062)
 + [go ecosystem](https://www.jetbrains.com/research/devecosystem-2018/go/)
 + [TableDrivenTests](https://github.com/golang/go/wiki/TableDrivenTests)
+
++ [In Go you cannot mock a function declaration](https://stackoverflow.com/questions/47643192/how-to-mock-functions-in-golang)
