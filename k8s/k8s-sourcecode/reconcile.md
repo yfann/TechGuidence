@@ -32,10 +32,10 @@ func (r *VcapServicesConverterReconciler) SetupWithManager(mgr ctrl.Manager) err
 		Complete(r)
 }
 ```
-
 + triggered by manager each x time
 <!-- Options struct
 SyncPeriod *time.Duration -->
+
 
 + own,watch 可以用來监听其他资源
     + WithEventFilter  可以过滤watch的对象
@@ -54,6 +54,13 @@ SyncPeriod *time.Duration -->
 <!-- // +kubebuilder:rbac:groups=deployment.hsc.philips.com.cn,resources=vcapservicesconverters/status,verbs=get;update;patch -->
 
 + reconcile request(Namespace/Name) 用于查询资源
+
+## reconcile的触发
+
++ return error
+
++ update status(更新和上一次不一致时会再触发一次reconcile,每次不一样会一直触发)
+
 
 ## code 
 

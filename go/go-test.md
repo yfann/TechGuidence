@@ -1,6 +1,12 @@
 
 ## cmd
 + `go test`
++ `go test -cover`
+
++ `mockgen -source=foo.go [other options] `
+    + `mockgen -source=foo.go -destination=db_mock.go -package=main`
++ `mockgen [model name] [interface],[interface]`
+    + `mockgen k8s.io/client-go/tools/record EventRecorder`
 
 
 
@@ -13,7 +19,6 @@
 + [Unit Testing made easy in Go](https://medium.com/rungo/unit-testing-made-easy-in-go-25077669318)
 
 <!-- libs -->
-+ [golang/mock](https://github.com/golang/mock)
 + [stretchr/testify](https://github.com/stretchr/testify)
 + [gavv/httpexpect](https://github.com/gavv/httpexpect)
 + [gruntwork-io/terratest](https://github.com/gruntwork-io/terratest)
@@ -31,3 +36,11 @@
 + [TableDrivenTests](https://github.com/golang/go/wiki/TableDrivenTests)
 
 + [In Go you cannot mock a function declaration](https://stackoverflow.com/questions/47643192/how-to-mock-functions-in-golang)
+
+
+<!-- mock -->
++ [golang/mock](https://github.com/golang/mock)
++ [gomock](https://pkg.go.dev/github.com/golang/mock/gomock)
+
++ [testify mock](https://pkg.go.dev/github.com/stretchr/testify/mock)
++ [vektra/mockery](https://github.com/vektra/mockery)

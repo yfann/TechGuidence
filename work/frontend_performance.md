@@ -3,6 +3,7 @@
 
 ## issue
 + alerta/alerta too many taps have performance issue
+    + each tap contains an invisiable table, when tap increases DOM nodes increases...
 
 
 ## chrome
