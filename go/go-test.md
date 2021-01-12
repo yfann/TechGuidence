@@ -23,6 +23,7 @@
 
 + `go test`只看当前目录有无_test文件
     + 如果当前目录没有test文件则提示no test files
++ Operator SDK’s test framework
 
 ## ref
 <!-- testing -->
@@ -52,9 +53,19 @@
 + [In Go you cannot mock a function declaration](https://stackoverflow.com/questions/47643192/how-to-mock-functions-in-golang)
 
 
+<!-- operator test -->
++ [Unit testing](https://github.com/operator-framework/operator-sdk/blob/8fb5317317d58a46eb28ca11cdf3e0ba2eb39c93/doc/user/unit-testing.md)
++ [Using the Operator SDK's Test Framework to Write E2E Tests](https://github.com/operator-framework/operator-sdk/blob/2f772d1dc2340dd19bdc3ec8c2dc9f0f77cc8297/doc/test-framework/writing-e2e-tests.md)
++ [Test Environment Setup](https://book.kubebuilder.io/cronjob-tutorial/writing-tests.html)
++ [Scorecard](https://sdk.operatorframework.io/docs/advanced-topics/scorecard/scorecard/)
+
+<!-- envtest -->
++ [在集成测试中使用 envtest](https://cloudnative.to/kubebuilder/reference/envtest.html)
++ [Testing your Operator project](https://sdk.operatorframework.io/docs/building-operators/golang/testing/) 
++ [envtest godoc](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/envtest)
+
 <!-- mock -->
 + [golang/mock](https://github.com/golang/mock)
 + [gomock](https://pkg.go.dev/github.com/golang/mock/gomock)
-
 + [testify mock](https://pkg.go.dev/github.com/stretchr/testify/mock)
 + [vektra/mockery](https://github.com/vektra/mockery)
