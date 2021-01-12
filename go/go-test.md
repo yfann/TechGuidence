@@ -1,7 +1,16 @@
 
 ## cmd
-+ `go test`
++ `go test`  
+    + `go test ./...`当前目录和子目录
+        + `go test $(go list ./... | grep -v /vendor/)` skip vendor
+    + `go test ./tests/... ./unit-tests/... ./my-packages/...`指定的目录
+    + `go test foo/...` import path 前缀foo/
+    + `go test foo...` import path 前缀foo
+    + `go test ...` 所有$GOPATH下的test
 + `go test -cover`
++ `go test -run regexp` 执行匹配函数
+    + `-run=Array`执行Array开头的函数
++ `go test -v` 显示详细
 
 + `mockgen -source=foo.go [other options] `
     + `mockgen -source=foo.go -destination=db_mock.go -package=main`
@@ -9,6 +18,11 @@
     + `mockgen k8s.io/client-go/tools/record EventRecorder`
 
 
+
+## tips
+
++ `go test`只看当前目录有无_test文件
+    + 如果当前目录没有test文件则提示no test files
 
 ## ref
 <!-- testing -->

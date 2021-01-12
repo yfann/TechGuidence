@@ -62,6 +62,10 @@
 <!-- vendor -->
 + `go mod vendor`
 
++ `go fmt ./...`
+	+ `gofmt -l -w`
++ `go vet ./...` 检查静态错误
+
 ## GOPATH
 + 环境变量
 + 工作目录（GOPATH指定不同值来切换工作目录）
@@ -223,6 +227,11 @@ cd sample-controller
 + [go mod 使用](https://juejin.im/post/6844903798658301960)
 + [干货满满的 Go Modules 和 goproxy.cn](https://juejin.im/post/6844903954879348750)
 + [vscode golang proxy](https://github.com/flew990/flew990/issues/30)
+
+<!-- go tool -->
++ [go fmt your code](https://blog.golang.org/gofmt)
++ [如果你用Go，不要忘了vet](https://studygolang.com/articles/9619) 
++ [golang pprof 使用简介](https://www.jianshu.com/p/d97b095cd98a)
 
 <!-- version -->
 + [Pseudo-versions](https://golang.org/cmd/go/#hdr-Pseudo_versions)
