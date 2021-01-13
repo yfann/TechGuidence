@@ -11,7 +11,6 @@
 		+ `go build -o ./app` 如果是windows则`go build -o ./app.exe`
 			+ `./app`执行程序,必须带路径执行
 
-
 + `go install <example.com/user/hello>`
   + go build a executable binary
   + install the binary as `$HOME/go/bin/hello`(windows:`%USERPROFILE%\go\bin\hello.exe`) to GOPATH
@@ -25,16 +24,20 @@
   + `go env -w GOBIN=/somewhere/else/bin`
   + `go env -u GOBIN` unset `go env -w`
 
-
-+ `go test` go.mod目录下
-
 <!-- go pkg -->
 + `go doc rsc.io/quote/v3` 查看package
+
 + `go get <pkg>@<version>` 拉取指定版本
 + `go get ./...` 下载安装所有依赖,go.mod目录下执行,更新go.mod
 	+ 默认`@latest`
 	+ 拉取指定版本`go mod edit --require=rsc.io/quote@v3.1.0`
 	+ `go mod edit --droprequire=golang.org/x/crypto`删除包，仅修改go.mod
+	+ `go get -t ./...`
++ `go get -u` 升级所有依赖
+	+ `go get -u <pkg>`升级次级或补丁版本
+	+ `go get <package@version>`升到指定版本
++ `go get foo@'<v1.6.2'` 升降级版本号
+
 
 + `go list` project目录下
 	+ `go list -m`list current module
@@ -45,11 +48,6 @@
 		+ `go list -json <pkg path>`
 	+ `go list -u -m all`查看所有升级依赖
 	+ `go list -m -versions <pkg>` 查看可用的版本号
-
-+ `go get -u` 升级所有依赖
-	+ `go get -u <pkg>`升级次级或补丁版本
-	+ `go get <package@version>`升到指定版本
-+ `go get foo@'<v1.6.2'` 升降级版本号
 
 
 + `go mod init <module path>` 创建go.mod
@@ -62,6 +60,8 @@
 <!-- vendor -->
 + `go mod vendor`
 
+
+<!-- go tool -->
 + `go fmt ./...`
 	+ `gofmt -l -w`
 + `go vet ./...` 检查静态错误
