@@ -24,6 +24,7 @@
 
 
 ## cmd
++ `operator-sdk version`
 
 + `operator-sdk init --domain=example.com --repo=github.com/example-inc/memcached-operator`
     + 会生成go.mod

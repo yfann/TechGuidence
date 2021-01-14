@@ -60,3 +60,4 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 
 <!-- fun -->
 + [logrusorgru/aurora](https://github.com/logrusorgru/aurora)
+    + Ultimate ANSI colors for Golang

@@ -31,16 +31,31 @@
 + Gomega
     + matcher/assertion
 
+## kuttl
++ The KUbernetes Test TooL (KUTTL) provides a declarative approach to testing production-grade Kubernetes operators
++ kind
+    + local k8s cluster
++ KUTTL is built to support some kubernetes integration test scenarios and is most valuable as an end-to-end (e2e) test harness.
++ test harness
+
 ## UT
 + go test
 + gomega
 + fakeclient(过渡到envtest)
 
 ## integration test
-+ envtest
++ envetst+Ginko+gomega
+    + suite_test.go
++ kuttl
 
 ## End-to-end tests
 + The end-to-end tests are meant to verify the proper functioning of a Cluster API management cluster in an environment that resemble a real production environment.
++ kuttl
+
+
+
+
+
 
 ## tips
 
@@ -52,6 +67,16 @@
     + envtest 
     + ginko
     + gomega
+
++ operator test
+    + scorecard
+    + kuttl
+
++ controller test(kubebuilder)
+    + envtest+Ginko
+    + controllers/suite_test.go
+
+
 
 ## ref
 <!-- unit testing -->
@@ -73,7 +98,7 @@
 + [gruntwork-io/terratest](https://github.com/gruntwork-io/terratest)
 + [official gocheck](http://labix.org/gocheck)
 
-<!-- others -->
+<!-- others test -->
 + [Exploring the landscape of Go testing frameworks](https://bmuschko.com/blog/go-testing-frameworks/)
 + [2020，你需掌握go 单元测试进阶篇](https://zhuanlan.zhihu.com/p/150487062)
 + [go ecosystem](https://www.jetbrains.com/research/devecosystem-2018/go/)
@@ -83,8 +108,9 @@
 <!-- operator test -->
 + [Fake client Unit testing](https://github.com/operator-framework/operator-sdk/blob/8fb5317317d58a46eb28ca11cdf3e0ba2eb39c93/doc/user/unit-testing.md)
 + [Using the Operator SDK's Test Framework to Write E2E Tests](https://github.com/operator-framework/operator-sdk/blob/2f772d1dc2340dd19bdc3ec8c2dc9f0f77cc8297/doc/test-framework/writing-e2e-tests.md)
-+ [Writing controller tests](https://book.kubebuilder.io/cronjob-tutorial/writing-tests.html)
 + [Testing your Operator project](https://sdk.operatorframework.io/docs/building-operators/golang/testing/) 
+<!-- controller test -->
++ [Writing controller tests](https://book.kubebuilder.io/cronjob-tutorial/writing-tests.html)
 
 <!-- Scorecard -->
 + [Scorecard](https://sdk.operatorframework.io/docs/advanced-topics/scorecard/scorecard/)
@@ -98,7 +124,17 @@
 
 <!-- kuttl -->
 + [kuttl](https://kuttl.dev/)
+
 <!-- ginkgo -->
 + [ginkgo](https://onsi.github.io/ginkgo/)
 + [gomega](https://onsi.github.io/gomega/)
 
+
+<!-- tools -->
++ [KUDO—通过无代码方式优化Kubernetes Operator开发体验](https://my.oschina.net/u/4585208/blog/4399013)
++ [第 0 天/第 1 天/第 2 天：云时代的软件生命周期](https://zhuanlan.zhihu.com/p/92204537)
++ [测试中 Fakes、Mocks 以及 Stubs 概念明晰](https://zhuanlan.zhihu.com/p/26942686)
+
+<!-- terratest -->
++ [gruntwork-io/terratest](https://github.com/gruntwork-io/terratest)
++ [quickstart terratest](https://terratest.gruntwork.io/docs/getting-started/quick-start/)
