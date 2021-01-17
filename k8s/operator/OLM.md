@@ -52,6 +52,11 @@
 + `operator-sdk run  bundle <remote-repo>/<bundle-name>:<tag>`
 
 
+## clean
++ `operator-sdk cleanup <operatorPKGname>`
+    + bundle/metadata/annotations.yaml
+        + bundle.package
++ `kubectl delete  catalogsources.operators.coreos.com <project name>-catalog`
 
 ## bundle format
 + An Operator Bundle is built as a scratch (non-runnable) container image that contains operator manifests and specific metadata in designated directories inside the image. Then, it can be pushed and pulled from an OCI-compliant container registry. Ultimately, an operator bundle will be used by Operator Registry and OLM to install an operator in OLM-enabled clusters.
