@@ -140,3 +140,4 @@ spec:
 <!-- communities -->
 + [operator-framework/community-operators](https://github.com/operator-framework/community-operators)
 + [operatorhub](https://operatorhub.io/)
++ [community-operators](https://github.com/operator-framework/community-operators/tree/master/community-operators)
