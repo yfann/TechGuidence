@@ -122,6 +122,9 @@ spec:
 + [What is the difference between kubebuilder and operator-sdk](https://github.com/operator-framework/operator-sdk/issues/1758)
 + [Kubernetes Operators Best Practices](https://www.openshift.com/blog/kubernetes-operators-best-practices)
 
++ [Installation](https://sdk.operatorframework.io/docs/installation/)
++ [releases](https://github.com/operator-framework/operator-sdk/releases)
+
 <!-- details -->
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)
