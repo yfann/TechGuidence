@@ -14,15 +14,16 @@
 
 ## cmd
 + `operator-sdk scorecard <bundle_dir_or_image> [flags]`  run scorecard
-    + `--selector`
+    + `-l`,`--selector`
         + `operator-sdk scorecard <bundle_dir_or_image> -o text --selector=test=basic-check-spec-test`
         + `operator-sdk scorecard <bundle_dir_or_image> -o text --selector='test in (basic-check-spec-test,olm-bundle-validation-test)'`
-    + `--output`
+    + `-o`,`--output`
         + `json`
         + `test`
     + `-c`, `--config`
         + 默认路径<bundle directory>/tests/scorecard/config.yaml
     + `-w`,`--wait-time`
+        + `operator-sdk scorecard <bundle_dir_or_image> --selector=suite=custom -o json --wait-time=32s --skip-cleanup=false`
         + 超时时间,默认30s
     + `-x`,`--skip-cleanup`
         + `--skip-cleanup=false`
@@ -37,8 +38,9 @@
 + ` kustomize build config/scorecard > path/to/config.yaml` bundle之外生成
     + `make bundle`  bundle/tests/scorecard/config.yaml bundle内生成
 
-## Run scorecard with custom tests
-+ Building test image
+## kuttl
+
+
 
 ## ref
 + [Scorecard](https://sdk.operatorframework.io/docs/advanced-topics/scorecard/scorecard/)
@@ -46,6 +48,9 @@
 
 + [Returning Multiple Test Results](https://github.com/operator-framework/api/blob/333d064/pkg/apis/scorecard/v1alpha3/test_types.go#L35)
 + [Accessing the Kube API](https://sdk.operatorframework.io/docs/advanced-topics/scorecard/custom-tests/)
+
+
+
 <!-- sample -->
 + [ custom-scorecard-tests](https://github.com/operator-framework/operator-sdk/blob/09c3aa14625965af9f22f513cd5c891471dbded2/images/custom-scorecard-tests/main.go)
 + [basic test](https://github.com/operator-framework/operator-sdk/blob/09c3aa14625965af9f22f513cd5c891471dbded2/internal/scorecard/tests/basic.go)

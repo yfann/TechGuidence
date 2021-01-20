@@ -121,7 +121,7 @@ spec:
 + [Introducing Operators: Putting Operational Knowledge into Software](https://coreos.com/blog/introducing-operators.html)
 + [What is the difference between kubebuilder and operator-sdk](https://github.com/operator-framework/operator-sdk/issues/1758)
 + [Kubernetes Operators Best Practices](https://www.openshift.com/blog/kubernetes-operators-best-practices)
-
+<!-- install -->
 + [Installation](https://sdk.operatorframework.io/docs/installation/)
 + [releases](https://github.com/operator-framework/operator-sdk/releases)
 

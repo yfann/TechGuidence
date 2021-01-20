@@ -19,3 +19,13 @@ curl -LO https://www.cnrancher.com/download/helm/helm-v2.14.3-linux-amd64.tar.gz
 tar -xvf helm-v2.14.3-linux-amd64.tar.gz
 sudo cp linux-amd64/helm /usr/local/bin/
 ```
+
+## install kuttl
++ https://github.com/kudobuilder/kuttl/releases
+    + kubectl-kuttl_0.8.0_linux_x86_64
++ sudo chmod +x kubectl-kuttl_0.8.0_linux_x86_64
++ sudo mv kubectl-kuttl_0.8.0_linux_x86_64 /usr/local/bin/kubectl-kuttl
++ `kubectl kuttl version`
+
+## ref
++ `ls -l` 查看权限
