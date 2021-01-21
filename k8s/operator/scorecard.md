@@ -34,11 +34,12 @@
     + `-n`,`--namespace`
         + 默认为default
         + `operator-sdk scorecard <bundle_dir_or_image> --namespace=mycustomns`
+    + `--skip-cleanup=true` 不删除资源
+    + `--verbose` Enable verbose logging
+
 
 + ` kustomize build config/scorecard > path/to/config.yaml` bundle之外生成
     + `make bundle`  bundle/tests/scorecard/config.yaml bundle内生成
-
-## kuttl
 
 
 

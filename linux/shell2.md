@@ -17,14 +17,6 @@
     - `set -e`脚本有错就停止
         + `set +e`关闭这个功能，可以跳过某些命令
         + `set -e`再次开启此功能
-+ 环境变量
-    - `export <key>=<value>`设置临时环境变量
-    - `.bash_profile`可添加永久环境变量
-    - `echo $PATH`可查看环境变量
-    - `env` 显示当前用户变量，用户变量和shell无关
-    - `set` 显示当前shell变量（包括用户变量),`set <key>=<val>`设置shell变量
-    - `export` 显示导出成用户变量的shell变量, `export <key>=<val>`把shell变量导成用户变量
-    - `unset <var>`删除环境变量
 + `>` redirect output(overwrite file)
 + `>>` append to a file(create file if not exists)
 + `|` 管道，进程间通信，一个进程的stdout是另一个进程的 stdin

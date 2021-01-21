@@ -4,6 +4,10 @@
 + LDFLAGS(指定gcc的优化参数或lib位置)
     + `LDFLAGS=-static -L /usr/lib -L /path/to/your/lib`
 
+## issues
+
++ 命令前加tap,不是空格
+
 
 ## ref
 + [Make 命令教程](http://www.ruanyifeng.com/blog/2015/02/make.html)

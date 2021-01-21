@@ -1,9 +1,13 @@
-## shortcut
-<!-- move -->
+
+## 光标移动
 + `ctrl + A/E`行首 行尾
 + `ctrl + 左/右`单词间跳转
     - `alt + B/F`
 + `Ctrl + XX`（两个X）在命令行尾和光标之间移动
+
+
+
+## shortcut
 <!-- edit -->
 + `ctrl + U/K` 剪切光标前/后内容
     - `ctrl + Y`粘贴

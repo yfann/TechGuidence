@@ -9,6 +9,7 @@
 
 ## cmd
 + `kubectl kuttl version`
++ `kubectl kuttl test --help`
 
 + `kubectl kuttl test` run at Test Suite Configuration's location
     + `kubectl kuttl test --start-kind=true <test suit dir>`
@@ -16,9 +17,15 @@
         + ./tests/e2e/example-test  test case dir
     + `-n` namespace
     + `--help`
+
++ ` kubectl-kuttl test ./bundle/tests/scorecard/kuttl --report=JSON --artifacts-dir=./tmp`
+    + `./tmp/kuttl-test.json` 生成报告
     
 ## sample
 + `kubectl-kuttl test ./bundle/tests/scorecard/kuttl --config=./bundle/tests/scorecard/kuttl/kuttl-test.yaml --namespace=alicloud-operators --report=JSON --artifacts-dir=/tmp > /tmp/kuttl.stdout 2> /tmp/kuttl.stderr`
+
+
+## tips
 
 
 ## ref
