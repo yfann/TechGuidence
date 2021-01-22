@@ -27,6 +27,7 @@ Debounce limits the frequency of a function call to one among a cluster of invoc
     + it allows the initial response from the inner function to be cached and returned
     + the inner function is called once and subsequent calls are ignored
     + on every call of the outer function function — regardless of its outcome — a time interval is set. Any subsequent call made before that time interval expires is ignored; any call made afterwards is passed along to the inner function
+    + 设定超时，缓存结果
 
 
 + function-last
