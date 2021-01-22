@@ -32,7 +32,7 @@ type Context interface {
 ```
 
 ```go
-// 接口
+// 方法
 func WithDeadline(Context, time.Time) (Context, CancelFunc)
 
 func WithTimeout(Context, time.Duration) (Context, CancelFunc)
@@ -64,3 +64,4 @@ func Stream(ctx context.Context, out chan<- Value) error {
     }
 }
 ```
+

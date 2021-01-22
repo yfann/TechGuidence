@@ -1,6 +1,4 @@
-## Stability Patterns
 
-+ The stability patterns are generally intended to be applied by distributed applications to improve their own stability and the stability of the larger system they’re a part of.
 
 ## Circuit Breaker
 + Circuit Breaker automatically degrades service functions in response to a likely fault, preventing larger or cascading failures by eliminating recurring errors and providing reasonable error responses.
@@ -10,10 +8,10 @@
 
 + Breaker
     + A closure with the same function signature as Circuit.
-    + closed state
+    + breaker closed state
         + client ------request---> breaker ------request---> Circuit -----response---> breaker -----response---> client
-    + open state
-        + client ------request---> breaker ------err response---> client
+    + breaker open state
+        + Client ------request---> Breaker ------err response---> Client
     + breaker会检查circuit连续返回的错误数，超过threshold，state就会为open
         + rate of retry 需要逐步降低
 

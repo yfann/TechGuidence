@@ -21,8 +21,8 @@ x = <-ch // a receive expression in an assignment statement
     + 发送者close chan，接受者可以停止不必要的等待
     + chan<-发送方 会导致panic
     + 接收方<-chan  如果数据都被接收，返回nil，不再阻塞
-    + 额外值表示chan是否被关闭或直接使用range
-    + 不能用于只接收chan
+    + 额外值表示chan是否被关闭或直接使用range(ok 值)
+    + 不能用于单向只接收chan
 ```go
 // Squarer
 go func() {
@@ -35,7 +35,7 @@ go func() {
     }
     close(squares)
 }()
-// 简洁版
+
 for x := range naturals {
     squares <- x * x
 }
@@ -56,6 +56,8 @@ func squarer(out chan<- int, in <-chan int) {
 
 naturals := make(chan int)
 squares := make(chan int)
+
+
 // 隐式地从chan int转换成chan<- int
 go squarer(squares, naturals)
 ```
