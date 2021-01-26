@@ -12,6 +12,7 @@
     + `-run=Array`执行Array开头的函数
 + `go test -v` 显示详细
 
+<!-- mock -->
 + `mockgen -source=foo.go [other options] `
     + `mockgen -source=foo.go -destination=db_mock.go -package=main`
 + `mockgen [model name] [interface],[interface]`
