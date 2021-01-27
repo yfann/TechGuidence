@@ -6,12 +6,24 @@
 + `vault server -dev`
   + http://127.0.0.1:8200/ui/vault/auth?with=token
 
+<!-- unseal -->
++ `kubectl exec -it vault-0 -- /bin/sh`
+    + `vault operator init`
+    + `export VAULT_TOKEN=<root token>`
+    + `vault operator unseal <unseal key>`
+
+
++ `vault secrets list`
+
 
 ## install
 + `helm repo add hashicorp https://helm.releases.hashicorp.com`
 + `helm install vault hashicorp/vault  -f vault-config.yaml`
 
 ## config
+
++ `helm pull hashicorp/vault`  vaule.yaml for details
+
 + mysql
 ```yaml
 # vault-config.yaml
@@ -23,7 +35,7 @@ server:
   ha:
     enabled: true
     replicas: 3
-  
+# Stateful deployment时的默认配置。HCL格式,会保存到ConfigMaps中
     config: |
       ui = true
       
@@ -72,6 +84,13 @@ server:
       }
 ```
 
+## tips
+
++ mod
+  + standalone (StatefulSet. Integrated Storage or a Consul storage backend)
+  + HA
+  + Dev
+
 ## issues
 
 + vault operator init-------> dial tcp 127.0.0.1:8200: connect: connection refused
@@ -84,11 +103,17 @@ server:
 + [storage](https://www.vaultproject.io/docs/configuration/storage)
 + [Vault HA Cluster with Integrated Storage](https://learn.hashicorp.com/tutorials/vault/raft-storage)
 + [High Availability Mode](https://www.vaultproject.io/docs/concepts/ha)
-
++ [Agent Sidecar Injector](https://www.vaultproject.io/docs/platform/k8s/injector)
 
 <!-- config -->
 + [Vault Configuration](https://www.vaultproject.io/docs/configuration)
 + [Vault on Kubernetes Deployment Guide](https://learn.hashicorp.com/tutorials/vault/kubernetes-raft-deployment-guide?in=vault/kubernetes)
++ [postgressql connection](https://pkg.go.dev/github.com/lib/pq#hdr-Connection_String_Parameters)
+
+<!-- design -->
++ [Vault on Kubernetes Reference Architecture](https://learn.hashicorp.com/tutorials/vault/kubernetes-reference-architecture)
+
+
 <!-- service broker -->
 + [hashicorp/vault-service-broker](https://github.com/hashicorp/vault-service-broker)
 

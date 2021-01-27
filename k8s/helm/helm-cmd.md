@@ -36,17 +36,20 @@
 
 + `helm fetch`将依赖放入charts/ 
 
-+ `repo`
-    - `helm search`
-    - `helm search repo <chart name>` 查询可用的charts
-        + add以后才能search
-    - `helm show [chart||readme] <repo name>/<chart name>`
-    - `helm repo list` 查看配置了哪些repo
-    - `helm repo add <name> <repo url>` 
-    ```s
-    $ helm repo add gkarthiks https://gkarthiks.github.io/helm-charts
-    $ helm fetch gkarthiks/prometheus-kafka-exporter
-    ```
+<!-- repo -->
+- `helm search`
+- `helm search repo <chart name>` 查询可用的charts
+    + add以后才能search
+- `helm show [chart||readme] <repo name>/<chart name>`
+- `helm repo list` 查看配置了哪些repo
+- `helm repo add <name> <repo url>` 
+```s
+$ helm repo add gkarthiks https://gkarthiks.github.io/helm-charts
+$ helm fetch gkarthiks/prometheus-kafka-exporter
+```
+
+
+
 <!-- download -->
 + `helm pull <chart name>`
 
