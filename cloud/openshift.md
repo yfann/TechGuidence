@@ -11,7 +11,7 @@
 + `oc project` 查看当前
 + `oc project <name>` 切换
 + `oc new-project <project_name>` 创建
-+ ``
+
 
 + `oc status`
 

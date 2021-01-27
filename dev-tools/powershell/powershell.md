@@ -66,6 +66,7 @@ function Set-Proxy{
     + `$PROFILE | Get-Member -Type NoteProperty` 查看内容
     + `notepad $PROFILE` 编辑当前用户的profile
         + `notepad $PROFILE.AllUsersAllHosts`
+    + `. $profile` reload profile
 
 
 ## execution policy

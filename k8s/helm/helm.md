@@ -14,6 +14,10 @@
     - chart收集和共享的地方
 
 
+## install helm
++ https://github.com/helm/helm/releases/tag/v3.5.0
++ tar -xvf helm-v3.5.0-linux-amd64.tar.gz
++ sudo cp linux-amd64/helm /usr/local/bin/
 
 ## charts依赖关系
 - requirements.yaml
