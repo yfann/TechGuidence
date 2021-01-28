@@ -34,11 +34,12 @@
     + `kubectl port-forward svc/redis-master 7000:redis`
     + 转发本地请求到Pod服务器
     + 只能TCP
+    + `curl localhost:<lobal port>`   或浏览器打开
 
 
 ## 本地调试k8s api server
 + `kubectl proxy  [--port=8080]`  用代理访问kubernetes API
-    + `curl http://localhost:8080/api/`
+    + `curl http://localhost:8080/api/`   或浏览器打开
 
 
 

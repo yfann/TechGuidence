@@ -1,7 +1,8 @@
 # Throttle
 
-Throttle limits the frequency of a function call to some maximum number of invocations per unit of time.
++ Throttle limits the frequency of a function call to some maximum number of invocations per unit of time.
 
++ 一定时间段内调用有限次数
 
 ## APPLICABILITY
 This pattern is similar to Debounce in that it places a limitation on the frequency of a function call, but where Debounce restricts clusters of invocations, Throttle simply limits according to time period. 
@@ -22,9 +23,9 @@ A function that accepts Effector and returns a closure with the same function si
     + 返回上次的成功结果
     + enqueue reqeust
 
-## SAMPLE CODE
+## token bucket sample
 ```go
-// token bucket sample
+
 type Effector func(context.Context) (string, error)
 
 func Throttle(e Effector, max uint, refill uint, d time.Duration) Effector {

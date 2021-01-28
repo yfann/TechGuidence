@@ -2,6 +2,7 @@
 ## cmd
 + `<command> -h`
 
+<!-- 查看 -->
 + `helm version`
 
 + `helm status <release-name> -n <namespace>`
@@ -13,28 +14,24 @@
     - `helm list --all-namespaces`
     - `helm list --namespace <namespace>` 查看release
 
++ `helm inspect`
+    - `helm inspect <chart name>`
+    - `helm inspect values <char name>` 修改chart配置
+
++ `helm fetch`将依赖放入charts/ 
+
+
+<!-- CUD -->
 + `heml install`
     -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
     -  `helm install -f xx.yaml <chart name>`
     -  `helm install --debug --dry-run <chart name>` debug
 
- + `helm upgrade [RELEASE] [CHART] [flags]`
-    - e.g.`helm upgrade -f myvalues.yaml -f override.yaml redis ./redis`
++ `helm delete <release name> -n <namespace>` 从集群中删除release
 
 
-+ `helm delete <release name> -n <namespace> --purge` 从集群中删除release,--purge删干净
-
-+ `helm inspect`
-    - `helm inspect <chart name>`
-    - `helm inspect values <char name>` 修改chart配置
-
-+ `helm create <chart name> --starter`
-    - `tree <chart name>`
-    - `helm package <chart name>`
-    - `helm lint <chart name>`
-
-
-+ `helm fetch`将依赖放入charts/ 
++ `helm upgrade [RELEASE] [CHART] [flags]` upgrade替换create
+    - `helm upgrade -f myvalues.yaml -f override.yaml redis ./redis`
 
 <!-- repo -->
 - `helm search`
@@ -49,14 +46,21 @@ $ helm fetch gkarthiks/prometheus-kafka-exporter
 ```
 
 
-
 <!-- download -->
 + `helm pull <chart name>`
 
 
+<!-- others -->
++ `helm create <chart name> --starter`
+    - `tree <chart name>`
+    - `helm package <chart name>`
+    - `helm lint <chart name>`
+
+
 ## flags
 
-+ `--values/-f <value file>` override value 
++ `--values` override value 
+    + `-f <value file>`
 
 
 ## ref
