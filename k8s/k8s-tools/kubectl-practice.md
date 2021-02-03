@@ -12,6 +12,11 @@
 pods=$(kubectl get pods --selector=job-name=pi --output=jsonpath='{.items[*].metadata.name}')
 echo $pods
 kubectl logs $pods
+
+
+ kubectl logs \
+    $(kubectl get pod -l app=orgchart -o jsonpath="{.items[0].metadata.name}") \
+    --container vault-agent
 ```
 
 + `docker exec -t $(docker ps -f name=blog-web_blog-web -q | head -1) curl 127.0.0.1/metrics | grep http_requests_received_total`

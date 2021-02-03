@@ -33,5 +33,4 @@
 + [OAuth 2.0 的四种方式](http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
 + [GitHub OAuth 第三方登录示例教程](http://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
 <!-- other -->
-+ [JWT](http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
 + [OpenId](https://www.biaodianfu.com/learn-openid.html)

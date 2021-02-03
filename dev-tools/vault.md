@@ -12,9 +12,12 @@
     + `export VAULT_TOKEN=<root token>`
     + `vault operator unseal <unseal key>`
 
++ `vault status`
 
+<!-- secret -->
 + `vault secrets list`
-
++ `vault kb put <path> <key>=<val> <key1>=<val1>`
++ `vault kb get <path>`
 
 ## install
 + `helm repo add hashicorp https://helm.releases.hashicorp.com`
@@ -103,12 +106,21 @@ server:
 + [storage](https://www.vaultproject.io/docs/configuration/storage)
 + [Vault HA Cluster with Integrated Storage](https://learn.hashicorp.com/tutorials/vault/raft-storage)
 + [High Availability Mode](https://www.vaultproject.io/docs/concepts/ha)
+
+<!-- Vault Agent -->
++ [Vault Agent](https://www.vaultproject.io/docs/agent)
++ [Vault Agent with Kubernetes](https://learn.hashicorp.com/tutorials/vault/agent-kubernetes?in=vault/kubernetes)
 + [Agent Sidecar Injector](https://www.vaultproject.io/docs/platform/k8s/injector)
++ [Injecting Secrets into Kubernetes Pods via Vault Helm Sidecar](https://learn.hashicorp.com/tutorials/vault/kubernetes-sidecar)
++ [Kubernetes Mutation Webhook Controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
+
 
 <!-- config -->
 + [Vault Configuration](https://www.vaultproject.io/docs/configuration)
 + [Vault on Kubernetes Deployment Guide](https://learn.hashicorp.com/tutorials/vault/kubernetes-raft-deployment-guide?in=vault/kubernetes)
 + [postgressql connection](https://pkg.go.dev/github.com/lib/pq#hdr-Connection_String_Parameters)
+
+
 
 <!-- design -->
 + [Vault on Kubernetes Reference Architecture](https://learn.hashicorp.com/tutorials/vault/kubernetes-reference-architecture)
