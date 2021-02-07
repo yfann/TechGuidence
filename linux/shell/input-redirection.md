@@ -15,7 +15,7 @@
         + 屏幕不显示输出(丢弃输出)
 
 + `cmd < file` 
-    + 输入到file
+    + 从file输入
     + stdin 重定向到file
 + `cmd 2>file`
     + stderr 重定向file
@@ -24,6 +24,7 @@
     + cmd infile读取内容 输出到outfile中
 
 + `n > file` 文件描述符到file
+    + 0,1,2
 + `n >> file` 
 
 + `n >& m` 输出文件m,n合并

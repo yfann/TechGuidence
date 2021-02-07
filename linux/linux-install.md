@@ -27,5 +27,14 @@ sudo cp linux-amd64/helm /usr/local/bin/
 + sudo mv kubectl-kuttl_0.8.0_linux_x86_64 /usr/local/bin/kubectl-kuttl
 + `kubectl kuttl version`
 
+## install procps
++ `apt-get update`
++ `apt-get install procps`
+
+
+## install curl
++ `apk update`
++ `apk add curl jq`
+
 ## ref
 + `ls -l` 查看权限

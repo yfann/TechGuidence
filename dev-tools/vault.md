@@ -19,6 +19,24 @@
 + `vault kb put <path> <key>=<val> <key1>=<val1>`
 + `vault kb get <path>`
 
+
+<!-- policy -->
++ `vault policy write <name>`
+```
+vault policy write internal-app - <<EOF
+path "internal/data/database/config" {
+  capabilities = ["read"]
+}
+EOF
+```
++ `vault policy list`
++ `vault policy read <name>`
+
+<!-- auth -->
++ `vault list auth/kubernetes/role`
++ `vault read auth/kubernetes/role/<role name>`
+
+
 ## install
 + `helm repo add hashicorp https://helm.releases.hashicorp.com`
 + `helm install vault hashicorp/vault  -f vault-config.yaml`
@@ -87,12 +105,35 @@ server:
       }
 ```
 
+## auto unseal
++ config
+```hcl
+seal "alicloudkms" {
+        region     = "cn-shanghai"
+        access_key = ""
+        secret_key = ""
+        kms_key_id = ""
+      }
+```
+
++ `vault operator init`  执行后会自动unseal
+
 ## tips
 
 + mod
   + standalone (StatefulSet. Integrated Storage or a Consul storage backend)
   + HA
   + Dev
+
++ template 导出环境变量
+```yaml
+  vault.hashicorp.com/agent-inject-template-config: |
+    {{ with secret "secret/data/web" -}}
+      export api_key="{{ .Data.data.payments_api_key }}"
+    {{- end }}
+```
+
+
 
 ## issues
 
@@ -106,6 +147,7 @@ server:
 + [storage](https://www.vaultproject.io/docs/configuration/storage)
 + [Vault HA Cluster with Integrated Storage](https://learn.hashicorp.com/tutorials/vault/raft-storage)
 + [High Availability Mode](https://www.vaultproject.io/docs/concepts/ha)
++ [hashicorp/vault-guides](https://github.com/hashicorp/vault-guides)
 
 <!-- Vault Agent -->
 + [Vault Agent](https://www.vaultproject.io/docs/agent)
@@ -113,18 +155,22 @@ server:
 + [Agent Sidecar Injector](https://www.vaultproject.io/docs/platform/k8s/injector)
 + [Injecting Secrets into Kubernetes Pods via Vault Helm Sidecar](https://learn.hashicorp.com/tutorials/vault/kubernetes-sidecar)
 + [Kubernetes Mutation Webhook Controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
++ [Vault Agent Templates](https://www.vaultproject.io/docs/agent/template)
++ [Kubernetes Auth Method](https://www.vaultproject.io/docs/auth/kubernetes)
+<!-- Vault Agent demo -->
++ [Vault Agent Injector Examples](https://www.vaultproject.io/docs/platform/k8s/injector/examples)
++ [vault agent k8s demo](https://github.com/hashicorp/vault-guides/tree/master/identity/vault-agent-k8s-demo)
 
+<!-- unseal -->
++ [Auto-unseal using AWS KMS](https://learn.hashicorp.com/tutorials/vault/autounseal-aws-kms?in=vault/auto-unseal)
 
 <!-- config -->
 + [Vault Configuration](https://www.vaultproject.io/docs/configuration)
 + [Vault on Kubernetes Deployment Guide](https://learn.hashicorp.com/tutorials/vault/kubernetes-raft-deployment-guide?in=vault/kubernetes)
 + [postgressql connection](https://pkg.go.dev/github.com/lib/pq#hdr-Connection_String_Parameters)
 
-
-
 <!-- design -->
 + [Vault on Kubernetes Reference Architecture](https://learn.hashicorp.com/tutorials/vault/kubernetes-reference-architecture)
-
 
 <!-- service broker -->
 + [hashicorp/vault-service-broker](https://github.com/hashicorp/vault-service-broker)

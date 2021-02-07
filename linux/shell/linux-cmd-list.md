@@ -9,7 +9,10 @@
     + -b  只搜索二进制
     + -m  man说明文件
     + -s  源代码文件
-    
+  <!-- process   -->
++ `ps aux` 查看进程
+    + 需要`apt-get install procps`
++ `kill <pid>` 杀死进程
 ## temp
 
 + `mktemp`  建立暂存文件

@@ -32,3 +32,5 @@
 + [kuttl](https://kuttl.dev/docs/#pre-requisites)
 <!-- install -->
 + [releases](https://github.com/kudobuilder/kuttl/releases)
+
++ [kubectl 备忘单](https://kubernetes.io/zh/docs/reference/kubectl/cheatsheet/)

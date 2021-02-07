@@ -168,6 +168,9 @@
 + `kubectl config set-context gce-dev --user=cluster-admin --namespace=dev`
     + set context
 
++ `kubectl config set-context default --namespace=${work_namespace}`设置默认上下文的默认命名空间
++ `kubectl config set-context ${work_context} --cluster=default --user=default --namespace=${work_namespace}`新建上下文
++ `kubectl config use-context ${work_context}`设置为默认上下文
 
 ## serviceaccounts
 + `kubectl get serviceaccounts -n <namespace>`

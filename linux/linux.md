@@ -34,5 +34,15 @@
 + `export PATH=$PATH:/usr/local/go/bin`
 + `echo $PATH | grep "/usr/local/go/bin"`
 
+
+## tips
++ --pid-path=/var/run/nginx.pid 
+    + 程序成功运行
+    + kill <pid> 提供方便
+
++ --lock-path=/var/lock/nginx.lock 
+    + 并发运行的instance通过检查lock文件是否存在来判断当前资源是否有其他Instance在使用
+
+
 ## ref
 + [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)

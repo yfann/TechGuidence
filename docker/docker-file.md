@@ -11,6 +11,14 @@
 + `ADD <src>... <dest>``COPY <src>... <dest>`复制文件到目标目录，ADD可以是url
 + `ENTRYPOINT ["exe","param1","param2"]` 容器启动后执行，Dockerfile只能有一个ENTRYPOINT，`docker run --entrypoint`
 
+
+## docker环境变量
++ `ENV <key> <val>` 
+    + Dockerfile中添加
+    + build出来的容器中会包含相应环境变量
++ `docker run -e LANGUAGE=Spanish -e API_KEY=09876 -p 3000:3000 -ti envtest` 环境变量参数传入容器
+
+
 ## issues
 + docker when using add with more than one source file, the destination must be a directory and end with a /
     - source下可能有多个匹配的文件
