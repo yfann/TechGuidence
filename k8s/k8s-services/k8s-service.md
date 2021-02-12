@@ -247,3 +247,4 @@ spec:
 
 ## ref
 + [服务、负载均衡和联网](https://kubernetes.io/zh/docs/concepts/services-networking/)
++ [使用 Service 连接到应用](https://kubernetes.io/zh/docs/concepts/services-networking/connect-applications-service/)

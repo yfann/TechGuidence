@@ -94,7 +94,7 @@ type: kubernetes.io/service-account-token
 ## ref
 + [Authorization Overview](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
 + [Authenticating](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
-
++ [管理 Service Accounts](https://kubernetes.io/zh/docs/reference/access-authn-authz/service-accounts-admin/)
 
 + [normal user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user)
 + [Certificates](https://kubernetes.io/docs/concepts/cluster-administration/certificates/)
