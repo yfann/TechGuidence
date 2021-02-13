@@ -18,11 +18,12 @@
 + `vault secrets list`
 + `vault kb put <path> <key>=<val> <key1>=<val1>`
 + `vault kb get <path>`
+  + `vault kv get kv/database/config`
 
 
 <!-- policy -->
 + `vault policy write <name>`
-```
+```conf
 vault policy write internal-app - <<EOF
 path "internal/data/database/config" {
   capabilities = ["read"]
@@ -33,8 +34,33 @@ EOF
 + `vault policy read <name>`
 
 <!-- auth -->
++ `vault auth list`
+<!-- auth k8s -->
++ `vault auth enable kubernetes`
+  + `vault auth disable kubernetes`
 + `vault list auth/kubernetes/role`
++ `vault write auth/kubernetes/login role=<role name> jwt=<token>`
++ `vault read auth/kubernetes/config`
+```conf
+vault write auth/kubernetes/config \
+    token_reviewer_jwt="$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" \
+    kubernetes_host="https://$KUBERNETES_PORT_443_TCP_ADDR:443" \
+    kubernetes_ca_cert=@/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+```
 + `vault read auth/kubernetes/role/<role name>`
+```conf
+vault write auth/kubernetes/role/vault \
+    bound_service_account_names=vault \
+    bound_service_account_namespaces=vault \
+    policies=test \
+    ttl=24h
+```
+
+
+<!-- token -->
++ `vault token capabilities <path>` 查看当前token对path的权限
++ `vault token create -policy=<policy name> -policy=<policy name1>`
+
 
 
 ## install
@@ -125,7 +151,7 @@ seal "alicloudkms" {
   + HA
   + Dev
 
-+ template 导出环境变量
++ vault agent, template 导出环境变量
 ```yaml
   vault.hashicorp.com/agent-inject-template-config: |
     {{ with secret "secret/data/web" -}}
@@ -142,6 +168,23 @@ seal "alicloudkms" {
     
 + storage "postgresql"--------->2021-01-26T09:32:22.251Z [WARN]  storage migration check error: error="pq: relation "vault_kv_store" does not exist"
   + postgresql不会自动创建表, 需要在数据库中先创建vault_kv_store,vault_ha_locks表
+
++ openshift 安装vault,需要设置gid,uid
+```yaml
+
+injector:
+  gid: 1000600000
+  uid: 1000600000
+
+server:
+  gid: 1000600000
+  uid: 1000600000
+```
+
++ openshift 使用vault agent,app上需要加(使注入的ageng container使用openshift默认的security-context)
+```yaml
+vault.hashicorp.com/agent-set-security-context: "false"
+```
 
 ## ref
 + [storage](https://www.vaultproject.io/docs/configuration/storage)
