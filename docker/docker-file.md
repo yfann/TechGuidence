@@ -24,6 +24,32 @@
     - source下可能有多个匹配的文件
 
 
+## tips
++ CMD
+    + 一个Dockerfile中只能有一个CMD
+    + 可以被覆盖
+        + `docker run -it image /bin/bash`相当于`CMD ['/bin/bash']`
+    + &&执行多个命令
+        + `CMD ["sh","-c","mkdir -p ~/my/new/directory/ && cd ~/my/new/directory && touch new.file"]`
++ ENTRYPOINT
+    + CMD中的内容作为参数
+        + `docker run --name test -p 5000:80 -it test_nginx -g "daemon off"`
+            + `-p 5000:80 -it test_nginx -g "daemon off"`作为参数
+    + 不会被覆盖
+    + 通过执行脚本运行多个命令.sh
++ ENTRYPOINT，CMD(PID1进程启动)
+    + shell
+        + CMD executable param1 param2
+        + `/bin/sh -c ”executable param1 param2”` 为PID1
+            + 子进程为executable param1 param2
+    + exec
+        + CMD ["executable","param1","param2"]
+            + 有没有数组即为区别
+        + PID1进程为"executable","param1","param2"
+        + docker run 也是这种方式
+
+
+
 ## ref
 + [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 + [Dockerfile: ADD vs COPY](https://www.ctl.io/developers/blog/post/dockerfile-add-vs-copy/)
@@ -31,3 +57,7 @@
 + [深入Dockerfile（一）](https://github.com/qianlei90/Blog/issues/35)
 <!-- detail -->
 + [创建尽可能小的 Docker 容器---scratch](https://segmentfault.com/a/1190000000628247)
+
+<!-- cmd -->
++ [论docker中 CMD 与 ENTRYPOINT 的区别(转)](https://developer.aliyun.com/article/270424)
++ [理解Docker容器的进程管理](https://developer.aliyun.com/article/5545)

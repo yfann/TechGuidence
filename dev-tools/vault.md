@@ -200,9 +200,13 @@ vault.hashicorp.com/agent-set-security-context: "false"
 + [Kubernetes Mutation Webhook Controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 + [Vault Agent Templates](https://www.vaultproject.io/docs/agent/template)
 + [Kubernetes Auth Method](https://www.vaultproject.io/docs/auth/kubernetes)
++ [Agent Annotations](https://www.vaultproject.io/docs/platform/k8s/injector/annotations)
 <!-- Vault Agent demo -->
 + [Vault Agent Injector Examples](https://www.vaultproject.io/docs/platform/k8s/injector/examples)
 + [vault agent k8s demo](https://github.com/hashicorp/vault-guides/tree/master/identity/vault-agent-k8s-demo)
++ [read mount file](https://github.com/jsgilmore/mount/blob/master/mounts_linux.go)
+
+
 
 <!-- unseal -->
 + [Auto-unseal using AWS KMS](https://learn.hashicorp.com/tutorials/vault/autounseal-aws-kms?in=vault/auto-unseal)
@@ -215,8 +219,11 @@ vault.hashicorp.com/agent-set-security-context: "false"
 <!-- design -->
 + [Vault on Kubernetes Reference Architecture](https://learn.hashicorp.com/tutorials/vault/kubernetes-reference-architecture)
 
-<!-- service broker -->
+<!-- others -->
 + [hashicorp/vault-service-broker](https://github.com/hashicorp/vault-service-broker)
++ [DaspawnW/vault-crd](https://github.com/DaspawnW/vault-crd)
+
 
 <!-- issues -->
 + [dial tcp 127.0.0.1:8200: connect: connection refused](https://discuss.hashicorp.com/t/vault-failed-to-start/2529)
++ [Vault-helm and kubernetes environment variables](https://discuss.hashicorp.com/t/vault-helm-and-kubernetes-environment-variables/4973)

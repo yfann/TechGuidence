@@ -7,4 +7,4 @@
 + enable k8s
 
 + terminal set proxy,set no proxy
-    + `helm install`
+    + `helm install ...`

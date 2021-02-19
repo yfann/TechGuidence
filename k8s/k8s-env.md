@@ -3,13 +3,20 @@
 
 
 
+## tips
+
++ `kubectl exec -it [podname] -- sh` 看不到启动Pod时source的环境变量
+    + 进入时相当于开启新的shell(没有source环境变量)
+
+
 ## ref
 + [Using environment files over injected environment variables in Kubernetes](https://mglaman.dev/blog/using-environment-files-over-injected-environment-variables-kubernetes)
     + mount secret to pod
     + mount configMap to pod
     + env from configmap
 
-
+<!-- env -->
++ [EnvVarSource](https://v1-16.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.16/#envvarsource-v1-core)
 <!-- volumn -->
 + [Configure a Pod to Use a Volume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/)
 

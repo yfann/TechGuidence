@@ -1,0 +1,20 @@
+
+## tips
++ command
+    + 会覆盖容器的command,对应docker entrypoint
++ args
+    + 会覆盖容器的args,对应docker Cmd
++ args 使用环境变量
+```yaml
+env:
+- name: MESSAGE
+  value: "hello world"
+command: ["/bin/echo"]
+args: ["$(MESSAGE)"]
+```
+
+## ref
++ [为容器设置环境变量](https://kubernetes.io/zh/docs/tasks/inject-data-application/define-environment-variable-container/)
++ [通过环境变量将Pod信息呈现给容器](https://kubernetes.io/zh/docs/tasks/inject-data-application/environment-variable-expose-pod-information/)
++ [pod template](https://kubernetes.io/docs/concepts/workloads/pods/#pod-templates)
++ [为容器设置启动时要执行的命令和参数](https://kubernetes.io/zh/docs/tasks/inject-data-application/define-command-argument-container/)
