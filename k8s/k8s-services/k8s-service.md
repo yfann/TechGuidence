@@ -1,8 +1,21 @@
+## k8s services
++ 对一组pod的抽象访问
 
-## services
-+ enabling clients to discover and talk to pods
-+ exposing groups of pods to other pods in the cluster
-+ process TCP,UDP level,not HTTP level
++ Service、Endpoints 和 Pod间支撑的协议
+  + TCP(默认)
+  + UPD
+  + SCTP
+
++ 4种service类型
+  + ClusterIP：默认类型，自动分配一个仅 cluster 内部可以访问的虚拟 IP
+    + 内部访问
+
+  + NodePort：在 ClusterIP 基础上为 Service 在每台机器上绑定一个端口，这样就可以通过 <NodeIP>:NodePort 来访问该服务。如果 kube-proxy 设置了 --nodeport-addresses=10.240.0.0/16（v1.10 支持），那么仅该 NodePort 仅对设置在范围内的 IP 有效。
+    + 可以外部访问
+
+  + LoadBalancer：在 NodePort 的基础上，借助 cloud provider 创建一个外部的负载均衡器，并将请求转发到 <NodeIP>:NodePort
+
+  + ExternalName：将服务通过 DNS CNAME 记录方式转发到指定的域名（通过 spec.externlName 设定）。需要 kube-dns 版本在 1.7 以上。
 
 ## tips
 ```yaml
@@ -23,7 +36,7 @@ spec:
 ```
 + port
     - port: service 暴露出的port
-    - targetPort: contain port
+    - targetPort: container port
 
 + label selector to connect pods
 
@@ -120,10 +133,12 @@ subsets:
 + ❷The IPs of the endpoints that the service will forward connections to：pod->service->external ip
 + `kubectl get endpoints <service-name>`
 + service中配置了pod selector会创建endpoints
++ endpoint controller会watch service 和 pod的变化
+  + 把pod selector对应的pods的IP 加入到endpoints的list中
 
-+ ExternalName(指向external service,out of cluster)
-  - DNS层的CNAME实现
-  - 没有cluster IP
+## ExternalName(指向external service,out of cluster)
+- DNS层的CNAME实现
+- 没有cluster IP
 ```yaml
 apiVersion: v1
 kind: Service
@@ -135,9 +150,6 @@ spec:
   ports:
   - port: 80
 ```
-
-+ endpoint controller会watch service 和 pod的变化
-  + 把pod selector对应的pods的IP 加入到endpoints的list中
 
 ## external client使用cluster中的service
 
@@ -246,5 +258,7 @@ spec:
 
 
 ## ref
++ [service](https://kubernetes.io/docs/concepts/services-networking/service/)
 + [服务、负载均衡和联网](https://kubernetes.io/zh/docs/concepts/services-networking/)
 + [使用 Service 连接到应用](https://kubernetes.io/zh/docs/concepts/services-networking/connect-applications-service/)
++ [服务发现与负载均衡](https://feisky.gitbooks.io/kubernetes/content/concepts/service.html)
