@@ -77,9 +77,11 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 ## Config
 
 + `cat .git/config` 查看origin信息
-+ `git config [--global] --list` 查看配置
++ `git config [--global]/[-g] --list` 查看配置
 + `git config [--global] user.name '...'` user.email
 + `git config --global --unset user.password`
++ `git config user.name <user name>` 只影响当前目录
++ `git config user.email <user email>`
 
 ***
 
@@ -112,7 +114,9 @@ $ git rm -r --cached .
 $ git add .
 ```
 
-+ 需要用户名密码时,改过windows密码后，需要清除windows缓存的密码
++ windows下git会保存密码
+    + 改密码或切换账号后，需要在控制面板用户里清除保存的密码
+
 
 + The following untracked working tree files would be overwritten by checkout `git clean -d -fx`
 

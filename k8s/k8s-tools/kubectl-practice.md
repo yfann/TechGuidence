@@ -36,7 +36,9 @@ kubectl logs $pods
 + 查询
     - `kb get po --all-namespaces| grep olm`
 
-
++ template 中的name有hyphen时
+    - `oc get secret logging-elasticsearch --template='{{index .data "admin-ca"}}' |base64 -d > ca`会报错
+    - `oc get secret logging-elasticsearch --template='{{index .data "admin-ca"}}' |base64 -d > ca`
 
 ## 动态语句
 

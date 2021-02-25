@@ -157,9 +157,14 @@ seal "alicloudkms" {
     {{ with secret "secret/data/web" -}}
       export api_key="{{ .Data.data.payments_api_key }}"
     {{- end }}
+  ....
+  args:
+    ['sh', '-c', 'source /vault/secrets/config && <entrypoint script>']
+  # kubectl exec -it <pod name> -- sh 进去看不到env 是因为开启了新的shell
 ```
 
-
++ vault.hashicorp.com/agent-configmap
+  + mount to /vault/configs
 
 ## issues
 
@@ -192,6 +197,8 @@ vault.hashicorp.com/agent-set-security-context: "false"
 + [High Availability Mode](https://www.vaultproject.io/docs/concepts/ha)
 + [hashicorp/vault-guides](https://github.com/hashicorp/vault-guides)
 
+<!-- detail -->
++ [Lease, Renew, and Revoke](https://www.vaultproject.io/docs/concepts/lease)
 <!-- Vault Agent -->
 + [Vault Agent](https://www.vaultproject.io/docs/agent)
 + [Vault Agent with Kubernetes](https://learn.hashicorp.com/tutorials/vault/agent-kubernetes?in=vault/kubernetes)
@@ -199,6 +206,9 @@ vault.hashicorp.com/agent-set-security-context: "false"
 + [Injecting Secrets into Kubernetes Pods via Vault Helm Sidecar](https://learn.hashicorp.com/tutorials/vault/kubernetes-sidecar)
 + [Kubernetes Mutation Webhook Controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 + [Vault Agent Templates](https://www.vaultproject.io/docs/agent/template)
+  + render secrets to file
+  + renew secret
+  + consul template markup
 + [Kubernetes Auth Method](https://www.vaultproject.io/docs/auth/kubernetes)
 + [Agent Annotations](https://www.vaultproject.io/docs/platform/k8s/injector/annotations)
 <!-- Vault Agent demo -->

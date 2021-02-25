@@ -1,9 +1,9 @@
 
 ## tips
 + command
-    + 会覆盖容器的command,对应docker entrypoint
+    + 会覆盖 docker entrypoint
 + args
-    + 会覆盖容器的args,对应docker Cmd
+    + 会覆盖 docker CMD
 + args 使用环境变量
 ```yaml
 env:
