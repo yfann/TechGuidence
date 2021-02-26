@@ -64,3 +64,5 @@
 + [ingress](https://feisky.gitbooks.io/kubernetes/content/concepts/ingress.html)
 
 + [irtual-ips-and-service-proxies](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies)
+
++ [Using Source IP](https://kubernetes.io/docs/tutorials/services/source-ip/)

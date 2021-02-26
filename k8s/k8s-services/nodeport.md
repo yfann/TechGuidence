@@ -1,5 +1,5 @@
 ## tips
-
++ 每个node都会开端口
 + --service-node-port-range (default: 30000-32767) 指定node的端口
     + 随机在范围中选择
     + service中记录.spec.ports[*].nodePort
