@@ -59,6 +59,7 @@
 + `go mod edit -fmt`格式化go.mod
 <!-- vendor -->
 + `go mod vendor`
++ `go build -mod=vendor -a -o xxxx main.go`
 
 
 <!-- go tool -->

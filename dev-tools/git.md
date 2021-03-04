@@ -3,15 +3,10 @@
 ## init
 
 + `git clone <repository>`
-
 + `git add *`
-
 + `git commit -m "commit"`
-
 + `git pull origin master`   //pull resolve confliction
-
 + `git push origin master` //push to remote(has no conflict)
-
 + `git remote add origin <url>`
 
 ## Basic CMD
@@ -102,6 +97,13 @@ Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 + gerrit 
 + Git Bash 
 + gitextension
+
+
+## ssh
++ `ssh-keygen -lf ~/.ssh/id_rsa.pub`
+    + get SHA256
+
+
 
 
 ## issue

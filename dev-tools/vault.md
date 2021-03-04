@@ -144,6 +144,42 @@ seal "alicloudkms" {
 
 + `vault operator init`  执行后会自动unseal
 
+
+
+## vault agent
++ work as init container
+  + exit_after_auth = true 
++ work as sidecar
+  + exit_after_auth = fase
++ VAULT_ADDR
+  + 环境变量，vault server的地址
+
++ vault-agent配置
+```yaml
+initContainers:
+- args:
+  - agent
+  - -config=/etc/vault/vault-agent-config.hcl
+  - -log-level=debug
+  env:
+  - name: VAULT_ADDR
+    value: http://192.168.64.1:8200
+  image: vault
+  name: vault-agent
+  volumeMounts:
+  - mountPath: /etc/vault
+    name: config
+  - mountPath: /etc/secrets
+    name: shared-data
+```
++ Vault Agent Configuration Map
+  + annotation `vault.hashicorp.com/agent-configmap:<configmap name>`
+  + mount to `/vault/configs`
+  + `config-init.hcl` used by the init container. This must have `exit_after_auth` set to `true`.
+  + `config.hcl` used by the sidecar container. This must have `exit_after_auth` set to `false`.
+
+
+
 ## tips
 
 + mod

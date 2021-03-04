@@ -2,6 +2,8 @@
 
 + `sh` bourne shell
     + `sh -c <cmd>`  
+        + shell form
+        + command is run in a shell
         + 加载sh,sh编译并执行<cmd>部分
     + `-c` string If  the  -c  option  is  present, then commands are read from
           string.  If there are arguments after the  string,  they  are

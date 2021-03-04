@@ -129,6 +129,8 @@
 + `kubectl delete ns <namespace>` also delete the resource under that namespace
 + `kubectl get all -n <namespace>`
 + `kubectl get po -n <namespace>`
++ `kubectl config set-context --current --namespace=<namespace>`
+
 
 ## net
 + `kubectl port-forward <pod-name> <local-port>:<pod-port>`
@@ -292,6 +294,8 @@
 <!-- Changes the container image defined in a Pod, ReplicationController’s template, Deployment, DaemonSet, Job, or ReplicaSet. Example: kubectl set image deployment kubia nodejs=luksa/kubia:v2 -->
 
 ## ref
++ [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)
 + [kubectl 命令式](https://kubernetes.io/zh/docs/tasks/manage-kubernetes-objects/imperative-config/)
 + [kubectl 声明式](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/)
