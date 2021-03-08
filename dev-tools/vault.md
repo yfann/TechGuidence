@@ -16,7 +16,7 @@
 
 <!-- secret -->
 + `vault secrets list`
-+ `vault kb put <path> <key>=<val> <key1>=<val1>`
++ `vault kv put <path> <key>=<val> <key1>=<val1>`
 + `vault kb get <path>`
   + `vault kv get kv/database/config`
 

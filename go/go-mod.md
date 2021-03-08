@@ -49,7 +49,7 @@
 	+ `go list -u -m all`查看所有升级依赖
 	+ `go list -m -versions <pkg>` 查看可用的版本号
 
-
+<!-- go mod -->
 + `go mod init <module path>` 创建go.mod
 + `go mod download` 下载所有依赖包
 + `go mod tidy` 删除没有用到的包
