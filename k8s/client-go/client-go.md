@@ -239,6 +239,8 @@ func (c *Controller) syncHandler(key string) (time.Duration, error) {
 <!-- sample -->
 + [out-of-cluster-client-configuration](https://github.com/kubernetes/client-go/tree/master/examples/out-of-cluster-client-configuration)
 + [sample-controller](https://github.com/kubernetes/sample-controller)
++ [in-cluster](https://github.com/kubernetes/client-go/tree/master/examples/in-cluster-client-configuration)
++ [out-cluster](https://github.com/kubernetes/client-go/tree/master/examples/out-of-cluster-client-configuration)
 
 <!-- source -->
 + [kubernetes/client-go](https://github.com/kubernetes/client-go)

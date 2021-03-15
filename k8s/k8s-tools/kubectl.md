@@ -73,7 +73,8 @@
 
 
 ## labels
-+ `kubectl get po --show-labels`
++ `kubectl get ... --show-labels`
+
 + `kubectl get po -L <label-name>,<label-name>`
 + `kubectl label po <pod-name> <label-name>=<label-value>`
     - `kubectl label po <pod-name> <label-name>=<label-value> --overwrite` update exsiting label
@@ -81,7 +82,9 @@
     - `-l <label-name>`
     - `-l '!<label-name>'` select those don't have the label name,单引号在bash中转义！
 + `kubectl delete po -l <label-name>=<label-value>`
-+ `kubectl label pod <pod-name> app=foo --overwrite`
+
++ `kubectl label pod <pod-name> app=foo [--overwrite]`
++ `kubectl label pod <pod-name> <label>-`
 
 
 ## logs

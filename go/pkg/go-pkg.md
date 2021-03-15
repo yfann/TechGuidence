@@ -49,6 +49,7 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [errors](github.com/pkg/errors)
     + add context to the failure path
 + [glog](github.com/golang/glog)
+    + [go-logr/logr](https://github.com/go-logr/logr)
 
 
 <!-- k8s -->
