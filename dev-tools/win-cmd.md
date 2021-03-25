@@ -4,8 +4,6 @@
     + `set <name>`
 + `where <cmd>`
 + `cls`
-+ `netstat -ano` 查看端口占用情况
-+ `netstat -ano|findstr <port>`
 + `taskkill /f /t /im <PID>` 杀死进程
 + `mklink` win7
    - `mklink /d "%USERPROFILE%\AppData\Local\Temp" "d:\TEMP"`  ｃ:减负
@@ -13,6 +11,9 @@
 + 换行(windows`^`,linux`\`)
 
 
+## 端口占用
++ `netstat -ano|findstr <port>`
++ `tasklist | findstr "<pid>"`
 ## shortcut
 
 + `win+x` 超级菜单
