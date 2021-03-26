@@ -1,6 +1,7 @@
 
 ## key
 + Katyushka Art Dolls
++ designer toy
 
 ## exhibitor
 + [Toycon UK](http://www.toyconuk.com/)

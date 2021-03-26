@@ -28,7 +28,7 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 
 ## ref
 + [查找Go包](https://pkg.go.dev/)
-
++ [Go 每日一库](https://juejin.cn/user/3210229684391048/posts)
 
 
 <!-- pkg -->
@@ -59,6 +59,14 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [k8s.io/apimachinery/pkg/types](https://pkg.go.dev/k8s.io/apimachinery/pkg/types)
 + [brokerapi](https://github.com/pivotal-cf/brokerapi)
 
-<!-- fun -->
+<!-- others -->
 + [logrusorgru/aurora](https://github.com/logrusorgru/aurora)
     + Ultimate ANSI colors for Golang
++ [fyne](https://juejin.cn/post/6868033438713118733)
+    + 搭建个人博客
++ [jobrunner](https://juejin.cn/post/6867893228654313480)
++ [mapstructure](https://juejin.cn/post/6855300813707804686)
++ [cli](https://juejin.cn/post/6844904198593576967)
+<!-- debug -->
++ [air](https://juejin.cn/post/6878852918586376205)
+    + 热加载工具
