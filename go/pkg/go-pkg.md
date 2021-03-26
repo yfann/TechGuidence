@@ -7,7 +7,6 @@
     + 如果request超时，则所有的goroutine都应该被终止
 
 
-
 ## imports
 + io
 + log
@@ -28,8 +27,7 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 
 ## ref
 + [查找Go包](https://pkg.go.dev/)
-+ [Go 每日一库](https://juejin.cn/user/3210229684391048/posts)
-
++ [Go 每日一库](https://darjun.github.io/)
 
 <!-- pkg -->
 + [fmt](https://golang.org/pkg/fmt/ )
@@ -40,16 +38,12 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [text/template](https://juejin.im/post/6844903762901860360)
 + [html/template](https://golang.org/pkg/html/template/)
 
-
 <!-- 3rd pkg -->
-+ [viper](https://github.com/spf13/viper)
-    + configuration solution for Go application
+
 + [kelseyhightower/envconfig](https://github.com/kelseyhightower/envconfig)
     + get environment variables to struct
 + [errors](github.com/pkg/errors)
     + add context to the failure path
-+ [glog](github.com/golang/glog)
-    + [go-logr/logr](https://github.com/go-logr/logr)
 
 
 <!-- k8s -->
@@ -60,13 +54,69 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [brokerapi](https://github.com/pivotal-cf/brokerapi)
 
 <!-- others -->
-+ [logrusorgru/aurora](https://github.com/logrusorgru/aurora)
-    + Ultimate ANSI colors for Golang
+
 + [fyne](https://juejin.cn/post/6868033438713118733)
     + 搭建个人博客
-+ [jobrunner](https://juejin.cn/post/6867893228654313480)
-+ [mapstructure](https://juejin.cn/post/6855300813707804686)
-+ [cli](https://juejin.cn/post/6844904198593576967)
++ [buntdb](https://darjun.github.io/2020/03/21/godailylib/buntdb/)
+    + 内存数据库
++ [govaluate](https://darjun.github.io/2020/04/01/godailylib/govaluate/)
+    + 计算表达式
++ [plot ](https://darjun.github.io/2020/04/12/godailylib/plot/)
+    + 绘图
+
+<!-- 网络 -->
++ [GoPacket](https://github.com/google/gopacket)
+    + 抓包
++ [gentleman](https://darjun.github.io/2020/04/07/godailylib/gentleman/)
+    + http客户端
++ [negroni](https://darjun.github.io/2020/06/19/godailylib/negroni/)
+    + http中间件
+    + 添加日志或计算耗时
++ [net/rpc](https://darjun.github.io/2020/05/08/godailylib/rpc/)
++ [jsonrpc](https://darjun.github.io/2020/05/10/godailylib/jsonrpc/)
++ [twirp](https://darjun.github.io/2020/06/07/godailylib/twirp/)
+    + protobuf
+
 <!-- debug -->
 + [air](https://juejin.cn/post/6878852918586376205)
     + 热加载工具
++ [fsnotify](https://darjun.github.io/2020/01/19/godailylib/fsnotify/)
+    + 文件修改自动加载
++ [godotenv](https://darjun.github.io/2020/02/12/godailylib/godotenv/)
+    + .env文件读取内容，配置环境变量
+
+<!-- log -->
++ [log](https://darjun.github.io/2020/02/07/godailylib/log/)
++ [glog](github.com/golang/glog)
+    + [go-logr/logr](https://github.com/go-logr/logr)
++ [logrus](https://darjun.github.io/2020/02/07/godailylib/logrus/)
++ [zap](https://darjun.github.io/2020/04/23/godailylib/zap/)
+    + 对性能和内存分配做了极致的优化
+
+<!-- develop -->
++ [carbon](https://darjun.github.io/2020/02/14/godailylib/carbon/)
+    + 日期处理
++ [watermill](https://darjun.github.io/2020/03/01/godailylib/watermill/)
+    + 异步消息
++ [cast](https://darjun.github.io/2020/01/20/godailylib/cast/)
+    + 类型转换
++ [dig](https://darjun.github.io/2020/02/22/godailylib/dig/)
+    + 依赖注入
++ [jobrunner](https://juejin.cn/post/6867893228654313480)
++ [mapstructure](https://juejin.cn/post/6855300813707804686)
++ [mergo](https://darjun.github.io/2020/03/11/godailylib/mergo/)
+    + 结构体map之间转换
++ [copier](https://darjun.github.io/2020/03/13/godailylib/copier/)
+    + 不同结构体间赋值
++ [jennifer](https://darjun.github.io/2020/03/14/godailylib/jennifer/)
+    + 代码生成
++ [go-cmp](https://darjun.github.io/2020/03/20/godailylib/go-cmp/)
+    + 值的比较
++ [validator](https://darjun.github.io/2020/04/04/godailylib/validator/)
++ [casbin](https://darjun.github.io/2020/06/15/godailylib/fyne/)
+    + 权限管理
+<!-- 数据库 -->
++ [sqlc](https://darjun.github.io/2020/04/28/godailylib/sqlc/)
++ gorm
++ [xorm](https://darjun.github.io/2020/05/07/godailylib/xorm/)
++ database/sql
