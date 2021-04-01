@@ -13,6 +13,7 @@
 + `ps aux` 查看进程
     + 需要`apt-get install procps`
 + `kill <pid>` 杀死进程
+
 ## temp
 
 + `mktemp`  建立暂存文件
@@ -57,6 +58,10 @@
 + `man <cmd>`
 + `info <cmd>`
 
+
+## tree
+
++ `tree -L 2`
 
 ## ref
 + [超全的 Linux Shell 文本处理工具集锦](https://zhuanlan.zhihu.com/p/265869157)

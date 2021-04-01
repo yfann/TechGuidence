@@ -1,5 +1,5 @@
 
-## cmd
+## testing
 + `go test`  
     + `go test ./...`当前目录和子目录
         + `go test $(go list ./... | grep -v /vendor/)` skip vendor
@@ -12,7 +12,7 @@
     + `-run=Array`执行Array开头的函数
 + `go test -v` 显示详细
 
-<!-- mock -->
+## gomock
 + `mockgen -source=foo.go [other options] `
     + `mockgen -source=foo.go -destination=db_mock.go -package=main`
 + `mockgen [model name] [interface],[interface]`
