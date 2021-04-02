@@ -3,7 +3,8 @@
 + Cloud Foundry
     - 面向Applicatin的PaaS
 + 主流Pass平台是面向Contianer的（container as a service）
-
++ Scalability is the ability of the system to accommodate larger loads just by adding resources either making hardware stronger (scale up) or adding additional nodes (scale out). 
++ Elasticity is the ability to fit the resources needed to cope with loads dynamically usually in relation to scale out.
 
 ## ref
 

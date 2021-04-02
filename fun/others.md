@@ -7,7 +7,6 @@
 ## market
 + [coin](https://coinmarketcap.com/coins/)
 + [小恶魔集市](https://www.mobile01.com/marketindex.php)  测评外设
-+ [L](https://www.outsidebrick.com/products/mangabrick-detective)
 
 ## ebook
 + [find book](https://www.arbookfind.com/UserType.aspx)
