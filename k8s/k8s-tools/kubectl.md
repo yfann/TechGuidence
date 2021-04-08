@@ -150,18 +150,7 @@
 + `kubectl cp <pod>:/var/log/foo.log foo.log` copy container文件
     + `kubectl cp localfile foo-pod:/etc/remotefile` copy文件到container
 
-## API & resources
-+ `kubectl api-versions`
-+ `kubectl api-resources`
-    + `kubectl api-resources -o wide`
-    + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
-+ `kubectl cluster-info`
-+ `kubectl proxy  [--port=8080]`  用代理访问kubernetes API
-    + `curl http://localhost:8080/api/`
-+ `kubectl get apiservice`
-+ `kubectl explain <k8s obj>`
-    - `kubectl explain pods`  
-        + `kubectl explain pods.spec` 
+
     
 ## context
 <!-- ~/.kube/config -->
