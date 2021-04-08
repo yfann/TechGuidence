@@ -53,3 +53,4 @@ spec:
 
 ## ref
  + [Debug Running Pods](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-running-pod/)
+ + [调试 Service](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/debug-service/)
