@@ -144,3 +144,6 @@ spec:
 + [operator-framework/community-operators](https://github.com/operator-framework/community-operators)
 + [operatorhub](https://operatorhub.io/)
 + [community-operators](https://github.com/operator-framework/community-operators/tree/master/community-operators)
+
+<!-- okd debug -->
++ [operator-framework/operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
