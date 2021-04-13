@@ -2,6 +2,9 @@
 ## 查找
 
 + `ls -a`
+    + `ls -lh`
+        + 大小权限等信息
+        + `-h` human可读
 + `which <cmd>`
     + PATH指定的路径中搜索<cmd>的位置，返回第一个结果
 + `whereis <cmd>`
@@ -9,10 +12,18 @@
     + -b  只搜索二进制
     + -m  man说明文件
     + -s  源代码文件
+
+
+## process
   <!-- process   -->
-+ `ps aux` 查看进程
++ `ps aux|grep <name>` 查看进程
     + 需要`apt-get install procps`
 + `kill <pid>` 杀死进程
+    + `kill -KILL <pid>` 强制杀死
+    + `kill -9 <pid>` 彻底杀死
++ `ps -A` 所有进程
++ `ps aux | grep <name> | grep -v grep | awk '{print $2}'`
+    + 得到进程Pid
 
 ## temp
 
@@ -24,6 +35,7 @@
 + `$(command)` 运行命令并返回值
     + `$(echo foo)`
 
+## cmd
 <!-- 目录切换 -->
 + `cd -`回到之前目录
     + `cd $OLDPWD`
@@ -44,7 +56,7 @@
         + -i 直接修改文件否则是返回替换内容
         + -n 不打印修改结果
 
-+ `tree`(sudo apt install tree)
+
 
 + `nslookup`
     + `nslookup <domain name> <DNS IP>`
@@ -62,6 +74,11 @@
 ## tree
 
 + `tree -L 2`
++ `tree`(sudo apt install tree)
+
+## java
++ `jps` 查看java进程的pid
++ `cd /proc/<pid>/fd` 查看进程日志
 
 ## ref
 + [超全的 Linux Shell 文本处理工具集锦](https://zhuanlan.zhihu.com/p/265869157)

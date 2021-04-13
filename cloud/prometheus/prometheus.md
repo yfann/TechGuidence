@@ -18,6 +18,9 @@
 + [Prometheus Book](https://yunlzheng.gitbook.io/prometheus-book/)
 <!-- exporter -->
 + [exporters](https://prometheus.io/docs/instrumenting/exporters/)
++ [prometheus/node_exporter](https://github.com/prometheus/node_exporter)
++ [PromCat]( PromCat.io )
+
 <!-- pull -->
 + [Pull doesn't scale - or does it?](https://prometheus.io/blog/2016/07/23/pull-does-not-scale-or-does-it/)
 + [Prometheus and the Debate Over ‘Push’ Versus ‘Pull’ Monitoring](https://thenewstack.io/exploring-prometheus-use-cases-brian-brazil/)
@@ -60,3 +63,9 @@
 + [给Prometheus造假数据的方法](https://www.shangmayuan.com/a/964aace4f33f4ab19685ec1f.html)
 + [little-angry-clouds/prometheus-data-generator](https://github.com/little-angry-clouds/prometheus-data-generator)
 + [chanjarster/prometheus-mock-data](https://github.com/chanjarster/prometheus-mock-data)
+
+
+<!-- monitor k8s -->
++ [Kubernetes monitoring with Prometheus, the ultimate guide](https://sysdig.com/blog/kubernetes-monitoring-prometheus/)
+    +  kube-state-metrics
++ [How to Monitor Kubernetes API Server](https://sysdig.com/blog/monitor-kubernetes-api-server/)
