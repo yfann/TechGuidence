@@ -287,6 +287,7 @@
 
 ## ref
 + [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
++ [kubectl 参考文档](http://kubernetes.kansea.com/docs/user-guide/kubectl/kubectl_run/)
 
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)
 + [kubectl 命令式](https://kubernetes.io/zh/docs/tasks/manage-kubernetes-objects/imperative-config/)
