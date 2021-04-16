@@ -43,6 +43,10 @@
     + `curl http://localhost:8080/api/`   或浏览器打开
 
 
+## debug service
++ `wget --spider -timeout=1 <service name>.<name space>`
+  + `wget --spider -timeout=1 <service name>` 同namespace
+
 
 ## debug
 + `kubectl exec kubia-7nog1 -- curl -s http://10.111.249.153`

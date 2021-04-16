@@ -50,3 +50,10 @@ vault write auth/kubernetes/config \
     token_reviewer_jwt="$SA_JWT_TOKEN" \
     kubernetes_host="https://$K8S_HOST" \
     kubernetes_ca_cert="$SA_CA_CRT"
+
+
+## run
++ `kb run nginx --image=nginx --replicas=2`
++ `kubectl expose deployment nginx --port=80`
++ `kubectl run busybox --rm -ti --image=busybox /bin/sh`
+    + `wget --spider --timeout=1 nginx`

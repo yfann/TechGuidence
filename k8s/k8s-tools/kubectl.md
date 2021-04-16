@@ -84,7 +84,7 @@
 + `kubectl delete po -l <label-name>=<label-value>`
 
 + `kubectl label pod <pod-name> app=foo [--overwrite]`
-+ `kubectl label pod <pod-name> <label>-`
++ `kubectl label pod <pod-name> <label>-` 删除label
 
 
 ## logs
@@ -234,9 +234,7 @@
 + `kubectl rollout pause deployment kubia`
 + `kubectl rollout resume deployment kubia`
 
-## Node
-+ `kubectl get node`
-+ `kubectl label node minikube disk=ssd`
+
 
 ## events
 + `kubectl get events --watch`
@@ -286,7 +284,7 @@
 <!-- Changes the container image defined in a Pod, ReplicationController’s template, Deployment, DaemonSet, Job, or ReplicaSet. Example: kubectl set image deployment kubia nodejs=luksa/kubia:v2 -->
 
 ## ref
-+ [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
++ [kubectl 备忘录](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 + [kubectl 参考文档](http://kubernetes.kansea.com/docs/user-guide/kubectl/kubectl_run/)
 
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)

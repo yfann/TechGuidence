@@ -5,6 +5,7 @@
 + `kubectl top node <node name>`
 + `kubectl describe node <node name>`
     + 查看 limit.cpu
++ `kubectl label node minikube disk=ssd`
 
 ## tips
 

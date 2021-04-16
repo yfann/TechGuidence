@@ -12,3 +12,4 @@
 ## ref
 + [网络策略](https://kubernetes.io/zh/docs/concepts/services-networking/network-policies/)
 + [网络插件](https://kubernetes.io/zh/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
++ [Why You Should Test Your Kubernetes Network Policies](https://www.inovex.de/blog/test-kubernetes-network-policies/)

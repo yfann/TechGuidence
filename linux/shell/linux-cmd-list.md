@@ -62,7 +62,7 @@
     + `nslookup <domain name> <DNS IP>`
 
 
-+ chmod
++ chmod+ 
     + man chmod
     + info chmod
 
@@ -79,6 +79,8 @@
 ## java
 + `jps` 查看java进程的pid
 + `cd /proc/<pid>/fd` 查看进程日志
++ `nohup java -jar -Dspring.profiles.active=prod xxx.jar &`
+    + 运行jar
 
 ## ref
 + [超全的 Linux Shell 文本处理工具集锦](https://zhuanlan.zhihu.com/p/265869157)
