@@ -14,8 +14,8 @@
 ## 端口占用
 + `netstat -ano|findstr <port>`
 + `tasklist | findstr "<pid>"`
-## shortcut
 
+## shortcut
 + `win+x` 超级菜单
 
 ## choco(run as admin)
@@ -36,6 +36,4 @@
 + [BAT文件语法和技巧](http://www.jb51.net/article/5828.htm)
 + [批处理常用命令总结](http://xstarcd.github.io/wiki/windows/windows_cmd_summary.html)
 + [windows commands](https://docs.microsoft.com/zh-cn/windows-server/administration/windows-commands/windows-commands)
-<!-- windows terminal -->
-+ [windows terminal](https://github.com/microsoft/terminal)
-+ [Windows Terminal 添加 Git-Bash 支持](https://www.jianshu.com/p/450aac19d981)
+

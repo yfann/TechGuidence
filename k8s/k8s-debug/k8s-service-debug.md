@@ -22,6 +22,7 @@
 
 ## tips
 + NodePort、LoadBalane、Ingress 三种方式暴露服务给外部使用
+  + nodePort: <公网ip>:<nodePort>
 + Network namespaces(netns)
     + linux用来隔离网络设备的
     + 每个pod有自己的netns
