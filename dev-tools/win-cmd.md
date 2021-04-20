@@ -27,15 +27,15 @@
 
 + `choco upgrade <pkg>`
 
+## Mac->win
++ enable Remote Desktop on windows
++ install microsoft remote desktop on MAC
++ [win->Mac](https://zhuanlan.zhihu.com/p/74162964)
 
 ## ref
 + [BAT文件语法和技巧](http://www.jb51.net/article/5828.htm)
 + [批处理常用命令总结](http://xstarcd.github.io/wiki/windows/windows_cmd_summary.html)
 + [windows commands](https://docs.microsoft.com/zh-cn/windows-server/administration/windows-commands/windows-commands)
-
-## tools
-+ widnows terminal
-### Mac->win
-+ enable Remote Desktop on windows
-+ install microsoft remote desktop on MAC
-+ [win->Mac](https://zhuanlan.zhihu.com/p/74162964)
+<!-- windows terminal -->
++ [windows terminal](https://github.com/microsoft/terminal)
++ [Windows Terminal 添加 Git-Bash 支持](https://www.jianshu.com/p/450aac19d981)

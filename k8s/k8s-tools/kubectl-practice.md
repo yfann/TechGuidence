@@ -52,8 +52,10 @@ vault write auth/kubernetes/config \
     kubernetes_ca_cert="$SA_CA_CRT"
 
 
-## run
+## test service
 + `kb run nginx --image=nginx --replicas=2`
 + `kubectl expose deployment nginx --port=80`
+    + `--type="NodePort"`
+    + `--name="..."`
 + `kubectl run busybox --rm -ti --image=busybox /bin/sh`
     + `wget --spider --timeout=1 nginx`
