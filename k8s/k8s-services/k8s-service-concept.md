@@ -1,6 +1,12 @@
 ## endpoint
++ endpoint保存pod的ip,port
 + service 转发请求到 endpoint
 + 有selector的service,会把对应的pod ip加入endpoint list中
++ 无selector的service
+    + 需要手动创建endpoint
+    + endpoint和service name一致，在同一namespace下
+    + pod和service可以在不同的namespace下
+
 
 
 

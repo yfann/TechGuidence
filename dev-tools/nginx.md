@@ -6,11 +6,20 @@
 + `nginx -s reload`
 + `nginx -s reopen`
 
-## modules
 
-+ [upload](https://www.nginx.com/resources/wiki/modules/upload/)
+## tips
++ 正向代理
+    + 代理客户端
+    + 如：VPN
++ 反向代理
+    + 代理服务端
+    + 如： 访问域名，代理转发到内网中
+
+
 
 ## ref
++ [8分钟带你深入浅出搞懂Nginx](https://zhuanlan.zhihu.com/p/34943332)
 + [正向代理与反向代理的区别](https://www.jianshu.com/p/208c02c9dd1d)
-+ [nginx for windows](http://www.cnblogs.com/chuncn/archive/2011/10/14/2212291.html)
 + [nginx 这一篇就够了](https://juejin.im/post/5d81906c518825300a3ec7ca)
+<!-- detail -->
++ [upload](https://www.nginx.com/resources/wiki/modules/upload/)

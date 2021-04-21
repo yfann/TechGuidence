@@ -113,6 +113,7 @@
 
 ## pod
 + `kubectl get po <pod-name> -o yaml`
++ `kubectl get po -o wide`
 + `kubectl delete po <pod-name> <pod-name>`
 + `kubectl delete po --all`
 

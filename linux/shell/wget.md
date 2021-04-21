@@ -8,6 +8,7 @@
 + `wget -t n <url>`
     + 尝试n次
     + n为0，则一直尝试
+    + 404 不会重试
 + `wget -i <file>`
     + 文件保存多个下载链接
 + `wget -b <url>`
@@ -20,6 +21,8 @@
 ## tips
 + `--limit-rate=300k`
 + `--ftp-user`
++ `--timeout`
+    + sec
 
 
 ## ref
