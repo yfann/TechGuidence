@@ -250,6 +250,10 @@
 ## patch
 + `kubectl patch deployment website --patch "$(cat patch-website.yml)"`
 
+
+## metrics
++ `kubectl get --raw /metrics`
+
 ## tips
 + `--all-namespaces`
 + `--previous` 

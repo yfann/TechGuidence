@@ -1,10 +1,4 @@
-## k8s services
-+ 对一组pod的抽象访问
 
-+ Service、Endpoints 和 Pod间支撑的协议
-  + TCP(默认)
-  + UPD
-  + SCTP
 
 ##  service type
 + ClusterIP：默认类型，自动分配一个仅 cluster 内部可以访问的虚拟 IP
@@ -18,6 +12,7 @@
 
 + ExternalName：将服务通过 DNS CNAME 记录方式转发到指定的域名（通过 spec.externlName 设定）。需要 kube-dns 版本在 1.7 以上。
   + 可以指向另一个service
+  + CNAME
 
 ## tips
 ```yaml

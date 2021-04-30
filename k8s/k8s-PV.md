@@ -4,10 +4,6 @@
     + 同个pod中不同container间共享数据
     + 临时存储数据(大数据排序)
     + pod删除，volume也会删除
-+ gitRepo 
-    + 更新git后，更新gitRepo volume
-        + 删除原Pod后，replicationController会创建新的pod并拉取最新的git代码
-    + pod删除，volume也删除
 
 + hostPath (mounting directories from the worker node's filesystem into the pod)
     + pod可以访问host的node的文件
@@ -28,13 +24,12 @@
 + persistentVolumeClaim—A way to use a pre- or dynamically provisioned persistent storage.
 
 
-## persistent storage
++ persistent storage
+  + network-attached storage (NAS)
+  + pod可能会被rescheduled到其他node上
 
-+ network-attached storage (NAS)
-+ pod可能会被rescheduled到其他node上
 
-
-## PersistentVolumes and PersistentVolumeClaims
+## PV(PersistentVolumes)/PVC(PersistentVolumeClaims)
 + admin定义PV
 + pod通过PVC消费PV
 + pod->PVC->PV->NFS(volumns)
@@ -106,10 +101,16 @@ spec:
 
 ## tips
 
-+ craete volume on memory
++ 内存volumn
 ```yaml
 volumes:
   - name: html
     emptyDir:
       medium: Memory              ❶
 ```
+
+
+## ref
++ [卷](https://kubernetes.io/zh/docs/concepts/storage/volumes/)
++ [Persistent Volume](https://kubernetes.io/zh/docs/concepts/storage/persistent-volumes/)
++ [配置 Pod 以使用 PersistentVolume 作为存储](https://kubernetes.io/zh/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
