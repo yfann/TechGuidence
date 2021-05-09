@@ -71,6 +71,13 @@
     + curl http://thanos-query.thanos.svc.cluster.local:9090/api/v1/query?query=kube_namespace_created%5B6h%5D
         + 带上时间查询 kube_namespace_created[6]
 
+## tips
++ external labels
+
++ ingress ip:443 ---> thanos sidecar
+    + ingress通过443接口暴露gPRC服务
+
+
 ## ref
 + [thanos](https://thanos.io/tip/thanos/quick-tutorial.md/)
 <!-- 介绍 -->
@@ -84,9 +91,11 @@
 + [Service Discovery](https://github.com/thanos-io/thanos/blob/main/docs/service-discovery.md)
 
 <!-- deploy  -->
-+ [Thanos 部署与实践](https://k8s.imroc.io/monitoring/build-cloud-native-large-scale-distributed-monitoring-system/thanos-deploy/s)
-+ [thanos-io/kube-thanos](https://github.com/thanos-io/kube-thanos/)
-    + [kube-thanos/manifests/]()
++ [Thanos 部署与实践***********](https://k8s.imroc.io/monitoring/build-cloud-native-large-scale-distributed-monitoring-system/thanos-deploy/)
++ [thanos-io/kube-thanos******](https://github.com/thanos-io/kube-thanos/)
+    + [kube-thanos/manifests/](...)
++ [Configuring Thanos Secure TLS Cross-Cluster Communication](https://thanos.io/tip/operating/cross-cluster-tls-communication.md/)  
+
 <!-- deploy thanos sidecar using prometheus helm chart -->
 + [Example Deploying sidecar using official Prometheus Helm Chart](https://github.com/thanos-io/thanos/blob/f1ee264ff10619ec875703f4e31549b43df3b47b/tutorials/kubernetes-helm/README.md)
 

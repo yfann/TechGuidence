@@ -51,6 +51,21 @@ vault write auth/kubernetes/config \
     kubernetes_host="https://$K8S_HOST" \
     kubernetes_ca_cert="$SA_CA_CRT"
 
+echo "apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo
+  annotations:
+    kubernetes.io/ingress.class: kong
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        backend:
+          serviceName: grpcbin
+          servicePort: 9001" | kubectl apply -f -
+ingress.extensions/demo created
 
 ## test service
 + `kb run nginx --image=nginx --replicas=2`
