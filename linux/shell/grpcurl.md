@@ -7,6 +7,8 @@
         + 调443端口
 + `grpcurl -protoset <*>.bin list`
 
++ `./grpcurl -cacert=./certs/tls.crt <ip>:443 list`
+
 ## install
 + `brew install grpcurl`
 

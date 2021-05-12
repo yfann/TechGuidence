@@ -39,6 +39,14 @@
     + 创建ingress时可以通过`kubernetes.io/ingress.class: "nginx"`指定ingress controller
         + nginx是默认标识
 
++ `--default-ssl-certificate`
+    + 指定默认的证书
+        + tls:部分没有secretName时可以使用
+
++ `externalTrafficPolicy: Cluster`
+    + ali ingress service的配置
+        + `local`只能同节点访问ingress
+        
 ## ref
 + [ingress](https://feisky.gitbooks.io/kubernetes/content/concepts/ingress.html)
 + [Ingress k8s](https://kubernetes.io/zh/docs/concepts/services-networking/ingress/)
@@ -73,3 +81,7 @@
 <!-- TLS -->
 + [TLS certificates](https://github.com/kubernetes/ingress-nginx/blob/master/docs/examples/PREREQUISITES.md)
 + [TLS/HTTPS](https://kubernetes.github.io/ingress-nginx/user-guide/tls/)
+
+
+<!-- issue -->
++ [ali ingress: connetion refused](https://segmentfault.com/a/1190000020751999)

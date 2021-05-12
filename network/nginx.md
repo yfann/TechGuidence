@@ -23,3 +23,6 @@
 + [nginx 这一篇就够了](https://juejin.im/post/5d81906c518825300a3ec7ca)
 <!-- detail -->
 + [upload](https://www.nginx.com/resources/wiki/modules/upload/)
+
++ [How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)
++ [Server names](http://nginx.org/en/docs/http/server_names.html)

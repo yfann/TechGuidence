@@ -35,6 +35,17 @@
 <!-- 生成私钥和自签名证书 -->
 + `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ${KEY_FILE} -out ${CERT_FILE} -subj "/CN=${HOST}/O=${HOST}"`
 
+## tips
+
++ files
+    `server.key`: a private RSA key to sign and authenticate the public key
+    `server.pem/server.crt`: self-signed X.509 public keys for distribution
+    `rootca.crt`: a certificate authority public key for signing .csr files
+    `host.csr`: a certificate signing request to access the CA
+
+## issues
++ `x509: cannot validate certificate for <ipaddress> because it doesn't contain any IP SANs`
+
 ## ref
 <!-- 数字签名 -->
 + [数字签名是什么](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
@@ -44,6 +55,11 @@
 <!-- 证书 -->
 + [如何创建自签名的 SSL 证书](https://www.jianshu.com/p/e5f46dcf4664)
 + [什么是CSR文件](https://www.jianshu.com/p/66d84ca65f41)
-
++ [数字证书中主题(Subject)中字段的含义](https://blog.csdn.net/baidu_36649389/article/details/78115638)
++ [客户端证书与服务端证书](https://skypacer210.github.io/2015/04/08/client-certificate-vs-server-certificate/)
++ [Secure gRPC with TLS/SSL](https://bbengfort.github.io/2017/03/secure-grpc/)
 <!-- 加密算法 -->
 + [RSA算法原理](http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)
+
+<!-- others -->
++ [SSL Certificate Verification](https://curl.se/docs/sslcerts.html)

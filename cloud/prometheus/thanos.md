@@ -89,7 +89,7 @@
 
 <!-- detail -->
 + [Service Discovery](https://github.com/thanos-io/thanos/blob/main/docs/service-discovery.md)
-
++ [Sidecar](https://viva.gitbook.io/project/cloud-native/prometheus/thanos/zu-jian/sidecar)
 <!-- deploy  -->
 + [Thanos 部署与实践***********](https://k8s.imroc.io/monitoring/build-cloud-native-large-scale-distributed-monitoring-system/thanos-deploy/)
 + [thanos-io/kube-thanos******](https://github.com/thanos-io/kube-thanos/)
