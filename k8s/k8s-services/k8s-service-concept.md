@@ -1,6 +1,12 @@
 ## endpoint
++ endpoint保存pod的ip,port
 + service 转发请求到 endpoint
 + 有selector的service,会把对应的pod ip加入endpoint list中
++ 无selector的service
+    + 需要手动创建endpoint
+    + endpoint和service name一致，在同一namespace下
+    + pod和service可以在不同的namespace下
+
 
 
 
@@ -28,8 +34,8 @@
 + 方式4： ECMP将Service ClusterIP路由到每个Node,这样可以直接通过ClusterIP访问服务
 
 ## Headless 服务
-+ 不需要Cluster IP的服务
-    + yaml中 clusterIP: None
++ 不需要Cluster IP的服务`clusterIP: None`
++ 可用于服务发现
 + 不指定 Selectors，则添加externalName类型,通过CNAME访问
 + 指定Selector,通过 DNS A 记录设置后端 endpoint 列表
     + dig @<ip>  nginx.default.svc.cluster.local

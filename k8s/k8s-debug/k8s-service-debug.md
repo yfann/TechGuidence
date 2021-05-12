@@ -22,7 +22,10 @@
 
 ## tips
 + NodePort、LoadBalane、Ingress 三种方式暴露服务给外部使用
-
+  + nodePort: <公网ip>:<nodePort>
++ Network namespaces(netns)
+    + linux用来隔离网络设备的
+    + 每个pod有自己的netns
 
 ## cmd
 + `kubectl get svc`
@@ -42,6 +45,10 @@
 + `kubectl proxy  [--port=8080]`  用代理访问kubernetes API
     + `curl http://localhost:8080/api/`   或浏览器打开
 
+
+## debug service
++ `wget --spider -timeout=1 <service name>.<name space>`
+  + `wget --spider -timeout=1 <service name>` 同namespace
 
 
 ## debug
@@ -74,3 +81,5 @@
 ## ref
 + [调试service](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/debug-service/)
 + [使用端口转发来访问集群中的应用](https://kubernetes.io/zh/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
+
++ [How To Inspect Kubernetes Networking](https://www.digitalocean.com/community/tutorials/how-to-inspect-kubernetes-networking)

@@ -19,6 +19,13 @@
     + OLM(Operator Lifesyle Manager)   An operator that installs, manages, and upgrades other Operators.
     + Operator Metering
 
++ 开发Operator
+    + operator-sdk
+    + kubebuilder
+    + Metacontroller
+    + KUDO
+        + kuttl(验证框架)
+
 ## install
 + `brew install operator-sdk`
 
@@ -124,6 +131,7 @@ spec:
 <!-- install -->
 + [Installation](https://sdk.operatorframework.io/docs/installation/)
 + [releases](https://github.com/operator-framework/operator-sdk/releases)
+    + copy release pkg to local
 
 <!-- details -->
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
@@ -144,3 +152,6 @@ spec:
 + [operator-framework/community-operators](https://github.com/operator-framework/community-operators)
 + [operatorhub](https://operatorhub.io/)
 + [community-operators](https://github.com/operator-framework/community-operators/tree/master/community-operators)
+
+<!-- okd debug -->
++ [operator-framework/operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)

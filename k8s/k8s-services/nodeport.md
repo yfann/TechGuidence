@@ -28,3 +28,11 @@ spec:
       # By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767)
       nodePort: 30007
 ```
+
+
+## cmd
++ `kubectl expose deployment nginx --type="NodePort" --port=80`
+  + ali cloud中需要负载均衡配置监听node及端口
+<!-- export NodePort=$(kubectl get svc/nginx -o go-template='{{(index .spec.ports 0).nodePort}}') -->
++ `curl <公网ip>:<NodePort>`
+  + 集群ip一般为内网ip

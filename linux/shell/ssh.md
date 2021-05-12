@@ -38,6 +38,9 @@
     + 单引号中间的操作表示在远程服务器执行
 + `ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub`
 
+## scp
++ `scp -i C:/app/OpenVPN/hsc-operation-key/id_rsa -r ***@****:/home/hscadmin/fan C:\backup\ali_ssh `
+
 ## tips
 + PuTTY(windows)
 + OpenSSH

@@ -5,19 +5,39 @@
     - `.../metrics`
     - `.../targets`
 
+
+## storage
+
++ on disk
+    + blocks of two hours(每两小时写一次磁盘)
+        + `--storage.tsdb.min-block-duration`
+        + `--storage.tsdb.max-block-duration`
+
+
+
+
+
+
 ## tips
 + grafana datasource 要用Mac 局域网ip不能用localhost
 + prometheus
     - servicemonitor
 
 ## Prometheus
-<!-- API document -->
+<!-- official doc -->
 + [prometheus API](https://prometheus.io/docs/introduction/overview/)
 + [prometheus 入门](https://www.hi-linux.com/posts/25047.html)
 + [Prometheus 中文文档](https://ryanyang.gitbook.io/prometheus/di-yi-zhang-jie-shao/overview)
 + [Prometheus Book](https://yunlzheng.gitbook.io/prometheus-book/)
 <!-- exporter -->
 + [exporters](https://prometheus.io/docs/instrumenting/exporters/)
++ [prometheus/node_exporter](https://github.com/prometheus/node_exporter)
++ [PromCat]( PromCat.io )
+
+
+
+
+
 <!-- pull -->
 + [Pull doesn't scale - or does it?](https://prometheus.io/blog/2016/07/23/pull-does-not-scale-or-does-it/)
 + [Prometheus and the Debate Over ‘Push’ Versus ‘Pull’ Monitoring](https://thenewstack.io/exploring-prometheus-use-cases-brian-brazil/)
@@ -38,6 +58,30 @@
 + [一文搞懂 Prometheus 的直方图](https://juejin.im/post/5d492d1d5188251dff55b0b5)
 + [Prometheus监控Kubernetes系列1——监控框架](https://www.servicemesher.com/blog/prometheus-monitor-k8s-1/)
 + [Prometheus zhihu](https://www.zhihu.com/topic/20223143/hot)
+
+<!-- detail -->
++ [Scrape data from pod upon annotation](https://www.weave.works/docs/cloud/latest/tasks/monitor/configuration-k8s/#per-pod-prometheus-annotations)
++ [query](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+
+<!-- install -->
++ [全手动部署prometheus-operator监控Kubernetes集群遇到的坑](https://www.servicemesher.com/blog/prometheus-operator-manual/)
+<!-- install with prometheus-community  -->
++ [prometheus-community/helm-charts](https://github.com/prometheus-community/helm-charts)
+
+
+
+<!-- mock data -->
++ [给Prometheus造假数据的方法](https://www.shangmayuan.com/a/964aace4f33f4ab19685ec1f.html)
++ [little-angry-clouds/prometheus-data-generator](https://github.com/little-angry-clouds/prometheus-data-generator)
++ [chanjarster/prometheus-mock-data](https://github.com/chanjarster/prometheus-mock-data)
+
+
+<!-- monitor k8s -->
++ [Kubernetes monitoring with Prometheus, the ultimate guide](https://sysdig.com/blog/kubernetes-monitoring-prometheus/)
+    +  kube-state-metrics
++ [How to Monitor Kubernetes API Server](https://sysdig.com/blog/monitor-kubernetes-api-server/)
+
+
 <!-- practice -->
 + [网易云轻舟微服务监控：基于Prometheus的实践与踩过的坑](https://zhuanlan.zhihu.com/p/58999791)
 + [基于Prometheus的监控系统实践](https://zhuanlan.zhihu.com/p/101184971)
@@ -47,16 +91,5 @@
 + [Prometheus 监控报警系统 AlertManager 之邮件告警](https://blog.csdn.net/aixiaoyang168/article/details/98474494#3_Prometheus_19)
 + [Spring Boot Metrics监控之Prometheus&Grafana](https://www.jianshu.com/p/afc3759e75b9)
 + [Monitor Apache Kafka Using Grafana and Prometheus](https://medium.com/@mousavi310/monitor-apache-kafka-using-grafana-and-prometheus-873c7a0005e2)
-<!-- detail -->
-+ [Scrape data from pod upon annotation](https://www.weave.works/docs/cloud/latest/tasks/monitor/configuration-k8s/#per-pod-prometheus-annotations)
 
-+ [query](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-<!-- install -->
-+ [helm-charts/stable/prometheus/](https://github.com/openthings/helm-charts/tree/master/stable/prometheus)
-+ [k8s 安装 prometheus 过程记录](https://www.cnblogs.com/dudu/p/12146344.html)
-+ [prometheus-helm](https://github.com/prometheus-community/helm-charts)
 
-<!-- mock data -->
-+ [给Prometheus造假数据的方法](https://www.shangmayuan.com/a/964aace4f33f4ab19685ec1f.html)
-+ [little-angry-clouds/prometheus-data-generator](https://github.com/little-angry-clouds/prometheus-data-generator)
-+ [chanjarster/prometheus-mock-data](https://github.com/chanjarster/prometheus-mock-data)

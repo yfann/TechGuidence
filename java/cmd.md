@@ -20,3 +20,5 @@ public static void main(String args[]) {
 ```
 
 + `java –jar demo.jar --debug` application.properties中debug = true
+
++ `jar cvf test.jar * ` jar解压出的文件重新打成jar包

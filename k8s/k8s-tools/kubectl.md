@@ -84,7 +84,7 @@
 + `kubectl delete po -l <label-name>=<label-value>`
 
 + `kubectl label pod <pod-name> app=foo [--overwrite]`
-+ `kubectl label pod <pod-name> <label>-`
++ `kubectl label pod <pod-name> <label>-` 删除label
 
 
 ## logs
@@ -113,6 +113,7 @@
 
 ## pod
 + `kubectl get po <pod-name> -o yaml`
++ `kubectl get po -o wide`
 + `kubectl delete po <pod-name> <pod-name>`
 + `kubectl delete po --all`
 
@@ -150,18 +151,7 @@
 + `kubectl cp <pod>:/var/log/foo.log foo.log` copy container文件
     + `kubectl cp localfile foo-pod:/etc/remotefile` copy文件到container
 
-## API & resources
-+ `kubectl api-versions`
-+ `kubectl api-resources`
-    + `kubectl api-resources -o wide`
-    + `kubectl api-resources --namespaced=false`查看不在命名空间中的资源
-+ `kubectl cluster-info`
-+ `kubectl proxy  [--port=8080]`  用代理访问kubernetes API
-    + `curl http://localhost:8080/api/`
-+ `kubectl get apiservice`
-+ `kubectl explain <k8s obj>`
-    - `kubectl explain pods`  
-        + `kubectl explain pods.spec` 
+
     
 ## context
 <!-- ~/.kube/config -->
@@ -245,9 +235,7 @@
 + `kubectl rollout pause deployment kubia`
 + `kubectl rollout resume deployment kubia`
 
-## Node
-+ `kubectl get node`
-+ `kubectl label node minikube disk=ssd`
+
 
 ## events
 + `kubectl get events --watch`
@@ -261,6 +249,10 @@
 
 ## patch
 + `kubectl patch deployment website --patch "$(cat patch-website.yml)"`
+
+
+## metrics
++ `kubectl get --raw /metrics`
 
 ## tips
 + `--all-namespaces`
@@ -297,7 +289,8 @@
 <!-- Changes the container image defined in a Pod, ReplicationController’s template, Deployment, DaemonSet, Job, or ReplicaSet. Example: kubectl set image deployment kubia nodejs=luksa/kubia:v2 -->
 
 ## ref
-+ [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
++ [kubectl 备忘录](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
++ [kubectl 参考文档](http://kubernetes.kansea.com/docs/user-guide/kubectl/kubectl_run/)
 
 + [kubectlbook](https://kubectl.docs.kubernetes.io/)
 + [kubectl 命令式](https://kubernetes.io/zh/docs/tasks/manage-kubernetes-objects/imperative-config/)
