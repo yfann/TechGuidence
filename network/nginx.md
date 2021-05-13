@@ -26,3 +26,6 @@
 
 + [How nginx processes a request](http://nginx.org/en/docs/http/request_processing.html)
 + [Server names](http://nginx.org/en/docs/http/server_names.html)
+
+<!-- issue -->
++ [NGINX does not support HTTP/1.x and HTTP/2 at the same time on a cleartext (non-TLS) port.](https://github.com/kubernetes/ingress-nginx/issues/3897)
