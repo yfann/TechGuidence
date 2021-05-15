@@ -59,14 +59,14 @@ function Set-Proxy{
 }
 ```
 
-## PROFILE
+## $PROFILE
 + 可以customise环境，PowerShell启动时执行的脚本
 + `$PROFILE`
     + 存储的profiles的路径
     + `$PROFILE | Get-Member -Type NoteProperty` 查看内容
     + `notepad $PROFILE` 编辑当前用户的profile
         + `notepad $PROFILE.AllUsersAllHosts`
-    + `. $profile` reload profile
++ `. $profile` reload profile
 
 
 ## execution policy

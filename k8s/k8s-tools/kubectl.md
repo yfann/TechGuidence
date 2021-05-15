@@ -270,6 +270,8 @@
 + `--output=yaml`
 + `-o yaml`
     + `-o wide`
+    + `-o custom-columns='<column name>:roleRef.name'`
+    
 + `--grace-period`
     + `kubectl delete po mypod --grace-period=5`
     + `kubectl delete po mypod --grace-period=0 --force`

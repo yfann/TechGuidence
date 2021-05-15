@@ -1,3 +1,7 @@
+## quick start
++ `helm upgrade --install ...`
+
+
 
 ## cmd
 + `<command> -h`

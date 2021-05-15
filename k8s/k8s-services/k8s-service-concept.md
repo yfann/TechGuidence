@@ -35,7 +35,7 @@
 
 ## Headless 服务
 + 不需要Cluster IP的服务`clusterIP: None`
-+ 可用于服务发现
++ 可用于服务发现(srv记录)
 + 不指定 Selectors，则添加externalName类型,通过CNAME访问
 + 指定Selector,通过 DNS A 记录设置后端 endpoint 列表
     + dig @<ip>  nginx.default.svc.cluster.local

@@ -15,3 +15,11 @@
 
 + match
     + `"Matt" -match "m"`
+
+## 别名
+
+```sh
+function kb{
+    .... $args
+}
+```

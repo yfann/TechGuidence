@@ -14,7 +14,8 @@
         + `--storage.tsdb.max-block-duration`
 
 
-
+## install
++ `helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -f prometheus-operator-values.yaml --version 14.8.1`
 
 
 
