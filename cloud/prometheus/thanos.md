@@ -106,3 +106,6 @@
 
 <!-- image -->
 + [thanos images](https://quay.io/repository/thanos/thanos?tag=latest&tab=tags)
+
+<!-- ruler -->
++ [Alerts ruler example](https://github.com/thanos-io/thanos/blob/48c8c0fda70da488068841cf48a3a174a8df1d88/examples/alerts/alerts.md#Ruler)
