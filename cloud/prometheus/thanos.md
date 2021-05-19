@@ -103,7 +103,8 @@
 + [prometheus operator](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml)
 + [ThanosSpec](https://github.com/prometheus-operator/prometheus-operator/blob/master/Documentation/api.md#thanosspec)
 + [prometheus-operator/example/thanos/](https://github.com/prometheus-operator/prometheus-operator/tree/master/example/thanos)
-<!-- Integrate Thanos With Prometheus And Alertmanager -->
+
+<!-- ruler -->
 + [Integrate Thanos With Prometheus And Alertmanager](https://docs.bitnami.com/kubernetes/infrastructure/thanos/administration/enable-metrics/)
 
 <!-- image -->
