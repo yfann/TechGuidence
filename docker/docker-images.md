@@ -21,6 +21,10 @@
     + `docker run -d debian sleep 300` hold the container open
         + `docker run -d alpine sh -c 'while sleep 3600; do :; done'`
 
+
+## 3rd
++ jimmidyson/configmap-reload:v0.5.0
+
 ## ref
 + [如何选择Docker基础镜像](https://blog.csdn.net/nklinsirui/article/details/80967677)
 

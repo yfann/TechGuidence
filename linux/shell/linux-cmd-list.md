@@ -13,7 +13,10 @@
     + -m  man说明文件
     + -s  源代码文件
 
-
+## file
++ `df -h` 查看目前文件系统的可用空间
+    + `df -T`
++ `du -h  <your_dest_dir>`
 ## process
   <!-- process   -->
 + `ps aux|grep <name>` 查看进程
