@@ -104,6 +104,9 @@
 + [ThanosSpec](https://github.com/prometheus-operator/prometheus-operator/blob/master/Documentation/api.md#thanosspec)
 + [prometheus-operator/example/thanos/](https://github.com/prometheus-operator/prometheus-operator/tree/master/example/thanos)
 
+<!-- ruler -->
++ [Integrate Thanos With Prometheus And Alertmanager](https://docs.bitnami.com/kubernetes/infrastructure/thanos/administration/enable-metrics/)
+
 <!-- image -->
 + [thanos images](https://quay.io/repository/thanos/thanos?tag=latest&tab=tags)
 
