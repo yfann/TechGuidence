@@ -90,25 +90,30 @@
 <!-- detail -->
 + [Service Discovery](https://github.com/thanos-io/thanos/blob/main/docs/service-discovery.md)
 + [Sidecar](https://viva.gitbook.io/project/cloud-native/prometheus/thanos/zu-jian/sidecar)
+
+
+<!-- ruler -->
++ [Integrate Thanos With Prometheus And Alertmanager](https://docs.bitnami.com/kubernetes/infrastructure/thanos/administration/enable-metrics/)
++ [Alerts ruler example](https://github.com/thanos-io/thanos/blob/48c8c0fda70da488068841cf48a3a174a8df1d88/examples/alerts/alerts.md#Ruler)
+
+
+<!-- practice -->
++ [Create a Multi-Cluster Monitoring Dashboard with Thanos, Grafana and Prometheus](https://docs.bitnami.com/tutorials/create-multi-cluster-monitoring-dashboard-thanos-grafana-prometheus/)
+    + prometheus 为不同cluster添加externalLabels
+
+
+
+## deploy
 <!-- deploy  -->
 + [Thanos 部署与实践***********](https://k8s.imroc.io/monitoring/build-cloud-native-large-scale-distributed-monitoring-system/thanos-deploy/)
 + [thanos-io/kube-thanos******](https://github.com/thanos-io/kube-thanos/)
     + [kube-thanos/manifests/](...)
 + [Configuring Thanos Secure TLS Cross-Cluster Communication](https://thanos.io/tip/operating/cross-cluster-tls-communication.md/)  
-
 <!-- deploy thanos sidecar using prometheus helm chart -->
 + [Example Deploying sidecar using official Prometheus Helm Chart](https://github.com/thanos-io/thanos/blob/f1ee264ff10619ec875703f4e31549b43df3b47b/tutorials/kubernetes-helm/README.md)
-
 <!-- prometheus operator安装thanos sidecar -->
 + [prometheus operator](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml)
 + [ThanosSpec](https://github.com/prometheus-operator/prometheus-operator/blob/master/Documentation/api.md#thanosspec)
 + [prometheus-operator/example/thanos/](https://github.com/prometheus-operator/prometheus-operator/tree/master/example/thanos)
-
-<!-- ruler -->
-+ [Integrate Thanos With Prometheus And Alertmanager](https://docs.bitnami.com/kubernetes/infrastructure/thanos/administration/enable-metrics/)
-
 <!-- image -->
 + [thanos images](https://quay.io/repository/thanos/thanos?tag=latest&tab=tags)
-
-<!-- ruler -->
-+ [Alerts ruler example](https://github.com/thanos-io/thanos/blob/48c8c0fda70da488068841cf48a3a174a8df1d88/examples/alerts/alerts.md#Ruler)

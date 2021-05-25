@@ -23,6 +23,9 @@
 + grafana datasource 要用Mac 局域网ip不能用localhost
 + prometheus
     - servicemonitor
++ `external_labels`
+    + The labels to add to any time series or alerts when communicating with
+    external systems (federation, remote storage, Alertmanager).
 
 ## Prometheus
 <!-- official doc -->
