@@ -3,8 +3,32 @@
 ## 指令
 + toctree
 
+## tips
+
++ 标题依次排列，符号和标题长度相同
+
++ 子列表要用缩进和空行
+
++ 段落间空行
+
++ source code
+```
+::
+
+    <source code>
+```
+
++ ```` 文本内高亮
+
+
++
 
 ## ref
+<!-- quick start -->
++ [reST语法简介](https://iridescent.ink/HowToMakeDocs/Basic/reST.html#section-structure)
++ [RST初级读本](https://www.sphinx.org.cn/usage/restructuredtext/basics.html)
+
+<!-- others -->
 + [reStructuredText 入门](https://sphinx-doc-zh.readthedocs.io/en/latest/rest.html#directives)
 + [reStructuredText简明教程](https://iridescent.ink/HowToMakeDocs/Basic/reST.html#restructuredtextsimpletutorial)
 + [reStructuredText标记规范](https://docutils-zh-cn.readthedocs.io/zh_CN/latest/ref/rst/restructuredtext.html)
