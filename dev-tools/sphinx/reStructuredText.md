@@ -18,10 +18,18 @@
     <source code>
 ```
 
+
+```
+.. code-block::
+
+    <source code>
+```
+
 + ```` 文本内高亮
 
 
-+
+
++ `.. image:: xxx.jpeg` image
 
 ## ref
 <!-- quick start -->
