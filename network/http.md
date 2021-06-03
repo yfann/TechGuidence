@@ -43,11 +43,20 @@ Content-Type:
 + referer  //告诉服务器访问过的上一个网页，可用于防盗链
 
 
+## tips
++ 长连接
+    + 对头阻塞
+        + 并行tcp连接解决问题
++ 流水线
++ HTTP1.1 vs HTTP/2
+    + http1.1 
+        + 纯文本
+
+    + http2 
+        + 二进制
 ## ref
 
 + [content type](http://www.cnblogs.com/liulangmao/p/3889568.html)
-
-
 + [keepAlive](https://51write.github.io/2014/04/09/keepalive/)
 
 <!-- https -->
@@ -56,3 +65,5 @@ Content-Type:
 + [SSL/TLS](http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
 + [OpenSSL 与 SSL 数字证书概念贴](http://seanlook.com/2015/01/15/openssl-certificate-encryption/)
 
+<!-- http2 -->
++ [详细分析http2 和http1.1 区别](https://www.jianshu.com/p/63fe1bf5d445)

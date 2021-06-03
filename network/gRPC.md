@@ -1,7 +1,16 @@
 
 ## tips
-+ Protocol Buffers
++ 使用Protocol Buffers
 + HTTP/2
+
+## gRPC vs http
++ gRPC
+    + HTTP/2
+    + Protocol Buffer格式交换二进制的消息
+    + 交换大量消息时高效
+
+
+
 
 ## ref
 + [gRPC详解](https://www.jianshu.com/p/9c947d98e192)
