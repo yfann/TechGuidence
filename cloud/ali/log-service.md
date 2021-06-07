@@ -18,3 +18,4 @@
 <!-- samples -->
 + [利用java对接阿里云sls服务(aliyun-log)做浏览记录](https://blog.csdn.net/weixin_41546244/article/details/111752362)
 + [基于日志服务数据加工分析Java异常日志](https://zhuanlan.zhihu.com/p/149222224)
++ [设置日志告警](https://help.aliyun.com/document_detail/161806.html?utm_content=g_1000230851&spm=5176.20966629.toubu.3.f2991ddcpxxvD1#title-jkv-fcm-44a)
