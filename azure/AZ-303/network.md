@@ -23,15 +23,20 @@
 + VNet服务终结点
 
 ## VNet 与 local通信
-+ P2S VPN
++ Point to Site VPN
     + 单台电脑与VNet建立连接
     + internet加密传输
-+ S2S VPN
+    + on-premises network to AZ
+
++ Site to Site VPN
     + local VPN 与 Azure VPN网关之间连接
     + internet加密传输
+    + individual computer on on-premises  to AZ
+
 + Azure expressRoute
     + 专用连接
     + 不走Internet
+    + on-premises network to AZ
 
 ## 筛选流量,路由
 + NSG(网络安全组)
@@ -94,3 +99,44 @@
 + Policy-based VPNs
 
 + Route-based VPNs
+
+## Site to Site VPN gateway(on-premise to Az)
+
++ Virtual network
++ GatewaySubnet
++ Public IP address
++ Local network gateway
++ Virtual network gateway
++ Connection
++ HA(fault tolerant)
+    + VPN gateway
+        + two instances
+            + Active/standby
+            + Active/active
+                + BGP routing protocol support
+
+## ExpressRoute(on premise network to MS global network)
+
++ Layer 3 connectivity
+
++ direct access to Ms office 365
+
++ ExpressRoute Global Reach
+
++ models
+    + CloudExchange co-location
+    + Point-to-point Ethernet connection
+    + Any-to-any connection
+
++ peering scheme
+    + private peering
+        + access Az IaaS,PaaS
+    + Microsoft peering
+        + access Az PaaS
+
+## NSG and service endpoint
+
+## tips
+
++ BGP (Border Gateway Protocol)
+    + exchange routes between on-premise network and resources running in Az

@@ -67,23 +67,11 @@
 	+ `gofmt -l -w`
 + `go vet ./...` 检查静态错误
 
-## GOPATH
-+ 环境变量
-+ 工作目录（GOPATH指定不同值来切换工作目录）
-	+ src(源码,工作目录)
-	+ pkg(编译后包的位置)
-		+ `go install`编译后的lib存的位置
-	+ bin(可执行程序)
-		+ `go install`编译后的exe存的位置
-+ default GOPATH ($HOME/go or %USERPROFILE%\go)
-+ GOROOT(Go根目录，标准库目录，go安装目录)
-+ bash下设置GOPATH
-```bash
-export GOPATH=$HOME/go
-source ~/.bash_profile
-```
+
 
 ## 包管理(import)
+
++ package 按文件夹划分，同一文件夹下都是相同的package,子文件夹除外
 
 + package 中的成员大写开头可以导出
 
@@ -94,7 +82,7 @@ source ~/.bash_profile
 + `import . "image/png"`可以不加前缀使用包
 
 + import 同项目pkg
-	+ `import <module name>/path/<pkg name>`
+	+ `import <module name>/<pkg name>`
 
 + import package from remote modules
 ```go
@@ -209,7 +197,10 @@ cd sample-controller
 + go version
 
 
+## tips
 
++ `go get k8s.io/kube-openapi@d77ed8bd41b63efc3a522ab961ef3ab2268d848a`
+	+ 指向github的某次提交
 
 ## ref
 + [查找Go包](https://godoc.org/?q=k8s.io)
@@ -223,6 +214,7 @@ cd sample-controller
 + [mac安装go](https://www.jianshu.com/p/ad57228c6e6a)
 
 <!-- go module-->
++ [使用go module导入本地包](https://zhuanlan.zhihu.com/p/109828249)
 + [Using Go Modules](https://blog.golang.org/using-go-modules)
 + [开始使用 Go Module](https://zhuanlan.zhihu.com/p/59687626)
 + [go mod 使用](https://juejin.im/post/6844903798658301960)
@@ -236,6 +228,25 @@ cd sample-controller
 
 <!-- version -->
 + [Pseudo-versions](https://golang.org/cmd/go/#hdr-Pseudo_versions)
++ [Go Big With Pseudo-Versions and GoCenter](https://jfrog.com/blog/go-big-with-pseudo-versions-and-gocenter/)
+
 
 <!-- TLDR -->
 + [Go Modules](https://github.com/golang/go/wiki/Modules)
+
+
+## GOPATH
++ 环境变量
++ 工作目录（GOPATH指定不同值来切换工作目录）
+	+ src(源码,工作目录)
+	+ pkg(编译后包的位置)
+		+ `go install`编译后的lib存的位置
+	+ bin(可执行程序)
+		+ `go install`编译后的exe存的位置
++ default GOPATH ($HOME/go or %USERPROFILE%\go)
++ GOROOT(Go根目录，标准库目录，go安装目录)
++ bash下设置GOPATH
+```bash
+export GOPATH=$HOME/go
+source ~/.bash_profile
+```
