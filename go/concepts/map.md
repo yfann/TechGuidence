@@ -1,6 +1,6 @@
 ## map
 + `var map_variable map[key_data_type]value_data_type`
-+ `map_variable := make(map[key_data_type]value_data_type)`
++ `data := make(map[type]type)`
 + `countryCapitalMap := map[string]string{"France": "Paris", "Italy": "Rome", "Japan": "Tokyo", "India": "New delhi"}`
 +  键值是否存在
 ```go

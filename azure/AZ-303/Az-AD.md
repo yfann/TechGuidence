@@ -61,6 +61,12 @@
     + 包含了tenant中的user,group,apps...
 
 + Az AD Connect
+    + AD DS Enterprise Administrator
+        + configure on-premise AD
+        + only used during installation
+    + Az AD Global Administrator
+        + used during the installation
+
 + Active Directory domain
 + AD DS
     + Active Directory Domain Services

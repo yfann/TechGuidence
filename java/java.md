@@ -49,3 +49,5 @@
 + [ASM](https://www.jianshu.com/p/a1e6b3abd789)
 + [Byte Buddy 教程](https://notes.diguage.com/byte-buddy-tutorial/)
 + [「Byte Buddy」20行代码实现AOP](https://zhuanlan.zhihu.com/p/84514959)
+
++ [Java三种代理模式：静态代理、动态代理和cglib代理](https://segmentfault.com/a/1190000011291179)

@@ -273,7 +273,8 @@ vault.hashicorp.com/agent-set-security-context: "false"
 <!-- issues -->
 + [dial tcp 127.0.0.1:8200: connect: connection refused](https://discuss.hashicorp.com/t/vault-failed-to-start/2529)
 + [Vault-helm and kubernetes environment variables](https://discuss.hashicorp.com/t/vault-helm-and-kubernetes-environment-variables/4973)
-
++ [permission denied](https://github.com/coreos/vault-operator/issues/359)
+  + cannot create resource \"tokenreviews\" in API group \"authentication.k8s.io\" at the cluster scope
 
 <!-- postgresql backend -->
 + [PostgreSQL Storage Backend](https://www.vaultproject.io/docs/configuration/storage/postgresql)
