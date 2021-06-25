@@ -57,6 +57,15 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
     - `:x` 保存修改并退出
     - `:w` 保存修改
 
+## tag
+
++ `git tag -l`
+
++ `git tag <tag name>`
+
++ `git tag -d <tag name>` 删除
+
+
 ## Branch
 
 + `git branch -a` 查看所有分支

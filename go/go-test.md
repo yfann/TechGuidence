@@ -2,15 +2,24 @@
 ## testing
 + `go test`  
     + `go test ./...`当前目录和子目录
+        + 递归调用
         + `go test $(go list ./... | grep -v /vendor/)` skip vendor
     + `go test ./tests/... ./unit-tests/... ./my-packages/...`指定的目录
     + `go test foo/...` import path 前缀foo/
     + `go test foo...` import path 前缀foo
     + `go test ...` 所有$GOPATH下的test
+
 + `go test -cover`
+    + `go test ./... -coverprofile cover.out`
+    + `go test <test file> <go file>  -cover`
+    + `go test ./... -run <Test method name> -cover`
+        + `<Test method name>` 正则
+
 + `go test -run regexp` 执行匹配函数
     + `-run=Array`执行Array开头的函数
-+ `go test -v` 显示详细
+    + `go test -run <test method>`
+
++ `go test -v ...` 显示详细
 
 ## gomock
 + `mockgen -source=foo.go [other options] `
@@ -97,6 +106,7 @@
 + [Go语言 testing](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/chapter09/09.1.html)
 + [Learn Go with tests](https://studygolang.gitbook.io/learn-go-with-tests/)
 + [Unit Testing made easy in Go](https://medium.com/rungo/unit-testing-made-easy-in-go-25077669318)
++ [Testing in Golang](https://medium.com/@thejasbabu/testing-in-golang-c378b351002d)
 
 <!-- mock -->
 + [golang/mock](https://github.com/golang/mock)

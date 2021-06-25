@@ -20,7 +20,7 @@
 
 
 ```
-.. code-block::
+.. code-block:: java
 
     <source code>
 ```
