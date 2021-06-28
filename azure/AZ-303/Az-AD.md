@@ -16,10 +16,16 @@
     + outside Az
         + Miscrosoft account(Xbox)
 
-## adding users
+## Az AD Connect
 
-+ Az AD Connect
-    + AD to Az AD
+
++ AD to Az AD
+
++ AD DS Enterprise Administrator
+    + configure on-premise AD
+    + only used during installation
++ Az AD Global Administrator
+    + used during the installation
 
 ## Multiple tenant
 
@@ -60,12 +66,7 @@
     + 每个Az tenant都有一个 Az AD directory
     + 包含了tenant中的user,group,apps...
 
-+ Az AD Connect
-    + AD DS Enterprise Administrator
-        + configure on-premise AD
-        + only used during installation
-    + Az AD Global Administrator
-        + used during the installation
+
 
 + Active Directory domain
 + AD DS
@@ -95,3 +96,10 @@
     + Standards-based authentication
         + Open ID
         + OAuth2.0
+
++ MFA
+    + 所知
+    + 所持
+        + 手机
+    + 身份信息
+        + 指纹

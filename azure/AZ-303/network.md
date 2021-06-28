@@ -22,21 +22,6 @@
 
 + VNet服务终结点
 
-## VNet 与 local通信
-+ Point to Site VPN
-    + 单台电脑与VNet建立连接
-    + internet加密传输
-    + on-premises network to AZ
-
-+ Site to Site VPN
-    + local VPN 与 Azure VPN网关之间连接
-    + internet加密传输
-    + individual computer on on-premises  to AZ
-
-+ Azure expressRoute
-    + 专用连接
-    + 不走Internet
-    + on-premises network to AZ
 
 ## 筛选流量,路由
 + NSG(网络安全组)
@@ -134,9 +119,45 @@
     + Microsoft peering
         + access Az PaaS
 
-## NSG and service endpoint
+
+## Vnet Gateway
+
++ VPN Gateway
+    + per Vnet per VPN gateway
+    + 是一种Vnet gateway
+    + 用于Vnet与on-premise location 间加密通信
+    + VNet-to-VNet
+        + VPN gaateway to VPN gateway
+
+    + Site-to-Site
+        + VPN gateway to on-premises VPN device
+        + VPN device located on-premise
+            + public IP
+
+    + Point-to-Site
+        + VPN over OpenVPN
+        + ex: home to VNet
+
++ Azure expressRoute
+    + 专用连接
+    + 不走Internet
+    + on-premises network to AZ
+
++ Vnet gateway
+    + 由gateway subnet中的VM组成
+    + 每个Vnet可以有两个Vnet gateway:
+        + 一个VPN gateway
+        + 一个ExpressRoute gateway
+
++ coexisting ExpressRoute/Site-toSite
 
 ## tips
 
 + BGP (Border Gateway Protocol)
     + exchange routes between on-premise network and resources running in Az
+
+## ref
+
+<!-- VPN -->
++ [What is VPN Gateway?](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
++ [VPN Gateway design](https://docs.microsoft.com/en-us/azure/vpn-gateway/design)
