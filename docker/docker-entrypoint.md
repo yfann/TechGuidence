@@ -56,3 +56,4 @@ CMD [“World”]
 
 ## ref
 + [论docker中 CMD 与 ENTRYPOINT 的区别(转)](https://developer.aliyun.com/article/270424)
++ [Linux中的0号进程与1号进程](https://blog.csdn.net/gongxifacai_believe/article/details/53771464)

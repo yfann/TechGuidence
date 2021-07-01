@@ -60,6 +60,8 @@ $ helm fetch gkarthiks/prometheus-kafka-exporter
     - `helm package <chart name>`
     - `helm lint <chart name>`
 
++ `helm get values <release-name>`
+
 
 ## flags
 
