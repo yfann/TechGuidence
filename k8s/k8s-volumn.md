@@ -11,6 +11,9 @@ volumes:
 ```
 
 ## PV(PersistentVolumes)/PVC(PersistentVolumeClaims)
++ pv cluster级别
++ pvc namespace级别
+
 
 + pod->PVC->PV->NFS(volumns)
 

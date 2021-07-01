@@ -13,6 +13,8 @@
     - speed up the distribution of images across the network
     - parent image
         - share libs and files
+
+
 ## cmd
 + `docker --version`  查看是否安装成功
 
@@ -120,3 +122,6 @@
 
 <!-- cmd -->
 + [理解Docker容器的进程管理](https://developer.aliyun.com/article/5545)
+
++ [docker Compose](https://www.runoob.com/docker/docker-compose.html)
++ [将 Docker Compose 文件转换为 Kubernetes 资源](https://kubernetes.io/zh/docs/tasks/configure-pod-container/translate-compose-kubernetes/)

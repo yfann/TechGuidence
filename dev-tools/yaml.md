@@ -1,4 +1,25 @@
 
+
+## 多行命令
+
+```yaml
+image: alpine/git
+imagePullPolicy: IfNotPresent
+command:
+    - sh
+    - -c
+    - |
+    #!/usr/bin/env bash -e
+    URL=https://code.aliyun.com/cdi-hsc/aliyun-cms-grafana.git
+    FOLDER=/var/lib/grafana/plugins/aliyun-cms-grafana
+    if [ ! -d $FOLDER ]; then
+        git clone --depth=1 $URL $FOLDER
+    else
+        cd $FOLDER
+        git pull
+    fi
+```
+
 ## tips
 + `parent: ~ ` null
 + `e: !!sr 123` 强转类型
