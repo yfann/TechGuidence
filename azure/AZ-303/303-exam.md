@@ -1,6 +1,10 @@
-70
+page: 91
 
+## VM
 
++ recovery services vault
+    + backup ofr multiple Az VMs
+    + Shared Access Authorization
 
 ## Cosmos DB account
 
@@ -21,6 +25,15 @@
 
 + EnableCrossPartitionQuery
 
+## storage
+
++ mount an Az file share
+    + use primary storage key
+    + Shared access signature（SAS）doesn't support
+
++ Az storage account
+    + store backup files
+
 ## net
 
 + Network security groups(NSG)
@@ -28,7 +41,52 @@
 
 + load Balance
     + http,https各一个rules
+    + web tier to application tire
+        + internal Az standard LB
+    + health prob
+        + 根据健康状况动态添加或删除VM到LB
+    + inbound/outbound rules
+    + backend address pool
 
++ app on VM only accept traffic from Az Front Door
+    + NSG with service tags
+
+## security
+
++ access control
+    + Az AD
+    + SAS(Shared access signature)
+        + Shared Access Authorization policy
+
++ key vault
+    + access policy
+
++ Roles
+    + owner role
+        + can do everything
+    + security admin role
+        + in security center only
+        + security policies
+        + alerts
+        + recommendations
+    + network contributor
+        + manage network
+
+## App service
+
++ App service plan
+    + Backup and restore feature
+        + support tiers
+            + Standard
+            + Preminum
+            + Isolated
+
++ Application Gateway
+    + Web application firewall(WAF)
+    + SSL
+    + cookie-based session affinity
+    + round robin
+    + content-based routing
 
 ## tips
 
@@ -37,6 +95,8 @@
 + Site-to-Site VPN
     + 高可用方案
         + 2个Virtual network gateway, 2个 local network gateways, 4个public IP
+
+
 
 ## ref
 
