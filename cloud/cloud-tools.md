@@ -1,5 +1,16 @@
 
 
+## tools
+
++ Terraform
++ Ansible
+
+## CI/CD
++ ArgoCD
++ github action
++ tekton
+
+## others
 + prometheus
 + ETL
 + zuul
@@ -8,6 +19,7 @@
 + Hystrix
 + Spring Cloud
 + Ingress
++ filebeat
 
 
 
