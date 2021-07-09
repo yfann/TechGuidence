@@ -1,4 +1,4 @@
-page: 91
+page: 95
 
 ## VM
 
@@ -71,6 +71,17 @@ page: 91
         + recommendations
     + network contributor
         + manage network
+
++ MFA and SSPR(self-service passowrd reset)
+    + SMS(short message service)
+    + Az AD pwd
+    + Ms Authenticator app
+    + Voice call
++ MFA only
+    + app pwd auth
++ SSPR only
+    + email
+    + security questions
 
 ## App service
 
