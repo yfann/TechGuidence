@@ -61,3 +61,7 @@ app.description=${app.name} is a Spring Boot application
 + [spring-boot-devtools](http://blog.didispace.com/books/spring-boot-reference/III.%20Using%20Spring%20Boot/20.1%20Property%20defaults.html)
 + [Log Levels](https://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/#boot-features-custom-log-levels)
 + [@ConfigurationProperties](https://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/#boot-features-external-config-typesafe-configuration-properties)
++ [bootstrap/ application 的区别](https://mp.weixin.qq.com/s/BzXNfBzq-2TOCbiHG3xcsQ)
+
++ [Spring Boot自动配置原理](https://mp.weixin.qq.com/s/gs2zLSH6m9ijO0-pP2sr9Q)
++ [Spring Boot 配置加载顺序详解](https://mp.weixin.qq.com/s/tFrRMM25LVE_2AG23lK5qQ)

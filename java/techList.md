@@ -8,7 +8,7 @@
 + spring mvc 注解
 + 可执行jar /*fat jar,完全自包含可执行jar,包含编译类和依赖的其他jar*/ 
 + `java -jar -Dspring.config.location=**.properties <JARFILE> --server.port=8080`
-+ [Mybatis](https://www.jianshu.com/p/c2bab03484f4)
+
 
 
 ## todo

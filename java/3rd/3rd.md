@@ -19,9 +19,7 @@
 + [official](https://projectlombok.org/features/all)
 + [Java中优雅的使用Lombok](https://www.jianshu.com/p/2ea9ff98f7d6)
 
-## mybatis
-+ [official](http://www.mybatis.org/mybatis-3/zh/getting-started.html)
-+ [MyBatis教程](https://www.yiibai.com/mybatis)
+
 
 ## Quartz
 + [java调度框架Quartz](https://www.jianshu.com/p/628c674de5c4)
