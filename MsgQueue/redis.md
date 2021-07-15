@@ -42,3 +42,5 @@
 + [Windows下安装并设置Redis](http://blog.csdn.net/renfufei/article/details/38474435)
 + [Redis【入门】就这一篇](https://zhuanlan.zhihu.com/p/37982685)
 + [Redis分布式锁](https://juejin.im/post/5ce5638ef265da1b91636a56)
+
++ [Redis如何保证接口的幂等性？](https://juejin.cn/post/6844903890207375373)

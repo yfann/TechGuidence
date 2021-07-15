@@ -1,4 +1,30 @@
+# Kafka
 
++ 分布式    
+    + 多个broker组成
+        + 每个broker是一个节点
+    + topic
+        + 可以划分为多个partition
+            + 每个partition在不同的broker上
+            + 每个partition存放一部分数据
+            + 每个partition的replica在不同的机器上(HA)
+                + replica
+                    + 选举leader
+                        + 负责生产消费
+                        + 写数据到leader时
+                            + leader数据落盘后
+                            + follower向leader pull数据
+                            + follower同步好后发ACK给leader
+                            + leader收到所有ACK后返回写成功给生产者
+                            + 写成功后，消息才可被读到
+                    + 其他为follower
+
+
+
+
+## tips
+
++ kafka 不能脱离 zookeeper 单独使用，因为 kafka 使用 zookeeper 管理和协调 kafka 的节点服务器
 
 ## issues
 + kafka-exporter 连不上 kafka
