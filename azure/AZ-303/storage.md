@@ -167,11 +167,24 @@
 + import/export jobs
     + shipping disk drives to an Az datacenter
         + block,page blogs and Az files
+    + cases
+        + migrating data to the cloud
+        + content distribution
+        + backup
+        + data recovery
     + large dataset & low-bandwidth
 
 + AzCopy
     + Az Blob and file storage
+    + acount to acount
+        + blob service only
     + large data & high-bandwidth
+
++ Az data box
+
++ auth
+    + AAD
+    + SAS tokens
 
 ## tips
 
