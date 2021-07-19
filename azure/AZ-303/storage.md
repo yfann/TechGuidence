@@ -1,3 +1,30 @@
+## categories
++ Storage for VM
+    + disk
+        + persistent block storage
+    + files
+        + managed file share
+
++ Unstructured Data
+    + Blobs 
+        + REST based cloud object store
+    + Data Lake store
+        + HDFS as a service
+
++ Structured Data
+    + tables
+    + key/vaule
+    + NoSQL
+
+## tiers
++ Standard
+    + HDD
+    + 不能转换为Premium
+
++ Premium
+    + SSD
+    + VM disk and databases
+
 
 ## storage account
 
@@ -15,8 +42,8 @@
 ## storage service
 
 + Az container(Blobs)
-    + 存储Az object
-    + storage account->container->Blob
+    + 存储Az object,unstructured data
+    + storage account -> container(Bucket in oss) -> Blob
     + 类型
         + block blobs
             + text
@@ -41,8 +68,8 @@
         + Az import/Export
 
 + Az file
-    + 文件共享
-    + 诊断日志
+    + multiple VM share the same files
+    + 配置文件,诊断日志
 
 + Az queue
     + 消息存储
@@ -56,10 +83,13 @@
 
 + LRS（本地冗余）
     + 3个副本
+    + hardware failure
+    + across fault domains 
+    + one region
 
 + ZRS
     + 3个副本
-
+    + Availability Zone
 
 + GRS
     + 6个副本
@@ -81,6 +111,7 @@
     + 默认
 
 + Az AD & RBAC supported
+    + Blob or Queue storage
 
 + data transit
     + https
@@ -92,8 +123,9 @@
 
 + 授权
     + Az AD(RBAC)
+        + only Blob and queue storage
     + Shared Key
-        + acount access key
+        + Storage Account Access Keys
         + request authorization header
     + Shared access signature(SAS)
         + delegate access
@@ -103,17 +135,30 @@
             + IP range
         + account SAS/service SAS
     + Anonymous access to contianers and blobs
-    + build-in RBAC
-        + Storage Blob Data Owner
     + Resource Scope
         + an individual container
         + the storage account
 
+## Authorize access to Blobs and Queues using AAD
+
++ storage accounts created with Az Resource Manager deployment model supports AAD
++ 先获取OAuth2 token，再访问Blob or Queue service
++ 如果app是在Az VM中，可以用managed identity去访问blobs or queues
++ build-in RBAC
+    + Storage Blob Data Owner
+    + Storage Blob Data Contributor
+
 ## Firewalls and VNet
 
-+ apply to public endpoint
++ public endpoint is accessible through the internet
 
-+ Network rules
++ specified IP addresses
+
++ Network rules(all network protocols to Az storage)
+    + REST/SMB
+    + Az portal
+    + Storage Explorer
+    + AZCopy
 
 + Classic  storage accounts don't support firewalls and VNet
 

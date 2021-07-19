@@ -1,9 +1,9 @@
-page: 95
+page: 104
 
 ## VM
 
 + recovery services vault
-    + backup ofr multiple Az VMs
+    + backup for multiple Az VMs
     + Shared Access Authorization
 
 ## Cosmos DB account
@@ -33,7 +33,8 @@ page: 95
 
 + Az storage account
     + store backup files
-
++ Az storage Explorer
+    + 从Az blob storage上传下载数据
 ## net
 
 + Network security groups(NSG)
@@ -71,6 +72,9 @@ page: 95
         + recommendations
     + network contributor
         + manage network
+    + contributor
+        + can manage
+        + cann't assign RBAC
 
 + MFA and SSPR(self-service passowrd reset)
     + SMS(short message service)
@@ -99,6 +103,11 @@ page: 95
     + round robin
     + content-based routing
 
+## Az AD
+
++ Active Diredctory Federation service
+    + allow sharing of identity information outside a company's network
+
 ## tips
 
 + Azure Resource Manager (ARM) 
@@ -107,7 +116,7 @@ page: 95
     + 高可用方案
         + 2个Virtual network gateway, 2个 local network gateways, 4个public IP
 
-
++ Access control(IAM)
 
 ## ref
 
