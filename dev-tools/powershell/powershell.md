@@ -23,6 +23,7 @@
 + `$env:<name>`查看环境变量
 + `Get-ChildItem env:` 获取所有
 + `$Env:path=$Env:Path+";C:\Go\bin"` 设置环境变量
+    + `$Env:ETCDCTL_API=3`
 + `"$env:USERPROFILE\.go"` 拼接环境变量
 
 
