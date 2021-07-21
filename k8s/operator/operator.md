@@ -27,8 +27,13 @@
         + kuttl(验证框架)
 
 ## install
+<!-- mac -->
 + `brew install operator-sdk`
-
+<!-- linux -->
++ https://github.com/operator-framework/operator-sdk/releases/
++ `sudo chmod +x operator-sdk`
++ `sudo mv operator-sdk /usr/local/bin/operator-sdk`
++ `operator-sdk version`
 
 ## cmd
 + `operator-sdk version`
