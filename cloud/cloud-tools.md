@@ -3,7 +3,31 @@
 ## tools
 
 + Terraform
+    + IaC(Infrastructure as Code)
+    + auto-provision infrastructure in minutes
+
++ Vagrant
+    + EaC(Environments as Code)
+    + build and deploy VM environments in minutes
+    + 做到开发与线上环境一致，本地开发用VM装CentOS以及各种依赖包，Vagrant用于管理此VM
+
 + Ansible
+    + Configuration as Code
+    + scale app depoyment and configuration management
+    + 配置管理工具
+
++ Airflow
+    + Data Pipelines as Code
+    + ETL
+
++ checkov
+    + Security Configuration as Code
+    + static code analysis tool for infrastructure-as-code.
+
++ Vault
+    + Encryption Management as Code
+
+
 
 ## CI/CD
 + ArgoCD
@@ -11,8 +35,8 @@
 + tekton
 
 ## others
-+ prometheus
-+ ETL
+
+
 + zuul
 + Eureka
 + Feign
@@ -56,3 +80,5 @@
 + [consul](https://www.hi-linux.com/posts/6132.html)
 + [springcloud zuul](http://www.ityouknow.com/springcloud/2017/06/01/gateway-service-zuul.html)
 + [fluentbit](https://fluentbit.io/)
+
++ [The beginning of ‘Everything as Code’](https://medium.com/swlh/the-beginning-of-everything-as-code-a25c4e9a75e9)
