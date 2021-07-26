@@ -39,7 +39,9 @@
 + Packer
     + 自动化打包镜像,单一模板创建多个平台的镜像（AWS,Azure,Alicloud）
 
-
++ Knative
+    + serverless架构方案
+        + serverless应用的构建，部署，运行
 
 ## CI/CD
 + ArgoCD
@@ -56,10 +58,16 @@
     + 日志分析
 
 
+## RPC
++ Netty
++ Finagle
 
+## k8s
++ kind
 
 ## ref
-
-
 + [The beginning of ‘Everything as Code’](https://medium.com/swlh/the-beginning-of-everything-as-code-a25c4e9a75e9)
 + [基于consul实现微服务的服务发现和负载均衡](https://tonybai.com/2018/09/10/setup-service-discovery-and-load-balance-based-on-consul/)
++ [kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
+<!-- cloud native -->
++ [Awesome Cloud Native](https://jimmysong.io/awesome-cloud-native/)
