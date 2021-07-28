@@ -58,6 +58,9 @@
 + Splunk/Hadoop/Hive
     + 日志分析
 
+## tracing
++ zipkin(java)
++ jaeger(Go)
 
 ## RPC
 + Netty
