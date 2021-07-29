@@ -1,6 +1,9 @@
 
 # openshift
 
++ OKD openShift(OpenShift的开源版本)
+    + OpenShift Origin
+
 ## oc
 + `oc login <url>`
     + go to default project

@@ -43,5 +43,8 @@
 + [什么是 Service Mesh](https://zhuanlan.zhihu.com/p/61901608)
 + [What's a service mesh? And why do I need one?](https://buoyant.io/what-is-a-service-mesh)
 + [The Service Mesh: What Every Software Engineer Needs to Know about the World's Most Over-Hyped Technology](https://buoyant.io/service-mesh-manifesto/)
++ [Pattern: Service Mesh](https://philcalcado.com/2017/08/03/pattern_service_mesh.html)
 
+
+<!-- details -->
 + [服务网格（Service Mesh ）教程](https://jimmysong.io/kubernetes-handbook/usecases/service-mesh.html)
