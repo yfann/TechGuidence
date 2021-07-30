@@ -5,7 +5,7 @@
 + A service mesh is a tool for adding observability, security, and reliability features to applications(micro services) by inserting these features at the platform layer rather than the application layer.
 
 + control plane
-    + control manydata plane
+    + data plane
         +  network proxy(sidecar)
             + communication between micro services
 

@@ -15,6 +15,7 @@
 + `netstat -ano|findstr <port>`
 + `tasklist | findstr "<pid>"`
 + `taskkill /T /F /PID <pid> `
+
 ## shortcut
 + `win+x` 超级菜单
 
