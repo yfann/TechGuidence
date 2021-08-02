@@ -1,7 +1,5 @@
 # service mesh
 
-+ 应用程序或者说微服务间的 TCP/IP，负责服务之间的网络调用、限流、熔断和监控
-
 + A service mesh is a tool for adding observability, security, and reliability features to applications(micro services) by inserting these features at the platform layer rather than the application layer.
 
 + control plane
@@ -18,11 +16,17 @@
             + rather than  library approach(compile time)
     + k8s
 
-+ 作用
++ 从service代码层剥离，通过sidecar注入
     + 服务发现
     + 路由
     + 限流，熔断
-    + 
+        + circuit breaking
+        + retry budgets
+        + rate limiting
+    + 监控
+    
+
++ 管理集群内部service间的流量
 
 ## tips
 + Istio
@@ -37,6 +41,7 @@
     + Finagle
     + Hystrix
     + Proxygen
+    + Ribbon
 
 ## ref
 + [ServiceMesher](https://www.servicemesher.com/)
