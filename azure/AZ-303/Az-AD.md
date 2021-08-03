@@ -103,3 +103,6 @@
         + 手机
     + 身份信息
         + 指纹
+
++ Active Directory Federation Services
+    + a feature and web service in the Windows Server Operating System that allows sharing of identity information outside a company’s network.

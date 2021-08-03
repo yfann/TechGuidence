@@ -204,3 +204,6 @@
 + Diagnostics settings resides in the same Az region of storage account
 
 + 每个 storage servic(blob service) 对应一个endpoint
+
++ Azure Storage Explorer
+    + upload and download data from Azure blob storage
