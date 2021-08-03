@@ -17,6 +17,12 @@
 + `df -h` 查看目前文件系统的可用空间
     + `df -T`
 + `du -h  <your_dest_dir>`
++ `tee`
+    + 读取标准输出到文件
+    + `date | tee >test.txt`
+
+
+
 ## process
   <!-- process   -->
 + `ps aux|grep <name>` 查看进程
@@ -58,8 +64,6 @@
     + `sed -in "s/[ #]*proxy/proxy/g" filename`替换
         + -i 直接修改文件否则是返回替换内容
         + -n 不打印修改结果
-
-
 
 + `nslookup`
     + `nslookup <domain name> <DNS IP>`

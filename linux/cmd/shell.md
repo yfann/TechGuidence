@@ -1,5 +1,7 @@
 # shell
 
++ `#!` shebang
+
 + `sh` bourne shell
     + `sh -c <cmd>`  
         + shell form

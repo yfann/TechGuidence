@@ -8,6 +8,7 @@
 
 ## cmd
 
++ `kubectl apply -f task.yaml`
 + `tkn task start <name> `
     + `tkn task start <name> --dry-run > <file>.yaml`
 <!-- log -->
@@ -17,5 +18,10 @@
 
 + [tekton](https://tekton.dev/docs/getting-started/)
 <!-- details -->
-+ [kubernetes actions](https://hub.tekton.dev/tekton/task/kubernetes-actions)
 + [Expose Pod Information to Containers Through Files](https://kubernetes.io/docs/tasks/inject-data-application/downward-api-volume-expose-pod-information/#the-downward-api)
+
+<!-- task -->
++ [generate-build-id](https://github.com/tektoncd/catalog/blob/main/task/generate-build-id/0.1/generate-build-id.yaml)
++ [kubernetes actions](https://hub.tekton.dev/tekton/task/kubernetes-actions)
+
++ git-clone
