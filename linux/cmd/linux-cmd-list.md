@@ -12,6 +12,9 @@
     + -b  只搜索二进制
     + -m  man说明文件
     + -s  源代码文件
++ `find <folder>`
+    + `find /workspace | xargs cat`
+
 
 ## file
 + `df -h` 查看目前文件系统的可用空间
@@ -88,6 +91,31 @@
 + `cd /proc/<pid>/fd` 查看进程日志
 + `nohup java -jar -Dspring.profiles.active=prod xxx.jar &`
     + 运行jar
+
+
+
+## 命令组合
+
++ `xargs`
+    + stdin,|,文件的输出 转为命令的参数
+        + somecommand |xargs <-item>  command
+    + `echo "nameXnameXnameXname" | xargs -dX`
+    + `cat test.txt | xargs -n3`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## ref
 + [超全的 Linux Shell 文本处理工具集锦](https://zhuanlan.zhihu.com/p/265869157)

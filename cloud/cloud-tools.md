@@ -57,6 +57,7 @@
     + 日志采集
 + Splunk/Hadoop/Hive
     + 日志分析
++ cloudevents
 
 ## tracing
 + zipkin(java)
@@ -79,3 +80,4 @@
 + [adnanh/webhook](https://github.com/adnanh/webhook)
     + http endpoint -> configed command
 + [kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
++ [cloudevents](https://github.com/cloudevents/spec)
