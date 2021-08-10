@@ -5,6 +5,8 @@
 + `wsl --set-version Ubuntu-20.04 2`
 + `wsl --set-default-version 2`
 
++ `wsl --shutdown`
+
 ## tips
 + `\\wsl$` (window 访问目录)
 + run as admin
@@ -12,6 +14,15 @@
 + windows ---> wsl localhost
     + wsl -----/----> windows localhost
         + windows firewall
+
++ .wslconfig
+    + 限制Vmmem 进程为4G
+```
+[wsl2]
+memory=4GB
+swap=0
+localhostForwarding=true
+```
 
 ## ref
 + [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)

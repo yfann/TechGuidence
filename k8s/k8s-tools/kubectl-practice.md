@@ -67,6 +67,20 @@ spec:
           servicePort: 9001" | kubectl apply -f -
 ingress.extensions/demo created
 
+
++ kubectl apply -n default -f - <<EOT
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: mem-cpu-demo
+spec:
+  hard:
+    requests.cpu: "1"
+    requests.memory: 1Gi
+    limits.cpu: "2"
+    limits.memory: 2Gi
+EOT
+
 ## test service
 + `kb run nginx --image=nginx --replicas=2`
 + `kubectl expose deployment nginx --port=80`
