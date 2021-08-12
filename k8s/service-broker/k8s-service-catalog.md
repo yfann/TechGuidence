@@ -94,6 +94,7 @@ spec:
   - Service Instance use ServiceClass and ServicePlan to provision a new service(If not cluster they should be in the same namespace)
   - After ServiceBinding created, Service catalog will issue a bind request to the appropriate broker.After the broker responds, Service Catalog will write the credential it responds
   - credential(username,password,hostname,etc...), bind application pods to secret to start using the servie
+
 + 删除binding，secret也会被删除
 
 

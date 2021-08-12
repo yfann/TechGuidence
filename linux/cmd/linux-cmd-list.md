@@ -129,4 +129,6 @@
 + [awk](https://zhuanlan.zhihu.com/p/261886766)
 + [sed](https://zhuanlan.zhihu.com/p/145661854)
 + [chmod](http://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
++ [test](https://www.runoob.com/linux/linux-shell-test.html)
+
 + [Linux wget 命令用法详解](https://www.jianshu.com/p/59bb131bc2ab)
