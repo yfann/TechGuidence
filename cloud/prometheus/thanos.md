@@ -1,15 +1,17 @@
 # Thanos
 
 
-+ Sidecar
++ Thanos Sidecar
+    + 在prometheus中，上传metrics到OSS...
+    + 暴露thanos-external service，给thanos query调用
 
 
 + Thanos Query
     + PromQL查询
-    + 查询有Store API的组件
+    + 实现Store API
+    + 查询其他实现Store API的组件
         + Thanos Store
         + Thanos Sidecar
-        + Thanos Query
     + 去重
 
 + Thanos Query Frontend
