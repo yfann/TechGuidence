@@ -28,6 +28,7 @@ kubectl logs $pods
 
 + secret 解码
     - `kubectl get secret regcred --output="jsonpath={.data.dockerconfigjson}" | base64 --decode`
+    - `kubectl  get secret  $(kubectl  get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"`
 
 + 查看容器环境变量??
     - `kubectl exec <pod name> env -n namespace`
