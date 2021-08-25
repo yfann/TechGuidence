@@ -12,7 +12,10 @@
 + Kubeflow
 + kubeless
 + KubeVela
+
+<!-- 容器方式运行VM -->
 + virtlet
++ kubevirt
 
 ## ref
 
@@ -30,6 +33,8 @@
 
 + [virtlet](https://docs.virtlet.cloud/user-guide/real-cluster/#installing-virtlet-on-a-real-cluster)
 + [virtlet, Kubernetes CRI实现虚拟机工作负载](https://www.kaifa99.com/GitHub/article_149466)
+
++ [后Kubernetes时代的虚拟机管理技术之kubevirt篇](https://www.kubernetes.org.cn/9596.html)
 
 + [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
 

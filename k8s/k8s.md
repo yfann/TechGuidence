@@ -190,6 +190,7 @@
 
 + [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/)
 + [Kubernetes 中文文档](http://hardocs.com/d/kubernetes/145-kubectl_config.html)
++ [kubernetes 中文文档](http://docs.kubernetes.org.cn/51.html)
 
 + [十分钟带你理解Kubernetes核心概念](http://www.dockone.io/article/932)
 + [K8S从懵圈到熟练](https://yq.aliyun.com/search?q=K8S%E4%BB%8E%E6%87%B5%E5%9C%88%E5%88%B0%E7%86%9F%E7%BB%83&type=ARTICLE)
