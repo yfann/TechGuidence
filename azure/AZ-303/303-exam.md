@@ -118,6 +118,15 @@ page: 104
 
 + Access control(IAM)
 
++ Azure Front Door
+    + public Azure Load Balancer
+
++ SLA
+    + 2 VM in available set
+        + 99.5%
+    + diffrent available zone in same Az region
+        + 99.9%    
+
 ## ref
 
 + [Understanding Transactions in Azure](https://docs.particular.net/nservicebus/azure/understanding-transactionality-in-azure)
