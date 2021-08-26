@@ -12,10 +12,24 @@
 + `kubectl exec <pod name> ps aux`
 
 
-## 临时容器调试
+## kubectl debug
+
++ `kubectl exec`无法使用时的调试方式
+
 + kubectl alpha debug
-    + 当容器崩溃或镜像不包含调试程序时`kubectl exec`无法使用
+    + 当容器崩溃或镜像不包含调试程序时
     + 给运行的pod添加一个临时容器
+
++ ephemeral contianers(临时容器)
+  + debug用，不能在build中用
+
+
++ `kubectl debug myapp -it --image=ubuntu --share-processes --copy-to=myapp-debug`   复制一个pod,使它带一个新的容器
+  + `kubectl debug myapp -it --copy-to=myapp-debug --container=myapp -- sh`  复制一个pod 改变他的命令
+  + `kubectl debug myapp --copy-to=myapp-debug --set-image=*=ubuntu` 复制一个pod 改变他的所有container为ubuntu
+
++ `kubectl debug node/mynode -it --image=ubuntu`
+  + 指定node上创建pod
 
 + process    
     + `kubectl run ephemeral-demo --image=k8s.gcr.io/pause:3.1 --restart=Never`
@@ -50,6 +64,15 @@ spec:
   restartPolicy: Always
 ```
 + `kb exec -it busybox -- sh`
+
+
+## node调试
+
++ 部分集群提供ssh to node
+
++ hostPath
+  + mount node filesystem to a pod
+
 
 ## ref
  + [Debug Running Pods](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-running-pod/)

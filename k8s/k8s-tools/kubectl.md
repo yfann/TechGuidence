@@ -239,6 +239,7 @@
 
 ## events
 + `kubectl get events --watch`
+    + `kubectl get events --sort-by=.metadata.creationTimestamp`
 
 ## debug
 + ssh a worker node

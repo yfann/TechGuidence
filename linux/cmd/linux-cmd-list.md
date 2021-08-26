@@ -12,11 +12,20 @@
     + -b  只搜索二进制
     + -m  man说明文件
     + -s  源代码文件
++ `find <folder>`
+    + `find /workspace | xargs cat`
+
 
 ## file
 + `df -h` 查看目前文件系统的可用空间
     + `df -T`
 + `du -h  <your_dest_dir>`
++ `tee`
+    + 读取标准输出到文件
+    + `date | tee >test.txt`
+
+
+
 ## process
   <!-- process   -->
 + `ps aux|grep <name>` 查看进程
@@ -59,8 +68,6 @@
         + -i 直接修改文件否则是返回替换内容
         + -n 不打印修改结果
 
-
-
 + `nslookup`
     + `nslookup <domain name> <DNS IP>`
 
@@ -85,6 +92,31 @@
 + `nohup java -jar -Dspring.profiles.active=prod xxx.jar &`
     + 运行jar
 
+
+
+## 命令组合
+
++ `xargs`
+    + stdin,|,文件的输出 转为命令的参数
+        + somecommand |xargs <-item>  command
+    + `echo "nameXnameXnameXname" | xargs -dX`
+    + `cat test.txt | xargs -n3`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## ref
 + [超全的 Linux Shell 文本处理工具集锦](https://zhuanlan.zhihu.com/p/265869157)
 + [bash 教程](https://wangdoc.com/bash/intro.html)
@@ -97,4 +129,6 @@
 + [awk](https://zhuanlan.zhihu.com/p/261886766)
 + [sed](https://zhuanlan.zhihu.com/p/145661854)
 + [chmod](http://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html)
++ [test](https://www.runoob.com/linux/linux-shell-test.html)
+
 + [Linux wget 命令用法详解](https://www.jianshu.com/p/59bb131bc2ab)

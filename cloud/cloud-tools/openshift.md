@@ -11,12 +11,19 @@
 + `oc config view`
 
 <!-- projects -->
++ `oc new-project <project_name>` 创建
++ `oc delete project <name>`
+
++ `oc get projects`
 + `oc project` 查看当前
 + `oc project <name>` 切换
-+ `oc new-project <project_name>` 创建
 
 
 + `oc status`
+
+<!-- RBAC -->
++ `oc policy add-role-to-user <role_name> -z <serviceaccount_name>`
++ `oc policy add-cluster-role-to-user <role_name> -z <serviceaccount_name>`
 
 ## ref
 + [OpenShift/OpenShift Origin](https://www.openshift.com/)

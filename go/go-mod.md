@@ -202,8 +202,13 @@ cd sample-controller
 + `go get k8s.io/kube-openapi@d77ed8bd41b63efc3a522ab961ef3ab2268d848a`
 	+ 指向github的某次提交
 
++ `go get k8s.io/kube-openapi`
+	+ 会获取latest
+		+ k8s.io/kube-openapi@v0.0.0-20210817015826-5b43ecc0dd7a
+
 ## ref
 + [查找Go包](https://godoc.org/?q=k8s.io)
++ [Package Management with Go Modules](https://blogs.halodoc.io/go-modules-implementation/)
 
 + [How to Write Go Code](https://golang.org/doc/code.html)
 + [Environment variables](https://golang.org/cmd/go/#hdr-Environment_variables)

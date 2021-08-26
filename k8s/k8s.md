@@ -110,6 +110,8 @@
 + Ingress
     - 集群外部访问集群内部的入口
     - ingress controller
+
+    
 ## 存储
 + secret
 + ConfigMap

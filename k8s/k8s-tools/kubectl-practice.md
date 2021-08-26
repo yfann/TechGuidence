@@ -3,7 +3,6 @@
 
 ## 
 + `kubectl get pods --namespace=kube-system -l k8s-app=kube-dns` DNS pod是否运行
-+ `kubectl get secret regcred --output=yaml` 导出yaml
 + `kubectl scale rc kubia --replicas=3`
 + `kubectl get pods -o wide`
 
@@ -28,7 +27,8 @@ kubectl logs $pods
 
 
 + secret 解码
-    - `kubectl get secret regcred --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode`
+    - `kubectl get secret regcred --output="jsonpath={.data.dockerconfigjson}" | base64 --decode`
+    - `kubectl  get secret  $(kubectl  get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"`
 
 + 查看容器环境变量??
     - `kubectl exec <pod name> env -n namespace`
@@ -66,6 +66,20 @@ spec:
           serviceName: grpcbin
           servicePort: 9001" | kubectl apply -f -
 ingress.extensions/demo created
+
+
++ kubectl apply -n default -f - <<EOT
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: mem-cpu-demo
+spec:
+  hard:
+    requests.cpu: "1"
+    requests.memory: 1Gi
+    limits.cpu: "2"
+    limits.memory: 2Gi
+EOT
 
 ## test service
 + `kb run nginx --image=nginx --replicas=2`
