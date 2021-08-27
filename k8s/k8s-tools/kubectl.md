@@ -291,6 +291,8 @@
 + `kubectl set image`	
 <!-- Changes the container image defined in a Pod, ReplicationController’s template, Deployment, DaemonSet, Job, or ReplicaSet. Example: kubectl set image deployment kubia nodejs=luksa/kubia:v2 -->
 
++ `kubectl explain ...`
+
 ## ref
 + [kubectl 备忘录](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 + [kubectl 参考文档](http://kubernetes.kansea.com/docs/user-guide/kubectl/kubectl_run/)

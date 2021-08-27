@@ -103,3 +103,18 @@
         + 手机
     + 身份信息
         + 指纹
+
++ Active Directory Federation Services
+    + a feature and web service in the Windows Server Operating System that allows sharing of identity information outside a company’s network.
+
++ Azure AD Privileged Identity Management(PIM)
+    + manage who,what,when,where,why for resources
+
++ Roles
+    + Contributor
+
++ Access control(IAM)
+    + 设置访问权限RBAC
+
++ managed identity
+    + 开启Az AD

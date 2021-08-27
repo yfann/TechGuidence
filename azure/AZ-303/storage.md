@@ -37,7 +37,7 @@
 + General-purpose v1(GPv1)
     + access to all az storage services
 
-
++ Azure storage account is used for storing Automated Backup files in blob storage.
 
 ## storage service
 
@@ -78,6 +78,7 @@
 + Az table
     + Cosmos DB的一部分
     + Az Cosmos DB Table API
+    + NoSql
 
 ## Az storage account Replication
 
@@ -204,3 +205,6 @@
 + Diagnostics settings resides in the same Az region of storage account
 
 + 每个 storage servic(blob service) 对应一个endpoint
+
++ Azure Storage Explorer
+    + upload and download data from Azure blob storage

@@ -156,6 +156,8 @@
 + BGP (Border Gateway Protocol)
     + exchange routes between on-premise network and resources running in Az
 
++ One virtual network for every tier
+
 ## ref
 
 <!-- VPN -->
