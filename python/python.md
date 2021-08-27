@@ -62,3 +62,15 @@ print a
 
 + enumerate()
 + range()
+
+## tools
+
++ ipython
++ [anaconda](https://www.continuum.io/downloads) //科学计算
++ Bobo http微框架
+
+## ref
+
++ [offical python](https://docs.python.org/3/tutorial/)
++ [python 学习资料](https://zhuanlan.zhihu.com/p/22333205?refer=it1024)
++ [kite](https://kite.com/)

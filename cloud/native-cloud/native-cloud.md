@@ -31,13 +31,16 @@
 + [KubeVela](https://kubevela.io/zh/docs/)
 + [深入解读：KubeVela 与 PaaS 有何不同？](https://zhuanlan.zhihu.com/p/329878177)
 
++ [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
+<!-- VM -->
 + [virtlet](https://docs.virtlet.cloud/user-guide/real-cluster/#installing-virtlet-on-a-real-cluster)
 + [virtlet, Kubernetes CRI实现虚拟机工作负载](https://www.kaifa99.com/GitHub/article_149466)
-
 + [后Kubernetes时代的虚拟机管理技术之kubevirt篇](https://www.kubernetes.org.cn/9596.html)
-
-+ [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
-
++ [Virtlet vs KubeVirt comparison: which is better?](https://www.mirantis.com/blog/kubevirt-vs-virtlet-comparison-better/)
+    + virtlet
+        + CRI
+    + kubevirt
+        + CR
 <!-- problems -->
 + [配置漂移](https://zhuanlan.zhihu.com/p/398842224)
 + [阿里巴巴万级规模 K8s 集群全局高可用体系之美](https://www.kubernetes.org.cn/9284.html)

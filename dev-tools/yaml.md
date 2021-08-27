@@ -10,7 +10,7 @@ command:
     - -c
     - |
     #!/usr/bin/env bash -e
-    URL=https://code.aliyun.com/cdi-hsc/aliyun-cms-grafana.git
+    URL=.....
     FOLDER=/var/lib/grafana/plugins/aliyun-cms-grafana
     if [ ! -d $FOLDER ]; then
         git clone --depth=1 $URL $FOLDER
