@@ -44,6 +44,10 @@ for retries := 0; retries < 10; retries++ {
 + resource version
     + etcd key/value version.
     +  etcd maintains a counter that increases each time the value of a key (which holds the object’s serialization) is modified
+
+
+
 ## ref
++ [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [The Mechanics of Kubernetes](https://dominik-tornow.medium.com/the-mechanics-of-kubernetes-ac8112eaa302)
 + [Level Triggering and Reconciliation in Kubernetes](https://hackernoon.com/level-triggering-and-reconciliation-in-kubernetes-1f17fe30333d)
