@@ -43,7 +43,7 @@ for retries := 0; retries < 10; retries++ {
 ```
 + resource version
     + etcd key/value version.
-    +  etcd maintains a counter that increases each time the value of a key (which holds the object’s serialization) is modified
+    + etcd maintains a counter that increases each time the value of a key (which holds the object’s serialization) is modified
 
 
 
