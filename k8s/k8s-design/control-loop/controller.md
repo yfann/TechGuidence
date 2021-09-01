@@ -1,11 +1,14 @@
 
 
 ## Control loop
-+ read state of resources,event-driven
-+ change state of objects in the cluster
-+ Update status of the resource in step 1 via the API server in etcd
-+ repeat cycle
 
+1. read state of resources,event-driven
+2. change state of objects in the cluster
+3. Update status of the resource in step 1 via the API server in etcd
+4. repeat cycle
+
++ 根据当前状态决定 next command
+    + 如果没有next command --> steady state
 
 ## Kubernetes is based on events
 + Edge-driven triggers（事件触发）
