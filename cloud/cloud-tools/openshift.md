@@ -5,6 +5,14 @@
     + OpenShift Origin
 
 ## oc
+<!-- install on mac -->
++ openshift portal -> Command Line Tools -> oc - OpenShift CLI
+    + download oc
++ `echo $PATH`
++ move oc to PATH folder
++ `ctrl + click` open with iTerm
+
+
 + `oc login <url>`
     + go to default project
     + `oc logout`
@@ -29,6 +37,6 @@
 + [OpenShift/OpenShift Origin](https://www.openshift.com/)
 + [Openshift](https://cloud.tencent.com/developer/article/1649734)
 + [Get Started with the CLI](https://docs.openshift.com/enterprise/3.0/cli_reference/get_started_cli.html)
-
-
 + [Projects](https://docs.openshift.com/enterprise/3.0/dev_guide/projects.html)
+<!-- install -->
++ [Getting started with the CLI](https://docs.openshift.com/container-platform/4.2/cli_reference/openshift_cli/getting-started-cli.html)
