@@ -38,15 +38,34 @@
     + `classLoader`
         + .class加载到jvm中，不执行static块,newinstance才执行
 
+
 ## 动态代理 
 
++ 静态代理
+    + 代理模式
+    + 编译时产生代理类
+
 + JDK动态代理
-    + 利用反射机制生成一个实现代理接口的匿名类，在调用具体方法前调用InvokeHandler来处理。
+    + Proxy.newProxyInstance
+    + 利用反射机制生成一个实现代理接口的匿名类
+    + 在调用具体方法前调用InvokeHandler来处理
     + JDK代理只能对实现接口的类生成代理
 
 + CGlib动态代理
     + 利用ASM（开源的Java字节码编辑库，操作字节码）开源包，将代理对象类的class文件加载进来，通过修改其字节码生成子类来处理。
-    + CGlib是针对类实现代理，对指定的类生成一个子类，并覆盖其中的方法，这种通过继承类的实现方式，不能代理final修饰的类
+    + CGlib是针对类实现代理，对指定的类生成一个子类，并覆盖其中的方法，这种通过继承类的实现方式，不能代理final修饰的类,不用实现接口
+
++ Aspectj动态代理
+    + 修改目标类的字节
+    + 织入代理的字节
+    + 编译的时候插入动态的代理字节
+    + 不生成新的Class
+
++ instrumentation动态代理
+    + 修改目标类的字节码
+    + 类装载的时候动态拦截修改
+    + javaagent `-javaagent:spring-instrument-4.3.8.RELEASE.jar`
+    + 不生成新的Class
 
 ## others
 
@@ -59,3 +78,4 @@
 
 ## ref
 + [java new一个对象的过程中发生了什么](https://cloud.tencent.com/developer/article/1398010)
++ [太好了！总算有人把动态代理、CGlib、AOP都说清楚了](https://cloud.tencent.com/developer/article/1461796)
