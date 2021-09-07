@@ -20,6 +20,18 @@
 
 ## HashMap vs HashTable vs ConcurrentHashMap
 
++ HashMap 非线程安全
+
++ HashTable
+    + synchronized保证线程安全(只有一把锁)
+    + 效率低下
+        + 当一个线程put时，其他线程不能put和get
+
++ ConcurrentHashMap
+    + 锁分段(Segment，Java5)
+        + 数据分段存储,每段数据配一把锁
+        + 浪费空间，GC效率低
+    + synchronized+cas(java8)
 
 ## 反射
 
@@ -79,3 +91,5 @@
 ## ref
 + [java new一个对象的过程中发生了什么](https://cloud.tencent.com/developer/article/1398010)
 + [太好了！总算有人把动态代理、CGlib、AOP都说清楚了](https://cloud.tencent.com/developer/article/1461796)
+
++ [深入分析ConcurrentHashMap的锁分段技术](https://blog.csdn.net/rickiyeat/article/details/77367017)

@@ -2,6 +2,26 @@
 ## 并发 
 
 + 锁
+    + 乐观锁
+        + 不加锁执行操作
+        + 自旋
+        + cas
+    + 悲观锁
+        + synchronized
+    + ReentranLock
+
++ cas(compare and swap)
+    + 原始值和内存值比较
+        + 不等
+            + return false
+        + 相等
+            + return true
+            + 内存值改为修改值
+    + 乐观锁
+    + ABA问题
+
+
+
 
 
 
@@ -38,3 +58,6 @@
 
 + [IO模型](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/basis/IO%E6%A8%A1%E5%9E%8B.md)
 + [Java并发编程（总结最全面的面试题！！！）](https://juejin.cn/post/6844904125755293710#heading-11)
+
+
++ [并发-CAS原则](https://www.jianshu.com/p/586c2d0e45fc)

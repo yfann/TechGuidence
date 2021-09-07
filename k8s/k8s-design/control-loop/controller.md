@@ -51,6 +51,6 @@ for retries := 0; retries < 10; retries++ {
 
 
 ## ref
-+ [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [The Mechanics of Kubernetes](https://dominik-tornow.medium.com/the-mechanics-of-kubernetes-ac8112eaa302)
++ [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [Level Triggering and Reconciliation in Kubernetes](https://hackernoon.com/level-triggering-and-reconciliation-in-kubernetes-1f17fe30333d)
