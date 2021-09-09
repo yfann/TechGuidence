@@ -9,7 +9,7 @@
 ## help
 
 + `help()`
-+ `hlep(<module name>.<function name>)`
+    + `help(<module name>.<function name>)`
 + `sys.bultin_modulenames`查看内部模块
 + `dir(<module name>)`查看模块下的所有方法
 + `type()`
@@ -68,9 +68,4 @@ print a
 + ipython
 + [anaconda](https://www.continuum.io/downloads) //科学计算
 + Bobo http微框架
-
-## ref
-
-+ [offical python](https://docs.python.org/3/tutorial/)
-+ [python 学习资料](https://zhuanlan.zhihu.com/p/22333205?refer=it1024)
 + [kite](https://kite.com/)

@@ -45,3 +45,5 @@ $ GOMAXPROCS=2 go run hacker-cliché.go
 + [Goroutines和Channels](https://docs.hacknode.org/gopl-zh/ch8/ch8.html)
 + [Goroutines和线程](https://docs.hacknode.org/gopl-zh/ch9/ch9-08.html)
 + [什么是协程 ？](https://juejin.im/post/6844903921471717389)
+
++ [深度探索Go语言：抢占式调度(1)](https://www.zhihu.com/zvideo/1394562943225257984)
