@@ -54,8 +54,6 @@
         + 数据 内核空间->用户空间
             + read调用是阻塞的
 
-
-
 + BIO(Blocking I/O)
 
 + NIO(Non-blocking I/O)
