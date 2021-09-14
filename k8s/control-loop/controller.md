@@ -48,13 +48,37 @@ for retries := 0; retries < 10; retries++ {
     + etcd key/value version.
     + etcd maintains a counter that increases each time the value of a key (which holds the object’s serialization) is modified
 
-## tips
+## implementation for controller
 
 + client-go
+    + informer 
+    + workqueue
+    + sample-controller
+
++ kubebuilder
+    + reconcile创建的resource,状态变化时会触发reconcile
 
 + operator
+    + controller-runtime
+    + watch(resource)
+    + Kube OpenAPI Specification
+    + OwnerReferences
+    + composition tree
+
++ KuDo
+
+
 
 ## ref
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
-
++ [Chapter 6. Solutions for Writing Operators](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/ch06.html#idm46336859365144)
 + [Level Triggering and Reconciliation in Kubernetes](https://hackernoon.com/level-triggering-and-reconciliation-in-kubernetes-1f17fe30333d)
+
+<!-- tools -->
++ [kudo](https://kudo.dev/docs/cli/installation.html#cli-installation)
+    + go framework for operator
++ [shell-operator](https://github.com/flant/shell-operator)
+    + bash script to implement operator
+
+<!-- community -->
++ [API Machinery](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/ch06.html#idm46336854811816)
