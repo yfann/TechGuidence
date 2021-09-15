@@ -31,8 +31,9 @@
 
 ## ref
 
++ [Chapter 3. Basics of client-go](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/ch03.html#client-go)
+
+
 + [A deep dive into Kubernetes controllers](https://engineering.bitnami.com/articles/a-deep-dive-into-kubernetes-controllers.html)
-
 + [Kubewatch, an example of Kubernetes custom controller](https://engineering.bitnami.com/articles/kubewatch-an-example-of-kubernetes-custom-controller.html)
-
 + [sample-controller](https://github.com/kubernetes/sample-controller)

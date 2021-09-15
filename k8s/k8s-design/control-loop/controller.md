@@ -11,6 +11,9 @@
     + 如果没有next command --> steady state
 
 ## Kubernetes is based on events
+
++ a user-visible logging mechanism
+
 + Edge-driven triggers（事件触发）
     - At the point in time the state change occurs, a handler is triggered—for example, from no pod to pod running.
     - latency 由处理events的 worker threads数量决定
@@ -18,6 +21,17 @@
 + Level-driven triggers(polling 轮询)
     + The state is checked at regular intervals and if certain conditions are met (for example, pod running), then a handler is triggered.
     + latency 由轮询的间隔决定
+
+
++ watch events
+    + API server --------(watch events)---------> controller(informer)
+        + watch
+
+
++ top-level events
+    + is a resource like pods...
+        + `kubectl get events`
+    + from etcd
 
 
 ## Optimistic Concurrency
@@ -79,6 +93,7 @@ for retries := 0; retries < 10; retries++ {
     + go framework for operator
 + [shell-operator](https://github.com/flant/shell-operator)
     + bash script to implement operator
++ [Kubernetes Clients](https://github.com/kubernetes-client)
 
 <!-- community -->
 + [API Machinery](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/ch06.html#idm46336854811816)
