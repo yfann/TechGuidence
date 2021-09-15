@@ -159,3 +159,6 @@ spec:
 
 <!-- okd debug -->
 + [operator-framework/operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
+
+<!-- hub -->
++ [operator hub](https://operatorhub.io/?keyword=vault)

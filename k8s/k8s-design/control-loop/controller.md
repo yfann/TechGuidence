@@ -10,33 +10,19 @@
 + 根据当前状态决定 next command
     + 如果没有next command --> steady state
 
-## Kubernetes is based on events
 
-+ a user-visible logging mechanism
++ 可以更改cluser obj和集群外对象的状态
 
-+ Edge-driven triggers（事件触发）
-    - At the point in time the state change occurs, a handler is triggered—for example, from no pod to pod running.
-    - latency 由处理events的 worker threads数量决定
+## [Kubernetes is based on events](../Events.md)
 
-+ Level-driven triggers(polling 轮询)
-    + The state is checked at regular intervals and if certain conditions are met (for example, pod running), then a handler is triggered.
-    + latency 由轮询的间隔决定
-
-
-+ watch events
-    + API server --------(watch events)---------> controller(informer)
-        + watch
-
-
-+ top-level events
-    + is a resource like pods...
-        + `kubectl get events`
-    + from etcd
 
 
 ## Optimistic Concurrency
 + Omega’s parallel scheduler
-+ When concurrent write happens, it rejects the latter of the two write operations. It is then up to the client (controller, scheduler, kubectl, etc.) to handle a conflict and potentially retry the write operation.
+    + concurrent operations without locks
+
++ optimistic concurrency
+    + resource version conflict error
 ```go
 // retry loop
 var err error
@@ -58,6 +44,7 @@ for retries := 0; retries < 10; retries++ {
     }
 }
 ```
+
 + resource version
     + etcd key/value version.
     + etcd maintains a counter that increases each time the value of a key (which holds the object’s serialization) is modified
@@ -87,6 +74,7 @@ for retries := 0; retries < 10; retries++ {
 + [Control Loop](https://kubernetes.io/zh/docs/concepts/architecture/controller/)
 + [Chapter 6. Solutions for Writing Operators](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/ch06.html#idm46336859365144)
 + [Level Triggering and Reconciliation in Kubernetes](https://hackernoon.com/level-triggering-and-reconciliation-in-kubernetes-1f17fe30333d)
++ [Kubernetes 控制器的工作原理解读](https://fuckcloudnative.io/posts/a-deep-dive-into-kubernetes-controllers/)
 
 <!-- tools -->
 + [kudo](https://kudo.dev/docs/cli/installation.html#cli-installation)

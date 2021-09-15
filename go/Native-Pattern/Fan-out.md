@@ -71,3 +71,6 @@ func main() {
     wg.Wait()
 }
 ```
+
+## ref
++ [Go: 在我们的 ETL 中使用扇出模式](https://zhuanlan.zhihu.com/p/410523401)
