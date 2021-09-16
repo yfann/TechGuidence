@@ -4,7 +4,14 @@
 
   Coding css, html, js, TypeScript, CoffeScript or LESS
   
- 
+
+
+## 3rd plugins
+
++ AscIIflow
+  + ctrl+p 
+    + `>`ascII
+
 # Ref
 
 + [VS2015前端工具：NPM和Web Essentials](http://www.mamicode.com/info-detail-505300.html)
