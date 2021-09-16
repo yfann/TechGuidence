@@ -71,6 +71,7 @@
 + [Admission Webhooks](https://sdk.operatorframework.io/docs/building-operators/golang/webhook/)
 + [Implementing defaulting/validating webhooks](https://book.kubebuilder.io/cronjob-tutorial/webhook-implementation.html)
 + [programming kubernetes:Admission Webhooks](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/ch09.html#idm46336842288408)
++ [深入理解 Kubernetes Admission Webhook](https://www.qikqiak.com/post/k8s-admission-webhook/)
 
 <!-- admission controller -->
 + [Using Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
@@ -89,12 +90,3 @@
 + [CRD Validation markers](https://book.kubebuilder.io/reference/markers/crd-validation.html)
 
 
-<!-- webhook -->
-+ [深入理解 Kubernetes Admission Webhook](https://www.qikqiak.com/post/k8s-admission-webhook/)
-+ [准入控制器 admission controller](https://kubernetes.io/zh/docs/reference/access-authn-authz/admission-controllers/)
-+ [Webhook Mode](https://kubernetes.cn/docs/reference/access-authn-authz/webhook/)
-<!-- webhook sample -->
-+ [Creating Your Own Admission Controller](https://docs.giantswarm.io/guides/creating-your-own-admission-controller/)
-+ [Building serverless admission webhooks for Kubernetes with AWS SAM](https://aws.amazon.com/cn/blogs/containers/building-serverless-admission-webhooks-for-kubernetes-with-aws-sam/)
-+ [Writing a very basic kubernetes mutating admission webhook](https://medium.com/ovni/writing-a-very-basic-kubernetes-mutating-admission-webhook-398dbbcb63ec)
-+ [Kubernetes 中支持 Pod 定向迁移](https://blog.fatedier.com/2020/07/22/k8s-pod-directional-migration/)
