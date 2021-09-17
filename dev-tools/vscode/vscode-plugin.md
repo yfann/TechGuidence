@@ -12,6 +12,10 @@
   + ctrl+p 
     + `>`ascII
 
+
++ Remote-SSH
++ Remote-WSL
++ Remote-Container
 # Ref
 
 + [VS2015前端工具：NPM和Web Essentials](http://www.mamicode.com/info-detail-505300.html)
