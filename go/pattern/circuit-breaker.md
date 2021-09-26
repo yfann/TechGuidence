@@ -15,6 +15,7 @@
     + breaker会检查circuit连续返回的错误数，超过threshold，state就会为open
         + rate of retry 需要逐步降低
 
++ 注：尝试连续失败n次后，后续尝试直接返回失败结果，并在指定时间后重新尝试
 
 ## sample code
 

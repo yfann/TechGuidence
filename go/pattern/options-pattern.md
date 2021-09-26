@@ -1,6 +1,18 @@
 # Functional Options Pattern
 
++ 函数选项模式
+
++ golang不能重载的替代方案
+
++ 设置默认值
+    + 可以通过传入的type func(可多个)去修改默认值
+
 ## code
+
++ 一般传参方式
+    + 没有默认值
+    + 需不需要都得传递参数
+
 ```go
 type StuffClientOptions struct {
     Retries int //number of times to retry the request before giving up
@@ -15,12 +27,12 @@ func NewStuffClient(conn Connection, options StuffClientOptions) StuffClient {
 }
 ```
 
-
++ 函数选项模式
 ```go
 type StuffClientOption func(*StuffClientOptions)
 type StuffClientOptions struct {
-    Retries int //number of times to retry the request before giving up
-    Timeout int //connection timeout in seconds
+    Retries int 
+    Timeout int 
 }
 func WithRetries(r int) StuffClientOption {
     return func(o *StuffClientOptions) {
@@ -32,6 +44,7 @@ func WithTimeout(t int) StuffClientOption {
         o.Timeout = t
     }
 }
+
 
 var defaultStuffClientOptions = StuffClientOptions{
     Retries: 3,
@@ -49,8 +62,10 @@ func NewStuffClient(conn Connection, opts ...StuffClientOption) StuffClient {
     }
 }
 
+// test
 x := NewStuffClient(Connection{})
 fmt.Println(x) // prints &{{} 2 3}
+
 x = NewStuffClient(
     Connection{},
     WithRetries(1),

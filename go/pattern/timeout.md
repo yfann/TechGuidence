@@ -1,7 +1,8 @@
 # Timeout
 
-Timeout allows a process to stop waiting for an answer once it’s clear that an answer may not be coming.
++ Timeout allows a process to stop waiting for an answer once it’s clear that an answer may not be coming.
 
++ 注：当一个方法比较耗时时，指定timeout使其退出
 
 ## PARTICIPANTS
 + Client

@@ -5,6 +5,28 @@
 + Operator lifecycle Manager
 + Operatror metering
 
+
+## RateLimit
+
++ return err,或 return result{Requeue:true}
+    + `c.Queue.AddRateLimited(req)`
++ 设置了RequeueAfter
+    + `c.Queue.AddAfter(req, result.RequeueAfter)`
+
++ exponential backoff
+    + `baseDelay*2^<num-failures>`
+
++ MaxOfRateLimiter
+    + maxDelay(delay不超过maxDelay)
+
++ ItemExponentialFailureRateLimiter
+    + 每个item,随着失败次数delay指数增长
+
++ BucketRateLimiter
+    + token bucket algorithm 
+
++ golang.org/x/time/rate 
+
 ## tips
 
 + metrics collection for operator
@@ -28,6 +50,10 @@
 + [Kubernetes Operator Development Guidelines for improved Usability](https://itnext.io/kubernetes-operator-development-guidelines-for-improved-usability-222390b00dc4)
 + [Kubernetes Operator Maturity Model](https://github.com/cloud-ark/kubeplus/blob/master/Guidelines.md)
 + [kubernetes/kube-openapi](https://github.com/kubernetes/kube-openapi)
+
+<!-- ratelimiter -->
++ [RATE LIMITING IN CONTROLLER-RUNTIME AND CLIENT-GO](https://danielmangum.com/posts/controller-runtime-client-go-rate-limiting/)
++ [token bucket令牌桶限流算法原理及代码](https://blog.51cto.com/u_11440114/3021408?xiangguantuijian&01)
 
 <!-- practice -->
 + [A complete guide to Kubernetes Operator SDK](https://banzaicloud.com/blog/operator-sdk/)
