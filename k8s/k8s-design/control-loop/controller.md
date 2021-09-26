@@ -75,6 +75,8 @@ for retries := 0; retries < 10; retries++ {
 + [Chapter 6. Solutions for Writing Operators](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/ch06.html#idm46336859365144)
 + [Level Triggering and Reconciliation in Kubernetes](https://hackernoon.com/level-triggering-and-reconciliation-in-kubernetes-1f17fe30333d)
 + [Kubernetes 控制器的工作原理解读](https://fuckcloudnative.io/posts/a-deep-dive-into-kubernetes-controllers/)
++ [RATE LIMITING IN CONTROLLER-RUNTIME AND CLIENT-GO](https://danielmangum.com/posts/controller-runtime-client-go-rate-limiting/)
+
 
 <!-- tools -->
 + [kudo](https://kudo.dev/docs/cli/installation.html#cli-installation)

@@ -68,6 +68,8 @@ $ helm fetch gkarthiks/prometheus-kafka-exporter
 + `--values` override value 
     + `-f <value file>`
 
-
++ `--wait`
+    + will pending untill all pods are ready
+    
 ## ref
 + [helm install](https://helm.sh/docs/helm/helm_install/)
