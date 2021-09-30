@@ -10,8 +10,12 @@
 
 + `help()`
     + `help(<module name>.<function name>)`
+    
 + `sys.bultin_modulenames`查看内部模块
-+ `dir(<module name>)`查看模块下的所有方法
+
++ `dir(<module name>)` 查看模块下的所有方法，属性
+    + `dir()` 查看当前上下文的变量方法 
+
 + `type()`
 
 ## tips
