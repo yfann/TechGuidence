@@ -116,3 +116,10 @@
 ## 3rd
 
 + bookmarks 代码打标签
+
+
+
+## proxy
+
++ File -> Preferences -> settings
+  + proxy
