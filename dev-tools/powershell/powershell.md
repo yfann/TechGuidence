@@ -26,6 +26,8 @@
     + `$Env:ETCDCTL_API=3`
 + `"$env:USERPROFILE\.go"` 拼接环境变量
 
++ `cd $env:APPDATA`
+
 
 
 ## sample
