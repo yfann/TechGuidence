@@ -66,7 +66,7 @@ for item in [iterable]:
     yield item:
 ```
 
-## list expression
+## list expression(表推导)
 
 ```py
 numbers=[1,2,3,4,5,6]

@@ -17,6 +17,8 @@
 + Remote-Container
 
 + leetcode
+  + File->Preferences->Settings->leetcode
+    + workspace
   + ctrl + P 
     + `>leetCode: Sign in`
 

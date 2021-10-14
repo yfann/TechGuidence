@@ -62,6 +62,11 @@ print a
 
 + `type(1.2)==float` 判断类型
 
++ `val= x if x>y else y` 三元运算符
+    + 如果x>y  val=x
+
+
+
 ## functions
 
 + enumerate()

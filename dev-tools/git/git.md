@@ -1,6 +1,6 @@
 # Git
 
-## init
+## 常用
 
 + `git clone <repository>`
 + `git add *`
@@ -8,6 +8,11 @@
 + `git pull origin master`   //pull resolve confliction
 + `git push origin master` //push to remote(has no conflict)
 + `git remote add origin <url>`
+
+
++ `git remote -v`
+
+
 
 ## Basic CMD
 
