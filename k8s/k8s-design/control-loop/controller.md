@@ -58,13 +58,17 @@ for retries := 0; retries < 10; retries++ {
 
 + kubebuilder
     + reconcile创建的resource,状态变化时会触发reconcile
+    + 使用了 controller-runtime
 
-+ operator
-    + controller-runtime
++ operator-sdk
+    + 使用了 controller-runtime
     + watch(resource)
     + Kube OpenAPI Specification
     + OwnerReferences
     + composition tree
+
++  controller-runtime 
+    + Project is a set of go libraries for building Controllers
 
 + KuDo
 
@@ -77,6 +81,8 @@ for retries := 0; retries < 10; retries++ {
 + [Kubernetes 控制器的工作原理解读](https://fuckcloudnative.io/posts/a-deep-dive-into-kubernetes-controllers/)
 
 
+<!-- metrics -->
++ [controller-runtime metrics](https://book-v1.book.kubebuilder.io/beyond_basics/controller_metrics.html)
 <!-- tools -->
 + [kudo](https://kudo.dev/docs/cli/installation.html#cli-installation)
     + go framework for operator

@@ -58,13 +58,14 @@ print a
 
 ```
 
-## code
+## code tips
 
 + `type(1.2)==float` 判断类型
 
 + `val= x if x>y else y` 三元运算符
     + 如果x>y  val=x
 
++ `list1 = [0] * size` 初始化数组
 
 
 ## functions

@@ -26,9 +26,7 @@ kubectl logs $pods
     + `kubectl exec fortune-configmap-volume -c web-server cat /etc/nginx/conf.d/my-nginx-config.conf`
 
 
-+ secret 解码
-    - `kubectl get secret regcred --output="jsonpath={.data.dockerconfigjson}" | base64 --decode`
-    - `kubectl  get secret  $(kubectl  get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"`
+
 
 + 查看容器环境变量??
     - `kubectl exec <pod name> env -n namespace`
@@ -39,7 +37,18 @@ kubectl logs $pods
 + template 中的name有hyphen时
     - `oc get secret logging-elasticsearch --template='{{index .data "admin-ca"}}' |base64 -d > ca`会报错
     - `oc get secret logging-elasticsearch --template='{{index .data "admin-ca"}}' |base64 -d > ca`
+## secret 
 
++ secret 解码
+    - `kubectl get secret regcred --output="jsonpath={.data.dockerconfigjson}" | base64 --decode`
+    - `kubectl  get secret  $(kubectl  get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"`
+
++ `kubectl get secrets prometheus-user-workload -o 'go-template={{index .data "prometheus.yaml.gz"}}'`
+  + key中包含点的处理
+
++ kubectl create secret generic additional-scrape-configs --from-file=prometheus-additional.yaml --dry-run -oyaml > additional-scrape-configs.yaml
+  + create secret from file
+  
 ## 动态语句
 
 export VAULT_SA_NAME=$(kubectl -n default get sa vault-auth -o jsonpath="{.secrets[*]['name']}")
