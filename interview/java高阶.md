@@ -65,10 +65,19 @@
     + 基于事件和回调
     + 操作后直接返回,处理完成后,操作系统会通知相应的线程进行后续操作
 
+## JVM
+
+
++ 调优
+
++ 类加载机制
+    + ClassLoader
+
 ## ref
 
 + [IO模型](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/basis/IO%E6%A8%A1%E5%9E%8B.md)
 + [Java并发编程（总结最全面的面试题！！！）](https://juejin.cn/post/6844904125755293710#heading-11)
++ [并发编程面试题](https://thinkwon.blog.csdn.net/article/details/104863992)
 
 + [Java并发编程之原子类](https://juejin.cn/post/6844903683268804622)
 
@@ -76,3 +85,4 @@
 + [Java中synchronized和volatile的区别](https://zhuanlan.zhihu.com/p/61966479)
 + [Java中sleep()与wait()区别](https://blog.csdn.net/u012050154/article/details/50903326)
 + [synchronized和lock的区别](https://juejin.cn/post/6844903542440869896)
++ [Java虚拟机(JVM)面试题](https://blog.csdn.net/ThinkWon/article/details/104390752)

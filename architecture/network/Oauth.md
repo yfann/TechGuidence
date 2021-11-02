@@ -1,4 +1,4 @@
-##OAuth
+## OAuth
 
 token(include scope and timeout)
 
@@ -10,7 +10,7 @@ Authorization grant
 + client credentials
 
 
-###Access Token Response 
+### Access Token Response 
 
 		HTTP/1.1 200 OK
 		Content-Type: application/json;charset=UTF-8
@@ -24,7 +24,7 @@ Authorization grant
 			"refresh_token":"tGzv3JOkF0XG5Qx2TlKWIA"
 		}
 
-###Authenticated Requests
+### Authenticated Requests
 
 + Authorization Request Header Field
 
@@ -45,7 +45,7 @@ Authorization grant
 		GET /resource?access_token=mF_9.B5f-4.1JqM HTTP/1.1    
 		Host: server.example.com
 	
-###The WWW-Authenticate Response Header Field
+### The WWW-Authenticate Response Header Field
 
 
 + Request without authentication
@@ -69,7 +69,7 @@ Authorization grant
 
 
 
-####QA
+#### QA
 
 decode oauth token
 

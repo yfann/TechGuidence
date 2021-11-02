@@ -74,7 +74,10 @@
 + `nslookup <service-name>` pod和svc同一个namespace
 + `nslookup <service-name>.<namespace>` 如果运行命令的pod和service不在同一个namespace
   + `nslookup <service-name>.<namespace>.svc.cluster.local`
-
++ DNS lookup 
+  + 会返回service的cluster IP
+    + set clusterIP: None
+      + 则 返回pod IPs
 
 
 

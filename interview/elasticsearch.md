@@ -1,6 +1,11 @@
 # elasticsearch interview
 
 + 倒排索引
+    + 正向索引
+        + document -> words
+        + word -> documents
+
+    + 反向索引
 + 如何调优
     + 索引数据过多
 + master选举

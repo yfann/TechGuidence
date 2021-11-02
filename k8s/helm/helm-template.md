@@ -20,6 +20,10 @@
 {{- range $key, $val := .envMapping }}
 ...
 ```
+
++ `value-*.yaml` 会覆盖 `values.yaml`内容
+
+
 ## ref
 + [Variables](https://helm.sh/docs/chart_template_guide/variables/#helm)
 + [Named Templates](https://helm.sh/docs/chart_template_guide/named_templates/)

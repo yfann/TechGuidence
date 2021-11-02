@@ -2,7 +2,9 @@
 
 ##  service type
 + ClusterIP：默认类型，自动分配一个仅 cluster 内部可以访问的虚拟 IP
-  + 内部访问
+  + k8s内部访问
+  + k8s之外的ECS访问，要通过SLB暴露内网IP
+  + 是虚拟ip, ping不通
 
 + NodePort：在 ClusterIP 基础上为 Service 在每台机器上绑定一个端口，这样就可以通过 <NodeIP>:NodePort 来访问该服务。如果 kube-proxy 设置了 --nodeport-addresses=10.240.0.0/16（v1.10 支持），那么仅该 NodePort 仅对设置在范围内的 IP 有效。
   + 可以外部访问
@@ -15,22 +17,7 @@
   + CNAME
 
 ## tips
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: kubia
-spec:
-  # 同一个pod每次响应同一个客户端
-  sessionAffinity: ClientIP 
-  ports:
-  - port: 80                
-    targetPort: 8080        
-  selector:                 
-    app: kubia 
 
-# You’re defining a service called kubia, which will accept connections on port 80 and route each connection to port 8080 of one of the pods matching the app=kubia label selector.
-```
 + port
     - port: service 暴露出的port
     - targetPort: container port
@@ -46,14 +33,6 @@ ports:
   - name: https             
     port: 443               
     targetPort: 8443        
-```
-
-+ 使用命名端口
-```yaml
-  ports:
-  - name: http             
-    port: 80               
-    targetPort: http 
 ```
 
 + pod selector
@@ -84,22 +63,10 @@ spec:
   + 是虚拟ip, ping不通
   + DNS lookup 
     + 会返回service的cluster IP
-      + set clusterIP: None
-        + 则 返回pod IPs
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: kubia-headless
-spec:
-  clusterIP: None                ❶
-  ports:
-  - port: 80
-    targetPort: 8080
-  selector:
-    app: kubia
-```
-  +  ❶ makes service headless
+      + `clusterIP: None`
+        + 则返回pod IPs
+        + headless
+
 
 ## cluster中使用services
 
