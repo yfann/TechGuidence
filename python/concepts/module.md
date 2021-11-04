@@ -24,21 +24,23 @@
 
 + `__xxx__` magic
 
-+ `__name__='__main__'`   
-    + 命令行运行模块时，python解释器会执行
++ `__name__`   
+    + `python xx.py`时，解释器会设置`__name__='__main__'` 
+    + `import xx`时，会设置`__name__='xx'` 
 
-## import
++ `import math`
+    + `math = __import__("math")`
 
-+ `[pkg1].[pkg2].[module].[function]`
+## from import 
 
-+ `import [module]`
-    + `import xx as xxx` 
-        + 一个文件一个模块，可以起别名
-    + 不能导入`import [pkg1]` 
++ `import [module]/[function]`
+    + `import [pkg1].[pkg2].[module].[function]` 
+    + `import xx as xxx` 别名
+    + 不能导入`import [pkg]` 
 
-+ `from [pkg1].[pkg2].[module] import [function]`
-
-+ `from [pkg1].[pkg2] import [module]`
++ `from [pkg]/[module]`
+    + `from [pkg1].[pkg2].[module] import [function]`
+    + `from [pkg1].[pkg2] import [module]`
     + `from . import module`
         + 导入同path下的module
 
@@ -55,7 +57,9 @@
         + `from ..package_name import module_name`
     + 问题路径
         + `import module1`
-        + 可能会`ModuleNotFoundError`
+            + 可能会`ModuleNotFoundError`
+                + 级联引用时会包这种错误
+                + 编译器会把执行代码的path放入`sys.path`中，`import module1`不会报错。但module1的path不会放入`sys.path`中，module1中如果使用了`import module2`则会报错
         
 
 ## __init__.py

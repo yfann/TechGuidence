@@ -1,45 +1,17 @@
-<!-- 学习portal -->
-+ [k8s,GO,Linux](https://www.huweihuang.com/kubernetes-notes/)
+## 系列
 
-<!-- java -->
-+ [programcreek](https://www.programcreek.com/)
-+ [leetcode](http://leetcode.com/)
-+ [coursera](https://www.coursera.org/)
-<!-- 前端 -->
-+ [前端 a list part](https://alistapart.com/topic/css)
-+ [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
-<!-- python -->
-+ [python book list](http://mp.weixin.qq.com/s/uRqsDGDJCFYFHVRj1dGORQ)
-+ [python-100-days](https://github.com/jackfrued/python-100-days)
-+ [python3 cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
-+ [Python 3 Module of the Week](https://pymotw.com/3/index.html)
-<!-- terminal -->
-+ [linux-command](https://github.com/jaywcjlove/linux-command)
-<!-- 机器学习 -->
-+ [《统计学习方法》的代码实现](https://github.com/fengdu78/lihang-code)
-+ [动手学深度学习](http://zh.d2l.ai/chapter_preface/preface.html)
-+ [PyTorch入门教程](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
-<!-- article -->
-+ [『浅入浅出』MySQL 和 InnoDB](https://blog.csdn.net/enmotech/article/details/80249131)
++ [为什么这么设计系列文章](https://draveness.me/whys-the-design/)
++ [awesome](https://github.com/sindresorhus/awesome)
 
-<!-- new -->
-+ [graphql](https://graphql.cn/)
-
-<!-- booklis -->
+<!-- others -->
++ [Kubernetes 学习笔记](https://www.huweihuang.com/kubernetes-notes/)
 + [serverless](https://github.com/phodal/serverless)
 + [Thinking in Microfrontend](https://github.com/phodal/microfrontends)
++ [leetcode](https://siddontang.gitbooks.io/leetcode-solution/content/index.html)
++ [JS 函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html)
++ [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/index.html)
 
+## tools
 
-<!-- doc -->
-https://wangdoc.com/
-
-
-
-## 快速学习
-
-+ [programcreek](https://www.programcreek.com/)
-
-## todo
-
-
-+ [cloud tools](./cloud/cloud-tools.md)
++ [code example](https://www.programcreek.com/)
++ [devdocs api速查文档](http://devdocs.io/)

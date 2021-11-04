@@ -53,7 +53,11 @@
 ## log
 + Fluentd
     + log router
-+ filebeat/fluentbit
+
++ filebeat
+    + 通过host volume访问node特定目录的log,根据匹配规则筛选出特定container的log
+
++ fluentbit
     + 日志采集
 + Splunk/Hadoop/Hive
     + 日志分析

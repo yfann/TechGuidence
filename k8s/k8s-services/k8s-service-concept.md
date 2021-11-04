@@ -25,6 +25,8 @@
         + 通过DNS访问
     + Endpoints 的 IP 地址不能是 127.0.0.0/8、169.254.0.0/16 和 224.0.0.0/24，也不能是 Kubernetes 中其他服务的 clusterIP。
 
+
+
 ## 集群外访问集群内
 
 + clusterIP 为虚拟IP,外部无法直接访问
@@ -33,7 +35,10 @@
 + 方式3：ingress
 + 方式4： ECMP将Service ClusterIP路由到每个Node,这样可以直接通过ClusterIP访问服务
 
+
+
 ## Headless 服务
+
 + 不需要Cluster IP的服务`clusterIP: None`
 + 可用于服务发现(srv记录)
 + 不指定 Selectors，则添加externalName类型,通过CNAME访问
@@ -48,12 +53,17 @@
 
 + LoadBalancer Service：默认情况下，源 IP 会做 SNAT，server pod 看到的源 IP 是 Node IP。设置 service.spec.ExternalTrafficPolicy=Local 后可以自动从云平台负载均衡器中删除没有本地 endpoint 的 Node，从而保留源 IP。
 
+
+
 ## ingress
 + NodePort需要额外搭建负载均衡
 
 + LoadBalancer要求k8s必须运行在支持负载均衡的cloud provider上面
 
 + ingress主要将service暴露在cluster外，可以自定义服务的访问策略
+
+
+
 
 ## Virtual IPs and service proxies
 + 每个Node都有kube-proxy实现virtual IP,而不是ExternalName
@@ -63,6 +73,8 @@
 + iptables proxy mode
     + service端安装iptables rules
     + client------>clusterIP(iptables)-------->Node
+
+
 
 ## ref
 + [服务发现与负载均衡](https://feisky.gitbooks.io/kubernetes/content/concepts/service.html)
