@@ -33,6 +33,14 @@
 + install microsoft remote desktop on MAC
 + [win->Mac](https://zhuanlan.zhihu.com/p/74162964)
 
+
+## svc
+
++ `services.msc`
+
++ `"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --logpath C:\data\logs\mongodb.log --logappend --dbpath C:\data\db --service`
+    + 会在控制台启动后台服务，控制台关闭，服务结束
+
 ## ref
 + [BAT文件语法和技巧](http://www.jb51.net/article/5828.htm)
 + [批处理常用命令总结](http://xstarcd.github.io/wiki/windows/windows_cmd_summary.html)

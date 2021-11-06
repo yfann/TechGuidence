@@ -1,6 +1,6 @@
 
 
-## docker cli
+## image
 
 <!-- 删除镜像 -->
 + docker rmi `docker images -q`
@@ -21,3 +21,10 @@
 + docker rm `docker ps -aq`
     + 删除所有容器
 + docker rm `docker ps -a | grep xxxxx | awk '{print $1}'`
+
+
+## container
+
++ `docker container ls  --all`
++ `docker container kill <container id>`
++ `docker container rm <container id>`
