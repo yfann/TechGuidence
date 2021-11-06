@@ -16,6 +16,7 @@
 + `-I` head请求，并打印返回的http头
 
 + `-L` 请求随服务器重定向,curl默认不跟随重定向
++ `-vvv` 查看请求过程
 
 + `-u`
     + `curl -k -u <name>:<pwd> <url>:<port>`
