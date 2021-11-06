@@ -1,0 +1,3 @@
+
+## tips
++ `netstat -ap TCP`
