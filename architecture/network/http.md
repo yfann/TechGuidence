@@ -43,6 +43,17 @@ Content-Type:
 + referer  //告诉服务器访问过的上一个网页，可用于防盗链
 
 
+## keepalive
+
+
++ HTTP1.0中HTTP的完整生命周期
+    + 一个request,一个response
+    
++ HTTP1.1中使用Keep-alive
+    + 一个HTTP连接
+        + 可以发多个Request,Response
+
+
 ## tips
 + 长连接
     + 对头阻塞

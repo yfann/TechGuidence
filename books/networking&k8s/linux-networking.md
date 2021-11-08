@@ -18,6 +18,12 @@
         + lo(loopback interface)
 
 
+## network interface
++ 物理或虚拟
+    + computer用来和外部通信 
++ 可被分配多个IP
+
+
 ## Network Namespace(netns)
 
 + 网络隔离
@@ -54,11 +60,10 @@
 ## bridge interface
 
 + 虚拟交换机
-    + 类似物理交换机
+    + 类似物理交换机(switch)
 
 + 二层交换(物理层，链路层)
-
-+ MAC
+    + MAC
 
 + 可以绑定veth pair, tun/tap
 
@@ -68,13 +73,76 @@
 ## loopback interface(环回网络接口)
 
 + 127.0.0.1(localhost)
-
++ 只能用于本地communication
 + 网络层实现
     + 网络层发送报文时发现目标IP为本机，则交给loopback interface处理，不进入数据链路层.loopback发送回网络层，交由应用层程序处理
 
 + 虚拟网卡IP属于本机IP,与宿主机公用一个网络协议栈
 
 + netns内部IP不属于本机IP,netns有独立的网络协议有自己的loopback interface
+
+## Packet Handling in the Kernel
+
++ Netfilter
+    + hooks
+    + userspace的program处理packets
+        + drop,modify
+
++ Conntrack
+    + firewall
+    + NAT
+
++ Routing
+    + `route`
+
++ IPVS(IP Virtual Server)
+    + Linux connection(L4) load balancer
+
++ eBPF
+    + sandboxed program run in the Kernel
+    + `tcpdump`
+
+## iptables
++ 用于创建firewall,audit logs,mutate&reroute packets
++ 使用Netfilter
++ tables
+    + chains
+        + rules
+        + Netfilter hooks
++ functionality
+    + Filter
+        + firewall-related rules
+    + NAT
+    + Mangle
+        + non-NAT packet-mutating rules
+
+
+## Network Troubleshooting tools
+
++ checking connectivity
+    + traceroute
+    + ping
+    + telnet
+    + netcat
+
++ Port scanning
+    + nmap
+
++ Checking DNS records
+    + dig
+
++ Checking HTTP/1
+    + cURL
+    + telnet
+    + netcat
+
++ Checking HTTPS
+    + OpenSSL
+    + cURL
+
++ Checking listening programs
+    + netstat
+
 
 ## tips
 
@@ -90,16 +158,8 @@
         + IPv4: 0.0.0.0
         + IPv6: [::]
 
-+ establish tcp connection?
-    + keepalive
-
-+ network interface
-    + 物理或虚拟
-        + computer用来和外部通信 
-    + 可被分配多个IP
-    + loopback interface
-        + 127.0.0.1
-        + 只能用于本地communication
++ establish tcp connection
+    + keepalive????
 
 + ethX 物理网卡
 + brX linux bridge port
