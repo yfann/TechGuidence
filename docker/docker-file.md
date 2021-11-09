@@ -23,7 +23,16 @@
 + docker when using add with more than one source file, the destination must be a directory and end with a /
     - source下可能有多个匹配的文件
 
+## tips writting Dockerfile
++ Use one ENTRYPOINT per Dockerfile. The ENTRYPOINT or CMD tells Docker what process starts inside the running container, so there should be only one running process; containers are all about process isolation.
 
++ To cut down on the container layers, developers should combine similar commands into one using & & and \. Each new command in the Dockerfile adds a layer to the Docker container image, thus increasing its storage.
+
++ Use the caching system to improve the containers’ build times. If there is no change to a layer, it should be at the top of the Dockerfile. Caching is part of the reason that the order of statements is essential. Add files that are least likely to change first and the ones most likely to change last.
+
++ Use multistage builds to reduce the size of the final image drastically.
+
++ Do not install unnecessary tools or packages. Doing this will reduce the containers’ attack surface and size, reducing network transfer times from the registry to the hosts running the containers.
 
 ## ref
 + [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
