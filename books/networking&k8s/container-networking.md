@@ -49,3 +49,56 @@
     + `sudo ps -p 1 -o pid,pidns`
 
 ## Docker Networking Model
+
++ Libnetwork 
+    + container networking model(CNM)
+     + sandbox
+        + implements the management of the linux network namespaces for all containers running on the host
+     + endpoint
+        + are hosts on the network
+        + use iptables for network isolation
+     + network
+        + collection of endpoints
+
+
++ bridge(连接同host内的containers)
+    + 分配private IP
+    + 暴露port给外界访问，需要映射到host的port避免冲突
+    + Docker启动时会创建virtual bridge interface(docker0)
+        + 分配private IP
+        + 关联containers
+
++ networking mode
+    + Bridge(local driver)
+        + for containers running on the same host
+    + Custom or Remote
+    + Overlay(global drivers)
+        + for containers running on different hosts
+        + rely on libkv(key-value store),CNM doesn't have
+            + Consul
+            + etcd
+            + Zookeeper are needed
+    + Null
+
++ Overlay Networking
+    + 运行在不同nodes上的container间的通信
+    + VXLAN
+        + layer2
+
+## Container network Interface(CNI)
+
++ is the software interface between the container runtime and the network implementation
+    + specification
+    + libraries
+
++ CNI plugin
+    + Cilium
+        + securing network connectivity between application containers
+    + Flannel
+        + configure a L3 network
+        + store in etcd
+    + Calico
+        + uses the BGP routing protocol to route packets between hosts
+        + can integrate with Istio
+
++ AWS
