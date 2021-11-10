@@ -86,6 +86,9 @@
         + layer2
 
 ## Container network Interface(CNI)
++ define a standard interface to manage a container's network
+
++ manage pod IP, individual container network provisioning
 
 + is the software interface between the container runtime and the network implementation
     + specification
