@@ -50,7 +50,13 @@
     + NAT转换隐藏了背后真实的Pod IP，只能看到node IP
     + cluster A---->gateway A---->gateway B---->cluster B
 
+## Kubelet
 
++ CNI
+    + manages container networking 
+
++ CNR
+    + manages container runtime 
 
 
 ## tips
@@ -64,3 +70,5 @@
 
 + pod has a unique IP, which is shared by all containers in the pod
 
++ kube-controller-manager
+    + 一个进程运行了很多k8s controller
