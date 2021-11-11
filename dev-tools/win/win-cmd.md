@@ -9,7 +9,7 @@
    - `mklink /d "%USERPROFILE%\AppData\Local\Temp" "d:\TEMP"`  ｃ:减负
    - `mklink /d "%userprofile%\AppData\Local\Google\Chrome\User Data\Default" "E:\dropbox\Dropbox\default"`  更改chrome存储的位置
 + 换行(windows`^`,linux`\`)
-
++ `findstr`相当于grep
 
 ## 端口占用
 + `netstat -ano|findstr <port>`
