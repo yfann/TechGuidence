@@ -113,6 +113,7 @@
 
 ## pod
 + `kubectl get po <pod-name> -o yaml`
++ `kubectl get pods -w --field-selector spec.nodeName=node-1`
 + `kubectl get po -o wide`
 + `kubectl delete po <pod-name> <pod-name>`
 + `kubectl delete po --all`
@@ -279,6 +280,9 @@
 
 + verbosity level
     + `kubectl get ats -v=7`
+
++ `--field-selector`
+    + `kubectl get pods -w --field-selector spec.nodeName=node-1`
 
 + `kubectl edit`	
 <!-- Opens the object’s manifest in your default editor. After making changes, saving the file, and exiting the editor, the object is updated. Example: kubectl edit deployment kubia -->

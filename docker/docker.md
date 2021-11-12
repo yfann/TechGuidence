@@ -85,6 +85,18 @@
 + `ENV http_proxy ....` Dockerfile中设置
 
 
+## docker hub
+
+<!-- Docker desktop->Docker Engine -->
+<!-- "registry-mirrors":[
+	"https://registry.cn-hangzhou.aliyuncs.com",
+	"https://mirror.ccs.tencentyun.com",
+	"https://registry.docker-cn.com"
+] -->
+
+
+
+
 ## tips
 + local Docker image registry
 + windows 需要先启动docker
