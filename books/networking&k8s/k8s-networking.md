@@ -51,8 +51,39 @@
     + cluster A---->gateway A---->gateway B---->cluster B
 
 
+## kube-proxy
 
++ per-node daemon
 
++ basic load balancing
+    + routing request(outside the cluster)-->service(cluster IP)
+    + `--proxy-mode <mode>` rely on `iptables`
+        + userspace
+        + iptables (default)
+            + connection fan-out
+            + `iptables -t nat -L KUBE-SERVICES`
+        + ipvs
+            + load balancing
+        + kernelspace
+            + windows-only
+
+## CoreDNS
+
++ KubeDNS
++ access API server
++ dnsPolicy
+    + Default
+    + ClusterFirst
+    + ClusterFirstWithHostNet
+    + None
+        + need to set `nameservers:`
+            + a list of IP the pod will use as DNS servers
+        + `searches:`
+            +  is a list of DNS search domains for hostname lookup in the pod
+
++ search path
+    + <service>.default.svc.cluster.local->svc.cluster.local->cluster.local->The host search path(pod DNS policy/CoreDNS policy)
+    + autopath
 ## tips
 
 + 外网---->node(network interface)-->bridge---->pod(virtual network inteface)
@@ -73,4 +104,4 @@
     + CRI
         + manages container runtime 
 
-+ 
++ IPv4/IPv6 dual stack

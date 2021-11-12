@@ -104,4 +104,11 @@
         + uses the BGP routing protocol to route packets between hosts
         + can integrate with Istio
 
-+ AWS
++ CNI network models
+    + flat networks
+        + require many IP
+    + overlay networks
+        + create a virtual network within the cluster
+            + IPAM
+        + host不能直接连pod
+        + 只有node需要IP
