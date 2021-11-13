@@ -86,6 +86,9 @@
         + layer2
 
 ## Container network Interface(CNI)
++ define a standard interface to manage a container's network
+
++ manage pod IP, individual container network provisioning
 
 + is the software interface between the container runtime and the network implementation
     + specification
@@ -106,3 +109,11 @@
 ## container connectivity
 
 + Each container can reach the other over the docker0 bridge and the container ports because they are on the same Docker host and the same network
++ CNI network models
+    + flat networks
+        + require many IP
+    + overlay networks
+        + create a virtual network within the cluster
+            + IPAM
+        + host不能直接连pod
+        + 只有node需要IP

@@ -11,11 +11,7 @@ Content-Type:
 + application/json
 + text/xml
 
-## Concept
 
-+ [PRG](https://en.wikipedia.org/wiki/Post/Redirect/Get)
-+ [HTTP Tunnel](https://en.wikipedia.org/wiki/HTTP_tunnel)
-+ [Proxy server](https://en.wikipedia.org/wiki/Proxy_server#Web_proxy_servers)
 
 
 ## 缓存
@@ -48,10 +44,14 @@ Content-Type:
 
 + HTTP1.0中HTTP的完整生命周期
     + 一个request,一个response
+    + head中需要加加`Connection: Keep-Alive`
+        + 才能开启 keepAlive
     
-+ HTTP1.1中使用Keep-alive
++ HTTP1.1中默认开启Keep-alive
     + 一个HTTP连接
         + 可以发多个Request,Response
+    + request或response head中加入`Connection: Close`
+        + 关闭连接
 
 
 ## tips
@@ -65,6 +65,11 @@ Content-Type:
 
     + http2 
         + 二进制
+
++ `Transfer-Encoding: chunked`
+    + HTTP1.1支持
+    + 一边产生数据，一边发给客户端
+    + 内容是动态的无法通过`Conent-Length`告知浏览器
 ## ref
 
 + [content type](http://www.cnblogs.com/liulangmao/p/3889568.html)
@@ -78,3 +83,9 @@ Content-Type:
 
 <!-- http2 -->
 + [详细分析http2 和http1.1 区别](https://www.jianshu.com/p/63fe1bf5d445)
+
+<!-- Concept -->
+
++ [PRG](https://en.wikipedia.org/wiki/Post/Redirect/Get)
++ [HTTP Tunnel](https://en.wikipedia.org/wiki/HTTP_tunnel)
++ [Proxy server](https://en.wikipedia.org/wiki/Proxy_server#Web_proxy_servers)
