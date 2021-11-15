@@ -51,7 +51,7 @@
     + cluster A---->gateway A---->gateway B---->cluster B
 
 
-## kube-proxy
+## kube-proxy(L4)
 
 + per-node daemon
 
@@ -84,6 +84,87 @@
 + search path
     + <service>.default.svc.cluster.local->svc.cluster.local->cluster.local->The host search path(pod DNS policy/CoreDNS policy)
     + autopath
+
+## services
+
++ endpoint
+    + pod discovery
+
++ Nodeport
+    + node间会路由
+    + 缺点
+        + port可能被占用
+        + 需要手动填写node IP
+
++ ClusterIP
+    + virtual IP
+    + internal load balancer(kube-proxy)
+        + a single IP to pods
+    + `service-cluster-ip-range`
+        + CIDR
+    + process
+        + View the VETH pair and match with the pod.
+        + View the network namespace and match with the pod.
+        + Verify the PIDs on the node and match the pods.
+        + Match services with iptables rules.
+
++ Headless
+    + `.spec.clusterIP: "None"`
+    + the service does not support any load balancing functionality.
+    + provisions an Endpoints object and points the service DNS record at all pods that are selected and ready.
+    + DNS query时会返回所有的对应的Pod IP，而不是像Cluster IP一样只返回一个cluster IP
+    + 使用场景
+        + clustered databases 
+        + client端决定调用哪个pod
+        + The “correct” way to use a headless service is to query the service’s A/AAAA DNS record and use that data in a server-side or client-side load balancer.
+        + 自己不带loadbalance,只返回pod ip由外部来做loadbalance
+
++ ExternalName Service
+    + use DNS name instead of selector
+    + return a CNAME
+    + map a service to DNS name
+    + usage
+        + migrations of services external to the cluster
+
++ LoadBalancer
+    + exposing TCP or UDP services to the outside world
+    + nodeport + loadbalancer(L4)(cloud provider)
+    + traffic->load balancer externalIP(port)->load balancer clusterIP->container port(targetPort)
+
+## ingress
+
++ L7 (HTTP) load balancer
+
++ ingress controller(manage ingress pods)
+    + external load balancer controller
+    + internal load balancer controller
+
++ rules
+
++ cert-manager
+
++ multiple ingress controllers
+    + `IngressClass`
+
+## Service Mesh
++ an API-driven infrastructure layer for handling service-to-service communication
+
++ functionality
+    + Service Discovery
+        + instead of DNS for service discovery
+    + Load balancing
+    + communication resiliency
+    + Security
+    + Observability
+
++ traffic is encrypted with Mutual TLS(mTLS)
+
++ service mesh
+    + Istio
+    + Consul
+    + AWS App Mesh
+    + Linkerd
+
 ## tips
 
 + 外网---->node(network interface)-->bridge---->pod(virtual network inteface)
@@ -105,3 +186,38 @@
         + manages container runtime 
 
 + IPv4/IPv6 dual stack
+
++ send traffic to the service’s DNS address, consider a (standard) ClusterIP or LoadBalancer service.
+
+
++ loadbalancer(L4) vs ingress(L7)
+    + L4 can handle TCP/UDP, cannot handle http/https
+    + ingress supports path(http path) based routing
+
+## tools
++ kind
+    + MetalLB
+
+## debug
+
++ removing the label on the pods
+    + endpoint controller 会从endpoints上移除这些pods
+
++ pod probes
+
++ check yaml ports configuration
+
++ network policies
+
++ use dnsutils,netshoot
+
++ kubelet
+    + --kube-api-qps
+    + --kube-api-burst
+    + --iptables-sync-period
+    + --ipvs-sync-period duration
+
+## ref
+
++ [cluserIP](https://learning.oreilly.com/library/view/networking-and-kubernetes/9781492081647/ch05.html#idm46219936154616)
+    
