@@ -10,10 +10,16 @@
 + full-text queries
     + Full-text queries answer how well the documents match a query.
     + 会根据分数从高到低排序
+    + text field
 
 + Boolean queries
     + The bool query lets you combine multiple search queries with boolean logic
 
+
++ aggregation
+    + 支持keyword
+    + 默认不支持text field
+        + 设置`fielddata:true`
 ## tips
 + nested array
 + 复杂业务场景
