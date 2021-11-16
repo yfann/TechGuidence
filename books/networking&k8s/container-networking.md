@@ -104,6 +104,11 @@
         + uses the BGP routing protocol to route packets between hosts
         + can integrate with Istio
 
++ AWS
+
+## container connectivity
+
++ Each container can reach the other over the docker0 bridge and the container ports because they are on the same Docker host and the same network
 + CNI network models
     + flat networks
         + require many IP
