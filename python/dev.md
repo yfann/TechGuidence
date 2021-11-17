@@ -5,7 +5,7 @@
 
 + ` venv\Scripts\activate`
     + 激活虚拟环境
-    + powershell: `./xxx.ps1`
+    + powershell: `./Scripts/Activate.ps1`
 
 + `deactivate` 退出
 
