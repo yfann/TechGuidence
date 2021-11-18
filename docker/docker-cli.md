@@ -28,3 +28,6 @@
 + `docker container ls  --all`
 + `docker container kill <container id>`
 + `docker container rm <container id>`
+
++ `docker stop <container id>`
+    + `docker start <container id>`
