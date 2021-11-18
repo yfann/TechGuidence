@@ -1,4 +1,4 @@
-# 消息队列
+# 消息队列(message queue)
 
 + 异步、解耦、消峰填谷
 
@@ -22,7 +22,20 @@
 
 ## 顺序性
 
+## AMQP(Advanced Message Queuing Protocol)
+
++ 连接AMQ Model
+
++ 二进制协议
+    + multi-channedl
+    + negotiated
+
+
+
+
 ## ref
 
 + [消息队列面试题及答案](https://blog.csdn.net/qq_41701956/article/details/103276267)
 + [面试官：消息队列这些我必问](https://juejin.cn/post/6844904000517570574)
+
++ [AMQP协议学习](https://zhuanlan.zhihu.com/p/147675691)

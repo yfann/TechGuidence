@@ -17,7 +17,7 @@
 
 + `type -a [cmd]` 查看命令位置
 
-## globbing
+## globbing(glob pattern)
 
 + `~`
     + `echo ~`

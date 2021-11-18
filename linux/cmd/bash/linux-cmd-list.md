@@ -103,6 +103,10 @@
     + `cat test.txt | xargs -n3`
 
 
+## others
+
++ `jq`
+
 
 
 
