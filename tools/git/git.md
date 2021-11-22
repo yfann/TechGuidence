@@ -91,8 +91,8 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `git config --global --unset user.password`
 + `git config user.name <user name>` 只影响当前目录
 + `git config user.email <user email>`
++ `git config --global --list`
 
-***
 
 ## 高级
 
@@ -121,6 +121,8 @@ Working dir---(add)---->Index(Stage)-----(commit)--->Head/History
 
 
 ## issue
+
++ `git config --system --unset credential.helper`
 
 + `git config --global credential.helper osxkeychain` Mac 清除用户名密码
 + ignore已经提交了的文件
