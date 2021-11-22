@@ -27,3 +27,5 @@
 + [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html)
 
 + [Term-level queries](https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/term/)
++ [collapse](https://elasticsearch.cn/article/132)
++ [collapse text field](https://discuss.elastic.co/t/how-to-return-distinct-values-from-query-based-on-a-field/228000)
