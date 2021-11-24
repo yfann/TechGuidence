@@ -141,6 +141,13 @@ $ git add .
 + Network is unreachable
     - `git push -4 origin master`
 
++ 多个git账号提交时 403
+```
+.gitconfig中注释掉credential,密码对话框可弹出
+# [credential]
+# 	helper = manager
+```
+
 ## Ref
 
 + [git config](http://www.cnblogs.com/wanqieddy/archive/2012/08/03/2621027.html)
