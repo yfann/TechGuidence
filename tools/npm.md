@@ -21,8 +21,21 @@
 + `npm info <package> [version]` 查看发布的包
 + `npm list [-g] --depth 0`  查看安装的包，除去-g查看local
 + `npm view <package> versions`
+
 + `npm install -g cnpm --registry=https://registry.npm.taobao.org`
 + `cnpm install`
+
+<!-- repo -->
++ `npm config set registry http://mirrors.cloud.tencent.com/npm/`
++ `npm config set registry https://registry.npmmirror.com`
++ `npm config set registry https://mirrors.huaweicloud.com/repository/npm/`
+
++ `npm config set registry https://registry.npmjs.org/`
+  + 默认源
++ `npm config get registry`
+<!-- cnmp -->
++ `npm install -g cnpm --registry=https://registry.npmmirror.com`
++ `cnpm install xxx`
 
 ## config
 

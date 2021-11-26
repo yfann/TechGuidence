@@ -21,8 +21,11 @@
 
 + eth0
     + 物理网卡
-    + /etc/sysconfig/network-scripts
+    + `/etc/sysconfig/network-scripts`
+        + Red Hat/CentOS
         + 一个网卡对应一个配置文件
+    + `/etc/network/interfaces`
+        + Debian/Ubuntu
 
 + lo
     + loopback
@@ -30,3 +33,4 @@
 
 ## ref
 + [ifconfig 中的 eth0 eth0:1 eth0.1 与 lo](https://www.cnblogs.com/jokerjason/p/10695189.html)
++ [Linux 网络接口配置（/etc/network/interfaces）](https://blog.csdn.net/u011077672/article/details/71123319)
