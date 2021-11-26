@@ -3,6 +3,9 @@
 
 + `helm get values <release-name>`
 
++ `helm repo list`
+
++ `helm search repo <chart name>`
 
 ## cmd
 + `<command> -h`

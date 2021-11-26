@@ -16,13 +16,6 @@
     + `find /workspace | xargs cat`
 
 
-## file
-+ `df -h` 查看目前文件系统的可用空间
-    + `df -T`
-+ `du -h  <your_dest_dir>`
-+ `tee`
-    + 读取标准输出到文件
-    + `date | tee >test.txt`
 
 
 
@@ -102,6 +95,10 @@
     + `echo "nameXnameXnameXname" | xargs -dX`
     + `cat test.txt | xargs -n3`
 
+
+## others
+
++ `jq`
 
 
 

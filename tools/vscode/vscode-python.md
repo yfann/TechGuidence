@@ -12,6 +12,11 @@
 
 + 切换env后可能出现源代码`ctrl + click`不能跳转问题
 
+## launch.json
+
++ `"justMyCode":false` 调试可以进入第三方库
+
 ## ref
 
++ [Python debugging in VS Code](https://code.visualstudio.com/docs/python/debugging)
 + [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)

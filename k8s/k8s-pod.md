@@ -55,3 +55,4 @@ ENTRYPOINT ["sh","-c","sleep 100000"]
 
 
 + [Running Containers Securely Under Kubernetes](https://www.magalix.com/blog/running-containers-securely-under-kubernetes)
++ [Kubernetes 容器的优雅启动和终止](https://www.kubernetes.org.cn/9692.html)

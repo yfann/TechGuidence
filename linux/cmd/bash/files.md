@@ -7,6 +7,14 @@
 + `cp -r /home/packageA /home/packageB`
     + copy 文件夹
 
++ `df -h` 查看目前文件系统的可用空间
+    + `df -T`
+    
++ `du -h  <your_dest_dir>`
++ `tee`
+    + 读取标准输出到文件
+    + `date | tee >test.txt`
+
 ## copy files from a pod
 
 + `kubectl cp <default/POD_NAME:bin/FILE_NAME> </Users/username/FILE_NAME>`

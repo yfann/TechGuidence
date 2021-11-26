@@ -52,6 +52,17 @@
 
 + 蓝绿部署
 
+## tips
+
++ 同步通信
+    + HTTP
+    + GRPC
+
++ 异步通信
+    + 消息总线(msg queue)
+    + 事件总线
+    + 服务之间没有直接连接
+
 ## ref
 <!-- Pattern -->
 + [microservices patterns](https://microservices.io/patterns/index.html)
