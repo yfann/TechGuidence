@@ -17,11 +17,6 @@
 
 
 
-<!-- 删除容器 -->
-+ docker rm `docker ps -aq`
-    + 删除所有容器
-+ docker rm `docker ps -a | grep xxxxx | awk '{print $1}'`
-
 
 ## container
 
@@ -31,3 +26,8 @@
 
 + `docker stop <container id>`
     + `docker start <container id>`
+
+<!-- 删除容器 -->
++ docker rm `docker ps -aq`
+    + 删除所有容器
++ docker rm `docker ps -a | grep xxxxx | awk '{print $1}'`
