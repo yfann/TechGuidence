@@ -14,3 +14,9 @@
 + ssh
     + `ssh root@xx.xxx.xx.xx`
     + `scp -r  xx@xxxx:/home/xxx  C:\backup\` 远端copy文件到本地
+
+
+
+## tricks
+
++ `echo 'MWYyZDFlMmU2N2Rm' | base64 --decode`
