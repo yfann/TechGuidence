@@ -51,6 +51,7 @@
 + NAT
     + 修改packet header
         + 把source server IP改为router IP
+        + source server Ip 为 internal IP(RFC1918)
 
 + create eth2
     + 连接cable modem or ISP's router
@@ -60,16 +61,29 @@
 # iface eth2 inet dhcp
 ```
 
-+ iptables 
++ `iptables`
     + to enable NAT
     + interfacing with the Linux kernel firewall
     + the netfilter subsystem
+
 ```sh
 /sbin/iptables -t nat -A POSTROUTING -o eth2 -j MASQUERADE
-# -t nat   使用nat table
-# /sbin/iptables -A FORWARD -i eth2 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
-# /sbin/iptables -A FORWARD -i eth0 –o eth2 -j ACCE PT
+# -t nat   track packet in nat table
+# -A add the rule to the chain
+# -o specifies the output interface
+# -j what to do if matches the rule, MASQUERADE the packet(modify IP)
+/sbin/iptables -A FORWARD -i eth2 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+# -m matches a packet property
+# eth2(internet)-------packet------->eth0(lan)
+# FORWARD 处理router出来的packet
+/sbin/iptables -A FORWARD -i eth0 –o eth2 -j ACCE PT
 ```
+
+## DHCP(Dynamic Host Configuration Protocol)
+
++  
+
+
 ## ref
 + [ifconfig 中的 eth0 eth0:1 eth0.1 与 lo](https://www.cnblogs.com/jokerjason/p/10695189.html)
 + [Linux 网络接口配置（/etc/network/interfaces）](https://blog.csdn.net/u011077672/article/details/71123319)
