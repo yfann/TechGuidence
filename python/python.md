@@ -1,11 +1,5 @@
 
 
-
-## cmd
-+ `python -m http.server [port]`
-+ `pip freeze > requirements.txt`  `pip install -r requirements.txt`
-
-
 ## help
 
 + `help()`
@@ -18,7 +12,12 @@
 
 + `type()`
 
+
+
 ## tips
+
+
+
 + 查看模块路径
 
 ```py
@@ -58,20 +57,16 @@ print a
 
 ```
 
-## code tips
 
-+ `type(1.2)==float` 判断类型
-
-+ `val= x if x>y else y` 三元运算符
-    + 如果x>y  val=x
-
-+ `list1 = [0] * size` 初始化数组
++ sys.stdout.write
 
 
-## functions
 
-+ enumerate()
-+ range()
+
+
+
+
+
 
 ## tools
 

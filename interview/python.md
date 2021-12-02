@@ -1,13 +1,7 @@
 
 
 
-## 内存管理
 
-+ 引用计数
-    + 循环引用
-    + `sys.getrefcount(obj)`
-
-+ 内存泄漏
 
 ## basic
 
@@ -27,3 +21,40 @@
     + setattr()
 
 + lambda
+
++  模块和包
+	+ import
+	+ __init__
+    + ModuleNotFoundError
+
++  Is, ==
+	+ 10 is '10'
+		+  id(a)==id(b)
+    + 10 == '10'
+
+## 高级
++ GIL
+    + 多线程
+
++ 表推导
+
++ 装饰器
+
++ 迭代器，生成器
+
++ 插件系统
+    + pkg_resources
+
++ logging.getLogger(name) 
+
++ 深浅拷贝
+
++ 瘊子补丁
+
+## 内存管理
+
++ 引用计数
+    + 循环引用
+    + `sys.getrefcount(obj)`
+
++ 内存泄漏

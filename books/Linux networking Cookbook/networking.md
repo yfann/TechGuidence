@@ -81,7 +81,13 @@
 
 ## DHCP(Dynamic Host Configuration Protocol)
 
-+  
++  自动分配IP
+    + Machine(刚加入网络)--------DHCP reqeust-------->DHCP server
+        + 获取IP,gateway,DNS server...
+
+```sh
+sudo apt-get install isc-dhcp-server
+```
 
 
 ## ref
