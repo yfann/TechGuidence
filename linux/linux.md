@@ -46,5 +46,9 @@
 
 ## ref
 + [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+
 <!-- 概念 -->
 + [Linux 环境隔离机制 -- Linux Namespace](https://zhuanlan.zhihu.com/p/47571649)
+
++ [linux基础与shell编程](https://www.kancloud.cn/digest/linux-world/145297)
+

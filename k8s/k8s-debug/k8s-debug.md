@@ -8,7 +8,10 @@
 + `kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes`
     + ` kubectl get --raw /healthz?verbose`
 + `kubectl api-resources -o wide --sort-by name`
+
 + `kubectl get events -A`
+    + `kubectl get events --watch`
+    + `kubectl get events --sort-by=.metadata.creationTimestamp`
 
 + `kubectl get nodes -o wide`
     + `kubectl get pods -o wide`

@@ -86,7 +86,13 @@
         + 获取IP,gateway,DNS server...
 
 ```sh
+# Debian/Ubuntu
+# Install a DHCP server
 sudo apt-get install isc-dhcp-server
+# add the interface which you should serve reqeusts on
+sudo sed –i "s/^INTERFACES.*/INTERFACES="eth0" /etc/default/isc-dhcp-server
+
+# /etc/dhcp3/dhcpd.conf
 ```
 
 
