@@ -206,6 +206,11 @@ cd sample-controller
 	+ 会获取latest
 		+ k8s.io/kube-openapi@v0.0.0-20210817015826-5b43ecc0dd7a
 
+
++ `replace`
+	+ `go mod edit -replace [old git package]@[version]=[new git package]@[version]`
+	+ replace github.com/ozgio/strutil v0.3.0 => github.com/shiweifu/strutil v0.3.0
+
 ## ref
 + [查找Go包](https://godoc.org/?q=k8s.io)
 + [Package Management with Go Modules](https://blogs.halodoc.io/go-modules-implementation/)
@@ -225,6 +230,7 @@ cd sample-controller
 + [go mod 使用](https://juejin.im/post/6844903798658301960)
 + [干货满满的 Go Modules 和 goproxy.cn](https://juejin.im/post/6844903954879348750)
 + [vscode golang proxy](https://github.com/flew990/flew990/issues/30)
++ [Understanding direct,indirect in go.sum and go.mod](https://golangbyexample.com/go-mod-sum-module/)
 
 <!-- go tool -->
 + [go fmt your code](https://blog.golang.org/gofmt)
@@ -240,7 +246,7 @@ cd sample-controller
 + [Go Modules](https://github.com/golang/go/wiki/Modules)
 
 
-## GOPATH
+<!-- ## GOPATH
 + 环境变量
 + 工作目录（GOPATH指定不同值来切换工作目录）
 	+ src(源码,工作目录)
@@ -254,4 +260,4 @@ cd sample-controller
 ```bash
 export GOPATH=$HOME/go
 source ~/.bash_profile
-```
+``` -->
