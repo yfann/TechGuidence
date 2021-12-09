@@ -1,4 +1,15 @@
 
+## tips
+
++ user/kernel
+
++ 网卡
+    + 一端为协议栈(IP,TCP,UDP)
+    + 另一端
+        + 驱动程序(物理网卡)
+
++ tun/tap，vxlan、veth pair 
+    + 虚拟网卡
 
 ## ref
 
