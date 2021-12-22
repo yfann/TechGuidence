@@ -52,3 +52,6 @@
 
 + [linux基础与shell编程](https://www.kancloud.cn/digest/linux-world/145297)
 
+<!-- others -->
++ [Linux版本知多少](https://zhuanlan.zhihu.com/p/151849085)
++ [Linux编译、分发工具演化](https://zhuanlan.zhihu.com/p/65209070)
