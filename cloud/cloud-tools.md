@@ -74,14 +74,27 @@
 ## k8s
 + kind
 
+## IaaS
+
++ OpenStack
+
+
+## PaaS
+
++ OpenShift
+
 ## ref
 + [The beginning of ‘Everything as Code’](https://medium.com/swlh/the-beginning-of-everything-as-code-a25c4e9a75e9)
 + [基于consul实现微服务的服务发现和负载均衡](https://tonybai.com/2018/09/10/setup-service-discovery-and-load-balance-based-on-consul/)
 
 <!-- cloud native -->
 + [Awesome Cloud Native](https://jimmysong.io/awesome-cloud-native/)
+
 <!-- tools -->
 + [adnanh/webhook](https://github.com/adnanh/webhook)
     + http endpoint -> configed command
 + [kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
 + [cloudevents](https://github.com/cloudevents/spec)
+
+<!-- others -->
++ [OpenStack入门科普，看这一篇就够啦](https://zhuanlan.zhihu.com/p/35598437)

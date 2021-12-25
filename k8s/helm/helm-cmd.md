@@ -1,11 +1,12 @@
 ## quick start
-+ `helm upgrade --install ...`
++ `helm upgrade --install ...  --version ...`
 
 + `helm get values <release-name>`
 
 + `helm repo list`
 
 + `helm search repo <chart name>`
+    + `helm search repo opensearch --versions`
 
 ## cmd
 + `<command> -h`

@@ -4,8 +4,10 @@
     + TLS的前身
 + TLS (Transport Layer Security)
 
-+ certificate authority，简称CA
++ CA(certificate authority)
     + Digital Certificate
+        + CA机构用自己的private key对 他人的public key，以及其他信息加密
+        + 用户用CA 的 public key 得到证书中的public key，防止public key被冒用
 
 + 自签名证书
     + 不通过CA签发
@@ -23,6 +25,9 @@
 + RSA
     + 非对称加密算法 
     + 1024位，2048位
+
++ 数字签名
+    + 对内容hash后，用private key加密，随内容一起发送
 
 ##  cmd
 <!-- 生成私钥 -->
