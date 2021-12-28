@@ -11,6 +11,10 @@
 <!-- or -->
 + hyper-V(windows)
 
+## install
+
++ `brew install vagrant`
+
 
 ## cmd
 
@@ -21,6 +25,8 @@
 + `vagrant up`
     + ` --provider hyperv`
     + run as admin
++ `vagrant destroy -f`
++ `vagrant reload`
 
 <!-- ssh -->
 + `vagrant ssh`
