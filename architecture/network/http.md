@@ -1,9 +1,24 @@
 
 # HTTP
 
-## Method
++ HTTP close mode
+    + connection establish ---->request---->response---->connection close
+    + client does not need to kenow `content length`
+        + server will close connection after send response
 
-### Post
++ keep-alive mode
+    + server indicates the content lenght for each response 
+
+
++ pipelining mode
+    + client does not wait for the first response to send the second request
+    + server to reply in the exact same order as the requests were received.
+
++ multiplexed mode(HTTP/2)
+    + each transaction is assigned a single stream identifier, and all streamsare multiplexed over an existing connection. Many requests can be sent in
+    parallel by the client, and responses can arrive in any order since they also carry the stream identifier
+    + 
+## Post
 
 Content-Type:
 + application/x-www-form-urlencoded
@@ -70,6 +85,10 @@ Content-Type:
     + HTTP1.1支持
     + 一边产生数据，一边发给客户端
     + 内容是动态的无法通过`Conent-Length`告知浏览器
+
+
+
+
 ## ref
 
 + [content type](http://www.cnblogs.com/liulangmao/p/3889568.html)
