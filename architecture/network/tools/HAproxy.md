@@ -1,5 +1,25 @@
 
+## cmd
 
+ + `haproxy reload`
+    + take new configuration
+
+## tips
+
++ proxy vs router
+
++ hard stop
+    + stop,restart
+    + `-st`
+
++ graceful stop
+    + reload
+    + `-sf`
+
+## debug
+
++ `haproxy -vv`
++ `netstat -ltnp`
 
 ## ref
 
