@@ -1,4 +1,10 @@
 
+# linux install
+
++ rpm
+    + `sudo rpm -i sample_file.rpm`
+    + `sudo yum localinstall sample_file.rpm`
+
 ## linux install go
 + `curl -LO  https://golang.org/dl/go1.15.2.linux-amd64.tar.gz`
 + `sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz`
@@ -38,3 +44,15 @@ sudo cp linux-amd64/helm /usr/local/bin/
 
 ## ref
 + `ls -l` 查看权限
+
+
+# Centos
+
+## yum
++ RPM package
+
+
+
+## ref
+
++ [How to Install an RPM File On Linux OS (CentOS, RHEL, & Fedora)](https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux)

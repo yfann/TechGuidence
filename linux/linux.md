@@ -1,6 +1,6 @@
 # linux
 + `cat /proc/version` 查看内核
-
++ `lsb_release -a` linux版本
 
 ## setting
 + `ls -a`

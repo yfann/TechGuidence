@@ -4,6 +4,9 @@
  + `haproxy reload`
     + take new configuration
 
++ `haproxy -c`
+    + verify configuration
+
 ## tips
 
 + proxy vs router
@@ -20,6 +23,7 @@
 
 + `haproxy -vv`
 + `netstat -ltnp`
++ `show pools` memory check
 
 ## ref
 
@@ -32,3 +36,6 @@
 + halog(built-in)
 + [tcpdump ](https://www.tcpdump.org/)
 + [strace](https://man7.org/linux/man-pages/man1/strace.1.html)
+
+<!-- samples -->
++ []()

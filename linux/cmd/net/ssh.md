@@ -40,10 +40,19 @@
 
 ## scp
 + `scp -i C:/app/OpenVPN/hsc-operation-key/id_rsa -r ***@****:/home/hscadmin/fan C:\backup\ali_ssh `
-
++ `scp local_file remote_username@remote_ip:remote_folder`
+    + from local_file to remote
+    
 ## tips
 + PuTTY(windows)
 + OpenSSH
+
+
+## issues
+
++ `Permissions 0777 for 'xxx.pem' are too open.`
+    + chmod 600 ./xxx.pem
+        + xxx.pem should not be accessed by others
 
 ## ref
 

@@ -14,6 +14,7 @@
 + `tee`
     + 读取标准输出到文件
     + `date | tee >test.txt`
++ `rm -rf <folder>` -r递归 -f不提示
 
 ## copy files from a pod
 
