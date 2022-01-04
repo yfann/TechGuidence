@@ -1,7 +1,7 @@
 
 # linux install
 
-+ rpm
++ install rpm
     + `sudo rpm -i sample_file.rpm`
     + `sudo yum localinstall sample_file.rpm`
 

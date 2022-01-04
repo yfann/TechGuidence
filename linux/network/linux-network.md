@@ -1,4 +1,27 @@
 
+## cmd
+
++ `ip a`  查看ip
+    + `eth0` Ethernet interface
+    + `lo` loopback, the system uses to communicate with itself
+    + `wlan0` wireless network
+    
++ `ifconfig`
+    + `ifconfig -a`
+    + `ifconfig eth0`
+    + `sudo ifconfig eth1 up`
+        + `sudo ifconfig wlan0 down`
+
++ `cat /etc/sysconfig/network-scripts/ifcfg-eth0`
+    + 启动网卡
+        + ONBOOT=yes
+    + 修改后重启网络服务
+        + `sudo service network restart`
+
+
++ `route -n`
+
+
 ## tips
 
 + user/kernel
@@ -14,3 +37,6 @@
 ## ref
 
 + [如何学习 Linux 内核网络协议栈](https://segmentfault.com/a/1190000021227338)
+
+<!-- cmd -->
++ [ifconfig](https://www.computerhope.com/unix/uifconfi.htm)
