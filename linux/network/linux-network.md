@@ -2,6 +2,7 @@
 ## cmd
 
 + `ip a`  查看ip
+    + `ip addr | grep inet`
     + `eth0` Ethernet interface
     + `lo` loopback, the system uses to communicate with itself
     + `wlan0` wireless network
@@ -38,5 +39,6 @@
 
 + [如何学习 Linux 内核网络协议栈](https://segmentfault.com/a/1190000021227338)
 
-<!-- cmd -->
+<!-- others -->
 + [ifconfig](https://www.computerhope.com/unix/uifconfi.htm)
++ [Linux Static IP Configuration](https://www.linode.com/docs/guides/linux-static-ip-configuration/)

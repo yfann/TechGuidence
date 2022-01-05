@@ -1,9 +1,12 @@
 
 # linux install
 
-+ install rpm
-    + `sudo rpm -i sample_file.rpm`
-    + `sudo yum localinstall sample_file.rpm`
++ Centos(Red Hat)
+    + rpm/yum
+
++ Ubuntu(Debian)
+    + apt-get/apt
+    + Dpkg
 
 ## linux install go
 + `curl -LO  https://golang.org/dl/go1.15.2.linux-amd64.tar.gz`

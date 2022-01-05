@@ -1,7 +1,16 @@
 # linux
-+ `cat /proc/version` 查看内核
++ 查看内核
+    + `cat /proc/version` 
+    + `uname -a`
 + `lsb_release -a` linux版本
 + `cat /etc/redhat-release` 查看Redhat版本
+
++ 发行版
+    + Red Hat
+        + Centos
+        + Fedora
+    + Debian
+        + Ubuntu
 
 ## setting
 + `ls -a`
