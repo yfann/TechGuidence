@@ -41,5 +41,13 @@
 + [tcpdump ](https://www.tcpdump.org/)
 + [strace](https://man7.org/linux/man-pages/man1/strace.1.html)
 
+<!-- config -->
++ [haproxy.cfg 1.5](http://www.haproxy.org/download/1.5/doc/configuration.txt)
+
 <!-- samples -->
 + []()
+
+
+<!-- distribute -->
++ [haproxy image](https://hub.docker.com/_/haproxy)
++ [haproxy rpm](https://software.opensuse.org/package/haproxy)
