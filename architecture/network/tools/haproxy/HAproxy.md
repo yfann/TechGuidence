@@ -56,3 +56,4 @@
 
 <!-- sample -->
 + [从零开始掌握 HAProxy](https://segmentfault.com/a/1190000039713086)
++ [一个简单的例子，带你理解haproxy！](https://blog.csdn.net/qq_34208467/article/details/84032105)

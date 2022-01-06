@@ -5,8 +5,8 @@
 + `wsl --install -d <Distribution Name>` 安装指定版本
 
 ## cmd
-+ `wsl -l -v`
-    + 列出安装的子系统<Distro>
++ `wsl -l -v` 查看运行的版本
+
 + `wsl --set-version Ubuntu-20.04 2`
 + `wsl --set-default-version 2`
 

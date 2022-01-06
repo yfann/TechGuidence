@@ -19,16 +19,7 @@
 
 
 
-## process
-  <!-- process   -->
-+ `ps aux|grep <name>` 查看进程
-    + 需要`apt-get install procps`
-+ `kill <pid>` 杀死进程
-    + `kill -KILL <pid>` 强制杀死
-    + `kill -9 <pid>` 彻底杀死
-+ `ps -A` 所有进程
-+ `ps aux | grep <name> | grep -v grep | awk '{print $2}'`
-    + 得到进程Pid
+
 
 ## temp
 

@@ -47,7 +47,4 @@
 + [Docker学习：Image的本地存储结构](https://segmentfault.com/a/1190000017579626)
 + [apk hub](https://pkgs.alpinelinux.org/packages)
 
-<!-- images -->
 
-+ [httpd](https://hub.docker.com/_/httpd)
-    + Apache HTTP server
