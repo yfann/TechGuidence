@@ -22,6 +22,6 @@
 + [nerdctl](https://cloud.51cto.com/art/202108/679424.htm)
 
 <!-- alternative -->
-+ [Run Docker in WSL (Windows 10/11) without Docker Desktop](https://medium.com/geekculture/run-docker-in-windows-10-11-wsl-without-docker-desktop-a2a7eb90556d)
+
 
 + [Free Docker Desktop Alternative For Mac And Windows](https://devopstales.github.io/home/docker-desktop-alternatives/)

@@ -12,8 +12,10 @@
     + Debian
         + Ubuntu
 
-## setting
+## cmd
 + `ls -a`
++ `whoami`
++ `which <cmd>`
 
 
 
@@ -22,19 +24,7 @@
 + `export -n <name>`删除环境变量
 
 
-## apt
-<!-- 添加代理 -->
-<!-- 代理必须添加 http://或https:// -->
-+ /etc/apt/apt.conf
-    + Acquire::http::proxy "http://127.0.0.1:8087/";
-    + Acquire::https::proxy "https://127.0.0.1:8087/";
-<!-- 或者 -->
-+ `sudo apt-get -o Acquire::http::proxy="http://127.0.0.1:8000/" update`
-    + `sudo apt-get -o Acquire::https::proxy="http://127.0.0.1:8000/" update`
 
-+ `apt list --installed`
-+ `sudo apt install golang-go`
-+ `apt-get --purge remove golang-go`
 
 
 
@@ -66,3 +56,7 @@
 <!-- others -->
 + [Linux版本知多少](https://zhuanlan.zhihu.com/p/151849085)
 + [Linux编译、分发工具演化](https://zhuanlan.zhihu.com/p/65209070)
+
+
+<!-- 教程 -->
++ [鸟哥的Linux私房菜：基础学习篇 第四版](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/148.html)

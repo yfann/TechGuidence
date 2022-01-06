@@ -6,6 +6,8 @@
 
 ## cmd
 
++ `yum info <pkg>`
+
 + `yum list` 列出所有可安装的包
     + `yum list | grep ...`
     + `yum list installed | grep ...`

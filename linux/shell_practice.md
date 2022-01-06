@@ -20,3 +20,4 @@
 ## tricks
 
 + `echo 'MWYyZDFlMmU2N2Rm' | base64 --decode`
++ `echo "xxxx" >> ~/.zshrc`

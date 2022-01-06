@@ -23,6 +23,13 @@
 + `route -n`
 
 
+## iptables
+
++ `iptalbes -h`
+
++ `iptables -F` 
+    + 关闭防火墙
+
 ## tips
 
 + user/kernel

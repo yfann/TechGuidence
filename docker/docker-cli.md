@@ -1,7 +1,7 @@
 
 
 ## image
-
++ `docker image pull <img>`
 <!-- 删除镜像 -->
 + docker rmi `docker images -q`
     + 删除所有镜像

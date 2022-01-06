@@ -1,4 +1,9 @@
 
+## install
+
++ `wsl -l -o` 查看可用版本
++ `wsl --install -d <Distribution Name>` 安装指定版本
+
 ## cmd
 + `wsl -l -v`
     + 列出安装的子系统<Distro>
@@ -26,6 +31,7 @@ localhostForwarding=true
 
 + `wsl --shutdown` 重启
 
++ sysVinit 方式启动，无法使用systemctl
 
 
 ## docker-wsl

@@ -24,6 +24,8 @@
     + reload
     + `-sf`
 
++ 系统的`ulimit -n`参数大于[maxconn*2+18]
+
 ## debug
 
 + `haproxy -vv`
@@ -41,13 +43,16 @@
 + [tcpdump ](https://www.tcpdump.org/)
 + [strace](https://man7.org/linux/man-pages/man1/strace.1.html)
 
-<!-- config -->
+<!-- docs -->
 + [haproxy.cfg 1.5](http://www.haproxy.org/download/1.5/doc/configuration.txt)
++ [HAProxy Architecture](https://www.haproxy.org/download/1.2/doc/architecture.txt)
++ [HAProxy samples](http://www.haproxy.org/download/1.3/examples/antidos.cfg)
 
-<!-- samples -->
-+ []()
 
-
-<!-- distribute -->
+<!-- install -->
 + [haproxy image](https://hub.docker.com/_/haproxy)
 + [haproxy rpm](https://software.opensuse.org/package/haproxy)
+
+
+<!-- sample -->
++ [从零开始掌握 HAProxy](https://segmentfault.com/a/1190000039713086)
