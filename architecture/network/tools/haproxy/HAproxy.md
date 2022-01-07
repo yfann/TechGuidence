@@ -2,15 +2,17 @@
 
 ## cmd
 
- + `haproxy reload`
++ `service haproxy start`
++ `service haproxy stop`
++ `service haproxy restart`
+
++ `haproxy reload`
     + take new configuration
 
 + `haproxy -c`
     + verify configuration
 
-## haproxy.cfg
 
-+ `vi /etc/haproxy/haproxy.cfg`
 
 ## tips
 
@@ -24,7 +26,16 @@
     + reload
     + `-sf`
 
-+ 系统的`ulimit -n`参数大于[maxconn*2+18]
++ Sticky Sessions
+
++ Health Check
+
++ HA
+
++ LVS
+    + IPVS
+
++ 透明代理
 
 ## debug
 
@@ -56,4 +67,5 @@
 
 <!-- sample -->
 + [从零开始掌握 HAProxy](https://segmentfault.com/a/1190000039713086)
+    + HAproxy服务
 + [一个简单的例子，带你理解haproxy！](https://blog.csdn.net/qq_34208467/article/details/84032105)

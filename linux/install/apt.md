@@ -1,3 +1,6 @@
+# apt-get
+
++ ubuntu,Debian
 
 ## cmd
 

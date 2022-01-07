@@ -44,10 +44,15 @@
 + /etc/rsyslog.conf 
 + /etc/logrotate.conf
 + /etc/rsyslog.d
-
 + /var/log/
+
+<!-- rsyslog.conf -->
++ `local2.info /var/log/test.log`
+    + `logger -p local2.info "hello~"`
+    + local0~local7
 
 
 ## ref
 + [Viewing Linux Logs from the Command Line](https://www.linux.com/topic/desktop/viewing-linux-logs-command-line/)
 + [Linux环境下使用rsyslog管理日志](https://segmentfault.com/a/1190000003509909)
++ [rsyslog](https://wiki.gentoo.org/wiki/Rsyslog)

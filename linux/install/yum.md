@@ -41,22 +41,6 @@
 + `yum clean all`
 + `yum makecache`
 
-## rpm install offline
-
-<!-- 下载依赖 -->
-+ `yum -y install yum-utils`
-    + `repotrack <pkg>`
-        + `repotrack -a x86_64 -p /repos/Packages [packages]`
-    <!-- + `yumdownloader –resolve --destdir=/tmp <pkg>`
-        + 下载依赖包 -->
-
-<!-- 安装依赖 -->
-+ `rpm -Uvh --force --nodeps *.rpm`
-
-<!-- 安装目标包 -->
-+ `rpm -i xxx.rpm`
-     `sudo yum localinstall xxx.rpm`
-
 ## yum.conf
 + `/etc/yum.conf`
 + `/etc/yum.repo.d `
