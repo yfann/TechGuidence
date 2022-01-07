@@ -1,5 +1,8 @@
 
 ## cmd
++ `ls -la` 查看隐藏文件
+
++ `mv aa bb` 改名
 
 + `cp -r /home/packageA/* /home/cp/packageB/`
     + copy 文件夹里的内容

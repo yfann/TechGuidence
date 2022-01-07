@@ -10,7 +10,7 @@
 
 ## haproxy.cfg
 
-+ `/etc/haproxy/haproxy.cfg`
++ `vi /etc/haproxy/haproxy.cfg`
 
 ## tips
 
