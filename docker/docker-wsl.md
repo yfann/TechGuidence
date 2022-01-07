@@ -18,11 +18,11 @@ export NO_PROXY="localhost,127.0.0.0/8"
 
 
 ## ref
-<!-- workable for WSL2 -->
+<!-- works for WSL2 -->
 + [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 
-<!-- others -->
+<!-- others not works-->
 + [WSL2使用笔记 docker](https://blog.nediiii.com/wsl2-note/)
 + [Run Docker in WSL (Windows 10/11) without Docker Desktop](https://medium.com/geekculture/run-docker-in-windows-10-11-wsl-without-docker-desktop-a2a7eb90556d)
 + [Windows子系统 (WSL2) + Docker 环境准备（含代理配置）](https://blog.csdn.net/Kidand/article/details/119207728)

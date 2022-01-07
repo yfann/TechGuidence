@@ -1,5 +1,13 @@
-# install docker
+# install docker on CentOS
 
++ `yum install docker`
++ `service docker start`
++ `docker version`
+<!-- change registry -->
++ `vi /etc/docker/daemon.json`
+```json
+{ "registry-mirrors": "https://registry.docker-cn.com", "live-restore": true }
+```
 ## ref
 
 + [Install Docker Engine on CentOS](https://docs.docker.com/engine/install/centos/)

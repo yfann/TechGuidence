@@ -40,6 +40,8 @@
 
 ## scp
 + `scp -i C:/app/OpenVPN/hsc-operation-key/id_rsa -r ***@****:/home/hscadmin/fan C:\backup\ali_ssh `
+    + `-r` copy folder
+    
 + `scp local_file remote_username@remote_ip:remote_folder`
     + from local_file to remote
     

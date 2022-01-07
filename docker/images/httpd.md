@@ -7,8 +7,8 @@ COPY ./public-html/ /usr/local/apache2/htdocs/
 
 ## cmd
 
-+ `docker build -t my-apache2 .`
-+ `docker run -dit --name my-running-app -p 8080:80 my-apache2`
++ `docker build -t test-svc .`
++ `docker run -dit --name my-running-app -p 8080:80 test-svc`
     + http://localhost:8080
 
 ## ref

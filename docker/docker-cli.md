@@ -7,7 +7,6 @@
     + 删除所有镜像
 + docker rmi `docker images | grep xxxxx | awk '{print $3}'`
     + 条件删除
-
 + docker image prune 
     + `-a`
         删除所有未使用的image
@@ -21,7 +20,9 @@
 ## container
 
 + `docker container ls  --all`
+
 + `docker container kill <container id>`
+
 + `docker container rm <container id>`
 
 + `docker stop <container id>`
@@ -31,3 +32,14 @@
 + docker rm `docker ps -aq`
     + 删除所有容器
 + docker rm `docker ps -a | grep xxxxx | awk '{print $1}'`
+
+
+
+## cmd
+
++ `docker save busybox > busybox.tar`
++ `docker load < busybox.tar.gz`
+
+## ref
++ [docker save](https://docs.docker.com/engine/reference/commandline/save/)
++ [docker load ](https://docs.docker.com/engine/reference/commandline/load/)
