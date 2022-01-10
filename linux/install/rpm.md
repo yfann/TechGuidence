@@ -9,14 +9,17 @@
 + `rpm -q <pkg>` 查询安装的rpm
     + `rpm -qi <pkg>` 详细信息
     + `rpm -ql <pkg>` 列出安装路径,可以找到配置文件
-    + `rpm -qa |grep <key>`
+
++ `rpm -e <pkg>` 卸载
+
++ `rpm -qa |grep <key>`
 
 ##  install rpm
 
 <!-- 下载依赖 -->
-+ `yum -y install yum-utils`
-    + `repotrack <pkg>`
-        + `repotrack -a x86_64 -p /repos/Packages [packages]`
+<!-- + `yum -y install yum-utils` -->
++ `repotrack <pkg>`
+    + `repotrack -a x86_64 -p /repos/Packages [packages]`
     <!-- + `yumdownloader –resolve --destdir=/tmp <pkg>`
         + 下载依赖包 -->
 
