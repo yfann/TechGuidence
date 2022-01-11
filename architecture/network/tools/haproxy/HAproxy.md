@@ -45,8 +45,9 @@
 
 ## ref
 
++ [Layer 4 Load Balancing](https://www.haproxy.com/documentation/hapee/latest/high-availability/active-active/l4-load-balancing/)
 + [HAProxy](http://cbonte.github.io/haproxy-dconv/2.5/intro.html)
-+ [An Introduction to HAProxy and Load Balancing Concepts](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
+
 
 <!-- debug tools -->
 + [Socat 入门教程](https://www.hi-linux.com/posts/61543.html)

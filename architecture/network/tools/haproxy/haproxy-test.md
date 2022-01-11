@@ -18,3 +18,9 @@
 + `service docker start`
 + `docker version`
 + `docker run -dit --name <xxx> -p 8080:80 <xxx>`
+
+
+## tcp server
+
++ `nc -lk <port>` start server
+    + `nc <ip> <port>`  connect server

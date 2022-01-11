@@ -16,12 +16,17 @@
 + `ls -a`
 + `whoami`
 + `which <cmd>`
++ `whereis <cmd>`
 
 
 
 ## export
 + `export -p`
 + `export -n <name>`删除环境变量
+
+
+## ref
+
 
 
 
@@ -56,7 +61,7 @@
 <!-- others -->
 + [Linux版本知多少](https://zhuanlan.zhihu.com/p/151849085)
 + [Linux编译、分发工具演化](https://zhuanlan.zhihu.com/p/65209070)
-
++ [Linux测试工具](https://cloud.tencent.com/developer/article/1390611?from=15425)
 
 <!-- 教程 -->
 + [鸟哥的Linux私房菜：基础学习篇 第四版](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/148.html)

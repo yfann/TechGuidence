@@ -6,6 +6,8 @@
 
 ## cmd
 
++ `yum install/remove <pkg>`
+
 + `yum info <pkg>`
 
 + `yum list` 列出所有可安装的包
