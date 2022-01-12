@@ -44,6 +44,8 @@ connections.
 + `option http-keep-alive·` 以KeepAlive模式提供服务
 + `option httpclose`
     + 与http-keep-alive对应，关闭KeepAlive模式，如果HAProxy主要提供的是接口类型的服务，可以考虑采httpclose模式，以节省连接数资源。但如果这样做了，接口的调用端将不能使用HTTP连接池
++ `tcp-request`
+
 
 ## backend
 + A "backend" section describes a set of servers to which the proxy will connect
@@ -61,8 +63,17 @@ to forward incoming connections.
 + A "listen" section defines a complete proxy with its frontend and backend
 parts combined in one section. It is generally useful for TCP-only traffic.
 
+
+## ACL
++ acl image_url path_beg -i /images/
+    + `-i` case-insensitive
+
++ acl对应的`path`,必须在目标server中也可以访问
+
+
 ## ref
 
 + [HAProxy用法详解 全网最详细中文文档](http://www.ttlsa.com/linux/haproxy-study-tutorial/)
 + [haproxy 1.5 config](http://www.haproxy.org/download/1.5/doc/configuration.txt)
-
+<!-- acl -->
++ [Introduction to HAProxy ACLs](https://www.haproxy.com/blog/introduction-to-haproxy-acls/)
