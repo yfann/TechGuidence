@@ -17,19 +17,14 @@
 + `whoami`
 + `which <cmd>`
 + `whereis <cmd>`
-
-
+<!-- help -->
++ `<cmd> --help`
++ `man <cmd>`
++ `info <cmd>`
 
 ## export
 + `export -p`
 + `export -n <name>`删除环境变量
-
-
-## ref
-
-
-
-
 
 
 

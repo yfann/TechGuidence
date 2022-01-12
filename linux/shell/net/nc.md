@@ -13,7 +13,7 @@
 
 ## cmd
 
-+ `nc -vz 127.0.0.1 9002` 测试tcp端口
++ `nc -vz <ip> <port>` 测试tcp端口
     + `nc -v 127.0.0.1 9002` 保持连接，可以持续发送内容
 
 + `nc -uvz <ip> <port>` 测试upd端口
@@ -41,25 +41,18 @@
 
 + -l
     + 监听模式，nc作为server
-
 + -p
     + source port
-
 + -s
     + 指定发送数据的source IP
-
 + -u
     + UDP,默认TCP
-
 + -v
     + 输出交互信息，方便调试
-
 + -w
     + 超时数
-
 + `-z`
     + zero IO,成功连接后立即关闭连接,不进行数据交互
-
 + -n
     + nodns,不使用DNS反向查IP的域名
 

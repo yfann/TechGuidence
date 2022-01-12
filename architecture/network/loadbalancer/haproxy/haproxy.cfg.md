@@ -77,3 +77,4 @@ parts combined in one section. It is generally useful for TCP-only traffic.
 + [haproxy 1.5 config](http://www.haproxy.org/download/1.5/doc/configuration.txt)
 <!-- acl -->
 + [Introduction to HAProxy ACLs](https://www.haproxy.com/blog/introduction-to-haproxy-acls/)
++ [Haproxy-1.8.20 根据路径(URI)转发到后端不同集群](https://www.bbsmax.com/A/Vx5MDKWvJN/)
