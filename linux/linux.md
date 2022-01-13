@@ -13,6 +13,7 @@
         + Ubuntu
 
 ## cmd
+
 + `ls -a`
 + `whoami`
 + `which <cmd>`
