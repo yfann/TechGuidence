@@ -53,6 +53,14 @@ SYSLOGD_OPTIONS="-c 2 -r -m 0"
 + `service rsyslog restart`
 + `service haproxy restart`
 
+## tips
+
++ option httplog
++ option tcplog
++ option dontlognull
+    + 不log health check, If a session exchanges no data, then it will not be
+logged.
+
 ## ref
 + [Introduction to HAProxy Logging](https://www.haproxy.com/blog/introduction-to-haproxy-logging/)
 + [为rsyslog添加haproxy日志的配置](https://segmentfault.com/a/1190000039713086)

@@ -28,8 +28,7 @@ ones for use by subsequent sections.
 + `mod http`
     + default 加了`mod http`,则需要frontend和backend都添加`mod tcp`才能覆盖默认值
 
-+ option
-    + option tcplog
++ `option tcplog`
 
 
 ## Frontend
@@ -47,6 +46,10 @@ connections.
 + `tcp-request`
 
 
++ `option forwardfor` 记录客户端IP
+    + `option httpclose` 每个request都会记录
+
+
 ## backend
 + A "backend" section describes a set of servers to which the proxy will connect
 to forward incoming connections.
@@ -62,6 +65,7 @@ to forward incoming connections.
 ## listen
 + A "listen" section defines a complete proxy with its frontend and backend
 parts combined in one section. It is generally useful for TCP-only traffic.
++ frontend+backend
 
 
 ## ACL
@@ -70,6 +74,35 @@ parts combined in one section. It is generally useful for TCP-only traffic.
 
 + acl对应的`path`,必须在目标server中也可以访问
 
+## statful access(同一个client每次请求访问相同的server)
+
++ 使用cookie
+```conf
+    listen webfarm 192.168.1.1:80
+       mode http
+       balance roundrobin
+       cookie SERVERID insert indirect
+       option httpchk HEAD /index.html HTTP/1.0
+       server webA 192.168.1.11:80 cookie A check
+       server webB 192.168.1.12:80 cookie B check
+       server webC 192.168.1.13:80 cookie C check
+       server webD 192.168.1.14:80 cookie D check
+```
+
++ 如果cookie被禁,可以使用`source`（慎用,会使负载不平衡）
+```conf
+    listen webfarm 192.168.1.1:80
+       mode http
+       balance source
+       cookie SERVERID insert indirect
+       option httpchk HEAD /index.html HTTP/1.0
+       server webA 192.168.1.11:80 cookie A check
+       server webB 192.168.1.12:80 cookie B check
+       server webC 192.168.1.13:80 cookie C check
+       server webD 192.168.1.14:80 cookie D check
+```
+
+## keepalived 
 
 ## ref
 

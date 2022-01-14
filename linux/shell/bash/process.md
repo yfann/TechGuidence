@@ -14,6 +14,7 @@
 + `kill <pid>` 杀死进程
     + `kill -KILL <pid>` 强制杀死
     + `kill -9 <pid>` 彻底杀死
+    + `kill $(</var/run/haproxy-checks.pid)`
 
 
 ## ref
