@@ -1,23 +1,55 @@
-
 ## cmd
-+ `ls -la` 查看隐藏文件
+<!-- file auth -->
++ `su -`
+    + `exit`
++ `ls -al`查看文件权限
++ `chgrp` 改变文件所属群组
+    + `chgrp <group> <file>`
+    + `-R` for folder
++ `chown` 改变文件所有者
++ `chmod` 改变文件的权限
+    + > r:4 > w:2 > x:1
+        + rwx:7
+        + r-x:5
+    + `chmod 777 <file>`
+        + -rwxrwxrwx
 
-+ `mv aa bb` 改名
+<!-- file -->
++ `cd ~tmp`
++ `mkdir -p test1/test2/test3/test4`
++ `cp -r /etc/ /tmp`
+    + `cp -r /home/packageA/* /home/cp/packageB/`
+    + `-r` copy文件夹
++ `mv`
+    + `mv aa bb` 改名
 
-+ `cp -r /home/packageA/* /home/cp/packageB/`
-    + copy 文件夹里的内容
++ `rm -rf <dir>`
+    + `rm xxx*`
 
-+ `cp -r /home/packageA /home/packageB`
-    + copy 文件夹
++ `more`/`less`
+    + `q` 退出
+    + `b` 上翻页
+    + `空格` 下翻页
 
-+ `df -h` 查看目前文件系统的可用空间
-    + `df -T`
-    
++ `head`/`tail`
+    + `-n <num>`
+    + `-f <file>` 持续侦测
+
+<!-- PATH -->
++ `echo $PATH`
++ `PATH="${PATH}:/root"`
+
+<!-- 查询 -->
++ `which <cmd>`
++ `whereis <file>/<folder>`
+
+<!-- disk -->
 + `du -h  <your_dest_dir>`
+    + 查看目录大小
++ `df -h` 查看目前文件系统的可用空间
 + `tee`
     + 读取标准输出到文件
     + `date | tee >test.txt`
-+ `rm -rf <folder>` -r递归 -f不提示
 
 ## copy files from a pod
 
