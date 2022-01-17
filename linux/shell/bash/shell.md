@@ -15,7 +15,20 @@
     + cmd1退出时 cmd2才执行
     + `cmd1; cmd2` 按顺序执行不管cmd1是否退出
 
-+ `type -a [cmd]` 查看命令位置
++ `type -a <cmd>` 查看命令位置
+    + `type <cmd>` 查看是否为内部命令
+
++ `man bash` 帮助
+
+## shotcut
+
++ `k`+[tab]+[tab]
+    + 列出k开头的命令
+
++ `ctrl + u/k` 删除光标前后内容
+
++ `ctrl + a/e` 光标前后移动
+
 
 ## globbing(glob pattern)
 

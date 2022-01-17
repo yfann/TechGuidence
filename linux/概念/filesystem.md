@@ -30,8 +30,12 @@
 ## mount point
 
 + 每个 filesystem 都有独立的 inode / block / superblock
+    + 在不同的磁盘分区
 
-+ 挂载： filesystem与目录树结合的过程
++ 挂载
+    + filesystem与directory tree(目录树)结合的过程
+    + 用一个目录当进入点，将磁盘分区的数据放置在该目录下
+    + 根目录需要挂载到某个磁盘分区，其他目录可以挂载到不同分区
 
 + 挂载点为目录，进入filesystem的入口
 
@@ -60,6 +64,10 @@
     + `sync` 手动同步dirty数据到磁盘
 
 + Linux VFS （Virtual Filesystem Switch）
+
++ directory tree
+    + linux内的所有数据都是文件
+    + /  根目录为主
 
 ## ref
 
