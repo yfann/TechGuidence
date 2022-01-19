@@ -102,6 +102,8 @@
 + `mount /dev/cdrom /media/`挂载光盘到media
 + 安装时缺失库
     - `yum provides libstdc++.so.6` 查到缺失库路径再`yu install`
+
+    
 ## ref
 + [mac中使用docker搭建linux开发服](https://www.jianshu.com/p/d26140d20cc0)
 + [【CentOS7快速上手】1、基础命令/常用命令](https://ken.io/note/centos-quickstart-basiccommand)

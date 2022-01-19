@@ -53,7 +53,6 @@
 + [linux基础与shell编程](https://www.kancloud.cn/digest/linux-world/145297)
 + [Systemd 入门教程：命令篇](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 
-
 <!-- others -->
 + [Linux版本知多少](https://zhuanlan.zhihu.com/p/151849085)
 + [Linux编译、分发工具演化](https://zhuanlan.zhihu.com/p/65209070)

@@ -7,6 +7,8 @@
     + `ping 192.168.1.22`
     + 写在`/etc/rc.local`，开机自动配置
 
++ `ip addr show eth0`
+
 
 ## ref
 + [实体 IP 与虚拟 IP(VIP)是什么](https://zhuanlan.zhihu.com/p/371401849)
