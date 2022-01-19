@@ -64,3 +64,6 @@ logged.
 ## ref
 + [Introduction to HAProxy Logging](https://www.haproxy.com/blog/introduction-to-haproxy-logging/)
 + [为rsyslog添加haproxy日志的配置](https://segmentfault.com/a/1190000039713086)
+
++ [Introduction to HAProxy Logging](https://www.haproxy.com/blog/introduction-to-haproxy-logging/)
++ [](https://www.loggly.com/use-cases/haproxy-logging-using-syslog/)

@@ -33,5 +33,6 @@ local2.* /var/log/test.log
 
 
 ## ref
++ [System: Controlling what logs where with rsyslog.conf](https://www.the-art-of-web.com/system/rsyslog-config/)
 + [Linux环境下使用rsyslog管理日志](https://segmentfault.com/a/1190000003509909)
 + [rsyslog](https://wiki.gentoo.org/wiki/Rsyslog)

@@ -42,6 +42,8 @@
 <!-- 查询 -->
 + `which <cmd>`
 + `whereis <file>/<folder>`
++ `find`
+    + `find . -name "*xxx*"` 当前目录及子目录查找，文件名包含`xxx`的文件
 
 <!-- disk -->
 + `du -h  <your_dest_dir>`
@@ -55,3 +57,8 @@
 
 + `kubectl cp <default/POD_NAME:bin/FILE_NAME> </Users/username/FILE_NAME>`
     + `kb cp keycloak-0:opt/bitnami/keycloak/themes .`
+
+
+## ref
+
++ [Linux下各种查找命令（find, grep, which, whereis, locate）](https://blog.csdn.net/wzzfeitian/article/details/40985549)

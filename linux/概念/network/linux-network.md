@@ -3,9 +3,9 @@
 
 + `ip a`  查看ip
     + `ip addr | grep inet`
-    + `eth0` Ethernet interface
-    + `lo` loopback, the system uses to communicate with itself
-    + `wlan0` wireless network
+        + `eth0` Ethernet interface
+        + `lo` loopback, the system uses to communicate with itself
+        + `wlan0` wireless network
     
 + `ifconfig`
     + `ifconfig -a`
@@ -43,6 +43,9 @@
     + 虚拟网卡
 
 + iptables vs ipvs
+
++ Conntrack
+    + 数据包和connection关联，不需要iptale和ipvs路由
 
 ## ref
 

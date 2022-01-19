@@ -1,3 +1,10 @@
+## Top
+<!-- k8s -->
++ [数据包在 Kubernetes 中的一生](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)
++ containerd vs docker
++ iptables vs ipvs
++ flannel
+
 ## 系列
 
 + [为什么这么设计系列文章](https://draveness.me/whys-the-design/)
@@ -11,12 +18,13 @@
 + [JS 函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html)
 + [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/index.html)
 
-## tools
 
+
+
+## tools
 + [code example](https://www.programcreek.com/)
 + [devdocs api速查文档](http://devdocs.io/)
 
 
 ## fun
-
 + cowsay

@@ -39,8 +39,15 @@
 + `/var/log` system log
     + syslog
 
++ `/dev/log`
+    + socket of Syslogd
+        
+        
++ `/etc/syslog.conf`  for syslog
++ `/etc/rsyslog.conf` for rsyslog
 
-
++ local facilities
+    + log1,log2...
 
 ## ref
 + [Viewing Linux Logs from the Command Line](https://www.linux.com/topic/desktop/viewing-linux-logs-command-line/)
