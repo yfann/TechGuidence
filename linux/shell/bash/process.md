@@ -15,8 +15,13 @@
     + `kill -KILL <pid>` 强制杀死
     + `kill -9 <pid>` 彻底杀死
     + `kill $(</var/run/haproxy-checks.pid)`
+    + `kill -0 ...` <pid>是否存在
 
-
++ ` killall <name>`
+    + `killall -0 ...` 检查<name>是否存在
+        + -0 不执行操作，但会有错误检查
+            + process不存在时:<name> not found
+            
 ## ref
 
 + [Linux ps 命令](https://www.runoob.com/linux/linux-comm-ps.html)

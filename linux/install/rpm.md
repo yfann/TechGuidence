@@ -7,8 +7,8 @@
 ## cmd
 
 + `rpm -q <pkg>` 查询安装的rpm
-    + `rpm -qi <pkg>` 详细信息
-    + `rpm -ql <pkg>` 列出安装路径,可以找到配置文件
++ `rpm -qi <pkg>` 详细信息
++ `rpm -ql <pkg>` 列出安装路径,可以找到配置文件
 
 + `rpm -e <pkg>` 卸载
 

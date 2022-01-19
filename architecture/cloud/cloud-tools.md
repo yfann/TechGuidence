@@ -43,6 +43,14 @@
     + serverless架构方案
         + serverless应用的构建，部署，运行
 
++ k3s
+    + 物联网,边缘计算(Edge)
+        + ARM
+
++ k9s   
+    + k9s 是一个基于 curses 的全屏终端 UI 管理工具，可以与 Kubernetes 集群进行交互，可以观察系统资源，在各种资源之间切换，检查清单、日志、监控事件并执行 Pod 等，从而确保桌面空间不至于被大量终端窗格所占据
+
+
 ## CI/CD
 + ArgoCD
 + github action
@@ -95,6 +103,6 @@
     + http endpoint -> configed command
 + [kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
 + [cloudevents](https://github.com/cloudevents/spec)
-
-<!-- others -->
++ [k3s vs k8s vs k9s](https://juejin.cn/post/6955368911705473060)
 + [OpenStack入门科普，看这一篇就够啦](https://zhuanlan.zhihu.com/p/35598437)
++ [rancher](https://rancher.com/docs/rancher/latest/zh/)

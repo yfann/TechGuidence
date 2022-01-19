@@ -48,7 +48,6 @@
 + [Layer 4 Load Balancing](https://www.haproxy.com/documentation/hapee/latest/high-availability/active-active/l4-load-balancing/)
 + [HAProxy](http://cbonte.github.io/haproxy-dconv/2.5/intro.html)
 
-
 <!-- debug tools -->
 + [Socat 入门教程](https://www.hi-linux.com/posts/61543.html)
 + halog(built-in)
@@ -70,3 +69,7 @@
 + [从零开始掌握 HAProxy](https://segmentfault.com/a/1190000039713086)
     + HAproxy服务
 + [一个简单的例子，带你理解haproxy！](https://blog.csdn.net/qq_34208467/article/details/84032105)
++ [How To Use HAProxy to Set Up MySQL Load Balancing](https://www.digitalocean.com/community/tutorials/how-to-use-haproxy-to-set-up-mysql-load-balancing-3)
+<!-- https -->
++ [HAProxy SSL Termination](https://www.haproxy.com/blog/haproxy-ssl-termination/)
++ [https://www.haproxy.com/blog/redirect-http-to-https-with-haproxy/](https://www.haproxy.com/blog/redirect-http-to-https-with-haproxy/)

@@ -57,6 +57,8 @@
 + 文件读取过程
     + 由于目录树是由根目录开始读起，因此系统通过挂载的信息可以找到挂载点的 inode 号码，此时就能够得到根目录的 inode 内容，并依据该 inode 读取根目录的 block 内的文件名数据，再一层一层的往下读到正确的文件名。
 
+    + root of directory tree -> inode id ->inode->blocks->file names
+
 
 + 非同步处理 （asynchronously） 
     + 更改文件时，文件先加载到内存中.改过文件，则内存中标识dirty,没改过则clean.系统不定时把dirty数据写入磁盘，保持数据一致。

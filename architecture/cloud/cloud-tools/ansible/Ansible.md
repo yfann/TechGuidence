@@ -122,7 +122,9 @@
 + playbook中的task在多个hosts中同步执行
 
 ## ref
+<!-- docs -->
 + [Ansible](https://ansible-tran.readthedocs.io/en/latest/docs/intro.html)
++ [User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html#getting-started)
 
 + [Ansible Configuration Settings](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
 + [Ansible的配置文件](https://ansible-tran.readthedocs.io/en/latest/docs/intro_configuration.html)

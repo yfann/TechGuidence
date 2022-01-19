@@ -41,9 +41,13 @@
 + XFF
     + server端可以获取client IP
 
+<!-- tools -->
++ squid
+
 ## ref
 
 + [What Is Layer 4 Load Balancing](https://www.nginx.com/resources/glossary/layer-4-load-balancing/)
 
 + [HTTP X-Forwarded-For(XFF) 介绍](https://www.runoob.com/w3cnote/http-x-forwarded-for.html)
 + [谈谈一个重要的http协议头标：X-Forwarded-For](https://codeantenna.com/a/gMYGBr5noF)
++ [HAProxy,lvs,nginx](https://www.cnblogs.com/kevingrace/p/5892169.html)
