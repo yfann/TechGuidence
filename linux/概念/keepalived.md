@@ -1,7 +1,7 @@
 # keepalived
 
 + vip会写入master的 eth0网卡中
-
++ 最初为ipvs提供高可用
 
 ## ref
 + [keepalived]( http://www.keepalived.org/)
