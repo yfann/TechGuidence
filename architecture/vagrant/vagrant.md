@@ -18,33 +18,51 @@
 
 ## cmd
 
-+ `vagrant init <box>`
++ `vagrant -h`
+    + `vagrant <sub cmd> -h`
+
+<!-- 管理box，box相当于镜像 -->
+
++ `vagrant box add <box> --provider virtualbox`  从vagrant官方仓库搜索
+    + `vagrant box add <box> <url>` url远程或本地
++ `vagrant box list` 列出已经安装的box(add)
+    + 存放于$HOME/.vagrant.d/或$VAGRANT_HOME/.vagrant.d/
+
+<!-- 安装vm -->
+
++ `vagrant init <box>` <box> 官方名称可以直接使用。先本地（$HOME/.vagrant.d/）查找镜像，找不到从官方下载
     + `hashicorp/precise64`  hyperv
     + `ubuntu/focal64` vbox
         + windows下需要打开virtualBox,开启vm,才能使用`vagrant ssh`
     + `generic/centos7`
++ `vagrant init` 选择目录,创建vagrantfile
+
+
 + `vagrant up`
     + ` --provider hyperv`
     + run as admin
-+ `vagrant destroy -f`
-+ `vagrant reload`
 
-<!-- ssh -->
-+ `vagrant ssh`
+
++ `vagrant halt [name|id]` 停止vm
++ `vagrant reload` 使修改过的vagrantfile生效,先halt再up
++ `vagrant destroy -f <name>|<id>` 删除vm
+
++ `vagrant status` 进入目录
++ `vagrant global-status`
+
+<!-- ssh, 进入镜像 -->
++ `vagrant ssh` 目录执行
     + `ssh vagrant@127.0.0.1 -p 2222 -i <private key path>`
         + `vagrant ssh-config`
     + `logout`
+
++ `vagrant ssh <name>`
+
 + `vagrant ssh-config`
-
-+ `vagrant status`
-    + `vagrant global-status`
-
-<!-- box -->
-+ `vagrant box list`
 
 <!-- debug -->
 + `set VAGRANT_LOG=info`
-+ `vagrant up`
+    + `vagrant up`
 
 + `vagrant up --debug &> vagrant.log`
 
@@ -56,6 +74,32 @@
     + `vagrant scp :abc.txt destFile.txt`
         + from guest to host
     + `vagrant scp [vm1]:abc.txt destFile.txt`
+
+
+<!-- 网络 -->
++ `vagrant port [name]`
+
+## provision
+
++ shell,ansible,docker,podman,file
+
++ provision的时机
+    + 第一次vagrant up时会provision
+    + `vagrant up --provision`
+    + `vagrant reload --provision`
+    + `vagrant provision`
+    + config.vm.provision:run:always
+
+
+
+## network
++ private_network
+    + virtualbox: host-only模式
++ public_network
+    + virutalbox: bridge模式
++ vagrant总会设置第一个网卡(eth0/ens0等)并将其加入virtualbox的NAT模式
+
+
 
 ## proxy
 + cmd line proxy
@@ -71,6 +115,13 @@
     + IaaS
 
 + vagrant/vagrant
+    + 默认账号
+
++ `/vagrant`
+    + 目录同步
+
++ VAGRANT_HOME
+    + 设置镜像存储位置
 
 ## ref
 
@@ -82,3 +133,9 @@
 
 <!-- tips -->
 + [Using scp and vagrant-scp in VirtualBox to copy from Guest VM to Host OS and vice-versa](https://medium.com/@smartsplash/using-scp-and-vagrant-scp-in-virtualbox-to-copy-from-guest-vm-to-host-os-and-vice-versa-9d2c828b6197)
+
+<!-- details -->
++ [Provisioning](https://www.vagrantup.com/docs/provisioning)
+
+<!-- 网络 -->
++ [熟练使用vagrant(11)：vagrant配置虚拟机网络](https://www.junmajinlong.com/virtual/vagrant/vagrant_network/)

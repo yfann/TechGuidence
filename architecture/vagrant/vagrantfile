@@ -1,0 +1,9 @@
+Vagrant.configure('2') do |config|
+    config.vm.box = "generic/ubuntu2004"
+    config.vm.box_version = "3.0.34"
+    config.vm.define "ubuntu2004_junmajinlong"   # status 显示的名称
+    config.vm.hostname = "fan" # 虚拟机操作系统的主机名称
+    config.vm.provider :virtualbox do |vb|
+      vb.name = "ubuntu2004"     # virtualbox或hyperv中的名称
+    end
+end

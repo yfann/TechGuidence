@@ -104,5 +104,4 @@
 + [kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation)
 + [cloudevents](https://github.com/cloudevents/spec)
 + [k3s vs k8s vs k9s](https://juejin.cn/post/6955368911705473060)
-+ [OpenStack入门科普，看这一篇就够啦](https://zhuanlan.zhihu.com/p/35598437)
 + [rancher](https://rancher.com/docs/rancher/latest/zh/)
