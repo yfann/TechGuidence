@@ -11,15 +11,19 @@
 + `cmd > file` 
     + 输出到file
     + stdout 重定向到file
-    + `cmd > /dev/null`
-        + 屏幕不显示输出(丢弃输出)
+
++ `cmd > /dev/null`
+    + 屏幕不显示输出(丢弃输出)
 
 + `cmd < file` 
     + 从file输入
     + stdin 重定向到file
+
 + `cmd 2>file`
     + stderr 重定向file
+
 + `cmd >> file` 输出追加到file
+
 + `cmd < infile > outfile`
     + cmd infile读取内容 输出到outfile中
 
@@ -46,6 +50,22 @@ delimiter
 ## example
 + `echo "test" > users`
 
-## ref
 
+## tips
+
++ `/dev/null`
+    + 丢弃写入其中的数据,返回成功
+    + 比特桶（bit bucket）
+    + 读取时返回EOF
+
++ `/dev/zero`
+    + 读取时返回无限的NULL
+        + 可以用来生成一个特定大小的空文件
+
++ EOF(End of file)
+    + stream和file的结尾
+    + 可以是stdin
+
+## ref
++ [EOF是什么？](http://www.ruanyifeng.com/blog/2011/11/eof.html)
 + [10.5 数据流重导向](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/91.html)

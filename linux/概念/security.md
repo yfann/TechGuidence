@@ -7,3 +7,4 @@
 ## ref
 + [Firewalld](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7)
 + [SELinux 入门](https://zhuanlan.zhihu.com/p/30483108)
++ [16.5 SELinux 初探](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/143.html)

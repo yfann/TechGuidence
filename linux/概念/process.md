@@ -27,6 +27,8 @@
 + /etc/crontab 
     + crond每分钟都会扫描配置
 
++ systemd是系统改的第一只程序，是所以程序的父程序
+
 ## ref
 + [16.3 程序管理](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/141.html)
 + [LINUX PID 1和SYSTEMD 专题](https://www.huaweicloud.com/articles/81c6c4ba2cf1a055d117ad2a4f5460ce.html)
