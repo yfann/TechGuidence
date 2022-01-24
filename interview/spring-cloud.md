@@ -12,6 +12,8 @@
 
 ## 	SpringCloud由什么组成
 + Eureka
+    + 服务注册
+    + 客户端发现(Fetch Registry)
 + Zuul
 + Ribbon
 + Feign
@@ -41,4 +43,5 @@
 
 ## ref
 + [面试题:微服务中你是如何处理事务的?](https://cloud.tencent.com/developer/article/1442601)
-
++ [阿里面试官问我：到底知不知道什么是Eureka，这次，我没沉默](https://zhuanlan.zhihu.com/p/334711540)
++ [SpringCloud之Eureka的使用和常见的面试题](https://blog.csdn.net/qq_41594146/article/details/86608190)

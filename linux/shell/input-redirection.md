@@ -45,3 +45,7 @@ delimiter
 
 ## example
 + `echo "test" > users`
+
+## ref
+
++ [10.5 数据流重导向](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/91.html)
