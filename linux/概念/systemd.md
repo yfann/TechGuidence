@@ -6,7 +6,7 @@
         + super daemon
 
 
-## systemd
+# systemd
 
 + 服务同时启动，而不是init挨个启动
 
@@ -36,10 +36,6 @@
     + cmd: start/stop/restart/reload/enable/disable/status/is-active/is-enable
         + enable 开机启动
 
-
-
-
-
 + `systemctl` 列出所有unit
 
 + `systemctl list-units`
@@ -61,3 +57,4 @@
 ## ref
 
 + [17.1 什么是 daemon 与服务 （service）](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/148.html)
++ [Systemd 入门教程：命令篇](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)

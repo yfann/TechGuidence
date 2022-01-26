@@ -3,7 +3,8 @@
 + [数据包在 Kubernetes 中的一生](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)
 + containerd vs docker
 + iptables vs ipvs
-+ flannel
++ flannel(complete)
++ rancher
 
 ## 系列
 

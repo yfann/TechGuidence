@@ -47,6 +47,23 @@
 + `ls -ild /  /.  /..`
     + 相同的inode号代表相同的文件
 + `cat /proc/filesystems` 支持的文件系统
+
+
+## 硬链接(hard link),符号连接(symbolic link)
+
++ hard link
+    + `ln <source file> <link file>`
+    + 不可以是目录
+    + 只能同一文件系统
+    + 读写删除硬链接和软链接一样，删除源文件时，硬链接任然存在，保留源文件内容
+    + 多个文件名指向同一个inode,可以防止误删
+
++ symbolic link
+    + `ln -s <source file>  <link file>`
+    + 链接文件包含另一个文件的路径（目录或文件）
+        + 可以不同文件系统
+    + 对符号链接的读写会转换到对源文件的读写
+
 ## tips
 
 + rwx
@@ -71,8 +88,14 @@
     + linux内的所有数据都是文件
     + /  根目录为主
 
++ Sector(扇区) 存储的最小单位(512byte)
+    + block 连续的多个扇区，文件存取的最小单位(4KB)
+
 ## ref
 
 + [理解linux中的file descriptor(文件描述符)](https://wiyi.org/linux-file-descriptor.html)
 + [Linux 文件权限概念](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/43.html)
 + [7.1 认识 Linux 文件系统](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/59.htmldd)
++ [硬链接(hard link)和符号连接(symbolic link)的区别](https://blog.51cto.com/wzgl08/308987)
++ [理解inode](https://www.ruanyifeng.com/blog/2011/12/inode.html)
++ [inode 索引节点](https://gnu-linux.readthedocs.io/zh/latest/Chapter03/00_inode.html)
