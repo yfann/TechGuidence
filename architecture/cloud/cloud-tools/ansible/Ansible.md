@@ -17,7 +17,13 @@
 + `pip3 install --user ansible==2.9.20`
     + `python3 -m venv .venv --prompt A`
     + `source .venv/bin/activate`
++ `cd ~`
++ `find . | grep ansible`
++ `export PATH="<bin/ansible path>:$PATH"`
+    + add to .zshrc
+    + `source ~/.zshrc`
 
+<!-- test -->
 + Vagrant (for test server)
 
 
@@ -41,14 +47,18 @@
     + `ansible <server> -b -m package -a name=nginx`
         + 安装nginx
 
+<!-- all -->
 + `ansible all -a "date"`
     + 向所有hosts发命令
+
++ `ansible all -m ping -u <user> --sudo --sudo-user <sudo user>`
++ `ansible all -a "/bin/echo hello"`
 
 <!-- inventory -->
 + `ansible-inventory --graph`
 
 <!-- playbook -->
-+ `ansible-playbook xxx.yml`
++ `ansible-playbook -i hosts playbook.yml --key-file "~/.ssh/mykey.pem"`
 + `ansible-playbook --list-tasks xxx.yml`
 
 <!-- module -->

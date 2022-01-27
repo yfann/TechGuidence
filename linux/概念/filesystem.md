@@ -8,9 +8,13 @@
 
 + inode
     + 文件属性
+        + inode id
+            + linux内部不使用文件名使用inode号码来识别文件
     + 一个文件一个inode
     + 文件数据的block id（indexed allocation）
         + 数据block可以一次性读取
+    + inode table(硬盘分区) 存放inode
+        + inode用光则无法在硬盘上创建文件
 
 + block 
     + 记录文件内容
@@ -41,8 +45,12 @@
 
 
 ## cmd
-
+<!-- inode -->
 + `ls -li` 查看inode号
+    + `ls -i <file>`
++ `stat <file>` 查看inode信息
++ `df -i` 查看硬盘inode使用量
+
 + `ll <dir>`
 + `ls -ild /  /.  /..`
     + 相同的inode号代表相同的文件
@@ -60,9 +68,11 @@
 
 + symbolic link
     + `ln -s <source file>  <link file>`
+    + 软链接文件和真实文件的inode不同
     + 链接文件包含另一个文件的路径（目录或文件）
         + 可以不同文件系统
     + 对符号链接的读写会转换到对源文件的读写
+    
 
 ## tips
 
@@ -90,6 +100,8 @@
 
 + Sector(扇区) 存储的最小单位(512byte)
     + block 连续的多个扇区，文件存取的最小单位(4KB)
+
++ linux中目录也是文件
 
 ## ref
 

@@ -4,6 +4,10 @@
     + host file
         + add `localhost` by defualt
 
++ `/etc/ansible/hosts` 
+  + default location for the inventory file
+
+
 
 + groups,Aliases
 ```
