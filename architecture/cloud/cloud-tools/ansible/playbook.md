@@ -1,4 +1,9 @@
+# playbook
 
++ hosts：任务的目标主机，多个主机用冒号分隔，一般调用/etc/ansible/hosts中的分组信息；remote_user：远程主机上，运行此任务的默认身份为root；
++ tasks：任务，即定义的具体任务，由模块定义的操作列表；
++ handlers：触发器，类似tasks，只是在特定的条件下才会触发的任务。某任务的状态在运行后为changed时，可通过“notify”通知给相应的handlers进行触发执行；
++ roles：角色，将hosts剥离出去，由tasks、handlers等所组成的一种特定的结构集合
 
 ## vars
 
@@ -142,6 +147,8 @@ publisher=OReilly
 + with_items
 + loop
 + with_lines
+
+
 ## tips
 
 + `"changed": true`
@@ -172,6 +179,8 @@ publisher=OReilly
 + `become: true`
     + run as ot
 
++ `delegate_to: localhost`
+    + 可以创建remotehost to localhost的fact
 
 ## ref
 
