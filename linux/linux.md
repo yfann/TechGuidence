@@ -13,8 +13,6 @@
         + Ubuntu
 
 ## cmd
-
-+ `ls -a`
 + `whoami`
 + `which <cmd>`
 + `whereis <cmd>`
@@ -22,6 +20,8 @@
 + `<cmd> --help`
 + `man <cmd>`
 + `info <cmd>`
+<!-- comman -->
++ `ln -s <source file>  <link file>` 软链接
 
 ## export
 + `export -p`
@@ -51,7 +51,6 @@
 <!-- 概念 -->
 + [Linux 环境隔离机制 -- Linux Namespace](https://zhuanlan.zhihu.com/p/47571649)
 + [linux基础与shell编程](https://www.kancloud.cn/digest/linux-world/145297)
-+ [Systemd 入门教程：命令篇](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 
 <!-- others -->
 + [Linux版本知多少](https://zhuanlan.zhihu.com/p/151849085)

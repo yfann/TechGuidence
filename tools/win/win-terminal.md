@@ -1,6 +1,8 @@
 
 
+## cmd
 
++ `ctrl + shift + F` 查找
 
 
 

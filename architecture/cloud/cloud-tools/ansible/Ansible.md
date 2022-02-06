@@ -17,60 +17,61 @@
 + `pip3 install --user ansible==2.9.20`
     + `python3 -m venv .venv --prompt A`
     + `source .venv/bin/activate`
++ `cd ~`
++ `find . | grep ansible`
++ `export PATH="<bin/ansible path>:$PATH"`
+    + add to .zshrc
+    + `source ~/.zshrc`
 
+<!-- test -->
 + Vagrant (for test server)
 
+<!-- kubectl config-->
++ `export KUBECONFIG=/etc/rancher/k3s/k3s.yaml`
++ `kubectl get pods --all-namespace`
 
 ## cmd
++ `ansible + [Tab] + [Tab]`
 + `ansible <server name> -i <xxx.ini> -m ping -vvvv`
     + `ansible <server name> -m ping`
         + set defaults in ansible.cfg
     + `-m <module> -a <arguments>`
-        + `-m command -a <cmd>`
+        + `-m <module> -a <cmd>`
             + command module is default module
             + `ansible <server> -a <cmd>`
                 + `<cmd>`
                     + `"tail /var/log/dmesg"`
                         + 命令中有空格要加引号
         + `-a <arguments>`
-            + arguments
-                + 多个参数空格隔开，外面加引号
-
+            + 多个参数空格隔开，外面加引号
+            + 模块参数
     + `-b`
         + root user
     + `ansible <server> -b -m package -a name=nginx`
         + 安装nginx
 
+<!-- all -->
 + `ansible all -a "date"`
     + 向所有hosts发命令
+
++ `ansible all -m ping -u <user> --sudo --sudo-user <sudo user>`
++ `ansible all -a "/bin/echo hello"`
 
 <!-- inventory -->
 + `ansible-inventory --graph`
 
 <!-- playbook -->
-+ `ansible-playbook xxx.yml`
++ `ansible-playbook -i hosts playbook.yml -e "@var.yml" --key-file "~/.ssh/mykey.pem"`
 + `ansible-playbook --list-tasks xxx.yml`
 
 <!-- module -->
 + `ansible-doc <module>`
 + `ansible-doc -l | grep ^apt`
 
-<!-- lookup -->
+<!-- 模块说明文档 -->
 + `ansible-doc -t lookup -l`
     + `ansible-doc -t lookup <plugin name>`
 
-## modules
-
-+ are scripts
-
-+ modules
-    + package
-    + copy
-    + file
-    + service
-    + template
-    + uri
-    + apt
 
 ## variables
 
