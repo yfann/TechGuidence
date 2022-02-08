@@ -33,6 +33,8 @@
 + 选中物体 + `g` + `x` 在x轴上移动物体
 + select obj + `shift + d` 复制物体并进入grab模式
 
+<!-- tab -->
++ 选择物体 + `tab` 编辑模式
 
 ## ref
 
