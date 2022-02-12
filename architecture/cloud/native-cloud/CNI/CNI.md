@@ -9,13 +9,6 @@
 
 + instances：
     + Flannel
-        + Overlay，将 TCP 数据包装在另一种网络包里面进行路由转发和通信
-        + flanneld
-            + 在每个主机上，为host分配子网，为Pod分配IP
-                + 同一主机下不同pod属于同一子网，不同host的pod属不同子网
-            + etcd存储网络配置
-            + 数据包通过VXLAN,UDP,host-gw模式转发
-            + docker0->flannel0
     + Calico
         + NetworkPolicy
     + Weave
@@ -43,6 +36,13 @@
 + custom bridge
 
 ## Flannel
++ Overlay，将 TCP 数据包装在另一种网络包里面进行路由转发和通信
++ flanneld
+    + 在每个主机上，为host分配子网，为Pod分配IP
+        + 同一主机下不同pod属于同一子网，不同host的pod属不同子网
+    + etcd存储网络配置
+    + 数据包通过VXLAN,UDP,host-gw模式转发
+    + docker0->flannel0
 + 实现容器间和主机间网络
 + 3层overlay网络
     + 不同环境无需额外配置
@@ -50,7 +50,7 @@
     + docker桥为容器分配IP
 + 同主机的容器通过docker桥通信
 + 不同主机间容器通过flanneld将数据封装在UDP数据包中
-+ 一般用VXLAN后端
++ 一般用VXLAN作为后端
 
 ## Calico
 + 不仅提供主机和pod之间的网络连接，还涉及网络安全和管理
