@@ -1,4 +1,20 @@
+# k3s
 
+## install 
+<!-- install k3s server -->
++ `curl -sfL https://get.k3s.io | sh -`
+    + /etc/rancher/k3s/k3s.yaml
+    + /var/lib/rancher/k3s/server/node-token
+<!-- install k3s agent -->
++ `curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -`
+
+## tips
+
++ embedded SQLite used in single-server
+
++ HA k3s
+    + two or more server nodes 
+    + external datastore
 
 ## ref
 

@@ -4,6 +4,8 @@
 + containerd vs docker
 + iptables vs ipvs
 + rancher
++ [《分布式系统模式》中文版](https://github.com/dreamhead/patterns-of-distributed-systems)
++ [Sklearn与TensorFlow机器学习实用指南第二版](https://hands1ml.apachecn.org/#/docs/2)
 
 ## 系列
 
@@ -44,4 +46,9 @@
 
 ## fun
 + cowsay
+
+
+## tags
+
++ ***网络***
 
