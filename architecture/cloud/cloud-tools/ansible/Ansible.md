@@ -99,26 +99,11 @@
 + `meta: flush_handlers`
     + run in the middle of play
 
+## config
 
-
-
-
-
-
-
-
-## playbook
-
-+ yaml file
-```yaml
-#!/usr/bin/env ansible-playbook
-# 可以直接执行yaml, ./xxx.yaml
----
-
-...
-```
-
-
++ `/etc/ansible/ansible.cfg`  主配置文件,配置ansible工作特性(一般无需修改)
++ `/etc/ansible/hosts`        主机清单(将被管理的主机放到此文件)
++ `/etc/ansible/roles/`       存放角色的目录
 
 ## tips
 
@@ -137,6 +122,7 @@
 <!-- docs -->
 + [Ansible](https://ansible-tran.readthedocs.io/en/latest/docs/intro.html)
 + [User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html#getting-started)
++ [ansible使用教程](https://python.iitter.com/other/94867.html#1.Ansible%E5%8F%91%E5%B1%95%E5%8F%B2)
 
 + [Ansible Configuration Settings](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
 + [Ansible的配置文件](https://ansible-tran.readthedocs.io/en/latest/docs/intro_configuration.html)
