@@ -69,10 +69,11 @@
 ## ref
 + [Shell 教程](https://www.runoob.com/linux/linux-shell.html)
 + [bash 教程](https://wangdoc.com/bash/intro.html)
-
 + [online shell](https://www.runoob.com/try/runcode.php?filename=helloworld&type=bash)
 + [编写Shell 脚本编程最佳实践](https://zhuanlan.zhihu.com/p/264120455)
 
+<!-- 参数 -->
++ [Shell 传递参数](https://www.runoob.com/linux/linux-shell-passing-arguments.html)
 
 <!-- issues -->
 + [解决shell脚本“syntax error near unexpected token `fi'”的问题。](https://blog.csdn.net/jsqfengbao/article/details/95597260)

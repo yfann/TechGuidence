@@ -1,59 +1,11 @@
 # ansible inventory
 
 + `/etc/ansible/hosts` 
-  + default location for the inventory file
++ ini格式
 
+## 变量
 
-
-+ groups,Aliases
-```
-newyork.example.com
-seoul.example.com
-sydney.example.com
-[vagrant]
-vagrant1 ansible_port=2222
-vagrant2 ansible_port=2200
-vagrant3 ansible_port=2201
-```
-
-+ groups of groups
-```
-[django:children]
-web
-task
-```
-
-+ pets vs cattle
-
-```ini
-[web]
-web[1:20].example.com
-
-; web1.example.com
-; ...
-; web20.example.com
-```
-
-+ hosts and group variables
-    + 可以定义任意变量，在Playbook中使用
-```ini
-vagrant1 ansible_host=127.0.0.1 ansible_port=2222
-vagrant2 ansible_host=127.0.0.1 ansible_port=2200
-vagrant3 ansible_host=127.0.0.1 ansible_port=2201
-```
-
-```ini
-; group变量
-; [<group name>:vars]
-[all:vars]
-ntp_server=ntp.ubuntu.com
-[production:vars]
-db_primary_host=frankfurt.example.com
-db_primary_port=5432
-```
-
-+ yaml单独存放变量
-    + `{{ db.primary.host }}`
++ 变量可以独立出ini,单独yaml文件
 ```yml
 ---
 db:
@@ -72,7 +24,20 @@ rabbitmq:
 ...
 ```
 
++ 使用`{{ db.primary.host }}`
+
++ 变量文件路径
+    + `/etc/ansible/group_vars/<group name>`
+      + 可以是yaml文件或目录，目录中可包含多个文件
+    + `/etc/ansible/host_vars/<host name>`
+    +  Ansible 1.2 及以上的版本中,group_vars/ 和 host_vars/ 目录可放在 inventory 目录下,或是 playbook 目录下. 如果两个目录下都存在,那么 playbook 目录下的配置会覆盖 inventory 目录的配置.
+
++ `ansible-playbook -i <xx.ini> <playbook.yml> -e "@variables.yml" --key-file "xxx.pem"`
+
 ## dynamic inventory
+
++ 其他软件中保存inventory配置
+    + 例如从云端加载inventory
 
 + `chmod +x vagrant.py`
 + `ansible-doc -t inventory -l`
@@ -81,3 +46,7 @@ rabbitmq:
 + support flags
     + `--host=<hostname>`
     + `--list`
+
+## ref
+
++ [Inventory文件](https://ansible-tran.readthedocs.io/en/latest/docs/intro_inventory.html)

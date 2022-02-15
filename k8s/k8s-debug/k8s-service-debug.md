@@ -80,9 +80,14 @@
       + 则 返回pod IPs
 
 
+## API server
++ kubenetes 的authentication（包括：客户端证书认证、basic auth、static token等
++ node curl api server
+  + `curl --cacert /etc/kubernetes/pki/ca.pem -H "Authorization: Bearer {token}"  https://{master node local ip}:6443`
 
 ## ref
 + [调试service](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/debug-service/)
 + [使用端口转发来访问集群中的应用](https://kubernetes.io/zh/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
 
 + [How To Inspect Kubernetes Networking](https://www.digitalocean.com/community/tutorials/how-to-inspect-kubernetes-networking)
++ [kubenetes master使用curl 操作API](https://www.cnblogs.com/fengjian2016/p/6563938.html)
