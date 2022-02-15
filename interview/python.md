@@ -64,3 +64,18 @@
     + `sys.getrefcount(obj)`
 
 + 内存泄漏
+
+## flask
+
++ WSGI(Web Server Gateway Interface)
+    + WSGI（Web Server Gateway Interface，Web 服务器网关接口）则是Python语言中1所定义的Web服务器和Web应用程序之间或框架之间的通用接口标准。
+    + WSGI就是一座桥梁，桥梁的一端称为服务端或网关端，另一端称为应用端或者框架端，WSGI的作用就是在协议之间进行转化。WSGI将Web组件分成了三类：Web 服务器（WSGI Server）、Web中间件（WSGI Middleware）与Web应用程序（WSGI Application）。
+    + Web Server接收HTTP请求，封装一系列环境变量，按照WSGI接口标准调用注册的WSGI Application，最后将响应返回给客户端。
+
++ 组件
+    + Route(路由)
+    + templates(模板)
+    + Models(orm模型)
+    + blueprint(蓝图)
+        + 创建模块化对象
+    + Jinja2模板引擎
