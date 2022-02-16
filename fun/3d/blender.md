@@ -40,6 +40,8 @@
 + `x` 删除
 + `shift + d` 复制物体并进入grab模式
 
++ `F9` 上一步微调面板
+
 + `f`
     + 选中线，填充面
     + 选中点，连接线
@@ -70,6 +72,14 @@
 + `alt` + click 选择多个边/面
     + `ctrl` + `alt` + click
 
+## add-ons
++ looptools
++ Extra Objects
++ bool tool
+
+## tips
+
++ 透视状态下选择顶点，删除顶点，可以删除物体的部分
 
 ## ref
 
