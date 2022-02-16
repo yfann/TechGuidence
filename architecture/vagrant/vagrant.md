@@ -38,7 +38,7 @@
 + `vagrant init` 选择目录,创建vagrantfile
 
 
-+ `vagrant up`
++ `vagrant up  [name|id]` 根据vagrantfile创建机器
     + ` --provider hyperv`
     + run as admin
 
@@ -93,9 +93,9 @@
 
 
 ## network
-+ private_network
++ `t.vm.network "private_network"`
     + virtualbox: host-only模式
-+ public_network
++ `t.vm.network "public_network"`
     + virutalbox: bridge模式
 + vagrant总会设置第一个网卡(eth0/ens0等)并将其加入virtualbox的NAT模式
 

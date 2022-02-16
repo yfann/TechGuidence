@@ -3,10 +3,27 @@
 ## install 
 <!-- install k3s server -->
 + `curl -sfL https://get.k3s.io | sh -`
-    + /etc/rancher/k3s/k3s.yaml
-    + /var/lib/rancher/k3s/server/node-token
+    + `curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s -`
+        + /etc/rancher/k3s/k3s.yaml
+        + /var/lib/rancher/k3s/server/node-token
 <!-- install k3s agent -->
 + `curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -`
+    + `/var/lib/rancher/k3s/server/node-token` on server
+
+## systemctl
+<!-- /etc/systemd/system/k3s*.service -->
++ `sudo systemctl status k3s.service`
+```sh
+k3s server \
+  --write-kubeconfig-mode "0644"    \
+  --tls-san "foo.local"             \
+  --node-label "foo=bar"            \
+  --node-label "something=amazing"
+```
+
+
+
+
 
 ## tips
 

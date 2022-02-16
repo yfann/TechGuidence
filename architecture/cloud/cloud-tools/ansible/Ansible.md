@@ -32,6 +32,13 @@
 
 ## cmd
 + `ansible + [Tab] + [Tab]`
+
++ `ansible <pattern> -m <module_name> -a <arguments>`
+    + pattern
+        + 组名
+        + 多个组： `webservers:dbservers`
+            + `webservers:dbservers:&staging:!phoenix`
+
 + `ansible <server name> -i <xxx.ini> -m ping -vvvv`
     + `ansible <server name> -m ping`
         + set defaults in ansible.cfg
@@ -54,7 +61,8 @@
 + `ansible all -a "date"`
     + 向所有hosts发命令
 
-+ `ansible all -m ping -u <user> --sudo --sudo-user <sudo user>`
++ `ansible -i <xxx.ini> all -m ping`
+    + `ansible all -m ping -u <user> --sudo --sudo-user <sudo user>`
 + `ansible all -a "/bin/echo hello"`
 
 <!-- inventory -->

@@ -49,6 +49,13 @@
 
 + `systemctl poweroff/reboot/suspend/...`
 
+
+## path
+
++ `/usr/lib/systemd/system/` 系统内置
++ `/etc/systemd/system/` 修改过的
+    + `/etc/systemd/system/vsftp.service.d/custom.conf`会merge回`/usr/lib/systemd/vsftpd.service`
+
 ## tips
 
 + runlevel
@@ -58,3 +65,5 @@
 
 + [17.1 什么是 daemon 与服务 （service）](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/148.html)
 + [Systemd 入门教程：命令篇](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
+
++ [systemctl 针对 service 类型的配置](https://zq99299.github.io/linux-tutorial/tutorial-basis/17/03.html)
