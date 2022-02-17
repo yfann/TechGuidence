@@ -199,3 +199,4 @@ publisher=OReilly
 ## ref
 
 + [Playbooks 介绍](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_intro.html)
++ [samples](https://github.com/ansible/ansible-examples)

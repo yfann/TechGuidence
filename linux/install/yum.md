@@ -52,7 +52,7 @@
 
 + 给`/etc/yum.repos.d/`所有仓库添加代理
     + `sudo vi /etc/yum.conf`
-        + 结尾加 `proyx=http://<ip>:<port>`
+        + 结尾加 `proxy=http://<ip>:<port>`
 
 + 只给base加代理
     + `sudo vi /etc/yum.repos.d/CentOS-Base.repo`
