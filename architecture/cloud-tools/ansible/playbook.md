@@ -8,6 +8,14 @@
 
 + roles：角色，将hosts剥离出去，由tasks、handlers等所组成的一种特定的结构集合
 
++ playbook
+    + play
+        + hosts
+        + vars
+        + remote_user
+        + tasks
+        + handlers
+
 ## vars
 
 ```yaml

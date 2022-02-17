@@ -46,7 +46,10 @@
 + `vagrant suspend`
     + `vagrant resume`
 + `vagrant halt [name|id]` shut down
+
 + `vagrant reload` 使修改过的vagrantfile生效,先halt再up
+    + `vagrant reload --provision ` Force the provisioners to run
+
 + `vagrant destroy -f <name>|<id>` 删除vm
     +  `-f` force
 + `vagrant status` 
@@ -81,22 +84,12 @@
 <!-- 网络 -->
 + `vagrant port [name]`
 
-## provision
-
-+ shell,ansible,docker,podman,file
-
-+ provision的时机
-    + 第一次vagrant up时会provision
-    + `vagrant up --provision`
-    + `vagrant reload --provision`
-    + `vagrant provision`
-    + config.vm.provision:run:always
-
 
 
 ## network
 + `t.vm.network "private_network"`
     + `config.vm.network "private_network", ip: "192.168.0.17"`
+    + `config.vm.network "private_network", type: "dhcp"`
     + virtualbox: host-only模式
 + `t.vm.network "public_network"`
     + `config.vm.network "public_network", bridge: "en1: Wi-Fi (AirPort)"` 指定网卡
@@ -104,11 +97,34 @@
 + vagrant总会设置第一个网卡(eth0/ens0等)并将其加入virtualbox的NAT模式
 
 
+## provision
+
++ 可以把相关工具打包到box中
+
++ provision
+    + 可以运行shell,ansible,docker,podman,file
+    + provision的时机
+        + 第一次vagrant up时会provision
+        + `vagrant up --provision`
+        + `vagrant reload --provision`
+        + `vagrant provision`
+        + config.vm.provision:run:always
+
+```ini
+config.vm.provision "shell", inline: "echo Hello, World"
+config.vm.provision "shell", path: "script.sh"
+; Vagrantfile 同级目录
+```
+
 
 ## proxy
 + cmd line proxy
     + 拉取镜像时需要代理
     + 连接虚拟机时关闭代理
+
+
+
+
 
 ## tips
 
@@ -122,10 +138,15 @@
     + 默认账号
 
 + `/vagrant`
+    + `f.vm.synced_folder ".","/vagrant"`
+        + "." 宿主机目录，相对于vagrantfile的位置。也可以绝对路径
     + 目录同步
 
 + VAGRANT_HOME
     + 设置镜像存储位置
+
++ `auto_config: false`
+    + 指定ip是设置
 
 ## ref
 
@@ -144,3 +165,4 @@
 <!-- 网络 -->
 + [熟练使用vagrant(11)：vagrant配置虚拟机网络](https://www.junmajinlong.com/virtual/vagrant/vagrant_network/)
 + [Public Networks](https://www.vagrantup.com/docs/networking/public_network)
++ [Vagrant (三) - 网络配置](https://www.jianshu.com/p/a1bc23bc7892)
