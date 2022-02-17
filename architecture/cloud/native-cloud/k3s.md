@@ -17,6 +17,11 @@
 + `curl -sfL https://get.k3s.io | K3S_TOKEN=SECRET INSTALL_K3S_EXEC="server --cluster-init" sh -`
 + `curl -sfL https://get.k3s.io | K3S_TOKEN=SECRET K3S_URL=https://server1:6443 INSTALL_K3S_EXEC="server" sh -`
 
+<!-- check -->
++ `sudo systemctl status k3s.service -l`
++ `journalctl -u k3s`
+    + `journalctl -u k3s -p err -b`
+
 <!-- uninstall -->
 + `/usr/local/bin/k3s-uninstall.sh`
 
@@ -50,6 +55,7 @@ k3s server \
 
 + K3S_TOKEN
     + `/var/lib/rancher/k3s/server/node-token` on server node
+    + If no `K3S_TOKEN` is defined, the first K3s server will generate a random one. The result is part of the content in `/var/lib/rancher/k3s/server/token`. For example, K1070878408e06a827960208f84ed18b65fa10f27864e71a57d9e053c4caff8504b::server:df54383b5659b9280aa1e73e60ef78fc, where df54383b5659b9280aa1e73e60ef78fc is the `K3S_TOKEN`.
 
 ## ref
 
@@ -65,3 +71,6 @@ k3s server \
 + [Tutorial: Install a Highly Available K3s Cluster at the Edge](https://thenewstack.io/tutorial-install-a-highly-available-k3s-cluster-at-the-edge/)
     + external etcd
 + [install ha k3s with embeded etcd](https://github.com/k3s-io/k3s/issues/1617)
+
+<!-- other -->
++ [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
