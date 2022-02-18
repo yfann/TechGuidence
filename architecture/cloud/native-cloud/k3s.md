@@ -17,13 +17,34 @@
 + `curl -sfL https://get.k3s.io | K3S_TOKEN=SECRET INSTALL_K3S_EXEC="server --cluster-init" sh -`
 + `curl -sfL https://get.k3s.io | K3S_TOKEN=SECRET K3S_URL=https://server1:6443 INSTALL_K3S_EXEC="server" sh -`
 
-<!-- check -->
+<!-- check,debug -->
 + `sudo systemctl status k3s.service -l`
 + `journalctl -u k3s`
     + `journalctl -u k3s -p err -b`
 
 <!-- uninstall -->
 + `/usr/local/bin/k3s-uninstall.sh`
+    + uninstall server node
++ `/usr/local/bin/k3s-agent-uninstall.sh`
+    + `kubectl delete node <node name>`
+    + uninstall agent node
+
+<!-- intranet install -->
+
+<!-- /etc/rancher/k3s/registries.yaml -->
+```yaml
+mirrors:
+  docker.io:
+    endpoint:
+      - "http://xxxx"
+  docker.elastic.co:
+    endpoint:
+      - "http://xxxxx"
+  opensearchproject:
+    endpoint:
+     - "http://xxxxx"
+```
+
 
 ## systemctl
 <!-- /etc/systemd/system/k3s*.service -->
@@ -36,8 +57,24 @@ k3s server \
   --node-label "something=amazing"
 ```
 
+## 日志
 
++ `/var/log/syslog`
++ `journalctl -u k3s`
 
+## etcd
+
+<!-- install etcdctl -->
++ `VERSION="v3.5.0"`
++ `curl -L https://github.com/etcd-io/etcd/releases/download/${VERSION}/etcd-${VERSION}-linux-amd64.tar.gz --output etcdctl-linux-amd64.tar.gz`
++ `sudo tar -zxvf etcdctl-linux-amd64.tar.gz --strip-components=1 -C /usr/local/bin etcd-${VERSION}-linux-amd64/etcdctl`
+
++ `etcdctl --cacert=/var/lib/rancher/k3s/server/tls/etcd/server-ca.crt --cert=/var/lib/rancher/k3s/server/tls/etcd/client.crt --key=/var/lib/rancher/k3s/server/tls/etcd/client.key version`
+    + `etcdctl version`
+    + `etcdctl put foo bar`
+    + `etcdctl get foo`
+
+<!-- etcd -->
 
 
 ## tips
@@ -73,4 +110,5 @@ k3s server \
 + [install ha k3s with embeded etcd](https://github.com/k3s-io/k3s/issues/1617)
 
 <!-- other -->
-+ [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
++ [etcd](https://etcd.io/docs/v3.5/install/)
++ [k3s etcd commands](https://gist.github.com/superseb/0c06164eef5a097c66e810fe91a9d408)

@@ -56,6 +56,24 @@
 + `/etc/systemd/system/` 修改过的
     + `/etc/systemd/system/vsftp.service.d/custom.conf`会merge回`/usr/lib/systemd/vsftpd.service`
 
+## 日志
+
++ systemd 使用systemd-journald.service记日志
+    + `ls -R /var/log/journal/`
+
++ journalctl 查看日志
+    + `-p` 设置级别
+        + `journalctl -p err --lines=10`
+    + `--lines` 最后几行
+    + `-f` 只显示最新的日志项，并且不断显示新生成的日志项
+    + `--boot` 本次启动后发生的日志
+    + `--grep="REGEXP"`
+        + `journalctl --boot --grep="Wifi"`
+    + `--all` 完整显示
+    + `-u` unit
+        + `journalctl -u k3s`
+    + `--no-pager` 不分页完整显示
+
 ## tips
 
 + runlevel
@@ -67,3 +85,7 @@
 + [Systemd 入门教程：命令篇](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 
 + [systemctl 针对 service 类型的配置](https://zq99299.github.io/linux-tutorial/tutorial-basis/17/03.html)
+
+<!-- 查看sytemd日志 -->
++ [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
++ [journalctl：查询 systemd 日记](https://documentation.suse.com/zh-cn/sles/12-SP4/html/SLES-all/cha-journalctl.html)
