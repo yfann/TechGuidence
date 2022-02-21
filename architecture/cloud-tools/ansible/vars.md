@@ -40,9 +40,16 @@ bar=2
 ```yaml
   tasks:
      - shell: /usr/bin/foo
-       register: foo_result
+       register: result
        ignore_errors: True
+
+# result['stat']['mode']
+# result['stat'].mode
+# result.stat['mode']
+# result.stat.mode
 ```
+
+
 
 ## 变量文件
 ```yaml
@@ -60,12 +67,17 @@ bar=2
 somevar: somevalue
 password: magic
 ```
+
+
 ## 命令行传vars
++ `ansible-playbook –e varname=value`
 + `ansible-playbook release.yml --extra-vars "version=1.23.45 other_variable=foo"`
     + `--extra-vars '{"pacman":"mrs","ghosts":["inky","pinky","clyde","sue"]}'`
         + Ansible 1.2
     + `--extra-vars "@some_file.json"`
         + Ansible 1.3
+
+
 
 ## 变量优先级
 + extra vars (在命令行中使用 -e)优先级最高
@@ -83,7 +95,12 @@ password: magic
 + `{{ ansible_eth0["ipv4"]["address"] }}`
     + `{{ ansible_eth0.ipv4.address }}`
 
-+ 魔法变量
++ `- debug: var=myvarname`
+    + viewing the values of variables
+
++ vars_prompt
+    + CLI输入的变量
++ Built-in vaariables
     + hostvars
         + 可以访问其他主机的变量
         + `{{ hostvars['test.example.com']['ansible_distribution'] }}`
@@ -100,3 +117,8 @@ password: magic
     + delegate_to
     + role_path
     + inventory_file
+    + inventory_hostname
+    + ansible_play_hosts
+
+## ref
++ [Magic variables](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html)

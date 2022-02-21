@@ -16,95 +16,6 @@
         + tasks
         + handlers
 
-## vars
-
-```yaml
-vars:
-  tls_dir: /etc/nginx/ssl/
-  key_file: nginx.key
-```
-
-+ vars_files
-```yaml
-vars_files:
-  - nginx.yml
-
-# nginx.yml
-# key_file: nginx.key
-# cert_file: nginx.crt
-```
-
-+ `- debug: var=myvarname`
-    + viewing the values of variables
-
-+ register (获取命令的结果)
-```yaml
-- name: Capture output of whoami command
-  command: whoami
-  register: login
-
-# 不同moduel的返回值不同，debug状态查看
-# ---
-# - name: Show return value of command module
-#   hosts: fedora
-#   gather_facts: false
-#   tasks:
-#     - name: Capture output of id command
-#       command: id -un
-#       register: login
-
-#     - debug: var=login
-#     - debug: msg="Logged in as user {{ login.stdout }}"
-# ...
-
-
-# result['stat']['mode']
-# result['stat'].mode
-# result.stat['mode']
-# result.stat.mode
-
-```
-
-+ Built-in vaariables
-    + hostvars  
-        + `{{ hostvars['db.example.com'].ansible_eth1.ipv4.address }}`
-
-+ `gather_facts: true`
-
-+ host info
-    + ansible_os_family
-    + ansible_distribution 
-
-+ `ansible ubuntu -m setup`
-    + get all facts
-    + filter
-        + `ansible all -m setup -a 'filter=ansible_all_ipv6_addresses'`
-
-+ key words
-    + ansible_facts
-
-+ modules
-    + service_facts
-    + set_fact
-        + `nginx_state: "{{  ansible_facts.services[' nginx.service']['state'] }}"`
-
-+ /etc/ansible/facts.d/xx.fact
-    + ini or JSON
-    + remote hosts
-    + key words
-        + ansible_local
-```ini
-; /etc/ansible/facts.d/example.fact
-
-[book]
-title=Ansible: Up and Running
-authors=Meijer, Hochstein, Moser
-publisher=OReilly
-
-; plyabook可以被读取
-; {{ ansible_local.example.book.title }}
-```
-
 ## roles
 
 + 可复用的playbook
@@ -117,31 +28,79 @@ publisher=OReilly
         + `ansible-galaxy remove oefenweb.ntp`
     + `ansible-galaxy list`
 
-## Jinja2 template
+## 条件语句
 
-+ default filter
-    + `{{ database_host | default('localhost') }}`
-        + if database_host is not defined then 'localhost' it is
-+ Filters for Registered Variables
-    + failed
-        + `failed_when: result|failed`
-    + changed
-    + success
-    + skipped
-+ Filters That Apply to File Paths
-    + basename
-        + `files/{{ homepage | basename }}`
-    + dirname
-    + expanduser
-    + realpath
++ When
+    + Jinjia2 表达式
+```yaml
+tasks:
+  - name: "shutdown Debian flavored systems"
+    command: /sbin/shutdown -t now
+    when: ansible_os_family == "Debian"
+```
 
-+ `{{ domains|surround_by_quotes|join(", ") }}`
++ Jinjia2过滤器
+```yaml
+tasks:
+  - command: /bin/false
+    register: result
+    ignore_errors: True
+  - command: /bin/something
+    when: result|failed
+  - command: /bin/something_else
+    when: result|success
+  - command: /bin/still/something_else
+    when: result|skipped
+```
 
++ 类型转换
+```yaml
+tasks:
+  - shell: echo "only on Red Hat 6, derivatives, and later"
+    when: ansible_os_family == "RedHat" and ansible_lsb.major_release|int >= 6
+```
 
-+ FilterModule
-    + ~/.ansible/plugins/filter
-    + /usr/share/ansible/plugins/filter
-    + filter_plugins
++ `when: bar is not defined`
+
++ 客户事件
+```yaml
+tasks:
+    - name: gather site specific fact data
+      action: site_facts
+    - command: /usr/bin/thingy
+      when: my_custom_fact_just_retrieved_from_the_remote_system == '1234'
+```
+
++ roles
+```yaml
+- hosts: webservers
+  roles:
+     - { role: debian_stock_config, when: ansible_os_family == 'Debian' }
+```
+
++ registry
+```yaml
+
+  tasks:
+
+      - shell: cat /etc/motd
+        register: motd_contents
+
+      - shell: echo "motd contains the word hi"
+        when: motd_contents.stdout.find('hi') != -1
+
+        # with_items: home_dirs.stdout_lines
+        # # same as with_items: home_dirs.stdout.split()
+```
+
++ until
+```yaml
+- action: shell /usr/bin/foo
+  register: result
+  until: result.stdout.find("all systems go") != -1
+  retries: 5
+  delay: 10
+```
 
 ## lookup
 + read in configuration data from various sources
@@ -155,9 +114,33 @@ publisher=OReilly
 
 + `until: <result> is success`
     + ` register: <result> `
+
 + with_items
+```yaml
+- name: add several users
+  user: name={{ item.name }} state=present groups={{ item.groups }}
+  with_items:
+    - { name: 'testuser1', groups: 'wheel' }
+    - { name: 'testuser2', groups: 'root' }
+```
+
++ when
+    + 会为每个item单独执行
+
++ with_nested
+
 + loop
 + with_lines
+
++ with_dict
+```yaml
+tasks:
+  - name: Print phone records
+    debug: msg="User {{ item.key }} is {{ item.value.name }} ({{ item.value.telephone }})"
+    with_dict: "{{users}}"
+```
++  with_fileglob
+
 
 
 ## playbook

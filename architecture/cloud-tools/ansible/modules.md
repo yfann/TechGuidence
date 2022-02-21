@@ -1,4 +1,4 @@
-
+# task plugins
 
 ## apt
 + update_cache: true
@@ -22,8 +22,12 @@
 + `ansible web -m user -a "name=user01system=yes uid=502 group=root groups=root shell=/etc/nologinhome=/home/user01 password=pwd@123"`
     + 给remote host创建用户
 
+<!-- practice -->
++ `ansible hostname.example.com -m setup`
+    + 查看facts
 ## tips
 
++ add_host
 + command
 + shell
 
