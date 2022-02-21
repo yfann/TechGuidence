@@ -43,9 +43,28 @@
 + `yum clean all`
 + `yum makecache`
 
-## yum.conf
+## path
 + `/etc/yum.conf`
-+ `/etc/yum.repo.d `
++ `/etc/yum.repo.d`
+
+
+## proxy
+
++ 给`/etc/yum.repos.d/`所有仓库添加代理
+    + `sudo vi /etc/yum.conf`
+        + 结尾加 `proxy=http://<ip>:<port>`
+
++ 只给base加代理
+    + `sudo vi /etc/yum.repos.d/CentOS-Base.repo`
+```ini
+[base]
+name=CentOS-$releasever - Base
+baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+proxy=http://ip:port
+....
+```
 
 ## ref
 
@@ -62,3 +81,5 @@
 + [How to Set Up and Use Yum Repositories on CentOS 7](https://linuxhostsupport.com/blog/how-to-set-up-and-use-yum-repositories-on-centos-7/)
 + [epel](https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages)
 + [CentOS7解决yum中软件版本过低问题](https://www.iizyx.com/54/)
+<!-- proxy -->
++ [为yum源配置代理](https://pshizhsysu.gitbook.io/linux/yum/wei-yum-yuan-pei-zhi-dai-li)

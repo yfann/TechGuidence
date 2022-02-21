@@ -21,15 +21,15 @@
 + `vagrant -h`
     + `vagrant <sub cmd> -h`
 
-<!-- 管理box，box相当于镜像 -->
++ `vagrant global-status`
 
+<!-- 管理box，box相当于镜像 -->
 + `vagrant box add <box> --provider virtualbox`  从vagrant官方仓库搜索
     + `vagrant box add <box> <url>` url远程或本地
 + `vagrant box list` 列出已经安装的box(add)
     + 存放于$HOME/.vagrant.d/或$VAGRANT_HOME/.vagrant.d/
 
 <!-- 安装vm -->
-
 + `vagrant init <box>` <box> 官方名称可以直接使用。先本地（$HOME/.vagrant.d/）查找镜像，找不到从官方下载
     + `hashicorp/precise64`  hyperv
     + `ubuntu/focal64` vbox
@@ -37,18 +37,23 @@
     + `generic/centos7`
 + `vagrant init` 选择目录,创建vagrantfile
 
-
-+ `vagrant up`
++ `vagrant up  [name|id]` 根据vagrantfile创建机器,启动机器
     + ` --provider hyperv`
     + run as admin
 
+<!-- operation -->
+<!-- 目录下运行 -->
++ `vagrant suspend`
+    + `vagrant resume`
++ `vagrant halt [name|id]` shut down
 
-+ `vagrant halt [name|id]` 停止vm
 + `vagrant reload` 使修改过的vagrantfile生效,先halt再up
-+ `vagrant destroy -f <name>|<id>` 删除vm
+    + `vagrant reload --provision ` Force the provisioners to run
 
-+ `vagrant status` 进入目录
-+ `vagrant global-status`
++ `vagrant destroy -f <name>|<id>` 删除vm
+    +  `-f` force
++ `vagrant status` 
+
 
 <!-- ssh, 进入镜像 -->
 + `vagrant ssh` 目录执行
@@ -79,32 +84,47 @@
 <!-- 网络 -->
 + `vagrant port [name]`
 
-## provision
-
-+ shell,ansible,docker,podman,file
-
-+ provision的时机
-    + 第一次vagrant up时会provision
-    + `vagrant up --provision`
-    + `vagrant reload --provision`
-    + `vagrant provision`
-    + config.vm.provision:run:always
-
 
 
 ## network
-+ private_network
++ `t.vm.network "private_network"`
+    + `config.vm.network "private_network", ip: "192.168.0.17"`
+    + `config.vm.network "private_network", type: "dhcp"`
     + virtualbox: host-only模式
-+ public_network
++ `t.vm.network "public_network"`
+    + `config.vm.network "public_network", bridge: "en1: Wi-Fi (AirPort)"` 指定网卡
     + virutalbox: bridge模式
 + vagrant总会设置第一个网卡(eth0/ens0等)并将其加入virtualbox的NAT模式
 
+
+## provision
+
++ 可以把相关工具打包到box中
+
++ provision
+    + 可以运行shell,ansible,docker,podman,file
+    + provision的时机
+        + 第一次vagrant up时会provision
+        + `vagrant up --provision`
+        + `vagrant reload --provision`
+        + `vagrant provision`
+        + config.vm.provision:run:always
+
+```ini
+config.vm.provision "shell", inline: "echo Hello, World"
+config.vm.provision "shell", path: "script.sh"
+; Vagrantfile 同级目录
+```
 
 
 ## proxy
 + cmd line proxy
     + 拉取镜像时需要代理
     + 连接虚拟机时关闭代理
+
+
+
+
 
 ## tips
 
@@ -118,10 +138,15 @@
     + 默认账号
 
 + `/vagrant`
+    + `f.vm.synced_folder ".","/vagrant"`
+        + "." 宿主机目录，相对于vagrantfile的位置。也可以绝对路径
     + 目录同步
 
 + VAGRANT_HOME
     + 设置镜像存储位置
+
++ `auto_config: false`
+    + 指定ip是设置
 
 ## ref
 
@@ -139,3 +164,5 @@
 
 <!-- 网络 -->
 + [熟练使用vagrant(11)：vagrant配置虚拟机网络](https://www.junmajinlong.com/virtual/vagrant/vagrant_network/)
++ [Public Networks](https://www.vagrantup.com/docs/networking/public_network)
++ [Vagrant (三) - 网络配置](https://www.jianshu.com/p/a1bc23bc7892)

@@ -1,9 +1,20 @@
 # playbook
 
 + hosts：任务的目标主机，多个主机用冒号分隔，一般调用/etc/ansible/hosts中的分组信息；remote_user：远程主机上，运行此任务的默认身份为root；
+
 + tasks：任务，即定义的具体任务，由模块定义的操作列表；
+
 + handlers：触发器，类似tasks，只是在特定的条件下才会触发的任务。某任务的状态在运行后为changed时，可通过“notify”通知给相应的handlers进行触发执行；
+
 + roles：角色，将hosts剥离出去，由tasks、handlers等所组成的一种特定的结构集合
+
++ playbook
+    + play
+        + hosts
+        + vars
+        + remote_user
+        + tasks
+        + handlers
 
 ## vars
 
@@ -149,6 +160,31 @@ publisher=OReilly
 + with_lines
 
 
+## playbook
+
++ yaml file
+```yaml
+#!/usr/bin/env ansible-playbook
+# 可以直接执行yaml, ./xxx.yaml
+---
+
+...
+```
+
+## task
+
++ tasks
+    + name
+    + moudle: options
+
+```yaml
+tasks:
+  - name: make sure apache is running
+    service: name=httpd state=running
+```
+
+
+
 ## tips
 
 + `"changed": true`
@@ -182,6 +218,15 @@ publisher=OReilly
 + `delegate_to: localhost`
     + 可以创建remotehost to localhost的fact
 
++ task在role之后执行
+    + pre_tasks，post_tasks
+
++ tags可以部分运行playbook
+
+
 ## ref
 
 + [Playbooks 介绍](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_intro.html)
++ [samples](https://github.com/ansible/ansible-examples)
+
++ [Patterns](https://ansible-tran.readthedocs.io/en/latest/docs/intro_patterns.html)

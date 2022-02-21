@@ -22,6 +22,11 @@
 + `ansible web -m user -a "name=user01system=yes uid=502 group=root groups=root shell=/etc/nologinhome=/home/user01 password=pwd@123"`
     + 给remote host创建用户
 
+## tips
+
++ command
++ shell
+
 ## ref
 
 + [Module index](https://docs.ansible.com/ansible/2.9/modules/modules_by_category.html)
