@@ -135,3 +135,8 @@
 + [Ansible Configuration Settings](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
 + [Ansible的配置文件](https://ansible-tran.readthedocs.io/en/latest/docs/intro_configuration.html)
 + [ansible filters](https://github.com/ansiblebook/ansible-filter-plugins)
+
+
++ [Conditionals](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html)
++ [Loops](https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html)
++ [Using filters to manipulate data](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html)
