@@ -109,6 +109,11 @@ k3s server \
     + external etcd
 + [install ha k3s with embeded etcd](https://github.com/k3s-io/k3s/issues/1617)
 
-<!-- other -->
+<!-- etcd -->
 + [etcd](https://etcd.io/docs/v3.5/install/)
 + [k3s etcd commands](https://gist.github.com/superseb/0c06164eef5a097c66e810fe91a9d408)
+
+
+<!-- practice -->
++ [Install HA k3s cluster with external etcd and virtual IP](https://github.com/pmvrolijk/k3s-cluster)
++ [PyratLabs/ansible-role-k3s](https://github.com/PyratLabs/ansible-role-k3s)

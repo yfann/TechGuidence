@@ -21,6 +21,7 @@
         + 查看接口的zone
     + `firewall-cmd --set-default-zone=public`
         + 设置默认接口区域
+    + `firewall-cmd --get-active-zones`
 
 + add
     + `firewall-cmd --zone=public --add-interface=eth0`

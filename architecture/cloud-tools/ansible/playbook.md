@@ -160,6 +160,31 @@ publisher=OReilly
 + with_lines
 
 
+## playbook
+
++ yaml file
+```yaml
+#!/usr/bin/env ansible-playbook
+# 可以直接执行yaml, ./xxx.yaml
+---
+
+...
+```
+
+## task
+
++ tasks
+    + name
+    + moudle: options
+
+```yaml
+tasks:
+  - name: make sure apache is running
+    service: name=httpd state=running
+```
+
+
+
 ## tips
 
 + `"changed": true`
@@ -193,18 +218,15 @@ publisher=OReilly
 + `delegate_to: localhost`
     + 可以创建remotehost to localhost的fact
 
-## playbook
++ task在role之后执行
+    + pre_tasks，post_tasks
 
-+ yaml file
-```yaml
-#!/usr/bin/env ansible-playbook
-# 可以直接执行yaml, ./xxx.yaml
----
++ tags可以部分运行playbook
 
-...
-```
 
 ## ref
 
 + [Playbooks 介绍](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_intro.html)
 + [samples](https://github.com/ansible/ansible-examples)
+
++ [Patterns](https://ansible-tran.readthedocs.io/en/latest/docs/intro_patterns.html)
