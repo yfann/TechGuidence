@@ -122,3 +122,4 @@ password: magic
 
 ## ref
 + [Magic variables](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html)
++ [facts](https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html)
