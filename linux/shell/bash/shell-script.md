@@ -1,5 +1,10 @@
 
+# shell script
 
++ `bash script.sh`
+    + 新的shell环境执行
+
++ 脚本失败:返回值非0
 
 ## 变量
 + `your_name="runoob.com"` 定义变量
