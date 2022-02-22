@@ -16,6 +16,8 @@
         + tasks
         + handlers
 
++ 一个 task 在其所对应的所有主机上（通过 host pattern 匹配的所有主机）执行完毕之后,下一个 task 才会执行
+
 ## vars
 
 ```yaml

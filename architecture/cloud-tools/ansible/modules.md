@@ -1,4 +1,9 @@
 
+## cmd
++ `ansible-doc <module>`
+    + 查询模块
++ `ansible-doc -l`
+    + 列出模块
 
 ## apt
 + update_cache: true
