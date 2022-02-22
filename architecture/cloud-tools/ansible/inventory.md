@@ -3,6 +3,10 @@
 + `/etc/ansible/hosts` 
 + ini格式
 
+## groups
++ all
++ ungrouped
+
 ## 变量
 
 + 变量可以独立出ini,单独yaml文件
@@ -50,3 +54,4 @@ rabbitmq:
 ## ref
 
 + [Inventory文件](https://ansible-tran.readthedocs.io/en/latest/docs/intro_inventory.html)
++ [How to build your inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)

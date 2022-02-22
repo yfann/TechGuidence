@@ -60,9 +60,13 @@
     + 多个服务器对批量学习拆分(MapReduce)
     + 线上学习
 
-+ 回归问题指标
-    + 均方根误差(RMSE)(系统预测误差的标准差)
-        + 68-95-99.7
+
++ RMSE(均方根误差)
+    + 68-95-99.7
+    + 回归问题指标
+
++ MAE(平均绝对误差)
+
 ## ref
 
 + [Sklearn 与 TensorFlow](https://hands1ml.apachecn.org/#/docs/1)
