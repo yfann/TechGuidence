@@ -16,7 +16,11 @@
 
 + `source ~/.bashrc`使配置立马生效
 
-+ `cat /etc/shells` 查看有多少种shell
++ `cat /etc/shells` 系统安装的所有shell
+
++ `echo $SHELL` 当前shell
+
++ `type [cmd]` 查看命令类型
 
 ## 变量
 + `your_name="runoob.com"` 定义变量
