@@ -173,6 +173,7 @@ echo ${a}b
 + [bash 教程](https://wangdoc.com/bash/intro.html)
 + [online shell](https://www.runoob.com/try/runcode.php?filename=helloworld&type=bash)
 + [编写Shell 脚本编程最佳实践](https://zhuanlan.zhihu.com/p/264120455)
++ [Bash Reference Manual](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)
 
 <!-- 参数 -->
 + [Shell 传递参数](https://www.runoob.com/linux/linux-shell-passing-arguments.html)

@@ -71,7 +71,7 @@ sed -i '$a hello' sample.txt #把hello插入到最后一行
 sed -i 'i hello' sample.txt #每一行插入
 sed -i '2,4 i hello' sample.txt #把hello插入2到4行
 ```
-+ `sed -i "${inert_pos}a $p" $INVENTORY_FILE` 插入行变量
++ `sed -i "${inert_pos}a\\$p" $INVENTORY_FILE` 插入行变量
 
 <!-- s -->
 
