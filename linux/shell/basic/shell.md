@@ -1,4 +1,4 @@
-# shell
+# shell(operation)
 
 + `#!` shebang
 
@@ -19,6 +19,11 @@
     + `type <cmd>` 查看是否为内部命令
 
 + `man bash` 帮助
+
++ `cd -` 返回上一次目录
+
++ `history`
+    + 
 
 ## 转义换行(escape)
 
