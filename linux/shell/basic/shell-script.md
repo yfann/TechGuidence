@@ -22,6 +22,8 @@
 
 + `type [cmd]` 查看命令类型
 
++ `exit 1` 退出
+
 ## 变量
 + `your_name="runoob.com"` 定义变量
     - `readonly your_name`使变量只读

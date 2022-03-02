@@ -12,6 +12,10 @@
     + 括号内要判断的字符串两边空格
 + `[[ $a == "z*" ]]` true if $a start with "z*"
 
+## practice 
+
++ `if [ ! -n "$1" ]` 如果参数不为空
++ `if $PEM_MOD`
 ## ref
 + [How to Compare Strings in Bash](https://linuxize.com/post/how-to-compare-strings-in-bash/)
 + [条件判断](https://wangdoc.com/bash/condition.html)

@@ -206,7 +206,14 @@ tasks:
 
 + tags可以部分运行playbook
 
-
++ `wait_for`
+```yaml
+    - name: Waits for k3s-etcd-master-init
+      wait_for:
+        host: k3scluster_master_ip
+        port: 6443
+        delay: 5
+```
 ## ref
 
 + [Playbooks 介绍](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_intro.html)
