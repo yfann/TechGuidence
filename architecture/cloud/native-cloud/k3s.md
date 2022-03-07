@@ -60,7 +60,11 @@ k3s server \
 ## 日志
 
 + `/var/log/syslog`
+
++ `systemctl status k3s.service`
+
 + `journalctl -u k3s`
+    + `journalctl -u k3s --lines=20`
 
 ## etcd
 

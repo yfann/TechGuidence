@@ -12,6 +12,8 @@
 
 + `wsl --shutdown`
 
++ `ip addr| grep eth0` get IP
+
 ## tips
 + `\\wsl$` (window 访问目录)
 + run as admin

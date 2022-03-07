@@ -33,12 +33,16 @@
     + 删除所有容器
 + docker rm `docker ps -a | grep xxxxx | awk '{print $1}'`
 
++ `docker exec -it <container id> sh`
 
-
-## cmd
+## tar
 
 + `docker save busybox > busybox.tar`
 + `docker load < busybox.tar.gz`
+
+## log
+
++ `docker logs <container id>` | grep ...
 
 ## ref
 + [docker save](https://docs.docker.com/engine/reference/commandline/save/)
