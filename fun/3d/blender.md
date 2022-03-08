@@ -41,8 +41,10 @@
     + 减选
 + `a`
     + 全选
-+ `alt` + click 选择多个边/面
++ `alt` + click 选择多个边/面(圈选)
     + `ctrl` + `alt` + click
+
+
 
 ## tab
 
