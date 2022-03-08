@@ -24,6 +24,15 @@
 
 + `exit 1` 退出
 
+## declare
+
++ `declare -f` 查看定义的函数
+
++ `declare -f <func>`
+
++ `declare -F` 输出定义的函数名
+
+
 ## 变量
 + `your_name="runoob.com"` 定义变量
     - `readonly your_name`使变量只读
