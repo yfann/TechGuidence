@@ -1,9 +1,17 @@
 
 # shell script
 
-+ `#!/bin/sh/#!/bin/bash`在shell脚本第一行指定解释器
++ `#!/bin/sh/` `#!/bin/bash`在shell脚本第一行指定解释器,Shebang
+    + 有shebang行，可以直接运行脚本`./script.sh`
+        + 如果没有则`/bin/sh ./script.sh`
 
 + `chmod +x ./test.sh`使脚本有执行权限
+    + `chmod 755 script.sh` 拥有者有所有权限，其他人有读取执行权限
+
++ `export PATH=$PATH:~/bin` 脚本放入bin中，任何目录中都可以执行脚本
+
+
++ `env -i /bin/sh` 启动一个不带环境变量的shell
 
 + run shell
     + `./test.sh`打开子shell执行脚本
@@ -23,6 +31,19 @@
 + `type [cmd]` 查看命令类型
 
 + `exit 1` 退出
+
+
+## script parameters
+
++ `$0` 脚本
+
++ `$1`~`$9`
+
++ `$#` 参数总数
+
++ `$@` 所有参数，空格分隔
+
++ `$*` 所有参数,`$IFS`值的第一个字符分隔
 
 ## 变量
 + `your_name="runoob.com"` 定义变量
@@ -92,4 +113,6 @@ echo `expr index "$string" io`  # 输出 4
     echo bar
     ```
 
+## ref
 
++ [Bash 脚本入门](https://wangdoc.com/bash/script.html)

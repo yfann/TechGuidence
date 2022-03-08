@@ -5,7 +5,8 @@
 + HISTSIZE 
     + 内存中存的
 
-```.bashrc
+```sh
+# .bashrc
 HISTSIZE=5000
 HISTFILESIZE=10000
 ```
