@@ -6,6 +6,9 @@
     + `find . -type f -print0 | xargs -0 dos2unix`
         + 项目目录中运行，转换所有windows文件为Linux文件
     + `find . -name "*.ini" -print0|  xargs -0 dos2unix`
+    + vscode
+        + `ctrl+p`: preferences: open settings
+            + `"files.eol": "\n"`
 
 
 
