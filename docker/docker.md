@@ -120,7 +120,7 @@
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
 + [Deploy on Kubernetes](https://docs.docker.com/docker-for-windows/kubernetes/)
 + [Test an insecure registry](https://docs.docker.com/registry/insecure/)
-
++ [Use bind mounts](https://docs.docker.com/storage/bind-mounts/)
 
 <!-- 命令 -->
 + [Docker命令-docker exec](https://www.jianshu.com/p/d858d3cfd427)

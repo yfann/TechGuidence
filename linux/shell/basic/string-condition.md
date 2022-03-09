@@ -1,6 +1,17 @@
-
+# condition
 
 + `if test "foo" = "foo"; then echo 'hello world'; fi`
+
++ `if`
+```sh
+if commands; then
+  commands
+[elif commands; then
+  commands...]
+[else
+  commands]
+fi
+```
 
 ## string
 

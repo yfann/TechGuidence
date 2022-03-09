@@ -42,3 +42,8 @@
 
 + [sonatype/nexus3](https://hub.docker.com/r/sonatype/nexus3/)
 + [How to upload and download docker images using nexus registry/repository?](https://www.devopsschool.com/blog/how-to-upload-and-download-docker-images-using-nexus-registry-repository/)
+
+<!-- api -->
++ [nexus3-cli](https://nexus3-cli.readthedocs.io/en/latest/api.html#sonatype-nexus-3-api-documentation)
++ [postman nexus api](https://www.postman.com/njrusmc/workspace/public-collections/request/14123647-9750078b-56d8-4627-853e-d6a141368f0b)
++ [Components API](https://help.sonatype.com/repomanager3/integrations/rest-and-integration-api/components-api#ComponentsAPI-UploadComponent)

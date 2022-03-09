@@ -59,6 +59,7 @@
     - `unset your_name` 删除变量
     - `echo $your_name` 使用变量
     - `echo "I am good at ${your_name}Script"`
+
 + 局部变量、环境变量、shell变量
 ```sh
 # 遍历/etc下的文件
@@ -78,20 +79,20 @@ greeting_1="hello, ${your_name} !"
 # 使用单引号拼接
 greeting_2='hello, '$your_name' !'
 ```
+
 + `echo ${#your_name}` 输出字符串长度
+
 + 获取子串
 ```sh
 string="runoob is a great site"
 echo ${string:1:4} # 输出 unoo
 ```
+
 + 查找字符串
 ```sh
 string="runoob is a great site"
 echo `expr index "$string" io`  # 输出 4
 ```
-
-
-
 
 
 ##  scripts
@@ -120,6 +121,10 @@ echo `expr index "$string" io`  # 输出 4
     foo | echo a
     echo bar
     ```
+
+## conf
+
++ `. /path/to/some.config`
 
 ## ref
 
