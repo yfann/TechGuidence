@@ -6,3 +6,5 @@
 + `find . -ctime -20` 列出20天内更新过的文件
 
 + `find / -type f -size 0 -exec ls -l {} \;` 列出大小为0的文件并显示路径
+
++ `find ./ ! -regex  '.*\(deb\|vmdk\)$'`

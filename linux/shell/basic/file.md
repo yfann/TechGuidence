@@ -19,6 +19,8 @@ done <peptides.txt
 
 + `if [ ! -d "$path" ]; then ` 文件夹不存在
 
++ `if [ -f "$FILE" ]; then` 文件存在
+
 ## ref
 
 + [linux shell 查找某字符串 在文件的行数](https://blog.csdn.net/whatday/article/details/105066031)

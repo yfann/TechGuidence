@@ -11,4 +11,7 @@
             + `"files.eol": "\n"`
 
 
-
++ shell permission denied
+    + `sudo chmod +x xx.sh`
+    + `ls -l xx.sh`
+    + `./xx.sh`
