@@ -12,16 +12,8 @@
     + Debian
         + Ubuntu
 
-## cmd
-+ `whoami`
-+ `which <cmd>`
-+ `whereis <cmd>`
-<!-- help -->
-+ `<cmd> --help`
-+ `man <cmd>`
-+ `info <cmd>`
-<!-- comman -->
-+ `ln -s <source file>  <link file>` 软链接
+
+
 
 ## export
 + `export -p`

@@ -42,3 +42,16 @@
 + npm config 
 + 配置文件路径：[nodejs]/node_modules/npm/npmrc
   - 文件中添加：registry=https://registry.npm.taobao.org/ (添加淘宝镜像)
+
+
+
+## proxy
++ `npm config get proxy`
++ `npm config delete proxy`
++ `npm config delete https-proxy`
++ `npm config set proxy http://xxxx:xx`
++ `npm config set https-proxy http://xxxx:xx`
+
+
+## install
++ `npm install cfonts -g`

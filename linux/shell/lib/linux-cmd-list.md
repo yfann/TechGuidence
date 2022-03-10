@@ -1,30 +1,4 @@
 
-## 查找
-
-+ `ls -a`
-    + `ls -lh`
-        + 大小权限等信息
-        + `-h` human可读
-+ `which <cmd>`
-    + PATH指定的路径中搜索<cmd>的位置，返回第一个结果
-+ `whereis <cmd>`
-    + 程序名搜索
-    + -b  只搜索二进制
-    + -m  man说明文件
-    + -s  源代码文件
-+ `find <folder>`
-    + `find /workspace | xargs cat`
-
-
-## temp
-
-+ `mktemp`  建立暂存文件
-    + `-q` 错误时不显示信息
-    + `-u` mktemp结束前删除
-
-+ `$(variable)` 返回变量值
-+ `$(command)` 运行命令并返回值
-    + `$(echo foo)`
 
 ## cmd
 <!-- 目录切换 -->
@@ -39,25 +13,6 @@
     + `pushd +n` 栈中第n个元素到栈顶
 + `popd` 
 
-+ `wc` 字数
-    + `wc -l` 计算行数
-
-+ `sed` 修改文件，字符串
-    + `sed -in "s/[ #]*proxy/proxy/g" filename`替换
-        + -i 直接修改文件否则是返回替换内容
-        + -n 不打印修改结果
-
-+ `nslookup`
-    + `nslookup <domain name> <DNS IP>`
-
-
-+ chmod+ 
-    + man chmod
-    + info chmod
-
-## help
-+ `man <cmd>`
-+ `info <cmd>`
 
 
 ## tree
@@ -88,21 +43,6 @@
 
 
 ## ref
-+ [cfonts](https://github.com/dominikwilkowski/cfonts)
-
-
-
-
-
-
-
-
-
-
-
-
-
-## ref
 + [超全的 Linux Shell 文本处理工具集锦](https://zhuanlan.zhihu.com/p/265869157)
 + [bash 教程](https://wangdoc.com/bash/intro.html)
 
@@ -117,3 +57,6 @@
 + [test](https://www.runoob.com/linux/linux-shell-test.html)
 
 + [Linux wget 命令用法详解](https://www.jianshu.com/p/59bb131bc2ab)
+
+<!-- fun -->
++ [cfonts](https://github.com/dominikwilkowski/cfonts)

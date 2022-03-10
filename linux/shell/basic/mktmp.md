@@ -15,6 +15,8 @@
         + `mktemp -p /home/fan/`
     + `-t` 指定临时文件的文件名模板
         + `mktemp -t mytemp.XXXXXXX` 六个随机
+    + `-q` 错误时不显示信息
+    + `-u` mktemp结束前删除
 
 + `trap 'rm -f "$TMPFILE"' EXIT` 脚本遇到 EXIT信号时执行 `rm -f`
     + 加在脚本开头

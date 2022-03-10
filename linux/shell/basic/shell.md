@@ -24,6 +24,20 @@
 
 + `history`
     
++ `whoami`
++ `which <cmd>`
+    + PATH指定的路径中搜索<cmd>的位置，返回第一个结果
++ `whereis <cmd>`
+    + 程序名搜索
+    + -b  只搜索二进制
+    + -m  man说明文件
+    + -s  源代码文件
+<!-- help -->
++ `<cmd> --help`
++ `man <cmd>`
++ `info <cmd>`
+<!-- comman -->
++ `ln -s <source file>  <link file>` 软链接
 
 ## 转义换行(escape)
 
