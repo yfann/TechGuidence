@@ -121,3 +121,6 @@ k3s server \
 <!-- practice -->
 + [Install HA k3s cluster with external etcd and virtual IP](https://github.com/pmvrolijk/k3s-cluster)
 + [PyratLabs/ansible-role-k3s](https://github.com/PyratLabs/ansible-role-k3s)
+
+<!-- release -->
++ [k3s release](https://github.com/k3s-io/k3s/releases)

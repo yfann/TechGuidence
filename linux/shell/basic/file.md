@@ -15,11 +15,16 @@ done <peptides.txt
 
 + `sed -n -e '/\[all\]/=' tmp_k3s_inventory.ini`
 
-+ `basename` 取文件名
+
 
 + `if [ ! -d "$path" ]; then ` 文件夹不存在
 
 + `if [ -f "$FILE" ]; then` 文件存在
+
+## tips
+
++ ` basename /Users/fan/china-op/tmp.sh` 取文件名
++ ` dirname /Users/fan/china-op/tmp.sh` 取路径
 
 ## ref
 

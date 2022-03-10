@@ -10,7 +10,10 @@
 + `docker run -d -p 8081:8081 --name nexus -v nexus-data:/nexus-data sonatype/nexus3`
     + `mkdir /some/dir/nexus-data && chown -R 200 /some/dir/nexus-data`
 
+<!-- curl upload -->
++ `curl -# -v -F raw.directory=k3s -F raw.asset1=@$K3S_PATH/$i -F raw.asset1.filename=k3s -u $NEXUS_USR:$NEXUS_KEY http://$NEXUS_IP:$KO_REPO_PORT/service/rest/v1/components?repository=binary-k8s-raw`
 
++ `curl -# -v -F file=@$1 -u $NEXUS_USR:$NEXUS_KEY http://$NEXUS_IP:$KO_REPO_PORT/service/rest/v1/components?repository=$2`
 
 ## tips
 + admin/admin123

@@ -3,6 +3,7 @@
 + `cmd + del`
 + `cmd + shift + .`显示/隐藏文件
 + `cmd + shift + 4` range截屏到桌面,或空格
++ `option + cmd + v` 剪切复制
 
 ## shortcut
 + `option + cmd + esc` 可以结束进程
@@ -17,6 +18,7 @@
 ## 截图
 + `cmd + shift + 3` fullscreen 到桌面　
 + `cmd + shift + ctrl + 3` fullscreen 到剪贴板　　
+
 + Command-Shift-4 截取所选屏幕区域到一个文件，或按空格键仅捕捉一个窗口　　
 + Command-Shift-Control-4 截取所选屏幕区域到剪贴板，或按空格键仅捕捉一个窗
 

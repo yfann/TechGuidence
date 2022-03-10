@@ -26,6 +26,10 @@
 + `awk -F ':' '{if ($1 > "m") print $1; else print "---"}' ...`
 
 
+## practice
+<!-- awk中使用变量 -->
++ `awk -F ':' -v a="$a" '$1==a { print $2 }' ./china-op/raw/nexus-mapping`
+
 ## 内置变量
 
 + `$0` 当前行
