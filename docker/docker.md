@@ -69,7 +69,9 @@
 + `docker pull <docker id>/<img name>:tag`
 + `docker logout`
 
-
+<!-- service -->
++ `service docker start`
++ `systemctl status docker.service`
 
 ## Mac
 + `brew install docker`

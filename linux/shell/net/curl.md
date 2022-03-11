@@ -28,6 +28,15 @@
 + `-#` --progress-bar
 
 
+## practice
+```sh
+  while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' localhost:9000)" != "200" ]]
+  do
+    echo "connecting nexus ..."
+    sleep 5
+  done
+```
+
 ## ref
 + [curl 的用法指南](https://www.ruanyifeng.com/blog/2019/09/curl-reference.html)
 + [curl 命令详解](https://www.jianshu.com/p/07c4dddae43a)
