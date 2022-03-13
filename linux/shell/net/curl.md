@@ -27,9 +27,13 @@
 
 + `-#` --progress-bar
 
++ `-w [format]`
+    + `--write-out`
 
 ## practice
+
 ```sh
+# waiting url return 200
   while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' localhost:9000)" != "200" ]]
   do
     echo "connecting nexus ..."
@@ -42,7 +46,7 @@
 + [curl 命令详解](https://www.jianshu.com/p/07c4dddae43a)
 + [grpcurl](https://blog.frognew.com/2020/04/grpcurl.html)
     + 访问gRPC
-
++ [Write out](https://everything.curl.dev/usingcurl/verbose/writeout)
 <!-- issue -->
 + [使用curl进行https通信遇到的问题总结](https://codeantenna.com/a/VVQP6e8H8G)
 
