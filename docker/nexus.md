@@ -14,7 +14,7 @@
 + turn off proxy `cat /etc/default/docker`
     + `sudo mv /etc/default/docker /etc/default/docker-bak`
 
-+ etc/docker/daemon.json
++ /etc/docker/daemon.json
 ```json
 {
   "insecure-registries" : ["myregistrydomain.com:5000"]
