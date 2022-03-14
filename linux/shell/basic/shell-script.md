@@ -10,7 +10,6 @@
 
 + `export PATH=$PATH:~/bin` 脚本放入bin中，任何目录中都可以执行脚本
 
-
 + `env -i /bin/sh` 启动一个不带环境变量的shell
 
 + run shell
@@ -124,7 +123,7 @@ echo `expr index "$string" io`  # 输出 4
 
 ## conf
 
-+ `. /path/to/some.config`
++ `. /path/to/some.config` 导入键值对配置文件
 
 ## ref
 

@@ -1,19 +1,5 @@
 
 
-## cmd
-<!-- 目录切换 -->
-+ `cd -`回到之前目录
-    + `cd $OLDPWD`
-+ `dirs` 目录栈，栈顶当前目录
-    + `-p` 每行一条
-    + `-v` 显示index
-    + `-c` 清空目录栈
-+ `pushd <path>` 入栈,栈顶变化,当前目录变化
-    + `pushd` 栈顶，次顶交行
-    + `pushd +n` 栈中第n个元素到栈顶
-+ `popd` 
-
-
 
 ## tree
 
@@ -25,16 +11,6 @@
 + `cd /proc/<pid>/fd` 查看进程日志
 + `nohup java -jar -Dspring.profiles.active=prod xxx.jar &`
     + 运行jar
-
-
-
-## 命令组合
-
-+ `xargs`
-    + stdin,|,文件的输出 转为命令的参数
-        + somecommand |xargs <-item>  command
-    + `echo "nameXnameXnameXname" | xargs -dX`
-    + `cat test.txt | xargs -n3`
 
 
 ## others

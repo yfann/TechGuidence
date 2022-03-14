@@ -18,8 +18,6 @@
 + `type -a <cmd>` 查看命令位置
     + `type <cmd>` 查看是否为内部命令
 
-+ `man bash` 帮助
-
 + `cd -` 返回上一次目录
 
 + `history`
@@ -32,15 +30,27 @@
     + -b  只搜索二进制
     + -m  man说明文件
     + -s  源代码文件
+
 <!-- help -->
 + `<cmd> --help`
 + `man <cmd>`
 + `info <cmd>`
+
 <!-- comman -->
 + `ln -s <source file>  <link file>` 软链接
 
-## 转义换行(escape)
 
+<!-- 目录切换 -->
++ `dirs` 目录栈，栈顶当前目录
+    + `-p` 每行一条
+    + `-v` 显示index
+    + `-c` 清空目录栈
++ `pushd <path>` 入栈,栈顶变化,当前目录变化
+    + `pushd` 栈顶，次顶交行
+    + `pushd +n` 栈中第n个元素到栈顶
++ `popd` 
+
+## 转义换行(escape)
 + `echo -e "aa\nbb"` -e识别转义
 + `printf "aasdf\nbb\n"` 结尾不会自动加换行
 
