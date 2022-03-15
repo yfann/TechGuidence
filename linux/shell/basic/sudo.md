@@ -1,6 +1,13 @@
 ## sudo
 
 
+## user
+
++ `sudo adduser <user name>` 创建用户
++ `sudo passwd <user name>` 设置密码
+
++ `su <user name>` 切换用户
+
 ## 脚本权限
 + `ls -l xxx.sh`
     - `-rw-r--r--` owner group world/other
@@ -33,3 +40,4 @@
 ## ref
 + [Command not found when using sudo](https://stackoverflow.com/questions/12996397/command-not-found-when-using-sudo)
 + [如何解决sudo命令找不到环境变量的问题](http://ghoulich.xninja.org/2017/05/09/how-to-find-env-variables-when-exec-sudo-commands/)
++ [Ubuntu下创建非root用户但赋予sudo权限](https://www.jianshu.com/p/99118b7da846)

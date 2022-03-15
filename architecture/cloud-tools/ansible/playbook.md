@@ -16,17 +16,7 @@
         + tasks
         + handlers
 
-## roles
 
-+ 可复用的playbook
-+ `dependencies:`
-    + <project-top-level-directory>/roles/requirements.yml
-+ Ansible Galaxy 
-    + is an open-source repository of Ansible roles
-    + `ansible-galaxy role init --init-path playbooks/roles web`
-    + `ansible-galaxy install oefenweb.ntp`
-        + `ansible-galaxy remove oefenweb.ntp`
-    + `ansible-galaxy list`
 
 ## 条件语句
 
@@ -196,7 +186,7 @@ tasks:
 + precedence of vars
 
 + `become: true`
-    + run as ot
+    + run as root
 
 + `delegate_to: localhost`
     + 可以创建remotehost to localhost的fact
