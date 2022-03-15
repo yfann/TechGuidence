@@ -1,5 +1,6 @@
 ## cmd
 + `vi <file>`新建文件，进入命令模式
+    + `vi +36 foo.c` line number
 
 + `:`
     - `$` 光标到文件底部
@@ -30,3 +31,4 @@
 ## ref
 + [vi/vim](https://www.runoob.com/linux/linux-vim.html)
 + [vi](http://c.biancheng.net/view/558.html)
++ [ARCHIVED: In vi, how do I go to a particular line or word in a file?](https://kb.iu.edu/d/adxw)
