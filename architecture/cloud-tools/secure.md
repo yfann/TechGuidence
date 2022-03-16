@@ -46,6 +46,7 @@
 
 + windows command:`ssh -i ...` 
     - too open issue(需要更改key文件的权限为只有自己)
+        + ` chmod 600 ./xxx.pem`
     - using git bash instead
     - using putty instead
 
