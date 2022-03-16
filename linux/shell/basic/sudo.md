@@ -11,12 +11,19 @@
 
 + `sudo adduser <user name>` 创建用户
 + `sudo passwd <user name>` 设置密码
-+ `visudo <user name> ALL=(ALL) ALL`
-    + first ALL: 允许使用sudo的主机
-    + second ALL: 使用sudo的身份
-    + third ALL: sudo允许执行的命令
-    + `test ALL =(root)/usr/sbin/useradd`
-        + test任意主机登录，以root身份执行useradd命令
++ `visudo`
+```ini
+<user name> ALL=(ALL) ALL
+....
+<user name> ALL=(ALL:ALL) NOPASSWD: ALL
+; + first ALL: 允许使用sudo的主机
+; + second ALL: 使用sudo的身份
+; + third ALL: sudo允许执行的命令
+```
+
++ `test ALL =(root)/usr/sbin/useradd`
+    + test任意主机登录，以root身份执行useradd命令
+
 + `su <user name>` 切换用户
 
 + `sudo su` 切换到root
