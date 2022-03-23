@@ -56,6 +56,15 @@
     + chmod 600 ./xxx.pem
         + xxx.pem should not be accessed by others
 
++ disconnect issue
+```sh
+
+# $HOME/.ssh/config 
+
+TCPKeepAlive yes
+ServerAliveInterval 30
+```
+
 ## ref
 
 + [SSH原理与运用（一）：远程登录](http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html)
