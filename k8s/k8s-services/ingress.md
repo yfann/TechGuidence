@@ -51,6 +51,7 @@
 + [ingress](https://feisky.gitbooks.io/kubernetes/content/concepts/ingress.html)
 + [Ingress k8s](https://kubernetes.io/zh/docs/concepts/services-networking/ingress/)
 + [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/user-guide/multiple-ingress/)
++ [Ingress Controllers：Kubernetes 的瑞士军刀](https://www.kubernetes.org.cn/9840.html)
 
 <!-- deploy nginx-ingress controller -->
 + [Installation Guide](https://kubernetes.github.io/ingress-nginx/deploy/)

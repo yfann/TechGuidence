@@ -2,6 +2,8 @@
 
 ## cmd
 
++ `kubectl cluster-info dump` overall health of the cluster
+
 + `kubectl version --short`
 + `kubectl cluster-info`
 + `kubectl get componentstatus`
@@ -27,3 +29,5 @@
 
 ## ref
 + [Debug Running Pods](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-running-pod/)
+
++ [Troubleshoot Clusters](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)
