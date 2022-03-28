@@ -13,6 +13,8 @@
 
 + 脚本检查后，priority +/- weight,重新比较priority,如果backup比masterpriority高，则发生切换
 
++ VIP
+
 ## ref
 
 <!-- haproxy keepalived -->

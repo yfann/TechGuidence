@@ -5,7 +5,7 @@
 
 + 一个框架用于创建销毁容器时动态配置网络资源
     + 为容器分配IP,加入网络
-
+    + 注容器的网络连接以及当容器删除时移除被分配的网络资源
 
 + instances：
     + Flannel
@@ -112,5 +112,6 @@
 ## ref
 
 + [Kubernetes CNI网络最强对比：Flannel、Calico、Canal和Weave](https://segmentfault.com/a/1190000018698263)
-
++ [CNI 这么多，怎么选？| 容器网络系列第1期](https://www.kubernetes.org.cn/9843.html)
 + [VXLAN 基础教程：VXLAN 协议原理介绍](https://zhuanlan.zhihu.com/p/130277008)
++ [云原生钻石课程 | 第6课：Kubernetes网络架构原理深度剖析（上）](https://zhuanlan.zhihu.com/p/487232482)
