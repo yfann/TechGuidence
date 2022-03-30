@@ -82,3 +82,5 @@ Command-Option-esc 打开“强制退出”窗口，如果有应用程序无响�
 + [程序员如何优雅地使用 macOS](https://www.zhihu.com/question/20873070)
 + [MAC 设置环境变量PATH 和 查看PATH](https://www.jianshu.com/p/acb1f062a925)
 + [MacBook——多屏幕使用心得](https://www.jianshu.com/p/b581642feb93)
+
++ [修改shortcut]()
