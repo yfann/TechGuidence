@@ -65,7 +65,9 @@ $ helm fetch gkarthiks/prometheus-kafka-exporter
     - `helm package <chart name>`
     - `helm lint <chart name>`
 
-
+<!-- package -->
++ `helm dependency update  <folder>`
++ `helm package <folder>`
 
 ## flags
 
