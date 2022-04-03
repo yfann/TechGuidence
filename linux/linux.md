@@ -43,6 +43,7 @@
 <!-- 概念 -->
 + [Linux 环境隔离机制 -- Linux Namespace](https://zhuanlan.zhihu.com/p/47571649)
 + [linux基础与shell编程](https://www.kancloud.cn/digest/linux-world/145297)
++ [Linux 系统目录结构](https://www.runoob.com/linux/linux-system-contents.html)
 
 <!-- others -->
 + [Linux版本知多少](https://zhuanlan.zhihu.com/p/151849085)

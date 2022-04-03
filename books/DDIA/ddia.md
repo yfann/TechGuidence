@@ -89,9 +89,28 @@
 + 不同进程直接不共享内存，传递数据要编码
     + 内存
 
+## 分布式数据
+
++ 可伸缩
+    + scale up(vertical scaling)
+        + shared-memory architecture
+        + shared-disk architecture
+            + NAS
+    + scale out(horizontal scaling)
+        + shared-nothing architecture
+
++ 高可用
+
++ 低延迟
+
 ## tips
 + SLO, service level objectives
 + SLA, service level agreements
++ Replication vs Partitioning
+    + Replication
+        + 在几个不同的节点上保存数据的相同副本，提供冗余
+    + Partitioning
+        + 大型数据库拆分为不同子集(partition,分区),不同分区指派给不同节点(sharding,分片)
 
 ## ref
 + [DDIA](http://ddia.vonng.com/#/ch2)
