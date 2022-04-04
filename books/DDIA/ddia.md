@@ -108,27 +108,23 @@
     + 如何保证数据落到所有副本上
 
 <!-- 复制算法 -->
-+ single leader
-    + master/slave
-    + write->leader---replication log/change stream-->follower
-        + 只有leader接收写操作
-    + 同步更新folloewr/异步更新follower
-        + semi-synchronous（半同步）
-            + leader写入，至少一个follower同步，其他follower异步
-    + 添加新的follower
-        1. 获取leader某时刻的一致性快照
-        2. 快照复制到新的follower
-        3. new follower连接到leader,拉取快照之后的所有数据变更
-        4. follower处理完快照之后的基于数据变更后，它caught up leader
-    + 故障切换(failover)
-        + follower提升为leader
-        + Timeout确认leader失效
-        + old leader从故障恢复时，重新加入集群，new leader可能会有写冲突
-            + split brain
-+ multi leader
-
-+ leaderlesss
-
+<!-- single leader -->
++ master/slave
++ write->leader---replication log/change stream-->follower
+    + 只有leader接收写操作
++ 同步更新folloewr/异步更新follower
+    + semi-synchronous（半同步）
+        + leader写入，至少一个follower同步，其他follower异步
++ 添加新的follower
+    1. 获取leader某时刻的一致性快照
+    2. 快照复制到新的follower
+    3. new follower连接到leader,拉取快照之后的所有数据变更
+    4. follower处理完快照之后的基于数据变更后，它caught up leader
++ 故障切换(failover)
+    + follower提升为leader
+    + Timeout确认leader失效
+    + old leader从故障恢复时，重新加入集群，new leader可能会有写冲突
+        + split brain
 + 复制日志的实现
     + 方式1. 每个写请求(statement)发给其他follower
         + 可能有不确定值
@@ -161,6 +157,32 @@
                 + 保证: 如果一系列写入按某个顺序发生，那么任何人读取这些写入时，也会看见它们以同样的顺序出现
                 + partitioned或sharded会遇到此类问题
                 + 确保任何因果相关的写入都写入相同的partition
+
+<!-- multi leader -->
++ 有多个数据中心
+    + 离线的客户端同步
+    + 协同编辑同一个文档
++ 写冲突
+    + solution
+        + 都写入同一个leader
+        + 收敛（convergent）
+            + 最后写入胜利（LWW, last write wins）
+                + 每个写入一个时间戳，最大的最为胜利者
+            + 合并冲突(Git)
++ 多主复制拓扑
+    + circular topology
+    + star topology
+    + all-to-all topology
+<!-- leaderlesss -->
+
++ 当故障节点重新接入集群时，可能读到旧值
+    + 读请求可以并行的发送到多个节点，根据版本号确定哪个更新
+    + 故障节点赶上错过的写入
+        + 读修复（Read repair）
+        + 反熵过程（Anti-entropy process）
+
++ 读写法定人数（quorum）
+    + w + r > n
 
 ## tips
 + SLO, service level objectives
