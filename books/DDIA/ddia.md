@@ -103,6 +103,54 @@
 
 + 低延迟
 
+## 复制
++ replica（副本）
+    + 如何保证数据落到所有副本上
+<!-- 复制算法 -->
++ single leader
+    + master/slave
+    + write->leader---replication log/change stream-->follower
+        + 只有leader接收写操作
+    + semi-synchronous（半同步）
+        + leader写入，至少一个follower同步，其他follower异步
+    + 添加新的follower
+        1. 获取leader某时刻的一致性快照
+        2. 快照复制到新的follower
+        3. new follower连接到leader,拉取快照之后的所有数据变更
+        4. follower处理完快照之后的基于数据变更后，它caught up leader
+    + 故障切换(failover)
+        + follower提升为leader
+        + Timeout确认leader失效
+        + old leader从故障恢复时，重新加入集群，new leader可能会有写冲突
+            + split brain
++ multi leader
+
++ leaderlesss
+
++ 复制日志的实现
+    + 方式1. 每个写请求(statement)发给其他follower
+        + 可能有不确定值
+            + NOW()
+            + 自增id
+    + 方式2. 传输预写式日志（WAL）
+        + 写操作通常追加到日志中
+            + SSTables
+            + B树
+    + 方式3. 逻辑日志复制
+    + 方式4. 基于触发器的复制
+
++ 复制延迟
+    + eventual consistency
+    + replication lag（复制延迟
+    + issues
+        + read-after-write consistency/read-your-writes consistency
+            + read leader
+            + 客户端记住最近一次写入的时间戳，和follower比较
+                + 逻辑时间戳
+                    + 日志序列号
+        + 单调读
+            + moving backward in time
+
 ## tips
 + SLO, service level objectives
 + SLA, service level agreements
@@ -112,6 +160,10 @@
     + Partitioning
         + 大型数据库拆分为不同子集(partition,分区),不同分区指派给不同节点(sharding,分片)
 
++ eventual consistency
+    + read-your-rites
+    + monotonic read
++ 复制的一致性与 共识（consensus
 ## ref
 + [DDIA](http://ddia.vonng.com/#/ch2)
 
