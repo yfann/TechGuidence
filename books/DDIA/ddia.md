@@ -106,13 +106,15 @@
 ## 复制
 + replica（副本）
     + 如何保证数据落到所有副本上
+
 <!-- 复制算法 -->
 + single leader
     + master/slave
     + write->leader---replication log/change stream-->follower
         + 只有leader接收写操作
-    + semi-synchronous（半同步）
-        + leader写入，至少一个follower同步，其他follower异步
+    + 同步更新folloewr/异步更新follower
+        + semi-synchronous（半同步）
+            + leader写入，至少一个follower同步，其他follower异步
     + 添加新的follower
         1. 获取leader某时刻的一致性快照
         2. 快照复制到新的follower
@@ -142,14 +144,23 @@
 + 复制延迟
     + eventual consistency
     + replication lag（复制延迟
-    + issues
-        + read-after-write consistency/read-your-writes consistency
-            + read leader
-            + 客户端记住最近一次写入的时间戳，和follower比较
-                + 逻辑时间戳
-                    + 日志序列号
-        + 单调读
-            + moving backward in time
+    + issues(读异步follower时的问题)
+        + 读不到新值
+            + solution: read-after-write consistency/read-your-writes consistency
+                + read leader
+                + 客户端记住最近一次写入的时间戳，和follower比较, 只读有最新记录的follower
+                    + 逻辑时间戳
+                        + 日志序列号
+        + moving backward in time(client读取多次时，可能读到新值，也可能读到旧值)
+            + solution: 单调读(Monotonic reads)
+                + 这是一个比 强一致性（strong consistency） 更弱，但比 最终一致性（eventual consistency） 更强的保证
+                + 如果先前读取到较新的数据，后续读取不会得到更旧的数据
+                + 保证client总是从同一个replica读取，根据用户ID散列选择replica
+        + 不同Partition直接由于延迟不同，导致事件发生顺序混乱
+            + solution: 一致前缀读（consistent prefix reads）
+                + 保证: 如果一系列写入按某个顺序发生，那么任何人读取这些写入时，也会看见它们以同样的顺序出现
+                + partitioned或sharded会遇到此类问题
+                + 确保任何因果相关的写入都写入相同的partition
 
 ## tips
 + SLO, service level objectives
