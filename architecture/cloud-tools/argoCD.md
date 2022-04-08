@@ -13,6 +13,11 @@
 + `argocd cluster add CONTEXT [flags]`
 
 
+## tips
+
++ hard refresh
+    + 加载更新过的helm
+
 
 ## ref
 

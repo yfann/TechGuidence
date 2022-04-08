@@ -19,6 +19,8 @@
     + `kubectl get pods -o wide`
 
 + `kubectl run d –image alpine –command — /bin/sleep 1d`
+<!-- pod -->
++ `kubectl get pod {podname} -n {namespace} -o yaml | kubectl replace --force -f -`
 
 ## tips
 
@@ -29,5 +31,6 @@
 
 ## ref
 + [Debug Running Pods](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-running-pod/)
++ [重启 Kubernetes Pod的几种方式](https://segmentfault.com/a/1190000020675199)
 
 + [Troubleshoot Clusters](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/)

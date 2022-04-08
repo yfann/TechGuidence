@@ -48,3 +48,4 @@
 + [OAuth 2.0 和 OpenID Connect 的基本原理和区别（干货）](https://blog.csdn.net/qq_24550639/article/details/111089296)
 + [SSO的通用标准OpenID Connect](https://developer.aliyun.com/article/780006)
 + [安全声明标记语言SAML2.0初探](https://developer.aliyun.com/article/779947?spm=a2c6h.12873581.0.dArticle779947.a569733brFatso)
++ [Help! I’m Stuck in a Redirect Loop!](https://www.scottbrady91.com/openid-connect/help-im-stuck-in-a-redirect-loop)
