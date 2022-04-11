@@ -10,6 +10,7 @@
 + Alipine
     + 面向安全的轻型 Linux 发行版
     + 包含apk(自己的包管理)
++ distroless
 
 ## alpine
 
@@ -46,5 +47,6 @@
 + [如何选择Docker基础镜像](https://blog.csdn.net/nklinsirui/article/details/80967677)
 + [Docker学习：Image的本地存储结构](https://segmentfault.com/a/1190000017579626)
 + [apk hub](https://pkgs.alpinelinux.org/packages)
++ [使用以语言为中心的容器基础镜像 distroless](https://zhuanlan.zhihu.com/p/421204096)
 
 
