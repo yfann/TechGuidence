@@ -53,12 +53,42 @@
     + 读取标准输出到文件
     + `date | tee >test.txt`
 
+<!-- 读取文件 -->
+```sh
+
+while read p; do
+  echo "$p"
+done <peptides.txt
+```
+
++ `if [ ! -z "$line" ]` 判断非空行
+
++ `grep -n "\[all\]" tmp_k3s_inventory.ini` 查询行号
+    + `grep -n "xxx" str.txt | head -1` 获取第一个匹配的
+
++ `sed -n -e '/\[all\]/=' tmp_k3s_inventory.ini`
+
+
+
++ `if [ ! -d "$path" ]; then ` 文件夹不存在
+
++ `if [ -f "$FILE" ]; then` 文件存在
+
+
 ## copy files from a pod
 
 + `kubectl cp <default/POD_NAME:bin/FILE_NAME> </Users/username/FILE_NAME>`
     + `kb cp keycloak-0:opt/bitnami/keycloak/themes .`
 
 
+## tips
++ ` basename /Users/fan/china-op/tmp.sh` 取文件名
++ ` dirname /Users/fan/china-op/tmp.sh` 取路径
+
 ## ref
 
 + [Linux下各种查找命令（find, grep, which, whereis, locate）](https://blog.csdn.net/wzzfeitian/article/details/40985549)
+
++ [linux shell 查找某字符串 在文件的行数](https://blog.csdn.net/whatday/article/details/105066031)
++ [Linux shell 获得字符串所在行数及位置](https://segmentfault.com/a/1190000020110249)
++ [Check if a directory exists in Linux or Unix shell](https://www.cyberciti.biz/faq/check-if-a-directory-exists-in-linux-or-unix-shell/)

@@ -184,6 +184,36 @@
 + 读写法定人数（quorum）
     + w + r > n
 
+## 分区（partition/sharding）
+
+ + 偏斜(skew)
+    + 一些分区比其他分区有更多的数据或查询
+        + hot spot
+
++ 根据键的范围分区
++ 根据键的散列分区
+    + 一致性哈希(consistent hashing)
+        + partition boundaries
+
++ 根据次级索引分区
+    + document-based
+        + 文档分区索引/本地索引
+            + 分散/聚集(scatter/gather)
+                + 查询发送到所有分区，并合并所有返回的结果
+    + term-based
+        + 全局索引
+            + 特定的词在特定的分区
+                + 不需要 分散 / 收集 所有分区，客户端只需要向包含关键词的分区发出请求
+            + 写入速度慢且复杂
+                + 对全局次级索引的更新通常是异步的
++ 再平衡(rebalancing)
+    + 将负载从集群中的一个节点向另一个节点移动的过程
+        + 固定分区数量
+
++ 路由
+    + Zookeeper维护分区到节点的映射(包括key range的映射)
+    + 流言协议(gossip protocol)
+        + 传播集群状态变化       
 ## tips
 + SLO, service level objectives
 + SLA, service level agreements
@@ -197,6 +227,7 @@
     + read-your-rites
     + monotonic read
 + 复制的一致性与 共识（consensus
++ 大规模并行处理（MPP, Massively parallel processing）
 ## ref
 + [DDIA](http://ddia.vonng.com/#/ch2)
 

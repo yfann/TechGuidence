@@ -18,7 +18,6 @@
 + `type -a <cmd>` 查看命令位置
     + `type <cmd>` 查看是否为内部命令
 
-+ `cd -` 返回上一次目录
 
 + `history`
     
@@ -129,16 +128,7 @@ echo ${a}b
 + `$(ls $(pwd))`
 + `echo $((2 + 2))`
 
-## `--` vs `-`
 
-+ `command -[option][option]...`
-    + 有的option可以带arguments
-
-+ `--` 代表option的结束,`--`后面为arguments
-    + `grep -- -v file`
-        + `-v` 作为查询字符串而不是option
-
-+ An argument of - is equivalent to --
 
 
 ## Bang(!)命令

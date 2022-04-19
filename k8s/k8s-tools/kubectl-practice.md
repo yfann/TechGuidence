@@ -50,10 +50,10 @@ kubectl logs $pods
   + create secret from file
   
 ## 动态语句
-
-export VAULT_SA_NAME=$(kubectl -n default get sa vault-auth -o jsonpath="{.secrets[*]['name']}")
-export SA_JWT_TOKEN=$(kubectl -n default get secret $VAULT_SA_NAME -o jsonpath="{.data.token}" | base64 --decode; echo)
-export SA_CA_CRT=$(kubectl -n default get secret $VAULT_SA_NAME -o jsonpath="{.data['ca\.crt']}" | base64 --decode; echo)
+<!-- 变量赋值,jsonpath -->
++ `export VAULT_SA_NAME=$(kubectl -n default get sa vault-auth -o jsonpath="{.secrets[*]['name']}")`
++ `export SA_JWT_TOKEN=$(kubectl -n default get secret $VAULT_SA_NAME -o jsonpath="{.data.token}" | base64 --decode; echo)`
++ `export SA_CA_CRT=$(kubectl -n default get secret $VAULT_SA_NAME -o jsonpath="{.data['ca\.crt']}" | base64 --decode; echo)`
 
 vault write auth/kubernetes/config \
     token_reviewer_jwt="$SA_JWT_TOKEN" \
@@ -103,3 +103,9 @@ EOT
 + kubectl get rolebindings,clusterrolebindings \
   --all-namespaces  \
   -o custom-columns='KIND:kind,NAMESPACE:metadata.namespace,NAME:metadata.name,SERVICE_ACCOUNTS:subjects[?(@.kind=="ServiceAccount")].name' | grep "<SERVICE_ACCOUNT_NAME>"
+
+
+  ## ref
+
+  + [使用 kubectl 管理 Secret](https://kubernetes.io/zh/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
+  + [JSONPath 支持](https://kubernetes.io/zh/docs/reference/kubectl/jsonpath/)
