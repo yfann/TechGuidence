@@ -127,6 +127,7 @@
 + playbook中的task在多个hosts中同步执行
 
 ## ref
++ [ansible examples](https://github.com/ansible/ansible-examples)
 <!-- docs -->
 + [Ansible](https://ansible-tran.readthedocs.io/en/latest/docs/intro.html)
 + [User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html#getting-started)
