@@ -19,6 +19,8 @@
                 + 一次执行一个事务，没有并发
             + 非串行的(nonserializable),弱隔离级别
                 + 读已提交(Read committed)
+                    + 读数据库时只能读取已提交的数据(没有dirty reads)
+                    + 写数据库时，只能覆盖已写入的数据(没有dirty writes)
     + Durability
 
 + BASE
