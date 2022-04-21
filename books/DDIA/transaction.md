@@ -13,7 +13,12 @@
         + all-or-nothing
     + Consistency
     + Isolation(*)
-        + 并发问题(race conditions/竞争条件)
+        + 解决并发问题(race conditions/竞争条件)
+        + 隔离级别
+            + 可串行(serializable)
+                + 一次执行一个事务，没有并发
+            + 非串行的(nonserializable),弱隔离级别
+                + 读已提交(Read committed)
     + Durability
 
 + BASE
@@ -39,3 +44,6 @@
 
 ## tips
 + 没有原子性，错误处理就要复杂得多，缺乏隔离性，就会导致并发问题
++ 2PC, two-phase commit
++ Heisenbug(偶然发生的瞬时bug)
++ Bohrbugs(确定性问题)
