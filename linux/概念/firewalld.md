@@ -48,3 +48,4 @@
 ## ref
 
 + [Linux系统安全Centos 7的Firewalld防火墙基础](https://zhuanlan.zhihu.com/p/94101480)
++ [How To Set Up a Firewall Using FirewallD on CentOS 7](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7)
