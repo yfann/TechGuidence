@@ -1,9 +1,12 @@
-## top
+<!-- top list -->
 + `cmd + space` 搜索`ter`  **快速打开terminal**
-+ `cmd + del`
++ `cmd + backspace` 删除
 + `cmd + shift + .`显示/隐藏文件
 + `cmd + shift + 4` range截屏到桌面,或空格
 + `option + cmd + v` 剪切复制
++ `F11` 显示桌面
+
+
 
 ## shortcut
 + `option + cmd + esc` 可以结束进程
