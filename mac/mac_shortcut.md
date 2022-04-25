@@ -3,6 +3,7 @@
 + `cmd + backspace` 删除
 + `cmd + shift + .`显示/隐藏文件
 + `cmd + shift + 4` range截屏到桌面,或空格
+  + `cmd + shifit + ctrl + 4` 截屏到剪切板
 + `option + cmd + v` 剪切复制
 + `F11` 显示桌面
 

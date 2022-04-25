@@ -56,10 +56,10 @@
     + chmod 600 ./xxx.pem
         + xxx.pem should not be accessed by others
 
-+ disconnect issue
++ OpenVPN disconnect issue
 ```sh
 
-# $HOME/.ssh/config 
+# ~/.ssh/config 
 
 TCPKeepAlive yes
 ServerAliveInterval 30
