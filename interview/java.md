@@ -87,9 +87,23 @@
     + reactor
 
 
+## JVM
+
++ java code ---（前端编译器,javac）----> .class字节码 -----（运行期编译器,Just In Time Compiler,JIT）----> 机器码
+    + javac 将java语法糖转为字节码
+    + JIT 负责代码优化
+        + Graal
+            + 多语言jvm
+                + Truffle framework
+                    + python
+                    + R
+                    + javascript
+                + native image
 
 ## ref
 + [java new一个对象的过程中发生了什么](https://cloud.tencent.com/developer/article/1398010)
 + [太好了！总算有人把动态代理、CGlib、AOP都说清楚了](https://cloud.tencent.com/developer/article/1461796)
 
 + [深入分析ConcurrentHashMap的锁分段技术](https://blog.csdn.net/rickiyeat/article/details/77367017)
+<!-- jvm -->
++ [十分钟带你了解 Oracle 最新的 JVM 技術——GraalVM](https://zhuanlan.zhihu.com/p/106555993)
