@@ -10,3 +10,7 @@
 
 + [ansible.builtin.template ](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html)
     + [Template Designer Documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/)
+
++ [ansible.builtin.uri](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/uri_module.html)
+
++ [ansible.builtin.debug](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/debug_module.html)

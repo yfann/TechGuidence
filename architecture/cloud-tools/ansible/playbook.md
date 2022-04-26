@@ -207,6 +207,9 @@ tasks:
 ## ref
 
 + [Playbooks 介绍](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_intro.html)
++ [Ansible之Playbook](https://www.cnblogs.com/yanjieli/p/10969299.html)
+
+
 + [samples](https://github.com/ansible/ansible-examples)
 
 + [Patterns](https://ansible-tran.readthedocs.io/en/latest/docs/intro_patterns.html)
