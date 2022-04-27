@@ -8,6 +8,15 @@
 + `helm search repo <chart name>`
     + `helm search repo opensearch --versions`
 
+## helm install
++ `heml install`
+    -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
+    -  `helm install -f xx.yaml <chart name>`
+    -  `helm install --debug --dry-run <chart name>` debug
+
++ `helm install -f myvalues.yaml -f override.yaml  myredis ./redis`
+
+
 ## cmd
 + `<command> -h`
 
@@ -31,10 +40,7 @@
 
 
 <!-- CUD -->
-+ `heml install`
-    -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release
-    -  `helm install -f xx.yaml <chart name>`
-    -  `helm install --debug --dry-run <chart name>` debug
+
 
 + `helm delete <release name> -n <namespace>` 从集群中删除release
 
