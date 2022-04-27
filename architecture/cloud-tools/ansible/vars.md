@@ -36,6 +36,7 @@ bar=2
 ```
 
 ## register
+
 + 命令结果存储到一个变量中
 ```yaml
   tasks:
@@ -47,6 +48,12 @@ bar=2
 # result['stat'].mode
 # result.stat['mode']
 # result.stat.mode
+
+# result.json
+
+# 使用
+# password: "{{user_pwd.stdout}}"
+
 ```
 
 
@@ -89,6 +96,8 @@ password: magic
 
 ## tips
 
++ `loop: "{{clientIds}}"` 变量读取有时需要引号
+
 + `gather_facts: no`
     + 关闭facts获取
 
@@ -100,6 +109,7 @@ password: magic
 
 + vars_prompt
     + CLI输入的变量
+
 + Built-in vaariables
     + hostvars
         + 可以访问其他主机的变量
@@ -123,3 +133,4 @@ password: magic
 ## ref
 + [Magic variables](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html)
 + [facts](https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html)
++ [The Basics of Ansible Variables](https://www.mydailytutorials.com/the-basics-of-ansible-variables/)

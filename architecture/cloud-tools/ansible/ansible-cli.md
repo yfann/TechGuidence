@@ -5,7 +5,7 @@
     + `-t` tags
     + `-v` `-vv` `-vvv` 详细信息
 
-+ `ansible-playbook example.yml --tags "configuration,packages"`
++ `ansible-playbook example.yml -i xxx.ini --tags "configuration,packages" `
 
 
 
