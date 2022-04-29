@@ -28,6 +28,13 @@
 
 + `ctrl+b/f`翻页
 
+## practice
+
++ `:%s/<old string>/<new string>/g` replace
+
+
+
+
 ## ref
 + [vi/vim](https://www.runoob.com/linux/linux-vim.html)
 + [vi](http://c.biancheng.net/view/558.html)

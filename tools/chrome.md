@@ -1,4 +1,4 @@
-##Extension
+## Extension
 
 + Lucidchart Diagrams - Desktop
 
@@ -17,6 +17,12 @@
 + `$_` 取上次表达式的结果
 
 + `$0` 取选过的dom元素,$0~$4
+
+## shortcut
+<!-- MAC -->
++ `cmd + Y` history
++ `shift + cmd + backspace` 清除历史
++ `cmd + shift + N` 隐身模式
 
 ## Ref
 
