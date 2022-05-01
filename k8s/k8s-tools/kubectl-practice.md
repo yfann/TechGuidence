@@ -54,6 +54,7 @@ kubectl logs $pods
 + `export VAULT_SA_NAME=$(kubectl -n default get sa vault-auth -o jsonpath="{.secrets[*]['name']}")`
 + `export SA_JWT_TOKEN=$(kubectl -n default get secret $VAULT_SA_NAME -o jsonpath="{.data.token}" | base64 --decode; echo)`
 + `export SA_CA_CRT=$(kubectl -n default get secret $VAULT_SA_NAME -o jsonpath="{.data['ca\.crt']}" | base64 --decode; echo)`
+  + dot 转义
 
 vault write auth/kubernetes/config \
     token_reviewer_jwt="$SA_JWT_TOKEN" \
@@ -89,6 +90,12 @@ spec:
     limits.cpu: "2"
     limits.memory: 2Gi
 EOT
+
+
+## patch
+
++ `kubectl patch deployment/nginx-deployment --patch "$(cat patch.yaml)"`
+
 
 ## test service
 + `kb run nginx --image=nginx --replicas=2`

@@ -25,3 +25,6 @@
 + [Playbook 角色(Roles) 和 Include 语句](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks_roles.html)
 
 + [Ansible Galaxy](https://galaxy.ansible.com/)
+
+
++ [share vars between roles](https://stackoverflow.com/questions/29305335/how-can-i-persist-an-ansible-variable-across-ansible-roles)

@@ -131,6 +131,7 @@ password: magic
     + ansible_play_hosts
 
 ## ref
++ [Using Variables](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html)
 + [Magic variables](https://docs.ansible.com/ansible/latest/reference_appendices/special_variables.html)
 + [facts](https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html)
 + [The Basics of Ansible Variables](https://www.mydailytutorials.com/the-basics-of-ansible-variables/)

@@ -23,3 +23,5 @@
 
 + [Including and Importing](https://docs.ansible.com/ansible/2.4/playbooks_reuse_includes.html)
 + [ansible.builtin.include_tasks module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/include_tasks_module.html)
+
++ [lookup](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_lookup.html)
