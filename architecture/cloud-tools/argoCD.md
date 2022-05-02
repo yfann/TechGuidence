@@ -16,6 +16,20 @@
 + `argocd cluster add CONTEXT [flags]`
 
 
+## SSO
+
++ role mapping
+```yaml
+kind: ConfigMap
+metadata:
+  name: argocd-rbac-cm
+data:
+   #policy.default: role:admin # 为admin时，policy.csv会失效，登入用户都为admin
+   policy.csv: |
+     ...
+```
+
+
 ## tips
 
 + hard refresh
@@ -26,6 +40,8 @@
 
 + GitOps
     + 程序的交付方式
+
+
 
 ## ref
 
@@ -38,3 +54,4 @@
 <!-- details -->
 + [Resource Hoooks](https://argo-cd.readthedocs.io/en/stable/user-guide/resource_hooks/)
 + [Sync Options](https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/)
++ [RBAC Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/)
