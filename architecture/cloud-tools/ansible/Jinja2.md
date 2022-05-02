@@ -29,6 +29,12 @@
     + /usr/share/ansible/plugins/filter
     + filter_plugins
 
+## tips
+
++ 转义输出: 
+    + `{{ '{#' }}`
+    + `clientSecret: \$oidc.keycloak.clientSecret`
+
 ## ref
 
 + [Builtin Filters](https://jinja.palletsprojects.com/en/3.0.x/templates/#builtin-filters)

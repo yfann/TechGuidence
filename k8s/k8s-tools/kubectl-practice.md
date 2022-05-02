@@ -46,6 +46,8 @@ kubectl logs $pods
 + `kubectl get secrets prometheus-user-workload -o 'go-template={{index .data "prometheus.yaml.gz"}}'`
   + key中包含点的处理
 
++ `kubectl get secret argocd-secret  --output="jsonpath={.data['oidc\.keycloak\.clientSecret']}" -n argo | base64 -d`
+
 + kubectl create secret generic additional-scrape-configs --from-file=prometheus-additional.yaml --dry-run -oyaml > additional-scrape-configs.yaml
   + create secret from file
   
