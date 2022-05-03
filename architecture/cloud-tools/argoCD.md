@@ -24,9 +24,11 @@ kind: ConfigMap
 metadata:
   name: argocd-rbac-cm
 data:
-   #policy.default: role:admin # 为admin时，policy.csv会失效，登入用户都为admin
+   # 必须设置
+   policy.default: role:readonly # 为role:admin时，policy.csv会失效，登入用户都为admin
    policy.csv: |
-     ...
+     p, myrole, clusters, get, */*, allow
+     g, admin, role:myrole
 ```
 
 
