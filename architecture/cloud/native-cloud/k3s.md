@@ -80,6 +80,11 @@ k3s server \
 
 <!-- etcd -->
 
+## traefik
++ `kubectl describe deploy traefik -n kube-system`
+    + /config/traefik.toml
+        + /var/lib/rancher/k3s/server/manifests/traefik.yaml.
+        + `kubectl describe configmap traefik -n kube-system`
 
 ## tips
 
@@ -124,3 +129,14 @@ k3s server \
 
 <!-- release -->
 + [k3s release](https://github.com/k3s-io/k3s/releases)
+
+
+<!-- traefik -->
++ [在k3s中启用其自带ingress——traefik的web-ui](https://www.jianshu.com/p/0040e8bd6d1e)
++ [ Traefik Ingress controller](https://rancher.com/docs/k3s/latest/en/networking/)
+    + [helmchartconfig](https://rancher.com/docs/k3s/latest/en/helm/#customizing-packaged-components-with-helmchartconfig)
++ [traefik doc](https://doc.traefik.io/traefik/)
++ [traefik-helm-chart](https://github.com/traefik/traefik-helm-chart/tree/master/traefik)
+<!-- traefik samples -->
++ [Ingress with Traefik on K3s](https://itnext.io/ingress-with-treafik-on-k3s-53db6e751ed3)
++ [A Guide to K3s Ingress Using Traefik with NodePort](https://levelup.gitconnected.com/a-guide-to-k3s-ingress-using-traefik-with-nodeport-6eb29add0b4b)
