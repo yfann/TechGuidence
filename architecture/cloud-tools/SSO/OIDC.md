@@ -44,9 +44,18 @@
 + client credentials mode （back channel only）
     +  machine 和machine或者services之间的通信
 
+
 ## tips
 
 + public key 验证 JWT
+
++ ROPC(Oauth2 Resource Owner Password Credentials Grant)
+    + The keycloak flow is called Direct Access Grant
+    + `grant_type=password`
+
++ claim vs ID token vs access token
+    + ID token
+        + JWT(身份信息)
 
 ## ref
 + [OAuth 2.0 和 OpenID Connect 的基本原理和区别（干货）](https://blog.csdn.net/qq_24550639/article/details/111089296)

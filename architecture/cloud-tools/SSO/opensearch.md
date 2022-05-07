@@ -19,6 +19,21 @@ elasticsearch.password: '${kibana_pass}'
 opendistro_security.restapi.roles_enabled: ["all_access","security_rest_api_access"]
 ```
 
+## sso
+
++ 映射sso user的role到opensearch的role
+```yml
+openid_auth_domain:
+  http_authenticator:
+    config:
+      roles_key: roles
+      ...
+
+# keycloak 返回的ID token中需要有 roles:["admin"], client scope->roles->realm roles开启
+# 可以映射opensearch的admin role
+```
+
+
 ## tips
 
 + roles

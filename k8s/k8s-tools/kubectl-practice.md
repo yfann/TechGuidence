@@ -114,6 +114,17 @@ EOT
   -o custom-columns='KIND:kind,NAMESPACE:metadata.namespace,NAME:metadata.name,SERVICE_ACCOUNTS:subjects[?(@.kind=="ServiceAccount")].name' | grep "<SERVICE_ACCOUNT_NAME>"
 
 
+## init container
+
+```yaml
+# use init container to modify configmap
+  extraInitContainers:
+    - name: init
+      image: registry.kubeoperator.io:8083/bitnami/kubectl:latest
+      command: ['sh','-c','SECRET=$(kubectl -n keycloak get secret/opensearch-client-secret -o jsonpath="{.data.client_secret}" | base64 --decode; echo);kubectl get configmap/logging-opensearch-dashboards-config -n logging -o yaml | sed "s/{client_secret}/$SECRET/" | kubectl -n logging apply -f -']
+  
+```
+
   ## ref
 
   + [使用 kubectl 管理 Secret](https://kubernetes.io/zh/docs/tasks/configmap-secret/managing-secret-using-kubectl/)

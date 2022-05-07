@@ -6,8 +6,32 @@
     + SAML 2.0
 
 
+## Client Scope
 
++ expose claims 
+    + can exposes claims attributes at user level
++ onfigured at the realm level and they can be linked to clients
 
++ add roles to ID token
+    + CLient SCopes
+        + roles
+            + 开启`Add to ID token`
+            + mappers
+                + realm roles
+
+## debug
+
++ ROPC
+```sh
+access_token=curl \
+-d "client_id=ldap-app" -d "client_secret=password" \
+-d "username=jbrown" -d "password=password" \
+-d "grant_type=password" \
+-d "scope=openid" \
+https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/token | jq -r '.access_token'
+curl –header « Authorization: Bearer $access_token » \
+https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | jq 
+```
 
 ## tips
 
@@ -32,6 +56,7 @@
 <!-- documents -->
 + [keycloak documents](https://www.keycloak.org/documentation.html)
 + [Client Scope](https://wjw465150.gitbooks.io/keycloak-documentation/content/server_admin/topics/roles/client-scope.html)
++ [Using Client Scope with RedHat SSO Keycloak](https://www.janua.fr/using-client-scope-with-redhat-sso-keycloak/)
 
 <!-- api -->
 + [api documents](https://www.keycloak.org/docs-api/9.0/rest-api/index.html)
