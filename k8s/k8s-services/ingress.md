@@ -86,3 +86,6 @@
 
 <!-- issue -->
 + [ali ingress: connetion refused](https://segmentfault.com/a/1190000020751999)
+
+<!-- debug -->
++ [Ingress-Controller Logs and Events](https://kubernetes.github.io/ingress-nginx/troubleshooting/)
