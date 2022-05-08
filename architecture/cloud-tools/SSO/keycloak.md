@@ -68,3 +68,6 @@ https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | 
 <!-- sso -->
 + [Keycloak快速上手指南，只需10分钟即可接入Spring Boot/Vue前后端分离应用实现SSO单点登录](https://juejin.cn/post/6844903973741150215)
 + [Integrating Keycloak and ArgoCD](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/keycloak/)
+
+<!-- helm -->
++ [bitnami/keycloak](https://github.com/bitnami/charts/blob/master/bitnami/keycloak/values.yaml)
