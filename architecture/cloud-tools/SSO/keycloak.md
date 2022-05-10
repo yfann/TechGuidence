@@ -10,10 +10,10 @@
 
 + expose claims 
     + can exposes claims attributes at user level
-+ onfigured at the realm level and they can be linked to clients
++ configured at the realm level and they can be linked to clients
 
 + add roles to ID token
-    + CLient SCopes
+    + CLient Scopes
         + roles
             + 开启`Add to ID token`
             + mappers
@@ -48,6 +48,11 @@ https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | 
     + /auth/realms/{realm}
     + /auth/admin/realms/{realm}
 
++ hostname
+
++ hostname-path
+    + KC_HOSTNAME_PATH
+
 ## ref
 + [keycloak](https://www.keycloak.org/)
 + [Keycloak: Core concepts of open source identity and access management](https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management#)
@@ -64,6 +69,7 @@ https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | 
 + [API login and JWT token generation using Keycloak](https://developers.redhat.com/blog/2020/01/29/api-login-and-jwt-token-generation-using-keycloak#)
 + [How to get client secret from Keycloak using curl?](https://stackoverflow.com/questions/57265755/how-to-get-client-secret-from-keycloak-using-curl)
 + [Admin REST API](https://wjw465150.gitbooks.io/keycloak-documentation/content/server_development/topics/admin-rest-api.html)
++ [Keycloak REST API: Create a New User](https://www.appsdeveloperblog.com/keycloak-rest-api-create-a-new-user/)
 
 <!-- sso -->
 + [Keycloak快速上手指南，只需10分钟即可接入Spring Boot/Vue前后端分离应用实现SSO单点登录](https://juejin.cn/post/6844903973741150215)
