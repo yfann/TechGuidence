@@ -58,6 +58,14 @@ https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | 
 + hostname-path
     + KC_HOSTNAME_PATH
 
++ bitnami/keycloak doesn't `KEYCLOAK_FRONTEND_URL`
+```yml
+extraStartupArgs: |
+  -Dkeycloak.frontendUrl=https://mydomain.com/auth
+```
+
++ `PROXY_ADDRESS_FORWARDING`
+
 ## ref
 + [keycloak](https://www.keycloak.org/)
 + [Keycloak: Core concepts of open source identity and access management](https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management#)
@@ -67,6 +75,7 @@ https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | 
 + [keycloak documents](https://www.keycloak.org/documentation.html)
 + [Client Scope](https://wjw465150.gitbooks.io/keycloak-documentation/content/server_admin/topics/roles/client-scope.html)
 + [Using Client Scope with RedHat SSO Keycloak](https://www.janua.fr/using-client-scope-with-redhat-sso-keycloak/)
++ [Configuring the Subsystem](https://wjw465150.gitbooks.io/keycloak-documentation/content/getting_started/topics/secure-jboss-app/subsystem.html)
 
 <!-- api -->
 + [api documents](https://www.keycloak.org/docs-api/9.0/rest-api/index.html)
@@ -82,3 +91,4 @@ https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | 
 
 <!-- helm -->
 + [bitnami/keycloak](https://github.com/bitnami/charts/blob/master/bitnami/keycloak/values.yaml)
++ [bitnami env](https://github.com/bitnami/bitnami-docker-keycloak/blob/master/16/debian-10/rootfs/opt/bitnami/scripts/keycloak-env.sh#L23-L73)
