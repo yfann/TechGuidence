@@ -33,6 +33,11 @@ curl –header « Authorization: Bearer $access_token » \
 https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | jq 
 ```
 
+## issues
+
++ type=CODE_TO_TOKEN_ERROR
+    + secret 没有写正确(base64编码或解码)
+
 ## tips
 
 + Keycloak acts as an identity broker between Argo CD and OpenShift.

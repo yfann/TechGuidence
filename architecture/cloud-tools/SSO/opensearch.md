@@ -41,6 +41,11 @@ openid_auth_domain:
 
 + `roles_key` use JWT roles
 
++ 循环跳转时
+  + dashoard没有配置成功
+    + secret不需要base64编码
+  + master 的security没生效
+
 ## ref
 <!-- kibana -->
 + [Read only mode](https://docs.search-guard.com/latest/kibana-read-only)
