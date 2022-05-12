@@ -30,6 +30,8 @@
 + `-w [format]`
     + `--write-out`
 
++ `-s` silent
+
 ## practice
 
 ```sh
