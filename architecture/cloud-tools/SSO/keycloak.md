@@ -19,6 +19,26 @@
             + mappers
                 + realm roles
 
+
+## istio route
+
+```yml
+http:
+  - match:
+    - uri:
+        #必须加
+        prefix: /auth
+    - uri:
+        prefix: /keycloak
+    rewrite:
+      uri: /auth
+    route:
+    - destination:
+        host: keycloak-http
+        port:
+          number: 80
+```
+
 ## debug
 
 + ROPC

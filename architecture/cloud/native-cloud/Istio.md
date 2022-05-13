@@ -30,6 +30,7 @@
 ## istioctl
 
 + `istioctl install`
++ `istioctl analyze -n <name space> --kubeconfig k8s.yaml`
 <!-- profile -->
 + `istioctl profile list` configs can be accessable via istioctl
 + `istioctl profile dump <profile name>`
@@ -66,14 +67,22 @@
 
 + 定义cluster
 
+## match
++ regex
+```yaml
+  - match:
+    - uri:
+        regex: "/usrv(/.*)?"
+```
+
+
 ## tips
 
 + 注入istio-init container(创建pod时注入)
     + label `istio-injection=enabled ` on namespace
     + `kubectl label namespace default istio-injection=enabled --overwrite`
-    + `kubectl get namespace -L istio-injection
-    
-    `
+    + `kubectl get namespace -L istio-injection`
+
 +  external load balancer
 
 + edge router
