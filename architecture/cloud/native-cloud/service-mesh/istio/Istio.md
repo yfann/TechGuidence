@@ -103,7 +103,6 @@
 
 
 
-
 <!-- ingress -->
 + [Kubernetes Ingress with istio](https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/)
 + [istio Gateways](https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/)
@@ -117,3 +116,4 @@
 <!-- debug -->
 + [Traffic Management Problems](https://istio.io/latest/docs/ops/common-problems/network-issues/)
 + [在 Istio 中调试 503 错误 - DestinationRule双向tls](https://blog.csdn.net/weixin_34097242/article/details/91438981?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-91438981-blog-124611136.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-91438981-blog-124611136.pc_relevant_antiscanv2&utm_relevant_index=2)
++ [一个Istio请求的生命周期 - 从云提供商的SLB到istio-ingressgateway***网络***istio***](https://juejin.cn/post/6844903881634217998)

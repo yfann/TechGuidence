@@ -28,6 +28,13 @@
 
 + 管理集群内部service间的流量
 
++ 作用
+    + 流量管控
+    + 服务发现
+    + 负载均衡
+    + 链路追踪
+    + 灰度发布
+
 ## tips
 + Istio
 
@@ -43,13 +50,20 @@
     + Proxygen
     + Ribbon
 
++ Sidecarless Service Mesh
+    + eBPF
+
++ wasm 解决sidecar容器膨胀问题
+
 ## ref
 + [ServiceMesher](https://www.servicemesher.com/)
 + [什么是 Service Mesh](https://zhuanlan.zhihu.com/p/61901608)
 + [What's a service mesh? And why do I need one?](https://buoyant.io/what-is-a-service-mesh)
 + [The Service Mesh: What Every Software Engineer Needs to Know about the World's Most Over-Hyped Technology](https://buoyant.io/service-mesh-manifesto/)
 + [Pattern: Service Mesh](https://philcalcado.com/2017/08/03/pattern_service_mesh.html)
-
-
-<!-- details -->
 + [服务网格（Service Mesh ）教程](https://jimmysong.io/kubernetes-handbook/usecases/service-mesh.html)
+
+
+
++ [JAVA大军，开始把目光从spring cloud转向k8s甚至k8s+istio了么](https://www.zhihu.com/question/345497663/answer/2468261772)
++ [How eBPF will solve Service Mesh - Goodbye Sidecars](https://isovalent.com/blog/post/2021-12-08-ebpf-servicemesh)
