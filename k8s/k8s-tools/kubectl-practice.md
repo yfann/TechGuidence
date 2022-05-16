@@ -125,6 +125,14 @@ EOT
   
 ```
 
+## kubeconfig
+
++ `... --kubeconfig {{ kubeconfig }}`
+
+## jsonpath
+
++ `kubectl get svc istio-ingressgateway -n istio-system -o jsonpath="{.status.loadBalancer.ingress[0].ip}"`
+
   ## ref
 
   + [使用 kubectl 管理 Secret](https://kubernetes.io/zh/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
