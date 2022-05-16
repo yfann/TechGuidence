@@ -24,6 +24,11 @@
 + `value-*.yaml` 会覆盖 `values.yaml`内容
 
 
+
++ `{{ toYaml .Values.affinity | indent 8 }}`
+    + string to yaml
+
+
 ## ref
 + [Variables](https://helm.sh/docs/chart_template_guide/variables/#helm)
 + [Named Templates](https://helm.sh/docs/chart_template_guide/named_templates/)
