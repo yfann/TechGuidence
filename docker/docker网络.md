@@ -1,4 +1,4 @@
-## 模式
+## 单主机模式
 
 + host 模式
     + container和host共享network namespace
@@ -20,5 +20,15 @@
         + 另一端放在主机中，以vethxxx这样类似的名字命名，并将这个网络设备加入到docker0网桥中
             + `brctl show`
 
+## 多主机网络模式
++ overlay
++ macvlan
++ flannel
+
+## tips
++ sandbox 是namespace的一种实现
++ endpoint 连接sandbox和network
+
 ## ref
 + [ docker 网络四种实现](https://zhuanlan.zhihu.com/p/378379821)
++ [Docker的网络概念与网络模式](https://zhuanlan.zhihu.com/p/82735394)

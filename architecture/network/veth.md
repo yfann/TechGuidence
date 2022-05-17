@@ -1,7 +1,13 @@
 # veth
 + Virtual Ethernet
     + 虚拟一台网
-+ veth-pair 一对虚拟设备接口
++ veth-pair 
+    + 一对虚拟设备接口
+    + 虚拟网线
+
++ veth
+    + 虚拟网卡
+    
 + 成对出现
     + 一端连着协议栈
     + 一端彼此相连
