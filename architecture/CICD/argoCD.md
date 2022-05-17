@@ -57,3 +57,4 @@ data:
 + [Resource Hoooks](https://argo-cd.readthedocs.io/en/stable/user-guide/resource_hooks/)
 + [Sync Options](https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/)
 + [RBAC Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/)
++ [OIDC Configuration with DEX](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/user-management/index.md#configuring-a-custom-logout-url-for-your-oidc-provider)
