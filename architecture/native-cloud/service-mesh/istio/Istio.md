@@ -101,7 +101,8 @@
 + [Virtual Service](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
 + [Istio常见问题：默认重试2次、超时、503](https://blog.csdn.net/a605692769/article/details/115639976?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-115639976-blog-124611136.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-2-115639976-blog-124611136.pc_relevant_default&utm_relevant_index=5)
 
-
+<!-- tls -->
++ [Understanding TLS Configuration](https://istio.io/latest/docs/ops/configuration/traffic-management/tls-configuration/)
 
 <!-- ingress -->
 + [Kubernetes Ingress with istio](https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/)

@@ -112,3 +112,9 @@ extraStartupArgs: |
 <!-- helm -->
 + [bitnami/keycloak](https://github.com/bitnami/charts/blob/master/bitnami/keycloak/values.yaml)
 + [bitnami env](https://github.com/bitnami/bitnami-docker-keycloak/blob/master/16/debian-10/rootfs/opt/bitnami/scripts/keycloak-env.sh#L23-L73)
+
+<!-- tls -->
++ [TLS Encryption](https://github.com/bitnami/bitnami-docker-keycloak#tls-encryption)
++ [Setting up HTTPS/SSL](https://www.keycloak.org/docs/latest/server_installation/#_setting_up_ssl)
++ [tls helm config](https://github.com/bitnami/charts/blob/master/bitnami/keycloak/values.yaml)
++ [Configuring TLS](https://www.keycloak.org/server/enabletls)
