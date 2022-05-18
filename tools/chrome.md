@@ -24,6 +24,10 @@
 + `shift + cmd + backspace` 清除历史
 + `cmd + shift + N` 隐身模式
 
+
+## issues
++ 自签名页面打不开时,直接键盘输入`thisisunsafe`
+
 ## Ref
 
 + [console 使用](http://www.cnblogs.com/Wayou/p/chrome-console-tips-and-tricks.html)

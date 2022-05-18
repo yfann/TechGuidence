@@ -93,6 +93,12 @@
 
 + tlsMode: istio/
 
++ gateway
+```yaml
+tls:
+      httpsRedirect: true
+```
+
 ## ref
 + [Istio](https://istio.io/latest/zh/docs/examples/microservices-istio/setup-kubernetes-cluster/)
 + [Istio架构](https://istio.io/latest/zh/docs/ops/deployment/architecture/)
@@ -103,6 +109,8 @@
 
 <!-- tls -->
 + [Understanding TLS Configuration](https://istio.io/latest/docs/ops/configuration/traffic-management/tls-configuration/)
++ [VirtualService TLSRoute](https://istio.io/latest/docs/reference/config/networking/virtual-service/?ie=utf-8&hl=en&docs-search=tls#TLSRoute)
++ [Secure Gateways](https://istio.io/latest/docs/tasks/traffic-management/ingress/secure-ingress/)
 
 <!-- ingress -->
 + [Kubernetes Ingress with istio](https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/)
