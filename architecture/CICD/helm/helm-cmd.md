@@ -8,6 +8,8 @@
 + `helm search repo <chart name>`
     + `helm search repo opensearch --versions`
 
++ `helm install <chart name>  -f xx.yaml -f xxx.yaml -f ...` values可以覆盖
+
 ## helm install
 + `heml install`
     -  `helm install --name <release name> [<chart name>/<./chart directory>] --namespace [release name]` 安装一个软件包，产生一个release

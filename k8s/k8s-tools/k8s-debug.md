@@ -98,3 +98,4 @@ spec:
 ## ref
  + [Debug Running Pods](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-running-pod/)
  + [调试 Service](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/debug-service/)
+ + [如何优雅的在 Kubernetes Pod 内进行网络抓包 ](https://www.cnblogs.com/cheyunhua/p/16256434.html)
