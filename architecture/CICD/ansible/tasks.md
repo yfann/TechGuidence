@@ -8,13 +8,16 @@
     + apply可以添加tag等task的内置属性
 
 
+## uri
+
++ `validate_certs: false`
+
 ## ref
 + [block](https://docs.ansible.com/ansible/latest/user_guide/playbooks_blocks.html)
 
 + [ansible.builtin.template ](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html)
     + [Template Designer Documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/)
 
-+ [ansible.builtin.uri](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/uri_module.html)
 
 + [ansible.builtin.debug](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/debug_module.html)
 
@@ -28,3 +31,4 @@
 + [ansible.builtin.password](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/password_lookup.html)
 + [Ansible - Print message - debug](https://newbedev.com/ansible-print-message-debug-msg-line1-n-var2-n-line3-with-var3-var3)
 + [replace](https://www.linuxtechi.com/replace-strings-lines-with-ansible/)
++ [ansible.builtin.uri](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/uri_module.html)

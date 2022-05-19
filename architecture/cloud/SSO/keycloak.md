@@ -86,6 +86,15 @@ extraStartupArgs: |
 
 + `PROXY_ADDRESS_FORWARDING`
 
+
+## issues
+
++ istio gateway 开启tls时： `blocked:mixed-content`
+```yaml
+bitnami keycloak chart
+proxyAddressForwarding: true
+```
+
 ## ref
 + [keycloak](https://www.keycloak.org/)
 + [Keycloak: Core concepts of open source identity and access management](https://developers.redhat.com/blog/2019/12/11/keycloak-core-concepts-of-open-source-identity-and-access-management#)
