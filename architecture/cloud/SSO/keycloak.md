@@ -20,24 +20,7 @@
                 + realm roles
 
 
-## istio route
 
-```yml
-http:
-  - match:
-    - uri:
-        #必须加
-        prefix: /auth
-    - uri:
-        prefix: /keycloak
-    rewrite:
-      uri: /auth
-    route:
-    - destination:
-        host: keycloak-http
-        port:
-          number: 80
-```
 
 ## debug
 
@@ -52,11 +35,6 @@ https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/token | jq 
 curl –header « Authorization: Bearer $access_token » \
 https://localhost:8180/auth/realms/ldap-demo/protocol/openid-connect/userinfo | jq 
 ```
-
-## issues
-
-+ type=CODE_TO_TOKEN_ERROR
-    + secret 没有写正确(base64编码或解码)
 
 ## tips
 
@@ -91,9 +69,30 @@ extraStartupArgs: |
 
 + istio gateway 开启tls时： `blocked:mixed-content`
 ```yaml
-bitnami keycloak chart
+# bitnami keycloak chart values.yaml
 proxyAddressForwarding: true
 ```
+
++ keycloak 路由配置
+```yml
+http:
+  - match:
+    - uri:
+        #必须加
+        prefix: /auth
+    - uri:
+        prefix: /keycloak
+    rewrite:
+      uri: /auth
+    route:
+    - destination:
+        host: keycloak-http
+        port:
+          number: 80
+```
+
++ log中`type=CODE_TO_TOKEN_ERROR` 
+    + secret 没有写正确(base64编码或解码)
 
 ## ref
 + [keycloak](https://www.keycloak.org/)
@@ -105,6 +104,7 @@ proxyAddressForwarding: true
 + [Client Scope](https://wjw465150.gitbooks.io/keycloak-documentation/content/server_admin/topics/roles/client-scope.html)
 + [Using Client Scope with RedHat SSO Keycloak](https://www.janua.fr/using-client-scope-with-redhat-sso-keycloak/)
 + [Configuring the Subsystem](https://wjw465150.gitbooks.io/keycloak-documentation/content/getting_started/topics/secure-jboss-app/subsystem.html)
++ [Setting Up a load balancer or proxy](https://www.keycloak.org/docs/latest/server_installation/#_setting-up-a-load-balancer-or-proxy)
 
 <!-- api -->
 + [api documents](https://www.keycloak.org/docs-api/9.0/rest-api/index.html)
@@ -127,3 +127,7 @@ proxyAddressForwarding: true
 + [Setting up HTTPS/SSL](https://www.keycloak.org/docs/latest/server_installation/#_setting_up_ssl)
 + [tls helm config](https://github.com/bitnami/charts/blob/master/bitnami/keycloak/values.yaml)
 + [Configuring TLS](https://www.keycloak.org/server/enabletls)
+
+
+<!-- issues -->
++ [HOW TO USE KEYCLOAK WITH A CORS-ENABLED API-GATEWAY](https://trimplement.com/blog/2021/10/keycloak-cors-api-tutorial/)

@@ -67,13 +67,6 @@
 
 + 定义cluster
 
-## match
-+ regex
-```yaml
-  - match:
-    - uri:
-        regex: "/usrv(/.*)?"
-```
 
 
 ## tips
