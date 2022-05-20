@@ -54,6 +54,10 @@ openid_auth_domain:
 <!-- roles -->
 + [Open Distro  user and roles](https://opendistro.github.io/for-elasticsearch-docs/docs/security/access-control/users-roles/)
 
-<!-- opensearch -->
+<!-- openid -->
 + [opensearch-project/security](https://github.com/opensearch-project/security)
 + [opensearch OpenID Connect](https://opensearch.org/docs/latest/security-plugin/configuration/openid-connect/)
++ [OpenID Connect troubleshooting](https://opensearch.org/docs/latest/troubleshoot/openid-connect/#set-log-level-to-debug)
+
+<!-- logs -->
++ [logs](https://opensearch.org/docs/latest/opensearch/logs/)
