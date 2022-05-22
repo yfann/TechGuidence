@@ -70,6 +70,8 @@
 + `Client request error: unable to verify the first certificate`
 
 
++ `curl: (60) SSL certificate problem: unable to get local issuer certificate`
++ `curl: (60) SSL certificate problem: self signed certificate`
 
 
 
