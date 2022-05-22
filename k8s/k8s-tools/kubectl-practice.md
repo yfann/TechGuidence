@@ -135,7 +135,11 @@ EOT
 
 + `kubectl get svc istio-ingressgateway -n istio-system -o jsonpath="{.status.loadBalancer.ingress[0].ip}"`
 
-  ## ref
 
-  + [使用 kubectl 管理 Secret](https://kubernetes.io/zh/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
-  + [JSONPath 支持](https://kubernetes.io/zh/docs/reference/kubectl/jsonpath/)
+## file output
++ `kubectl exec -it busy-box-558d7bfbcb-7kjcg -n istio-system -- cat /etc/myca/ca-cert.pem > ca-cert.pem`
+
+## ref
+
++ [使用 kubectl 管理 Secret](https://kubernetes.io/zh/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
++ [JSONPath 支持](https://kubernetes.io/zh/docs/reference/kubectl/jsonpath/)

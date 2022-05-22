@@ -47,3 +47,7 @@
 ## fun
 + cowsay
 
+
+## videos
++ [PowerCert Animated Videos](https://www.youtube.com/c/PowerCertAnimatedVideos)
+

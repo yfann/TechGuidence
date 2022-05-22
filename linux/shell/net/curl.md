@@ -9,6 +9,9 @@
 
 + `curl -LO <url>`
 
+<!-- self signed -->
++ `echo quit | openssl s_client -showcerts -servername "${API_HOST}" -connect "${API_HOST}":443 > cacert.pem`
++ `curl --cacert cacert.pem --location --silent https://${API_HOST}`
 ## tips
 
 + `-O` 服务器返回内容保存成文件,并将URL的最后作为文件名
@@ -31,6 +34,14 @@
     + `--write-out`
 
 + `-s` silent
+
++ `--cacert`
+    + certificate file
+    + pem format
+
++ `--capath`
+    + certificate directory
+    + PEM format
 
 ## practice
 

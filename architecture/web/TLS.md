@@ -39,17 +39,44 @@
 + `openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt`
 <!-- 生成私钥和自签名证书 -->
 + `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ${KEY_FILE} -out ${CERT_FILE} -subj "/CN=${HOST}/O=${HOST}"`
-
+<!-- crt to pem -->
++ `openssl x509 -in mycert.crt -out mycert.pem -outform PEM`
+<!-- pem to crt -->
++ `openssl x509 -outform der -in your-cert.pem -out your-cert.crt`??
 ## tips
 
 + files
-    `server.key`: a private RSA key to sign and authenticate the public key
-    `server.pem/server.crt`: self-signed X.509 public keys for distribution
-    `rootca.crt`: a certificate authority public key for signing .csr files
-    `host.csr`: a certificate signing request to access the CA
+    + `server.key`: a private RSA key to sign and authenticate the public key
+    + `server.pem/server.crt`: self-signed X.509 public keys for distribution
+    + `rootca.crt`: a certificate authority public key for signing .csr files
+    + `host.csr`: a certificate signing request to access the CA
+    + `ca-root`: 根证书
+        + 根证书是CA认证中心给自己颁发的证书,是信任链的起始点。安装根证书意味着对这个CA认证中心的信任。
+    + `*.cert` 是证书
+        + `-----BEGIN CERTIFICATE-----`    
+    + `*.key` 私钥
+        + `-----BEGIN RSA PRIVATE KEY-----`
+    + `*.crt` 证书
+    + `*.pem` 由RFC1421至1424定义的一种数据格式
+        + 里面可能是cert or key or both
+    
+
++ keystore
++ truststore
 
 ## issues
 + `x509: cannot validate certificate for <ipaddress> because it doesn't contain any IP SANs`
+
++ `Client request error: unable to verify the first certificate`
+
+
+
+
+
+
+
+
+
 
 ## ref
 <!-- 数字签名 -->
@@ -57,6 +84,7 @@
 + [数字签名,数字证书,https](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
 + [digital signature](http://www.youdzone.com/signature.html)
 + [什么是数字签名和证书？](https://www.jianshu.com/p/9db57e761255)
+
 <!-- 证书 -->
 + [如何创建自签名的 SSL 证书](https://www.jianshu.com/p/e5f46dcf4664)
 + [什么是CSR文件](https://www.jianshu.com/p/66d84ca65f41)
@@ -68,3 +96,4 @@
 
 <!-- others -->
 + [SSL Certificate Verification](https://curl.se/docs/sslcerts.html)
++ [SSL：证书文件](https://zhuanlan.zhihu.com/p/86926335)

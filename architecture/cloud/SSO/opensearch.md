@@ -16,7 +16,8 @@ elasticsearch.password: '${kibana_pass}'
 ## elasticsearch.yml
 
 ```yml
-opendistro_security.restapi.roles_enabled: ["all_access","security_rest_api_access"]
+opensearch_security.openid.base_redirect_url: "https://...."
+opendistro_security.openid.root_ca: "/usr/share/kibana/config/root-ca.pem"
 ```
 
 ## sso
@@ -33,6 +34,9 @@ openid_auth_domain:
 # 可以映射opensearch的admin role
 ```
 
+## debug
+
++ ``
 
 ## tips
 
@@ -61,3 +65,6 @@ openid_auth_domain:
 
 <!-- logs -->
 + [logs](https://opensearch.org/docs/latest/opensearch/logs/)
+
+<!-- tls -->
++ [Setting up SSL with OpenID](https://forum.opensearch.org/t/setting-up-ssl-with-openid/3360)
