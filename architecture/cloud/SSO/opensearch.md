@@ -14,13 +14,21 @@ elasticsearch.password: '${kibana_pass}'
 ```
 
 ## elasticsearch.yml
-
+<!-- for https openid provider -->
 ```yml
 opensearch_security.openid.base_redirect_url: "https://...."
 opendistro_security.openid.root_ca: "/usr/share/kibana/config/root-ca.pem"
 ```
+<!-- for self signed cert -->
+```yml
+opensearch-dashboards: 
+  extraEnvs:
+    - name: NODE_TLS_REJECT_UNAUTHORIZED
+      value: "0"
+```
 
-## sso
+
+## sso role mapping
 
 + 映射sso user的role到opensearch的role
 ```yml
@@ -33,10 +41,6 @@ openid_auth_domain:
 # keycloak 返回的ID token中需要有 roles:["admin"], client scope->roles->realm roles开启
 # 可以映射opensearch的admin role
 ```
-
-## debug
-
-+ ``
 
 ## tips
 
