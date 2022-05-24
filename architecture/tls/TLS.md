@@ -39,8 +39,7 @@
 + `openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt`
 <!-- 生成私钥和自签名证书 -->
 + `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ${KEY_FILE} -out ${CERT_FILE} -subj "/CN=${HOST}/O=${HOST}"`
-<!-- crt to pem -->
-+ `openssl x509 -in mycert.crt -out mycert.pem -outform PEM`
+
 <!-- pem to crt -->
 + `openssl x509 -outform der -in your-cert.pem -out your-cert.crt`??
 ## tips

@@ -37,6 +37,8 @@ kubectl logs $pods
 + template 中的name有hyphen时
     - `oc get secret logging-elasticsearch --template='{{index .data "admin-ca"}}' |base64 -d > ca`会报错
     - `oc get secret logging-elasticsearch --template='{{index .data "admin-ca"}}' |base64 -d > ca`
+
+
 ## secret 
 
 + secret 解码
@@ -48,9 +50,17 @@ kubectl logs $pods
 
 + `kubectl get secret argocd-secret  --output="jsonpath={.data['oidc\.keycloak\.clientSecret']}" -n argo | base64 -d`
 
-+ kubectl create secret generic additional-scrape-configs --from-file=prometheus-additional.yaml --dry-run -oyaml > additional-scrape-configs.yaml
++ `kubectl create secret generic additional-scrape-configs --from-file=prometheus-additional.yaml --dry-run -oyaml > additional-scrape-configs.yaml`
   + create secret from file
-  
+
++ copy secret between different namespace
+```sh
+kubectl get secret <secret-name> \
+  --namespace=<source-nemespace> \
+  --export -o yaml | \
+  kubectl apply --namespace=<new-namespace> -f -
+```
+
 ## 动态语句
 <!-- 动态获取name -->
 + `kubectl delete pod $(kubectl get pods -n hsc-logging | grep dashboard |  awk '{ print $1 }') -n hsc-logging`
