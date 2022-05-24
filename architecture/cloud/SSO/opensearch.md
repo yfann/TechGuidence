@@ -54,6 +54,15 @@ openid_auth_domain:
     + secret不需要base64编码
   + master 的security没生效
 
+
+## issues
+
++ opensearch backend skip cert verify not working??
+```yml
+opensearch:
+  opensearchJavaOpts: "-Xmx512M -Xms512M -Djdk.security.allowNonCaAnchor=true"
+```
+
 ## ref
 <!-- kibana -->
 + [Read only mode](https://docs.search-guard.com/latest/kibana-read-only)
