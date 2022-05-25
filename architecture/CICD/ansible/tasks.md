@@ -28,7 +28,11 @@
 + [ansible.builtin.include_tasks module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/include_tasks_module.html)
 <!-- tasks -->
 + [lookup](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_lookup.html)
-+ [ansible.builtin.password](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/password_lookup.html)
+how-to-select-mandatory-character-when-generating-random-password-with-ansible)
 + [Ansible - Print message - debug](https://newbedev.com/ansible-print-message-debug-msg-line1-n-var2-n-line3-with-var3-var3)
 + [replace](https://www.linuxtechi.com/replace-strings-lines-with-ansible/)
 + [ansible.builtin.uri](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/uri_module.html)
+<!-- password -->
++ [ansible.builtin.password](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/password_lookup.html)
++ [How to select mandatory character when generating random password with ansible?](https://stackoverflow.com/questions/57389641/)
++ [Ansible: Generating password with constraints](https://medium.com/@AbhijeetKasurde/ansible-generating-password-with-constraints-f475bb77d023)
