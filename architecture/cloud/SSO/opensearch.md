@@ -67,6 +67,7 @@ opensearch:
 <!-- kibana -->
 + [Read only mode](https://docs.search-guard.com/latest/kibana-read-only)
 + [Kibana OpenID Connect Authentication](https://docs.search-guard.com/latest/kibana-authentication-openid)
++ [Kibana - Session timeout [Solved]](https://forum.opensearch.org/t/kibana-session-timeout-solved/1220)
 
 <!-- roles -->
 + [Open Distro  user and roles](https://opendistro.github.io/for-elasticsearch-docs/docs/security/access-control/users-roles/)

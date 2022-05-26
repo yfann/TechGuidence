@@ -7,3 +7,7 @@
 <!-- config -->
 + [YAML files](https://opensearch.ossez.com/security-plugin/configuration/yaml/)
 + [securityconfig](https://github.com/opensearch-project/security/tree/main/securityconfig)
+
+
+<!-- helm -->
++ [https://github.com/opensearch-project/helm-charts](https://github.com/opensearch-project/helm-charts)
