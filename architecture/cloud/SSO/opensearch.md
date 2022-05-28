@@ -42,6 +42,10 @@ openid_auth_domain:
 # 可以映射opensearch的admin role
 ```
 
+## keytools
++ `bin/elasticsearch-keystore list`
++ `keytool -list -v -keystore keystore.jks` 查看keystore中内容
+
 ## tips
 
 + roles
@@ -55,6 +59,13 @@ openid_auth_domain:
   + master 的security没生效
 
 
++ OPENSEARCH_JAVA_OPTS
+  + `/usr/share/opensearch/config/jvm.options`
+
+
+
+
+
 ## issues
 
 + opensearch backend skip cert verify not working??
@@ -62,7 +73,10 @@ openid_auth_domain:
 opensearch:
   opensearchJavaOpts: "-Xmx512M -Xms512M -Djdk.security.allowNonCaAnchor=true"
 ```
-
++ jdk.security.allowNonCaAnchor=true
+  + If the property is set to the empty String or "true" (case-insensitive), trust anchor certificates can be used if they do not have proper CA extensions.
+  + Note that the property does not apply to X.509 v1 certificates (since they don't support extensions).
+  
 ## ref
 <!-- kibana -->
 + [Read only mode](https://docs.search-guard.com/latest/kibana-read-only)
@@ -82,3 +96,7 @@ opensearch:
 
 <!-- tls -->
 + [Setting up SSL with OpenID](https://forum.opensearch.org/t/setting-up-ssl-with-openid/3360)
++ [Configure TLS certificates](https://opensearch.org/docs/latest/security-plugin/configuration/tls/#keystore-and-truststore-files)
+
+<!-- security config -->
++ [opensearch.yml.example](https://github.com/opensearch-project/security/blob/main/securityconfig/opensearch.yml.example)
