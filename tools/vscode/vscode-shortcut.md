@@ -9,6 +9,10 @@
 <!-- markdown -->
 + `shift + ctrl + v` 预览
 
+
+<!-- others -->
++ ctrl + ` cmd控制台
+
 ## tips
 
 + mac
