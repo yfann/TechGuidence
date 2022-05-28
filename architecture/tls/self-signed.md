@@ -43,3 +43,5 @@
 <!-- issues -->
 + [How to fix "TrustAnchor is not a CA certificate" for self-signed certificates? (Java)](https://stackoverflow.com/questions/69413310/how-to-fix-trustanchor-is-not-a-ca-certificate-for-self-signed-certificates)
 + [记一次TrustAnchor with subject异常解决](https://blog.csdn.net/volcano2339/article/details/123580945)
++ [No “Proceed Anyway” option on NET::ERR_CERT_INVALID in Chrome on MacOS](https://stackoverflow.com/questions/58802767/no-proceed-anyway-option-on-neterr-cert-invalid-in-chrome-on-macos)
+     + `extendedKeyUsage=serverAuth`

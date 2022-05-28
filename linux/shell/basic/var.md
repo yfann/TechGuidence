@@ -106,6 +106,12 @@
 
 + local
     + 函数中定义只在函数范围内可见
++ `echo $PS1`
 
 ## ref
 + [Bash 变量](https://wangdoc.com/bash/variable.html)
++ [How to Increment and Decrement Variable in Bash (Counter)](https://linuxize.com/post/bash-increment-decrement-variable/)
+
+
+## ref
++ [命令提示符](https://wangdoc.com/bash/prompt.html)

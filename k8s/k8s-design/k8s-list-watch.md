@@ -36,3 +36,4 @@
 
 ## ref
 + [理解 K8S 的设计精髓之 List-Watch机制和Informer模块](https://zhuanlan.zhihu.com/p/59660536)
++ [谈谈 Kubernetes list/watch 的设计原理](https://zhuanlan.zhihu.com/p/520307533)
