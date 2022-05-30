@@ -1,7 +1,7 @@
 
 
-## kibana.yaml
-
+## opensearch
+<!-- values.yaml -->
 ```yml
 searchguard.openid.scope: "profile email"
 searchguard.openid.logout_url: "https://keycloak.example.com:8080/auth/realms/master/protocol/openid-connect/logout"
@@ -10,8 +10,29 @@ searchguard.openid.logout_url: "https://keycloak.example.com:8080/auth/realms/ma
 elasticsearch.username: '${kibana_user}'
 elasticsearch.password: '${kibana_pass}'
 
-
+opensearch:
+  image: .../opensearch
+  config:
+    opensearch.yml: |
+      ....
+    jvm.options: |
+      ....
+       -Djdk.security.allowNonCaAnchor=true
+  securityConfig:
+    config:
+      data:
+        config.yml: |-
+          config:
+            dynamic:
+              http:
+                ....
+              authc:
+                basic_internal_auth_domain:
+                  ....
+                openid_auth_domain:
+                  ...
 ```
+
 
 ## elasticsearch.yml
 <!-- for https openid provider -->
@@ -59,16 +80,18 @@ openid_auth_domain:
   + master 的security没生效
 
 
-+ OPENSEARCH_JAVA_OPTS
-  + `/usr/share/opensearch/config/jvm.options`
-
-
++ OPENSEARCH_PATH_CONF
+  + Set the OPENSEARCH_PATH_CONF environment variable to the directory that contains opensearch.yml (e.g. /etc/opensearch).
+  + default `/usr/share/opensearch/config`
+    + jvm.options
+    + opensearch.yml
 
 
 
 ## issues
 
-+ opensearch backend skip cert verify not working??
++ OPENSEARCH_JAVA_OPTS
+  + `/usr/share/opensearch/config/jvm.options`
 ```yml
 opensearch:
   opensearchJavaOpts: "-Xmx512M -Xms512M -Djdk.security.allowNonCaAnchor=true"
@@ -90,6 +113,10 @@ opensearch:
 + [opensearch-project/security](https://github.com/opensearch-project/security)
 + [opensearch OpenID Connect](https://opensearch.org/docs/latest/security-plugin/configuration/openid-connect/)
 + [OpenID Connect troubleshooting](https://opensearch.org/docs/latest/troubleshoot/openid-connect/#set-log-level-to-debug)
++ [Configure elasticsearch for OpenID Connect authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/oidc-guide-authentication.html#oidc-guide-authentication)
++ [Secure your clusters with OpenID Connect](https://www.elastic.co/guide/en/cloud/current/ec-secure-clusters-oidc.html)
+
+
 
 <!-- logs -->
 + [logs](https://opensearch.org/docs/latest/opensearch/logs/)
@@ -98,5 +125,8 @@ opensearch:
 + [Setting up SSL with OpenID](https://forum.opensearch.org/t/setting-up-ssl-with-openid/3360)
 + [Configure TLS certificates](https://opensearch.org/docs/latest/security-plugin/configuration/tls/#keystore-and-truststore-files)
 
-<!-- security config -->
+<!-- security -->
 + [opensearch.yml.example](https://github.com/opensearch-project/security/blob/main/securityconfig/opensearch.yml.example)
+<!-- ******** -->
++ [OpenSearch Security 1](https://eliatra.com/blog/security-opensearch-concepts/)
++ [OpenSearch security part 2: Basic Setup](https://eliatra.com/blog/opensearch-security-part-2-basic-setup/)
