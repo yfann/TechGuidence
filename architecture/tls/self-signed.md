@@ -30,8 +30,10 @@
 
 
 ## ref
++ [HTTPS证书生成原理和部署细节](https://www.barretlee.com/blog/2015/10/05/how-to-build-a-https-server/)
 + [self-signed-certificate-with-custom-ca.md](https://gist.github.com/fntlnz/cf14feb5a46b2eda428e000157447309)
 + [How to create a self-signed (or signed by own CA) SSL certificate for IP address that pass Chrome requirements](https://stackoverflow.com/questions/66558788/how-to-create-a-self-signed-or-signed-by-own-ca-ssl-certificate-for-ip-address)
 + [OpenSSL自签发配置有多域名或ip地址的证书](https://blog.csdn.net/u013066244/article/details/78725842)
 + [Self Signed SSL/TLS Certificate with IP Address](https://nodeployfriday.com/posts/self-signed-cert/)
 + [OpenSSL 自建CA及签发证书](https://blog.csdn.net/scuyxi/article/details/54898870)
++ [生成自签名证书](https://docs.pingcap.com/zh/tidb/dev/generate-self-signed-certificates)

@@ -1,4 +1,10 @@
 
+## CA
++ `openssl genrsa -out root.key 4096`
++ `openssl req -new -x509 -days 1000 -key root.key -out root.crt`
++ `openssl x509 -text -in root.crt -noout` 验证root ca
+
+
 ## cmd
 + `openssl help`
 + `openssl x509 -in <cert file path>  -noout -subject -issuer -fingerprint`
