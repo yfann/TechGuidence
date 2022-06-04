@@ -62,8 +62,10 @@ kubectl get secret <secret-name> \
 ```
 
 ## 动态语句
-<!-- 动态获取name -->
+<!-- 根据name删除 -->
 + `kubectl delete pod $(kubectl get pods -n hsc-logging | grep dashboard |  awk '{ print $1 }') -n hsc-logging`
+
+
 <!-- 变量赋值,jsonpath -->
 + `export VAULT_SA_NAME=$(kubectl -n default get sa vault-auth -o jsonpath="{.secrets[*]['name']}")`
 + `export SA_JWT_TOKEN=$(kubectl -n default get secret $VAULT_SA_NAME -o jsonpath="{.data.token}" | base64 --decode; echo)`

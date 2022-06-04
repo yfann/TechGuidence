@@ -113,6 +113,7 @@ http:
 + [How to get client secret from Keycloak using curl?](https://stackoverflow.com/questions/57265755/how-to-get-client-secret-from-keycloak-using-curl)
 + [Admin REST API](https://wjw465150.gitbooks.io/keycloak-documentation/content/server_development/topics/admin-rest-api.html)
 + [Keycloak REST API: Create a New User](https://www.appsdeveloperblog.com/keycloak-rest-api-create-a-new-user/)
+    + [User representation](https://www.keycloak.org/docs-api/9.0/rest-api/index.html#_userrepresentation)
 
 <!-- sso -->
 + [Keycloak快速上手指南，只需10分钟即可接入Spring Boot/Vue前后端分离应用实现SSO单点登录](https://juejin.cn/post/6844903973741150215)
@@ -131,3 +132,7 @@ http:
 
 <!-- issues -->
 + [HOW TO USE KEYCLOAK WITH A CORS-ENABLED API-GATEWAY](https://trimplement.com/blog/2021/10/keycloak-cors-api-tutorial/)
+
+<!-- sso logout -->
++ [keycloak logout](https://www.keycloak.org/docs/latest/securing_apps/index.html#logout)
++ [SIMPLY LOGOUT FROM KEYCLOAK](https://suedbroecker.net/2021/05/18/simply-logout-from-keycloak/#:~:text=The%20Keycloak%20logout%20URL%20must%20contain%20the%20valid,My%20finding%20resulted%20in%20the%20following%20simple%20definition%3A)
