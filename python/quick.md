@@ -1,5 +1,5 @@
 # jupyter-lab
-
++ `pip install jupyterlab`
 + `jupyter-lab`
     + `Esc` command mode
         + `Enter` edit mode
