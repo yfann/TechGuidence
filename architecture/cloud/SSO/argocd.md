@@ -42,3 +42,5 @@ data:
 ## ref
 + [Integrating Keycloak and ArgoCD](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/keycloak/)
 + [RBAC Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/)
+<!-- issue -->
++ [X509 certificates with SSO issuer](https://github.com/argoproj/argo-workflows/discussions/5079)
