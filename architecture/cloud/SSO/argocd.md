@@ -39,6 +39,11 @@ data:
 # check the group name in keycloak. Fe. /admin or admin
 ```
 
+## issues
+
++ `x509: certificate signed by unknown authority` for keycloak sso
+  + 把ca 证书mount到argo-server的`/etc/ssl/certs`
+
 ## ref
 + [Integrating Keycloak and ArgoCD](https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/keycloak/)
 + [RBAC Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/)
