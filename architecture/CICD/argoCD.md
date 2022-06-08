@@ -58,3 +58,7 @@ data:
 + [Sync Options](https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/)
 + [RBAC Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/)
 + [OIDC Configuration with DEX](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/user-management/index.md#configuring-a-custom-logout-url-for-your-oidc-provider)
++ [UI Base Path](https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/ingress.md)
+
+<!-- helm -->
++ [argocd server](https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/values.yaml)
