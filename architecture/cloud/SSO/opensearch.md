@@ -116,6 +116,9 @@ opensearch:
 + [Configure elasticsearch for OpenID Connect authentication](https://www.elastic.co/guide/en/elasticsearch/reference/7.5/oidc-guide-authentication.html#oidc-guide-authentication)
 + [Secure your clusters with OpenID Connect](https://www.elastic.co/guide/en/cloud/current/ec-secure-clusters-oidc.html)
 
+<!-- helm -->
++ [opensearch_dashboards.yml](https://github.com/opensearch-project/OpenSearch-Dashboards/blob/main/config/opensearch_dashboards.yml)
+
 
 
 <!-- logs -->
