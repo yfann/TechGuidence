@@ -34,6 +34,12 @@
 + [深入解读：KubeVela 与 PaaS 有何不同？](https://zhuanlan.zhihu.com/p/329878177)
 
 + [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
+<!-- CLI for CRI -->
++ [crictl](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
+<!-- CLI for containerd -->
++ [ctr](https://github.com/projectatomic/containerd/blob/master/docs/cli.md)
+
+
 <!-- VM -->
 + [virtlet](https://docs.virtlet.cloud/user-guide/real-cluster/#installing-virtlet-on-a-real-cluster)
 + [virtlet, Kubernetes CRI实现虚拟机工作负载](https://www.kaifa99.com/GitHub/article_149466)

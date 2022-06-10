@@ -1,4 +1,7 @@
+## tips
 
++ 修改kube/config后连不上集群
+    + 可能要重启terminal
 
 ## ref
 + [User "system:serviceaccount:crd:default" cannot list resource "vcapservicesconverters" in API group "deployment.hsc.philips.com.cn" at the cluster scope](https://blog.51cto.com/goome/2364702)
