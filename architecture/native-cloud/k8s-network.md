@@ -39,11 +39,20 @@
             + watch kube-apiserver
                 + service或pod ip变化时，iptables会自动更新
             + iptables中已经做了负载均衡，将Service VIP的流量指向pod IP
-<!-- k8s新版本支持 -->
-    + IPVS
+    + IPVS(k8s新版本支持)
         + 构建在netfilter之上
         + 实现了linux的传输层负载均衡
-        + 合到LVS(linux虚拟服务器)中
+        + IPVS合到LVS(linux虚拟服务器)中,可以充当服务器集群的负载均衡器（TCP,UDP）
+
+    + kube-proxy可以选择iptables或IPVS模式
+        + 使用IPVS时
+            + node会创建虚拟IPVS接口
+            + service的VIP会绑定到IPVS接口
+            + 为每个service VIP创建IPVS服务器
+
++ 数据包从pod 到 service
+    + pod netns eth0 ---> root netns bridge ---> root netns eth0(bridge不知道service地址会把数据包放到默认路由eth0) ---> iptables根据规则把service VIP改为目标pod IP ---> 目标pod
+
 ## tips
 
 + CIDR(Classless Inter-Domain Routing)无类别域间路由
