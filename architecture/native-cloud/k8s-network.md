@@ -53,6 +53,28 @@
 + 数据包从pod 到 service
     + pod netns eth0 ---> root netns bridge ---> root netns eth0(bridge不知道service地址会把数据包放到默认路由eth0) ---> iptables根据规则把service VIP改为目标pod IP ---> 目标pod
 
+## 外网到service
++ engress
+    + 外网网关
+        + VPC 路由表中为可路由到外网的流量提供目标
+        + 为已分配公共 IP 地址的实例执行网络地址转换 (NAT)
+            + NAT只了解VM(node)的IP,不能处理pod IP
+                + iptablse可以执行源NAT,更改数据包源,使数据包看起来来自 VM 而不是 Pod
+            + 外网网关将执行另一个 NAT，将源 IP 从 VM 内部 IP 重写为公网IP
++ ingress
+    + service loadbalancer
+        + lb不支持container
+        + 流量
+            + lb --> nodes(随机挑选node) ---> node上的iptables执行NAT ----> pods
+    + ingress controller
+        + node port
+        + ingress
+            + http负载均衡
+            + 将http request映射到service(根据IP路由)
+        
+        + 流量
+            + ingress(LB) --> service ---> nodeport
+
 ## tips
 
 + CIDR(Classless Inter-Domain Routing)无类别域间路由
