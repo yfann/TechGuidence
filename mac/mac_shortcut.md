@@ -7,7 +7,8 @@
 + `option + cmd + v` 剪切复制
 + `F11` 显示桌面
 
-
++ `option + p`=`π`
+  + 输入法虚拟键盘可以查看
 
 ## shortcut
 + `option + cmd + esc` 可以结束进程
