@@ -79,3 +79,8 @@
     + blueprint(蓝图)
         + 创建模块化对象
     + Jinja2模板引擎
+
+
+## ref
+
++ [Python面试宝典 - 基础篇 - 2020](https://github.com/jackfrued/Python-Interview-Bible/blob/master/Python%E9%9D%A2%E8%AF%95%E5%AE%9D%E5%85%B8-%E5%9F%BA%E7%A1%80%E7%AF%87-2020.md)

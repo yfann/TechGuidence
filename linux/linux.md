@@ -12,16 +12,8 @@
     + Debian
         + Ubuntu
 
-## cmd
-+ `whoami`
-+ `which <cmd>`
-+ `whereis <cmd>`
-<!-- help -->
-+ `<cmd> --help`
-+ `man <cmd>`
-+ `info <cmd>`
-<!-- comman -->
-+ `ln -s <source file>  <link file>` 软链接
+
+
 
 ## export
 + `export -p`
@@ -45,12 +37,35 @@
     + 并发运行的instance通过检查lock文件是否存在来判断当前资源是否有其他Instance在使用
 
 
+## 目录
++ /bin        二进制文件，系统常规命令
++ /boot       系统启动分区，系统启动时读取的文件
++ /dev        设备文件
++ /etc        大多数配置文件
++ /home       普通用户的家目录
++ /lib        32位函数库
++ /lib64      64位库
++ /media      手动临时挂载点
++ /mnt        手动临时挂载点
++ /opt        第三方软件安装位置
++ /proc       进程信息及硬件信息
++ /root       临时设备的默认挂载点
++ /sbin       系统管理命令
++ /srv        数据
++ /var        数据
++ /sys        内核相关信息
++ /tmp        临时文件
++ /usr        用户相关设定
+
+
+
 ## ref
 + [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 
 <!-- 概念 -->
 + [Linux 环境隔离机制 -- Linux Namespace](https://zhuanlan.zhihu.com/p/47571649)
 + [linux基础与shell编程](https://www.kancloud.cn/digest/linux-world/145297)
++ [Linux 系统目录结构](https://www.runoob.com/linux/linux-system-contents.html)
 
 <!-- others -->
 + [Linux版本知多少](https://zhuanlan.zhihu.com/p/151849085)

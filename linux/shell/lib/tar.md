@@ -9,6 +9,7 @@
     + `-f` 
 
 + `tar -zvcf xx.tar.gz xxx` 压缩
+    + `tar -zvcf xxx.tar.gz *`
     + `tar --exclude='./bin' --exclude='./data' --exclude='./images' --exclude='.git' -zvcf kns .`
 
 + `tar -zvxf xx.tar.gz` 解压

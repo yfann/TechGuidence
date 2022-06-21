@@ -18,15 +18,38 @@
 + `type -a <cmd>` 查看命令位置
     + `type <cmd>` 查看是否为内部命令
 
-+ `man bash` 帮助
-
-+ `cd -` 返回上一次目录
 
 + `history`
-    + 
+    
++ `whoami`
++ `which <cmd>`
+    + PATH指定的路径中搜索<cmd>的位置，返回第一个结果
++ `whereis <cmd>`
+    + 程序名搜索
+    + -b  只搜索二进制
+    + -m  man说明文件
+    + -s  源代码文件
+
+<!-- help -->
++ `<cmd> --help`
++ `man <cmd>`
++ `info <cmd>`
+
+<!-- comman -->
++ `ln -s <source file>  <link file>` 软链接
+
+
+<!-- 目录切换 -->
++ `dirs` 目录栈，栈顶当前目录
+    + `-p` 每行一条
+    + `-v` 显示index
+    + `-c` 清空目录栈
++ `pushd <path>` 入栈,栈顶变化,当前目录变化
+    + `pushd` 栈顶，次顶交行
+    + `pushd +n` 栈中第n个元素到栈顶
++ `popd` 
 
 ## 转义换行(escape)
-
 + `echo -e "aa\nbb"` -e识别转义
 + `printf "aasdf\nbb\n"` 结尾不会自动加换行
 
@@ -66,11 +89,7 @@ echo $var3
 ```
 
 <!-- 变量替换 -->
-+ `${}`
-    + `$var`与`${var}`没区别，但后者可以界定变量范围
-    + `${:}`与`${::}` 字符串提取
-    + `${/}`第一个匹配的字符串替换,`${//}`全部替换
-    + `${var//c/d}` replace c to d
++ `${}` Parameter Expansion
 ```sh
 a=123
 echo ${a}b
@@ -109,16 +128,7 @@ echo ${a}b
 + `$(ls $(pwd))`
 + `echo $((2 + 2))`
 
-## `--` vs `-`
 
-+ `command -[option][option]...`
-    + 有的option可以带arguments
-
-+ `--` 代表option的结束,`--`后面为arguments
-    + `grep -- -v file`
-        + `-v` 作为查询字符串而不是option
-
-+ An argument of - is equivalent to --
 
 
 ## Bang(!)命令
@@ -175,7 +185,7 @@ echo ${a}b
 
 ## ref
 + [Shell 教程](https://www.runoob.com/linux/linux-shell.html)
-+ [bash 教程](https://wangdoc.com/bash/intro.html)
++ [bash 教程](wangdoc.com/bash/intro.html)
 + [online shell](https://www.runoob.com/try/runcode.php?filename=helloworld&type=bash)
 + [编写Shell 脚本编程最佳实践](https://zhuanlan.zhihu.com/p/264120455)
 + [Bash Reference Manual](https://www.gnu.org/software/bash/manual/html_node/index.html#SEC_Contents)

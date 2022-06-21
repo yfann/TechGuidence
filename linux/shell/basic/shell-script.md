@@ -10,7 +10,6 @@
 
 + `export PATH=$PATH:~/bin` 脚本放入bin中，任何目录中都可以执行脚本
 
-
 + `env -i /bin/sh` 启动一个不带环境变量的shell
 
 + run shell
@@ -32,18 +31,16 @@
 
 + `exit 1` 退出
 
+## declare
 
-## script parameters
++ `declare -f` 查看定义的函数
 
-+ `$0` 脚本
++ `declare -f <func>`
 
-+ `$1`~`$9`
++ `declare -F` 输出定义的函数名
 
-+ `$#` 参数总数
 
-+ `$@` 所有参数，空格分隔
 
-+ `$*` 所有参数,`$IFS`值的第一个字符分隔
 
 ## 变量
 + `your_name="runoob.com"` 定义变量
@@ -51,6 +48,7 @@
     - `unset your_name` 删除变量
     - `echo $your_name` 使用变量
     - `echo "I am good at ${your_name}Script"`
+
 + 局部变量、环境变量、shell变量
 ```sh
 # 遍历/etc下的文件
@@ -70,20 +68,20 @@ greeting_1="hello, ${your_name} !"
 # 使用单引号拼接
 greeting_2='hello, '$your_name' !'
 ```
+
 + `echo ${#your_name}` 输出字符串长度
+
 + 获取子串
 ```sh
 string="runoob is a great site"
 echo ${string:1:4} # 输出 unoo
 ```
+
 + 查找字符串
 ```sh
 string="runoob is a great site"
 echo `expr index "$string" io`  # 输出 4
 ```
-
-
-
 
 
 ##  scripts
@@ -112,6 +110,10 @@ echo `expr index "$string" io`  # 输出 4
     foo | echo a
     echo bar
     ```
+
+## conf
+
++ `. /path/to/some.config` 导入键值对配置文件
 
 ## ref
 

@@ -49,8 +49,14 @@
         
 ## ref
 + [ingress](https://feisky.gitbooks.io/kubernetes/content/concepts/ingress.html)
-+ [Ingress k8s](https://kubernetes.io/zh/docs/concepts/services-networking/ingress/)
++ [Ingress k8s](https://kubernetes.io/docs/concepts/services-networking/ingress/)
++ [Ingress Class](https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/)
+
+
+<!-- ingress controller -->
 + [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/user-guide/multiple-ingress/)
++ [Ingress Controllers：Kubernetes 的瑞士军刀](https://www.kubernetes.org.cn/9840.html)
+
 
 <!-- deploy nginx-ingress controller -->
 + [Installation Guide](https://kubernetes.github.io/ingress-nginx/deploy/)
@@ -85,3 +91,6 @@
 
 <!-- issue -->
 + [ali ingress: connetion refused](https://segmentfault.com/a/1190000020751999)
+
+<!-- debug -->
++ [Ingress-Controller Logs and Events](https://kubernetes.github.io/ingress-nginx/troubleshooting/)

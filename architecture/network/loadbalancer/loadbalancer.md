@@ -38,7 +38,7 @@
     + clients are properly directed to the load balancer's IP address and not directly to the server's
         +  HTTP redirects
 
-+ XFF
++ XFF(X-Forwarded-For)
     + server端可以获取client IP
 
 <!-- tools -->

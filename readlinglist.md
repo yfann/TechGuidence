@@ -1,12 +1,3 @@
-## Todo
-<!-- k8s -->
-+ [数据包在 Kubernetes 中的一生](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)
-+ containerd vs docker
-+ iptables vs ipvs
-+ rancher
-+ [《分布式系统模式》中文版](https://github.com/dreamhead/patterns-of-distributed-systems)
-+ [Sklearn与TensorFlow机器学习实用指南第二版](https://hands1ml.apachecn.org/#/docs/2)
-
 ## 系列
 
 + [为什么这么设计系列文章](https://draveness.me/whys-the-design/)
@@ -48,7 +39,6 @@
 + cowsay
 
 
-## tags
-
-+ ***网络***
+## videos
++ [PowerCert Animated Videos](https://www.youtube.com/c/PowerCertAnimatedVideos)
 

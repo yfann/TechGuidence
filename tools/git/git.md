@@ -88,7 +88,9 @@ checkout 移动的是 Head, reset 移动的是 Head 指向的分支
 + `cat .git/config` 查看origin信息
 + `git config [--global]/[-g] --list` 查看配置
 + `git config [--global] user.name '...'` user.email
-+ `git config --global --unset user.password`
+<!-- 清空密码缓存 -->
++ `git config --global --unset user.password` 
+
 + `git config user.name <user name>` 只影响当前目录
 + `git config user.email <user email>`
 + `git config --global --list`

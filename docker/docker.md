@@ -69,7 +69,9 @@
 + `docker pull <docker id>/<img name>:tag`
 + `docker logout`
 
-
+<!-- service -->
++ `service docker start`
++ `systemctl status docker.service`
 
 ## Mac
 + `brew install docker`
@@ -97,7 +99,8 @@
 + Mac上没有docker0桥接,不支持host网络模式,用`docker.for.mac.host.internal`代替mac ip
 
 
-
++ `/etc/docker/daemon.json`
+	+ `C:\ProgramData\docker\config\daemon.json`
 
 
 ## Ref
@@ -118,6 +121,9 @@
 + [Get started with Docker for Windows](https://docs.docker.com/docker-for-windows/)
 + [Docker on Windows](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
 + [Deploy on Kubernetes](https://docs.docker.com/docker-for-windows/kubernetes/)
++ [Test an insecure registry](https://docs.docker.com/registry/insecure/)
++ [Use bind mounts](https://docs.docker.com/storage/bind-mounts/)
+
 <!-- 命令 -->
 + [Docker命令-docker exec](https://www.jianshu.com/p/d858d3cfd427)
 

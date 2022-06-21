@@ -3,7 +3,7 @@
 + `brew install ccrypt`
 
 + `ccrypt <file name>`
-+ `ccdecrypt <file.cpt>`
++ `ccdecrypt <free.cpt>`
 
 
 ## ref

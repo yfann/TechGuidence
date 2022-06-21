@@ -1,8 +1,13 @@
-## top
+<!-- top list -->
 + `cmd + space` 搜索`ter`  **快速打开terminal**
-+ `cmd + del`
++ `cmd + backspace` 删除
 + `cmd + shift + .`显示/隐藏文件
 + `cmd + shift + 4` range截屏到桌面,或空格
+  + `cmd + shifit + ctrl + 4` 截屏到剪切板
++ `option + cmd + v` 剪切复制
++ `F11` 显示桌面
+
+
 
 ## shortcut
 + `option + cmd + esc` 可以结束进程
@@ -17,6 +22,7 @@
 ## 截图
 + `cmd + shift + 3` fullscreen 到桌面　
 + `cmd + shift + ctrl + 3` fullscreen 到剪贴板　　
+
 + Command-Shift-4 截取所选屏幕区域到一个文件，或按空格键仅捕捉一个窗口　　
 + Command-Shift-Control-4 截取所选屏幕区域到剪贴板，或按空格键仅捕捉一个窗
 
@@ -80,3 +86,5 @@ Command-Option-esc 打开“强制退出”窗口，如果有应用程序无响�
 + [程序员如何优雅地使用 macOS](https://www.zhihu.com/question/20873070)
 + [MAC 设置环境变量PATH 和 查看PATH](https://www.jianshu.com/p/acb1f062a925)
 + [MacBook——多屏幕使用心得](https://www.jianshu.com/p/b581642feb93)
+
++ [修改shortcut]()
