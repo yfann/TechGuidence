@@ -6,7 +6,7 @@
   + `cmd + shifit + ctrl + 4` 截屏到剪切板
 + `option + cmd + v` 剪切复制
 + `F11` 显示桌面
-
++ `CTRL + COMMAND + Q` lock screen
 + `option + p`=`π`
   + 输入法虚拟键盘可以查看
 
