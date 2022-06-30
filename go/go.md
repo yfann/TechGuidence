@@ -192,7 +192,14 @@ for _, num := range nums {
 + `go env -w GO111MODULE=on`
 + `go env -w GOPROXY=https://goproxy.cn,direct`
 
-
+## MAC install
+<!-- install -->
++ `brew install go`
+<!-- uninstall -->
++ `which go`
+    + `/usr/local/go/bin/go`
++ ` sudo rm -rf /usr/local/go`
++ `sudo rm /etc/paths.d/gowhich`
 
 ## ref
 + [official](https://golang.org/doc/)

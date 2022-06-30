@@ -11,9 +11,12 @@
 
 - `brew install <package>`
     - `brew uninstall <pkg>`
-- `brew info <package>`
-- `brew search <pkg>`
 
+- `brew info <package>`
+
+- `brew search <pkg>`
+    + find all versions for a pkg
+    + `brew install <pkg>@<version>`
 + `brew list`
 + `brew services list`
 + `brew services start/run/stop/restart [service name]` start 开机启动，run 运行一次
