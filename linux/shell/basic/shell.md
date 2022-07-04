@@ -18,6 +18,7 @@
 + `type -a <cmd>` 查看命令位置
     + `type <cmd>` 查看是否为内部命令
 
++ `%*` all the paramters in the command line
 
 + `history`
     

@@ -211,6 +211,10 @@ cd sample-controller
 	+ `go mod edit -replace [old git package]@[version]=[new git package]@[version]`
 	+ replace github.com/ozgio/strutil v0.3.0 => github.com/shiweifu/strutil v0.3.0
 
++ `GOPATH` 设置为工作路径，项目代码所在的地方
++ `GOROOT`
+	+ `GOROOT=/usr/local/go`
+
 ## ref
 + [查找Go包](https://godoc.org/?q=k8s.io)
 + [Package Management with Go Modules](https://blogs.halodoc.io/go-modules-implementation/)
