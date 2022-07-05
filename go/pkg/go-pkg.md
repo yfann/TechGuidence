@@ -54,7 +54,6 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [brokerapi](https://github.com/pivotal-cf/brokerapi)
 
 <!-- others -->
-
 + [fyne](https://juejin.cn/post/6868033438713118733)
     + 搭建个人博客
 + [buntdb](https://darjun.github.io/2020/03/21/godailylib/buntdb/)
@@ -63,9 +62,11 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
     + 计算表达式
 + [plot ](https://darjun.github.io/2020/04/12/godailylib/plot/)
     + 绘图
-
 + [hey](https://github.com/rakyll/hey)
     + sends some load to a web application.
++ [depth](https://github.com/KyleBanks/depth)
+    + Go source code dependency trees
+
 
 <!-- 网络 -->
 + [GoPacket](https://github.com/google/gopacket)
@@ -118,6 +119,9 @@ fmt.Println(reflect.DeepEqual(Array1, Array2))
 + [validator](https://darjun.github.io/2020/04/04/godailylib/validator/)
 + [casbin](https://darjun.github.io/2020/06/15/godailylib/fyne/)
     + 权限管理
+
+
+
 <!-- 数据库 -->
 + [sqlc](https://darjun.github.io/2020/04/28/godailylib/sqlc/)
 + gorm
