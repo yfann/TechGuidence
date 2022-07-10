@@ -1,4 +1,4 @@
-# CNI
+# CNI(Container Network Interface)
 
 
 + 容器网络的API
@@ -94,3 +94,7 @@
 + [CNI 这么多，怎么选？| 容器网络系列第1期](https://www.kubernetes.org.cn/9843.html)
 + [VXLAN 基础教程：VXLAN 协议原理介绍](https://zhuanlan.zhihu.com/p/130277008)
 + [云原生钻石课程 | 第6课：Kubernetes网络架构原理深度剖析（上）](https://zhuanlan.zhihu.com/p/487232482)
++ [k8s networking](https://jimmysong.io/kubernetes-handbook/concepts/flannel.html)
+    + Flannel
+    + Calico
+    + Cilium

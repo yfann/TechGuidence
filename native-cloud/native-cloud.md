@@ -19,25 +19,17 @@
 + kubevirt
     + CR
 
+
+## tips
+
++ MSP(managed service provider)
+
 ## ref
 
 + [Awesome Cloud Native](https://jimmysong.io/awesome-cloud-native/)
 + [Kubernetes Handbook](https://jimmysong.io/kubernetes-handbook/cloud-native/quick-start.html)
 
 + [CNCF cloud native interactive landscape](https://landscape.cncf.io/?landscape=serverless)
-
-<!-- tools -->
-+ [kubeless](https://github.com/kubeless/kubeless)
-+ [kubeless](https://kubeless.io/docs/quick-start/)
-
-+ [KubeVela](https://kubevela.io/zh/docs/)
-+ [深入解读：KubeVela 与 PaaS 有何不同？](https://zhuanlan.zhihu.com/p/329878177)
-
-+ [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
-<!-- CLI for CRI -->
-+ [crictl](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
-<!-- CLI for containerd -->
-+ [ctr](https://github.com/projectatomic/containerd/blob/master/docs/cli.md)
 
 
 <!-- VM -->
@@ -53,3 +45,22 @@
 
 <!-- storage -->
 + [解读 YRCloudFile 容器持久化存储的破局之路](https://www.infoq.cn/article/imd9rtnx3cec_qyr95rq)
+
+
+
+<!-- tools -->
++ [kubeless](https://github.com/kubeless/kubeless)
++ [kubeless](https://kubeless.io/docs/quick-start/)
++ [KubeVela](https://kubevela.io/zh/docs/)
++ [深入解读：KubeVela 与 PaaS 有何不同？](https://zhuanlan.zhihu.com/p/329878177)
++ [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
+<!-- new tools -->
++ [crossplane](https://crossplane.io/docs/v1.8/)
++ [RainBond](https://www.rainbond.com/docs/)
+    + 云原生应用管理平台
+
+
+<!-- CLI for CRI -->
++ [crictl](https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md)
+<!-- CLI for containerd -->
++ [ctr](https://github.com/projectatomic/containerd/blob/master/docs/cli.md)

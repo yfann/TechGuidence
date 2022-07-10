@@ -186,11 +186,14 @@ for _, num := range nums {
 
 ## linux install
 + `curl -LO  https://golang.org/dl/go1.15.2.linux-amd64.tar.gz`
-+ `sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz`
++ `sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz`e
++ `export GOPATH=...`
 + `export PATH=$PATH:<GOPATH>/bin`
 + `go version`
 + `go env -w GO111MODULE=on`
+<!-- go get proxy -->
 + `go env -w GOPROXY=https://goproxy.cn,direct`
++ `go env`
 
 ## MAC install
 <!-- install -->
