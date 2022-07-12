@@ -31,60 +31,9 @@
 
 + `exit 1` 退出
 
-## declare
-
-+ `declare -f` 查看定义的函数
-
-+ `declare -f <func>`
-
-+ `declare -F` 输出定义的函数名
 
 
-
-
-## 变量
-+ `your_name="runoob.com"` 定义变量
-    - `readonly your_name`使变量只读
-    - `unset your_name` 删除变量
-    - `echo $your_name` 使用变量
-    - `echo "I am good at ${your_name}Script"`
-
-+ 局部变量、环境变量、shell变量
-```sh
-# 遍历/etc下的文件
-for file in `ls /etc`  
-# 或
-for file in $(ls /etc)
-```
-+ 字符串
-    - 单引号任何字符原样输出
-    - 双引号(可转义，可显示变量)
-        + `str="Hello, I know you are \"$your_name\"! \n"`
-```sh
-your_name="runoob"
-# 使用双引号拼接
-greeting="hello, "$your_name" !"
-greeting_1="hello, ${your_name} !"
-# 使用单引号拼接
-greeting_2='hello, '$your_name' !'
-```
-
-+ `echo ${#your_name}` 输出字符串长度
-
-+ 获取子串
-```sh
-string="runoob is a great site"
-echo ${string:1:4} # 输出 unoo
-```
-
-+ 查找字符串
-```sh
-string="runoob is a great site"
-echo `expr index "$string" io`  # 输出 4
-```
-
-
-##  scripts
+##  tips
 
 + bash 脚本出错时会继续执行
     - `command || exit 1` command有非0返回值时(一般是出错)，脚本停止执行
@@ -111,6 +60,20 @@ echo `expr index "$string" io`  # 输出 4
     echo bar
     ```
 
++ `nohup` no hang up
+    + 退出终端不会影响程序运行
+        + 输出nohup.out or $HOME/nohup.out 
+    + `nohup Command [ Arg … ] [　& ]`
+        + `nohup /root/runoob.sh &`
+            + `&` 让命令在后台执行，终端退出后命令仍旧执行。
+            + stop exe
+                + `ps -aux | grep "runoob.sh" ` find pid and kill
+        + 重定向
+            + `nohup /root/runoob.sh > runoob.log 2>&1 &`
+                + 将标准错误 2 重定向到标准输出 &1 ，标准输出 &1 再被重定向输入到 runoob.log 文件中
+        
+
+
 ## conf
 
 + `. /path/to/some.config` 导入键值对配置文件
@@ -118,3 +81,5 @@ echo `expr index "$string" io`  # 输出 4
 ## ref
 
 + [Bash 脚本入门](https://wangdoc.com/bash/script.html)
++ [Linux nohup 命令](https://www.runoob.com/linux/linux-comm-nohup.html)
++ [Execute remote commands, completely detaching from the ssh connection](https://unix.stackexchange.com/questions/30400/execute-remote-commands-completely-detaching-from-the-ssh-connection)

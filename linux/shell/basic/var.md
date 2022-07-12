@@ -10,6 +10,12 @@
 + `echo $PATH`
 
 ## 自定义变量
++ `your_name="runoob.com"` 定义变量
+    - `readonly your_name`使变量只读
+    - `unset your_name` 删除变量
+    - `echo $your_name` 使用变量
+    - `echo "I am good at ${your_name}Script"`
+    
 + `set` 显示所有变量(环境变量和自定义变量)
 <!-- 声明变量 -->
 + variable=value

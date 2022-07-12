@@ -26,6 +26,14 @@ isdirectory() {
 if isdirectory $1; then echo "is directory"; else echo "nopes"; fi
 ```
 
+## declare
+
++ `declare -f` 查看定义的函数
+
++ `declare -f <func>`
+
++ `declare -F` 输出定义的函数名
+
 ## arguments
 
 + `$#` 参数数量
