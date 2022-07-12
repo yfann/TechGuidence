@@ -56,8 +56,9 @@
 + [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
 <!-- new tools -->
 + [crossplane](https://crossplane.io/docs/v1.8/)
-+ [RainBond](https://www.rainbond.com/docs/)
++ [RainBond](https://www.rainbond.com/docs/quick-start/architecture/)
     + 云原生应用管理平台
+    + 通过无侵入技术，使传统应用快速变成云原生应用
 
 
 <!-- CLI for CRI -->
