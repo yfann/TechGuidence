@@ -1,11 +1,16 @@
 
 # Flannel
 
-+ 网络规划实现
++ Overlay
 
-+ 给集群中的Node提供一个三层网络
-    + 不控制如何组网，只关心流量如何在Node间流动
-
++ 实现
+    + 每个node上运行flanneld,为每个node分配subnet,为node上的pod分配IP,node之间构成虚拟网络，实现集群内跨node通信
+        + node间转发数据包
+            + 隧道模式
+                + UDP
+                + VXlan
+            + 路由模式
+                + HOST-GW
 
 ## tips
 
@@ -23,9 +28,14 @@
 + 跨主机Pod间容器通透性
     + CNI
 
++ Cluster IP, Node IP, Pod IP
+    + Pod IP
+        + CNI来实现IP的申请及数据包的转发
+
 ## ref
 
 + [循序渐进理解CNI机制与Flannel工作原理***网络***](https://blog.yingchi.io/posts/2020/8/k8s-flannel.html)
     + TUN设备
     + 隧道
 + [Flannel原理](https://bbs.huaweicloud.com/forum/thread-83838-1-1.html)
++ [Kubernetes网络插件详解 - Flannel篇](https://zhuanlan.zhihu.com/p/540281221)
