@@ -4,6 +4,10 @@
 + SAML
     + XML
 
++ OIDC
+    + JWT
+
+
 ## OpenID connect(OIDC)
 + 用于单点登录和身份管理
 + 在OAuth2的基础上加了身份验证(authentication)

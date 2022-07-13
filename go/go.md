@@ -195,7 +195,14 @@ for _, num := range nums {
 + `go env -w GOPROXY=https://goproxy.cn,direct`
 + `go env`
 
-
+## MAC install
+<!-- install -->
++ `brew install go`
+<!-- uninstall -->
++ `which go`
+    + `/usr/local/go/bin/go`
++ ` sudo rm -rf /usr/local/go`
++ `sudo rm /etc/paths.d/gowhich`
 
 ## ref
 + [official](https://golang.org/doc/)
@@ -227,3 +234,5 @@ for _, num := range nums {
 <!-- tools -->
 + [vscode go](https://github.com/golang/vscode-go/blob/master/docs/commands.md#go-locate-configured-go-tools)
 + [online go](https://play.golang.org/)
++ [gvm](https://github.com/andrewkroh/gvm)
+    + go version manager

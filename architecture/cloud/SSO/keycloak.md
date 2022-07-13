@@ -136,3 +136,7 @@ http:
 <!-- sso logout -->
 + [keycloak logout](https://www.keycloak.org/docs/latest/securing_apps/index.html#logout)
 + [SIMPLY LOGOUT FROM KEYCLOAK](https://suedbroecker.net/2021/05/18/simply-logout-from-keycloak/#:~:text=The%20Keycloak%20logout%20URL%20must%20contain%20the%20valid,My%20finding%20resulted%20in%20the%20following%20simple%20definition%3A)
+
+<!-- OIDC -->
++ [access type](https://wjw465150.gitbooks.io/keycloak-documentation/content/server_admin/topics/clients/client-oidc.html)
++ [Keycloak的SSO功能与cookie的关系-爱代码爱编程](https://icode.best/i/21880636824597)
