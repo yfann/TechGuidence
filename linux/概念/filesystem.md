@@ -14,7 +14,7 @@
     + 文件数据的block id（indexed allocation）
         + 数据block可以一次性读取
     + inode table(硬盘分区) 存放inode
-        + inode用光则无法在硬盘上创建文件
+        + inode耗尽则无法在硬盘上创建文件
 
 + block 
     + 记录文件内容

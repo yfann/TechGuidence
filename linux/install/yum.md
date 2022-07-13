@@ -6,13 +6,18 @@
 
 ## cmd
 
-+ `yum install/remove <pkg>`
 
 + `yum info <pkg>`
 
 + `yum list` 列出所有可安装的包
     + `yum list | grep ...`
     + `yum list installed | grep ...`
+    + `yum list available | grep ...`
+
++ `yum --showduplicates list <pkg>`
+    + list available version
+
+
 
 + `yum search <keyword>`
     + 搜索包名，描述
@@ -48,7 +53,7 @@
 + `/etc/yum.repo.d`
 
 
-## proxy
+## proxy for yum
 
 + 给`/etc/yum.repos.d/`所有仓库添加代理
     + `sudo vi /etc/yum.conf`
@@ -74,7 +79,7 @@ proxy=http://ip:port
 + [yum.conf *.repo](https://blog.csdn.net/liufuchun111/article/details/81459947)
 + [yum更新软件包时卡死，无法ctrl+c停止](https://blog.csdn.net/czh8706/article/details/106017064)
 + [yum 下载全量依赖 rpm 包及离线安装（终极解决方案](https://www.cnblogs.com/dyh004/p/13975275.html)
-
++ [How can I instruct yum to install a specific version of package X?](https://unix.stackexchange.com/questions/151689/how-can-i-instruct-yum-to-install-a-specific-version-of-package-x)
 
 <!-- repo -->
 + [可供 CentOS 使用的软件库](https://wiki.centos.org/zh/AdditionalResources/Repositories)

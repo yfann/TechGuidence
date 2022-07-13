@@ -17,6 +17,7 @@
 <!-- 代理必须添加 http://或https:// -->
 ```sh
 # /etc/apt/apt.conf
+# sudo vi /etc/apt/apt.conf.d/proxy.conf
 Acquire::http::proxy "http://127.0.0.1:8087/";
 Acquire::https::proxy "http://127.0.0.1:8087/";
 ```
@@ -33,3 +34,4 @@ Acquire::https::proxy "http://127.0.0.1:8087/";
 ## ref
 
 + [Linux apt 命令](https://www.runoob.com/linux/linux-comm-apt.html)
++ [Linux中apt与apt-get命令的区别与解释](https://www.sysgeek.cn/apt-vs-apt-get/)

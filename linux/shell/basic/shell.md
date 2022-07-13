@@ -37,6 +37,7 @@
 
 <!-- comman -->
 + `ln -s <source file>  <link file>` 软链接
+   + `ln -s <dir>  <exist path for the dir>` 软链接
 
 
 <!-- 目录切换 -->

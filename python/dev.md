@@ -19,6 +19,17 @@
 + `pip freeze > requirements.txt`
 + `pip install -r requirements.txt`
 
+## virtualenv
++ `python3 -m pip install --user virtualenv`
+
+```sh
+virtualenv env
+. env/bin/activate
+pip install -r requirements.txt
+```
+
+
 ## ref
 
 + [venv --- 创建虚拟环境](https://docs.python.org/zh-cn/3/library/venv.html)
++ [virtualenv](https://www.liaoxuefeng.com/wiki/1016959663602400/1019273143120480)
