@@ -88,3 +88,7 @@ proxy=http://ip:port
 + [CentOS7解决yum中软件版本过低问题](https://www.iizyx.com/54/)
 <!-- proxy -->
 + [为yum源配置代理](https://pshizhsysu.gitbook.io/linux/yum/wei-yum-yuan-pei-zhi-dai-li)
+
+
+<!-- repo -->
++ [](https://centos.pkgs.org/8/centos-baseos-x86_64/iptables-1.8.4-20.el8.x86_64.rpm.html)
