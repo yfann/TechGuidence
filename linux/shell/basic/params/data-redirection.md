@@ -44,6 +44,7 @@ cmd << delimiter
 delimiter
 ```
 
++ `[cmd]   2>&1 | tee k3s.log` output 屏幕打印同时输出文件
 
 
 

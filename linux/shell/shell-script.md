@@ -59,7 +59,7 @@
     foo | echo a
     echo bar
     ```
-
+<!-- for long runing script -->
 + `nohup` no hang up
     + 退出终端不会影响程序运行
         + 输出nohup.out or $HOME/nohup.out 
@@ -71,7 +71,10 @@
         + 重定向
             + `nohup /root/runoob.sh > runoob.log 2>&1 &`
                 + 将标准错误 2 重定向到标准输出 &1 ，标准输出 &1 再被重定向输入到 runoob.log 文件中
-        
+
++ `screen`
+
++ `tmux`
 
 
 ## conf
