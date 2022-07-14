@@ -20,8 +20,10 @@
 + `ctrl + b d` detach
 + `tmux attach -t 0` attach
     + `tmux attach -t <session-name>`
+
 + `tmux kill-session -t 0`
     + `tmux kill-session -t <session-name>`
+    + `tmux kill-server`
 
 + `tmux switch -t 0`
     + `tmux switch -t <session-name>`
