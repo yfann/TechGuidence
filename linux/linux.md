@@ -37,6 +37,8 @@
     + 并发运行的instance通过检查lock文件是否存在来判断当前资源是否有其他Instance在使用
 
 
++ `/etc/modules-load.d` vs `/etc/modules`
+
 ## 目录
 + /bin        二进制文件，系统常规命令
 + /boot       系统启动分区，系统启动时读取的文件
@@ -76,3 +78,7 @@
 <!-- 教程 -->
 + [鸟哥的Linux私房菜：基础学习篇 第四版](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/148.html)
 + [玩转Linux内核](https://www.zhihu.com/people/gang-hao-xin-dong-23)
+
+
+<!-- 内核 -->
++ [ modules-load.d](https://manpages.ubuntu.com/manpages/focal/zh_CN/man5/modules-load.d.5.html)
