@@ -5,8 +5,12 @@
 
 
 ## install rust
-
-
+<!-- rustup -->
++ `curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
+<!-- 安装c编译器 -->
++ rust 依赖libc和linker
+    + `xcode-select --install` for macOS
+    
 ## rust GC
 
 + 对象类型赋值时，一个变量赋值给另一变量时会移交所有权，原变量不可继续访问
