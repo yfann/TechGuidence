@@ -28,15 +28,15 @@
 
 + `ctrl+b/f`翻页
 
+## shortcut
+
++ `shift + k/j` scroll line by line
+
 ## 字符串处理
 
 + `/<string>` 查找光标后的字符串
     + `?><string>` 查找光标前的字符串
 + `:%s/<old string>/<new string>/g`  替换字符串
-
-
-
-
 
 ## ref
 + [vi/vim](https://www.runoob.com/linux/linux-vim.html)

@@ -1,9 +1,6 @@
-## Todo
+## to read
 <!-- k8s -->
 + [数据包在 Kubernetes 中的一生](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)
-+ containerd vs docker
-+ iptables vs ipvs
-+ rancher
 
 <!-- math -->
 + [Math for programmers](https://wangwei1237.github.io/shares/Math-for-Programmers.pdf)
@@ -23,3 +20,8 @@
 <!-- videos -->
 + [PowerCert Animated Videos](https://www.youtube.com/c/PowerCertAnimatedVideos)
 
+
+
+## to check
+
++ rancher/klipper-lb:v0.2.0

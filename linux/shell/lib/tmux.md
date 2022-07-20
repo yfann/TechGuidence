@@ -20,8 +20,10 @@
 + `ctrl + b d` detach
 + `tmux attach -t 0` attach
     + `tmux attach -t <session-name>`
+
 + `tmux kill-session -t 0`
     + `tmux kill-session -t <session-name>`
+    + `tmux kill-server`
 
 + `tmux switch -t 0`
     + `tmux switch -t <session-name>`
@@ -39,9 +41,12 @@
 + `ctrl + b`
     + `d` detach
     + `x` kill
-    + `[` 查看历史输出
-        + `q` 退出
+    + `[`  scroll mod
+        + `up/down` scroll
+        + `q` quit scroll mode
 
 
 ## ref
 + [Tmux 使用教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
++ [Everything you need to know about tmux – Status Bar](https://arcolinux.com/everything-you-need-to-know-about-tmux-status-bar/)
++ [How do I scroll in tmux?](https://superuser.com/questions/209437/how-do-i-scroll-in-tmux)
