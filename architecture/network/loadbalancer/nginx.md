@@ -55,6 +55,7 @@
 + [nginx配置location](https://www.jianshu.com/p/d3fb148cb5eb)
 + [alias](http://nginx.org/en/docs/http/ngx_http_core_module.html#alias)
 + [Nginx系列：root与alias指令用法的区别](https://cloud.tencent.com/developer/article/1696822)
++ [How To Set Up Nginx Server Blocks (Virtual Hosts) on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)
 <!-- issue -->
 + [NGINX does not support HTTP/1.x and HTTP/2 at the same time on a cleartext (non-TLS) port.](https://github.com/kubernetes/ingress-nginx/issues/3897)
 
