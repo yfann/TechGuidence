@@ -30,6 +30,11 @@
 + ` tmux split-window`
     + ` tmux split-window -h`
 
+## debug
++ `while true; do date;sleep 1;done`
+
++ `x=1;while true; do echo $x;x=$(($x+1));sleep 1;done`
+
 ## shortcut
 + `ctrl + b`
     + `d` detach

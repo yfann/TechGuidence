@@ -11,6 +11,10 @@
 
 + `${BASH_SOURCE[0]}` 脚本调用栈
 
+## log
+
++ `x=1;while true; do echo $x;x=$(($x+1));sleep 1;done 2>&1 | tee debug.log`
+
 ## ref
 
 + [脚本除错](https://wangdoc.com/bash/debug.html)
