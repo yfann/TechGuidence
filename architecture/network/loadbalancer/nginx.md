@@ -18,6 +18,21 @@
 + `nginx -t` 检查配置文件语法
 + `vi /etc/nginx/nginx.conf`
 
++ alias
+```conf
+  server {
+    listen 0.0.0.0:8080;
+    root /app;
+    location / {
+      index index.html index.php;
+    }
+    location /nginx/ {
+      index index.html index.php;
+      alias /app/;
+    }
+  }
+```
+
 ## tips
 + 正向代理
     + 代理客户端
@@ -38,6 +53,11 @@
 + [upload](https://www.nginx.com/resources/wiki/modules/upload/)
 + [Server names](http://nginx.org/en/docs/http/server_names.html)
 + [nginx配置location](https://www.jianshu.com/p/d3fb148cb5eb)
-
++ [alias](http://nginx.org/en/docs/http/ngx_http_core_module.html#alias)
++ [Nginx系列：root与alias指令用法的区别](https://cloud.tencent.com/developer/article/1696822)
 <!-- issue -->
 + [NGINX does not support HTTP/1.x and HTTP/2 at the same time on a cleartext (non-TLS) port.](https://github.com/kubernetes/ingress-nginx/issues/3897)
+
+
+<!-- helm  -->
++ [nginx helm chart](https://github.com/bitnami/charts/tree/master/bitnami/nginx)
