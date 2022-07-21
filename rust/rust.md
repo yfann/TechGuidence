@@ -5,12 +5,21 @@
 
 
 ## install rust
-<!-- rustup -->
+<!--install on mac and linux -->
 + `curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
-<!-- 安装c编译器 -->
-+ rust 依赖libc和linker
++ 安装c编译器,rust依赖libc和linker
     + `xcode-select --install` for macOS
-    
+
+<!-- install on windows -->
++ WSL
+    + `curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh`
+
+<!-- uninstall -->
++ `rustup self uninstall`
+
+<!-- check -->
++ `rustc -V`
++ `cargo -V`
 ## rust GC
 
 + 对象类型赋值时，一个变量赋值给另一变量时会移交所有权，原变量不可继续访问
@@ -24,3 +33,6 @@
 
 <!-- details -->
 + [Rust 所有权：内存管理新流派](https://juejin.cn/post/6844903509087764488)
+
+<!-- install -->
++ [WSL安装Rust开发环境](http://www.voycn.com/article/wslanzhuangrustkaifahuanjing)
