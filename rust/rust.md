@@ -20,6 +20,11 @@
 <!-- check -->
 + `rustc -V`
 + `cargo -V`
+
+## vscode for Rust
++ rust-analyzer
+
+
 ## rust GC
 
 + 对象类型赋值时，一个变量赋值给另一变量时会移交所有权，原变量不可继续访问
@@ -30,7 +35,7 @@
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
 + [rust course](https://github.com/sunface/rust-course)
 + [Rust wiki](https://learnku.com/rust/wikis/29014S)
-
++ [The Rust Programming Language](https://doc.rust-lang.org/book/)
 <!-- details -->
 + [Rust 所有权：内存管理新流派](https://juejin.cn/post/6844903509087764488)
 
