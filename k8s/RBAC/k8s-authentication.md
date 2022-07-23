@@ -146,7 +146,7 @@
       + a signed JSON Web Token (JWT)
         + 可以用`Authorization:Bearer <token>`的形式重集群外访问
 ```yaml
-        # sa的secret
+# sa的secret
 ca.crt: (APISERVER'S CA BASE64 ENCODED)
 token: (BEARER TOKEN BASE64 ENCODED)
 ```
@@ -157,35 +157,50 @@ token: (BEARER TOKEN BASE64 ENCODED)
     + `system:serviceaccounts:(NAMESPACE)`
 
 <!-- OpenID Connect Tokens -->
-+ OpenID connect
-    + OAuth2 suppored
++ user需要先从identity provider获取
+  + access_token
+  + id_token
+  + refresh_token
 
-+ ID token
-    + returned by OAuth2 providers
-    + JWT
++ id_token
+    + `kubectl --token <id_token>`
+      + 或把id_token加入到kubeconfig中
+    + 不可被回收(revoke)，每隔几分钟就要重新获取
     + 作为bearer token(token response)访问API server
 
++ 访问k8s dashboard时
+  + 需要kubectl proxy
+  + 或能注入id_token的reverse proxy
 
++ OpenID Connect Identity Provider
+  + k8s本身不提供
+  + 可以使用已经存在的Identity Provider
+  + 或者部署自己的identity provider
+    + such as 
+      + keycloak
+      + dex
+    + must support:
+      + support OpenID connect discovery
+      + TLS
+      + Have a CA signed certificate(even if the CA is not a commercial CA or is self signed)
 
 
 ## ref
 <!-- authentication -->
 + [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/concepts/security/controlling-access/)
 + [Authenticating](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
++ [normal user 通过certificate绑定role](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user)
 
 <!-- auth method -->
 + [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/)
 + [Authenticating with Bootstrap Tokens](https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/)
-
-
-<!-- others -->
-+ [Authorization Overview](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
-+ [Authenticating](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
-+ [管理 Service Accounts](https://kubernetes.io/zh/docs/reference/access-authn-authz/service-accounts-admin/)
-
-+ [normal user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user)
-+ [Certificates](https://kubernetes.io/docs/concepts/cluster-administration/certificates/)
-+ [Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
-
-<!-- Open ID -->
 + [OpenID Connect](https://openid.net/connect/)
+
+
+<!-- config -->
++ [config api server](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#configuring-the-api-server)
+
+
+<!-- service account -->
++ [为 Pod 配置服务账户](https://kubernetes.io/zh-cn/docs/tasks/configure-pod-container/configure-service-account/)
++ [管理 Service Accounts](https://kubernetes.io/zh/docs/reference/access-authn-authz/service-accounts-admin/)

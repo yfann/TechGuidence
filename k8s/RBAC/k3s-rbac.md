@@ -37,15 +37,7 @@
     + Attribute: 位置，设备，认证类型，用户的cookie
 
 ## ref
-<!-- k8s鉴权 -->
-+ [https://kubernetes.io/docs/concepts/security/controlling-access/](https://kubernetes.io/docs/concepts/security/controlling-access/)
-
-+ [Authenticating](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#users-in-kubernetes)
 + [使用 RBAC 鉴权](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)
-+ [为 Pod 配置服务账户](https://kubernetes.io/zh-cn/docs/tasks/configure-pod-container/configure-service-account/)
-+ [authorizer](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
-
-<!-- RBAC design -->
 + [Kubernetes RBAC (基于角色的访问控制) 的演进历史、设计理念及简洁实现](https://zhuanlan.zhihu.com/p/485779426)
 + [RBAC like it was meant to be](https://tailscale.com/blog/rbac-like-it-was-meant-to-be/)
 
