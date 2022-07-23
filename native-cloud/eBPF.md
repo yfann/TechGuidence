@@ -74,6 +74,6 @@
 + [eBPF, sidecars, and the future of the service mesh](https://buoyant.io/2022/06/07/ebpf-sidecars-and-the-future-of-the-service-mesh/)
 + [请暂时抛弃使用 EBPF 取代服务网格和 Sidecar 模式的幻想](https://jimmysong.io/blog/ebpf-sidecar-and-service-mesh/)
 + [eBPF Cilium实战(1) – 基于团队的网络隔离](https://www.kubernetes.org.cn/9884.html)
-
++ [超细节！十年码农讲述Linux网络新技术基石——eBPF and XDP](https://zhuanlan.zhihu.com/p/543113095)
 <!-- observation -->
 + [pixie](https://px.dev/)

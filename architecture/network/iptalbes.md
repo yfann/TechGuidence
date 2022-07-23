@@ -39,3 +39,6 @@
     + [深入理解 iptables 和 netfilter 架构***网络***](https://arthurchiao.art/blog/deep-dive-into-iptables-and-netfilter-arch-zh/)
 + [理解 Istio Service Mesh 中 Envoy 代理 Sidecar 注入及流量劫持](https://jimmysong.io/blog/envoy-sidecar-injection-in-istio-service-mesh-deep-dive/)
 + [iptables](https://wangchujiang.com/linux-command/c/iptables.html)
+
++ [一个奇葩的网络问题，把技术砖家"搞蒙了"](https://mp.weixin.qq.com/s?__biz=MzkyMTIzMTkzNA==&mid=2247506496&idx=1&sn=c629e22f0de944c0940ffb3a665b726f&chksm=c1842d11f6f3a407e2200d28da9033c23a411bdc64f85ddb756c0ff36d660eed38338e611d1f&scene=21#wechat_redirect)
++ [洞悉linux下的Netfilter&iptables：什么是Netfilter？](https://zhuanlan.zhihu.com/p/486823403)
