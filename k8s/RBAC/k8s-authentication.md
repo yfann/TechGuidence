@@ -34,8 +34,6 @@
 + 许多附加组件 add-ons 目前在 kube-system 命名空间以 "default" 服务账号运行.要允许这些附加组件以超级用户权限运行，需要将集群的 cluster-admin 权限授予 kube-system 命名空间中的 "default" 服务账号。
 
 
-## normal user
-
 
 ## Authentication strategies 
 
