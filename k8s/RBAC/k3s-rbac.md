@@ -36,6 +36,8 @@
       + 除了检查用户的role还会检查用户的attribute
     + Attribute: 位置，设备，认证类型，用户的cookie
 
++ apiGroups 如果为空则为builtin资源(pods,namespace),不为空则为Custom resource
+
 ## ref
 + [使用 RBAC 鉴权](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)
 + [Kubernetes RBAC (基于角色的访问控制) 的演进历史、设计理念及简洁实现](https://zhuanlan.zhihu.com/p/485779426)

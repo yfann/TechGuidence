@@ -3,13 +3,12 @@
 # kubernetes Authentication
 
 + k8s user
-  + service account
-  + normal user
+  + service account(in cluster)
+  + normal user(outside the cluster)
       + k8s外部产生，不能被k8s api添加
       + 与k8s关联
           + 被cluster's certificate authority (CA) 签名的证书
-              +  `subject` of cert
-                  + common name中提取用户名(`"/CN=bob"`)
+                  + user name is from common name(`"/CN=bob"`) in `subject` of cert
                       + RBAC会确定用户是否有权访问资源
 
 + process(kubectl,kubelet...) call k8s api 时的身份
