@@ -41,5 +41,6 @@
 + [Kubernetes RBAC (基于角色的访问控制) 的演进历史、设计理念及简洁实现](https://zhuanlan.zhihu.com/p/485779426)
 + [RBAC like it was meant to be](https://tailscale.com/blog/rbac-like-it-was-meant-to-be/)
 
++ [Limiting access to Kubernetes resources with RBAC](https://learnk8s.io/rbac-kubernetes)
 <!-- integrate RBAC with keycloak -->
 + [RBAC keylcoak](https://faun.pub/kubernetes-auth-e2f342a5f269)
