@@ -22,6 +22,8 @@ let x: &str = "hello, world";
 let y = x;
 // x,y都引用同一个字面量
 ```
+
+
 + 不可变引用(不能通过引用修改原值)
 ```rust
 let x=5;
@@ -42,8 +44,8 @@ let r2 = &mut s;
 // r2会报错
 {
     let r3 = &mut s;
+    // 不同作用域可以引用
 }
-// 不同作用域可以引用
 ```
 
 + 悬垂引用(Dangling References)
@@ -58,7 +60,7 @@ fn dangle() -> &String {
 
     &s
 }
-// 报错
+// 编译时报错
 ```
 
 ### value move
@@ -81,6 +83,14 @@ let s2 = s1.clone();
 + String
     + 字符串对象，堆中分配内存
     + `let s = String::from("hello");`
+
++ `()` 单元类型
+    + 值也是`()`
+    + main返回`()`,不等于无返回值
+
++ 发散函数( diverge function )
+    + 无返回值的函数,无法收敛的函数
+    + 函数名后加`!` 
 
 ## tips
 
