@@ -22,7 +22,7 @@
 + `cargo -V`
 
 ## vscode for Rust
-+ rust-analyzer
++ install plugin `rust-analyzer`
 
 
 ## rust GC
