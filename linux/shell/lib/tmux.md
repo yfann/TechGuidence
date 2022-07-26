@@ -45,8 +45,18 @@
         + `up/down` scroll
         + `q` quit scroll mode
 
+<!-- copy mode -->
++ `ctrl + b` + `[` copy mode
+    + `ctrl + s`+ paste string + `enter` search string
+        + `n` next word
+        + `shift + n` forward word
+    + `shift + alt + ,` go to top
+
+## tips
++  emacs mode vs vi mode
 
 ## ref
 + [Tmux 使用教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
 + [Everything you need to know about tmux – Status Bar](https://arcolinux.com/everything-you-need-to-know-about-tmux-status-bar/)
 + [How do I scroll in tmux?](https://superuser.com/questions/209437/how-do-i-scroll-in-tmux)
++ [tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
