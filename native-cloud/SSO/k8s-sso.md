@@ -28,3 +28,4 @@
 <!-- normal user auth -->
 + [Kubectl Login: Solving Authentication For Kubernetes](https://loft.sh/blog/kubectl-login-solving-authentication-for-kubernetes/)
 + [int128/kubelogin](https://github.com/int128/kubelogin)
++ [kubectl with OpenID Connect](https://medium.com/@int128/kubectl-with-openid-connect-43120b451672)
