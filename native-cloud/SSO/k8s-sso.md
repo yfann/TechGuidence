@@ -24,3 +24,7 @@
 
 + [kube-oidc-proxy](https://github.com/jetstack/kube-oidc-proxy)
 + [使用 Kube-OIDC-Proxy 跨多个 EKS 集群进行一致的 OIDC 身份验证](https://aws.amazon.com/cn/blogs/china/consistent-oidc-authentication-across-multiple-eks-clusters-using-kube-oidc-proxy/)
+
+<!-- normal user auth -->
++ [Kubectl Login: Solving Authentication For Kubernetes](https://loft.sh/blog/kubectl-login-solving-authentication-for-kubernetes/)
++ [int128/kubelogin](https://github.com/int128/kubelogin)
