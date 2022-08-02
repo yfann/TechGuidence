@@ -95,3 +95,19 @@ let s2 = s1.clone();
 ## tips
 
 +  Non-Lexical Lifetimes(NLL)
+
++ `let PATTERN = EXPRESSION;`
+    +  Rust 中,变量名也是一种模式
+
++ 静态分发(static dispatch)
+    + 泛型是在编译时处理的，编译器为每一个泛型参数对应的具体类型生成一份代码
+    + `Box<T>`
+
++ 动态分发(dynamic dispatch)
+    + `dyn`
+        + `Box<dyn Trait>`
+    + 使用特征对象时，Rust必须使用动态分发
+    
++ 关联函数
+    + 不含self参数
+    + 相当于类方法
