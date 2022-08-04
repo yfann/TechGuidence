@@ -41,7 +41,7 @@
 ## ref
 + [使用 RBAC 鉴权](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)
 + [Kubernetes RBAC (基于角色的访问控制) 的演进历史、设计理念及简洁实现](https://zhuanlan.zhihu.com/p/485779426)
-+ [RBAC like it was meant to be](https://tailscale.com/blog/rbac-like-it-was-meant-to-be/)
+    + [RBAC like it was meant to be](https://tailscale.com/blog/rbac-like-it-was-meant-to-be/)
 
 + [Limiting access to Kubernetes resources with RBAC](https://learnk8s.io/rbac-kubernetes)
 <!-- integrate RBAC with keycloak -->
