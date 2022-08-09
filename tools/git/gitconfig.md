@@ -1,6 +1,6 @@
 <!-- ~/.gitconfig -->
 
 
-<!-- save password -->
+<!-- save password to .git-credentials-->
 [credential]
     helper = store
