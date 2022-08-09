@@ -4,6 +4,7 @@
 + `netstat -lnp | grep "6443\|8472\|2379\|2380"` or
 
 + `grep -o "s" <<<"sdfas123ss"` 只显示匹配的部分
+    + `grep -o "<title>.*</title>"`
 
 + `ls $K3S_PATH| grep -wv images.txt` not include images.txt
 
