@@ -44,5 +44,7 @@
     + [RBAC like it was meant to be](https://tailscale.com/blog/rbac-like-it-was-meant-to-be/)
 
 + [Limiting access to Kubernetes resources with RBAC](https://learnk8s.io/rbac-kubernetes)
+
 <!-- integrate RBAC with keycloak -->
 + [RBAC keylcoak](https://faun.pub/kubernetes-auth-e2f342a5f269)
++ [How to authenticate user with Keycloak OIDC Provider in Kubernetes ](https://middlewaretechnologies.in/2022/01/how-to-authenticate-user-with-keycloak-oidc-provider-in-kubernetes.html)
