@@ -1,4 +1,6 @@
 
+## kubectl
+
 + `kubectl --help`
 
 
@@ -6,22 +8,5 @@
 + `kubectl rollout restart deployment/abc`
 
 
-## resources
-
-
-## apply on command
-
-```yaml
-
-cat <<EOF | kubectl apply -f -
-apiVersion: certificates.k8s.io/v1
-kind: CertificateSigningRequest
-metadata:
-  name: developer
-spec:
-  request: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURSBSRVFVRVNULS0tLS0KTUlJQ1p6Q0NBVThDQVFBd0lqRVNNQkFHQTFVRUF3d0paR1YyWld4dmNHVnlNUXd3Q2dZRFZRUUtEQU5rWlhZdwpnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCQVFENmZVS1Z2Y0VIVm12ZnJaMmc2Y1IzCmRRNzBLK05mNkwrMERPYnFrZm9zVC9rREpxd2pBL216eGM4RmY3Q21oTVREa1F2eDdrWVpDcUNSSXRCVUl1dUkKa3B5Y3Q1UmlsZExLd0wxYzlZdTU4ejV6UThwZWs4YTBmK2JSU3B5WlUyejArNDZ5cnpFb2FjMWVyWEdmU3d0aQpMRmpiWVFLT3ZXZ05YK3BVMWJLY0w0bXAyQzlTQTJhQ3dJOHRiWlMrK2VxZUNwWW9LbldtL0RVNGRjQWhGWE82CnFzYXFrNVl6SjRTdzVRZFFvTzN1WnZSbmk1YW5pUThrQkl5cXlEbVRaa0QwbHdTOC9BanhZNlk1ZHdoTXJnaFAKZ0hGT1lTSSthemQ3QkNkSXN0TGhGTlFZWkpVcmh4Y0gyK0lseExmRGZsYTZaWCtSL29LUkhYRVBuVDRnd0x2dgpBZ01CQUFHZ0FEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FRRUFGbStDYVFseUF1QWFhSExTRGxMRFdSRFJXeklSCllxSXhBa1FzaUlLUjdyZUI4K1ZObzV1bnJldkxnWFFRVWV3OU5jM0YrSnFxVkYrR2g1Q2pFVFU0d2t3eWZnczkKTlpGbDlLTFZVZHVuazk1Y2VHWXloNWdsZk1abnc5MzNzTzE5TzVGSkkxYVUvN25DZFVLQTI2TlpaVmNqRHJ5ZAowUkxBamxPRjdkNjlGZ0l2aG1rZjNJcVBVc3dTTGR1cmY2TzB4TC9KYXJ3djliNUlJbHRiMjBLZllDZXpNdEtsClFQd1BQdDlnb3FwbjBZb1hmNGxQMldWUlVadHc5enNLWUdxMjBoOVRoNElieHJoOVYrSTB5ZnlFWjgxSDBxMzQKR2xCaTZkMlZvYTV0ckJBdFkxU1pNMWVlL1RvNXd6MWI3TmNERjNFbVU4V0hCaXA2Ukp0b0xYOFZmQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFIFJFUVVFU1QtLS0tLQo=
-  signerName: kubernetes.io/kube-apiserver-client
-  usages:
-  - client auth
-EOF
-```
+## ref
++ [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)

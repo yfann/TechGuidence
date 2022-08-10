@@ -108,6 +108,21 @@ spec:
 EOT
 
 
++ cat kubectl apply
+```yaml
+cat <<EOF | kubectl apply -f -
+apiVersion: certificates.k8s.io/v1
+kind: CertificateSigningRequest
+metadata:
+  name: developer
+spec:
+  ...
+  signerName: kubernetes.io/kube-apiserver-client
+  usages:
+  - client auth
+EOF
+```
+
 ## patch
 
 + `kubectl patch deployment/nginx-deployment --patch "$(cat patch.yaml)"`
