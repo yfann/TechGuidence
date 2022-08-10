@@ -59,6 +59,7 @@
 + [RainBond](https://www.rainbond.com/docs/quick-start/architecture/)
     + 云原生应用管理平台
     + 通过无侵入技术，使传统应用快速变成云原生应用
+    + 应用为中心的PaaS
 
 
 <!-- CLI for CRI -->
