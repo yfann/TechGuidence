@@ -19,7 +19,13 @@
 + kubevirt
     + CR
 
-
+<!-- 部署 -->
++ Kustomize
++ Kubernetes Yaml
++ Chart
+    + Helm
+    + KubeVela
+    
 ## tips
 
 + MSP(managed service provider)
@@ -51,8 +57,7 @@
 <!-- tools -->
 + [kubeless](https://github.com/kubeless/kubeless)
 + [kubeless](https://kubeless.io/docs/quick-start/)
-+ [KubeVela](https://kubevela.io/zh/docs/)
-+ [深入解读：KubeVela 与 PaaS 有何不同？](https://zhuanlan.zhihu.com/p/329878177)
+
 + [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
 <!-- new tools -->
 + [crossplane](https://crossplane.io/docs/v1.8/)
