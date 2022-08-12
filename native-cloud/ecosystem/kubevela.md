@@ -10,6 +10,10 @@
 ## OAM
 + an open model for defining cloud native apps
 
+## CUE
++ CUE is an open-source data validation language and inference engine with its roots in logic programming.
++ it merges types and values into a single concept.
+
 ## ref
 + [KubeVela](https://kubevela.io/zh/docs/)
 + [深入解读：KubeVela 与 PaaS 有何不同？](https://zhuanlan.zhihu.com/p/329878177)
