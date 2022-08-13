@@ -3,6 +3,7 @@
 + GitOps is used to automate the process of provisioning infrastructure.
     + operations teams that adopt GitOps use configuration files stored as code (infrastructure as code).
     + GitOps configuration files generate the same infrastructure environment every time it’s deployed
++ GitOps provides Continuous Deployment for Kubernetes
 
 ## key components to gitops workflow
 + a Git repo

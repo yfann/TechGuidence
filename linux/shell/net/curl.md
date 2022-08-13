@@ -43,6 +43,9 @@
     + certificate directory
     + PEM format
 
++ `-X` 
+    + `-X POST`
+
 ## practice
 
 ```sh
@@ -52,6 +55,14 @@
     echo "connecting nexus ..."
     sleep 5
   done
+```
+
+
+```sh
+curl -X POST https://reqbin.com/echo/post/json
+   -H 'Content-Type: application/json'
+   -d '{"login":"my_login","password":"my_password"}'
+
 ```
 
 ## ref
