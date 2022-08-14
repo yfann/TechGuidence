@@ -140,3 +140,10 @@ http:
 <!-- OIDC -->
 + [access type](https://wjw465150.gitbooks.io/keycloak-documentation/content/server_admin/topics/clients/client-oidc.html)
 + [Keycloak的SSO功能与cookie的关系-爱代码爱编程](https://icode.best/i/21880636824597)
+
+
+<!-- debug OAuth process -->
++ [Using Client Scope with RedHat SSO Keycloak](https://www.janua.fr/using-client-scope-with-redhat-sso-keycloak/)
++ [How do I perform common OAuth 2.0 tasks using curl commands with the standard endpoints in AM 5.x and OpenAM 13.x?](https://backstage.forgerock.com/knowledge/kb/article/a45882528)
++ [Keycloak的SSO功能与cookie的关系-爱代码爱编程](https://icode.best/i/21880636824597)
++ [Keycloak curl Authorization Code Flow login](https://thrysoee.dk/keycloak-authorization-code-login/)

@@ -31,7 +31,7 @@
 
 + `exit 1` 退出
 
-
++ `set -v ` 显示执行内容
 
 ##  tips
 
@@ -80,6 +80,8 @@
 ## conf
 
 + `. /path/to/some.config` 导入键值对配置文件
+
+## issues
 
 ## ref
 

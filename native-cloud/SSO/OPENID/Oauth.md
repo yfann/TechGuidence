@@ -5,6 +5,7 @@
     - 短期，会自动失效
     - 可被撤销
     - 有权限范围(scope)
+
 ## 四种方式
 + 授权码（authorization-code）
     - 现获取授权码再获取令牌
@@ -24,7 +25,7 @@
 + digital signature
 + digital certificate
 + certificate authority(CA)
-+ public/privaate key
++ public/private key
 
 ## ref
 <!-- auth2 -->
@@ -34,3 +35,4 @@
 + [GitHub OAuth 第三方登录示例教程](http://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
 <!-- other -->
 + [OpenId](https://www.biaodianfu.com/learn-openid.html)
+[Ref](http://self-issued.info/docs/draft-ietf-oauth-v2-bearer.html#toc)
