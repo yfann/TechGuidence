@@ -1,7 +1,7 @@
 ## native cloud
 + [kubevela](https://kubevela.io/zh/docs/)
 + [opentelemetry](https://opentelemetry.io/)
-
++ [k8s list](https://zhuanlan.zhihu.com/p/552448369)
 
 ## to read
 <!-- k8s -->
