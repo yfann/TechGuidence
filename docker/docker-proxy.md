@@ -2,7 +2,8 @@
 ## docker pull proxy
 
 <!-- linux -->
-
++ `mkdir /etc/systemd/system/docker.service.d`
++ `touch /etc/systemd/system/docker.service.d/http-proxy.conf`
 + `sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf`
 ```cfg
 [Service]
@@ -40,7 +41,12 @@ Environment="HTTP_PROXY=http://211.69.198.232:8118"
 
 + `docker run --env HTTP_PROXY="http://192.168.1.12:3128" ...`
 
+
+## test
++ `docker pull hello-world`
+
 ## ref
 
 + [docker(包括WSL2)如何配置Proxy](https://zhuanlan.zhihu.com/p/427589367)
 + [Configuring Docker For Use With a Proxy](https://movidius.github.io/ncsdk/docker_proxy.html)
++ [Set-up proxy settings in CentOS and Docker Installation](https://docs.expertflow.com/chat/3.16/hybrid-chat-deployment/docker-based-deployment/set-up-proxy-settings-in-centos-and-docker-installation)
