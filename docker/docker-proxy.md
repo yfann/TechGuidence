@@ -7,10 +7,12 @@
 + `sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf`
 ```cfg
 [Service]
-Environment="HTTP_PROXY=http://211.69.198.232:8118"
+Environment="HTTP_PROXY=...." "HTTPS_PROXY=..."  "NO_PROXY=localhost,127.0.0.0/8"
 ```
    + `sudo systemctl daemon-reload`
    + `sudo systemctl restart docker`
+
++ ` sudo systemctl show docker --property Environment`
 
 <!-- WSL2 -->
 
