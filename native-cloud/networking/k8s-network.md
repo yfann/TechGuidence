@@ -75,6 +75,13 @@
         + 流量
             + ingress(LB) --> service ---> nodeport
 
+## underlay network
++ flannel host-gw
+
+
+## overlay network
+
+
 ## tips
 
 + CIDR(Classless Inter-Domain Routing)无类别域间路由
