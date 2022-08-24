@@ -77,10 +77,19 @@
 
 ## underlay network
 + flannel host-gw
+    + 每个node都在L2网络中
+    + node作为路由，跨节点通信通过路由表方式
 
++ Calico BGP(Border Gateway Protocol)
 
 ## overlay network
 
++ IPVLAN & MACVLAN
+    + pod网络拉平到Node同级
+
++ VxLan
+
++ IPIP
 
 ## tips
 
@@ -91,3 +100,4 @@
 + [一文搞懂Kubernetes的网络模型：Overlay和Underlay](https://jishuin.proginn.com/p/763bfbd5be01)
 + [干货分享| Kubernetes网络难懂？可能是没看到这篇文章](https://zhuanlan.zhihu.com/p/526586444)
 + [集群网络系统](https://kubernetes.io/zh/docs/concepts/cluster-administration/networking/)
++ [16 张图硬核讲解 Kubernetes 网络模型](https://zhuanlan.zhihu.com/p/555185137)
