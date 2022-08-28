@@ -1,3 +1,10 @@
+# docker network
+
+
+
++ linux veth pair
+
+
 ## 单主机模式
 
 + host 模式
@@ -11,8 +18,8 @@
     + container有独立的network namespace,没有任何网络设置如分配veth,网桥连接
 
 + bridge 模式
-    + 主机上创建一个名为docker0的虚拟网桥
-    + 此主机上启动的Docker容器会连接到这个虚拟网桥上
+    + host上创建一个名为docker0的虚拟网桥
+    + 此主机上启动的Docker container会连接到这个虚拟网桥上
     + 虚拟网桥的工作方式和物理交换机类似
     + docker0的IP地址为容器的默认网关
     + 主机上创建一对虚拟网卡veth pair设备
@@ -30,5 +37,5 @@
 + endpoint 连接sandbox和network
 
 ## ref
-+ [ docker 网络四种实现](https://zhuanlan.zhihu.com/p/378379821)
++ [docker 网络四种实现](https://zhuanlan.zhihu.com/p/378379821)
 + [Docker的网络概念与网络模式](https://zhuanlan.zhihu.com/p/82735394)
