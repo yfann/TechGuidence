@@ -6,7 +6,6 @@
     + 仅watch可能会丢失消息
     + list保证了可靠
 
-
 + resourceVersion
     + 这个标签是递增的数字，所以当客户端并发处理同一个资源的事件时，它就可以对比resourceVersion来保证最终的状态和最新的事件所期望的状态保持一致。
 
@@ -14,13 +13,14 @@
 + list API 返回资源列表
     + 查询当前资源
 + 基于http短连接
-+ 
++
 
 ## watch
 
 + url?watch=true
 
 + http长连接
+    + websocket
     + Chunked transfer encoding（HTTP/1.1）
         + response
             + `Transfer-Encoding:chunked`
@@ -76,3 +76,4 @@ Transfer-Encoding: chunked
 ## ref
 + [理解 K8S 的设计精髓之 List-Watch机制和Informer模块](https://zhuanlan.zhihu.com/p/59660536)
 + [谈谈 Kubernetes list/watch 的设计原理](https://zhuanlan.zhihu.com/p/520307533)
++ [K8s apiserver watch 机制浅析](https://zhuanlan.zhihu.com/p/556809170)
