@@ -26,6 +26,9 @@
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
 
 
+<!-- books -->
++ Big data(Principles and best practices of scalable realtime data systems)
++ Foundations of scalable systems
 
 ## to check
 
