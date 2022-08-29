@@ -8,3 +8,4 @@
 ## ref
 + [【云原生】Kubevela addon添加腾讯Crane](https://zhuanlan.zhihu.com/p/550121830)
 + [腾讯云宋翔：Kubernetes集群利用率提升实践](https://blog.csdn.net/m0_46700908/article/details/126250170)
++ [【K8S专栏】Kubernetes应用质量管理](https://zhuanlan.zhihu.com/p/558948934)
