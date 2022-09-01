@@ -2,6 +2,7 @@
 + [kubevela](https://kubevela.io/zh/docs/)
 + [opentelemetry](https://opentelemetry.io/)
 + [k8s list](https://zhuanlan.zhihu.com/p/552448369)
++ [github topic](https://github.com/topics/cncf)
 
 ## to read
 <!-- k8s -->
