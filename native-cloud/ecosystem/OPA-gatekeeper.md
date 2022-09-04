@@ -7,6 +7,7 @@
 ## ref
 + [OPA Gatekeeper：Kubernetes 的策略和管理](https://kubernetes.io/zh-cn/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
 + [gatekeeper](https://github.com/open-policy-agent/gatekeeper)
++ [ali ACK gatekeeper](https://help.aliyun.com/document_detail/180803.html)
 <!-- OPA -->
 + [Open Policy Agent (OPA) ](https://www.openpolicyagent.org/)
 + [开放策略代理（OPA）](https://jimmysong.io/kubernetes-handbook/practice/open-policy-agent.html)
