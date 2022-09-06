@@ -11,3 +11,8 @@
     + envoy
     + linkerd
     + Nginx
+
+
+## ref
++ [linkerd](https://linkerd.io/2.12/overview/)
++ [The Service Mesh](https://buoyant.io/service-mesh-manifesto)

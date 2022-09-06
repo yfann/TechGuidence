@@ -50,5 +50,7 @@
     + 改yaml中 --scheduler-name=<new-name>
     + 创建个新的scheduler
     + Pod.Spec.schedulerName指定scheduler
-## ref
 
+## ref
++ [Kubernetes调度由浅入深：初探](https://juejin.cn/post/6915010494302535688)
++ [Kubernetes调度由浅入深：框架](https://juejin.cn/post/6919815137641627661)

@@ -2,6 +2,7 @@
 + [kubevela](https://kubevela.io/zh/docs/)
 + [opentelemetry](https://opentelemetry.io/)
 + [k8s list](https://zhuanlan.zhihu.com/p/552448369)
++ [github topic](https://github.com/topics/cncf)
 
 ## to read
 <!-- k8s -->
@@ -26,6 +27,9 @@
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
 
 
+<!-- books -->
++ Big data(Principles and best practices of scalable realtime data systems)
++ Foundations of scalable systems
 
 ## to check
 
