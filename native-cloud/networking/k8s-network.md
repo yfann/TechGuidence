@@ -76,13 +76,27 @@
             + ingress(LB) --> service ---> nodeport
 
 ## underlay network
++ 物理网络拓扑
+
++ L2 underlay
+    + Ethernet
+    + vlan
+
++ L3 underlay
+    + Internet
+    + OSPF,BGP
+
 + flannel host-gw
     + 每个node都在L2网络中
     + node作为路由，跨节点通信通过路由表方式
 
 + Calico BGP(Border Gateway Protocol)
 
++ 宿主机作为路由器,实现跨节点通信
+
 ## overlay network
+
++ 在underlay网络构建出虚拟网络
 
 + IPVLAN & MACVLAN
     + pod网络拉平到Node同级
@@ -97,6 +111,9 @@
     + 用于分配IP,路由IP数据包
 
 ## ref
+
++ [Kubernetes网络模型](https://mp.weixin.qq.com/s/ennOLcCVUernHkgmPj4ung)
+
 + [一文搞懂Kubernetes的网络模型：Overlay和Underlay](https://jishuin.proginn.com/p/763bfbd5be01)
 + [干货分享| Kubernetes网络难懂？可能是没看到这篇文章](https://zhuanlan.zhihu.com/p/526586444)
 + [集群网络系统](https://kubernetes.io/zh/docs/concepts/cluster-administration/networking/)
