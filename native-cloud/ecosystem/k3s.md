@@ -141,3 +141,6 @@ k3s server \
 + [Ingress with Traefik on K3s](https://itnext.io/ingress-with-treafik-on-k3s-53db6e751ed3)
 + [A Guide to K3s Ingress Using Traefik with NodePort](https://levelup.gitconnected.com/a-guide-to-k3s-ingress-using-traefik-with-nodeport-6eb29add0b4b)
 + [Directing Kubernetes traffic with Traefik](https://opensource.com/article/20/3/kubernetes-traefik)
+
+<!-- k3d -->
++ [k3d](https://k3d.io/v5.4.6/)
