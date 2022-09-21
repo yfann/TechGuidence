@@ -31,3 +31,4 @@
 
 ## ref
 + [Kubernetes 网络排错骨灰级中文指南](https://zhuanlan.zhihu.com/p/560558448)
++ [Kube-Proxy IPVS 模式详解以及故障排查指南](https://zhuanlan.zhihu.com/p/565050180)
