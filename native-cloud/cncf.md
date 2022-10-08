@@ -1,6 +1,8 @@
 
 
 ## ref
++ [cncf landscape](https://landscape.cncf.io/card-mode)
++ [cncf graduated projects](https://www.cncf.io/projects/)
 
 + [github cncf topic](https://github.com/topics/cncf)
 + [云原生社区](https://cloudnative.to/blog/)
