@@ -1,5 +1,6 @@
 # SPIFFE & SPIRE
-
++ Secure Production Identity Framework for Everyone
++ 以特制 X.509 证书的形式为现代生产环境中的每个工作负载提供安全身份
 
 ## TIPS
 + 零信任
