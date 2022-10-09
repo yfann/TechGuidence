@@ -52,6 +52,20 @@ CMD [“World”]
 + &&执行多个命令
         + `CMD ["sh","-c","mkdir -p ~/my/new/directory/ && cd ~/my/new/directory && touch new.file"]`
 
+## shell vs Exec形式
+<!-- shell形式 -->
++ `ENTRYPOINT echo "Hello, $name"`
+    + 会用`/bin/sh -c `处理
+
+<!-- Exec形式 -->
++ <instruction> ["executable", "param1", "param2", ...]
+```sh
+RUN ["apt-get", "install", "python3"]
+CMD ["/bin/echo", "Hello world"]
+ENTRYPOINT ["/bin/echo", "Hello world"]
+```
+
++ 不会用shell处理
 
 ## tips
 + ENTRYPOINT，CMD(PID1进程启动)
@@ -72,3 +86,4 @@ CMD [“World”]
 ## ref
 + [论docker中 CMD 与 ENTRYPOINT 的区别(转)](https://developer.aliyun.com/article/270424)
 + [Linux中的0号进程与1号进程](https://blog.csdn.net/gongxifacai_believe/article/details/53771464)
++ [Dockerfile RUN 、 CMD 、 ENTRYPOINT区别](https://juejin.cn/post/6844903902807080973)
