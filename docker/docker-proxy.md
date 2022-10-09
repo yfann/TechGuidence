@@ -28,9 +28,9 @@ Environment="HTTP_PROXY=...." "HTTPS_PROXY=..."  "NO_PROXY=localhost,127.0.0.0/8
  {
    "default":
    {
-     "httpProxy": "http://211.69.198.232:8118",
-     "httpsProxy": "http://211.69.198.232:8118",
-     "noProxy": "*.test.example.com,.example2.com,127.0.0.0/8,211.69.198.232"
+     "httpProxy": "http://....",
+     "httpsProxy": "http://....",
+     "noProxy": "*.test.example.com,.example2.com,127.0.0.0/8,...."
    }
  }
 }
@@ -39,9 +39,9 @@ Environment="HTTP_PROXY=...." "HTTPS_PROXY=..."  "NO_PROXY=localhost,127.0.0.0/8
 + `docker build --build-arg http_proxy=.... --build-arg https_proxy=.... .`
 	+ build中拉取第三方库的代理,例如 go get ....
 
-+ `ENV HTTP_PROXY="http://192.168.1.12:3128"` Dockerfile中设置
++ `ENV HTTP_PROXY="http://...."` Dockerfile中设置
 
-+ `docker run --env HTTP_PROXY="http://192.168.1.12:3128" ...`
++ `docker run --env HTTP_PROXY="....." ...`
 
 
 ## test

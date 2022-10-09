@@ -1,6 +1,10 @@
 ## docker cli
 + `docker help`
 
++ `docker build . -t <image name>`
++ `docker run -it -p 7111:3111 techtrends:techtrends`
+
+
 ## image
 + `docker image pull <img>`
 <!-- 删除镜像 -->
@@ -35,6 +39,8 @@
 + docker rm `docker ps -a | grep xxxxx | awk '{print $1}'`
 
 + `docker exec -it <container id> sh`
+
++ `dcoker logs <container id>`
 
 ## tar
 
