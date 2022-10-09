@@ -1,3 +1,14 @@
+# ENTRYPOINT
+
++ 之前docker 默认entrypoint `/bin/sh -c`
+    + `docker run -i -t ubuntu bash`
+        + 实际执行`/bin/sh -c bash`
+
++ `ENTRYPOINT`,`--entrypoint`可以修改默认entrypoint
+    + `docker run -i -t ubuntu <cmd>`
+        + 实际执行：`<entrypoint> <cmd>`
+            + `<cmd>`作为entrypoint参数
+
 
 ## docker ENTRYPOINT
 ```s
