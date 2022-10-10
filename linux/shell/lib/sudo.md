@@ -27,6 +27,7 @@
 + `su <user name>` 切换用户
 
 + `sudo su` 切换到root
+    + `sudo su -`
 
 
 ## 脚本权限

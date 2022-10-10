@@ -86,6 +86,12 @@
 + `vagrant port [name]`
 
 
+## plugins
+<!-- vagrant-scp -->
++ `vagrant plugin install vagrant-scp`
++ `vagrant scp <some_local_file_or_dir> <somewhere_on_the_vm>`
+
+
 
 ## network
 + `t.vm.network "private_network"`
@@ -167,3 +173,6 @@ config.vm.provision "shell", path: "script.sh"
 + [熟练使用vagrant(11)：vagrant配置虚拟机网络](https://www.junmajinlong.com/virtual/vagrant/vagrant_network/)
 + [Public Networks](https://www.vagrantup.com/docs/networking/public_network)
 + [Vagrant (三) - 网络配置](https://www.jianshu.com/p/a1bc23bc7892)
+
+<!-- pulgins -->
++ [vagrant-scp](https://github.com/invernizzi/vagrant-scp)
