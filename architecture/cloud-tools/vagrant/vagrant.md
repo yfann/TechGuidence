@@ -14,7 +14,8 @@
 ## install
 
 + `brew install vagrant`
-
++ `brew upgrade vagrant`
++ `vagrant plugin update`
 
 ## cmd
 
