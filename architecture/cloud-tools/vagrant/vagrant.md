@@ -89,7 +89,7 @@
 ## plugins
 <!-- vagrant-scp -->
 + `vagrant plugin install vagrant-scp`
-+ `vagrant scp <some_local_file_or_dir> <somewhere_on_the_vm>`
++ `vagrant scp local_file_path_in_HostOS :remote_file_path_in_GuestOS`
 
 
 
