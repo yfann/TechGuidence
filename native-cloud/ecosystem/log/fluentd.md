@@ -7,3 +7,6 @@
 
 + [Fluentd vs. Fluent Bit: Side by Side Comparison](https://logz.io/blog/fluentd-vs-fluent-bit/)
 + [Fluentd & Fluent Bit](https://docs.fluentbit.io/manual/about/fluentd-and-fluent-bit)
+
+
++ [fluentbit](https://docs.fluentbit.io/manual)
