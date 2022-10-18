@@ -1,6 +1,9 @@
 ## fluentbit
 + Embedded Linux / Containers / Servers
 
+## tips
++ input(no tls)
++ output(tls)
 
 ## ref
 
