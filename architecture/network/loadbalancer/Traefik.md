@@ -1,7 +1,9 @@
+# Traefik
 
 ## tips
 
 + Edge Router
++ same as Nginx
 
 ## ref
 
