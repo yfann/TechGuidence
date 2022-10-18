@@ -1,9 +1,11 @@
 # Traefik
 
-## tips
-
 + Edge Router
-+ same as Nginx
++ the same as Nginx
++ HTTP reverse proxy
+    + load balancer
++ service load balancer(Klipper load balancer)
+    + service type: loadBalancer
 
 ## ref
 
