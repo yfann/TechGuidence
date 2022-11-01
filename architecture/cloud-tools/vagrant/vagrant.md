@@ -73,23 +73,33 @@
 + `vagrant up --debug &> vagrant.log`
 
 
-<!-- plugins -->
-+ `vagrant plugin install vagrant-scp`
-    + `vagrant scp abc.txt :destFile.txt`
-        + from host to Guest
-    + `vagrant scp :abc.txt destFile.txt`
-        + from guest to host
-    + `vagrant scp [vm1]:abc.txt destFile.txt`
+
+
 
 
 <!-- 网络 -->
 + `vagrant port [name]`
 
-
 ## plugins
-<!-- vagrant-scp -->
+<!-- copy file -->
 + `vagrant plugin install vagrant-scp`
-+ `vagrant scp local_file_path_in_HostOS :remote_file_path_in_GuestOS`
+    + `vagrant scp abc.txt :destFile.txt`
+        + from host to Guest(VM)
+    + `vagrant scp :abc.txt destFile.txt`
+        + from guest to host
+    + `vagrant scp [vm1]:abc.txt destFile.txt`
+
+<!-- proxy -->
++ `vagrant plugin install vagrant-proxyconf`
+```conf
+; Vagrantfile
+config.proxy.http     = "http://yourproxy:8080"
+config.proxy.https    = "http://yourproxy:8080"
+config.proxy.no_proxy = "localhost,127.0.0.1"
+```
+
+
+
 
 
 
@@ -103,6 +113,7 @@
     + virutalbox: bridge模式
 + vagrant总会设置第一个网卡(eth0/ens0等)并将其加入virtualbox的NAT模式
 
++ VM中`ip route show` 找到连接host的IP
 
 ## provision
 

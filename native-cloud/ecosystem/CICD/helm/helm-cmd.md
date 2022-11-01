@@ -77,6 +77,12 @@ $ helm fetch gkarthiks/prometheus-kafka-exporter
 + `helm dependency update  <folder>`
 + `helm package <folder>`
 
+## install helm 
+<!-- linux -->
++ download: https://github.com/helm/helm/releases
++ `tar -zxvf helm-v3.0.0-linux-amd64.tar.gz`
++ `mv linux-amd64/helm /usr/local/bin/helm`
+
 ## flags
 
 + `--values` override value 
