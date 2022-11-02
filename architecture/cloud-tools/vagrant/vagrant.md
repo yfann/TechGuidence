@@ -111,8 +111,14 @@
 + VM中`ip route show` 找到连接host的IP
 
 <!-- host 访问 VM IP -->
-
-
++ port forward
+    + gest(VM)中需要绑到`0.0.0.0`,而不是`127.0.0.1`
+        + `kubectl port-forward -n monitoring prometheus-grafana-5bb67c9646-hkrg6 3000 --address 0.0.0.0`
+            + kubbectl port-forward会自动到 127.0.0.1,需要修改地址
+```conf
+# accessing "localhost:8080" will access port 80 on the guest machine.
+config.vm.network "forwarded_port", guest: 80, host: 8080
+```
 
 ## provision
 
@@ -138,7 +144,12 @@ config.vm.provision "shell", path: "script.sh"
 + cmd line proxy
     + 拉取镜像时需要代理
     + 连接虚拟机时关闭代理
-
+```sh
+# v2rayx proxy
+ip route show
+export http_proxy=http://{ip}8001
+export https_proxy=http://{ip}:8001
+```
 + `vagrant plugin install vagrant-proxyconf`
 ```conf
 ; Vagrantfile
