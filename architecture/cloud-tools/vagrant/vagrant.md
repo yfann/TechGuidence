@@ -22,7 +22,9 @@
 + `vagrant -h`
     + `vagrant <sub cmd> -h`
 
++ `vagrant status`
 + `vagrant global-status`
++ `vagrant ssh-config <id>`
 
 <!-- 管理box，box相当于镜像 -->
 + `vagrant box add <box> --provider virtualbox`  从vagrant官方仓库搜索
@@ -89,14 +91,6 @@
         + from guest to host
     + `vagrant scp [vm1]:abc.txt destFile.txt`
 
-<!-- proxy -->
-+ `vagrant plugin install vagrant-proxyconf`
-```conf
-; Vagrantfile
-config.proxy.http     = "http://yourproxy:8080"
-config.proxy.https    = "http://yourproxy:8080"
-config.proxy.no_proxy = "localhost,127.0.0.1"
-```
 
 
 
@@ -113,7 +107,12 @@ config.proxy.no_proxy = "localhost,127.0.0.1"
     + virutalbox: bridge模式
 + vagrant总会设置第一个网卡(eth0/ens0等)并将其加入virtualbox的NAT模式
 
+<!-- VM访问host IP -->
 + VM中`ip route show` 找到连接host的IP
+
+<!-- host 访问 VM IP -->
+
+
 
 ## provision
 
@@ -140,7 +139,13 @@ config.vm.provision "shell", path: "script.sh"
     + 拉取镜像时需要代理
     + 连接虚拟机时关闭代理
 
-
++ `vagrant plugin install vagrant-proxyconf`
+```conf
+; Vagrantfile
+config.proxy.http     = "http://yourproxy:8080"
+config.proxy.https    = "http://yourproxy:8080"
+config.proxy.no_proxy = "localhost,127.0.0.1"
+```
 
 
 
@@ -184,6 +189,7 @@ config.vm.provision "shell", path: "script.sh"
 + [熟练使用vagrant(11)：vagrant配置虚拟机网络](https://www.junmajinlong.com/virtual/vagrant/vagrant_network/)
 + [Public Networks](https://www.vagrantup.com/docs/networking/public_network)
 + [Vagrant (三) - 网络配置](https://www.jianshu.com/p/a1bc23bc7892)
++ [How To Find Vagrant Machine IP Address From Host](https://ostechnix.com/how-to-find-vagrant-machine-ip-address-from-host/)
 
 <!-- pulgins -->
 + [vagrant-scp](https://github.com/invernizzi/vagrant-scp)
