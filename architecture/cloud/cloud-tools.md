@@ -71,9 +71,6 @@
     + 日志分析
 + cloudevents
 
-## tracing
-+ zipkin(java)
-+ jaeger(Go)
 
 ## RPC
 + Netty

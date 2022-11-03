@@ -14,5 +14,14 @@
 + Grafana Tempo
 + Grafana Mimir
 
+
+# OpenTelemetry(OTel)
++ 分布式链路追踪框架
++ OpenCensus +  OpenTracing
+
+## distributed tracing
++ Zipkin
++ Jaeger
+
 ## ref
 + [OTel](https://opentelemetry.io/docs/)
