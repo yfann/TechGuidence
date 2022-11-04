@@ -37,7 +37,7 @@
     + Gateway API在探索处理网格流量
 
 ## ref
-
++ [Gateway API：Kubernetes 和服务网格入口中网关的未来](https://mp.weixin.qq.com/s/XLaM9mMne0JsR1BDYfFa5g)
 
 
 
