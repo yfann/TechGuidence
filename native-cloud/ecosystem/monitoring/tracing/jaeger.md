@@ -5,3 +5,4 @@
 + [All in One](https://www.jaegertracing.io/docs/1.21/getting-started/)
 
 + [jaeger-operator](https://github.com/jaegertracing/jaeger-operator)
++ [Operator for Kubernetes](https://www.jaegertracing.io/docs/1.38/operator/)
