@@ -9,3 +9,4 @@
 
 <!-- 教程 -->
 + [Kubernetes 中文指南/云原生应用架构实战手册](https://jimmysong.io/kubernetes-handbook/)
++ [云原生资料库](https://lib.jimmysong.io/)

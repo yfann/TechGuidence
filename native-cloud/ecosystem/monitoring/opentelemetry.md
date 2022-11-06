@@ -19,6 +19,22 @@
     + processor
     + exporter
 
++ event
+    + 时间戳
+    + 一组属性
+        + 可以被搜索
+        + context
+            + static contex
+                + resource
+            + dynamic  contex
+                + span
++ event aggregate
+    + metrics
+
+
++ Receiver--->Processor---->Exporter
+    + OTLP 
+
 ## Opentelemetry stack
 + Grafana loki
 + Grafana
@@ -32,3 +48,6 @@
 
 ## ref
 + [OTel](https://opentelemetry.io/docs/)
++ [OpenTelemetry: 经得起考验的工具](https://www.cnblogs.com/charlieroro/p/13862471.html)
++ [OpenTelemetry-云原生资料库](https://jimmysong.io/opentelemetry-obervability/history.html)
++ [exproter-->vendors](https://opentelemetry.io/vendors/)
