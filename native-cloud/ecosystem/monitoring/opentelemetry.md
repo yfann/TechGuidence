@@ -1,6 +1,6 @@
 # Opentelemetry
 
-+ 专注数据采集
++ OpenCensus +  OpenTracing
 
 + Otel Collector
     + Receivers
@@ -8,16 +8,23 @@
     + Processor
         + 解耦数据处理
 
+
++ signal
+    + traces
+    + metrics
+    + logs
+
++ collector pipline
+    + receiver
+    + processor
+    + exporter
+
 ## Opentelemetry stack
 + Grafana loki
 + Grafana
 + Grafana Tempo
 + Grafana Mimir
 
-
-# OpenTelemetry(OTel)
-+ 分布式链路追踪框架
-+ OpenCensus +  OpenTracing
 
 ## distributed tracing
 + Zipkin
