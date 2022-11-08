@@ -6,3 +6,5 @@
 
 + [jaeger-operator](https://github.com/jaegertracing/jaeger-operator)
 + [Operator for Kubernetes](https://www.jaegertracing.io/docs/1.38/operator/)
+
++ [微服务监控 - Jaeger 简介](https://makeoptim.com/distributed-tracing/jaeger)
