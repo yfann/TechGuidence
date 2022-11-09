@@ -5,7 +5,7 @@
     + 虚拟盘
     + 云盘
         + 随机读写
-    + 
+    + 快照/镜像
 
 ## 分布式存储要素
 + 数据分布（中心节点、无中心节点）
@@ -44,5 +44,3 @@
 
 
 
-## ref
-+ [新一代云原生分布式存储 Curve](https://www.bilibili.com/video/BV1jB4y1v7bo/?spm_id_from=333.999.0.0&vd_source=d3c0a53193a65728ad278e633b3790e5)
