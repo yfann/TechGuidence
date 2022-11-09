@@ -8,3 +8,5 @@
 + [揭秘Prometheus时序数据库设计](https://zhuanlan.zhihu.com/p/81679767)
 + [prometheus storage](https://prometheus.io/docs/prometheus/latest/storage/)
 + [揭秘Prometheus时序数据库设计](https://zhuanlan.zhihu.com/p/81679767)
+
++ [Prometheus Storage: How does it work and why is this important?](https://alexandre-vazquez.com/prometheus-storage-introduction/)

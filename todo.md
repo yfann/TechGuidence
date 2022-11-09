@@ -31,7 +31,6 @@
 + Big data(Principles and best practices of scalable realtime data systems)
 + Foundations of scalable systems
 
-## to check
+## to do
 
-+ rancher/klipper-lb:v0.2.0
-+ how does ingress work
++ envoy
