@@ -1,6 +1,12 @@
 ## fluentbit
 + Embedded Linux / Containers / Servers
 
+
+
+## collection
++ metrics
++ event
+
 ## tips
 + input(no tls)
 + output(tls)
