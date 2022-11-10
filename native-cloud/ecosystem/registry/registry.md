@@ -1,6 +1,7 @@
 
 ## tips
 + container registry
+    + can connect directly to Docker ,K8s
 
 
 ## ref
