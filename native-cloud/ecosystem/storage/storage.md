@@ -6,6 +6,7 @@
     + 云盘
         + 随机读写
     + 快照/镜像
+    + PV
 
 ## 分布式存储要素
 + 数据分布（中心节点、无中心节点）
@@ -42,18 +43,7 @@
     + WARO
         + 所有副本写完返回客户端
 
-## tips
-+ k8s对存储卷(PV)的访问方式,node级别
-    + ReadWriteOnce(RWO)
-        + PV只能挂载到一个node上，同时挂载其他node时回报Multi-Attach错误
-        + support type
-            + block storage
-            + file storage
-    + ReadOnlyMany(ROX)
-    + ReadWriteMany(RWX)
-        + PV可被多node同时挂载，并被pod使用
-        + support type
-            + file storage
+
 
 ## ref
 + [新一代云原生分布式存储 Curve](https://www.bilibili.com/video/BV1jB4y1v7bo/?spm_id_from=333.999.0.0&vd_source=d3c0a53193a65728ad278e633b3790e5)
