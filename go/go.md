@@ -1,74 +1,17 @@
 
-## 变量
-
-+ `var intVal int = 1`
-    - `intVal := 1` 简写，声明语句
-        + `intVal,intVal1 := 1,2`
-
-+ `var ptr *int` 指针变量
-    - `&i` 取内存地址
-    - `*ptr` 取值
-    - nil 空指针
-
-+ `var balance [10] float32` 数组
-    - `var balance = [5]float32{1000.0, 2.0, 3.4, 7.0, 50.0}`
-    - `var balance = [...]float32{1000.0, 2.0, 3.4, 7.0, 50.0}`
-
-+ `const LENGTH int = 10`
-```go
-// 常量用作枚举
-// 常量表达式中，函数必须是内置函数
-const (
-    Unknown = 0
-    Female = 1
-    Male = 2
-)
-// iota  编译器修改，const会重置第一个iota为0
-const (
-        a = iota   //0
-        b          //1
-        c          //2
-        d = "ha"   //独立值，iota += 1
-        e          //"ha"   iota += 1
-        f = 100    //iota +=1
-        g          //100  iota +=1
-        h = iota   //7,恢复计数
-        i          //8
-)
-```
-
-+ `a,b = b,a`
-    - `_,b=5,7`  `_`只写变量，用于丢弃值
-
-+ 类型转换
-```go
-var sum int = 17
-var mean float32
-mean = float32(sum)
-```
-
-+ package level variable会在main开始前初始化
-    + local variable在function执行时初始化
-
-+ new(T)
-    + creates an unnamed variable of type T
-    + initializes it to the zero value of T
-    + return *T
-```go
-p := new(int)   
-fmt.Println(*p)
-```
-+ variable escape from function
-    + need heap-allocated(before it's in stack)
-```go
-var global *int
-
-func f() {                      
-    var x int                  
-    x = 1                       
-    global = &x              
-}
-```
+## declare
++ var
+    + 位置
+        + 包级别
+            + 生命周期和整个程序一致
+        + 函数内部
+            + 直到不再被引用
+    + 声明
+        + `var boiling float64 = 100`
+        + `i, j := 0, 1` 只用于局部变量
++ const
++ type
++ func
 
 ## others
 + select
