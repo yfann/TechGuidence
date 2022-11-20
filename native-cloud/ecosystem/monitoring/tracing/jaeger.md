@@ -8,3 +8,7 @@
 + [Operator for Kubernetes](https://www.jaegertracing.io/docs/1.38/operator/)
 
 + [微服务监控 - Jaeger 简介](https://makeoptim.com/distributed-tracing/jaeger)
+
+<!-- sample -->
++ [Jaeger 教程](https://pjw.io/articles/2018/05/18/jaeger-tutorial/)
++ [Integrating Flask with Jaeger tracing on Kuberentes](https://vorozhko.net/integrating-flask-with-jaeger-tracing-on-kuberentes)
