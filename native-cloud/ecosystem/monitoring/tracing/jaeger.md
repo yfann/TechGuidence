@@ -17,6 +17,9 @@
 + jaeger-query
     + UI
 
+
+
+
 ## Jaeger-Operator
 
 + create Jaeger instance 
@@ -63,6 +66,33 @@ spec:
   annotations:
     scheduler.alpha.kubernetes.io/critical-pod: "" # <10>
 ```
+
+## all-in-one
++  all-in-one image 
+  + agent
+  + collector
+  + query
+  + ingestor
+  + Jaeger UI
+  + memory storage
+
+
+
++ Default hostname of Jaeger agent is localhost
+<!-- add agent -->
++ `kubectl annotate deployments.apps tasks-service sidecar.jaegertracing.io/inject=true`
++ 6831 端口上报
++ 16686 Jaeger UI,API端口
+
+
+
+
+## jaeger client
++ `pip install jaeger-client`
+
+
+
+
 
 
 ## tips
@@ -126,7 +156,10 @@ roleRef:
 + [微服务监控 - Jaeger 简介](https://makeoptim.com/distributed-tracing/jaeger)
 + [jaeger architecture](https://www.jaegertracing.io/docs/1.16/architecture/)
 + [sampling](https://www.jaegertracing.io/docs/1.16/sampling/)
++ [All in One](https://www.jaegertracing.io/docs/1.21/getting-started/)
+
 <!-- sample -->
 + [Jaeger 教程](https://pjw.io/articles/2018/05/18/jaeger-tutorial/)
 + [Integrating Flask with Jaeger tracing on Kuberentes](https://vorozhko.net/integrating-flask-with-jaeger-tracing-on-kuberentes)
 + [使用 jaeger 给你的微服务进行分布式链路追踪](https://kebingzao.com/2020/12/25/jaeger-use/)
++ [Distributed Tracing Infrastructure with Jaeger on Kubernetes](https://masroorhasan.medium.com/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677)
