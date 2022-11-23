@@ -150,6 +150,9 @@ roleRef:
 ```
 
 
+## tips
++ Jaeger displays errors when spans have a tag error=true
+
 ## ref
 + [jaeger-operator](https://github.com/jaegertracing/jaeger-operator)
 + [Operator for Kubernetes](https://www.jaegertracing.io/docs/1.38/operator/)
@@ -158,8 +161,15 @@ roleRef:
 + [sampling](https://www.jaegertracing.io/docs/1.16/sampling/)
 + [All in One](https://www.jaegertracing.io/docs/1.21/getting-started/)
 
+<!-- monitor -->
++ [为 Jaeger 安装环境搭建监控基础设施](https://www.infoq.cn/article/x9znas5kbrrbprsbcamd)
++ [Garafana Jaeger data source](https://grafana.com/docs/grafana/latest/datasources/jaeger/)
 <!-- sample -->
 + [Jaeger 教程](https://pjw.io/articles/2018/05/18/jaeger-tutorial/)
 + [Integrating Flask with Jaeger tracing on Kuberentes](https://vorozhko.net/integrating-flask-with-jaeger-tracing-on-kuberentes)
 + [使用 jaeger 给你的微服务进行分布式链路追踪](https://kebingzao.com/2020/12/25/jaeger-use/)
 + [Distributed Tracing Infrastructure with Jaeger on Kubernetes](https://masroorhasan.medium.com/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677)
+
+
+<!-- client sdk -->
++ [OpenTelemetry Jaeger Exporter](https://opentelemetry-python-yusuket.readthedocs.io/en/latest/ext/jaeger/jaeger.html)
