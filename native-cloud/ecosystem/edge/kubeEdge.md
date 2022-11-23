@@ -7,7 +7,7 @@
 + CloudCore to EdgeCore
     + 双向多路复用的边云消息通道
         + WebSocket/QUIC
-    + EdgeCore主动发起和云端CloudCore连接
+    + EdgeCore主动发起和云端CloudCore连接(KubeEdge采用基于增量数据的云边推送模式，云端会记录成功发送到边缘侧的元数据版本号，当云边网络中断重新连接时，云端会从记录的元数据版本号开始增量发送，可以解决边缘重连或者watch失败时的重新全量list引发的kube-apiserver压力问题)
         + CloudCore 
             + list-watch Kubernetes资源的变化，并通过云边双向通道主动将元数据下发至边缘测
             + CloudCore统一负责上行和下行数据的汇聚处理
