@@ -1,4 +1,12 @@
-# SLA
+
+## SLI(Service Level Indicator)
+
+## SLO
++ 围绕SLI构建
++ 时间范围内的几个9
+
+## SLA
++ 不满足SLO时的补偿
 
 ## tips
 + SRE
