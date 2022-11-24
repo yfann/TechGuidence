@@ -10,12 +10,16 @@
 + Saturation
     + percentage of CPU/Memory used
 
+## SLO
++ 时间范围内的几个9
++ uptime, latency
+    + 99.99% uptime per month
++ goal
 
 ## SLI(Service Level Indicator)
++  specific metric used to measure the performance of a service.
 + Good events/valid events * 100%
-## SLO
-+ 围绕SLI构建
-+ 时间范围内的几个9
+
 
 ## SLA
 + 不满足SLO时的补偿
@@ -26,7 +30,7 @@
     + ClusterLoader2
     + Edgemark
     + kubemark
-
++ measure performance -> SLO
 ## ref
 + [Cloud Storage Service Level Agreement (SLA)](https://cloud.google.com/storage/sla)
 + [一文读懂什么是SLI、SLO、SLA](https://zhuanlan.zhihu.com/p/358149438)
