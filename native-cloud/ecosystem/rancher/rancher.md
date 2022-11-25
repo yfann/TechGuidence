@@ -19,6 +19,22 @@
         + BMS(裸金属服务器)
         + VM
 
+
+## rancher stack
++ autoK3s
+    + 快速部署公有云k3s集群
+    + autoK3s + Harvester
+
++ k3os
+    + 运行k3s的OS
+
++ K3d
+    + docker中运行k3s
+
+## image
++ SUSE BCI
+    + SUSE Linux Enterprise Base Container Images
+
 ## tips
 + k3s可以用external database 保存集群数据
     + k3s server is stateless
@@ -26,6 +42,8 @@
     + 软件定义的基础架构
     + 可以虚化硬件定义的元素
     + 超融合基础架构（hyper-converged infrastructure）与 融合基础架构（converged infrastructure） 最大的区别在于，在 HCI 里面，无论是存储底层抽象还是存储网络都是在软件层面实现的（或者通过 hypervisor 层面实现），而不是基于物理硬件实现的。由于所有软件定义的元素都围绕 hypervisor 实现，因此在超融合基础架构上的所有实例可以联合共享所有受管理的资源。
+
+
 ## ref
 + [rancher docs](https://docs.rancher.cn/)
 + [rancher](https://docs.ranchermanager.rancher.io/zh/)
