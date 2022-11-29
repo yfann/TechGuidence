@@ -4,7 +4,15 @@
     + namespace属于特定子网
     + 其中的pod会从子网获取IP
 + static IP
-+ VPC 多租户
++ VPC 网络多租户
++ IPv6
++ network policy
+
 
 ## tips
-+ ovn/ovs
++ ovn( Open  Virtual  Network)
+    + L2
+    + L3 overlays
+    + DHCP server
+    + security groups
++ OVS(Open vSwitch)

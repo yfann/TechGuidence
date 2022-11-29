@@ -27,15 +27,7 @@
         + 底层网络打通，依赖底仓网络
         + 创建pod慢，性能快
 
-## Docker网络
 
-+ none 容器添加到容器的网络堆栈中,没有对外链接
-
-+ host 容器添加到host的网络堆栈中,没有隔离
-
-+ default bridge 容器可以通过IP地址相互链接
-
-+ custom bridge
 
 ## Flannel
 + Overlay，将 TCP 数据包装在另一种网络包里面进行路由转发和通信
@@ -48,9 +40,9 @@
 + 实现容器间和主机间网络
 + 3层overlay网络
     + 不同环境无需额外配置
-+ 每个节点(host)都是一个子网
-    + docker桥为容器分配IP
 + 同主机的容器通过docker桥通信
+    + 每个节点(host)都是一个子网
+    + docker桥为容器分配IP
 + 不同主机间容器通过flanneld将数据封装在UDP数据包中
 + 一般用VXLAN作为后端
 
@@ -89,6 +81,10 @@
 + BGP(边界网关协议)：管理边缘路由器之间数据包的路由方式
     + 数据从一个网络发到另一个网络
     + CNI插件的路由机制
+    
++ pod中eth0连接k8s网络
+
++ VPC 网络多租户
 
 ## ref
 
@@ -97,6 +93,3 @@
 + [VXLAN 基础教程：VXLAN 协议原理介绍](https://zhuanlan.zhihu.com/p/130277008)
 + [云原生钻石课程 | 第6课：Kubernetes网络架构原理深度剖析（上）](https://zhuanlan.zhihu.com/p/487232482)
 + [k8s networking](https://jimmysong.io/kubernetes-handbook/concepts/flannel.html)
-    + Flannel
-    + Calico
-    + Cilium

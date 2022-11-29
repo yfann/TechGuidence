@@ -3,7 +3,7 @@
 + linux veth pair
 
 
-## 单主机模式
+## 单主机模式(container的network namespace的范围)
 
 + host 模式
     + container和host共享network namespace
