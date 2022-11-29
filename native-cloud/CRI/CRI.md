@@ -33,6 +33,20 @@
             + 收集容器进程的状态上报给containerd
 
 
+
+## tips
++ CRI client -> kubelet
+    + 准入校验
+    + CSI挂载
+    + 拉取pod
+        + grpc client -> grpc server(Containerd)
++ CRI Server -> Containerd
+    + 拉取镜像
+    + create sandbox
+    + create netns
+    + 发出调用命令->runc
++ OCI Runtime -> runc
+
 ## ref
 + [The differences between Docker, containerd, CRI-O and runc](https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci/)
 

@@ -44,11 +44,12 @@
     + 每个节点(host)都是一个子网
     + docker桥为容器分配IP
 + 不同主机间容器通过flanneld将数据封装在UDP数据包中
-+ 一般用VXLAN作为后端
++ 静态路由表或vxlan实现网络通信
+    + 一般用VXLAN作为后端
 
 ## Calico
 + 不仅提供主机和pod之间的网络连接，还涉及网络安全和管理
-+ 3层，BGP路由协议在主机间路由数据包
++ 3层，BGP实现动态路由
     + 不需要将数据包封装在额外的层中
 + Istio集成
 + 支持network policy
@@ -68,6 +69,9 @@
 + 网络加密
     + NaCI
 
+## kube-OVN
++ 子网
++ static ip
 
 ## tips
 
@@ -86,6 +90,10 @@
 
 + VPC 网络多租户
 
++ 插件路径 `/opt/cni/bin`
+    + /etc/cni/net.d 配置
+
+
 ## ref
 
 + [Kubernetes CNI网络最强对比：Flannel、Calico、Canal和Weave](https://segmentfault.com/a/1190000018698263)
@@ -93,3 +101,6 @@
 + [VXLAN 基础教程：VXLAN 协议原理介绍](https://zhuanlan.zhihu.com/p/130277008)
 + [云原生钻石课程 | 第6课：Kubernetes网络架构原理深度剖析（上）](https://zhuanlan.zhihu.com/p/487232482)
 + [k8s networking](https://jimmysong.io/kubernetes-handbook/concepts/flannel.html)
+
++ [K8s 网络之深入理解 CNI](https://zhuanlan.zhihu.com/p/450140876)
++ [K8s 网络之 从 0 实现一个 CNI 网络插件](https://zhuanlan.zhihu.com/p/450514389)
