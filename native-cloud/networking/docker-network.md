@@ -1,7 +1,5 @@
 # docker network
 
-
-
 + linux veth pair
 
 
@@ -20,7 +18,7 @@
 + bridge 模式
     + host上创建一个名为docker0的虚拟网桥
     + 此主机上启动的Docker container会连接到这个虚拟网桥上
-    + 虚拟网桥的工作方式和物理交换机类似
+    + 虚拟网桥的工作方式和物理交换机(switch)类似
     + docker0的IP地址为容器的默认网关
     + 主机上创建一对虚拟网卡veth pair设备
         + Docker将veth pair设备的一端放在新创建的容器中，并命名为eth0（容器的网卡）
