@@ -14,12 +14,12 @@
 + 时间范围内的几个9
 + uptime, latency
     + 99.99% uptime per month
-+ goal
++ goal value
 
 ## SLI(Service Level Indicator)
-+  specific metric used to measure the performance of a service.
++ specific metric used to measure the performance of a service.
 + Good events/valid events * 100%
-
++ current value
 
 ## SLA
 + 不满足SLO时的补偿
@@ -36,6 +36,8 @@
 + [一文读懂什么是SLI、SLO、SLA](https://zhuanlan.zhihu.com/p/358149438)
 + [A Primer on Service Level Indicator (SLI) Metrics](https://www.bmc.com/blogs/service-level-indicator-metrics/)
 + [Oreilly SLOs](https://learning.oreilly.com/library/view/slo-adoption-and/9781492075370/ch04.html#defining_slis)
+
 <!-- SLI -->
 + [Kubernetes scalability and performance SLIs/SLOs](https://github.com/kubernetes/community/blob/master/sig-scalability/slos/slos.md#footnote1)
 + [k8s集群可扩展性和性能SLI/SLO](https://www.jianshu.com/p/de768ea3fc19)
++ [什么是 SLI](https://wallenotes.github.io/2021/10/18/%E5%8F%AF%E9%9D%A0%E6%80%A7/SLI/what_is_sli/)
