@@ -10,16 +10,31 @@
 + Saturation
     + percentage of CPU/Memory used
 
+
+## SLI(Service Level Indicator)
++ specific metric used to measure the performance of a service.
++ Good events/valid events * 100%
++ 选取SLI: VALET
+    + Volume(容量，流量)
+        + QPS/TPS
+    + Availability
+        + MTBF(Mean Time Between Failure)
+            + 两次故障的间隔时间
+        + MTTR(Mean Time To Repair)
+            + 故障的恢复时间
+        + Availability = MTBF / (MTBF + MTTR)
+    + Latency
+    + Error
+        + 5xx
+        + 4xx
+    + Ticket
+        + 故障单
+
 ## SLO
 + 时间范围内的几个9
 + uptime, latency
     + 99.99% uptime per month
 + goal
-
-## SLI(Service Level Indicator)
-+  specific metric used to measure the performance of a service.
-+ Good events/valid events * 100%
-
 
 ## SLA
 + 不满足SLO时的补偿
