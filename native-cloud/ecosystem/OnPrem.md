@@ -1,3 +1,0 @@
-## OnPrem
-+ Rancher
-+ Openshift
