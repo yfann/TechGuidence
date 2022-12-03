@@ -39,4 +39,7 @@
 + envoy
 + Linux虚拟网络基础
 + istio
-+ k8s network
++ k8s network(https://learning.oreilly.com/library/view/networking-and-kubernetes/9781492081647/ch04.html#idm46219939805256)
++ cluster api
++ gateway-api
++ rpm-ostree
