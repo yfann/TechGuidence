@@ -78,4 +78,3 @@
 ## ref
 + [tap/tun 是什么](https://www.cnblogs.com/bakari/p/10450711.html)
 
-+ [什么是 IP 隧道，Linux 怎么实现隧道通信？](https://cloud.tencent.com/developer/article/1432489)
