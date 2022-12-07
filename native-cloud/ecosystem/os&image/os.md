@@ -10,3 +10,4 @@
 ## ref
 + [云原生不可变基础设施](https://zhuanlan.zhihu.com/p/537992888)
 + [如何评价谷歌发布的 Container-Optimized OS？](https://www.zhihu.com/question/58094135/answer/1632853980)
++ [用Kairos激活边缘Kubernetes](https://zhuanlan.zhihu.com/p/589910623)
