@@ -86,24 +86,34 @@
     + Internet
     + OSPF,BGP
 
-+ flannel host-gw
-    + 每个node都在L2网络中
-    + node作为路由，跨节点通信通过路由表方式
++ k8s中，underlay network通过宿主机作为路由器,Pod通过学习路由条目实现跨节点通信
+    + flannel host-gw
+        + 每个node都在L2网络中
+        + node作为路由，跨节点通信通过路由表方式
+    + Calico BGP(Border Gateway Protocol)
+        + 去中心化自治路由协议
+            + 维护IP路由表实现(Autonomous System)的可访问性，向量路由协议
+    + IPVLAN & MACVLAN
+        + 网卡虚化不是网络虚化，还是underlay
+        + 多个IP对应一个网卡(MAC)或多个MAC对应一个IP
+        + 将POD网络拉平到Node网络同级，更高性能低延迟
+        + IPVLAN CNI
+            + multus
+            + danm
 
-+ Calico BGP(Border Gateway Protocol)
+![](./img/IPVLAN.png)
 
-+ 宿主机作为路由器,实现跨节点通信
 
 ## overlay network
 
-+ 在underlay网络构建出虚拟网络
++ 在underlay网络上构建出虚拟网络，无需对物理网络架构更改
 
-+ IPVLAN & MACVLAN
-    + pod网络拉平到Node同级
-
-+ VxLan
-
-+ IPIP
++ 使用一种或多种隧道协议(tunneling)，通过将数据包封装，实现一个网络到另一个网络中的传输，具体来说隧道协议关注的是数据包（帧）
+    + 通用路由封装 ( Generic Routing Encapsulation )
+        + 将来自 IPv4/IPv6 的数据包封装为另一个协议的数据包中，通常工作与 L3 网络层中。
+    + VxLan
+        + L2 的以太网帧封装为 L4 中 UDP 数据包的方法
+    + IPIP
 
 ## tips
 
@@ -117,4 +127,4 @@
 + [一文搞懂Kubernetes的网络模型：Overlay和Underlay](https://jishuin.proginn.com/p/763bfbd5be01)
 + [干货分享| Kubernetes网络难懂？可能是没看到这篇文章](https://zhuanlan.zhihu.com/p/526586444)
 + [集群网络系统](https://kubernetes.io/zh/docs/concepts/cluster-administration/networking/)
-+ [16 张图硬核讲解 Kubernetes 网络模型](https://zhuanlan.zhihu.com/p/555185137)
++ [16 张图硬核讲解 Kubernetes 网络模型******k8s网络*****](https://zhuanlan.zhihu.com/p/555185137)
