@@ -1,8 +1,10 @@
-# veth
+# veth pair
 + Virtual Ethernet
-    + 虚拟一台网
-+ veth-pair 
-    + 一对虚拟设备接口
+    + 虚拟以太网
+
++ veth pair 
+    + 一对虚拟设备
+    + 连接两个虚拟以太端口
     + 虚拟网线
 
 + veth
@@ -18,9 +20,13 @@
     + docker container相连
 
 ## cmd
+<!-- 创建veth pair -->
++ `ip link add <tap1> type veth peer name <tap2>`
 
 <!-- veth0 ping veth1 -->
 + `ping -I veth0 10.1.1.3 -c 2`
+
+
 <!-- 抓包查看过程 -->
 + `tcpdump -nnt -i veth0`
 
