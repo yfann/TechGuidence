@@ -120,9 +120,20 @@
 + CIDR(Classless Inter-Domain Routing)无类别域间路由
     + 用于分配IP,路由IP数据包
 
++ pause container
+    + pod中建立共享的veth0网络接口
+
 ## ref
 
++ [16 张图硬核讲解 Kubernetes 网络模型](https://zhuanlan.zhihu.com/p/555185137)
++ [K8S网络之Pod网络](https://mp.weixin.qq.com/s/eKcSIU9w-Q_AHumgbC8DUA)
+    + pod跨node通信
+        + 路由(underlay)
+        + CNI(overlay)
 + [Kubernetes网络模型](https://mp.weixin.qq.com/s/ennOLcCVUernHkgmPj4ung)
++ [k8s service](https://www.zhihu.com/question/359649715/answer/2792064190)
+
+
 
 + [一文搞懂Kubernetes的网络模型：Overlay和Underlay](https://jishuin.proginn.com/p/763bfbd5be01)
 + [干货分享| Kubernetes网络难懂？可能是没看到这篇文章](https://zhuanlan.zhihu.com/p/526586444)
