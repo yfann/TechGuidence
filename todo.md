@@ -22,21 +22,17 @@
 <!-- videos -->
 + [PowerCert Animated Videos](https://www.youtube.com/c/PowerCertAnimatedVideos)
 
-<!-- rust -->
-+ [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
+
 
 
 <!-- books -->
 + Big data(Principles and best practices of scalable realtime data systems)
 + Foundations of scalable systems
 
-<!-- 网络 -->
-+ [Linux虚拟网络基础](http://images.china-pub.com/ebook7065001-7070000/7067181/ch02.pdf)
 
 ## to do
 
 + envoy
-+ Linux虚拟网络基础
 + istio
 + k8s network(https://learning.oreilly.com/library/view/networking-and-kubernetes/9781492081647/ch04.html#idm46219939805256)
 + cluster api

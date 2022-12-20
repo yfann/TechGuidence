@@ -125,7 +125,7 @@
 
 ## ref
 
-+ [16 张图硬核讲解 Kubernetes 网络模型](https://zhuanlan.zhihu.com/p/555185137)
++ [16 张图硬核讲解 Kubernetes 网络模型******k8s网络*****](https://zhuanlan.zhihu.com/p/555185137)
 + [K8S网络之Pod网络](https://mp.weixin.qq.com/s/eKcSIU9w-Q_AHumgbC8DUA)
     + pod跨node通信
         + 路由(underlay)
@@ -138,4 +138,4 @@
 + [一文搞懂Kubernetes的网络模型：Overlay和Underlay](https://jishuin.proginn.com/p/763bfbd5be01)
 + [干货分享| Kubernetes网络难懂？可能是没看到这篇文章](https://zhuanlan.zhihu.com/p/526586444)
 + [集群网络系统](https://kubernetes.io/zh/docs/concepts/cluster-administration/networking/)
-+ [16 张图硬核讲解 Kubernetes 网络模型******k8s网络*****](https://zhuanlan.zhihu.com/p/555185137)
++ [数据包在 Kubernetes 中的一生（1](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)

@@ -31,8 +31,13 @@
 + [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 + [Principles of good RESTful API Design](https://codeplanet.io/principles-good-restful-api-design/)
 
-## bash
+
+
+## 语言
+<!-- bash -->
 + [Bash 脚本教程](https://wangdoc.com/bash/quotation.html)
+<!-- rust -->
++ [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
 
 
 
