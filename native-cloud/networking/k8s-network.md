@@ -132,6 +132,7 @@
         + CNI(overlay)
 + [Kubernetes网络模型](https://mp.weixin.qq.com/s/ennOLcCVUernHkgmPj4ung)
 + [k8s service](https://www.zhihu.com/question/359649715/answer/2792064190)
++ [数据包在 Kubernetes 中的一生](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)
 
 
 
