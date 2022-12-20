@@ -24,19 +24,30 @@
 + cluster  --- (The cluster is the logical grouping of all the above components)
 + CLI
 
-## tips
+![](./img/orchestrator.png)
 
+## tips
 
 + orchestrator
     + Borg
     + k8s
     + Nomad
 
-## tools
 + BoltDB
+    + embedded key/value store
+
 + Chi(API)
     + lightweight router 
-+ goprocinfo(metricsa)
+
++ goprocinfo
+    + metrics
+
++ HA(Paxos/Raft)
+    + leadership
+    + consensus
+
++ other tools for orchestrator system
+    + service discovery, HA, service meshes, and LBs
 
 ## ref
 
