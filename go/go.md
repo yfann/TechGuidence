@@ -168,7 +168,6 @@ for _, num := range nums {
 + [go匿名组合](https://zhuanlan.zhihu.com/p/53846600)
 
 <!-- books -->
-+ [Go语言圣经（中文版)](https://docs.hacknode.org/gopl-zh/index.html)
 + [Go 语言设计与实现](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-make-and-new/)
 + [Go 语言实战: 编写可维护 Go 语言代码建议](https://github.com/llitfkitfk/go-best-practice#23-%E4%B8%8D%E8%A6%81%E7%94%A8%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B%E5%91%BD%E5%90%8D%E4%BD%A0%E7%9A%84%E5%8F%98%E9%87%8F)
 + [Go语言中文网](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/chapter06/06.2.html)

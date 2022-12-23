@@ -1,4 +1,5 @@
 ## context package
++ 协程的上下文，追踪协程的状态
 + carrying deadlines, cancelation signals, and request-scoped values between processes.
 + 用于取消sub process,sub request,sub goroutine
 + 在多个goroutine中使用
@@ -65,3 +66,5 @@ func Stream(ctx context.Context, out chan<- Value) error {
 }
 ```
 
+## ref
++ [Go组件：context学习笔记](https://zhuanlan.zhihu.com/p/548276361)
