@@ -1,8 +1,13 @@
 ## goroutine
 
-+ 每一个并发执行的活动为goroutine
++ 每一个并发的执行单元叫作一个goroutine
+
 + main为主goroutine
-+ main退出后所有goroutine强制退出
+    + main退出后所有goroutine强制退出
+        + goroutine无法被其他goroutine打断
+
++ goroutine会绑定到线程
+
 + 每个request被一个goroutine处理
     + 可能一个goroutine会创建出多个goroutine
         + context来来处理goroutine间的切换，cancel
@@ -17,6 +22,7 @@
     + time.Sleep
     + chanel调用
     + mutex阻塞
+
 + GOMAXPROCS 多少个线程上执行GO代码(CPU核心数)
 ```go
 for {
@@ -40,6 +46,10 @@ $ GOMAXPROCS=2 go run hacker-cliché.go
     + goroutine的调度由go自身的调度器完成(go内部事件，通道，互斥量)
     + 多个协程绑到同一个线程上执行
 
+## tips
++ CSP(communicating sequential processes) 顺序通信进程
+    + 并发编程模型
+    + 值会在不同的运行实例(goroutine)中传递
 
 ## ref
 + [Goroutines和Channels](https://docs.hacknode.org/gopl-zh/ch8/ch8.html)
@@ -47,3 +57,4 @@ $ GOMAXPROCS=2 go run hacker-cliché.go
 + [什么是协程 ？](https://juejin.im/post/6844903921471717389)
 
 + [深度探索Go语言：抢占式调度(1)](https://www.zhihu.com/zvideo/1394562943225257984)
++ [第八章　Goroutines和Channels](https://docs.hacknode.org/gopl-zh/ch8/ch8.html)
