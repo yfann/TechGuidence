@@ -1,11 +1,21 @@
 ## channel
 
-+ goroutine间通信
++ 引用，nil, == 
 
-+ 可以 == 比较
++ goroutine间通信
 
 + pipeline
     + chan串联多个goroutine
+
++ `close(ch)`关闭通道
+    + 发送者close chan，接受者可以停止不必要的等待
+    + chan<-发送方 会导致panic
+    + 接收方<-chan  如果数据都被接收，返回nil，不再阻塞
+    + 额外值表示chan是否被关闭或直接使用range(ok 值)
+    + 不能用于单向只接收chan
+
+
+
 
 ## coding
 ```go
@@ -17,12 +27,7 @@ x = <-ch // a receive expression in an assignment statement
 ```
 
 
-+ `close(ch)`关闭通道
-    + 发送者close chan，接受者可以停止不必要的等待
-    + chan<-发送方 会导致panic
-    + 接收方<-chan  如果数据都被接收，返回nil，不再阻塞
-    + 额外值表示chan是否被关闭或直接使用range(ok 值)
-    + 不能用于单向只接收chan
+
 ```go
 // Squarer
 go func() {
