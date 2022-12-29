@@ -2,7 +2,8 @@
 
 + 虚拟网络设备
 + 用于构建VPN
-
++ tun/tap设备的用处是将协议栈中的部分数据包转发给用户空间的应用程序，给用户空间的程序一个处理数据包的机会
+    + VPN（IPSec）
 
 
 ## cmd
@@ -46,6 +47,9 @@
 
 ## tap
 + 操作二层以太网帧
+    + 数据链路层数据包
+    + 可以和物理网课桥接
++ /dev/tapX
 + tap也称虚拟以太设备
     + 和Ethernet协议对应
 + 在数据链路层的协议
@@ -60,6 +64,12 @@
 + IP层隧道，隧道通信tunel
 + linux的ip隧道基于tun
 + 操作三层IP包
+    + 无法和物理网卡桥接
+    + 可以通过三层交换(ip_forward)与物理网课连通
++ /dev/tunx
+    + 通过设备文件收发数据包
+    + application --write data--> /dev/tunx ---data--> 内核协议栈
+    + 内核协议栈 ---data--> /dev/tunx <--read data-- application
 
 ## tips
 + linux tun模块实现 tun/tap
@@ -77,4 +87,4 @@
 
 ## ref
 + [tap/tun 是什么](https://www.cnblogs.com/bakari/p/10450711.html)
-
++ [Kubernetes网络自学系列 | 给用户态一个机会：tun/tap设备](https://zhuanlan.zhihu.com/p/595048552)

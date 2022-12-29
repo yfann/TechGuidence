@@ -1,5 +1,14 @@
 
 
+## SETUP go dev
+
++ setting -> proxy
+
++ extension -> go
+
++ `ctrl + shift + p` -> `go:install/update tools`
+
+
 ## vscode中设置go定义跳转
 + `go get github.com/rogpeppe/godef`
 + File>preferences>settings>go.docsTool

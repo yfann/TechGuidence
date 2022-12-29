@@ -14,7 +14,12 @@
     + 额外值表示chan是否被关闭或直接使用range(ok 值)
     + 不能用于单向只接收chan
 
++ 可以用来等待其他goroutine完成
 
++ goroutine泄露
+    + goroutine一直阻塞无法退出
+    + solution
+        + buffered channel
 
 
 ## coding
