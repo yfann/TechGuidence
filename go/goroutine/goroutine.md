@@ -23,7 +23,7 @@
     + chanel调用
     + mutex阻塞
 
-+ GOMAXPROCS 多少个线程上执行GO代码(CPU核心数)
++ GOMAXPROCS 多少个线程上执行GO代码(默认是CPU核心数)
 ```go
 for {
     go fmt.Print(0)
@@ -38,13 +38,13 @@ $ GOMAXPROCS=2 go run hacker-cliché.go
 ```
 ## goroutine与线程
 + 线程
-    + 线程固定2MB
+    + 线程固定2MB的栈
     + 线程的调度由OS的内核完成
 + goroutine
     + 比线程轻量
-    + goroutine栈内存2KB，可以扩大到1GB
+    + goroutine栈内存2KB，可以扩大到1GB，动态的
     + goroutine的调度由go自身的调度器完成(go内部事件，通道，互斥量)
-    + 多个协程绑到同一个线程上执行
+    + m:n n个线程上调度m个goroutine
 
 ## tips
 + CSP(communicating sequential processes) 顺序通信进程
