@@ -50,3 +50,4 @@
 
 ## ref
 + [VxLAN](https://www.cnblogs.com/bakari/p/11131268.html)
++ [《跟唐老师学习云网络》 - 什么是VLAN和VXLAN](https://bbs.huaweicloud.com/blogs/111665)
