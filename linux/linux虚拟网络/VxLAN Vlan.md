@@ -1,3 +1,4 @@
+# VLan
 
 # VxLAN（Visual eXtensible Local Area Network，虚拟扩展本地局域网）
 + 虚拟化隧道通信技
@@ -41,12 +42,14 @@
         + VID（12bit） 
             + 0~4095
 + 使用STP
-
++ Vlan 在IP头打标签(tag/untag)
+    + Vxlan 在原始帧中添加VxLan头
 ## tips
 + 隧道
 + overlay
 + underlay
-
++ Trunk
+    + 一个端口(switch)允许N种VLAN标签(默认只支持一种)
 
 ## ref
 + [VxLAN](https://www.cnblogs.com/bakari/p/11131268.html)
