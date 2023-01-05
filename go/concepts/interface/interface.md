@@ -59,6 +59,10 @@ f(buf) //报错，动态类型不为空(被设置为*bytes.Buffer)，动态值�
 
 + `fmt.Printf("%T",x)` 查看类型，内部反射
 
+
+
+
+
 ## ref
 + [golang的struct里面嵌入interface](https://www.jianshu.com/p/a5bc8add7c6e)
 + [Go语言接口和类型之间的转换](http://c.biancheng.net/view/83.html)
