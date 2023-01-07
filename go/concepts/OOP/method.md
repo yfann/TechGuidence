@@ -1,6 +1,7 @@
 
-
-
+# receiver（方法的接收器）
++ 其他语言this,self
++ 除了指针和interface其他类型都可以作为receiver
 
 ## value receiver
 
