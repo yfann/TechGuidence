@@ -6,3 +6,5 @@
 + [Kubernetes Design Patterns and Extensions](https://learning.oreilly.com/library/view/kubernetes-design-patterns/9781789619270/)
 + [The Kubernetes Operator Framework Book](https://learning.oreilly.com/library/view/the-kubernetes-operator/9781803232850/B18147_03_ePub.xhtml#_idParaDest-52)
 + [Build an Orchestrator in GO](https://livebook.manning.com/book/build-an-orchestrator-in-go/chapter-1/v-1/)
+
++ [k8s books](https://github.com/kubernauts/Kubernetes-Learning-Resources/blob/master/pages/books.md)
