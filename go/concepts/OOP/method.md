@@ -8,33 +8,7 @@
 ## point receiver
 + 接受者过大，不想copy
 + 需要修改接受者
-```go
-func (p *Point) ScaleBy(factor float64) {
-    p.X *= factor
-    p.Y *= factor
-}
-// (*Point).ScaleBy
-r := &Point{1, 2}
-r.ScaleBy(2)
 
-p := Point{1, 2}
-p.ScaleBy(2)
-//************************隐式调用1
-// varaible 可以获取地址
-// 隐式调用 (&p).ScaleBy(2)
-// 只作用于变量
-// 类似的有p.X(struct),perim[0](slice)
-
-Point{1, 2}.ScaleBy(2) // compile error: can't take address of Point literal
-//** temporary value 无法获取地址
-
-
-// *****************隐式调用2
-func (p Point) ScaleBy(factor float64)...
-// pptr是指针
-pptr.Distance(q)
-// 隐式调用 编译器会插入* (*pptr).Distance(q)
-```
 
 + 如果类型有一个方法支持pointer receiver,则所有方法都应该支持pointer receiver
     - 如果type T的所有方法都是value receiver,则调用方法都是copy value,是安全的
@@ -61,6 +35,7 @@ func (P) f(){...}  //报错
 ```
 
 ## nil可以做为接收者
++ nil代表空值
 ```go
 type IntList struct{
     Value int
@@ -76,8 +51,10 @@ func (list *IntList) Sum() int{
 
 ```
 
-
-
+## tips
++ 函数参数为值拷贝
+    + 如果一个函数需要更新一个变量，或者函数的其中一个参数实在太大我们希望能够避免进行这种默认的拷贝，这种情况下我们就需要用到指针了
+    + 对receiver也适用
 
 
 
