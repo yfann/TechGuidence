@@ -47,5 +47,41 @@ p.ScaleBy(2)
 func (p Point) ScaleBy(factor float64)...
 // pptr是指针
 pptr.Distance(q)
-// 隐式调用 编译器会插入* (*pptr).Distance(q)
+```
+
+## method value
+```go
+p := Point{1, 2}
+q := Point{4, 6}
+
+distanceFromP := p.Distance        // method value
+fmt.Println(distanceFromP(q))      // "5"
+```
+<!-- method expression -->
+```go
+p := Point{1, 2}
+q := Point{4, 6}
+
+distance := Point.Distance   // method expression
+fmt.Println(distance(p, q))  // "5"
+fmt.Printf("%T\n", distance) // "func(Point, Point) float64"
+
+scale := (*Point).ScaleBy
+scale(&p, 2)
+fmt.Println(p)            // "{2 4}"
+fmt.Printf("%T\n", scale) // "func(*Point, float64)"
+
+// ........
+func (path Path) TranslateBy(offset Point, add bool) {
+    var op func(p, q Point) Point
+    if add {
+        op = Point.Add
+    } else {
+        op = Point.Sub
+    }
+    for i := range path {
+        // Call either path[i].Add(offset) or path[i].Sub(offset).
+        path[i] = op(path[i], offset)
+    }
+}
 ```
