@@ -12,3 +12,4 @@
 ## ref
 + [跟唐老师学习云网络》 - GRE，用于网络走私的隧道](https://bbs.huaweicloud.com/blogs/109079)
 + [GRE 和 IPsec 隧道有什么区别？](https://bbs.huaweicloud.com/blogs/366646)
++ [【网工技术分享】GRE隧道协议](https://zhuanlan.zhihu.com/p/597729843)

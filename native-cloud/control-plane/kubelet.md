@@ -19,4 +19,3 @@
 ## ref
 + [一文看懂 Kubelet](https://zhuanlan.zhihu.com/p/338462784)
 + [后Kubernetes时代的虚拟机管理技术之Virtual-Kubelet篇](https://www.kubernetes.org.cn/9574.html)
-+ [后Kubernetes时代的虚拟机管理技术之Virtual-Kubelet篇](https://www.kubernetes.org.cn/9574.html)
