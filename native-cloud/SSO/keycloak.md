@@ -4,6 +4,7 @@
  + SSO
     + OpenID Connect
     + SAML 2.0
+    + OAuth 2.0
 
 
 ## Client Scope
@@ -147,3 +148,6 @@ http:
 + [How do I perform common OAuth 2.0 tasks using curl commands with the standard endpoints in AM 5.x and OpenAM 13.x?](https://backstage.forgerock.com/knowledge/kb/article/a45882528)
 + [Keycloak的SSO功能与cookie的关系-爱代码爱编程](https://icode.best/i/21880636824597)
 + [Keycloak curl Authorization Code Flow login](https://thrysoee.dk/keycloak-authorization-code-login/)
+
+<!-- 权限控制 -->
++ [Spring Boot Web应用集成Keycloak进阶之细粒度权限控制](https://vigoz.io/post/2020/06/keycloak-spring-boot-fine-grained-authorization/)

@@ -54,7 +54,6 @@
 <!-- ML -->
 + [Sklearn 与 TensorFlow](https://hands1ml.apachecn.org/#/docs/1)
 + [机器学习系统: 设计和实现](https://openmlsys.github.io/chapter_introduction/index.html#)
-+ [《分布式系统模式》中文版](https://github.com/dreamhead/patterns-of-distributed-systems)
 
 <!-- architect -->
 + [系统设计入门](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)

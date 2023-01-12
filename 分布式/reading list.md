@@ -11,5 +11,5 @@
 + [CMU 15-440 Distributed Systems](https://www.composablesystems.org/15-440/fa2022/schedule/)
 + [MIT 6.824 Schedule: Spring 2022](http://nil.csail.mit.edu/6.824/2022/schedule.html)
 
-<!-- website -->
+<!-- community -->
 + [high scalability](http://highscalability.com/)
