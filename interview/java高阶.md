@@ -29,7 +29,7 @@
 
 + synchronized vs volatile
     + volatile
-        + 保证可见性
+        + 保证可见性（各个线程的工作内存值相同）
         + 写不是原子操作
 
 + sleep() vs wait()
