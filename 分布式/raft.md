@@ -26,6 +26,9 @@
 - Committed Entry - An entry is considered committed when it is durably stored on a quorum of nodes
 + FSM
     +  Finite State Machine
-    + 
+
+## tips
++ 选主和复制日志
+
 ## ref
 + [一致性协议raft](http://thesecretlivesofdata.com/raft/)
