@@ -1,4 +1,7 @@
-
+# raft
++ Leader Election
++ Log Replication
++ Safety
 
 ## tips
 + a protocol of distributed consensus

@@ -133,10 +133,11 @@
 + [Kubernetes网络模型](https://mp.weixin.qq.com/s/ennOLcCVUernHkgmPj4ung)
 + [k8s service](https://www.zhihu.com/question/359649715/answer/2792064190)
 + [数据包在 Kubernetes 中的一生](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)
++ [浅谈 Kubernetes 中的服务发现](https://blog.fleeto.us/post/demystifying-kubernetes-service-discovery/)
+    + DNS k8s中的服务发现
+    + iptables/IPVS 负载转发集群内的请求
 
-
-
+<!-- others -->
 + [一文搞懂Kubernetes的网络模型：Overlay和Underlay](https://jishuin.proginn.com/p/763bfbd5be01)
 + [干货分享| Kubernetes网络难懂？可能是没看到这篇文章](https://zhuanlan.zhihu.com/p/526586444)
 + [集群网络系统](https://kubernetes.io/zh/docs/concepts/cluster-administration/networking/)
-+ [数据包在 Kubernetes 中的一生（1](https://blog.fleeto.us/post/life-of-a-packet-in-k8s-1/)
