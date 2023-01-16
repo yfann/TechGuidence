@@ -2,7 +2,13 @@
 + Leader Election
 + Log Replication
 + Safety
-
++ 一致性(consensus)
+    + 是具有容错性(fault-tolerant)的分布式系统的基础
+    + 同一时刻所有节点对存储在其中的某个值都有相同结果
+    + 小部分副本拓机，也可以对外服务
+    + replicatred state machines
+        + 所有节点从同一个state出发，经过同样的操作序列(log),最后达到同样的state
+        
 ## tips
 + a protocol of distributed consensus
 + state

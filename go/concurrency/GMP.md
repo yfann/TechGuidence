@@ -3,15 +3,21 @@
     + 新建的G   
         + 全局队列
         + P对应的队列
+    + 并行G的数量等于P的数量
+
 + P: processor
+    + Go Scheduler
     + GOMAXPROCS
     + 程序启动时创建
-+ M: thread
+    + work-stealing
+        + 本地队列为空的P可以尝试从其他P本地队列偷取一半的G补充到自身队列
+
++ M: machine
     + 内核线程
-    + 绑定P
+    + 绑定P,才能调度G
+    + M调度G时，优先取P本地队列，其次取全局队列，最后取wait队列；这样的好处是，取本地队列时，可以接近于无锁化，减少全局锁竞争
 
 ## tips
-+ Go Scheduler
 + 内核空间
     + thead
         + 协程调度器（M:N）
