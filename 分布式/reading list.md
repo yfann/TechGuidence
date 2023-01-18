@@ -10,6 +10,6 @@
 <!-- 课程 -->
 + [CMU 15-440 Distributed Systems](https://www.composablesystems.org/15-440/fa2022/schedule/)
 + [MIT 6.824 Schedule: Spring 2022](http://nil.csail.mit.edu/6.824/2022/schedule.html)
-
++ [15-440, Fall 2012: Distributed Systems](http://www.cs.cmu.edu/~dga/15-440/F12/)
 <!-- community -->
 + [high scalability](http://highscalability.com/)

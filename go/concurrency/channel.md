@@ -9,8 +9,8 @@
 
 + `close(ch)`关闭通道
     + 发送者close chan，接受者可以停止不必要的等待
-    + chan<-发送方 会导致panic
-    + 接收方<-chan  如果数据都被接收，返回nil，不再阻塞
+    + 向close的channel发数据 会导致panic
+    + channel被close后还可以读取剩余数据直到读取nil，不再阻塞
     + 额外值表示chan是否被关闭或直接使用range(ok 值)
     + 不能用于单向只接收chan
 
@@ -178,6 +178,9 @@ func makeThumbnails6(filenames <-chan string) int64 {
     + 如果没有 default 子句，select 将阻塞，直到某个通信可以运行；Go 不会重新对 channel 或值进行求值
 + select 会循环检测条件，如果有满足则执行并退出，否则一直循环检测。
 
+
+## resource leak
++ goroutine如果没有退出则不会被GC
 
 ## ref
 + [Go 语言 select 语句](https://www.runoob.com/go/go-select-statement.html)
