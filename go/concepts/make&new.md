@@ -28,3 +28,7 @@ var p1 *int
 i := 0
 p1 = &i
 ```
+
+
+## ref
++ [Why would I make() or new()?](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new)
