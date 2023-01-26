@@ -1,5 +1,5 @@
 
-# 一致性hash
+# consistent hash
 + 均衡性(Balance)
 + 单调性(Monotonicity)
 + 分散性(Spread)
