@@ -2,14 +2,18 @@
 + 1 coordinator + many voter
 
 ## 2PC
++ blocking
 + process
     + propose
-    + commit
+    + commit/abort
 + 缺点
     + fail-stop会失败
         + 在commit phase,当coordinator和一个voter挂掉时，无法继续
+            + voter处于uncertain
+                + blocking
 
 ## 3pc
++ nonblocking
 + process
     + propose
     + precommit

@@ -38,6 +38,15 @@
 
 ## tips
 + 选主和复制日志
++ leader接受写请求 --> leader本地的WAL --> quotum ---> state machine
+    + 2PC
+    + follower接收写请求后先写入本地WAL,向leader返回ACK
+
++ 读取时满足及时一致性    
+    + appliedIndex
+        + leader把最后写入数据的appliedIndex发给client,client每次读数据时都带着, follower会比较自己的appliedIndex和客户端的appliedIndex，如果滞后则拒绝服务，把读请求转发给其他node
+    + follower转发读取请求到leader
 
 ## ref
 + [一致性协议raft](http://thesecretlivesofdata.com/raft/)
++ [万字长文解析raft算法原理](https://zhuanlan.zhihu.com/p/600147978)

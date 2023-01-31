@@ -6,8 +6,14 @@
     + fault-tolerant
 + Scalability
     + scaling up
+        + shared-memory architecture
+        + shared-disk architecture
+            + NAS
     + scaling out
+        + node
+        + shared-nothing
     + fan-out
+    
 + Maintainability
 
 
