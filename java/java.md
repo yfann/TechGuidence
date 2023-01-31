@@ -56,4 +56,5 @@
 + [Java三种代理模式：静态代理、动态代理和cglib代理](https://segmentfault.com/a/1190000011291179)
 + [关于JVM堆外内存的一切](https://juejin.cn/post/6844903710766661639)
     + [Java堆外内存：堆外内存回收方法](https://www.huaweicloud.com/articles/f48ee34757ceccdada58274492db6c9f.html)
++ [stream](https://www.liaoxuefeng.com/wiki/1252599548343744/1322402873081889)
 
