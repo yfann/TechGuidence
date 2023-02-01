@@ -14,3 +14,5 @@
 ## ref
 + [16 张图解带你掌握一致性哈希算法](https://developer.huawei.com/consumer/cn/forum/topic/0203810951415790238)
 + [一致性Hash算法详解](https://zhuanlan.zhihu.com/p/98030096)
+
++ [哪种一致性哈希算法才是解决分布式缓存问题的王者？](https://cloud.tencent.com/developer/article/1836320)
