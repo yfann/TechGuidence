@@ -22,3 +22,11 @@
 
 <!-- community -->
 + [high scalability](http://highscalability.com/)
+
+
+<!-- books -->
++ "Distributed Systems Principles and Paradigms" by Andrew S. Tanenbaum and Maarten van Steen
++ "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems" by Martin Kleppmann
++ "Learning Apache Cassandra - Manage Fault Tolerant and Scalable Real-Time Data" by Vijay Parthasarathy
++ "Kafka: The Definitive Guide: Real-Time Data and Stream Processing at Scale" by Neha Narkhede, Gwen Shapka and Todd Palino
++ "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin
