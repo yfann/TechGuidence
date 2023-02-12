@@ -21,3 +21,11 @@
 
 + `func zero(b [32]byte)` 数组是copy副本传递的，值传递，其他语言中数组是隐式的引用传递
 + `func zero(prr *[32]byte)` 引用传递
+
+
+## literal
+<!-- array literal -->
++ [3]bool{true, true, false}
+
+<!-- slice literal -->
++ []bool{true, true, false}
