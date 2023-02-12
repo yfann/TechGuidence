@@ -13,6 +13,7 @@
     + top300
 + [leetcode](https://leetcode.com/problemset/all/)
 <!-- OOD -->
++ [Grokking the Low Level Design Interview Using OOD Principles](https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles)
 + [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
 + [The System Design Primer](https://github.com/donnemartin/system-design-primer)
 
