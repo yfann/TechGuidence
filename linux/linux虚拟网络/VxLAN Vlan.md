@@ -54,3 +54,4 @@
 ## ref
 + [VxLAN](https://www.cnblogs.com/bakari/p/11131268.html)
 + [《跟唐老师学习云网络》 - 什么是VLAN和VXLAN](https://bbs.huaweicloud.com/blogs/111665)
++ [为什么集群需要 Overlay 网络](https://draveness.me/whys-the-design-overlay-network/)
