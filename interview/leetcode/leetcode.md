@@ -7,3 +7,6 @@
 + [github animation answers](https://github.com/MisterBooo/LeetCodeAnimation)
 + [《LeetCode题解》](https://siddontang.gitbooks.io/leetcode-solution/content/)
 + [geekxh/hello-algorithm](https://github.com/geekxh/hello-algorithm)
+
+<!-- sliding window -->
++ [Window Sliding Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
