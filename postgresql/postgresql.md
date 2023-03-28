@@ -1,5 +1,15 @@
 + `select current_database();`
 + `select user;`
+
+
+## schema
++ 逻辑容器存储数据库对象(table,view,function)
+    + 默认public schema
+    + 对象前不指定schema,默认加public
++ 数据库包含多个模式,模式包含表。
++ 同名对象在不同模式中不冲突
++ database.schema.table
++ `CREATE TABLE products ( ... );`等同于`CREATE TABLE public.products ( ... );`
 <!-- 模式 -->
 + `CREATE SCHEMA myschema;`
     + `CREATE SCHEMA schemaname AUTHORIZATION username;`
@@ -8,14 +18,6 @@
 + `SHOW search_path;` 当前的模式上下文
     + 写sql语句表名不用加模式,`DROP TABLE mytable;`,会在当前上下文中查找
 + `SET search_path TO myschema,public;`
-
-## 模式
-
-+ 数据库包含多个模式,模式包含表。
-+ 同名对象在不同模式中不冲突
-+ database.schema.table
-+ `CREATE TABLE products ( ... );`等同于`CREATE TABLE public.products ( ... );`
-
 
 
 ## ref

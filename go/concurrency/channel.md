@@ -182,5 +182,23 @@ func makeThumbnails6(filenames <-chan string) int64 {
 ## resource leak
 + goroutine如果没有退出则不会被GC
 
+## underlying mechanism
+The underlying mechanism of channels in Go involves the use of a data structure called a "synchronization primitive", which is used to coordinate the communication between Goroutines.
+
+Internally, a channel is implemented as a queue of elements of the channel's specified type. When a Goroutine sends a value to a channel, the value is added to the back of the queue. When a Goroutine receives a value from a channel, the value is removed from the front of the queue.
+
+To ensure that the communication between Goroutines is synchronized and safe, Go uses a technique called "channel operations". A channel operation is an atomic operation that involves sending or receiving a value from a channel. When a Goroutine performs a channel operation, it is blocked until the operation can be completed safely.
+
+In addition, Go uses a mechanism called "goroutine scheduling" to manage the execution of Goroutines. Goroutines are lightweight threads of execution that are scheduled independently by the Go runtime. When a Goroutine is blocked on a channel operation, the runtime switches to a different Goroutine, allowing the program to make progress even if some Goroutines are waiting for channel operations to complete.
+
+Overall, the underlying mechanism of channels in Go is a combination of data structures, synchronization primitives, and goroutine scheduling, all of which work together to ensure safe and efficient communication between Goroutines.
+
+## tips
++ Synchronization primitive（同步原语,为了消除race condition）
+    + lock
+    + semaphore
+    + condition variable
+    + channel in go
+
 ## ref
 + [Go 语言 select 语句](https://www.runoob.com/go/go-select-statement.html)
