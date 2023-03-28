@@ -12,3 +12,5 @@
 ## ref
 + [trivy](https://github.com/aquasecurity/trivy)
 + [documents](https://aquasecurity.github.io/trivy/v0.29.2/)
+<!-- install on redhat -->
++ [trivy install](https://aquasecurity.github.io/trivy/v0.18.3/installation/)
