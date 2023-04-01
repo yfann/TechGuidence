@@ -15,3 +15,7 @@
 
 <!-- install -->
 + [Stable diffusion安装踩坑(win&Mac&iOS)](https://blog.csdn.net/weixin_45569617/article/details/126873709)
+
+<!-- collection -->
++ [civitai](https://civitai.com/)
++ pxxxpen
