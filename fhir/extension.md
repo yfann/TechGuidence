@@ -7,3 +7,5 @@
 
 
 + [扩展](https://wanghaisheng.github.io/fhir-cn/doc/extensibility.html)
+
++ [fhir extension, which is an array of objects](https://stackoverflow.com/questions/35090473/fhir-extension-which-is-an-array-of-objects)
