@@ -91,4 +91,8 @@
 + [说说with(nolock)的使用](https://juejin.cn/post/7030795133758996511)
 + [SQL Server table hints – WITH (NOLOCK) best practices](https://www.sqlshack.com/understanding-impact-clr-strict-security-configuration-setting-sql-server-2017/)
 + [论 MySql InnoDB 如何通过插入意向锁控制并发插入](https://zhuanlan.zhihu.com/p/344542398)
++ [Sql Server 哈希分区高并发插入数据](https://www.modb.pro/db/54830)
+
+<!-- heap -->
++ [Understanding CRUD Operations Against Heaps and Forwarding Pointers](https://www.sqlservercentral.com/articles/understanding-crud-operations-against-heaps-and-forwarding-pointers)
 + [Heaps (Tables without Clustered Indexes)](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/heaps-tables-without-clustered-indexes?view=sql-server-ver16)
