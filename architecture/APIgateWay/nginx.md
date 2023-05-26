@@ -48,6 +48,12 @@ location /error_page {
     + X.509 client certificate
     + HTTP Basic authentication
     + OAuth 2.0 access token
+        + JWT token
+            + offline JWT validation
+        + Opaque token
+            + must be validated by sending them back to the IdP(Identity provider) that issued them
 
 ## ref
+<!-- auth -->
 + [Validating OAuth 2.0 Access Tokens with NGINX and NGINX Plus](https://www.nginx.com/blog/validating-oauth-2-0-access-tokens-nginx/)
++ [借助 JWT 和 NGINX Plus 验证 API 客户端身份](https://www.nginx-cn.net/blog/authenticating-api-clients-jwt-nginx-plus/)
