@@ -42,5 +42,12 @@ location /error_page {
 }
 ```
 
+## tips
+
++ authenticate API calls
+    + X.509 client certificate
+    + HTTP Basic authentication
+    + OAuth 2.0 access token
+
 ## ref
 + [Validating OAuth 2.0 Access Tokens with NGINX and NGINX Plus](https://www.nginx.com/blog/validating-oauth-2-0-access-tokens-nginx/)
