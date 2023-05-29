@@ -51,3 +51,5 @@
 + [HTTP X-Forwarded-For(XFF) 介绍](https://www.runoob.com/w3cnote/http-x-forwarded-for.html)
 + [谈谈一个重要的http协议头标：X-Forwarded-For](https://codeantenna.com/a/gMYGBr5noF)
 + [HAProxy,lvs,nginx](https://www.cnblogs.com/kevingrace/p/5892169.html)
+
++ [一文详解负载均衡和反向代理的真实区别](https://mp.weixin.qq.com/s/TYM83F2O-keMvn4ZYa5nqw)
