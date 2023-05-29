@@ -1,3 +1,16 @@
+# nginx
++ 动静分离
+  + 静态资源在Nginx上
+
++ 负载均衡
+
++ 反向代理
+
++ 鉴权
+
++ IP控制访问
+
+
 ## nginx on windows
 + [install](http://nginx.org/en/docs/windows.html)
 + `start nginx` **http://localhost/**
@@ -18,20 +31,33 @@
 + `nginx -t` 检查配置文件语法
 + `vi /etc/nginx/nginx.conf`
 
-+ alias
-```conf
-  server {
-    listen 0.0.0.0:8080;
-    root /app;
-    location / {
-      index index.html index.php;
-    }
-    location /nginx/ {
-      index index.html index.php;
-      alias /app/;
-    }
-  }
+
+
+## docker nginx
++ `docker pull nginx`
++ `docker run --name some-nginx -d -p 8080:80 some-content-nginx`
+  + `http://localhost:8080`
+<!-- config -->
++ `docker run --name my-custom-nginx-container -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx`
++ `docker cp tmp-nginx-container:/etc/nginx/nginx.conf /host/path/nginx.conf`
+  + copy 容器里的config
+<!-- docker-compose.yml -->
+```yaml
+web:
+  image: nginx
+  volumes:
+   - ./templates:/etc/nginx/templates
+  ports:
+   - "8080:80"
+  environment:
+   - NGINX_HOST=foobar.com
+   - NGINX_PORT=80
 ```
+  + read ` /etc/nginx/templates/*.template`
+  + output to `/etc/nginx/conf.d`
+
+
+
 
 ## tips
 + 正向代理
@@ -41,8 +67,16 @@
     + 代理服务端
     + 如： 访问域名，代理转发到内网中
 
-
-
++ nginx高可用
+  + keepalived + Nginx
+  + 请求先到keepavlied(VIP)
+    + 将请求路由到一个可用的Nginx
+     
++ 请求处理机制
+  + 异步处理
+    + epoll
+  + 最大并发数
+    + max_client=worker_processes*worker_connections / 4
 ## ref
 + [8分钟带你深入浅出搞懂Nginx](https://zhuanlan.zhihu.com/p/34943332)
 + [正向代理与反向代理的区别](https://www.jianshu.com/p/208c02c9dd1d)
