@@ -42,19 +42,46 @@ location /error_page {
 }
 ```
 
+## nginx pulgin
++ auth_jwt module
+    + offline JWT validation
+
++ auth_request module
+    + an API call to an IdP before proxying a request to the backend
+
+## token introspection
+
+
 ## tips
 
 + authenticate API calls
     + X.509 client certificate
     + HTTP Basic authentication
     + OAuth 2.0 access token
-        + JWT token
-            + offline JWT validation
-        + Opaque token
-            + must be validated by sending them back to the IdP(Identity provider) that issued them
+        + types
+            + JWT token
+                + offline JWT validation
+            + Opaque token
+                + must be validated by sending them back to the IdP(Identity provider) that issued them
+                + it can be revoked by the IdP
+        + validate
+            + it was indeed issued by a trusted IDP(identity provider)
+                + IdPs cryptographically sign the JWTs they issue
+            + not expired
++ IdP(Identity provider) 
+
+
+
 
 ## ref
 <!-- auth -->
 + [Validating OAuth 2.0 Access Tokens with NGINX and NGINX Plus](https://www.nginx.com/blog/validating-oauth-2-0-access-tokens-nginx/)
 + [借助 JWT 和 NGINX Plus 验证 API 客户端身份](https://www.nginx-cn.net/blog/authenticating-api-clients-jwt-nginx-plus/)
 + [Nginx鉴权，验证token](https://zhuanlan.zhihu.com/p/530343073)
+
+<!-- jwt -->
++ [Module ngx_http_auth_jwt_module](http://nginx.org/en/docs/http/ngx_http_auth_jwt_module.html)
++ [ngx_http_auth_jwt_module](https://docshome.gitbook.io/nginx-docs/he-xin-gong-neng/http/ngx_http_auth_jwt_module)
++ [github ngx-http-auth-jwt-module](https://github.com/TeslaGov/ngx-http-auth-jwt-module)
+<!-- nginx plus -->
++ [借助 JWT 和 NGINX Plus 验证 API 客户端身份](https://www.nginx-cn.net/blog/authenticating-api-clients-jwt-nginx-plus/)
