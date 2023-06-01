@@ -50,6 +50,10 @@ location /c/ {
 
 + index
 
++ inernal
+  + 它会阻止直接向客户端返回响应，并只允许通过内部请求访问
+  + 可以确保这些URL仅能通过内部请求访问，而不能直接从客户端访问。
+
 ## ref
 + [ngx_http_auth_jwt_module](http://nginx.org/en/docs/http/ngx_http_auth_jwt_module.html)
 + [Beginner’s Guide](http://nginx.org/en/docs/beginners_guide.html)
