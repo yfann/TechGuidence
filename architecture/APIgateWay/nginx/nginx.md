@@ -12,7 +12,6 @@
 
 
 ## nginx on windows
-+ [install](http://nginx.org/en/docs/windows.html)
 + `start nginx` **http://localhost/**
 + `nginx -s stop`
 + `nginx -c conf\my.conf` **default:conf\nginx.conf**
