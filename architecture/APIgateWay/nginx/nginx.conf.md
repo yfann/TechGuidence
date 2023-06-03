@@ -1,5 +1,10 @@
 ## nginx.conf
 
++ server_name
+  + 匹配reqeust中的Host
+  + 可以设置多个域名
+  + 可以正则匹配
+
 + root
     + 静态资源
 

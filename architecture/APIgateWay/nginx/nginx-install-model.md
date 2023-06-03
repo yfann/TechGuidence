@@ -11,7 +11,7 @@
 
 ## load_module
 <!-- nginx.conf -->
-+ `load_module modules/ngx_http_echo_module.so;`
++ `load_module modules/ngx-http-auth-jwt-module.so;`
 
 
 ## 编译 model issues
