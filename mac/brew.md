@@ -9,6 +9,8 @@
     - `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
     - `brew -v`
 
+
+
 - `brew install <package>`
     - `brew uninstall <pkg>`
 
@@ -24,5 +26,25 @@
 + `man brew` help
 
 
+## proxy
+
++ `export https_proxy=XXX`
+
+
+## tap
++ `brew tap` 
+    + 查看仓库
+    + 通过添加仓库，安装历史版本
+
++ 
+
+
 ## ref
+<!-- repo -->
++ [Homebrew Formulae](https://formulae.brew.sh/)
+
 + [Homebrew](https://www.jianshu.com/p/934edae009e1)
++ [Taps (Third-Party Repositories)](https://github.com/Homebrew/brew/blob/master/docs/Taps.md)
+<!-- install old version -->
++ [How to install an old package version with brew](https://cmichel.medium.com/how-to-install-an-old-package-version-with-brew-cc1c567dd088)
++ [使用brew安装历史版本的几种方式](https://juejin.cn/post/7179202980191666233)

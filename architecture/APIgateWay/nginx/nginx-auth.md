@@ -204,6 +204,6 @@ server {
 + [ngx_http_auth_jwt_module](https://docshome.gitbook.io/nginx-docs/he-xin-gong-neng/http/ngx_http_auth_jwt_module)
 + [github ngx-http-auth-jwt-module](https://github.com/TeslaGov/ngx-http-auth-jwt-module)
 + [NGINX JWT Module](https://nginx-extras.getpagespeed.com/modules/jwt/)
-
++ [JWT modules](https://stackoverflow.com/questions/54312651/nginx-unknown-directive-auth-jwt)
 <!-- nginx plus -->
 + [借助 JWT 和 NGINX Plus 验证 API 客户端身份](https://www.nginx-cn.net/blog/authenticating-api-clients-jwt-nginx-plus/)
