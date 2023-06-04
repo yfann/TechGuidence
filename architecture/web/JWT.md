@@ -1,5 +1,47 @@
 # JWT
++ Header.Payload.Signature
 
+```json
+{
+  "header": {
+    "alg": "HS256",
+    "typ": "JWT"
+  },
+  "payload": {
+    "sub": "1234567890",
+    "name": "John Doe",
+    "iat": 1622782384
+  },
+  "signature": "HMACSHA256(base64UrlEncode(header) + '.' + base64UrlEncode(payload), secretKey)"
+}
+```
+
+## sub
++ 
+
+## claims
++ iss(Issuer)
+    + 令牌发行者
+
++ sub（subject/主题)
+    + JWT所针对的主体或用户
+    + 一般唯一标识,UserId
+
++ aud(Audience)
+    + 预期接收令牌的一方
+
++ exp(Expiration Time)
+    + 过期时间
+
++ nbf(not before)
+    + 令牌的生效时间
+
++ iat(Issued At)
+    + JWT签发时间
+
++ jti(JWT ID)
+    + JWT唯一标识
+    + 防止重放攻击
 
 ## tips
 + JWT可以认证或交换信息
