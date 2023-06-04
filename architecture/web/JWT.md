@@ -60,3 +60,5 @@
 
 ## ref
 + [JWT](http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html)
+
++ [auth0 JWT](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-token-claims)

@@ -5,10 +5,11 @@
   + 可以设置多个域名
   + 可以正则匹配
 
-+ root
-    + 静态资源
-
 + proxy_pass
+    + `proxy_pass   http://www.zhihu.com/`
+      + 直接跳转
+    + `proxy_pass   http://www.zhihu.com`
+      + 跳转http://www.zhihu.com/{path}
     + 反向代理
     + 动态资源
         + 后端收到的是Nginx的地址，而不是request的地址
@@ -27,6 +28,7 @@
     + 地址定向
 
 + root
+    + 静态资源
     + 请求的根目录
         + `root /var/www;`
         + Web 服务器收到请求后，首先要在服务端指定的目录中寻找请求资源
