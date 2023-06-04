@@ -64,8 +64,29 @@ location /c/ {
 + include
   + 包含其他文件的内容
 
++ map
+
+
+## vars
+
++ `set $test "notok";`
+
+## tips
+
++ proxy_pass在if中结尾不能带`/`
+```config
+        if ($http_jwt_roles ~* "baidu"){
+            proxy_pass   http://www.baidu.com;
+            break;
+        }
+```
+
+
 ## ref
 + [ngx_http_auth_jwt_module](http://nginx.org/en/docs/http/ngx_http_auth_jwt_module.html)
 + [Beginner’s Guide](http://nginx.org/en/docs/beginners_guide.html)
 + [Configuring HTTPS servers](http://nginx.org/en/docs/http/configuring_https_servers.html)
 + [nginx location](https://juejin.im/post/5d81906c518825300a3ec7ca)
+
+<!-- vars -->
++ [nginx variables](http://nginx.org/en/docs/varindex.html)
