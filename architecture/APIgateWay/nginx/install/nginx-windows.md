@@ -20,3 +20,4 @@
 ## ref
 + [nginx for Windows](http://nginx.org/en/docs/windows.html)
 + [nginx download](http://nginx.org/en/download.html)
++ [Nginx Windows详细安装部署教程](https://developer.aliyun.com/article/1045494)
