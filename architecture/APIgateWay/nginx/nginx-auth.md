@@ -195,6 +195,7 @@ server {
 
 ## ref
 <!-- auth -->
++ [jwt generator](https://jwt.io/)
 + [Validating OAuth 2.0 Access Tokens with NGINX and NGINX Plus](https://www.nginx.com/blog/validating-oauth-2-0-access-tokens-nginx/)
 + [借助 JWT 和 NGINX Plus 验证 API 客户端身份](https://www.nginx-cn.net/blog/authenticating-api-clients-jwt-nginx-plus/)
 + [Nginx鉴权，验证token](https://zhuanlan.zhihu.com/p/530343073)

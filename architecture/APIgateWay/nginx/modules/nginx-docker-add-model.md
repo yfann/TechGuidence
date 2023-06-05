@@ -34,3 +34,5 @@ RUN apt-get install -y libjwt-dev
 
 + [Compiling NGINX module as dynamic module for use in docker](https://gist.github.com/hermanbanken/96f0ff298c162a522ddbba44cad31081)
 
++ [Compiling NGINX module as dynamic module for use in docker](https://gist.github.com/hermanbanken/96f0ff298c162a522ddbba44cad31081)
+
