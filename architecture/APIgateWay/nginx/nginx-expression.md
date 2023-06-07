@@ -1,5 +1,14 @@
 
-```config
+```conf
+; 如果不包含admin则返回401
+set $test "user,ab";
+if ($test !~* admin){
+    return 401;
+}
+```
+
+
+```conf
 if ($variable) {
     // Actions to be performed if $variable exists
 }
