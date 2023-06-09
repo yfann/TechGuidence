@@ -8,3 +8,6 @@
 <!-- auth -->
 + [Secure Microservices Using JWT With Ocelot in .NET Core](https://code-maze.com/dotnetcore-secure-microservices-jwt-ocelot/)
 + [Authentication](https://ocelot.readthedocs.io/en/latest/features/authentication.html)
+
+<!-- sample -->
++ [Ocelot的使用(基本使用)](https://blog.csdn.net/sammy520/article/details/109934363)

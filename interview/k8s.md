@@ -33,6 +33,13 @@
 
 <!-- security -->
 + security group
++ pod
+    + Pause作用
+    
++ kube-proxy
+    + 作用
+    + iptables
+    + ipvs 原理
 
 ## tips
 + pdd
