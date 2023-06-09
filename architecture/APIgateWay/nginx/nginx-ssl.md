@@ -5,6 +5,8 @@
         + 存在则ssl可用
 
 2. 生成自签名证书
+    + `openssl genrsa -out nginx.key 4096`
+    + `openssl req -new -x509 -days 1000 -key root.key -out nginx.crt`
 
 3. 配置nginx.conf
 
