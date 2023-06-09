@@ -45,6 +45,15 @@ pip3 install xxxx
 .m2/settings.xml
 
 
+## apt
+
++ /etc/apt/apt.conf
+```conf
+Acquire::http::Proxy "http://proxy_server:port";
+Acquire::https::Proxy "http://proxy_server:port";
+```
+
+
 ## windows
 + ping 不通的原因，ping的协议不是http，也不是https，是ICMP协议。设Http代理不会影响ping
 + 验证用`curl http://www.google.com`

@@ -17,6 +17,13 @@ export NO_PROXY="localhost,127.0.0.0/8"
 ```
 
 
+
+## install on wsl
++ `sudo apt-get update`
++ `sudo apt-get install docker.io`
+    + 安装docker
++ `sudo service docker start`
+
 ## ref
 <!-- works for WSL2 -->
 + [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
