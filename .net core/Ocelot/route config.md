@@ -42,6 +42,17 @@ or
 }
 ```
 
+
+## Quality of Service
+
+```json
+"QoSOptions": {
+    "ExceptionsAllowedBeforeBreaking":3,
+    "DurationOfBreak":1000,
+    "TimeoutValue":5000
+}
+```
+
 ## tips
 + `"RouteIsCaseSensitive": true`
 + dynamic routing
@@ -53,3 +64,5 @@ or
 + [sample config](https://github.com/ThreeMammals/Ocelot/blob/main/test/Ocelot.ManualTest/ocelot.json)
 + [configuration](https://ocelot.readthedocs.io/en/latest/features/configuration.html)
 + [routing](https://ocelot.readthedocs.io/en/latest/features/routing.html)
+
++ [Quality of Service](https://ocelot.readthedocs.io/en/latest/features/qualityofservice.html)
