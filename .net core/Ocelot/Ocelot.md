@@ -12,3 +12,5 @@
 
 <!-- sample -->
 + [Ocelot的使用(基本使用)](https://blog.csdn.net/sammy520/article/details/109934363)
++ [Implementing API Gateway with Ocelot in ASP.NET Core](https://code-maze.com/aspnetcore-api-gateway-with-ocelot/)
++ [ThreeMammals/Ocelot](https://github.com/ThreeMammals/Ocelot/blob/develop/samples/AdministrationApi/Program.cs)
