@@ -31,3 +31,5 @@
 + [如何修改 .NET Core Kestrel 下的端口 ](https://www.cnblogs.com/superfeeling/p/17053701.html)
 
 + [Kestrel vs IIS](https://dotnetcoretutorials.com/kestrel-vs-iis/)
+
++ [Kestrel](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/options?view=aspnetcore-7.0)

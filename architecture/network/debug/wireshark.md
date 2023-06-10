@@ -2,7 +2,11 @@
 
 ## tips
 
++ 相同子网直接发给对方
 + 不同子网通讯要通过网关
+
+## todo
++ route
 
 ## ref
 + [download](https://www.wireshark.org/)
