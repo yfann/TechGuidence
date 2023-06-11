@@ -1,4 +1,4 @@
-## Ocelot 使用JWT
+## Ocelot 使用JWT auth
 1. nuget 添加包`Microsoft.AspNetCore.Authentication.JwtBearer`
 
 2. Program.cs
