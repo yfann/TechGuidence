@@ -72,6 +72,9 @@ app.Run();
 + [Authentication](https://ocelot.readthedocs.io/en/latest/features/authentication.html)
 + [Authorization](https://ocelot.readthedocs.io/en/latest/features/authorization.html)
 + [Claims Transformation](https://ocelot.readthedocs.io/en/latest/features/claimstransformation.html)
+
+
 <!-- samples -->
 + [Secure Microservices Using JWT With Ocelot in .NET Core](https://code-maze.com/dotnetcore-secure-microservices-jwt-ocelot/)
 + [JWT Token Authentication and Ocelot API Gateway](http://www.developerin.net/a/85-Ocelot-API-Gateway/146-JWT-Token-Authentication-and-Ocelot-API-Gateway)
++ [再谈基于Ocelot API网关和IdentityServer的API认证与授权](https://sunnycoding.cn/2022/07/14/api-auth-with-ocelot-and-identityserver/)
