@@ -68,6 +68,21 @@ app.Run();
     + RSA
         + 非对称加密
 
++ JWT中的claims可以在`ctx.User.Claims`中找到
+```c#
+var configuration = new OcelotPipelineConfiguration
+{
+    PreQueryStringBuilderMiddleware = async (ctx, next) =>
+    {
+        var username = ctx.User.Claims.FirstOrDefault(o => o.Type == "name")?.Value;
+
+        await next.Invoke();
+    }
+};
+
+await app.UseOcelot(configuration);
+```
+
 ## ref
 + [Authentication](https://ocelot.readthedocs.io/en/latest/features/authentication.html)
 + [Authorization](https://ocelot.readthedocs.io/en/latest/features/authorization.html)
