@@ -13,6 +13,13 @@
 + Nlog config可以加到appsettings.json
     + 只对ASP.NET Core and .NET Core applications有效
 
+
++ `${message:raw=true}` 
+    + 输出原始的 未格式化的message
+
++ `${message}` 
+    + 输出格式化的message
+
 ## ref
 <!-- config -->
 + [NLog configuration with appsettings.json](https://github.com/NLog/NLog.Extensions.Logging/wiki/NLog-configuration-with-appsettings.json)

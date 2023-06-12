@@ -26,3 +26,5 @@ builder.Host.UseNLog();
 ## ref
 + [Nlog](https://nlog-project.org/)
 + [Getting started with ASP.NET Core 6](https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6)
+
++ [How to use structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging)
