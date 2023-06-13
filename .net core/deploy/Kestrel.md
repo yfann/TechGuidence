@@ -25,6 +25,10 @@
 }
 ```
 
+## tips
++ `"Url": "http://localhost:6000"` 只能监听localhost
+  + `"Url": "http://0.0.0.0:6000"` 可以监听所有ip地址
+
 ## ref
 + [为 ASP.NET Core Kestrel Web 服务器配置终结点](https://learn.microsoft.com/zh-cn/aspnet/core/fundamentals/servers/kestrel/endpoints?view=aspnetcore-7.0)
 
