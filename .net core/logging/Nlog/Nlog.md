@@ -24,7 +24,9 @@ builder.Host.UseNLog();
 ```
 
 ## ref
++ [NLog/NLog](https://github.com/NLog/NLog)
 + [Nlog](https://nlog-project.org/)
 + [Getting started with ASP.NET Core 6](https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6)
 
 + [How to use structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging)
++ [All-Event-Properties-Layout-Renderer](https://github.com/NLog/readthedocs/blob/master/docs/All-Event-Properties-Layout-Renderer.md)
