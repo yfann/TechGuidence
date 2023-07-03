@@ -2,7 +2,7 @@
 
 ## ref
 
-+ [史上最全阿里 Java 面试题总结](https://segmentfault.com/a/1190000016172470)
+
 + [JavaGuide](https://github.com/Snailclimb/JavaGuide)
 
 + [从北京到都柏林 一名程序员的润欧之旅](https://zhuanlan.zhihu.com/p/603300157)

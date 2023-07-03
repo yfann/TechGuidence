@@ -101,6 +101,9 @@
                 + native image
 
 ## ref
+
++ [史上最全阿里 Java 面试题总结](https://segmentfault.com/a/1190000016172470)
+
 + [java new一个对象的过程中发生了什么](https://cloud.tencent.com/developer/article/1398010)
 + [太好了！总算有人把动态代理、CGlib、AOP都说清楚了](https://cloud.tencent.com/developer/article/1461796)
 
