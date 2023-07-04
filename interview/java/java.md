@@ -1,13 +1,5 @@
 # java 
 
-## 线程
-+ Thread
-    + run()
-    + start()
-
-+ Runable
-    + run()
-    + Thread thread = new Thread(runnable);
 
 ## new的过程
 
@@ -27,20 +19,7 @@
     + 执行初始化代码(父->子)
     + 堆地址赋给栈中的引用变量
 
-## HashMap vs HashTable vs ConcurrentHashMap
 
-+ HashMap 非线程安全
-
-+ HashTable
-    + synchronized保证线程安全(只有一把锁)
-    + 效率低下
-        + 当一个线程put时，其他线程不能put和get
-
-+ ConcurrentHashMap
-    + 锁分段(Segment，Java5)
-        + 数据分段存储,每段数据配一把锁
-        + 浪费空间，GC效率低
-    + synchronized+cas(java8)
 
 ## 反射
 

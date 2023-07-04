@@ -21,21 +21,7 @@
     + ABA问题
 
 
-## 多线程
 
-+ JMM(java 内存模型)
-    + 每个线程有各自的工作内存
-    + 主内存
-
-+ synchronized vs volatile
-    + volatile
-        + 保证可见性（各个线程的工作内存值相同）
-        + 写不是原子操作
-
-+ sleep() vs wait()
-    + sleep()不会释放资源锁
-
-+ 原子类
 
 
 
