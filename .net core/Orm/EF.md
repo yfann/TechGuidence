@@ -1,0 +1,14 @@
+
+
+## ORM
++ sqlsugar
++ Entity Framework Core
++ dapper orm
+
+
+## tips
++ whereif
+    + 这是一种常见的方式来动态构建分布式查询条件，根据不同的条件进行灵活的筛选。
+
+## ref
++ [使用 Entity Framework Core 实现基础结构持久性层]()
