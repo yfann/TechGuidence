@@ -1,11 +1,11 @@
-##Browser Render Process
+## Browser Render Process
 
 1. HTML->DOM CSS Object Model
 2. DOM + CSS Object Model -> Render tree
 3. layout
 4. paint
 
-##Reflow & Repaint
+## Reflow & Repaint
 
 flow + paint = render
 
@@ -18,7 +18,7 @@ repaint不一定reflow,reflow一定repaint
 + 用户事件
 
 
-##性能
+## 性能
 
 + 读写批量操作
 
@@ -54,4 +54,4 @@ repaint不一定reflow,reflow一定repaint
 + 使用 window.requestAnimationFrame()、window.requestIdleCallback() 这两个方法调节重新渲染
 
 
-##[Ref](http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html)
+## [Ref](http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html)
