@@ -5,6 +5,7 @@
 + pod删不掉
 + pod如何被调度的
 + pod Qos
++ request,limit
 
 <!-- istio -->
 + istio优化
