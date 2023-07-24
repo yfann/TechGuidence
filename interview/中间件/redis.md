@@ -66,9 +66,27 @@
 + 中间命令出错会继续执行
     + 错误只会是语法错误或数据类型错误
 
-## redis队列
-
+## redis value数据结构
++ string
+    + 字符串,整数，浮点
+    + 缓存数据,计数器
+    + 分布式锁
+        + SETNX
 + list
+    + use
+        + 消息队列
+        + 时间线
++ Hash
+    + use
+        + 存对象，实体的属性
+        + 用户属性
++ Set
+    + use
+        + Tags,关注列表
+
++ Sorted Set
+    + 排行榜
+    + 时间轴
 
 ## tips
 
@@ -146,6 +164,16 @@
 + 通用方案：使用Canal框架，伪装成MySQL的salve节点，监听MySQL的binLog变化，然后修改Redis缓存数据
 
 
+## Redis Hash
++ Ziplist
+    + 当哈希中存储的键值对数量较少或值的长度较小时，Redis 会使用压缩列表来保存哈希数据。压缩列表是一种紧凑的、节省内存的数据结构，它通过将多个键值对紧密地存储在一起来减少内存占用。压缩列表适用于存储小型哈希，可以节省内存并提高访问速度。
++ Dict
+    + 当哈希中的键值对数量较多或值的长度较大时，Redis 会使用字典来存储哈希数据，以保证高效的查找和存储
+    + HashTable
+    + 散列冲突处理
+        + 使用链地址法来处理散列冲突
++ 整数编码
+    + 在哈希中，当值是整数类型时，Redis 会对其进行整数编码，以进一步节省内存。整数编码使用固定长度的存储来表示整数值，从而避免了额外的内存开销。
 ## tips
 + SETNX
     + SET if Not eXists
@@ -161,3 +189,5 @@
 + [Redis 消息队列的三种方案（List、Streams、Pub/Sub）](https://www.51cto.com/article/640335.html)
 <!-- 面试 -->
 + [一篇汇总企业高频面试题—Redis篇。](https://www.zhihu.com/question/487142301/answer/2781233710)
+
++ [Redis hash实现详解](https://www.jianshu.com/p/7f53f5e683cf)
