@@ -2,6 +2,9 @@
 + 1 coordinator + many voter
 
 ## 2PC
++ 过程
+    1. coordinator向所有participant发送事物内容,询问是否可以提交事物，等待participant的响应
+    2. 
 + blocking
 + process
     + propose
