@@ -21,8 +21,11 @@
     + 支持数据验证和数据操作事件
 
 ## tips
-+ whereif
++ sqlsugar: whereif
     + 这是一种常见的方式来动态构建分布式查询条件，根据不同的条件进行灵活的筛选。
+
++ dbContextOptionsBuilder .UseInMemoryDatabase
+    + 使用内存数据库
 
 ## ref
 + [使用 Entity Framework Core 实现基础结构持久性层]()
