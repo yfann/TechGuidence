@@ -51,5 +51,8 @@
 + 最左前缀
 
 
+## tips
++ view vs indexed view
+
 ## ref
 + [一文搞定联合索引](https://zhuanlan.zhihu.com/p/110427099)
