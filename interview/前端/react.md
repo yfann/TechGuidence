@@ -86,6 +86,8 @@
 + 当组件发生更新时，React 会通过协调过程构建 Fiber 树，比较新旧 Fiber 树的差异，生成更新的操作，然后通过渲染器将更新应用到实际的 DOM 上，完成页面的更新。
 
 ## redux
++ dispatch -> reducer
+
 
 ## tips
 + 数据如何在react组件中流动
