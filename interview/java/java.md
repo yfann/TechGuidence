@@ -115,7 +115,7 @@
     + 类型安全
     + 代码重用
 ## ref
-
++ [你在java面试中被问过什么让你觉得对方逼格很高的问题？](https://www.zhihu.com/question/53673888/answer/2919030279)
 + [史上最全阿里 Java 面试题总结](https://segmentfault.com/a/1190000016172470)
 
 + [java new一个对象的过程中发生了什么](https://cloud.tencent.com/developer/article/1398010)
