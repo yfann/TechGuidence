@@ -96,3 +96,6 @@
 <!-- heap -->
 + [Understanding CRUD Operations Against Heaps and Forwarding Pointers](https://www.sqlservercentral.com/articles/understanding-crud-operations-against-heaps-and-forwarding-pointers)
 + [Heaps (Tables without Clustered Indexes)](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/heaps-tables-without-clustered-indexes?view=sql-server-ver16)
+
+
++ [数据库是如何保证并发访问时的正确性的](https://blog.huohaodong.com/posts/how-database-guarantee-the-correctness-of-concurrent-transactions/)
