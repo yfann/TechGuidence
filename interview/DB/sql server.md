@@ -53,6 +53,7 @@
 
 ## tips
 + view vs indexed view
++ Key Lookup: Sometimes, the query requires additional columns that are not part of the index. In such cases, SQL Server may also perform a "Key Lookup" (also known as "Bookmark Lookup") operation to fetch the additional data from the table using the clustered index or a heap (if there is no clustered index).
 
 ## ref
 + [一文搞定联合索引](https://zhuanlan.zhihu.com/p/110427099)
