@@ -84,5 +84,8 @@ console.log(myModule.foo);  // 输出：'bar'
 + V8的垃圾回收
     + 内存泄漏
 
++ 微任务
++ 宏任务
+
 ## ref
 + [NodeJS有难度的面试题，你能答对几个？](https://juejin.cn/post/6844903951742025736)
