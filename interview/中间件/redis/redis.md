@@ -8,26 +8,12 @@
 
 + redis与DB一致性
 
-+ 防止缓存击穿和雪崩
-
-+ redis数据结构
-    + string, hash, list, set, sortedset
-
 + redis并发竞争,cas操作
-
-+ redis主从机制原理
 
 + 线程模型
     + 单线程
     + Reactor模型
     + 避免线程切换
-
-+ 事物  
-
-+ 高性能
-    + 内存I/O
-    + I/O多路复用
-    + 单线程模型
 
 + Redis保证接口幂等性
     + token
