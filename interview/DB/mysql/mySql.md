@@ -56,6 +56,9 @@
     + 参与列计算的列不适合建索引
         + 可以把`from_unixtime(create_time) = '2014-05-29'`改成`create_time = unix_timestamp('2014-05-29')`
 
+
+## mysql性能提升
+
 ## ref
 
 + [关"SELECT FOR UPDATE"的一些概念](https://www.huaweicloud.com/articles/2941282344610781fd8418a7947a027d.html)
