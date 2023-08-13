@@ -57,7 +57,6 @@
         + 可以把`from_unixtime(create_time) = '2014-05-29'`改成`create_time = unix_timestamp('2014-05-29')`
 
 
-## mysql性能提升
 
 ## ref
 
