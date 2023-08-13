@@ -1,8 +1,10 @@
 
 ## 基于MQ的Transaction Message
 + Transaction Message：能够支持狭义的分布式事务. 基于消息队列组件中半事务消息以及轮询检查机制，保证了本地事务和消息生产两个动作的原子性，但不具备事务的逆向回滚能力
+
 + 投递到 MQ 中的消息能至少被下游消费者 consumer 消费到一次(at least once)
     + 下游的 consumer 还需要基于消息的唯一键执行幂等去重操作，在 at least once 的基础上过滤掉重复消息，最终达到 exactly once 的语义
+    
 + 分布式事务: 事务流程中包含需要在服务 A 中执行的动作 I 以及需要在服务 B 中执行的动作 II
     1. 以服务 A 作为 MQ 生产方 producer，服务 B 作为 MQ 消费方 consumer
     2. 服务 A 首先在执行动作 I，执行成功后往 MQ 中投递消息，驱动服务 B 执行动作 II

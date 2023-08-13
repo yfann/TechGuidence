@@ -1,5 +1,21 @@
 
-## TCC
+## TCC（try-confirm-cancel）事务补偿
++ 第一阶段（try
+    + 完成业务检查
+    + 预留业务资源（加锁
+    + 尝试执行业务
++ 第二阶段
+    + confirm
+        + 如果所有try都成功，则confirm
+        + 操作要幂等，如果confirm失败则不断重试直到执行成功
+        + 完成后释放锁
+    + Cancel（补偿）
+        + 操作要幂等，如果cancel失败则不断重试直到执行成功
+        + 释放锁
+
++ 每个操作都要注册一个与其对应的确认和补偿操作
+    + 被调的服务要有try,confirm,cancel接口
+
 + TCC Transaction：能够支持广义的分布式事务. 架构中每个模块需要改造成实现 Try/Confirm/Cancel 能力的 TCC 组件，通过事务协调器进行全局 Try——Confirm/Cancel 两阶段流程的串联，保证数据的最终一致性趋近于 100%
 + TCC 本质上是一个两阶段提交（Two Phase Commitment Protocol，2PC）的实现方案，分为 Try 和 Confirm/Cancel 的两个阶段
     + Try 操作的容错率是比较高的，原因在于有人帮它兜底. Try 只是一个试探性的操作，不论成功或失败，后续可以通过第二轮的 Confirm 或 Cancel 操作对最终结果进行修正
