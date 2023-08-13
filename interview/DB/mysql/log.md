@@ -40,6 +40,7 @@
 
 + MVCC
     + 当读取的某一行被其他事务锁定时，它可以从 undo log 中获取该行记录以前的数据是什么，从而提供该行版本信息，让用户实现非锁定一致性读取
++ redolog 写入成功，就认定事务操作成功
 
 ## update操作流程
 
@@ -53,9 +54,22 @@
 
 5. 执行器调用引擎的提交事务接口，引擎把刚刚写入的redo log改成提交（commit）状态，更新完成
 
+## 事务过程
+0. 生成一个事务id
+1. 读待修改页（缓冲池中有就读缓冲，没有就读磁盘）
+2. 执行修改
+3. 写入数据页BufferPool（数据缓冲）
+4. 旧值写入undolog
+5. 写入redo log缓冲
+    + 刷入redolog 文件（prepare阶段）
+6. 写入binlog 缓冲
+    + 刷入binlog 文件
+7. 刷入redolog 文件（commit）
 
 ## tips
-+ `redo log` 用来保证 crash-safe，`binlog` 用来保证可以将数据库状态恢复到任一时刻，`undo log` 是用来保证事务需要回滚时数据状态的回滚和 MVCC 时，记录各版本数据信息。
++ `redo log` 用来保证 crash-safe
++ `binlog` 用来保证可以将数据库状态恢复到任一时刻
++ `undo log` 是用来保证事务需要回滚时数据状态的回滚和 MVCC 时，记录各版本数据信息。
 
 ## ref
 + [彻底搞懂MySQL的redo log，binlog，undo log](https://juejin.cn/post/6987557227074846733)
