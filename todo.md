@@ -1,5 +1,3 @@
 ## todo
-+ [Build an Orchestrator in GO](https://livebook.manning.com/book/build-an-orchestrator-in-go/chapter-1/v-1/)
-+ + [Go组件：context学习笔记](https://zhuanlan.zhihu.com/p/548276361)
-    + goroutine
-+ [Go 语言设计与实现](https://draveness.me/golang/docs/part2-foundation/ch03-datastructure/golang-array-and-slice/)
++ [为什么这么设计系列文章](https://draveness.me/whys-the-design/)
++ [浅谈分布式存储系统数据分布方法](http://catkang.github.io/2017/12/17/data-placement.html)
