@@ -21,7 +21,8 @@
 + `dotnet dev-certs https --list`
 
 <!-- 导出证书 -->
-+ `dotnet dev-certs export -n "certificateName" -p <password> -e <outputPath>`
++ `dotnet dev-certs https -v --export-path c:\backup\cert.pem   --no-password --format PEM`
+    + 导出指向文件
 
 
 
