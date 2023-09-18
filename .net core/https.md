@@ -17,6 +17,27 @@
     + `dotnet dev-certs https --check` Check for the existence of the certificate but do not perform any action
     + `dotnet dev-certs https --clean`  Cleans all HTTPS development certificates from the machine.
 
+<!-- 查看证书 -->
++ `dotnet dev-certs https --list`
+
+<!-- 导出证书 -->
++ `dotnet dev-certs https -v --export-path c:\backup\cert.pem   --no-password --format PEM`
+    + 导出指向文件
+
+
+
+## VS的Configure for HTTP
+1. 生成证书文件：Visual Studio 将自动生成一个用于 HTTPS 加密通信的自签名证书（默认情况下存储在用户个人存储区中），用于在开发过程中使用。这个证书用于加密和解密在开发环境中通过 HTTPS 发送的数据。
+
+2. 配置 Kestrel 服务器：Kestrel 是 .NET Core Web 服务器，默认情况下会在创建 Web API 项目时使用。勾选 "Configure for HTTPS" 选项将会配置 Kestrel 服务器，使其在 HTTPS 协议上监听。
+
+3. 修改启动 URL：勾选此选项后，项目的启动 URL 将从 http://localhost:5000 修改为 https://localhost:5001，以反映使用 HTTPS。
+
+4. 更新应用程序配置：配置文件（如 appsettings.json）将会更新，以包括与 HTTPS 相关的设置，如证书的路径和密码等。
+
+5. 设置项目属性：项目属性中的一些设置会被更新，以允许使用 HTTPS 进行调试。
+
+
 
 
 ## tips
