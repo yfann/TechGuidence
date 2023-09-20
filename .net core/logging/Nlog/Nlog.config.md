@@ -24,3 +24,5 @@
 <!-- config -->
 + [NLog configuration with appsettings.json](https://github.com/NLog/NLog.Extensions.Logging/wiki/NLog-configuration-with-appsettings.json)
 + [appsettings.json schema](https://json.schemastore.org/appsettings.json)
++ [Configuration-file](https://github.com/nlog/NLog/wiki/Configuration-file)
++ [database-target](https://github.com/NLog/NLog/wiki/Database-target)
