@@ -9,6 +9,7 @@ GO
 
 ## tips
 + indexed view
++ query hint
 
 ## ref
 <!-- index design -->
