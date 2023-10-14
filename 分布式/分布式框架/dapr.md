@@ -87,6 +87,9 @@
 
 ## ref
 + [dapr](https://docs.dapr.io/zh-hans/getting-started/quickstarts/)
+
++ [翻译 | 阿里巴巴的Dapr实践与探索](https://developer.aliyun.com/article/783616)
+
 <!-- 云原生 -->
 + [Dapr助力开发云原生应用](https://www.bilibili.com/video/BV1eG4y1s7sT/?spm_id_from=333.999.0.0&vd_source=d3c0a53193a65728ad278e633b3790e5)
 + [Dapr | 云原生的抽象与实现](https://segmentfault.com/a/1190000039863409)
