@@ -65,6 +65,11 @@
 + 主要提供NFR
     + APP可以专注于业务
 
+
+## dpar run locally
++ `dapr run --app-id bindings-pythonapp python3 app.py --components-path ./components`
+    + It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together.
+
 ## tips
 + 容器运行时
     + 就是容器运行起来需要的一系列程序和环境。比如如何使用 namespace 实现资源隔离，如何使用 cgroup 实现资源限制，这些都是容器运行时需要提供的实现
