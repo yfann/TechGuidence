@@ -4,3 +4,7 @@
 
 + dapr
 + [duckdb](https://duckdb.org/docs/guides/python/execute_sql)
+
+
++ 《Streaming Systems: The What, Where, When, and How of Large-Scale Data Processing》 
++ 《高性能MySQL(第3版)》
