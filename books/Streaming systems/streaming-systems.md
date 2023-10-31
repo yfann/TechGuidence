@@ -27,13 +27,23 @@
         + e.g. for a specific user
 
 + streaming
-    + 
+    + time-agnostic
+        + Time-agnostic processing is used for cases in which time is essentially irrelevant
+        + process
+            + Filtering
+            + Inner joins
+    + approximation
+    + windowing by processing time
+        + monitoring scenarios
+    + windowing by event time
+        + drawbacks
+            + windows must often live longer (in processing time) than the actual length of the window itself
+        + buffering
+        + Completeness
 ## tips
 + Kappa Architecture
-+ streaming engine
-    + MillWheel
-    + Apache Flink
-    + Flink snapshotting
+
+
 + microbatch engines
 + dataset
     + cardinality
@@ -43,7 +53,10 @@
         + table
         + stream
             + mapReduce
-
++ windowing
+    + Fixed windows
+    + Sliding windows
+    + Sessions
 ## ref
 + [Streaming 101: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/)
 + [Streaming 102: The world beyond batch](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/)
@@ -52,3 +65,7 @@
 
 
 + [MillWheel: Google是如何在事件流处理上做到exactly one semantic的](https://zhuanlan.zhihu.com/p/30560148)
+
+
++ [approximate Top-N](https://www.databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html)
++ [Realtime Trending Analysis with Approximate Algorithms](https://pkghosh.wordpress.com/2014/09/10/realtime-trending-analysis-with-approximate-algorithms/)
