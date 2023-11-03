@@ -68,7 +68,7 @@
                 + the better choice for large-scale processing because they result in a more even load distribution over time.
         + low latency
         + no way to reason about completeness
-        
+
     + watermarks(Completeness triggers)
         + provide a notion of completeness 
         + Watermarks are temporal notions of input completeness in the event-time domain
@@ -86,6 +86,8 @@
                 + high latency
             + too fast
                 + lack correctness
+    
+    + Early/On-Time/Late Triggers
 
 + How do refinements of results relate? 
     + accumulation
