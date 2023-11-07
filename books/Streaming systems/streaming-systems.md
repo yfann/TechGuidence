@@ -92,6 +92,14 @@
 
 + How do refinements of results relate? 
     + accumulation
+        + discarding
+        + accumulating
+        + accumulating and retracting
+
++ What results are calculated? = transformations.
++ Where in event time are results calculated? = windowing.
++ When in processing time are results materialized? = triggers plus watermarks.
++ How do refinements of results relate? = accumulation.
 
 ## tips
 + Kappa Architecture
