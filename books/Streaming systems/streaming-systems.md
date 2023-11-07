@@ -69,7 +69,7 @@
         + low latency
         + no way to reason about completeness
 
-    + watermarks(Completeness triggers)
+    + watermarks(low watermark,Completeness triggers)
         + provide a notion of completeness 
         + Watermarks are temporal notions of input completeness in the event-time domain
         + F(P) → E
@@ -88,6 +88,7 @@
                 + lack correctness
     
     + Early/On-Time/Late Triggers
+        + combination of update trigger and watermark trigger
 
 + How do refinements of results relate? 
     + accumulation
