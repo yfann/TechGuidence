@@ -17,5 +17,5 @@
 
 ## heuristic watermark
 + an estimate that no data with event times less than the watermark will ever be seen again
-    + Pipelines using heuristic watermark creation might need to deal with some amount of late data
++ Pipelines using heuristic watermark creation might need to deal with some amount of late data
 
