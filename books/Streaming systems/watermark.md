@@ -19,3 +19,15 @@
 + an estimate that no data with event times less than the watermark will ever be seen again
 + Pipelines using heuristic watermark creation might need to deal with some amount of late data
 
+## watermark propagation
+
+
+## tips
++ pipeline stages
+    + Different stages are typically necessary every time your pipeline groups data together by some new dimension
+        + raw data  -> per-user aggregates -> per-team aggregates
+
++ windowing
+    + Fixed windows
+    + Sliding windows
+    + Sessions
