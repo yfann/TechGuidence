@@ -51,10 +51,7 @@
 + 滑动窗口（Sliding Windows）：这种窗口是可以重叠的，每个窗口包含前一个窗口的一部分数据。滑动窗口用于连续处理数据流，以确保不错过有趣的数据模式。
 
 ## streaming
-+ windowing
-    + Fixed windows
-    + Sliding windows
-    + Sessions
+
 
 + When in processing time are results materialized?
     + Repeated update triggers
