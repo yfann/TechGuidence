@@ -34,4 +34,3 @@
 
 <!-- runner -->
 + [Beam Capability Matrix](https://beam.apache.org/documentation/runners/capability-matrix/)
-+ []()
