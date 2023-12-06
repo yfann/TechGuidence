@@ -6,6 +6,7 @@
 
 
 ## ref
-+ [openGauss](https://docs-opengauss.osinfra.cn/zh/docs/5.0.0/docs/GettingStarted/GettingStarted.html)
++ [openGauss doc](https://docs-opengauss.osinfra.cn/zh/docs/5.0.0/docs/GettingStarted/GettingStarted.html)
+
 
 + [Ustore](https://docs-opengauss.osinfra.cn/zh/docs/3.0.0/docs/BriefTutorial/Ustore.html)
