@@ -4,6 +4,22 @@
 + Ustore存储引擎将最新版本的“有效数据”和历史版本的“垃圾数据”分离存储。将最新版本的“有效数据”存储在数据页面上，并单独开辟一段UNDO空间，用于统一管理历史版本的“垃圾数据”，因此数据空间不会由于频繁更新而膨胀，“垃圾数据”集中回收效率更高。
 ## MOT
 
+## 表空间
++ 
+
+## 自动分区
++ 提高查询效率
++ tips
+    + 查询不宜夸太多分区
+    + 管理太多分区也会效率低
++ period
++ ttl
+    + 淘汰时间
+    + 不会丢数据
+
+
+## 日志
++ logging_collector
 
 ## ref
 + [openGauss doc](https://docs-opengauss.osinfra.cn/zh/docs/5.0.0/docs/GettingStarted/GettingStarted.html)
