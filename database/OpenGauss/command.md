@@ -6,3 +6,6 @@
 
 + `gsql -d postgres -p 15400` 登录数据库
     + `select version();`
+
+## ref
++ [gsql](https://docs-opengauss.osinfra.cn/zh/docs/5.0.0/docs/ToolandCommandReference/gsql.html)

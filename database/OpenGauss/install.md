@@ -37,7 +37,7 @@
 
 ## issues
 + Failed to obtain local instance information. It is not a host name node1 .
-
+    + 检查hostname拼写
 ## ref
 + [install openGauss](https://blog.csdn.net/qq_26960887/article/details/130278482)
 + [CentOS 快速安装Python3和pip3](https://cloud.tencent.com/developer/article/1693084)
