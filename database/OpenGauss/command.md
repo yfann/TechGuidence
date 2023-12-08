@@ -8,5 +8,7 @@
     + `select version();`
     + `gsql -d postgres -p 15400 -U fan`
 
++ `\q` 退出
+
 ## ref
 + [gsql](https://docs-opengauss.osinfra.cn/zh/docs/5.0.0/docs/ToolandCommandReference/gsql.html)
