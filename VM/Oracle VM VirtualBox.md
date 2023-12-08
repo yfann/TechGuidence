@@ -46,6 +46,14 @@
     + run
 
 
+## NAT Adapter port forwarding
++ `telnet <ip> <port>`
+    + 连通性检查
++ `ssh root@<ip>`
+    + forwarding 22 端口后可以从host登录VM
+
+
+
 ## tips
 + host连VM
     + NAT
