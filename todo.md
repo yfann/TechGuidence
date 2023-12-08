@@ -3,7 +3,6 @@
 + [浅谈分布式存储系统数据分布方法](http://catkang.github.io/2017/12/17/data-placement.html)
 
 + dapr
-+ [duckdb](https://duckdb.org/docs/guides/python/execute_sql)
 
 
 + 《Streaming Systems: The What, Where, When, and How of Large-Scale Data Processing》 

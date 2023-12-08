@@ -44,3 +44,9 @@
 + `yum install gcc`
 + Virtual Box->Devices->Insert Guest
     + run
+
+
+## tips
++ host连VM
+    + NAT
+        + port forwarding

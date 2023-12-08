@@ -25,6 +25,16 @@
     + `python3`
 
 
+## install openGauss
++ `systemctl restart systemd-hostnamed`
+    + 修改hostname后重启
+
++ cluster_config.xml中替换为本机IP
+    + host可以ping通
+    + 或用NAT IP
+        + host通过port forward连接VM中的openGauss
+
+
 ## issues
 + Failed to obtain local instance information. It is not a host name node1 .
 
