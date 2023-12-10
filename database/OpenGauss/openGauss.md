@@ -28,6 +28,20 @@
 ## 日志
 + logging_collector
 
+## vs postgresql
++ OpenGauss
+    + 一个访问一个线程
+    + 单台万并发
++ postGresql
+    + 一个访问一个进程
+    + 单台150并发
+
+## tips
++ checkpoint
+    + 数据写入时先写事务日志，后写数据文件
+        + 日志写好后commit
+        + 
+
 ## ref
 + [openGauss doc](https://docs-opengauss.osinfra.cn/zh/docs/5.0.0/docs/GettingStarted/GettingStarted.html)
 
