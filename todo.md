@@ -7,3 +7,6 @@
 
 + 《Streaming Systems: The What, Where, When, and How of Large-Scale Data Processing》 
 + 《高性能MySQL(第3版)》
+
+
++ https://medium.com/javarevisited/why-do-we-need-to-externalize-the-configuration-in-microservices-architecture-a48d4464722
