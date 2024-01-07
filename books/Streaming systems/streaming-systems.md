@@ -93,6 +93,8 @@
         + accumulating
         + accumulating and retracting
 
+
+## what where when how
 + What results are calculated? = transformations.
 + Where in event time are results calculated? = windowing.
 + When in processing time are results materialized? = triggers plus watermarks.
