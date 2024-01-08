@@ -1,10 +1,15 @@
 # watermark
 + The watermark is a monotonicly increasing timestamp of the oldest work not yet completed.
     + completeness
+        + 可以关闭一个窗口
     + visibility
+
++ watermark可以前进
 
 + event-time window close
     + the window does not expect any more data
+
++ Watermarks are created at input source
 
 ## perfect watermark
 + Pipelines using perfect watermark creation never have to deal with late data
