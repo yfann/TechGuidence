@@ -58,10 +58,10 @@
     + 不同srage对数据做不同聚合
     + e.g.  raw data -> per-user aggregates -> per-team aggregates
 
-+ processing time 
++ processing time(when)
     + watermark
 
-+ event time
++ event time(where)
     + windowing
 
 + late data

@@ -41,14 +41,6 @@
         + buffering
         + Completeness
 
-## window
-+ 时间窗口（Time Windows）：这种窗口根据时间来划分数据。时间窗口可以是固定的（例如，每分钟处理一次数据），滑动的（例如，每分钟处理一次数据，但窗口之间可以重叠），或会话型的（根据用户会话的开始和结束时间创建窗口）。
-
-+ 计数窗口（Count Windows）：这种窗口根据数据记录的数量来划分数据。例如，您可以定义一个窗口，包含每个窗口中的前1000个数据记录。
-
-+ 合并窗口（Tumbling Windows）：这种窗口是非重叠的，每个窗口都不包含前一个窗口的数据。合并窗口通常用于批处理和批处理模型的流式化。
-
-+ 滑动窗口（Sliding Windows）：这种窗口是可以重叠的，每个窗口包含前一个窗口的一部分数据。滑动窗口用于连续处理数据流，以确保不错过有趣的数据模式。
 
 ## streaming
 
@@ -97,7 +89,7 @@
 ## what where when how
 + What results are calculated? = transformations.
 + Where in event time are results calculated? = windowing.
-+ When in processing time are results materialized? = triggers plus watermarks.
++ When in processing time are results materialized? = triggers & watermarks.
 + How do refinements of results relate? = accumulation.
 
 ## tips
@@ -115,6 +107,7 @@
             + mapReduce
 
 + batch is really just a subset of streaming
+
 
 
 ## ref
