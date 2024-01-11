@@ -1,5 +1,18 @@
 # windowing
 
++ processing time window
+
++ evnet time window
+    + 需要考虑何时complete
+        + 因为processing time 和 event time没有对应关系
+    + reflect the times at which those events actually happened
+    + correctness
+    + drawbacks：windows must often live longer (in processing time) than the actual length of the window itself
+        + Buffering
+            + Due to extended window lifetimes, more buffering of data is required.
+        + Completeness
+            + watermark
+
 ## fixed time window
 + time-based aggregations
 + handle out-of-order or late

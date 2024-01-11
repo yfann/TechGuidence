@@ -4,7 +4,7 @@
         + 可以关闭一个窗口
     + visibility
 
-+ watermark可以前进
++ temporal boundaries
 
 + event-time window close
     + the window does not expect any more data
@@ -14,6 +14,10 @@
     + Watermarks are created at input source
 
 + watermark在event time上最小
+
++ F(P) → E 
+    + processing time
+    + event time
 
 ## perfect watermark
 + Pipelines using perfect watermark creation never have to deal with late data
