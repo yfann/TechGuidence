@@ -19,6 +19,24 @@
     + processing time
     + event time
 
++  windows are materialized as the watermark passes the end of the window.
+
++ shortcoming
+    + too slow
+        + watermark lag(processing time lag)
+        + 主要发生在perfect watermark
+        + 导致low latency
+    + too fast
+        + 主要发生在heuristic watermark
+        + watermark移动过快，有些delay data没观测到
+        + 导致incorrectness 
+
++ low watermark
+    + he event time of the oldest unprocessed record the system is aware of
+
++ high watermark
+    + the event time of the newest record the system is aware of. 
+
 ## perfect watermark
 + Pipelines using perfect watermark creation never have to deal with late data
 
