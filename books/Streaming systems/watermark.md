@@ -4,10 +4,15 @@
         + 可以关闭一个窗口
     + visibility
 
-+ watermark可以前进
++ watermark is a function
+    + F(P) → E 
+        + processing time
+        + event time
 
 + event-time window close
     + the window does not expect any more data
+
++ windows are materialized as the watermark passes the end of the window
 
 + watermark creation
     + data source需要有event time
