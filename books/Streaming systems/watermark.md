@@ -23,8 +23,6 @@
 + watermark在event time上最小
 
 
-+  windows are materialized as the watermark passes the end of the window.
-
 + shortcoming
     + too slow
         + watermark lag(processing time lag)
@@ -41,7 +39,7 @@
 + high watermark
     + the event time of the newest record the system is aware of. 
 
-## perfect watermark
+## perfect watermark creation
 + Pipelines using perfect watermark creation never have to deal with late data
 
 + use cases
@@ -55,7 +53,7 @@
 + tips
     + 所以使用perfect watermark的关键是保证数据源数据在event time上单调递增
 
-## heuristic watermark(accurate heuristic watermarks)
+## heuristic watermark(accurate heuristic watermarks) creation
 + an estimate that no data with event times less than the watermark will ever be seen again
 + Pipelines using heuristic watermark creation might need to deal with some amount of late data
 + use cases
@@ -66,18 +64,37 @@
 
 ## Watermark Propagation
 + input watermark
-    + 来自
         + source specific function
         + minimum of the output watermarks of its upstream sources
 + output watermark
     + captures the progress of the stage itself
     + the minimum of the stage’s input watermark and the event times of all nonlate data active messages within the stage.
+        + Per-source watermark—for each sending stage.
+        + Per-external input watermark—for sources external to the pipeline
+        + Per-state component watermark—for each type of state that can be written
+        + Per-output buffer watermark—for each receiving stage
     + 会晚于input watermark
         + copmuting takes time
+    + includes data buffered
 
-+  event-time latency introduced by a stage(how far delayed behind real time the output of each stage will be.)
++  event-time latency 
+    + lag introduced by a stage (how far delayed behind real time the output of each stage will be.)
     + output watermark - input watermark
+    + e.g. 10-second windowed aggregation
+        + 产生的 lag >= 10
+    + 每一个stage都会产生event-time lag
     
++ output timestamp
+    + End of the window
+    + Timestamp of first nonlate element
+        + Watermark delay(comparing to the end of the window)
+            + This is because the output watermark for the first stage is held back to the timestamp of the first element in every window until the input for that window becomes complete. Only after a given window has been materialized is the output watermark (and thus the downstream input watermark) allowed to advance.
+        + Because the session timestamps are now assigned to match the earliest nonlate element in the session, the individual sessions often end up in different fixed window buckets when we then calculate the session-length averages in the next stage
+    + timestamp of a specific element
+
+## percentile watermarks
++ Instead of considering the minimum point of the distribution, we could take any percentile of the distribution and say that we are guaranteed to have processed this percentage of all events with earlier timestamps
++ If for the business logic “mostly” correct is sufficient, percentile watermarks provide a mechanism by which the watermark can advance more quickly and more smoothly than if we were tracking the minimum event time by discarding outliers in the long tail of the distribution from the watermark.
 
 ## tip
 + PIPELINE STAGES

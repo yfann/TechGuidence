@@ -2,6 +2,7 @@
 
 + processing time window
 
+
 + evnet time window
     + 需要考虑何时complete
         + 因为processing time 和 event time没有对应关系
@@ -12,6 +13,9 @@
             + Due to extended window lifetimes, more buffering of data is required.
         + Completeness
             + watermark
+
++ windows are materialized as the watermark passes the end of the window
+    + event time window
 
 ## fixed time window
 + time-based aggregations
