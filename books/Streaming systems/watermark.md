@@ -94,8 +94,10 @@
 
 ## percentile watermarks
 + Instead of considering the minimum point of the distribution, we could take any percentile of the distribution and say that we are guaranteed to have processed this percentage of all events with earlier timestamps
+
 + If for the business logic “mostly” correct is sufficient, percentile watermarks provide a mechanism by which the watermark can advance more quickly and more smoothly than if we were tracking the minimum event time by discarding outliers in the long tail of the distribution from the watermark.
 
++  trade-off between latency of materializing results and precision of the results
 ## tip
 + PIPELINE STAGES
     + 不同srage对数据做不同聚合
