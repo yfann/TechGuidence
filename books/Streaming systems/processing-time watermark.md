@@ -8,4 +8,5 @@
 
 + stuck system and stuck data
     + 当data delay时可以用processing-time watermark 看到是system delay还是data delay
-    data delay: ![Alt text](img/image.png)
+![Alt text](img/image-2.png)
+![Alt text](img/image-1.png)
