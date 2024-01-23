@@ -32,7 +32,7 @@
             await Task.Delay(5000, stoppingToken); // 5秒的延迟，可以被取消
         }
 ```
-    + 在服务启动后，由.NET Core 主机（Host）自动调用的
+   + 在服务启动后，由.NET Core 主机（Host）自动调用的
 
 + StopAsync()
     + The host blocks in StopAsync(CancellationToken) waiting for ExecuteAsync to complete.
@@ -61,3 +61,5 @@
 
 ## ref
 + [Background tasks with hosted services in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-8.0&tabs=netcore-cli)
+
++ [Create Windows Service using BackgroundService](https://learn.microsoft.com/en-us/dotnet/core/extensions/windows-service)
