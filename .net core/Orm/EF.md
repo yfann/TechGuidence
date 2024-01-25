@@ -29,7 +29,7 @@
 
 ## ref
 + [使用 Entity Framework Core 实现基础结构持久性层]()
-+ [Fluent API - Configuring and Mapping Properties and Types](https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/fluent/types-and-properties)
+
 <!-- json -->
 + [Announcing Entity Framework Core 7 RC2: JSON Columns](https://devblogs.microsoft.com/dotnet/announcing-ef7-release-candidate-2/)
 + [How to Store JSON in an Entity Field With EF Core](https://code-maze.com/efcore-store-json-in-an-entity-field/)
