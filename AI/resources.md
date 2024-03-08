@@ -3,5 +3,5 @@
 ## ref
 + coursera
 + google colaboratory
-+ kaggle
-    + 有数据集
++ [kaggle](https://www.kaggle.com/)
++ [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
