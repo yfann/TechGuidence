@@ -36,6 +36,7 @@
 ## correlation analysis(相关分析)
 + seaborn
     + heatmap
+## Softmax Regression 
 
 ## keys
 + Artificial Neural Network(ANN)
