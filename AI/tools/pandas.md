@@ -1,3 +1,10 @@
+# Pandas
++ 基于Numpy构建，提供字典形式的结构
++ Series
+    + 有index的数组
++ DataFrame
+    + 二维结构，多个Series组成
+
 
 
 ## tips
@@ -15,5 +22,9 @@
 
 + [pypandas](https://www.pypandas.cn/)
 + [pandas official](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+
++ [Pandas入门](https://itimor.github.io/ml/mllib/Pandas1.html)
++ [Pandas进阶](https://itimor.github.io/ml/mllib/Pandas2.html)
+
 <!-- tips -->
 + [pd.read_excel](https://blog.csdn.net/brucewong0516/article/details/79096633)

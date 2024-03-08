@@ -97,9 +97,6 @@
 <!-- 前端 -->
 + [Thinking in Microfrontend](https://github.com/phodal/microfrontends)
 
-<!-- python -->
-+ [pandas](https://wklchris.github.io/Py3-pandas.html)
-+ [numpy](https://wklchris.github.io/Py3-numpy.html)
 
 
 <!-- go -->
