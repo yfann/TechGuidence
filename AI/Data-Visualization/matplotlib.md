@@ -7,7 +7,12 @@
 + Scatter plots are used to observe relationships between variables and uses dots to represent the relationship between them. 
 + `plt.scatter(data['day'], data['tip'], c=data['size'],  s=data['total_bill'])`
     + x,y,color,size
-
++ Advantages of a scatter plot
+    + Displays correlation between variables
+    + Suitable for large data sets
+    + Easier to find data clusters
+    + Better representation of each data point    
+    
 ## Line Chart
 + Line Chart is used to represent a relationship between two data X and Y on a different axis.
 + `plt.plot(data['day'])`
@@ -31,3 +36,4 @@
 + [matplotlib](https://datawhalechina.github.io/fantastic-matplotlib/%E7%AC%AC%E4%B8%80%E5%9B%9E%EF%BC%9AMatplotlib%E5%88%9D%E7%9B%B8%E8%AF%86/index.html)
 + [Matplotlib](https://wklchris.github.io/blog/Matplotlib/index.html)
 
++ [Data Visualization using Matplotlib](https://www.geeksforgeeks.org/data-visualization-using-matplotlib/?ref=lbp)
