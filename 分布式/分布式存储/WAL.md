@@ -18,3 +18,4 @@
 + [WAL(预写式日志)简介](https://lessisbetter.site/2020/01/02/wal-introduction/)
 + [Write-Ahead Log(WAL预写日志)的工作原理](https://cloud.tencent.com/developer/article/1663045)
 + [golang wal 预写日志的设计实现](https://xiaorui.cc/archives/7304)
+
