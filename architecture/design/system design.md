@@ -3,6 +3,7 @@
 ## functional requirements
 + inputs and outpus of the system
     + api design
+
 ## non-functional requirements
 + Scalability
     + vertical scaling
@@ -37,10 +38,60 @@
     + Caching responses of other services
         + we can cache the external service’s responses whenever we make successful requests and use these responses when the external service is unavailable.
     + Checkpointing
+        + Writing a checkpoint after each subset of data points are processed and the result is successfully written. The replacement machine can resume processing at the checkpoint.
+        + usage
+            + ETL pipline
+    + dead letter queue
+        + If a write request to a third-party API fails, we can queue the request in a dead letter queue and try the requests again later.
+            + The simplest option is that if it is acceptable to miss requests, just drop failed requests.
+            + Implement the dead letter queue locally with a try-catch block. Requests will be lost if the host fails.
+            + A more complex and reliable option is to use an event-streaming platform like Kafka.
+    + Logging and periodic auditing
+        + One method to handle silent errors is to log our write requests and perform periodic auditing. An auditing job can process the logs and verify that the data on the service we write to matches the expected values. This is discussed further in chapter 10.
+    + Bulkhead
+        + The bulkhead pattern is a fault-tolerance mechanism where a system is divided into isolated pools, so a fault in one pool will not affect the entire system.
+    + fallback pattern
+        +
+
+
+
 + security
 + privacy
 + acuracy
 + consistency
+     + linearizability 
+        + disadvantages
+            + lower availability
+     + eventual consistency
+        + Techniques for eventual consistency that involve writing to a single location, which propagates this write to the other relevant locations:
+            + Event sourcing
+            + Coordination service
+                + chooses a leader node
+                + algorithms
+                    + Paxos
+                    + raft
+                    + Zab
+                + sample
+                    + zookeeper
+                    + 
+            + Distributed cache
+                + sample
+                    + Redis 
+                    + Memcached
+        + techniques
+            + gossip protocol
+                + 节点通过相互之间的随机通信来传播信息，每个节点都可以向其它节点随机选择的一组邻居发送消息
+                + sample
+                    + Cassandra 
+            + random leader selection
+                + This simple algorithm does not guarantee one and only one leader, so there may be multiple leaders.
+                + kafka
+                    + fault tolerance
+     + techniques
+        + full mesh
+            + 每个节点与网络中的每个其他节点都直接连接
+            + 适用于samll cluster
+        + quorum
 + cost
 + complexity
 
