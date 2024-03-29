@@ -125,13 +125,8 @@
 
 
 ## ref
-+ [How Pinterest scaled to 11 million users with only 6 engineers](https://read.engineerscodex.com/p/how-pinterest-scaled-to-11-million)
-+ [How Facebook created the largest Memcached system in the world](https://read.engineerscodex.com/p/how-facebook-scaled-memcached)
-+ [How Instagram scaled to 14 million users with only 3 engineers](https://read.engineerscodex.com/p/how-instagram-scaled-to-14-million)
-
-
 + [system design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
 + [Acing the System Design Interview](https://learning.oreilly.com/library/view/acing-the-system/9781633439108/OEBPS/Text/08.html#heading_id_3)
-+ DDIA
-
 + [system-design-primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
++ DDIA
++ [十年前的微信消息收发架构长啥样？](https://cloud.tencent.com/developer/article/2402411)
