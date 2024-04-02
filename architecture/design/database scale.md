@@ -41,3 +41,12 @@
 
 
 ## sharding
++ Sharded RDBMS
+    + JOIN query
+    + aggregation
+        + reduce database write rates
+        + implement with streaming pipeline
+
+
+## ref
++ [Sharding with Amazon Relational Database Service](https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/)
