@@ -47,6 +47,41 @@
         + reduce database write rates
         + implement with streaming pipeline
 
++ reducing database writes
+    + aggregating events
+        +  aggregating/combining multiple events into a single event
+        + implement
+            + streaming pipeline
+    + sampling
+
++ reducing database reads
+    + caching
+    + approximation
+
+
++ partitioning
+    + level 7 load balancer
+        + The load balancer can be configured to process incoming events and forward them to certain hosts depending on the events’ contents.
+
+
+## caching
++ read strategies
+    + cache-aside
+    + read-through
++ write strategies
+    + write-through
+    + write-back
+        + The application writes data to the cache, but the cache does not immediately write to the database. The cache periodically flushes updated data to the database. 
+    + Write-around
+        + In write-around, the application only writes to the database.
++ caching as a separate service
+    + Services are designed to be stateless, so each request is randomly assigned to a host. Since each host may cache different data, it is less likely to have cached any particular request that it receives.
+    + If we cache on hosts, the cache will be wiped out every time our service gets a deployment, which may be multiple times every day.
+    + We can scale the cache independently of the services that it serves 
+    + If many clients simultaneously send the same request that is a cache miss, our database service will execute the same query many times. Caches can deduplicate requests and send a single request to our service. This is called request coalescing, and it reduces the traffic on our service.
++ cache warming
+    
 
 ## ref
 + [Sharding with Amazon Relational Database Service](https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/)
++ [Caching in a cloud-native app](https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/azure-caching)
