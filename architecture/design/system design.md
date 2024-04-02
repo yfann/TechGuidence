@@ -129,4 +129,3 @@
 + [Acing the System Design Interview](https://learning.oreilly.com/library/view/acing-the-system/9781633439108/OEBPS/Text/08.html#heading_id_3)
 + [system-design-primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
 + DDIA
-+ [十年前的微信消息收发架构长啥样？](https://cloud.tencent.com/developer/article/2402411)
