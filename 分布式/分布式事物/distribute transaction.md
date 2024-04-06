@@ -75,13 +75,31 @@
 + 倘若 MQ 接收到回滚指令，则会删除对应的半事务消息，不会执行实际的消息发送操作
 
 
-
+## brief
 | 特性/模型 | XA	| TCC |	Saga	| 消息型事务 |
 | -------- | --- | ---- | ----- | ------- |
 | 适用场景 | 适用于跨多个数据库实例的事务处理，并发要求不高的业务。| 适用于需要强一致性的业务场景，且各个服务的接口能够改造为 Try-Confirm-Cancel模式。	| 适用于长事务和复杂业务流程，允许最终一致性。|	适用于异步业务处理，解耦服务间直接调用，允许最终一致性。|
 | 一致性强弱 |	强一致性 |	较强一致性 |	最终一致性	| 最终一致性 |
 | 并发度 |	并发度低 | 并发度低	| 并发度高	| 并发度高 |
 | 缺点	| 对于性能有一定影响，并发度较低。|	实现复杂，需要为每个接口定义Try、Confirm、Cancel。|	可能出现数据脏读情况。|	消息传递可能存在延迟，不能保证实时一致性。|
+
+## Event Driven Architecture(EDA)
++ asynchronous and non-blocking
++ examples
+    + Event sourcing
+        + Event sourcing is a pattern for storing data or changes to data as events in an append-only log.
+        + Any write must first be made to the event log,After this write succeeds, one or more event handlers consume this new event and writes it to the other databases.
+        + event log 
+            + kafka
+    + Change data capture(CDC)
+        + logging data change events to a change log event stream and providing this event stream through an API.
+        + event stream
+            + consumer
+        + CDC ensures consistency and lower latency than event sourcing
+            + Each request is processed in near real time, unlike in event sourcing where a request can stay in the log for some time before a subscriber processes it.
+        + transaction log miners.
+            + One way to handle duplicate events is to use the message broker’s mechanisms for exactly-once delivery.
+            +  the events to be defined and processed idempotently.
 
 ## ref
 + [分布式事务](https://zhuanlan.zhihu.com/p/689637642)

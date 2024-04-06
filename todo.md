@@ -5,3 +5,9 @@
 + [What is System Design – Learn System Design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
 <!-- machine learning -->
 <!-- streaming -->
+<!-- books -->
++ Acing the System Design Interview
++ System Design on AWS
++ I Heart Logs
++ streaming systems
++ [Designing Machine Learning Systems](https://learning.oreilly.com/library/view/designing-machine-learning/9781098107956/)
