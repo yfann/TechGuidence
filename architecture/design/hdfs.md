@@ -14,3 +14,5 @@
     + ClientNode
 ## ref
 + [初识 Hadoop](https://www.cnblogs.com/datadance/p/16287802.html)
+
++ [分布式存储（二）：GFS与Ceph](https://zhuanlan.zhihu.com/p/690991550)

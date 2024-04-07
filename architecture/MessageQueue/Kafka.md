@@ -33,6 +33,8 @@
     + 查看白名单
 
 ## ref
++ [一文带你搞懂 Kafka 的系统架构（深度好文，值得收藏）](https://www.cnblogs.com/datadance/p/16292991.html)
+
 + [Kafka 入门一篇文章就够了](https://juejin.im/post/5ddf5659518825782d599641)
 + [带你涨姿势的认识一下kafka](https://mp.weixin.qq.com/s?__biz=MzU2NDg0OTgyMA==&mid=2247484570&idx=1&sn=1ad1c96bc7d47b88e976cbd045baf7d7&chksm=fc45f969cb32707f882c52d7434b2c0bf2ccbbc2cd854e1dc5c203deb8ae9c1831cf216e8bad&token=674527772&lang=zh_CN#rd)
 + [Kafka connectors](https://www.confluent.io/hub/) 

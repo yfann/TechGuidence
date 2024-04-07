@@ -51,7 +51,10 @@
     + 业务逻辑的每个分支都需要实现 Try、Conﬁrm、Cancel 三个操作，除此之外需要对数据表中新增 冻结字段（根据业务确定） 实现对数据资源的锁定。
     + 一旦出现异常则通过 Cancel 来进行回滚事务进行补偿，这也就是常说的补偿性事务。
 ## SAGA
-+ saga其核心思想是将长事务拆分为多个本地短事务，由 saga事务协调器协调依次让每个微服务执行本地事务，如果操作成功那接着执行下一个微服务的本地事务。如果某个微服务失败，则根据相反顺序每个微服务都调用补偿操作
++ saga其核心思想是将长事务拆分为多个本地短事务
+    + 由 saga事务协调器协调依次让每个微服务执行本地事务，如果操作成功那接着执行下一个微服务的本地事务。如果某个微服务失败，则根据相反顺序每个微服务都调用补偿操作
++ A saga is a pattern to help manage failures.
++ A typical saga implementation involves services communicating via a message broker like Kafka or RabbitMQ.
 + 优点
     + 吞吐量
         + 在这种模式下，分布式事务中微服务的每个本地事务（如A->B->C->D）都是直接进行的，没有预占资源的过程。这意味着事务的每个步骤都是独立的，所以且可以异步执行，这种设计使得Saga模式适合处理长流程的业务场景，并且由于其异步性，能够带来更高的吞吐量。
@@ -61,6 +64,36 @@
 +  VS TCC
     + 在TCC模式中，由于Try阶段会锁定资源，其他用户在事务完成之前无法读取到这些资源，因此不会读到“脏数据”。这保证了TCC模式在事务处理过程中的数据一致性和隔离性。 
     + 在处理分布式事务时，TCC模式通过两阶段提交策略确保了事务的隔离性和一致性，而Saga模式虽然在吞吐量上有优势，但在隔离性方面存在一定的风险。
++ coordination
+    + choreography (parallel) 
+        + the service that begins the saga communicates with two Kafka topics. It produces to one Kafka topic to start the distributed transaction and consumes from another Kafka topic to perform any final logic.
+        + compensable transactions
+            +  which can be rolled back by compensating transactions
+        +  pivot transaction
+            + Transactions after the pivot transaction can be retried until they succeed
+        ![Alt text](img/choreography.png)
+    + orchestration (linear)
+        + the service that begins the saga is the orchestrator
+            + The orchestrator communicates with each service via a Kafka topic
+            + In each step in the saga, the orchestrator must produce to a topic to request this step to begin, and it must consume from another topic to receive the step’s result.
+            + An orchestrator is a finite-state machine that reacts to events and issues commands. 
+            + The orchestrator must only contain the sequence of steps.
+            +  It must not contain any other business logic, except for the compensation mechanism.
+        ![Alt text](img/orchestration.png.png)
+
+    + choreography vs orchestration
+
+| choreography | orchestration	| 
+| -------- | -------- | 
+| Requests to services are made in parallel. This is the observer object-oriented design pattern. | Requests to services are made linearly. This is the controller object-oriented design pattern. |
+| The service that begins the saga communicates with two Kafka topics. It produces one Kafka topic to start the distributed transaction and consumes from another Kafka topic to perform any final logic.  |  The orchestrator communicates with each service via a Kafka topic. In each step in the saga, the orchestrator must produce to a topic to request this step to begin, and it must consume from another topic to receive the step’s result. |
+|The service that begins the saga only has code that produces to the saga’s first topic and consumes from the saga’s last topic. A developer must read the code of every service involved in the saga to understand its steps.   | The orchestrator has code that produces and consumes Kafka topics that correspond to steps in the saga, so reading the orchestrator’s code allows one to understand the services and steps in the distributed transaction.  |
+| A service may need to subscribe to multiple Kafka topics, such as the Accounting Service in figure 5.5 of Richardson’s book. This is because it may produce a certain event only when it has consumed certain other events from multiple services. This means that it must record in a database which events it has already consumed.  | Other than the orchestrator, each service only subscribes to one other Kafka topic (from one other service). The relationships between the various services are easier to understand. Unlike choreography, a service never needs to consume multiple events from separate services before it can produce a certain event, so it may be possible to reduce the number of database writes.  |
+|  Less resource-intensive, less chatty, and less network traffic; hence, it has lower latency overall. | Since every step must pass through the orchestrator, the number of events is double that of choreography. The overall effect is that orchestration is more resource-intensive, chattier, and has more network traffic; hence, it has higher latency overall.  |
+| Parallel requests also result in lower latency.  | Requests are linear, so latency is higher.  |
+|  Services have a less independent software development lifecycle because developers must understand all services to change any one of them. | Services are more independent. A change to a service only affects the orchestrator and does not affect other services.  |
+| No such single point of failure as in orchestration (i.e., no service needs to be highly available except the Kafka service).  |  If the orchestration service fails, the entire saga cannot execute (i.e., the orchestrator and the Kafka service must be highly available). |
+|  Compensating transactions are triggered by the various services involved in the saga. | Compensating transactions are triggered by the orchestrator.  |
 
 ## 消息型事务
 + 消息事务的原理是将两个本地事务通过消息中间件进行异步解耦，适用的场景主要是那些需要异步更新数据，并且对数据实时性要求不太高的场景
@@ -91,15 +124,41 @@
         + Any write must first be made to the event log,After this write succeeds, one or more event handlers consume this new event and writes it to the other databases.
         + event log 
             + kafka
+    ![Alt text](img/event-sourcing.png)
     + Change data capture(CDC)
         + logging data change events to a change log event stream and providing this event stream through an API.
         + event stream
             + consumer
-        + CDC ensures consistency and lower latency than event sourcing
-            + Each request is processed in near real time, unlike in event sourcing where a request can stay in the log for some time before a subscriber processes it.
         + transaction log miners.
             + One way to handle duplicate events is to use the message broker’s mechanisms for exactly-once delivery.
             +  the events to be defined and processed idempotently.
+    + event sourcing VS CDC
+        + CDC ensures consistency and lower latency than event sourcing
+            + Each request is processed in near real time
+            + unlike in event sourcing where a request can stay in the log for some time before a subscriber processes it.
+        + CDS propagates events to consumers. 
+            + Event sourcing need subscribers to pull events from event log.
+        + you might use both event sourcing and CDC together
+            + you can use event sourcing within a service to record data changes as events, while using CDC to propagate those events to other services. 
+    ![Alt text](img/CDC.png)
+|  | Event Sourcing	| Change Data Capture (CDC) |
+| -------- | --- | ---- |
+| Purpose | Record events as the source of truth. | Synchronize data changes by propagating events from a source service to downstream services. |
+| Source of truth | The log, or events published to the log, are the source of truth. | A database in the publisher service. The published events are not the source of truth. |
+| Granularity | Fine-grained events that represent specific actions or changes in state. | Individual database level changes such as new, updated, or deleted rows or documents. |
+
+## Transaction supervisor
++ A transaction supervisor is a process that ensures a transaction is successfully completed or is compensated.
++ It can be implemented as a periodic batch job or serverless function.
+![Alt text](img/tran-supervisor.png)
+
+
+## tips
++ Quorum writes
++ Paxos and EPaxos
++ Raft
++ Zab (ZooKeeper atomic broadcast protocol) – Used by Apache ZooKeeper.
 
 ## ref
 + [分布式事务](https://zhuanlan.zhihu.com/p/689637642)
++ [Saga](https://microservices.io/patterns/data/saga.html)
