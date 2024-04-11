@@ -11,3 +11,4 @@
 + I Heart Logs
 + streaming systems
 + [Designing Machine Learning Systems](https://learning.oreilly.com/library/view/designing-machine-learning/9781098107956/)
++ [Building Microservices, 2nd Edition](https://learning.oreilly.com/library/view/building-microservices-2nd/9781492034018/ch04.html#idm45699546818512)

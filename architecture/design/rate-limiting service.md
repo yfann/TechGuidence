@@ -1,9 +1,34 @@
 # rate limiting
 
+
+![Alt text](img/rate%20limiter.png)
++ 实现rate limiting service
++ Rules service存放各个 user service的rate limit
++ redis存放一定时间内（60s）用户的访问记录(user id, serivce id, timestamp)
+    + 用于计算当前的 rate limit
+
+
 ![](img/rebalancing%20ETL%20job.png)
-+ We can periodically run a batch ETL job that reads the request logs, identifies hosts that receive large numbers of requests, determines an appropriate load balancing configuration, and then writes this configuration to a configuration service. 
++  a stateful sharded approach
++ When a request arrives, our load balancer routes it to its host. 
++ Each host stores the counts of its clients in its memory.
++ The host determines if the user has exceeded their rate limit and returns true or false. 
++ rebalancing ETL job
+    + We can periodically run a batch ETL job that reads the request logs, identifies hosts that receive large numbers of requests, determines an appropriate load balancing configuration, and then writes this configuration to a configuration service. 
+    + The ETL job can also push the new configuration to the load-balancer service.
++ shortcoming
+    +  If a user has a very high request rate, such as hundreds of requests per second, its assigned host cannot handle this, and all users assigned to this host cannot be rate limited.
 
 
+
+
++ stateless distributed appraoch
+
++ alternative for rate limiting
+    + auto-scaling
+        + This process may be too slow, and our service may already have crashed by the time the new hosts are ready to serve traffic.
+    + load balancer can limit the number of requests sent to each host
+        + level 7 load balancer for sticky sessions
 ## synchronizing counts
 + All-to-all
 + Gossip protocol
@@ -35,3 +60,4 @@
 + [如何设计一个分布式限流器（distributed rate limiter）](https://guanhonly.github.io/2020/05/30/distributed-rate-limiter/)
 + [The Fundamentals of Rate Limiting: How it Works and Why You Need it](https://medium.com/@patrikkaura/the-fundamentals-of-rate-limiting-how-it-works-and-why-you-need-it-fd86d39e358d)
 + [系统设计：设计一个分布式限流器](https://jingling.im/posts/design-a-rate-limiter/)
++ [An alternative approach to rate limiting](https://www.figma.com/blog/an-alternative-approach-to-rate-limiting/)
