@@ -22,7 +22,6 @@
 
 ## ref
 + [PostgreSQL 9.4.4 中文手册](http://www.postgres.cn/docs/9.4/index.html)
-+ [PostgreSQL 教程](https://www.runoob.com/postgresql/postgresql-tutorial.html)
 
 + [Connection Parameters](https://jdbc.postgresql.org/documentation/head/connect.html)
 + [pq - A pure Go postgres driver for Go's database/sql package](https://pkg.go.dev/github.com/lib/pq#hdr-Connection_String_Parameters)

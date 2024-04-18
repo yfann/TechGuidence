@@ -22,12 +22,24 @@
                 + load balancing is for scalability
                 + reverse proxy is a technique to manage client-server communication
                     
-+ Availability
++ Availability （
+    + In a large-scale software system, subsystems or servers can go down and may not be fully available to respond to the client’s requests — this is referred to as system’s availability.）
+    + failover patterns
+        + active-active failover
+        + active-passive failover
+    + Replication Patterns
+        + Multi leader 
+        + Single leader
+
++ Reliability
+    + Reliability is typically expressed as a probability or percentage of time that the system will operate without failure.
+
 + Performance/latency/P99/throughput
+
 + fault tolerance
     + Replication and redundancy
-    + Forward error correction and error correction code
-        + FEC通过添加冗余信息，接收端可以自行纠正一定数量的错误，从而减少了重传的需求，提高了数据传输的可靠性和效率。
+    + error handling
+    + self healing
     + Circuit breaker
         + The circuit breaker is a mechanism that stops a client from repeatedly attempting an operation that is likely to fail.
         + 有重试次数
@@ -51,10 +63,9 @@
     + Bulkhead
         + The bulkhead pattern is a fault-tolerance mechanism where a system is divided into isolated pools, so a fault in one pool will not affect the entire system.
     + fallback pattern
-        +
-
-
-
+    + Forward error correction and error correction code
+        + FEC通过添加冗余信息，接收端可以自行纠正一定数量的错误，从而减少了重传的需求，提高了数据传输的可靠性和效率。
+    
 + security
 + privacy
 + acuracy
@@ -122,7 +133,12 @@
 
 + CAP
 
-
+## trade-offs
++ time vs space
++ latency vs throughput
++ performance vs scalability
++ consistency vs availiability
++ 
 
 ## ref
 + [system design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
