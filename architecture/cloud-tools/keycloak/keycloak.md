@@ -1,5 +1,9 @@
 # keycloak
 
++ realm
+    + 类似于tenant
+    + 资源隔离
+
 ## Identity Brokering 
 + log in through a social provider
     + Facebook
@@ -44,6 +48,12 @@
         + 单一登录：用户在通过 Kerberos 认证后，可以访问网络中的多个服务而无需重复认证。
         + 适用于分布式环境：Kerberos 是一种分布式认证协议，适用于多个计算机和服务之间的安全通信。
 
++ JSON Web Signature (JWS)
+    + token内容是透明的（不加密）
+    + digital signature
+        + 用于验证是否是keycloak发出的
+        + the backend can both verify the token and read the contents without a request to Keycloak
+            + The backend retrieves Keycloak's public keys
 ## ref
 + [Keycloak Quickstarts](https://github.com/keycloak/keycloak-quickstarts)
 + [Keycloak Documentation](https://www.keycloak.org/documentation.html)
