@@ -1,8 +1,31 @@
 # keycloak
 
-+ realm
-    + 类似于tenant
-    + 资源隔离
+## realm
++ 类似于tenant
++ 资源隔离
+
+
+## Client
++ client type
+    + OpenID Connect
+        + Allows client to verify the identity of the Enc-user based on the authentication performed by an Authorization server.
+    + SAML
+        + Enables web-based authentication and authorization scenarios including crossdomain SSO and uses security tokens containing assertions to pass information.
+
+
++ Valid redirect URIs
+    + 验证要跳转的链接防止恶意攻击
+
++ Web origins
+    + 设置跨域
+
+
+
+## User
++ 添加Attribute
+    + Realm settings->User profile->Create attribute
+    + 通过在Client scope中添加Mapper可以使attribute出现在Token中
+
 
 ## Identity Brokering 
 + log in through a social provider
@@ -13,16 +36,21 @@
     + link existing accounts to a brokered IDP
 
 
-
+## tokens
++ id token
++ access token
++ refresh token
 
 ## tips
-+ OpenID/SAML
+
+
 + Identity Provider(IDP)
     + 通常用于SSO
     + 外部IDP
         + LDAP
         + Active Directory
         + SAML 2.0
+
 + OTP（one-time password
 
 + CIBA(Client Initiated Backchannel Authentication)
@@ -60,6 +88,10 @@
 <!-- keycloak使用 -->
 + [Keycloak搭建手把手操作指南](https://github.com/eacdy/spring-cloud-yes/blob/master/doc/keycloak-learn/Keycloak%E6%90%AD%E5%BB%BA%E6%89%8B%E6%8A%8A%E6%89%8B%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97.md)
 <!-- details -->
++ [server admin](https://www.keycloak.org/docs/latest/server_admin/#user-profile)
 + [Securing Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html#openid-connect-3)
 <!-- book -->
 + [《Keycloak - Identity and Access Management for Modern Applications》](https://learning.oreilly.com/library/view/keycloak-identity/9781800562493/B16606_01_Final_ASB_ePub.xhtml#_idParaDest-17)
+
+<!-- tips -->
++ [Custom Attribute in Keycloak Access Token](https://medium.com/@ramanamuttana/custom-attribute-in-keycloak-access-token-831b4be7384a)
