@@ -45,7 +45,7 @@
 
 
 
-## proxy
+## npm proxy
 + `npm config get proxy`
 + `npm config delete proxy`
 + `npm config delete https-proxy`
