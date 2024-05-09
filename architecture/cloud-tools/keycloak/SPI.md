@@ -31,3 +31,5 @@
 + [Configuring providers](https://www.keycloak.org/server/configuration-provider)
 
 + [avaible SPIs](http://localhost:8080/admin/master/console/#/master/providers)
+
++ [SignatureSPi](https://www.keycloak.org/docs-api/21.1.2/javadocs/org/keycloak/crypto/SignatureSpi.html)

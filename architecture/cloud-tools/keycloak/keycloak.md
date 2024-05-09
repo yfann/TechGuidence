@@ -19,6 +19,8 @@
 + Web origins
     + 设置跨域
 
++ Consent Required
+    + 弹出窗口让用户授权
 
 
 ## User
@@ -66,32 +68,21 @@
     + 认证服务器（Authentication Server，AS）
     + 票据授予服务（Ticket Granting Service，TGS）
 
-+ Kerberos
-    + Kerberos 是一个网络认证协议，用于实现身份验证服务，最初由麻省理工学院 (MIT) 开发。它为网络中的实体（通常是计算机或用户）提供了安全的身份验证机制，以确保通信双方的身份是可信的。
-    + 当用户想要访问网络资源时，它首先向 AS 发送认证请求。
-        + AS 将验证用户身份，并向用户返回一个加密的票据（Ticket），该票据可用于向 TGS 发送进一步的请求。
-            + 用户使用票据请求 TGS 以获取针对特定服务的服务票据（Service Ticket）。服务票据允许用户访问请求的服务，而无需再次提供凭据。
-    + 优点：
-        + 强大的身份验证：Kerberos 使用加密票据而不是明文密码进行身份验证，从而提供更高的安全性。
-        + 单一登录：用户在通过 Kerberos 认证后，可以访问网络中的多个服务而无需重复认证。
-        + 适用于分布式环境：Kerberos 是一种分布式认证协议，适用于多个计算机和服务之间的安全通信。
 
-+ JSON Web Signature (JWS)
-    + token内容是透明的（不加密）
-    + digital signature
-        + 用于验证是否是keycloak发出的
-        + the backend can both verify the token and read the contents without a request to Keycloak
-            + The backend retrieves Keycloak's public keys
 ## ref
-+ [Keycloak Quickstarts](https://github.com/keycloak/keycloak-quickstarts)
+
 + [Keycloak Documentation](https://www.keycloak.org/documentation.html)
-<!-- keycloak使用 -->
-+ [Keycloak搭建手把手操作指南](https://github.com/eacdy/spring-cloud-yes/blob/master/doc/keycloak-learn/Keycloak%E6%90%AD%E5%BB%BA%E6%89%8B%E6%8A%8A%E6%89%8B%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97.md)
-<!-- details -->
 + [server admin](https://www.keycloak.org/docs/latest/server_admin/#user-profile)
+
+<!-- Securing Applications and Services Guide -->
++ [Keycloak搭建手把手操作指南](https://github.com/eacdy/spring-cloud-yes/blob/master/doc/keycloak-learn/Keycloak%E6%90%AD%E5%BB%BA%E6%89%8B%E6%8A%8A%E6%89%8B%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97.md)
 + [Securing Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html#openid-connect-3)
+
 <!-- book -->
 + [《Keycloak - Identity and Access Management for Modern Applications》](https://learning.oreilly.com/library/view/keycloak-identity/9781800562493/B16606_01_Final_ASB_ePub.xhtml#_idParaDest-17)
 
-<!-- tips -->
+<!-- detials -->
 + [Custom Attribute in Keycloak Access Token](https://medium.com/@ramanamuttana/custom-attribute-in-keycloak-access-token-831b4be7384a)
+
+<!-- examples -->
++ [Keycloak Quickstarts](https://github.com/keycloak/keycloak-quickstarts)
