@@ -58,7 +58,14 @@
 + 这种方式给出的令牌，是针对第三方应用的，而不是针对用户的，即有可能多个用户共享同一个令牌。
 
 ## device flow
-
++ no data entry required on the device!
+  + 扫码登录
++ flow
+  + client_id=a17c21ed
+    + device 向认证服务器发请求获取device code和url
+  + device 通过发请求(device code)到认证服务器获取access token
+    + 间隔请求直到获取token，或错误
+  + user用其他设备打开url，输入认证信息和device code完成认证
 
 ## refresh token
 + 更新令牌
@@ -108,3 +115,4 @@
 + [device flow](https://www.oauth.com/oauth2-servers/device-flow/)
 
 + [PKCE](https://www.cnblogs.com/myshowtime/p/15555538.html)
++ [OAuth for Browserless and Input-Constrained Devices](https://www.oauth.com/oauth2-servers/device-flow/)
