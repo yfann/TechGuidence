@@ -33,3 +33,11 @@
 + [avaible SPIs](http://localhost:8080/admin/master/console/#/master/providers)
 
 + [SignatureSPi](https://www.keycloak.org/docs-api/21.1.2/javadocs/org/keycloak/crypto/SignatureSpi.html)
+
+
+<!-- samples -->
++ [http storage](https://github.com/adviqo-GmbH/keycloak/compare/master...adviqo-GmbH:feature/http-storage)
+
+
+<!-- source -->
++ [ProviderFactory](https://www.keycloak.org/docs-api/22.0.4/javadocs/org/keycloak/provider/class-use/ProviderFactory.html)
