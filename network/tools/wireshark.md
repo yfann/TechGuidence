@@ -1,5 +1,6 @@
 # wireshark
-
++ 回到主界面
+    + 停止当前抓取->close this capture file
 
 ## display filter
 + `tcp.port == 80`
@@ -8,6 +9,12 @@
 ## capture filter
 + `tcp port 80`
 + Capture filters are set before starting a packet capture and cannot be modified during the capture. 
+
+
+## practice
+<!-- 抓取http的包 -->
++ 选择网络端口Loopback(lo)
++ display filter中输入`http`
 
 ## tips
 
