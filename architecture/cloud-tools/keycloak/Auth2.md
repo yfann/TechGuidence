@@ -4,16 +4,6 @@
 + client
 + Authorization server
 
-## client
-+ 客户端是否有能力维护自己的机密性凭据 client_secret。
-  + confidential client
-      + 前端只是获取授权码code， 通过 code 换取access_token 这一步是在后端的api完成的， 由于是内部的服务器， 客户端有能力维护密码或者密钥信息， 这种是机密的的客户端。
-      + client_secret可以被安全保存
-      + Authorization Code
-  + public client
-      + 客户端本身没有能力保存密钥信息， 比如桌面软件， 手机App， 单页面程序(SPA)， 因为这些应用是发布出去的， 实际上也就没有安全可言， 恶意攻击者可以通过反编译等手段查看到客户端的密钥， 这种是公开的客户端。
-      + 不能用client_secret，会丢失
-      + Implicit 
 
 
 ## authorization-code

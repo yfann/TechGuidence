@@ -5,22 +5,7 @@
 + 资源隔离
 
 
-## Client
-+ client type
-    + OpenID Connect
-        + Allows client to verify the identity of the Enc-user based on the authentication performed by an Authorization server.
-    + SAML
-        + Enables web-based authentication and authorization scenarios including crossdomain SSO and uses security tokens containing assertions to pass information.
 
-
-+ Valid redirect URIs
-    + 验证要跳转的链接防止恶意攻击
-
-+ Web origins
-    + 设置跨域
-
-+ Consent Required
-    + 弹出窗口让用户授权
 
 
 ## User
@@ -74,9 +59,7 @@
 + [Keycloak Documentation](https://www.keycloak.org/documentation.html)
 + [server admin](https://www.keycloak.org/docs/latest/server_admin/#user-profile)
 
-<!-- Securing Applications and Services Guide -->
-+ [Keycloak搭建手把手操作指南](https://github.com/eacdy/spring-cloud-yes/blob/master/doc/keycloak-learn/Keycloak%E6%90%AD%E5%BB%BA%E6%89%8B%E6%8A%8A%E6%89%8B%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97.md)
-+ [Securing Applications and Services Guide](https://www.keycloak.org/docs/latest/securing_apps/index.html#openid-connect-3)
+
 
 <!-- book -->
 + [《Keycloak - Identity and Access Management for Modern Applications》](https://learning.oreilly.com/library/view/keycloak-identity/9781800562493/B16606_01_Final_ASB_ePub.xhtml#_idParaDest-17)
