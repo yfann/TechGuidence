@@ -1,5 +1,16 @@
 # keycloak
 
++ Client authentication
+    + 决定client向keycloak认证时是否提供secret
+    + 决定client是pulibic还是confidential
+
++ Direct access grants
+    + 是否允许client通过username/password获取access token
+
++ keycloak中clients和users没有关联关系
+    + clients影响了认证流程
+
+
 ## realm
 + 类似于tenant
 + 资源隔离
