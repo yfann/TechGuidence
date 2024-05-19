@@ -41,7 +41,7 @@ set https_proxy=http://xxxx:xxx
 pip3 install xxxx
 
 ## maven
-
++ `{maven}/conf/settings.xml`
 .m2/settings.xml
 
 

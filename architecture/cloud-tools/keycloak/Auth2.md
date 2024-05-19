@@ -4,6 +4,8 @@
 + client
 + Authorization server
 
+
+
 ## authorization-code
 + https://b.com/oauth/authorize?
   response_type=code&
@@ -48,11 +50,12 @@
 ## device flow
 + no data entry required on the device!
   + 扫码登录
-+ client_id=a17c21ed
-  + device 向认证服务器发请求获取device code和url
-+ device 通过发请求(device code)到认证服务器获取access token
-  + 间隔请求直到获取token，或错误
-+ user用其他设备打开url，输入认证信息和device code完成认证
++ flow
+  + client_id=a17c21ed
+    + device 向认证服务器发请求获取device code和url
+  + device 通过发请求(device code)到认证服务器获取access token
+    + 间隔请求直到获取token，或错误
+  + user用其他设备打开url，输入认证信息和device code完成认证
 
 ## refresh token
 + 更新令牌
@@ -66,8 +69,40 @@
     + token有scope
 
 
++ Kerberos
+    + Kerberos 是一个网络认证协议，用于实现身份验证服务，最初由麻省理工学院 (MIT) 开发。它为网络中的实体（通常是计算机或用户）提供了安全的身份验证机制，以确保通信双方的身份是可信的。
+    + 当用户想要访问网络资源时，它首先向 AS 发送认证请求。
+        + AS 将验证用户身份，并向用户返回一个加密的票据（Ticket），该票据可用于向 TGS 发送进一步的请求。
+            + 用户使用票据请求 TGS 以获取针对特定服务的服务票据（Service Ticket）。服务票据允许用户访问请求的服务，而无需再次提供凭据。
+    + 优点：
+        + 强大的身份验证：Kerberos 使用加密票据而不是明文密码进行身份验证，从而提供更高的安全性。
+        + 单一登录：用户在通过 Kerberos 认证后，可以访问网络中的多个服务而无需重复认证。
+        + 适用于分布式环境：Kerberos 是一种分布式认证协议，适用于多个计算机和服务之间的安全通信。
+
++ JSON Web Signature (JWS)
+    + token内容是透明的（不加密）
+    + digital signature
+        + 用于验证是否是keycloak发出的
+        + the backend can both verify the token and read the contents without a request to Keycloak
+            + The backend retrieves Keycloak's public keys
+
++ PKCE(Proof Key for Code Exchange)
+    + extension to the OAuth 2.0 
+    + 授权码拦截攻击
+        + 授权服务器携带授权码code返回到客户端的回调地址时， 有可能不受TLS 的保护
+        + 正常request时是会受tls保护的，code_challenge不会被窃取
+    + 在向授权服务器的 authorize endpoint 请求时，需要额外的 code_challenge 和 code_challenge_method 参数， 向 token endpoint 请求时， 需要额外的 code_verifier 参数， 最后授权服务器会对这三个参数进行对比验证， 通过后颁发令牌。
+        + client建立code_verifier
+        + code_challenge == code_challenge_method(code_verifier)
+            + code_challenge_method
+                + plain(原始值)
+                + S256
+
 
 ## ref
 + [OAuth 2.0 的四种方式](https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
 + [GitHub OAuth 第三方登录示例教程](https://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
++ [device flow](https://www.oauth.com/oauth2-servers/device-flow/)
+
++ [PKCE](https://www.cnblogs.com/myshowtime/p/15555538.html)
 + [OAuth for Browserless and Input-Constrained Devices](https://www.oauth.com/oauth2-servers/device-flow/)
