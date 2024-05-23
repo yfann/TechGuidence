@@ -1,5 +1,9 @@
 
 
+## tips
++ `http://{{host}}:{{port}}/realms/myrealm/protocol/openid-connect/userinfo`
+    + 需要 `"scope": "openid profile email"` 才可以访问
+
 ## ref
 + [endpoints](https://www.keycloak.org/docs/latest/securing_apps/index.html#endpoints)
 
