@@ -16,9 +16,6 @@
 + 资源隔离
 
 
-
-
-
 ## User
 + 添加Attribute
     + Realm settings->User profile->Create attribute
@@ -36,12 +33,42 @@
 
 ## tokens
 + id token
+    + OIDC产生
+    + 用户身份信息
 + access token
 + refresh token
 
+## scope
++ scope 用于定义access token所允许的权限和资源范围
+
++ 细粒度的访问控制
+    + openid: 用于执行 OpenID Connect 身份认证请求。
+    + profile: 访问用户的基本个人信息（例如姓名、姓氏、生日等）。
+    + email: 访问用户的电子邮件地址。
+    + roles: 访问用户的角色信息
+
++ 定义和分配自定义作用域
+    + read:messages: 允许读取消息的权限。
+
++ client在请求access token时可以设置需要的作用域
+```sh
+curl -X POST \
+  -d "client_id=your-client-id" \
+  -d "username=your-username" \
+  -d "password=your-password" \
+  -d "grant_type=password" \
+  -d "client_secret=your-client-secret" \
+  -d "scope=openid profile email" \
+  "http://localhost:8080/realms/your-realm/protocol/openid-connect/token"
+
+```
+
++ 控制访问令牌中的信息
+    + 作用域还控制访问令牌中包含的信息。Keycloak 会根据请求的作用域，在生成的访问令牌和 ID 令牌中包含相应的声明（claims）。例如：
+        + 请求 profile 作用域时，ID 令牌中将包含用户的基本个人信息。
+        + 请求 email 作用域时，ID 令牌中将包含用户的电子邮件地址。
+
 ## tips
-
-
 + Identity Provider(IDP)
     + 通常用于SSO
     + 外部IDP
