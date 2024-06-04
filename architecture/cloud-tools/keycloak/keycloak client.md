@@ -7,7 +7,7 @@
     + SAML
         + Enables web-based authentication and authorization scenarios including crossdomain SSO and uses security tokens containing assertions to pass information.
 
-
+<!-- OpenID connect client -->
 + Valid redirect URIs
     + 验证要跳转的链接防止恶意攻击
 
@@ -23,6 +23,12 @@
         + 可以进一步选择Credentials->Client Authenticator
     + off
         + 对应public client
+
+<!-- SAML client -->
++ Client signature required
+    + client sign xaml request
+    + keycloak 配置client public key做验证
+
 
 ## client
 + 客户端是否有能力维护自己的机密性凭据 client_secret。
