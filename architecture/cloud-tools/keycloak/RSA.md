@@ -9,3 +9,7 @@
 1. server收到密文c后，用自己的private key解密，获得消息m和签名s.
 2. server用client的pub key解密签名s,获得摘要h(m).
 3. server使用相同的方法提取消息m的摘要h(m)与上一步解密得到的h(m)进行比较，如果相同则验签成功
+
+
+## ref
++ [RSA算法原理（一）](https://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)
