@@ -14,6 +14,17 @@
     + action()
         +  Called from a form action invocation.
 
+## CredentialModel
++ credentials are stored in the database in the Credentials table
++ secret_data
+    + json
+    + 不能展示
+
++ credential_data
+    + json
+    + 可以展示
+
+
 ## AuthenticationFlowContext 
 + success()
 + form()
@@ -37,6 +48,9 @@
 + `${msg("someValue")}`
     + 多语言(.properties files)
     
++ 或者资源放在{keycloak path}/themes/base/login
 
 ## ref
 + [Authentication SPI](https://www.keycloak.org/docs/latest/server_development/#_auth_spi)
+
++ [SecretQuestionAuthenticator](keycloak/examples/providers/authenticator)
