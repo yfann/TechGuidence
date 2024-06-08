@@ -15,3 +15,7 @@
 
 ## 编程类
 + [](http://www.banshujiang.cn/)
+
+## zlib
++ [](https://zh.singlelogin.re/fulltext/%E4%B8%AD%E5%9B%BD?type=words&yearFrom=2024&languages%5B%5D=chinese)
++ [](https://zh.singlelogin.rs/)
