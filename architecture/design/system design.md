@@ -138,10 +138,7 @@
 + latency vs throughput
 + performance vs scalability
 + consistency vs availiability
-+ 
 
-## ref
-+ [system design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
-+ [Acing the System Design Interview](https://learning.oreilly.com/library/view/acing-the-system/9781633439108/OEBPS/Text/08.html#heading_id_3)
-+ [system-design-primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
-+ DDIA
+
+
+
