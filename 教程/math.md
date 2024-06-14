@@ -4,6 +4,7 @@
 + 数学要素
 + Introduction to Linear Algebra: 4th Edition
     + Gilbert
+    + [Introduction_to_Linear_Algebra-_Fourth_Edition.pdf](https://students.aiu.edu/submissions/profiles/resources/onlineBook/Y5B7M4_Introduction_to_Linear_Algebra-_Fourth_Edition.pdf)
 + Linear Algebra and its applications
 <!-- 概率 -->
 + introduction to probability I and II
