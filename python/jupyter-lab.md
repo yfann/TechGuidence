@@ -1,6 +1,9 @@
 # jupyter-lab
 
 + `pip install jupyterlab`
+    + `pip show jupyterlab`
+
++ `python -m jupyterlab`
 
 <!-- jupyter-lab shortcut -->
 + `Esc` command mode
