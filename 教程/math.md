@@ -6,6 +6,7 @@
     + Gilbert
     + [Introduction_to_Linear_Algebra-_Fourth_Edition.pdf](https://students.aiu.edu/submissions/profiles/resources/onlineBook/Y5B7M4_Introduction_to_Linear_Algebra-_Fourth_Edition.pdf)
 + Linear Algebra and its applications
++ [Linear Algebra Done Right](https://linear.axler.net/)
 <!-- 概率 -->
 + introduction to probability I and II
 
