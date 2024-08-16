@@ -14,3 +14,8 @@
 
 ## Attention Mechanism
 + 在标准的Seq2Seq模型中，所有输入序列信息都被压缩到一个上下文向量中，这对于长序列来说可能导致信息丢失。注意力机制通过为解码器的每一步生成动态上下文向量（即权重分配给编码器输出的每一个时间步）来解决这个问题。它允许模型在生成每个输出时“关注”输入序列的不同部分，从而提高翻译或生成的质量。
++ Attention allows the model to focus on the relevant parts of the input sequence as needed.
+
+
+## ref
++ [The Illustrated Transformer](https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/)
