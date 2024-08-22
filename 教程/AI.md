@@ -11,3 +11,7 @@
 
 <!-- deeplearning -->
 + [deeplearningbasics](https://github.com/PingNie1/deeplearningbasics)
+
+
+<!-- AI -->
++ [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)
