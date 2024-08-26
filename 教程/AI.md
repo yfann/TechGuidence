@@ -7,3 +7,11 @@
 + [Prompt Engineering Guide](https://www.promptingguide.ai/)
 + [prompt-library](https://www.aiforeducation.io/prompt-library)
 + [Awesome ChatGPT Prompts](https://prompts.chat/)
+
+
+<!-- deeplearning -->
++ [deeplearningbasics](https://github.com/PingNie1/deeplearningbasics)
+
+
+<!-- AI -->
++ [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)

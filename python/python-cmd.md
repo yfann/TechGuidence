@@ -19,7 +19,8 @@
 + `if __name__ == "__main__"`
     + py script直接运行，而非module导入
 + `python -m <module name>`
-    + 以模块方式运行
+    + 直接运行模块
+    + `__name__ == "__main__"`
 + `python xx.py`
     + 直接运行脚本
     + `__name__ == "__main__"`

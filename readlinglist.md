@@ -1,10 +1,4 @@
-<!-- 速查 -->
-+ [devdocs API手册](http://devdocs.io/)
-+ [emmet](https://docs.emmet.io/cheat-sheet/)
-+ [正则](http://www.regexlab.com/zh/regref.htm)
-+ [npm](http://javascript.ruanyifeng.com/nodejs/npm.html#toc4)
-+ [less](https://less.bootcss.com/)
-+ [bootstrap](https://getbootstrap.com/docs/3.3/css/)
+
 
 <!-- online coding tools -->
 + [plnkr online coding](http://plnkr.co/)

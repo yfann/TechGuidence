@@ -1,3 +1,0 @@
-
-
-+ Enterprise Integration Pattern
