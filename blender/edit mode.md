@@ -32,6 +32,18 @@
 + 分离借形
     + 选中面 + `shift + d` + `esc` + RMB->分离 + `/` + `e`挤出
 
++ 变化轴心点(顶部坐标轴旁边
+    + 质心
+        + 按照点的数量计算
+        + 移动时的点
+    + 边界框
+        + 边界框的中心
+        + 显示边界框
+            + object properties->view port display->bounds
+    + 游标
+        + 可以指定位置
+
+
 
 ## options
 + proportional editing(top)
@@ -43,3 +55,6 @@
     + 间隔弃选
 
 +  表面吸附（top，磁铁图标）
+
++ 选中元素，活动元素
+    + 最后选中的是活动元素（红色）
