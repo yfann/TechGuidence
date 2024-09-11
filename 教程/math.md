@@ -17,5 +17,9 @@
 + [The art of linear algebra](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/The-Art-of-Linear-Algebra.pdf)
 + [Calculus with Julia](https://jverzani.github.io/CalculusWithJuliaNotes.jl/)
 
+
+## 微积分
++ [calculus_beginners](https://math.mit.edu/~djk/calculus_beginners/)
+
 ## video
 + 
