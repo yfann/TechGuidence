@@ -7,3 +7,4 @@
 + [bandwhich](https://github.com/imsnif/bandwhich)
     + 命令行查看占用带宽
 
++ [Things You Didn't Know About GNU Readline](https://twobithistory.org/2019/08/22/readline.html)
