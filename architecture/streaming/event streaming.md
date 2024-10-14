@@ -35,6 +35,12 @@
 
 + CDC(change data capture)
     + which is the process of observing all data changes written to a database and extracting them in a form in which they can be replicated to other systems.
+    + Change data capture is a mechanism for ensuring that all changes made to the system of record are also reflected in the derived data systems so that the derived systems have an accurate copy of the data.
+    + implement
+        + leader and followers db + message broker
+        + PostgreSQL CDC
+            + decode write-ahead log
+        + snapshot
 
     
 ## issues
