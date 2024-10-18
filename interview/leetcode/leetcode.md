@@ -8,3 +8,4 @@
 + [《LeetCode题解》](https://siddontang.gitbooks.io/leetcode-solution/content/)
 + [geekxh/hello-algorithm](https://github.com/geekxh/hello-algorithm)
 
++ [熟能生巧 – 刷题的一些技巧的经验之谈](https://justyy.com/archives/44858)
