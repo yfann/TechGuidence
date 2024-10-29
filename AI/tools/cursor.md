@@ -1,10 +1,11 @@
 
 ## cmd
-+ `ctrl + l`
+
++ chat: `ctrl + l`
     + `@Folders`
     + `@Git`
     + `@Codebase`
-+ `ctrl + k`
++ generate: `ctrl + k`
     + `@File`
     + `@Code`
     + `@Web`

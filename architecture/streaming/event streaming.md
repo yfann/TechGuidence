@@ -41,6 +41,9 @@
         + PostgreSQL CDC
             + decode write-ahead log
         + snapshot
+    + kafka connect
+        + 用于kafka和数据源和数据目标间的集成
+        + Kafka Connectis an effort to integrate change data capture tools for a wide range of database systems with Kafka. 
 
     
 ## issues
