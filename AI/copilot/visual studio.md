@@ -31,6 +31,16 @@
 + `in my @workspace where is #CustomAdd`
 
 
+## proxy
+<!-- C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe.config -->
+```xml
+    <system.net>
+      <defaultProxy useDefaultCredentials="true" enabled="true">
+		     <proxy bypassonlocal="true" proxyaddress="http:/xxxx:xx" />
+	    </defaultProxy>
+    ...
+```
+
 ## tips
 + 右键->ask copilot
 
