@@ -24,3 +24,7 @@
     + ./target/debug
 
 + 优化编译速度
+
+## ref
++ [指定依赖项](https://course.rs/cargo/reference/specify-deps.html)
++ [标准的 Package 目录结构](https://course.rs/cargo/guide/package-layout.html)
