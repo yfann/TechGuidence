@@ -60,3 +60,9 @@ println!("{}", s); // 将打印 `hello, world!`
 ```rust
 let s = "hello" //类型 &str
 ```
+
+## tips
++ char是Unicode类型
+    + 4字节
++ string是UTF-8
+    + 每个字符（1-4）字节
