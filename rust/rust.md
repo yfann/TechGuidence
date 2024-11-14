@@ -19,6 +19,27 @@
             + 另一个指针 vptr 指向一个虚表 vtable,vtable 中保存了实现特征的方法
 
 
+## tips
++ `new`不是关键字，一般用作关联函数名用于新建对象
++ `prelude` 简化了use操作
++ `&` 引用，借用
++ `*` 解引用
++ `Deref` 用于解引用的trait
+    + `DerefMut`可变版本
+    + 将智能指针类型解引用为其内部的数据类型
+    + 对实现了Deref的类型使用`*`,会自动调用deref方法,从而获取该类型内部的数据的引用
+```rust
+pub trait Deref {
+    type Target: ?Sized;
+
+    fn deref(&self) -> &Self::Target;
+}
+```
+
++ 自动解引用
+    + 如果有一个 Box<String> 类型的变量，在调用 box_str.len() 时，Rust 会自动将 Box<String> 解引用为 String，然后调用 String 的 len 方法。
+
+
 ## ref
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
 + [rust course](https://github.com/sunface/rust-course)

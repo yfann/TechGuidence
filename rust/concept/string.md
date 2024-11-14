@@ -1,4 +1,19 @@
 
+## string
++ String
+    + 堆中存储
+```rust
+let mut s = String::from("hello");
+s.push_str(", world!"); // push_str() 在字符串后追加字面值
+println!("{}", s); // 将打印 `hello, world!`
+```
+
++ 字面量
+    + 硬编码进程序里的字符串值
+```rust
+let s = "hello" //类型 &str
+```
+
 ## slice
 + 类型： `&str`
 ```rust
@@ -23,12 +38,13 @@ String::from("hello,world")
 + String to &str
     + deref 隐式强制转换
 ```rust
-fn main() {
-    let s = String::from("hello,world!");
-    say_hello(&s);
-    say_hello(&s[..]);
-    say_hello(s.as_str());
-}
+
+let s = String::from("hello,world!");
+//转&str
+say_hello(&s);
+say_hello(&s[..]);
+say_hello(s.as_str());
+
 
 fn say_hello(s: &str) {
     println!("{}",s);

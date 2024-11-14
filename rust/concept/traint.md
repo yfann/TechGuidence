@@ -130,5 +130,22 @@ fn main() {
     + 方法的返回类型不能是 Self
     + 方法没有任何泛型参数
 
+
+## 关联类型
+```rust
+impl Iterator for Counter {
+    type Item = u32;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        // --snip--
+    }
+}
+
+fn main() {
+    let c = Counter{..}
+    c.next()
+}
+```
+
 ## ref
 + [派生特征 trait](https://course.rs/appendix/derive.html)
