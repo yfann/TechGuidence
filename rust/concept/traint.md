@@ -147,5 +147,11 @@ fn main() {
 }
 ```
 
+
+## trait list
++ `From`
+    + 把一个类型转为另一个类型
+
+
 ## ref
 + [派生特征 trait](https://course.rs/appendix/derive.html)
