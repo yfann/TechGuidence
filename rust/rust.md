@@ -39,7 +39,17 @@ pub trait Deref {
 + 自动解引用
     + 如果有一个 Box<String> 类型的变量，在调用 box_str.len() 时，Rust 会自动将 Box<String> 解引用为 String，然后调用 String 的 len 方法。
 
++ `::`
+    + 路径访问
+    + `::`开头表示根模块开始
 
+
++ Self:类型
+    + self: 实例，所有权转移
+    + &self: 实例，不可变借用
+    + &mut self: 实例，可变借用
+
+    
 ## ref
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
 + [rust course](https://github.com/sunface/rust-course)
