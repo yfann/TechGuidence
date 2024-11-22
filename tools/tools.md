@@ -19,3 +19,7 @@
 
 <!-- ide -->
 + zed
+
+
+<!-- homelab -->
++ [myspeed](https://github.com/gnmyt/myspeed)

@@ -49,6 +49,9 @@ pub trait Deref {
     + &self: 实例，不可变借用
     + &mut self: 实例，可变借用
 
++ DST（动态大小类型）
+    + 编译时无法知道大小的类型
+
     
 ## ref
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)

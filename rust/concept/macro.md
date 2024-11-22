@@ -55,6 +55,7 @@ let v: Vec<u32> = vec![1, 2, 3];
 ### [derive]
 + 为目标结构体或枚举派生指定的代码
 + 包名以`_derive`做结尾
++ 只能在struct/enum/union上
 ```rust
 // xxx_derive/Cargo.toml
 [lib]
@@ -66,15 +67,25 @@ quote = "1.0"
 
 ```
 
-+ 类属性宏(Attribute-like macro)
-    + 为目标添加自定义的属性
-+ 类函数宏(Function-like macro)
+### 类属性宏(Attribute-like macro)
++ 为目标添加自定义的属性
++ 可以加在fn上
+
+### 类函数宏(Function-like macro)
+
+## built-in macro
++ `stringify!`
+    + 表达式转换成字面量
+
+
 
 ## tips
 + `cargo install cargo-expand`
-    + 展开调试宏
+    + `cargo expand --bin hello_macro`
+        + 展开调试宏
 
 ## ref
 + [rust macro](https://doc.rust-lang.org/std/macro.dbg.html)
 + [Macros By Example](https://doc.rust-lang.org/reference/macros-by-example.html)
 + [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
++ [macro](https://course.rs/advance/macro.html)
