@@ -55,11 +55,10 @@ let user2 = User {
 ## tuple struct
 + 字段没有名称的结构体
 ```rust
-    struct Color(i32, i32, i32);
-    struct Point(i32, i32, i32);
+struct Color(i32, i32, i32);
+let black = Color(0, 0, 0);
 
-    let black = Color(0, 0, 0);
-    let origin = Point(0, 0, 0);
+// black.0
 
 ```
 
