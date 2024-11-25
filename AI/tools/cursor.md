@@ -4,7 +4,7 @@
 + tab
 
 ## cmd
-
++ `ctrl/cmd + y` use selected
 + `ctrl + l` chat
     + `@Folders`
     + `@Git`
@@ -17,6 +17,7 @@
     + `@Docs`
     + `@Definitions`
     + `@Chat`
+
 <!-- Composer -->
 + `ctrl[cmd] + i`
 + `ctrl[cmd] + shift + i`
