@@ -148,7 +148,7 @@ pub fn eat_at_restaurant() {
     + `use std::collections::*;`
         + 引入模块下的所有pub项
 
-+ 
++ use可以在funcion中声明
 
 ## tips
 + 包是模块树 
