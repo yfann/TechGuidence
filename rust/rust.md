@@ -77,3 +77,10 @@ pub trait Deref {
 
 <!-- install -->
 + [WSL安装Rust开发环境](http://www.voycn.com/article/wslanzhuangrustkaifahuanjing)
++ [《Command-Line Rust》](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html#id3)
+
+
+
+<!-- docs -->
++ [std](https://doc.rust-lang.org/stable/std/index.html)
++ [crate](https://docs.rs/)

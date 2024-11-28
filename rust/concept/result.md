@@ -29,6 +29,8 @@ fn main() {
 ```
 
 ## error直接panic
++ unwrap()
++ expect()
 + 快速写原型时使用
 
 ```rust
