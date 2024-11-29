@@ -24,6 +24,7 @@
 
 + `cargo run` run project under project folder
     + `cargo run --release`
+    + `cargo run -- <args>`
 
 + `cargo build` 默认debug
     + `cargo build --release`
@@ -34,6 +35,8 @@
     + `cargo update -p <package ID>`只更新特定依赖
 
 + `cargo test`
+
++ `cargo add <pkg>`
 
 ## dependencies
 

@@ -111,3 +111,5 @@
 <!-- install -->
 + [iTerm2](https://www.iterm2.com/)
 + [powerline](https://powerline.readthedocs.io/en/latest/installation.html)
+
++ [iterm2 status bar](https://wompa.land/articles/iterm-status-bar)
