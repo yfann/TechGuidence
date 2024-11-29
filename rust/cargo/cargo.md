@@ -25,6 +25,8 @@
 + `cargo run` run project under project folder
     + `cargo run --release`
     + `cargo run -- <args>`
+    + `cargo run --bin <app name>`
+        + 如果一个项目有多个可执行bin
 
 + `cargo build` 默认debug
     + `cargo build --release`
