@@ -21,5 +21,5 @@
 ## 微积分
 + [calculus_beginners](https://math.mit.edu/~djk/calculus_beginners/)
 
-## video
-+ 
+## 概率
++ [看见概率论](https://probability.visualized.fun/)

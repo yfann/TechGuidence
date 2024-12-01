@@ -24,6 +24,9 @@
 
 + `cargo run` run project under project folder
     + `cargo run --release`
+    + `cargo run -- <args>`
+    + `cargo run --bin <app name>`
+        + 如果一个项目有多个可执行bin
 
 + `cargo build` 默认debug
     + `cargo build --release`
@@ -34,6 +37,8 @@
     + `cargo update -p <package ID>`只更新特定依赖
 
 + `cargo test`
+
++ `cargo add <pkg>`
 
 ## dependencies
 
@@ -57,6 +62,14 @@ crate1 = { path = "../crate1" }
     + 如果是virtual manifest，则选择workspace下的所有package
         + `default-members` 可以指定默认的packages
 
+
+## cargo proxy
++ `~/.cargo/config.toml`
+```toml
+[http]
+proxy = "http://xxxx"
+```
+
 ## tips
 + 默认debug模式，编译快
     + ./target/debug
@@ -72,3 +85,4 @@ crate1 = { path = "../crate1" }
 ## ref
 + [指定依赖项](https://course.rs/cargo/reference/specify-deps.html)
 + [标准的 Package 目录结构](https://course.rs/cargo/guide/package-layout.html)
++ [The cargo book](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)

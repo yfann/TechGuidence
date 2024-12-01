@@ -18,19 +18,22 @@
         + vptr
             + 另一个指针 vptr 指向一个虚表 vtable,vtable 中保存了实现特征的方法
 
-## 操作符
+## keyword
 + `&` 引用，借用
-+ `*` 解引用
-    + 对`&x`取值
+
++ `*` 
+    + 解引用对`&x`取值
+    + 裸指针定义的一部分
 
 
 + `::`
     + 路径访问
     + `::`开头表示根模块开始
-
-+ 优先级
     + `::`优先于`&`
         + `&Self::Target`
+
++ `extern`
+    + 声明外部函数或静态变量
 
 ## tips
 + `new`不是关键字，一般用作关联函数名用于新建对象
@@ -74,3 +77,10 @@ pub trait Deref {
 
 <!-- install -->
 + [WSL安装Rust开发环境](http://www.voycn.com/article/wslanzhuangrustkaifahuanjing)
++ [《Command-Line Rust》](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html#id3)
+
+
+
+<!-- docs -->
++ [std](https://doc.rust-lang.org/stable/std/index.html)
++ [crate](https://docs.rs/)
