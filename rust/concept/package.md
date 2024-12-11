@@ -153,6 +153,17 @@ pub fn eat_at_restaurant() {
 ## tips
 + 包是模块树 
 
++ 创建模块
+    + 代码块中`mod`定义
+    + 单个rust文件定义
+        + 单个文件是一个模块
+        + 可以导入其他文件模块
+    + 文件夹定义
+        + `mod.rs`
+            + 文件夹可以包含多个rust文件，每个rust文件是一个单独的模块
+            + 需要暴露的模块都可以导出到`mod.rs`中
+        
+
 ## ref
 + [prelude](https://doc.rust-lang.org/std/prelude/index.html)
 + [](lib.rs)
