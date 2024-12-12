@@ -14,3 +14,7 @@
 
 <!-- 数据集 -->
 + MNIST
+
+<!-- IDE -->
++ [windsurf](https://codeium.com/windsurf)
+    + Claude 3.5 Sonnet
