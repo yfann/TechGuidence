@@ -21,6 +21,7 @@
 + function calling
     + search internet
 + react prompting
++ CO-STAR框架
 
 ## ref
 + [](https://github.com/Tang-Lab-super/ChatGPT-prompt)
