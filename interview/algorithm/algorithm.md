@@ -6,3 +6,6 @@
 + [看动画轻松理解时间复杂度（二）](https://www.cxyxiaowu.com/1984.html)
 + [算法复杂度速查表](https://mp.weixin.qq.com/s?__biz=MzUyNjQxNjYyMg==&mid=2247486565&idx=3&sn=28bc1c28f58cb3127638826a341d66cb&chksm=fa0e63e4cd79eaf200f617247927d83ef229385d42790e58ddf7cff004b226e9fb499d554fe2&scene=21#wechat_redirect)
 + [这或许是东半球分析十大排序算法最好的一篇文章](https://www.cxyxiaowu.com/725.html)
+
+
++ [面试指南之算法面试心得](https://javayhu.com/2016-nian-mian-shi-zhi-nan-zhi-suan-fa-mian-shi-xin-de/)
