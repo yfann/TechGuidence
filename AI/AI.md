@@ -30,3 +30,12 @@
 + retrieval augented generation(RAG)
     + 对专业问题，可以搜索网络或资料库获取外部信息
     + 结合生成式模型
++ hyperparameter
+    + 设置参数
++ overfitting
+    + 训练成功，测试失败 
++ self-supervised learning
+    + 不需要人工介入
+    + 自动网络爬资料
++ Model size
+    + 参数量
