@@ -16,3 +16,6 @@
 ## others
 + [](https://github.com/Orenoid/BabelDuck)
     + 英文口语练习
++ [AI生成涂色书](https://zcoloring.com/)
++ [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
+    
