@@ -7,10 +7,7 @@
 
 
 
-## tips
-+ vite
-    + 开发工具
-    + ESM原生模块加载，代替打包
+
 
 ## ref
 + [vuejs](https://cn.vuejs.org/guide/introduction.html)
