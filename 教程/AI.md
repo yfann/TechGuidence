@@ -13,5 +13,10 @@
 + [deeplearningbasics](https://github.com/PingNie1/deeplearningbasics)
 
 
-<!-- AI -->
+## AI
 + [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)
++ [生成式AI導論 2024](https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI)
+
+
+## python
++ [How to Think Like a Computer Scientist: Interactive Edition](https://levjj.github.io/thinkcspy/)

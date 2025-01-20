@@ -56,3 +56,10 @@
 + reward model(回馈模型)
     + 对回答评分
         
++ AR(AUtoregressive Generation)
+    + 文字接龙
++ NAR(Non-autoregressive Generation)
+    + 各个位置并行输出
+    + 图片生成
+    + 品质低
+        + 需要过多遍NAR
