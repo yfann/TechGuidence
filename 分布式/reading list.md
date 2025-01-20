@@ -4,7 +4,7 @@
 
 + [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability)
 + [求大佬推荐学习分布式系统和分布式存储相关的书？](https://www.zhihu.com/question/439289634/answer/2673812365)
-
++ [用谁都能看懂的方法解释分布式系统](https://zhuanlan.zhihu.com/c_158208519)
 
 
 <!-- pattern -->
