@@ -39,3 +39,20 @@
     + 自动网络爬资料
 + Model size
     + 参数量
+日5为3
++ training
+    1. pre-train
+        + self-supervised learning
+        + 初始化参数  
+    2. instruction fine-tuning(alignment)
+        + supervised learning
+            + 需要人工标注
+        + 过程好不好
+    3. RLHF(Reinforcement learning)增强式学习(alignment)
+        + PPO(Proximal policy optimization)
+        + 生成的结果是否好
+            + 多出现人觉得好的答案
+
++ reward model(回馈模型)
+    + 对回答评分
+        
