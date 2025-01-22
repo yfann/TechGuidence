@@ -9,7 +9,8 @@
 
 
 
-
+## tools
++ vscode + vue official
 
 ## ref
 
