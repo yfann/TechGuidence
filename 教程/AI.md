@@ -16,7 +16,9 @@
 ## AI
 + [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)
 + [生成式AI導論 2024](https://www.youtube.com/playlist?list=PLJV_el3uVTsPz6CTopeRp2L2t4aL_KgiI)
-
-
++ [Stanford CS224n NLP with Deep Learning [Priority: HIGH]](https://www.youtube.com/watch?v=rmVRLeJRkl4&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4)
++ [Stanford CS231n Convolutional Neural Networks for Visual Recognition [Priority: MIDDLE]]( https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLSVEhWrZWDHQTBmWZufjxpw3s8sveJtnJ)
++ [Stanford CS236 Deep Generative Models [Priority: MIDDLE]]( https://www.youtube.com/watch?v=XZ0PMRWXBEU&list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8)
++ [Stanford CS224w Machine Learning with Graphs [Priority: LOW]](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp)
 ## python
 + [How to Think Like a Computer Scientist: Interactive Edition](https://levjj.github.io/thinkcspy/)

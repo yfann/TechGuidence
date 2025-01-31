@@ -55,6 +55,20 @@
 
 + `@url`
 
+## chat
++ 知道当前打开的代码文件和指针所在位置的代码
+    + 可以用this
++ `cmd + shift + l` or `@`
+    + 发送特定代码
++ `cmd + enter` or `@Codebase`
+    + chat with entire codebase
++ `@web`
+    + search internet
++ `@LibraryName` or `@Docs`
+    + add library or new docs
+
+## composer(agent)
+
 ## proxy
 + General->Editor-> search proxy
     + disable http2
@@ -68,6 +82,9 @@
     + 为代码库建立索引
     + cursor settings->Features->Codebase Indexing
 + cursor settings->general->privacy mode
++ 常用文档链接加入doc中
++ 多使用`@Codebase`，cursor会经常不熟悉本地代码
++ 超过免费期限后，删除账号重新登入
 
 ## ref
 + [cursor](https://jstoppa.com/posts/artificial-intelligence/fundamentals/code-smarter-not-harder-developing-with-cursor-and-claude-sonnet/post/)
