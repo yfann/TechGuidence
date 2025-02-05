@@ -1,9 +1,14 @@
-+ 训练AI的手段
-    + 机器学习(machine learning)
-        + 深度学习（deep learning）
 
-+ neural network(模型)
-    + transformer
+# AI
+
++ AI
+    + ML
+        + Deep learning
+            + neural network
+                + transformer
+                    + GPT4
+
+
 
 
 ## tips
