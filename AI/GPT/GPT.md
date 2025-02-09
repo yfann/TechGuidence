@@ -1,11 +1,38 @@
-# GPT
-+ CV(Computer Vision)
-    + CNN
-    + AlexNet
-+ NLP
-    + Transformer
-    + ChatGPT
+# GPT(generative pre-trained transformers)
 
++ NLP演化
+    + n-grams->RNNs and LSTMs->Transformers->LLMs
+
++ transformer
+    + encoder
+    + attention
+    + decoder
+
++ 组成
+    + self attention
+    + decoder only
+        + 生成输出
+    + embedding layer
+        + token->vector
+
++ process
+    + tokenization
+    + embedding
+    + decoder
+    + Autoregressive Generation（自回归生成）
+        + 依赖
+            + 因果注意力（Causal Attention）
+                + self-attention只能看到之前的token，不能看到未来的token
+        + token一个一个生成，生成的token做为下个token的输入
+            
++ SFT(supervised fine-tuning)
+    + 人来回答问题，用结果集训练
+
++ RLHF(reinforcement learning from human feedback)
+    + RM(reward model)
+        + 对SFT model生成的答案打分
+    + reinforcement learning
+    
 ## 语言模型
 + N-Gram
     + 一个词出现的频率和前面N-1个词相关

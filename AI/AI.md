@@ -9,7 +9,9 @@
                     + GPT4
 
 
-
++ CV(Computer Vision)
+    + CNN
+    + AlexNet
 
 ## tips
 + 生成式AI
