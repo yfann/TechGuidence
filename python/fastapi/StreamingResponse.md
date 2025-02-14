@@ -46,6 +46,25 @@ def download_file():
 ## 原理
 + 服务器异步迭代数据，每次发送一个 chunk，直到数据流结束。
     + async generator
-    + HTTP Chunked Transfer Encoding
+        + 异步环境生成数据，不阻塞事件循环
+        + `async for`遍历`async yield`生成的数据
+    + HTTP Chunked Transfer Encoding（分块传输编码）
         + header: 
             + Transfer-Encoding: chunked
+        + 不需要计算Content-length
++ code
+```python
+import asyncio
+
+async def async_generator():
+    for i in range(5):
+        await asyncio.sleep(1)  # 模拟异步 I/O
+        yield i  # 逐步返回数据
+
+async def main():
+    async for num in async_generator():  # 异步遍历
+        print(num)
+
+asyncio.run(main())
+
+```
