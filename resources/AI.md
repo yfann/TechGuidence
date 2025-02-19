@@ -20,6 +20,8 @@
 + [Perplexica](https://github.com/ItzCrazyKns/Perplexica)
     + opensource version of perplexity
 + [Clarity AI](https://github.com/mckaywrigley/clarity-ai)
++ [deep-searcher](https://github.com/zilliztech/deep-searcher)
+    + private data search
 
 ## 知识库
 + [rag-web-ui](https://github.com/rag-web-ui/rag-web-ui)
