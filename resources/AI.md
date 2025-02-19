@@ -1,6 +1,7 @@
 ## ai image
-<!-- text 2 img -->
+## image
 + [https://bylo.ai/](https://bylo.ai/)
+    + text 2 img
 
 
 + [color-diffusion](https://github.com/ErwannMillon/Color-diffusion)
@@ -15,6 +16,19 @@
 
 ## ai search
 + [](https://onionai.so/)
++ [perplexity](https://www.perplexity.ai/discover)
++ [Perplexica](https://github.com/ItzCrazyKns/Perplexica)
+    + opensource version of perplexity
++ [Clarity AI](https://github.com/mckaywrigley/clarity-ai)
+
+## 知识库
++ [rag-web-ui](https://github.com/rag-web-ui/rag-web-ui)
+    + 本地知识库搭建，基于rag
+
+## IDE
++ [windsurf](https://codeium.com/windsurf)
+    + Claude 3.5 Sonnet
++ cursor
 
 
 ## others
