@@ -90,3 +90,4 @@
 + [cursor](https://jstoppa.com/posts/artificial-intelligence/fundamentals/code-smarter-not-harder-developing-with-cursor-and-claude-sonnet/post/)
 + [https://cursor.directory/](https://cursor.directory/)
 + [Cursor使用指南](https://zhuanlan.zhihu.com/p/11597402899)
++ [template](https://github.com/ansh/template-2/tree/main)
