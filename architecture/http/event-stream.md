@@ -36,6 +36,31 @@ eventSource.onmessage = (event) => {
     + 场景
         + 大文件，优化响应
 
+## 超时处理
++ 客户端重连(会丢数据)
+```js
+eventSource.onerror = () => {
+    console.log("SSE 连接错误，尝试重连...");
+    setTimeout(() => {
+        eventSource.close();
+        eventSource = new EventSource("/stream");  // 重新连接
+    }, 3000);  // 3 秒后重试
+};
+
+```
+
++ 发送heartbeat
+```py
+async def event_stream():
+    while True:
+        task = asyncio.create_task(getdata())  # 异步任务执行 getdata()
+        while not task.done():  # 任务未完成，发送心跳
+            yield ":ping\n\n"
+            await asyncio.sleep(5)  # 每 5 秒发送一次心跳
+
+        result = await task  # 任务完成，获取数据
+        yield f"data: {result}\n\n"  # 发送正常数据
+```
 ## ref
 + [EventSource](https://developer.mozilla.org/en-US/docs/Web/API/EventSource)
 + [Using server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
