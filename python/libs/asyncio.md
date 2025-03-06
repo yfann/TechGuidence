@@ -1,5 +1,11 @@
 # asyncio 
 
+## await
++ 挂起当前协程，释放 CPU 控制权
+    + 当 await 的异步操作完成时，当前协程会恢复执行，继续往下运行，直到再次遇到 await 或执行完成。
++ 当 await 处于嵌套结构时，每一层 await 遇到异步任务都会 挂起当前协程，直到内层 await 完成，外层协程才能恢复执行。
+    + 嵌套 await 会逐层挂起，直到最深层任务完成后逐层恢复
++ 事件循环会调度下一个可执行的任务，通常是下一个 await 任务，或者其他等待执行的任务
 
 ## asyncio.sleep()
 + 异步非阻塞
@@ -51,6 +57,9 @@
         + 可能阻塞
         + 线程
 
+## Coroutine
++ `async def`开启一个协程
+
 ## python协程(Coroutine) VS 线程
 
 + Coroutine
@@ -75,6 +84,30 @@
     + 同步IO
         + 文件或数据库读取   
 
+## 协程并发
+
++ asyncio.create_task() 
+    + 创建一个后台运行的任务，立即调度执行
+    + await task
+        + 手动等待
+    
++ asyncio.gather()
+    + 并发执行
+    + 收集他们的返回结果
+    + 会自动等待所有协程返回
+```py
+    await asyncio.gather(task1(), task2())
+```
+
+## asyncio.Queue
++ 线程安全，异步队列
++ coroutine之间的数据通信
+    + 如果队列满了，`await queue.put(1)` 会等待直到有空位。
+    + 如果队列空了，`data = await queue.get()` 会等待直到有新数据。
++ queue.task_done() 
+    + queue.get()取出数据后，queue.task_done()标记task完成, queue.join()才能知道任务完成 
+    + queue.join()等待所有任务完成，然后继续执行
+        + 任务多少根据queue.put()的数量来定
 ## tips
 + 异步阻塞
     + async中使用了time.sleep(),会阻塞整个事件循环
