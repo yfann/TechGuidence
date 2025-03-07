@@ -1,5 +1,5 @@
+
 ## ai image
-## image
 + [https://bylo.ai/](https://bylo.ai/)
     + text 2 img
 
@@ -39,7 +39,20 @@
 + [windsurf](https://codeium.com/windsurf)
     + Claude 3.5 Sonnet
 + cursor
++ trae
 
+
+## ai ocr
++ [olmocr](https://github.com/allenai/olmocr)
+
+
+## data analyze
++ [probly](https://github.com/PragmaticMachineLearning/probly)
+    + ai电子表格，可用python编码
+
+
+## ai播客
++ [hacker-news](https://github.com/ccbikai/hacker-news?tab=readme-ov-file)
 
 ## others
 + [AI生成涂色书](https://zcoloring.com/)
