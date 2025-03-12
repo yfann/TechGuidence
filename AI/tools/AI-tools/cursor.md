@@ -1,7 +1,12 @@
 
 # cursor
 
-+ tab
++ `tab`
+
++ `ctrl + k`
+    + inline edit
+
+
 
 ## cmd
 + `ctrl/cmd + y` use selected
@@ -70,8 +75,9 @@
 ## composer(agent)
 
 ## proxy
-+ General->Editor-> search proxy
++ file>preferences>cursor settings>General->Editor-> search proxy
     + disable http2
+        + for inline edits
 
 
 ## .cursorignore

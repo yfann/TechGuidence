@@ -54,6 +54,14 @@
 ## ai播客
 + [hacker-news](https://github.com/ccbikai/hacker-news?tab=readme-ov-file)
 
+
+## ai coding
++ figma to code
++ cursor
++ trae
++ windsurf
++ vscode + cline
+
 ## others
 + [AI生成涂色书](https://zcoloring.com/)
 + [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
