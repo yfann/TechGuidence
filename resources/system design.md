@@ -15,6 +15,13 @@
 + [system-design-101](https://zhuanlan.zhihu.com/p/665637912)
 + [system design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
 + [system-design-primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
++ [系统设计面试：内幕指南](https://learning-guide.gitbook.io/system-design-interview)
++ [system-design-primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md#%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%BC%95)
++ [深入高可用系统原理与设计](https://www.thebyte.com.cn/)
+<!-- System Design -->
++ [Grokking System Design Interview](https://github.com/Jeevan-kumar-Raj/Grokking-System-Design)
++ [System Design Interview An Insider’s Guide by Alex Xu (z-lib.org).pdf](https://github.com/G33kzD3n/Catalogue/blob/master/System%20Design%20Interview%20An%20Insider%E2%80%99s%20Guide%20by%20Alex%20Xu%20(z-lib.org).pdf)
+
 
 
 ## log system
