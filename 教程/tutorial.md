@@ -17,4 +17,4 @@
 
 
 ## other resources
-+ [public api](https://github.com/public-apis/public-apis)
++ [PowerCert Animated Videos](https://www.youtube.com/c/PowerCertAnimatedVideos)
