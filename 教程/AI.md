@@ -20,5 +20,7 @@
 + [Stanford CS231n Convolutional Neural Networks for Visual Recognition [Priority: MIDDLE]]( https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLSVEhWrZWDHQTBmWZufjxpw3s8sveJtnJ)
 + [Stanford CS236 Deep Generative Models [Priority: MIDDLE]]( https://www.youtube.com/watch?v=XZ0PMRWXBEU&list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8)
 + [Stanford CS224w Machine Learning with Graphs [Priority: LOW]](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp)
++ [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
+
 ## python
 + [How to Think Like a Computer Scientist: Interactive Edition](https://levjj.github.io/thinkcspy/)
