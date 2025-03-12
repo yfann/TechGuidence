@@ -24,3 +24,4 @@
 
 ## python
 + [How to Think Like a Computer Scientist: Interactive Edition](https://levjj.github.io/thinkcspy/)
+
