@@ -17,9 +17,7 @@
 + [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
 + [The System Design Primer](https://github.com/donnemartin/system-design-primer)
 
-<!-- System Design -->
-+ [Grokking System Design Interview](https://github.com/Jeevan-kumar-Raj/Grokking-System-Design)
-+ [System Design Interview An Insider’s Guide by Alex Xu (z-lib.org).pdf](https://github.com/G33kzD3n/Catalogue/blob/master/System%20Design%20Interview%20An%20Insider%E2%80%99s%20Guide%20by%20Alex%20Xu%20(z-lib.org).pdf)
+
 
 <!-- portal -->
 + [geekforgeeks](https://www.geeksforgeeks.org/)

@@ -1,0 +1,8 @@
++ [underscore](https://underscorejs.org/docs/underscore.html)
++ [ECMAScript 6入门](http://es6.ruanyifeng.com/#docs)
++ [jquery源码解读](https://github.com/chokcoco/jQuery-)
++ [h5](https://github.com/CNFED/awesome-html5#%E7%BD%91%E7%AB%99%E4%B8%8E%E8%B5%84%E6%BA%90)
++ [CANVAS](https://airingursb.gitbooks.io/canvas/content/index.html)
++ [JS 函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/ch1.html)
++ [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/index.html)
++ [Thinking in Microfrontend](https://github.com/phodal/microfrontends)
