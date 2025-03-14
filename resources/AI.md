@@ -62,6 +62,9 @@
 + windsurf
 + vscode + cline
 
+## 3d
++ [blender mcp](https://github.com/ahujasid/blender-mcp)
+
 ## others
 + [AI生成涂色书](https://zcoloring.com/)
 + [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
