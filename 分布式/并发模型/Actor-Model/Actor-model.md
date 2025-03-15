@@ -13,3 +13,4 @@
 ## ref
 + [What problems does the actor model solve?](https://getakka.net/articles/intro/what-are-actors.html)
 + [The actor model in 10 minutes](https://www.brianstorti.com/the-actor-model/)
++ [akka](https://guobinhit.github.io/akka-guide/)
