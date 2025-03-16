@@ -1,6 +1,11 @@
 
 
-## Cline+vscode
+## Cline
++ vscode extention
+
+## setting
++ API Provider: OpenRouter
++ Model: deepseek/deepseek-chat:free
 
 
 ## ref
