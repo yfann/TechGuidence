@@ -40,3 +40,4 @@
 
 ## ref
 + [browser-tools-mcp](https://github.com/AgentDeskAI/browser-tools-mcp)
++ [MCP是啥？技术原理是什么？一个视频搞懂MCP的一切。Windows系统配置MCP，Cursor Cline使用MCP](https://www.bilibili.com/video/BV1AnQNYxEsy/?spm_id_from=333.1391.0.0&vd_source=d3c0a53193a65728ad278e633b3790e5)
