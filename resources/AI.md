@@ -78,5 +78,3 @@
     + chrome 插件，youtube总结和字幕
 + [vocabulary-book-by-deepseek](https://github.com/vxiaozhi/vocabulary-book-by-deepseek?tab=readme-ov-file)
     + 四级词库
-+ [markpdfdown](https://github.com/jorben/markpdfdown)
-    + PDF 2 markdown
