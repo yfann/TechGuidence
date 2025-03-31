@@ -4,6 +4,8 @@
 ## nonfunctional requirements
 + Reliability
     + fault-tolerant
+        + test
+            + Chaos Monkey
 + Scalability
     + scaling up
         + shared-memory architecture
