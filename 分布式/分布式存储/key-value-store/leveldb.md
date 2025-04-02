@@ -71,6 +71,9 @@ struct ParsedInternalKey {
 ## tips
 + 数据查找
     + memtable -> immutable memtable -> L0 -> L1 -> L2 ...
++ atomic updates
+    + writebatch
++ each file stores a sequence of compressed blocks
 
 ## ref
 + [leveldb](https://github.com/google/leveldb)

@@ -10,6 +10,11 @@
 <!-- 概率 -->
 + introduction to probability I and II
 
++ Mathematics for Machine Learning
++ 我的数学分析积木
++ 线性代数的艺术
+    + [](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra/blob/main/The-Art-of-Linear-Algebra.pdf)
+
 ## ebook
 + [鸢尾花书](https://github.com/Visualize-ML)
 + [Math for programmers](https://wangwei1237.github.io/shares/Math-for-Programmers.pdf)
