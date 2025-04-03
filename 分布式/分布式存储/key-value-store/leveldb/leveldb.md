@@ -1,6 +1,12 @@
 # levelDB
 + 使用LSM(log-structured Merge)
 + 可嵌入的key value存储
++ 数据查找
+    + memtable -> immutable memtable -> L0 -> L1 -> L2 ...
++ atomic updates
+    + writebatch
++ each file stores a sequence of compressed blocks
++ 日志保证原子性
 
 ## LRU（Least Recently Used）Cache 
 + 一种缓存策略，它用于在存储空间有限的情况下高效地管理数据，确保缓存中始终保留最近使用的数据，同时淘汰最久未使用的数据。
@@ -68,17 +74,13 @@ struct ParsedInternalKey {
 + 读操作与后台compaction并发控制，compaciton需要回收老的sstable file，读操作可能正在使用该file，阻塞compaction不是好的手段。由于sstable file天然就是多版本的，采用类似事务读写并发控制中MVCC方式，延迟table file的回收时间，等待所有读操作结束再尝试prune掉table file
 + immutable memtable，类似于double buffer，后台定期dump imm_，有效缓解阻塞前台写的可能性
 
-## tips
-+ 数据查找
-    + memtable -> immutable memtable -> L0 -> L1 -> L2 ...
-+ atomic updates
-    + writebatch
-+ each file stores a sequence of compressed blocks
 
 ## ref
 + [leveldb](https://github.com/google/leveldb)
-+ [leveldb-handbook](https://leveldb-handbook.readthedocs.io/zh/latest/basic.html)
 
++ [leveldb-handbook](https://leveldb-handbook.readthedocs.io/zh/latest/basic.html)
 + [透过leveldb感悟存储工程实践](https://zhuanlan.zhihu.com/p/516566364)
 + [深入理解leveldb：数据存储模型](https://zhuanlan.zhihu.com/p/523551998)
 + [深入理解leveldb：读写流程](https://zhuanlan.zhihu.com/p/531933689)
+
++ [leveldb源码分析](https://github.com/balloonwj/CppGuide/blob/master/articles/leveldb%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/README.md)
