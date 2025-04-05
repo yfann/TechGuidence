@@ -8,11 +8,7 @@
 + each file stores a sequence of compressed blocks
 + 日志保证原子性
 
-## LRU（Least Recently Used）Cache 
-+ 一种缓存策略，它用于在存储空间有限的情况下高效地管理数据，确保缓存中始终保留最近使用的数据，同时淘汰最久未使用的数据。
-+ 实现：
-    + 哈希表（HashMap）：用于 O(1) 时间复杂度快速查找缓存中的数据。
-    + 双向链表（Doubly Linked List）：用于维护数据的访问顺序，最近使用的数据移动到链表头部，最久未使用的数据在链表尾部，方便 O(1) 时间复杂度进行删除操作。
+
 
 
 ## redo log
