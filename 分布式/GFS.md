@@ -49,5 +49,9 @@ GFS 提供 弱一致性（relaxed consistency），其关键特性如下：
 + 出现硬件故障时，只需修复受影响的 chunk，而不必重建整个文件
 + Chunk 较大（64MB）意味着一个文件只包含少量 chunk，即使是大文件
 
+
+## tips
++ 记录追加（record append）操作则保证多客户端并发操作是原子的。
+
 ## ref
-+ []()
++ [Paper Notes: The Google File System](https://distributed-computing-musings.com/2023/07/paper-notes-the-google-file-system/)
