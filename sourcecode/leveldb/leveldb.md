@@ -80,3 +80,7 @@ struct ParsedInternalKey {
 + [深入理解leveldb：读写流程](https://zhuanlan.zhihu.com/p/531933689)
 
 + [leveldb源码分析](https://github.com/balloonwj/CppGuide/blob/master/articles/leveldb%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/README.md)
+ [leveldb笔记](https://izualzhy.cn/archive.html?tag=leveldb)
+ + [leveldb源码分析](https://cppguide.cn/pages/88416c/)
+
++ 《精通LevelDB》
