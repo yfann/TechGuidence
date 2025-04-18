@@ -51,8 +51,17 @@ GFS 提供 弱一致性（relaxed consistency），其关键特性如下：
 + This reduces metadata overhead
 
 ## tips
-+ 记录追加（record append）操作则保证多客户端并发操作是原子的。
++ 记录追加（record append）是原子的。
+    + GFS append 的原子性是通过 primary chunk server 控制写入 offset、一致广播、所有副本同步写入 实现的。要么所有副本一起成功写入完整记录，要么不写，永远不会写出“半条记录”
 
++ append是at least once
+    + 由于 GFS 的容错机制和分布式架构
+        + 如果客户端没有收到所有副本的确认，它会进行重试：
+            + 重试时，可能导致已经写入的数据被再写一遍。
+            + 所以就会出现多次 append 相同数据的情况
++ snapshot
+    +  Copy-On-Write
+        + 快照时只复制元数据，当后续有写入请求时，才触发本地 chunk 复制，从此写入走新副本，保证了写入不被中断、快照数据不被污染，整个过程又快又安全。
 ## ref
 + [Paper Notes: The Google File System](https://distributed-computing-musings.com/2023/07/paper-notes-the-google-file-system/)
 + [The Google File System Explained (Part 1)](https://www.0xkishan.com/blogs/the-google-file-system-explained-part-one)
