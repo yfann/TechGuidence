@@ -2,14 +2,19 @@
 
 ## ref
 
+
++ [Distributed systems for fun and profit](https://github.com/mixu/distsysbook?tab=readme-ov-file)
++ [浅谈分布式存储系统数据分布方法](http://catkang.github.io/2017/12/17/data-placement.html)
+
+<!-- resources -->
 + [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability)
 + [求大佬推荐学习分布式系统和分布式存储相关的书？](https://www.zhihu.com/question/439289634/answer/2673812365)
-+ [用谁都能看懂的方法解释分布式系统](https://zhuanlan.zhihu.com/c_158208519)
 
 
 <!-- pattern -->
 + [分布式系统模式](https://github.com/dreamhead/patterns-of-distributed-systems)
 + [Patterns of Distributed Systems](https://martinfowler.com/articles/patterns-of-distributed-systems/)
++ [分布式唯一ID生成器](https://zhuanlan.zhihu.com/p/65095562)
 
 <!-- ddia -->
 + [ddia](http://ddia.vonng.com/#/)
@@ -30,3 +35,11 @@
 + "Learning Apache Cassandra - Manage Fault Tolerant and Scalable Real-Time Data" by Vijay Parthasarathy
 + "Kafka: The Definitive Guide: Real-Time Data and Stream Processing at Scale" by Neha Narkhede, Gwen Shapka and Todd Palino
 + "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin
+
+<!-- 分布式存储 -->
++ [分布式和存储的那些事](https://www.zhihu.com/column/distributed-storage)
++ [分布式文件系统架构对比](https://www.infoq.cn/article/bp7uvbnb7dbgdk2gtxl9)
+<!-- 面试 -->
++ [分布式系统简介 by Tim Berglund](https://zhuanlan.zhihu.com/p/92664984)
++ [分布式系统面试知识点](https://zhuanlan.zhihu.com/p/140272240)
++ [分布式系统设计背后的 8 个错误假设](https://www.zhihu.com/question/66927368/answer/2709000186)
