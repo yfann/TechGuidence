@@ -51,6 +51,10 @@
 + flaw
     + 存储开销较大：随着系统中节点数的增加，向量时钟的大小会增加，存储开销也会显著增大。
 
+## tips
++ You can transform a partial order into a total order, but this requires communication
+    + 单一node处理所有event
+
 ## ref
 + [单调钟与日历时钟](http://ddia.vonng.com/#/ch8)
 
