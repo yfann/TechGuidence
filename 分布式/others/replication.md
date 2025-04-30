@@ -14,6 +14,17 @@
 | **故障转移能力** | 故障后只读        | 故障后可读写     | 故障后可读写      | 故障后可读写      |
 
 
+## Primary/backup(P/B) replication
++ asynchronous primary/backup replication 
+    + update message
++ synchronous primary/backup replication
+    + update message + acknowledge receipt
+
+## 2PC
++ CA
+    + 不能解决网络分区问题
++ 和1PC相比多了rollback功能
+
 ## tips
 + consensus problems
     + leader election
@@ -28,3 +39,5 @@
     + Quorum
         + Paxos
         + Raft
+
++  any asynchronous replication algorithm can only provide weak durability guarantees
