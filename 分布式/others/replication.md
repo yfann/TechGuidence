@@ -14,6 +14,23 @@
 | **故障转移能力** | 故障后只读        | 故障后可读写     | 故障后可读写      | 故障后可读写      |
 
 
++ Primary/Backup
+    + Single, static master
+    + Replicated log, slaves are not involved in executing operations
+    + No bounds on replication delay
+    + Not partition tolerant
+    + Manual/ad-hoc failover, not fault tolerant, "hot backup"
++ 2PC
+    + Unanimous vote: commit or abort
+    + Static master
+    + 2PC cannot survive simultaneous failure of the coordinator and a node during a commit
+    + Not partition tolerant, tail latency sensitive
++ Paxos
+    + Majority vote
+    + Dynamic master
+    + Robust to n/2-1 simultaneous failures as part of protocol
+    + Less sensitive to tail latency
+
 ## Primary/backup(P/B) replication
 + asynchronous primary/backup replication 
     + update message
@@ -24,6 +41,17 @@
 + CA
     + 不能解决网络分区问题
 + 和1PC相比多了rollback功能
++ 所以nodes都参与
+
+## Quorum
++ majority
+    + N/2+1
+    + odd number
++ distinct node roles
+    + leader
++ epoch
+    + logical clock
+    + odes that were partitioned or out of operation will have a smaller epoch number than the current one,
 
 ## tips
 + consensus problems
@@ -41,3 +69,8 @@
         + Raft
 
 +  any asynchronous replication algorithm can only provide weak durability guarantees
+
++ Partition-tolerant consensus algorithms
+    + paxos
+    + raft
+    + zab
