@@ -41,3 +41,5 @@
         + Raft
 
 +  any asynchronous replication algorithm can only provide weak durability guarantees
+
++ single-copy consistency
