@@ -53,6 +53,28 @@
     + logical clock
     + odes that were partitioned or out of operation will have a smaller epoch number than the current one,
 
+## Partial quorums
++ eventually consistent
++ R + W > N
++ vector clocks
+    + concurrent and out of date updates can be detected.
+
+## probabilistically bounded staleness (PBS)
++ 弱一致性系统对数据副本的读取行为建模
+    + Dynamo
+    + Cassandra
+    + Riak
+
++ design
+    + consistent hashing to determine key placement
+    + partial quorums for reading and writing
+    + conflict detection and read repair via vector clocks and
+    + gossip for replica synchronization
+
++ PBS 不是保证每次读操作都返回最新值，而是提供概率性保证
+    + 在延迟 t 之后，某次读操作返回“最新值”的概率 ≥ p
+
++ 很多 NoSQL 系统采用最终一致性（Eventual Consistency），但这又不能量化“多久一致”。PBS 介于两者之间，
 ## tips
 + consensus problems
     + leader election
@@ -74,3 +96,8 @@
     + paxos
     + raft
     + zab
++ single-copy consistency
+
++ CRDTs: Convergent replicated data types
+    + semilattices
+    + associative, commutative and idempotent

@@ -35,12 +35,12 @@
 ## rag
 + [graphrag](https://github.com/microsoft/graphrag)
 
-## IDE
+## Coding IDE
 + [windsurf](https://codeium.com/windsurf)
     + Claude 3.5 Sonnet
 + cursor
 + trae
-
++ [BrowserTools](https://zhuanlan.zhihu.com/p/1901030414509913690)
 
 ## ai ocr
 + [olmocr](https://github.com/allenai/olmocr)
@@ -78,3 +78,4 @@
     + chrome 插件，youtube总结和字幕
 + [vocabulary-book-by-deepseek](https://github.com/vxiaozhi/vocabulary-book-by-deepseek?tab=readme-ov-file)
     + 四级词库
++ [Cherry Studio](https://github.com/CherryHQ/cherry-studio)
