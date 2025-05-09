@@ -35,12 +35,13 @@
 ## rag
 + [graphrag](https://github.com/microsoft/graphrag)
 
-## Coding IDE
+## developing tools
 + [windsurf](https://codeium.com/windsurf)
     + Claude 3.5 Sonnet
 + cursor
 + trae
 + [BrowserTools](https://zhuanlan.zhihu.com/p/1901030414509913690)
++ [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai)
 
 ## ai ocr
 + [olmocr](https://github.com/allenai/olmocr)
