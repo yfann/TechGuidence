@@ -42,6 +42,7 @@
 + trae
 + [BrowserTools](https://zhuanlan.zhihu.com/p/1901030414509913690)
 + [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai)
++ [void](https://github.com/voideditor/void)
 
 ## ai ocr
 + [olmocr](https://github.com/allenai/olmocr)
