@@ -35,7 +35,7 @@
 ## rag
 + [graphrag](https://github.com/microsoft/graphrag)
 
-## developing tools
+## coding
 + [windsurf](https://codeium.com/windsurf)
     + Claude 3.5 Sonnet
 + cursor
@@ -43,6 +43,9 @@
 + [BrowserTools](https://zhuanlan.zhihu.com/p/1901030414509913690)
 + [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai)
 + [void](https://github.com/voideditor/void)
+    + 开源cursor
++ [continue](https://docs.continue.dev/customize/tutorials/custom-code-rag)
++ [Augment Code](https://www.augmentcode.com/)
 
 ## ai ocr
 + [olmocr](https://github.com/allenai/olmocr)

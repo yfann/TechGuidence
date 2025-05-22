@@ -22,6 +22,9 @@
 + [Stanford CS224w Machine Learning with Graphs [Priority: LOW]](https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp)
 + [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
 
+## 深度学习
++ [动手学深度学习](https://github.com/AccumulateMore/CV)
+
 ## python
 + [How to Think Like a Computer Scientist: Interactive Edition](https://levjj.github.io/thinkcspy/)
 
