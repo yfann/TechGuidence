@@ -13,7 +13,10 @@
 + [raphael](https://raphael.app/zh)
     + 文字生图
 
++ [](https://aiimageeditor.me/)
+    + image editor
 
+    
 ## ai search
 + [](https://onionai.so/)
 + [perplexity](https://www.perplexity.ai/discover)
@@ -84,3 +87,7 @@
 + [vocabulary-book-by-deepseek](https://github.com/vxiaozhi/vocabulary-book-by-deepseek?tab=readme-ov-file)
     + 四级词库
 + [Cherry Studio](https://github.com/CherryHQ/cherry-studio)
+
+## ai voice
++ [aTrain](https://github.com/JuergenFleiss/aTrain)
+    + 语音识别
