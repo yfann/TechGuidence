@@ -5,3 +5,5 @@
     + 一个开源的网页应用，用来扫描局域网的 IP 分配，可以发送主机上线和掉线的通知。
 + [xpipe](https://github.com/xpipe-io/xpipe)
     + 服务器集中管理
++ [PairDrop](https://github.com/schlagmichdoch/PairDrop)
+    + 局域网传输文件的 Web 应用

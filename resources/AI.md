@@ -13,7 +13,10 @@
 + [raphael](https://raphael.app/zh)
     + 文字生图
 
++ [](https://aiimageeditor.me/)
+    + image editor
 
+    
 ## ai search
 + [](https://onionai.so/)
 + [perplexity](https://www.perplexity.ai/discover)
@@ -35,12 +38,17 @@
 ## rag
 + [graphrag](https://github.com/microsoft/graphrag)
 
-## Coding IDE
+## coding
 + [windsurf](https://codeium.com/windsurf)
     + Claude 3.5 Sonnet
 + cursor
 + trae
 + [BrowserTools](https://zhuanlan.zhihu.com/p/1901030414509913690)
++ [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai)
++ [void](https://github.com/voideditor/void)
+    + 开源cursor
++ [continue](https://docs.continue.dev/customize/tutorials/custom-code-rag)
++ [Augment Code](https://www.augmentcode.com/)
 
 ## ai ocr
 + [olmocr](https://github.com/allenai/olmocr)
@@ -79,3 +87,7 @@
 + [vocabulary-book-by-deepseek](https://github.com/vxiaozhi/vocabulary-book-by-deepseek?tab=readme-ov-file)
     + 四级词库
 + [Cherry Studio](https://github.com/CherryHQ/cherry-studio)
+
+## ai voice
++ [aTrain](https://github.com/JuergenFleiss/aTrain)
+    + 语音识别

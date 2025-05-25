@@ -40,5 +40,20 @@
 + 缺点
     + precommit不能处理network partition
         + 由于网络故障，导致两边 的voter做出不同决定
+
+
+## 2PC vs 2PL
++ two phase commit
+    + 保证事物原子性，分布式一致性
+
++ two phase locking
+    + 保证事物serializable
+    + Growing
+        + 申请锁
+    + shrinking阶段
+        + 释放锁
+    + S(trong)S(trict)2PL
+        + 只能在事务结束后再释放锁，完全杜绝了事务未提交的数据被读到。
+
 ## ref
 + [漫话分布式系统共识协议: 2PC/3PC篇](https://zhuanlan.zhihu.com/p/35298019)
