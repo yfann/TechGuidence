@@ -1,3 +1,7 @@
+# 模式匹配
++ 从复杂的数据结构中提取值、进行条件分支、结构解构等
++ let、if let、while let、match
++ 模式是用来匹配值的结构和内容的
 
 ## match
 ```rust
@@ -347,6 +351,8 @@ match msg {
 
 
 let p @ Point {x: px, y: py } = Point {x: 10, y: 23};
+// px,py结构赋值
+// p @ ...@ 操作符让你同时绑定整个值到变量 p，也就是说，p 将会绑定到 Point { x: 10, y: 23 } 这个结构体本身。
 
 match 1 {
     num @ 1 | 2 => {

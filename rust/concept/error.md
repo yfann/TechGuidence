@@ -1,4 +1,13 @@
 # rust error handling
++ rust没有try catch,用result进行错误传播和处理
+
+## result
+
+
+## Option
+
+
+## Some
 
 ## `?`
 + 错误处理语法糖
@@ -20,6 +29,7 @@ fn read_file(path: &str) -> std::io::Result<String> {
 }
 
 ```
+
 + 解包Option,解包 Some，而当值是 None 时，会提前返回一个 None
 ```rust
 fn get_value(map: &std::collections::HashMap<String, String>, key: &str) -> Option<String> {
