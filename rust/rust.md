@@ -26,8 +26,9 @@
     + 声明外部函数或静态变量
 
 + `?`
+    + 遇到Err或None时提前返回
+    + 解包result
     + 用在方法后面，方法需返回Result或Option
-    + Err或None时提前返回
     + 可以链式使用
     + `?Sized`
         + 泛型约束，动态大小
@@ -107,3 +108,8 @@ pub trait Deref {
 + [std](https://doc.rust-lang.org/stable/std/index.html)
 + [crate](https://docs.rs/)
 + [Crate std](https://rustwiki.org/zh-CN/std/)
+
+
+<!-- learn -->
++ [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
++ [rustlings](https://github.com/rust-lang/rustlings)

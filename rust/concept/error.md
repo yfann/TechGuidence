@@ -10,9 +10,11 @@
 ## Some
 
 ## `?`
-+ 错误处理语法糖
-    + 错误传播
-    + 使用 ? 的函数必须返回 Result 或 Option 类型。如果尝试在不返回这些类型的函数中使用 ?，会导致编译错误。
++ 错误传播
+    + 使用 ? 的函数必须返回 Result 或 Option 类型。
+        + 如果尝试在不返回这些类型的函数中使用 ?，会导致编译错误。
+    + 遇到Err直接返回
+
 + 解包Result,如果是Ok取其中值，如果是Err,将错误返回给调用者
 ```rust
 fn read_file(path: &str) -> std::io::Result<String> {
