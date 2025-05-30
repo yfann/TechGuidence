@@ -1,14 +1,6 @@
 # rust error handling
 + rust没有try catch,用result进行错误传播和处理
 
-## result
-
-
-## Option
-
-
-## Some
-
 ## `?`
 + 错误传播
     + 使用 ? 的函数必须返回 Result 或 Option 类型。

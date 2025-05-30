@@ -1,10 +1,6 @@
 
 # rust
 
-
-
-
-
 ## 符号
 + `&` 引用，借用
     + 不可变借用
@@ -27,7 +23,7 @@
 
 + `?`
     + 遇到Err或None时提前返回
-    + 解包result
+    + 解包result,Option
     + 用在方法后面，方法需返回Result或Option
     + 可以链式使用
     + `?Sized`
