@@ -87,6 +87,7 @@
 + [vocabulary-book-by-deepseek](https://github.com/vxiaozhi/vocabulary-book-by-deepseek?tab=readme-ov-file)
     + 四级词库
 + [Cherry Studio](https://github.com/CherryHQ/cherry-studio)
++ [japanese-analyzer](https://github.com/cokice/japanese-analyzer)
 
 ## ai voice
 + [aTrain](https://github.com/JuergenFleiss/aTrain)
