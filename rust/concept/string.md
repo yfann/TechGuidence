@@ -1,15 +1,48 @@
 
 ## string
 + String
-    + 堆中存储
+    + 堆中存储 
+    + &String指向String对象（多一个引用层）
 ```rust
 let mut s = String::from("hello");
-s.push_str(", world!"); // push_str() 在字符串后追加字面值
-println!("{}", s); // 将打印 `hello, world!`
+s.push_str(", world!");
+println!("{}", s);
 ```
 
-+ 字面量
++ &str
+    + slice
+    + 本身可能指向栈（字面量）或堆
+    + 直接指向字节数组（UTF-8）
+    + String的部分或全部
+    + &str：做参数，能接收：
+        + 字符串字面量
+        + String
+        + 字符串切片
+```rust
+
+fn print_str(s: &str) {
+    println!("{}", s);
+}
+
+fn print_string(s: &String) {
+    println!("{}", s);
+}
+
+let s = String::from("hello");
+
+print_str(&s);      // ✅ OK：&String 自动解引用为 &str
+print_string(&s);   // ✅ OK：直接是 &String
+
+let slice = &s[..]; // 这是一个 &str
+print_str(slice);   // ✅ OK
+print_string(slice); // ❌ 错误：不能把 &str 当 &String
+
+```
+
+
++ 字面量是&str类型
     + 硬编码进程序里的字符串值
+    + 在栈上
 ```rust
 let s = "hello" //类型 &str
 ```
@@ -28,7 +61,7 @@ let slice = &s[4..];
 
 + 字符串字面量是切片 `&str`
 
-## String和&str互转
+## String to &str
 + &str to String
 ```rust
 String::from("hello,world")
@@ -140,5 +173,5 @@ for b in "中国人".bytes() {
 
 ## tips
 + 字符串的底层的数据存储格式实际上是[ u8 ]
-+ string无法用索引去取字符，可能取出半个字符
-    + 对应中文字符，切片操作比较危险
+    + string无法用索引去取字符，可能取出半个字符
+        + 对应中文字符，切片操作比较危险

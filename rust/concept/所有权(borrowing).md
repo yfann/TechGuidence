@@ -1,9 +1,11 @@
 
 ## 所有权
++ 核心在于谁负责释放资源
 + 编译期检查
 + Rust 中每一个值都被一个变量所拥有，该变量被称为值的所有者
 + 一个值同时只能被一个变量所拥有，或者说一个值只能拥有一个所有者
 + 当所有者（变量）离开作用域范围时，这个值将被丢弃(drop)
++ 栈上所有权复杂，堆上所有权转移
 
 ## 变量作用域
 
@@ -16,8 +18,7 @@
 
 ```
 
-
-## 值类型copy
+## 值类型copy,所有权复制
 + 发生在栈上
 ```rust
 let x = 5;
@@ -68,81 +69,7 @@ println!("s1 = {}, s2 = {}", s1, s2);
     + &T 不可变引用
         + 可变引用`&mut T`不可以copy
 
-## 引用，解引用
 
-```rust
-fn main() {
-    let x = 5;
-    let y = &x;
-
-    assert_eq!(5, x);
-    assert_eq!(5, *y);
-}
-```
-
-## 不可变引用(borrowing)
-+ 所有权不发生转移
-+ 不能修改值
-```rust
-fn main() {
-    let s1 = String::from("hello");
-
-    let len = calculate_length(&s1);
-
-    println!("The length of '{}' is {}.", s1, len);
-}
-
-fn calculate_length(s: &String) -> usize {
-    s.len()
-}
-```
-
-## 可变引用(borrowing)
-+ 同一作用域，特定数据只能有一个可变引用
-    + 避免数据竞争
-```rust
-fn main() {
-    let mut s = String::from("hello");
-
-    change(&mut s);
-}
-
-fn change(some_string: &mut String) {
-    some_string.push_str(", world");
-}
-
-let mut s = String::from("hello");
-
-let r1 = &mut s;
-let r2 = &mut s;//报错，只能有一个可变引用
-```
-+ 可变不可变引用不能同时存在
-```rust
-let mut s = String::from("hello");
-
-let r1 = &s; // 没问题
-let r2 = &s; // 没问题
-let r3 = &mut s; // 大问题
-
-println!("{}, {}, and {}", r1, r2, r3);
-
-```
-
-
-## 悬垂引用(Dangling References)
-+ 悬垂引用也叫做悬垂指针，意思为指针指向某个值后，这个值被释放掉了，而指针仍然存在，其指向的内存可能不存在任何值或已被其它变量重新使用
-+ rust编译器会阻止这种情况发生
-```rust
-fn main() {
-    let reference_to_nothing = dangle();
-}
-
-fn dangle() -> &String {
-    let s = String::from("hello");
-
-    &s
-}
-```
 
 ## tips
 + 引用的作用域 s 从创建开始，一直持续到它最后一次使用的地方，这个跟变量的作用域有所不同，变量的作用域从创建持续到某一个花括号 }

@@ -1,13 +1,12 @@
 
 # rust
 
-
-
-
-
-## keyword
+## 符号
 + `&` 引用，借用
     + 不可变借用
+
++ `@`
+    + 绑定值的同时解构
 
 + `*` 
     + 解引用对`&x`取值
@@ -23,8 +22,9 @@
     + 声明外部函数或静态变量
 
 + `?`
+    + 遇到Err或None时提前返回
+    + 解包result,Option
     + 用在方法后面，方法需返回Result或Option
-    + Err或None时提前返回
     + 可以链式使用
     + `?Sized`
         + 泛型约束，动态大小
@@ -47,8 +47,8 @@
 
 ## tips
 + `new`不是关键字，一般用作关联函数名用于新建对象
-+ `prelude` 简化了use操作
-    + 一些基础类不需要use
++ `prelude` 
+    + rust自动导入一些函数，不需要use
 + `Deref` 用于解引用的trait
     + `DerefMut`可变版本
     + 将智能指针类型解引用为其内部的数据类型
@@ -100,10 +100,12 @@ pub trait Deref {
 <!-- install -->
 + [WSL安装Rust开发环境](http://www.voycn.com/article/wslanzhuangrustkaifahuanjing)
 + [《Command-Line Rust》](https://learning.oreilly.com/library/view/command-line-rust/9781098109424/ch01.html#id3)
-
-
-
-<!-- api docs -->
+<!-- crates -->
 + [std](https://doc.rust-lang.org/stable/std/index.html)
 + [crate](https://docs.rs/)
 + [Crate std](https://rustwiki.org/zh-CN/std/)
+
+
+<!-- learn -->
++ [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
++ [rustlings](https://github.com/rust-lang/rustlings)
