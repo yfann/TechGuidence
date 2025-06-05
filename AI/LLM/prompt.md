@@ -39,3 +39,4 @@ perform the requested task more efficiently.`
 + [](https://github.com/Tang-Lab-super/ChatGPT-prompt)
 + [Prompt examples](https://platform.openai.com/docs/examples)
 + [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
++ [claude prompt](https://docs.anthropic.com/zh-CN/docs/build-with-claude/prompt-engineering/overview)
