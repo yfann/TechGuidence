@@ -127,11 +127,28 @@
 + Safety
 
 
+## transparent and explainable 
++ Transparency(看得见过程)
+    + helps to understand HOW a model makes decisions.
+    + Interpretability 
+        + Interpretability is the access into a system so that a human can interpret the model’s output based on the weights and features.
+
++ Explainability(说得清原因)
+    + helps to understand WHY the model made the decision that it made. It gives insight into the limitations of a model. This helps developers with debugging and troubleshooting the model.
+    + Explainability is how to take an ML model and explain the behavior in human terms. 
+    + 可解释性强的模型包括决策树、线性回归等；但即便是复杂模型（如Transformer），也希望能通过可视化、特征重要性分析等方式提高解释能力。
+    + explainability framework
+        + SHAP
+        + LIME
+
 
 ## tips
 + data efficiency(Gen AI)
     + few-shot learning
     + zero-shot learning
 
++ Data augmentation
+    + Data augmentation can be used to generate new instances of underrepresented groups. 
 
++ balance the dataset
     
