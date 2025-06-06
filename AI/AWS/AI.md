@@ -86,8 +86,52 @@
     + supplies domain-relevant data as context to produce responses based on that data. 
 
 
+## Bias-variance
+
++ Bias-variance trade-off（bias is low and the regression is low. ）
+    + Bias
+        +  Bias in a model means that the model is missing important features of the datasets. This means that the data is too basic.
+        + underfitted 
+    + Variance 
+        + Overfitting
+            + when model performs well on the training data but does not perform well on the evaluation data
+
++ overcome bias and variance errors
+    + Cross-validation
+        + Cross-validation is a technique for evaluating ML models by training several ML models on subsets of the available input data and evaluating them on the complementary subset of the data. Cross-validation should be used to detect overfitting. 
+    + increase data
+        + Add more data samples to increase the learning scope of the model.
+    + regularization
+        + Regularization is a method that penalizes extreme weight values to help prevent linear models from overfitting training data examples. 
+    + simpler model
+        + Use simpler model architectures to help with overfitting. If the model is underfitting, the model might be too simple.  
+    + Dimension reduction
+        + Dimension reduction is an unsupervised machine learning algorithm that attempts to reduce the dimensionality (number of features) within a dataset while still retaining as much information as possible.
+    + Stop training early
+        + End training early so that the model does not memorize the data.
+
+## Challenges of gen AI
++ Toxicity 
++ Hallucinations
++ intellectual property
++ Plagiarism and cheating
++ Disruption of the nature of work
+
+## responsible AI
++ Fairness
++ Explainability
++ Privacy and security
++ Transparency
++ Veracity and robustness
++ Governance 
++ Safety
+
+
 
 ## tips
 + data efficiency(Gen AI)
     + few-shot learning
     + zero-shot learning
+
+
+    

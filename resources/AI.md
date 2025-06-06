@@ -2,19 +2,15 @@
 ## ai image
 + [https://bylo.ai/](https://bylo.ai/)
     + text 2 img
-
-
 + [color-diffusion](https://github.com/ErwannMillon/Color-diffusion)
     + 黑白图上色
-
 + [](https://github.com/zhongweili/imagenie)
     + 本地图片处理
-
 + [raphael](https://raphael.app/zh)
     + 文字生图
-
 + [](https://aiimageeditor.me/)
     + image editor
++ [olmocr](https://github.com/allenai/olmocr)
 
     
 ## ai search
@@ -33,9 +29,6 @@
 ## 知识库
 + [rag-web-ui](https://github.com/rag-web-ui/rag-web-ui)
     + 本地知识库搭建，基于rag
-
-
-## rag
 + [graphrag](https://github.com/microsoft/graphrag)
 
 ## coding
@@ -49,9 +42,12 @@
     + 开源cursor
 + [continue](https://docs.continue.dev/customize/tutorials/custom-code-rag)
 + [Augment Code](https://www.augmentcode.com/)
++ figma to code
++ cursor
++ trae
++ windsurf
++ vscode + cline
 
-## ai ocr
-+ [olmocr](https://github.com/allenai/olmocr)
 
 
 ## data analyze
@@ -60,15 +56,7 @@
 
 
 ## ai播客
-+ [hacker-news](https://github.com/ccbikai/hacker-news?tab=readme-ov-file)
 
-
-## ai coding
-+ figma to code
-+ cursor
-+ trae
-+ windsurf
-+ vscode + cline
 
 ## 3d
 + [blender mcp](https://github.com/ahujasid/blender-mcp)
@@ -79,16 +67,25 @@
 
 ## others
 + [AI生成涂色书](https://zcoloring.com/)
-+ [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
-+ [Audio Transcription](https://podcast.zeabur.app/)
-    + 播客转文本
-+ [DeepSRT]()
-    + chrome 插件，youtube总结和字幕
-+ [vocabulary-book-by-deepseek](https://github.com/vxiaozhi/vocabulary-book-by-deepseek?tab=readme-ov-file)
-    + 四级词库
 + [Cherry Studio](https://github.com/CherryHQ/cherry-studio)
-+ [japanese-analyzer](https://github.com/cokice/japanese-analyzer)
+    +  Cherry Studio is a desktop client that supports for multiple LLM providers.
 
 ## ai voice
 + [aTrain](https://github.com/JuergenFleiss/aTrain)
     + 语音识别
++ [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
++ [Audio Transcription](https://podcast.zeabur.app/)
+    + 播客转文本
++ [hacker-news](https://github.com/ccbikai/hacker-news?tab=readme-ov-file)
++ [DeepSRT]()
+    + chrome 插件，youtube总结和字幕
+
+
+## NLP
++ [read-bridge](https://github.com/WindChimeEcho/read-bridge)
+    + AI分析句子
++ [vocabulary-book-by-deepseek](https://github.com/vxiaozhi/vocabulary-book-by-deepseek?tab=readme-ov-file)
+    + 四级词库
++ [japanese-analyzer](https://github.com/cokice/japanese-analyzer)
++ [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
+    + self host 翻译API
