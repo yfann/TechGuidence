@@ -18,16 +18,26 @@
 + model dashboard
     + can be used as a central place to keep the team informed on model behavior in production.
 + model cards
+    +  model information
     + documentation on models 
     + for AI transparent
 + Clarify
+    + FM evaluation
     + for AI explainability
+    + bias detection
 + Autopilot
     + provide insights into how ML models make predictions
-    + + for AI explainability
+    + for AI explainability
++ Ground Truth
+    + RLHF 
++ Role Manager
+    +  define minimum permissions in minutes
++ Model Monitor
+    + monitors the quality of SageMaker machine learning models in production.
 
 ## Amazon A2I
-+ monitor,human review ML prediction
++ monitoring
++ human review
 
 
 ##  AWS AI Service Cards
