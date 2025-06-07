@@ -83,6 +83,32 @@
 ## .cursorignore
 + 排除不相干文件
 
+
+## cursor agent
++ system prompt
+    + role definition
+    + task description
+    + communication constraints
+    + tool calling constraints
+    + search tips
+    + code change constraints
+    + debugging tips
+    + external API tips
++ Agent Tools
+    + codebase_search tool
+    + read_file tool
+    + run_terminal_cmd tool
+    + list_dir tool
+    + grep_search tool
+    + edit_file tool
+    + file_search tool
+    + delete_file tool
+    + reapply tool
+    + fetch_rules tool
+    + web_search tool
+    + diff_history tool
+
+
 ## tips
 + 自动包含代码库的上下文
     + 为代码库建立索引
@@ -97,3 +123,4 @@
 + [https://cursor.directory/](https://cursor.directory/)
 + [Cursor使用指南](https://zhuanlan.zhihu.com/p/11597402899)
 + [template](https://github.com/ansh/template-2/tree/main)
++ [Cursor Agent 模式深度解析，创业者必学！](https://zhuanlan.zhihu.com/p/1898147724634874573)

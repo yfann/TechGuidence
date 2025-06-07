@@ -28,3 +28,7 @@
 ## python
 + [How to Think Like a Computer Scientist: Interactive Edition](https://levjj.github.io/thinkcspy/)
 
+
+## simple
++ [Run Your Own AI](https://anthonylewis.com/2025/06/01/run-your-own-ai/)
++ [agent-loop](https://sketch.dev/blog/agent-loop)
