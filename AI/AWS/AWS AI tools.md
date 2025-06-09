@@ -13,7 +13,7 @@
     + safeguard
 + knowledge base
     + rag
-    
+
 ## SageMaker 
 <!-- data -->
 + data wrangler
@@ -127,5 +127,13 @@
 
 ## MLOps
 +  operationalizing and streamlining the end-to-end machine learning lifecycle from model development and deployment to monitoring and maintenance. 
+
+## vector database
++ Amazon OpenSearch Service (provisioned)
++ Amazon OpenSearch Serverless
++ pgvector extension in Amazon Relational Database Service (Amazon RDS) for PostgreSQL
++ pgvector extension in Amazon Aurora PostgreSQL-Compatible Edition
++ Amazon Kendra
+
 
 

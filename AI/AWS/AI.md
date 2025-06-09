@@ -188,8 +188,30 @@
         + ReAct prompting
 + RAG
 + fine-tuning
-    + Instruction fine-tuning uses examples of how the model should respond to a specific instruction. Prompt tuning is a type of instruction fine-tuning.
-    + Reinforcement learning from human feedback (RLHF) provides human feedback data, resulting in a model that is better aligned with human preferences.
+    + approaches
+        + Instruction fine-tuning 
+            + uses examples of how the model should respond to a specific instruction. Prompt tuning is a type of instruction fine-tuning.
+        + Reinforcement learning from human feedback (RLHF) 
+            + provides human feedback data, resulting in a model that is better aligned with human preferences.
+        + Adapting models for specific domains
+        + Transfer learning
+        + Continuous pretraining
+            + This approach involves extending the training phase of a pre-trained model by continuously feeding it new and emerging data. 
+    + benifits
+        + increase specificity
+        + improve accuracy
+        + reduce biases
+        + boost efficiency
+
++ pretraining data
+    + extensive coverage
+    + diversity
+    + generalization
++ fine-tuning data
+    + specificity
+    + high relevance
+    + quality over quantity
+
 + automation agent
 
 
@@ -204,10 +226,20 @@
     + Perplexity (a measure of how well the model predicts the next token)
         + evaluating language models,
     + BLEU score(for evaluating machine translation)
+        +  Quality is calculated by comparing the machine-generated text to one or more high-quality human translations.
+        + BLEU measures the precision of N-grams in the machine-generated text that appears in the reference texts and applies a penalty for overly short translations (brevity penalty).
+        +  precision and accuracy 
     + F1 score(for evaluating classification or entity recognition tasks)
     + Recall-Oriented Understudy for Gisting Evaluation (ROUGE) 
-        + evaluating automatic summarization 
-        + machine translation systems
+        + use cases
+            + evaluating automatic summarization 
+            + machine translation systems
+        + The main idea behind ROUGE is to count the number of overlapping units.
+        + ROUGE-N
+            + his metric measures the overlap of n-grams between the generated text and the reference text. 
+            +  This metric primarily assesses the fluency of the text and the extent to which it includes key ideas from the reference.
+        + ROUGE-L
+            + 
     + BERTScore
         + assessing the semantic similarity between two sentences. 
 
@@ -264,6 +296,12 @@
         + Prompt leaking refers to the unintentional disclosure or leakage of the prompts or inputs (regardless of whether these are protected data or not) used within a model
     + Jailbreaking
         + Jailbreaking refers to the practice of modifying or circumventing the constraints and safety measures implemented in a generative model or AI assistant to gain unauthorized access or functionality.
+
+
+## RAG
++ embedding 
++ vectors
+    + similarity search are k-nearest neighbors (k-NN)
 
 
 ## tips
