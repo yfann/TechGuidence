@@ -135,5 +135,45 @@
 + pgvector extension in Amazon Aurora PostgreSQL-Compatible Edition
 + Amazon Kendra
 
+## security
++ defense in depth
+    + data protection
+        + AWS KMS
+        + AWS Certificate Manager(ACM)
+        + AWS Private CA
+    + IAM(AWS identity and access management)
+    + Application protection
+        + AWS Shield
+        + Amazon Cognito
+    + network  and edge protection
+        + Amazon VPC
+        + AWS WAF
+    + infrastructure protection
+        + IAM
+        + network access control lists(network ACLS)
+    + Threat detection and incident response
+        + dection
+            + AWS security hub
+            + Amazon GuardDuty
+        + incident 
+            + AWS lambda
+            + Amazon EventBridge
 
+## governance and complicance
++ AWS config
+    + resource administration
+    + auditing and compliance
+    + managing and troubleshooting configuration changes
++ Amazon Inspector
+    + scans your AWS workloads for software vulnerabilities and unintended network exposure.  
+        + package vulnerablility
+        + code vulnerability
+        + network reachability
++ AWS Audit Manager
++ AWS Artifact
+    +  security and compliance reports.
++ AWS CloudTrail
+    + AWS CloudTrail helps you perform operational and risk auditing, governance, and compliance of your AWS account.
++ AWS Trusted Advisor
+    +  optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. 
 
