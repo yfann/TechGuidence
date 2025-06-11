@@ -144,6 +144,7 @@
     + IAM(AWS identity and access management)
     + Application protection
         + AWS Shield
+            + protect workloads against DDoS
         + Amazon Cognito
     + network  and edge protection
         + Amazon VPC
@@ -154,10 +155,29 @@
     + Threat detection and incident response
         + dection
             + AWS security hub
+                + provides customers with a single dashboard to view all security findings
             + Amazon GuardDuty
+                + threat detection service 
         + incident 
             + AWS lambda
             + Amazon EventBridge
++ security services
+    + Amazon Macie
+        + sensitive data discovery
+        + scan S3
+    + AWS Identity and Access Management(IAM)
+    + AWS network firewall and Amazon VPC, AWS  privateLink
+        + against data theft
+    +  Amazon Inspector
+        + scan vulnerabilities
+    + AWS Artifact
+        + compliance
+    + automate incident response
+        + AWS security hub
+        + AWS config
+        + AWS Audit Manager
+        + AWS Artifact
+
 
 ## governance and complicance
 + AWS config
@@ -177,3 +197,19 @@
 + AWS Trusted Advisor
     +  optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. 
 
+## data engineering
++ data collection
+    + Amazon Kinesis
+    + AWS database Migration service
+    + AWS Glue
++ data cleaning
+    + Amazon EMR
+    + AWS Glue
++ data quality check
+    + AWS Glue DataBrew
+    + AWS Glue Data Quality
++ data visualization and analysis
+    + Amazon QuickSight
+        + Use to create graphs or charts. 
+    + Amazon Neptune
+        + Use for graph database operations and visualization.

@@ -323,3 +323,6 @@
 
 + Gen Ai application lifecycle
     + def a use case -> select a FM -> improve performance -> evaluate results -> deploy the app
+
++ Data lineage 
+    + Data lineage is a technique used to track the history of data, including its origin, transformation, and movement through different systems.is a technique used to track the history of data, including its origin, transformation, and movement through different systems.
