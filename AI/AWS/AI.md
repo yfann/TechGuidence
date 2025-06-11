@@ -175,6 +175,135 @@
         + Regularly audit the dataset to ensure it remains balanced and fair. Check for biases and take corrective actions if necessary.
 
 
+## improve performance of an FM
++ prompt engineering
+    + prompt engineering techniques 
+        + Zero-shot prompting
+        + Few-shot prompting
+        + Chain-of-thought (CoT) prompting
+        + Self-consistency
+        + Tree of thoughts (ToT)
+        + Retrieval Augmented Generation (RAG)
+        + Automatic Reasoning and Tool-use (ART)
+        + ReAct prompting
++ RAG
++ fine-tuning
+    + approaches
+        + Instruction fine-tuning 
+            + uses examples of how the model should respond to a specific instruction. Prompt tuning is a type of instruction fine-tuning.
+        + Reinforcement learning from human feedback (RLHF) 
+            + provides human feedback data, resulting in a model that is better aligned with human preferences.
+        + Adapting models for specific domains
+        + Transfer learning
+        + Continuous pretraining
+            + This approach involves extending the training phase of a pre-trained model by continuously feeding it new and emerging data. 
+    + benifits
+        + increase specificity
+        + improve accuracy
+        + reduce biases
+        + boost efficiency
+
++ pretraining data
+    + extensive coverage
+    + diversity
+    + generalization
++ fine-tuning data
+    + specificity
+    + high relevance
+    + quality over quantity
+
++ automation agent
+
+
+## evaluating an FM
++ human evaluation
++ benchmark datasets
+    + The General Language Understanding Evaluation (GLUE) 
+    + SuperGLUE 
+    + Stanford Question Answering Dataset (SQuAD)
+    + Workshop on Machine Translation (WMT)
++ metrics
+    + Perplexity (a measure of how well the model predicts the next token)
+        + evaluating language models,
+    + BLEU score(for evaluating machine translation)
+        +  Quality is calculated by comparing the machine-generated text to one or more high-quality human translations.
+        + BLEU measures the precision of N-grams in the machine-generated text that appears in the reference texts and applies a penalty for overly short translations (brevity penalty).
+        +  precision and accuracy 
+    + F1 score(for evaluating classification or entity recognition tasks)
+    + Recall-Oriented Understudy for Gisting Evaluation (ROUGE) 
+        + use cases
+            + evaluating automatic summarization 
+            + machine translation systems
+        + The main idea behind ROUGE is to count the number of overlapping units.
+        + ROUGE-N
+            + his metric measures the overlap of n-grams between the generated text and the reference text. 
+            +  This metric primarily assesses the fluency of the text and the extent to which it includes key ideas from the reference.
+        + ROUGE-L
+            + 
+    + BERTScore
+        + assessing the semantic similarity between two sentences. 
+
+## prompt
++ inference parameters
+    + randomness and diversity
+        + temperature
+            + A higher temperature makes the output more diverse and unpredictable, and a lower temperature makes it more focused and predictable.
+            + Temperature is set between 0 and 1
+        + top p
+            + Top p is a setting that controls the diversity of the text by limiting the number of words that the model can choose from based on their probabilities.
+            + 0~1
+        + top K
+            + op k limits the number of words to the top k most probable words, regardless of their percent probabilities. 
+    + length
+        + maximum length
+            + The maximum length setting determines the maximum number of tokens that the model can generate during the inference process.
+        + stop sequences
+            + Stop sequences are special tokens or sequences of tokens that signal the model to stop generating further output. 
+            + When the model encounters a stop sequence during the inference process, it will terminate the generation regardless of the maximum length setting. 
+            + Stop sequences are particularly useful in tasks where the desired output length is variable or difficult to predict in advance. 
+
++ best practices for prompting
+    + be clear and concise
+    + include context if needed
+    + use directives for the appropriate response type
+    + consider the output in the prompt
+    + start prompts with an interrogation
+    + provide an example response
+    + break up complex tasks
+    + experiment and  be creative
+    + use prompt templates
++ Zero-shot prompting
+    + no examples
+    + optimize
+        + The larger and more capable the FM, the higher the likelihood of obtaining effective results from zero-shot prompts.
+        + RLHF
++ Few-shot prompting
+    + Few-shot prompting is a technique that involves providing a language model with contextual examples to guide its understanding and expected output for a specific task. 
++ Chain-of-thought prompting
+    + Chain-of-thought (CoT) prompting is a technique that divides intricate reasoning tasks into smaller, intermediary steps.
+    + Think step by step
+
++ Negative prompts 
+    +  examples of incorrect or undesirable outputs that the language model should avoid generating. 
+
++ Prompt Misuses and Risks
+    + Poisoning
+    + Hijacking and prompt injection
+        + Hijacking and prompt injection refer to the technique of influencing the outputs of generative models by embedding specific instructions within the prompts themselves.
+    + Exposure
+        + Exposure refers to the risk of exposing sensitive or confidential information to a generative model during training or inference
+    + Prompt leaking
+        + Prompt leaking refers to the unintentional disclosure or leakage of the prompts or inputs (regardless of whether these are protected data or not) used within a model
+    + Jailbreaking
+        + Jailbreaking refers to the practice of modifying or circumventing the constraints and safety measures implemented in a generative model or AI assistant to gain unauthorized access or functionality.
+
+
+## RAG
++ embedding 
++ vectors
+    + similarity search are k-nearest neighbors (k-NN)
+
+
 ## tips
 + data efficiency(Gen AI)
     + few-shot learning
@@ -189,3 +318,8 @@
     + an approach to creating products and services that are intuitive, easy to use, and meet the needs of the people who will be using them. 
 + RLHF(Reinforcement learning from human feedback)
     + an ML technique that uses human feedback to optimize ML models to self-learn more efficiently. Reinforcement learning (RL) techniques train software to make decisions that maximize rewards, which makes their outcomes more accurate
++ Hyperparameter tuning 
+    + a way to find the best version of your models.
+
++ Gen Ai application lifecycle
+    + def a use case -> select a FM -> improve performance -> evaluate results -> deploy the app
