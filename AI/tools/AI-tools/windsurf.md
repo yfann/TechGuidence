@@ -1,5 +1,33 @@
 # windsurf
 
+## cmd
++ `ctrl + l`
+    + cascade
+
++ `ctrl + shift + p`
+    + command palette
+
+
+
+## proxy
++ file -> preferences -> windsurf settings -> search proxy -> open editor setting
+
++ settings
+    + no proxy
+        + localhost
+    + proxy
+    + uncheck proxy strict ssl
+    
+
+
+
+## issues
++ log in forever
+    + no proxy
+        + *.codeium.com
+        + *.windsurf.com
+        + *.codeiumdata.com
+
 ## windsurf agent
 + system prompt
     + Role & Task Description
@@ -22,3 +50,11 @@
 
 ## ref
 + [Windsurf Agent 模式深度解读（一）！比Cursor的方案更有未来？](https://zhuanlan.zhihu.com/p/1903398142348620014)
+
+<!-- training -->
++ [quick start](https://docs.windsurf.com/windsurf/getting-started  )
++ [windsurf university](https://university.windsurf.build/ )
++ [windsurf rules](https://windsurf.com/editor/directory)
++ [windsurf rules](https://windsurf.run/.)
++ [best practices](https://share.philips.com/:b:/r/sites/eirampd/Shared Documents/Windsurf/Windsurf - Best Practices.pdf?csf=1&web=1&e=Xv3vdp)
++ [Fair_Use_AI_Policy_Windsurf_2025.pdf](https://share.philips.com/:b:/r/sites/eirampd/Shared Documents/Windsurf/Fair_Use_AI_Policy_Windsurf_2025.pdf?csf=1&web=1&e=LQKcpV)
