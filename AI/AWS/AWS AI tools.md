@@ -213,3 +213,9 @@
         + Use to create graphs or charts. 
     + Amazon Neptune
         + Use for graph database operations and visualization.
+
+
+
+## Amazon Q business
++ generative AI-powered assistant
+    +  answer questions, generate content, create summaries, and complete tasks—all based on the information in your enterprise. 
