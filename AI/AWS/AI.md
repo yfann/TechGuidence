@@ -252,8 +252,12 @@
         + top p
             + Top p is a setting that controls the diversity of the text by limiting the number of words that the model can choose from based on their probabilities.
             + 0~1
+            + 从所有候选词中，按概率从高到低排序，直到累积概率 ≥ p（如 0.9），保留这些词组成一个“概率核”（nucleus），在其中随机采样。
+            + 可以自适应调整采样范围，结果更灵活自然
         + top K
-            + op k limits the number of words to the top k most probable words, regardless of their percent probabilities. 
+            + top k limits the number of words to the top k most probable words, regardless of their percent probabilities. 
+            + 限制搜索空间，提升生成质量
+            + k 是固定的，可能会忽略少数有意义但排名靠后的词
     + length
         + maximum length
             + The maximum length setting determines the maximum number of tokens that the model can generate during the inference process.
@@ -323,3 +327,6 @@
 
 + Gen Ai application lifecycle
     + def a use case -> select a FM -> improve performance -> evaluate results -> deploy the app
+
++ Data lineage 
+    + Data lineage is a technique used to track the history of data, including its origin, transformation, and movement through different systems.is a technique used to track the history of data, including its origin, transformation, and movement through different systems.

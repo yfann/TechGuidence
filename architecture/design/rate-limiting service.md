@@ -61,3 +61,4 @@
 + [The Fundamentals of Rate Limiting: How it Works and Why You Need it](https://medium.com/@patrikkaura/the-fundamentals-of-rate-limiting-how-it-works-and-why-you-need-it-fd86d39e358d)
 + [系统设计：设计一个分布式限流器](https://jingling.im/posts/design-a-rate-limiter/)
 + [An alternative approach to rate limiting](https://www.figma.com/blog/an-alternative-approach-to-rate-limiting/)
++ [rate limiting animation](https://blog.sagyamthapa.com.np/interactive-guide-to-rate-limiting)

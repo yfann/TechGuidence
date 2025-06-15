@@ -7,3 +7,6 @@
 ## others
 + [rust-stakeholder](https://github.com/giacomo-b/rust-stakeholder)
     + fake cli running
++ [ghostty](https://ghostty.org/)
++ warp
++ Claude code
