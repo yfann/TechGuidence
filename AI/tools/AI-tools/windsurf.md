@@ -5,9 +5,18 @@
 ## cmd
 + `ctrl + l`
     + cascade
-
++ `ctrl + i`
+    + 输入command
+        + `ctrl + return`
+    + 可以选中后再`ctrl+i`
+    
 + `ctrl + shift + p`
     + command palette
+
++ `ctrl + enter`
+    + accept
++ `ctrl + del`
+    + reject
 
 ## cascade
 + agent works on multi-files
