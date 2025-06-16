@@ -219,3 +219,9 @@
 ## Amazon Q business
 + generative AI-powered assistant
     +  answer questions, generate content, create summaries, and complete tasks—all based on the information in your enterprise. 
+
+## others
++ Amazon Transcribe
+    + speech to text
++ amazon lex
+    + chatbot
