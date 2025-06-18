@@ -39,7 +39,12 @@
 ## memory
 ## workflow
 ## proxy
-+ file -> preferences -> windsurf settings -> search proxy -> open editor setting
++ file -> preferences -> windsurf settings -> search proxy -> detect proxy
+    + for ai chat
+
++ file -> preferences -> settings -> proxy -> http:proxy
+    + for windsurf extension
+    + for `ctrl + i`
 
 + settings
     + manual proxy
