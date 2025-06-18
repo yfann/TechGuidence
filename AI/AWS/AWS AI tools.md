@@ -172,6 +172,7 @@
         + scan vulnerabilities
     + AWS Artifact
         + compliance
+        + self-service portal for accessing and managing security and compliance reports from AWS and independent software vendors (ISVs) that offer their products on AWS Marketplace.
     + automate incident response
         + AWS security hub
         + AWS config
@@ -190,13 +191,18 @@
         + code vulnerability
         + network reachability
 + AWS Audit Manager
+    +  its primary focus is on assessing compliance against controls
+    + not real-time identification of unauthorized API calls.
 + AWS Artifact
     +  security and compliance reports.
 + AWS CloudTrail
     + AWS CloudTrail helps you perform operational and risk auditing, governance, and compliance of your AWS account.
+    + It records API calls and related events made by users, roles, or AWS services in your AWS account.
 + AWS Trusted Advisor
     +  optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. 
-
+    + provides recommendations that help you follow AWS best practices.
++ Amazon Fraud Detector
+    +  identify potentially fraudulent online activities, such as online payment fraud or the creation of fake accounts.
 ## data engineering
 + data collection
     + Amazon Kinesis
@@ -225,3 +231,5 @@
     + speech to text
 + amazon lex
     + chatbot
++ AWS Data Exchange
+    + AWS Data Exchange makes it easy for AWS customers to find, subscribe to, and use third-party data in the cloud. 

@@ -38,3 +38,5 @@
 ## tips
 +  Data augmentation
     + （数据增强）指增加训练样本数量，不直接减少标注错误。
++ Anomaly Detection
+    + 是检测非典型模式或异常行为的 AI 技术
