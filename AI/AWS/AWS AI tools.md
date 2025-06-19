@@ -7,6 +7,8 @@
 
 
 ## Amazon BedRock
++  Amazon Bedrock is a fully managed service that provides access to leading foundation models (FMs) from Amazon and third-party AI companies via an API.
+    + sentiment analysis
 + Model Evaluation
     + evaluate,compare,select FM
 + Guardrails
@@ -71,6 +73,8 @@
     +  define minimum permissions in minutes
 + Model Monitor
     + monitors the quality of SageMaker machine learning models in production.
++ Model Registry
+    + catalog models, manage their versions, and track their lineage.
 
 + supported frameworks 
     + scikit-learn, 
@@ -78,6 +82,7 @@
     + PyTorch
     + MXNet
     + Chainer
+
 + built-in algorithms
     + supervised learning(Classification,Regression)
         + linear learner
@@ -230,6 +235,15 @@
 + Amazon Transcribe
     + speech to text
 + amazon lex
-    + chatbot
+    + Amazon Lex is a service for building conversational interfaces (chatbots and voice bots) using voice and text.
 + AWS Data Exchange
     + AWS Data Exchange makes it easy for AWS customers to find, subscribe to, and use third-party data in the cloud. 
++ Amazon Comprehend
+    + Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text.
+        + sentiment analysis (identifying if text is positive, negative, neutral, or mixed)
+        + entity recognition
+        + key phrase extraction
++ Amazon Polly
+    + text to speech
++  Amazon Rekognition
+    + a computer vision service that makes it easy to add image and video analysis to your applications

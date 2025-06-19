@@ -330,3 +330,6 @@
 
 + Data lineage 
     + Data lineage is a technique used to track the history of data, including its origin, transformation, and movement through different systems.is a technique used to track the history of data, including its origin, transformation, and movement through different systems.
+
++ Hyperparameters 
+    + control the learning process (e.g., learning rate, number of layers, regularization strength). 
