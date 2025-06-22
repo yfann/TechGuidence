@@ -7,6 +7,8 @@
 
 
 ## Amazon BedRock
++  Amazon Bedrock is a fully managed service that provides access to leading foundation models (FMs) from Amazon and third-party AI companies via an API.
+    + sentiment analysis
 + Model Evaluation
     + evaluate,compare,select FM
 + Guardrails
@@ -71,6 +73,8 @@
     +  define minimum permissions in minutes
 + Model Monitor
     + monitors the quality of SageMaker machine learning models in production.
++ Model Registry
+    + catalog models, manage their versions, and track their lineage.
 
 + supported frameworks 
     + scikit-learn, 
@@ -78,6 +82,7 @@
     + PyTorch
     + MXNet
     + Chainer
+
 + built-in algorithms
     + supervised learning(Classification,Regression)
         + linear learner
@@ -165,6 +170,7 @@
     + Amazon Macie
         + sensitive data discovery
         + scan S3
+        + scan stored data not realtime
     + AWS Identity and Access Management(IAM)
     + AWS network firewall and Amazon VPC, AWS  privateLink
         + against data theft
@@ -172,6 +178,7 @@
         + scan vulnerabilities
     + AWS Artifact
         + compliance
+        + self-service portal for accessing and managing security and compliance reports from AWS and independent software vendors (ISVs) that offer their products on AWS Marketplace.
     + automate incident response
         + AWS security hub
         + AWS config
@@ -190,13 +197,18 @@
         + code vulnerability
         + network reachability
 + AWS Audit Manager
+    +  its primary focus is on assessing compliance against controls
+    + not real-time identification of unauthorized API calls.
 + AWS Artifact
     +  security and compliance reports.
 + AWS CloudTrail
     + AWS CloudTrail helps you perform operational and risk auditing, governance, and compliance of your AWS account.
+    + It records API calls and related events made by users, roles, or AWS services in your AWS account.
 + AWS Trusted Advisor
     +  optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. 
-
+    + provides recommendations that help you follow AWS best practices.
++ Amazon Fraud Detector
+    +  identify potentially fraudulent online activities, such as online payment fraud or the creation of fake accounts.
 ## data engineering
 + data collection
     + Amazon Kinesis
@@ -223,3 +235,20 @@
 ## others
 + Amazon Comprehend
     + 能够自动执行多种 NLP 任务，帮助企业从大量的非结构化文本数据（如文档、客户评论、社交媒体帖子、邮件、新闻文章等）中获取信息。
++ Amazon Transcribe
+    + speech to text
++ amazon lex
+    + Amazon Lex is a service for building conversational interfaces (chatbots and voice bots) using voice and text.
++ AWS Data Exchange
+    + AWS Data Exchange makes it easy for AWS customers to find, subscribe to, and use third-party data in the cloud. 
++ Amazon Comprehend
+    + Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text.
+        + sentiment analysis (identifying if text is positive, negative, neutral, or mixed)
+        + entity recognition
+        + key phrase extraction
++ Amazon Polly
+    + text to speech
++  Amazon Rekognition
+    + a computer vision service that makes it easy to add image and video analysis to your applications
++ Moderation APIs 
+    + 内容审核API
