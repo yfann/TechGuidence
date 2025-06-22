@@ -73,8 +73,10 @@
             + Diffusion is a deep learning architecture system that starts with pure noise or random data. The models gradually add more and more meaningful information to this noise until they end up with a clear and coherent output, like an image or a piece of text.
             + Forward/Reverse diffusion
         + Multimodal models
-        + GANs
+        + Generative Adversarial Networks（生成对抗网络，简称 GANs
+            + 生成以假乱真的数据
         + VAEs
+            + “学会压缩数据”和“从压缩表示中生成新数据”的神经网络模型，并在此过程中引入概率建模，使得生成的数据更具多样性和连续性。
 
 + fine-tuning
     + Instruction fine-tuning 
@@ -330,6 +332,3 @@
 
 + Data lineage 
     + Data lineage is a technique used to track the history of data, including its origin, transformation, and movement through different systems.is a technique used to track the history of data, including its origin, transformation, and movement through different systems.
-
-+ Hyperparameters 
-    + control the learning process (e.g., learning rate, number of layers, regularization strength). 

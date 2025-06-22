@@ -170,6 +170,7 @@
     + Amazon Macie
         + sensitive data discovery
         + scan S3
+        + scan stored data not realtime
     + AWS Identity and Access Management(IAM)
     + AWS network firewall and Amazon VPC, AWS  privateLink
         + against data theft
@@ -247,3 +248,5 @@
     + text to speech
 +  Amazon Rekognition
     + a computer vision service that makes it easy to add image and video analysis to your applications
++ Moderation APIs 
+    + 内容审核API
