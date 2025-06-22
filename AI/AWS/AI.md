@@ -230,6 +230,11 @@
         + BLEU measures the precision of N-grams in the machine-generated text that appears in the reference texts and applies a penalty for overly short translations (brevity penalty).
         +  precision and accuracy 
     + F1 score(for evaluating classification or entity recognition tasks)
+        + cases
+            + 信息检索
+            + NLP
+        + Precision
+        + recall
     + Recall-Oriented Understudy for Gisting Evaluation (ROUGE) 
         + use cases
             + evaluating automatic summarization 
@@ -242,6 +247,9 @@
             + 
     + BERTScore
         + assessing the semantic similarity between two sentences. 
+        + Text summarization
+    + Root Mean Squared Error (RMSE)
+        + RMSE is a metric primarily used for regression tasks to measure the difference between predicted values and observed values.
 
 ## prompt
 + inference parameters
@@ -308,6 +316,14 @@
     + similarity search are k-nearest neighbors (k-NN)
 
 
+## alg
++ k-NN
+    + k-NN is a non-parametric, lazy learning algorithm used for both classification and regression tasks.
++ K-means
+    + K-means is an unsupervised clustering algorithm
++ Linear regression
+    +  supervised algorithm used for regression tasks
+
 ## tips
 + data efficiency(Gen AI)
     + few-shot learning
@@ -330,3 +346,7 @@
 
 + Data lineage 
     + Data lineage is a technique used to track the history of data, including its origin, transformation, and movement through different systems.is a technique used to track the history of data, including its origin, transformation, and movement through different systems.
+
++ Ongoing pre-training
++ CFG scale
+    + 文生图时，是否完全按照文字生成

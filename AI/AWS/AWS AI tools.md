@@ -219,3 +219,7 @@
 ## Amazon Q business
 + generative AI-powered assistant
     +  answer questions, generate content, create summaries, and complete tasks—all based on the information in your enterprise. 
+
+## others
++ Amazon Comprehend
+    + 能够自动执行多种 NLP 任务，帮助企业从大量的非结构化文本数据（如文档、客户评论、社交媒体帖子、邮件、新闻文章等）中获取信息。
