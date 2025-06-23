@@ -73,8 +73,10 @@
             + Diffusion is a deep learning architecture system that starts with pure noise or random data. The models gradually add more and more meaningful information to this noise until they end up with a clear and coherent output, like an image or a piece of text.
             + Forward/Reverse diffusion
         + Multimodal models
-        + GANs
+        + Generative Adversarial Networks（生成对抗网络，简称 GANs
+            + 生成以假乱真的数据
         + VAEs
+            + “学会压缩数据”和“从压缩表示中生成新数据”的神经网络模型，并在此过程中引入概率建模，使得生成的数据更具多样性和连续性。
 
 + fine-tuning
     + Instruction fine-tuning 
@@ -230,6 +232,11 @@
         + BLEU measures the precision of N-grams in the machine-generated text that appears in the reference texts and applies a penalty for overly short translations (brevity penalty).
         +  precision and accuracy 
     + F1 score(for evaluating classification or entity recognition tasks)
+        + cases
+            + 信息检索
+            + NLP
+        + Precision
+        + recall
     + Recall-Oriented Understudy for Gisting Evaluation (ROUGE) 
         + use cases
             + evaluating automatic summarization 
@@ -242,6 +249,9 @@
             + 
     + BERTScore
         + assessing the semantic similarity between two sentences. 
+        + Text summarization
+    + Root Mean Squared Error (RMSE)
+        + RMSE is a metric primarily used for regression tasks to measure the difference between predicted values and observed values.
 
 ## prompt
 + inference parameters
@@ -308,6 +318,14 @@
     + similarity search are k-nearest neighbors (k-NN)
 
 
+## alg
++ k-NN
+    + k-NN is a non-parametric, lazy learning algorithm used for both classification and regression tasks.
++ K-means
+    + K-means is an unsupervised clustering algorithm
++ Linear regression
+    +  supervised algorithm used for regression tasks
+
 ## tips
 + data efficiency(Gen AI)
     + few-shot learning
@@ -331,5 +349,6 @@
 + Data lineage 
     + Data lineage is a technique used to track the history of data, including its origin, transformation, and movement through different systems.is a technique used to track the history of data, including its origin, transformation, and movement through different systems.
 
-+ Hyperparameters 
-    + control the learning process (e.g., learning rate, number of layers, regularization strength). 
++ Ongoing pre-training
++ CFG scale
+    + 文生图时，是否完全按照文字生成

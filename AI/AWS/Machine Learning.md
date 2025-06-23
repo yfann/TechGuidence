@@ -30,19 +30,27 @@
     + high variance -> overfitting
 + low bias,low variance -> balanced
 
-## classification metrics
-+ accuracy
-+ precision
-+ recall
-+ f1
-+ AUC-ROC
 
-## regression metrics
-+ mean squared error
-+ R squared
+## metrics
++ classification metrics
+    + accuracy
+    + precision
+    + recall
+    + f1
+    + AUC-ROC
+    + Confusion Matrix
+        + A confusion matrix is a table that summarizes the performance of a classification model on a set of test data for which the true values are known. 
++ regression metrics
+    + R squared
+    + R2 score
+        + The R2 score is a common metric used in regression problems.
+    + Mean Squared Error (MSE)
+        + MSE is another common metric used in regression problems. 
 
 
 ## Confusion matrix
++  A confusion matrix is a table that summarizes the performance of a classification model on a set of test data for which the true values are known.
+
 + True Positive(TP)
 + False negative(FN)
 + False Positive(FP)
