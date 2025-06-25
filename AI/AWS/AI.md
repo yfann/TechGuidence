@@ -244,7 +244,7 @@
         + The main idea behind ROUGE is to count the number of overlapping units.
         + ROUGE-N
             + his metric measures the overlap of n-grams between the generated text and the reference text. 
-            +  This metric primarily assesses the fluency of the text and the extent to which it includes key ideas from the reference.
+            + This metric primarily assesses the fluency of the text and the extent to which it includes key ideas from the reference.
         + ROUGE-L
             + 
     + BERTScore
