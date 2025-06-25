@@ -25,6 +25,13 @@
 + Real-world knowledge (RWK) score
     + hallucinations
 
++ Recall-Oriented Understudy for Gisting Evaluation （ROUGE） score
+    + 评估自动文本摘要和生成内容质量的评价指标
+        + 自动摘要
+        + 机器翻译
+        + 对话生成
+        + 文本生成模型（如 GPT、T5、BART）输出的质量评估
+
 <!-- classification -->
 + Area Under the ROC Curve (AUC) score:
    + AUC is primarily used for evaluating the performance of binary classification models.
@@ -47,14 +54,31 @@
 + Root Mean Squared Error（RMSE）
    + 同样用于回归任务，衡量预测值与真实值之间的误差。
    + 不适用于分类模型。
-
-## algorithm
++ Mean absolute percentage error (MAPE)
+    +  是一种常用的回归模型误差评估指标，用于衡量预测值与实际值之间的相对误差。它的直观含义是：预测平均偏离真实值的百分比。
+## algorithm&models
++ Detoxify algorithm 
+    + 有毒语言检测算法（toxic language detection algorithm）
 + K-nearest neighbors (k-NN)
     + 有监督
     + k-NN is a non-parametric, instance-based learning algorithm that can be used for both classification and regression.
 + K-means
     + unsupervised learning algorithm used for clustering
++ Autoregressive Integrated Moving Average (ARIMA)
+    + 自回归积分滑动平均
+    + Time Series Forecasting
+    + 主要用于分析和预测具有趋势性或季节性模式的时间序列数据
++ Linear regression
+    + a supervised learning algorithm used for regression tasks
++ Logistic regression model
+    + a highly interpretable model
+    + It models the probability of a binary outcome (like churn/no churn) and provides coefficients (weights) for each input variable. 
 
+## parameters
++ regularization parameter
+    + prevent overfitting
+        + Regularization is a technique used to prevent overfitting by adding a penalty to the loss function for large coefficients
+    + Increase the regularization parameter to decrease model complexity.
 
 ## tips
 + Data augmentation
@@ -65,3 +89,5 @@
     + 机器学习模型解释的可视化工具，用来展示一个或两个特征对模型预测结果的边际影响
 + Increase the number of epochs
     + 用于控制模型训练的次数。
++ Exploratory data analysis
+    + 探索性数据分析

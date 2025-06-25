@@ -252,3 +252,5 @@
     + a computer vision service that makes it easy to add image and video analysis to your applications
 + Moderation APIs 
     + 内容审核API
++ Amazon Personalize
+    + 个性化推荐
