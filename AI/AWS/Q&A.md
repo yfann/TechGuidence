@@ -1,7 +1,4 @@
 
-+ PDPs(Partial dependence plots)
-    + 机器学习模型解释的可视化工具，用来展示一个或两个特征对模型预测结果的边际影响
-
 ## ml
 + Decision Trees
     + 可解释
@@ -36,7 +33,9 @@
     + 用于控制模型训练的次数。
 
 ## tips
-+  Data augmentation
++ Data augmentation
     + （数据增强）指增加训练样本数量，不直接减少标注错误。
 + Anomaly Detection
     + 是检测非典型模式或异常行为的 AI 技术
++ PDPs(Partial dependence plots)
+    + 机器学习模型解释的可视化工具，用来展示一个或两个特征对模型预测结果的边际影响

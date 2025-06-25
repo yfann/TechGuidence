@@ -94,7 +94,7 @@
     + Bias
         +  Bias in a model means that the model is missing important features of the datasets. This means that the data is too basic.
         + underfitted 
-    + Variance 
+    + Variance(方差)
         + Overfitting
             + when model performs well on the training data but does not perform well on the evaluation data
 
