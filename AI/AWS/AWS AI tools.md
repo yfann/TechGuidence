@@ -28,6 +28,8 @@
     + AWS Glue interactive sessions
     + handle large-scale interactive data preparation and machine learning workflows within your SageMaker Studio Classic notebook.
 + feature store
++ Ground Truth
+    + data labeling
 <!-- training -->
 + Canvas
     + LCNC(low code no code)
