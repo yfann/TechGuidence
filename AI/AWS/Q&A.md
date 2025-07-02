@@ -74,11 +74,31 @@
     + a highly interpretable model
     + It models the probability of a binary outcome (like churn/no churn) and provides coefficients (weights) for each input variable. 
 
-## parameters
+
+## hyperparameter 
++ Learning rate
+    +  controls how much the model adjusts its weights and biases with respect to the loss gradient during backpropagation
+    + High learning rate: Can cause the model to overshoot the optimal solution, leading to unstable training or divergence.
+    + Low learning rate: Can lead to very slow training and the model getting stuck in local minima, or it might prevent the model from learning sufficiently.
+
 + regularization parameter
     + prevent overfitting
         + Regularization is a technique used to prevent overfitting by adding a penalty to the loss function for large coefficients
     + Increase the regularization parameter to decrease model complexity.
++ Model Complexity/Capacity
+    +  Reducing the number of layers, neurons per layer, or using a simpler model architecture.
+
++ Early Stopping
+    + Monitoring performance on a validation set and stopping training when validation performance starts to degrade, even if training loss is still decreasing.
+
++ Learning Rate Schedule:
+    + Dynamically adjusting the learning rate during training (e.g., reducing it over time).
+
++ Pooling size 
+    + In CNNs, pooling layers reduce the spatial dimensions of the feature maps, which helps to:
+        + Reduce computational complexity.
+        + Provide translational invariance.
+        + Reduce overfitting.
 
 ## tips
 + Data augmentation
@@ -100,3 +120,11 @@
 
 + Shapley values 
     + used in machine learning to explain the output of any model. 
+
++ contextual grounding
+    + reduce hallucinations
+        + Retrieval-Augmented Generation (RAG)
+        + Providing Specific Instructions
+            +  Explicitly telling the model to "only use the information provided in this document to answer the question."
++  Activation function
+    + An activation function introduces non-linearity into the model, allowing it to learn complex patterns.
