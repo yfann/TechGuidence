@@ -13,7 +13,7 @@
     - `git clone https://github.com/powerline/fonts.git --depth=1`
     - `cd fonts`
     - `./install.sh`
-    - iTerm2 -> Preferences -> Profiles -> Text
+    - iTerm2 -> settings -> Profiles -> Text
         + Change Font>Meslo LG S for Powerline
 + 安装配色
     - `git clone https://github.com/altercation/solarized`

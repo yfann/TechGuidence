@@ -91,3 +91,12 @@
     + 用于控制模型训练的次数。
 + Exploratory data analysis
     + 探索性数据分析
+
++ fine-tuning vs continued pre-training
+    + fine-tuning
+        + labeled data
+    + continued pre-training
+        + unlabled data
+
++ Shapley values 
+    + used in machine learning to explain the output of any model. 
