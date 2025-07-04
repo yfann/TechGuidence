@@ -91,7 +91,7 @@ pub trait Deref {
 + [rust course](https://github.com/sunface/rust-course)
 + [Rust wiki](https://learnku.com/rust/wikis/29014S)
 + [The Rust Programming Language](https://doc.rust-lang.org/book/)
-
++ [Rust 新手快速教程](https://github.com/InkSha/rust-tutorial)
 
 
 <!-- details -->
