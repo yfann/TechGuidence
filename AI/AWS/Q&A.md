@@ -36,12 +36,14 @@
 + Area Under the ROC Curve (AUC) score:
    + AUC is primarily used for evaluating the performance of binary classification models.
 + accuracy
+   + 准确率
 + precision
 + recall
 + AUC-ROC
 + Confusion Matrix
 + F1 score:
     + a common metric for classification tasks
+    + highly imbalanced datasets
 
 <!-- regression metrics -->
 + R squared
