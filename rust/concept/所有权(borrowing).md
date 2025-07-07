@@ -71,6 +71,15 @@ println!("s1 = {}, s2 = {}", s1, s2);
 
 
 
+## 所有权转移
+<!-- vector -->
++ 不能转移向量中元素的所有权
+    + 会破坏vector结构
+```rust
+let args: Vec<String> = std::env::args().collect();
+let title = args[1]; //会有编译错误
+```
+
 ## tips
 + 引用的作用域 s 从创建开始，一直持续到它最后一次使用的地方，这个跟变量的作用域有所不同，变量的作用域从创建持续到某一个花括号 }
     + Non-Lexical Lifetimes(NLL)

@@ -44,8 +44,6 @@
         + ` (first, .., last)`
     + 结构体更新,表示任意数量的元素
         + `let point2 = Point { x: 10, y: 20, ..point1 };`
-
-## tips
 + `new`不是关键字，一般用作关联函数名用于新建对象
 + `prelude` 
     + rust自动导入一些函数，不需要use
@@ -65,19 +63,22 @@ pub trait Deref {
     + 如果有一个 Box<String> 类型的变量，在调用 box_str.len() 时，Rust 会自动将 Box<String> 解引用为 String，然后调用 String 的 len 方法。
 
 
-
-+ Self:类型
-    + self: 实例，所有权转移
-    + &self: 实例，不可变借用
-    + &mut self: 实例，可变借用
-
 + DST, Dynamically Sized Types（动态大小类型）
     + 编译时无法知道大小的类型
         + dyn Trait
         + [T]
         + str
 
+## self vs Self
++ self
+    + 当前实例
+    + 相当于this
 
++ Self
+    + 当前类型
+    + 相当于类型名称
+
+## String vs &str
 
 
 
