@@ -18,6 +18,10 @@
 
 ## evaluation metrics
 
++ Bilingual Evaluation Understudy (BLEU)
+    + for evaluating machine translation
+    + It measures the similarity between a machine-generated translation and a set of human-created reference translations. 
+    
 + BERTScore
    + summarization
    + semantic similarity 
@@ -26,6 +30,7 @@
     + hallucinations
 
 + Recall-Oriented Understudy for Gisting Evaluation （ROUGE） score
+    + ROUGE is primarily used for evaluating summarization tasks,
     + 评估自动文本摘要和生成内容质量的评价指标
         + 自动摘要
         + 机器翻译
