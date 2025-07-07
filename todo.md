@@ -5,9 +5,7 @@
 + google老三篇
     + GFS
     + Mapreduce
-    + Bigtable: A Distributed Storage System for Structured Data
-+  [Envoy 深入架构原理和实践](https://www.thebyte.com.cn/MicroService/Envoy.html)
-
+    + Bigtable: A Distributed Storage System for Structured Data∂
 
 
 <!-- sys design -->
