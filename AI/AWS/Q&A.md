@@ -21,7 +21,7 @@
 + Bilingual Evaluation Understudy (BLEU)
     + for evaluating machine translation
     + It measures the similarity between a machine-generated translation and a set of human-created reference translations. 
-    
+
 + BERTScore
    + summarization
    + semantic similarity 
@@ -49,6 +49,7 @@
 + F1 score:
     + a common metric for classification tasks
     + highly imbalanced datasets
+    + The F1 score is the harmonic mean of precision and recall.
 
 <!-- regression metrics -->
 + R squared
