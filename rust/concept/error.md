@@ -1,6 +1,14 @@
 # rust error handling
 + rust没有try catch,用result进行错误传播和处理
 
+## Result
+```rust
+enum Result<T, E> {
+    Ok(T),      // 操作成功时, 返回结果 T
+    Err(E),     // 操作失败时, 返回错误类型 E
+}
+```
+
 ## `?`
 + 错误传播
     + 使用 ? 的函数必须返回 Result 或 Option 类型。
@@ -53,3 +61,35 @@ fn read_file_and_process(path: &str) -> Result<String, Box<dyn std::error::Error
 
 + `or_else()`
 + `and_then()`
+
+## unwrap
++ 从Result<T,E>中获取值
+    + 如果 Result 是 Ok(T), 则返回 T;
+    + 如果 Result 是 Err(E), 则程序会崩溃并打印错误信息。
+
+## expect
++ 与unwrap类似，但会返回自定义的错误
+```rust
+let data = serde_json::to_string(todos).expect("序列化失败");
+
+
+```
+
+## match处理Result
+```rust
+pub fn save_todo_list(save_file: &str, todos: &Vec<TodoItem>) {
+  match serde_json::to_string(todos) {
+    Ok(data) => match fs::write(save_file, data) {
+      Err(msg) => {
+        println!("save file error: {}", msg);
+      }
+      Ok(_) => {
+        println!("save file success");
+      }
+    },
+    Err(msg) => {
+      println!("save file error: {}", msg);
+    }
+  }
+}
+```
