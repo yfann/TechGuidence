@@ -74,53 +74,48 @@ where
 
 ```
 
-## Fn trait
+## 闭包调用 trait
++ Fn ⊆ FnMut ⊆ FnOnce
 + FnOnce
+    + move
+    + 只能调用一次
+    + 会消耗被捕获的变量，比如转移所有权。  Q
 ```rust
-
-fn fn_once<F>(func: F)
-where
-    F: FnOnce(usize) -> bool,
-{
-    println!("{}", func(3));
-    println!("{}", func(4));
-}
-
-fn main() {
-    let x = vec![1, 2, 3];
-    fn_once(|z|{z == x.len()})
-}
+let s = String::from("hello");
+let f = move || {
+    println!("{}", s); // 这里闭包拿走了 s 的所有权
+};
+f(); // ✅ 第一次调用 OK
+// f(); ❌ 第二次调用错误：s 已经被 move 了
 ```
 
 + FnMute
+    + &mut
+    + 可多次调用
+    + 可以修改被捕获的变量，但不转移所有权。
 ```rust
-fn main() {
-    let mut s = String::new();
-
-    let mut update_string =  |str| s.push_str(str);
-    update_string("hello");
-
-    println!("{:?}",s);
-}
+let mut x = 0;
+let mut f = || {
+    x += 1; // 需要可变借用
+    println!("{}", x);
+};
+f(); // ✅ 调用 1
+f(); // ✅ 调用 2
 ```
 
 + Fn
-     + 不可变借用
+    + &
+    + 可多次调用
+    + 只能读取被捕获的变量，不能修改也不转移所有权。
 
 ```rust
-fn main() {
-    let s = "hello, ".to_string();
+let x = 1;
+let f = || {
+    println!("{}", x); // 只读访问
+};
+f(); // ✅ 调用 1
+f(); // ✅ 调用 2
 
-    let update_string =  |str| println!("{},{}",s,str);
-
-    exec(update_string);
-
-    println!("{:?}",s);
-}
-
-fn exec<'a, F: Fn(String) -> ()>(f: F)  {
-    f("world".to_string())
-}
 ```
 
 ## 闭包作为函数返回值
