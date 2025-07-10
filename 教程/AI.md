@@ -3,15 +3,21 @@
 + [ChatGPT GUIDE](https://www.chatgptguide.ai/)
 + [图解GPT](https://github.com/datawhalechina/learn-nlp-with-transformers/blob/main/docs/%E7%AF%87%E7%AB%A02-Transformer%E7%9B%B8%E5%85%B3%E5%8E%9F%E7%90%86/2.4-%E5%9B%BE%E8%A7%A3GPT.md)
 
-<!-- promt -->
-+ [Prompt Engineering Guide](https://www.promptingguide.ai/)
-+ [prompt-library](https://www.aiforeducation.io/prompt-library)
-+ [Awesome ChatGPT Prompts](https://prompts.chat/)
-
-
 <!-- deeplearning -->
 + [deeplearningbasics](https://github.com/PingNie1/deeplearningbasics)
 
+## agent
++ [agents](https://github.com/ed-donner/agents)
+    + 6 week journey to code and deploy AI Agents with OpenAI Agents SDK, CrewAI, LangGraph, AutoGen and MCP
++ [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners)
+
+
+## prompts
++ [prompt-eng-interactive-tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
+    + Anthropic's Interactive Prompt Engineering Tutorial
++ [Prompt Engineering Guide](https://www.promptingguide.ai/)
++ [prompt-library](https://www.aiforeducation.io/prompt-library)
++ [Awesome ChatGPT Prompts](https://prompts.chat/)
 
 ## AI
 + [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)

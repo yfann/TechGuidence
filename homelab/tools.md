@@ -9,3 +9,5 @@
     + network monitoring tool
 + [Technitium](https://www.xda-developers.com/pihole-alternative-called-technitium/)
     + 家用DNS
++ [putty](https://github.com/putyy/res-downloader?tab=readme-ov-file)
+    + 资源下载

@@ -95,3 +95,14 @@
 + [japanese-analyzer](https://github.com/cokice/japanese-analyzer)
 + [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
     + self host 翻译API
+
+
+
+## MCP
++ [genai-toolbox](https://github.com/googleapis/genai-toolbox)
+    + MCP Toolbox for Databases
+
+
+## agent
++ [WebAgent](https://github.com/Alibaba-NLP/WebAgent)
+    + Information Seeking
