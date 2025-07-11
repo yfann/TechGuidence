@@ -54,7 +54,8 @@
 + vscode + cline
 + [pagemagic](https://github.com/khaledh/pagemagic)
     + 一个 Chrome 的 AI 插件，输入你对当前网页的修改描述，它自动将改好的网页呈现在浏览器里，需要 Anthropic API。
-
++ [opencode](https://github.com/sst/opencode)
+    + AI coding agent
 
 ## data analyze
 + [probly](https://github.com/PragmaticMachineLearning/probly)
