@@ -7,6 +7,8 @@
     + Mapreduce
     + Bigtable: A Distributed Storage System for Structured Data∂
 + [prompt-eng-interactive-tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
++ gemini cli sourcecode
+
 
 <!-- sys design -->
 + [为什么这么设计系列文章](https://draveness.me/whys-the-design/)
