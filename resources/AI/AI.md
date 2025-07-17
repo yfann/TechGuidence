@@ -105,5 +105,7 @@
 
 
 ## agent
-+ [WebAgent](https://github.com/Alibaba-NLP/WebAgent)
-    + Information Seeking
+
+
+## database
++ [vanna](https://github.com/vanna-ai/vanna)
