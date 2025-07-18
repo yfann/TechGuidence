@@ -1,18 +1,4 @@
 
-## ai image
-+ [https://bylo.ai/](https://bylo.ai/)
-    + text 2 img
-+ [color-diffusion](https://github.com/ErwannMillon/Color-diffusion)
-    + 黑白图上色
-+ [](https://github.com/zhongweili/imagenie)
-    + 本地图片处理
-+ [raphael](https://raphael.app/zh)
-    + 文字生图
-+ [](https://aiimageeditor.me/)
-    + image editor
-+ [olmocr](https://github.com/allenai/olmocr)
-
-    
 ## ai search
 + [](https://onionai.so/)
 + [perplexity](https://www.perplexity.ai/discover)
@@ -61,10 +47,6 @@
 + [probly](https://github.com/PragmaticMachineLearning/probly)
     + ai电子表格，可用python编码
 
-
-## ai播客
-
-
 ## 3d
 + [blender mcp](https://github.com/ahujasid/blender-mcp)
 
@@ -99,11 +81,7 @@
 
 
 
-## MCP
+## database
++ [vanna](https://github.com/vanna-ai/vanna)
 + [genai-toolbox](https://github.com/googleapis/genai-toolbox)
     + MCP Toolbox for Databases
-
-
-## agent
-+ [WebAgent](https://github.com/Alibaba-NLP/WebAgent)
-    + Information Seeking

@@ -6,10 +6,6 @@
 <!-- deeplearning -->
 + [deeplearningbasics](https://github.com/PingNie1/deeplearningbasics)
 
-## agent
-+ [agents](https://github.com/ed-donner/agents)
-    + 6 week journey to code and deploy AI Agents with OpenAI Agents SDK, CrewAI, LangGraph, AutoGen and MCP
-+ [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners)
 
 
 ## prompts
