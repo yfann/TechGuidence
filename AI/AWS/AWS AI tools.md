@@ -69,8 +69,6 @@
 + Autopilot
     + provide insights into how ML models make predictions
     + for AI explainability
-+ Ground Truth
-    + RLHF 
 + Role Manager
     +  define minimum permissions in minutes
 + Model Monitor
@@ -90,7 +88,7 @@
         + linear learner
         + factorization machines
         + XGBoost
-        + K-Nearest neighbors(KK)
+        + K-Nearest neighbors(KNN)
     + unsupervised learning
         + clustering
             + K-means

@@ -88,6 +88,9 @@ pub trait Deref {
 
 
 
+## tips
++ FFI(外部函数接口)
+
 ## ref
 <!-- 经典教程 -->
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
