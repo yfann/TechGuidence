@@ -103,7 +103,7 @@ pub trait Deref {
 + [The Rust Programming Language](https://doc.rust-lang.org/book/)
 + [Rust 新手快速教程](https://github.com/InkSha/rust-tutorial)
 + [Rusty Book(锈书)](https://rusty.course.rs/datetime/duration.html)
-
++ [tokio](https://tokio.rs/tokio/tutorial)
 <!-- details -->
 + [Rust 所有权：内存管理新流派](https://juejin.cn/post/6844903509087764488)
 
