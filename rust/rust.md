@@ -95,7 +95,7 @@ pub trait Deref {
 <!-- 经典教程 -->
 + [Rust语言圣经(Rust Course)](https://course.rs/first-try/intro.html)
 + [通过例子学 Rust 中文版](https://rustwiki.org/zh-CN/rust-by-example/)
-
++ [Rust入门秘籍](https://rust-book.junmajinlong.com/ch100/00.html)
 
 <!-- 教程 -->
 + [rust course](https://github.com/sunface/rust-course)
