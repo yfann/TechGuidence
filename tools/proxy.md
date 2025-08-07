@@ -35,10 +35,11 @@
 ```
 
 ## pip3
-
+```sh
 set http_proxy=http://xxxx:xxx
 set https_proxy=http://xxxx:xxx
 pip3 install xxxx
+```
 
 ## maven
 + `{maven}/conf/settings.xml`
@@ -57,6 +58,39 @@ Acquire::https::Proxy "http://proxy_server:port";
 ## windows
 + ping 不通的原因，ping的协议不是http，也不是https，是ICMP协议。设Http代理不会影响ping
 + 验证用`curl http://www.google.com`
+
+
+
+
+## debug in vscode
++ set proxy in coding
+```py
+os.environ['HTTP_PROXY'] = 'xxxxx'
+os.environ['HTTPS_PROXY'] = 'xxxxx'
+```
+
++ set proxy in launch.json
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "HTTP_PROXY": "xxxxx",
+                "HTTPS_PROXY": "xxxxx"
+            }
+        }
+    ]
+}
+
+```
+
+
 
 ## ref
 + [给 Windows 的终端配置代理](https://zcdll.github.io/2018/01/27/proxy-on-windows-terminal/)
