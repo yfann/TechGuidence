@@ -68,7 +68,8 @@
 + [hacker-news](https://github.com/ccbikai/hacker-news?tab=readme-ov-file)
 + [DeepSRT]()
     + chrome 插件，youtube总结和字幕
-
++ [KittenTTS](https://github.com/KittenML/KittenTTS)
+    + text to voice
 
 ## NLP
 + [read-bridge](https://github.com/WindChimeEcho/read-bridge)
