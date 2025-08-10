@@ -1,0 +1,20 @@
+# 存储
+
+
+## 格式化移动盘
++ Disk Utility
+    + erase
+
+
+## docker images 迁移
++ docker desktop -> settings -> resources -> advanced -> disk image location
++ docker desktop -> settings -> resources -> File sharing
+    + 添加`/volumes/SSD`
+    + /Volumes/SSD 是外接硬盘挂载点，macOS 默认不让 Docker VM 直接访问，需要手动授权
+
+## ios备份迁移
++ `~/Library/Application Support/MobileSync/`
++ 把backup移动到外置硬盘
++ `ln -s /Volumes/SSD/iOS_Backup ~/Library/Application\ Support/MobileSync/Backup`
+    + iTerm添加权限
+        + system settings -> Privacy & Security -> Full Disk Access
