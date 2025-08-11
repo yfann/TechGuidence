@@ -38,5 +38,7 @@ deluan/navidrome:latest
 
 ## ref
 + [navidrome](https://www.navidrome.org/docs/installation/)
+<!-- downloader -->
 + [spotify-downloader Public](https://github.com/spotDL/spotify-downloader)
-
++ [zotify](https://github.com/zotify-dev/zotify)
++ [spotidownloader](https://spotidownloader.com/en)
