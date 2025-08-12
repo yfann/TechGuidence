@@ -4,10 +4,13 @@
 + `curl -o- https://raw.githubusercontent.com/immich-app/immich/main/install.sh | bash`
 
 
-## operation
+## manage
 + `http://localhost:2283/`
 
-
+## operation
++ `docker compose down`
+    + `./docker-compose.yml`
++ `docker compose up -d`
 
 
 
