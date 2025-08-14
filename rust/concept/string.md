@@ -1,177 +1,84 @@
+# String vs &str
 
-## string
+
+## 比较
+| 类型           | 所有权 | 存储位置            | 可变性 | 长度   | 常见用途                                       |
+| ------------ | --- | --------------- | --- | ---- | ------------------------------------------ |
+| **`String`** | 有   | 堆（heap）         | 可变  | 动态可变 | 需要可变的、拥有所有权的字符串                            |
+| **`&String`**| 无
+| **`str`**    | 无   | 任意（一般在程序的常量区或堆） | 不可变 | 固定   | 原始的 UTF-8 字符串切片类型（几乎不用直接写 `str`，多用 `&str`） |
+| **`&str`**   | 无   | 任意（常量区/堆/栈）     | 不可变 | 固定   | 借用字符串（不可变引用）                               |
+
+
 + String
-    + 堆中存储 
-    + &String指向String对象（多一个引用层）
-```rust
-let mut s = String::from("hello");
-s.push_str(", world!");
-println!("{}", s);
-```
+    + 是堆分配的、可变的、拥有所有权的 UTF-8 字符串。   
+    + 实际上是一个结构体，内部包含：
+        + 指针（指向堆上的数据）
+        + 长度（已使用的字节数）
+        + 容量（堆上分配的空间大小）
+
++ str
+    + 是原始字符串切片类型，本质上就是 UTF-8 字节序列。
+    + 它的长度是固定的（编译期或运行期已知）。
+    + 不能单独存在（因为需要长度信息），所以我们常用 &str（带引用和长度信息）。
 
 + &str
-    + slice
-    + 本身可能指向栈（字面量）或堆
-    + 直接指向字节数组（UTF-8）
-    + String的部分或全部
-    + &str：做参数，能接收：
-        + 字符串字面量
-        + String
-        + 字符串切片
-```rust
+    + 是一个不可变借用，包含：
+        + 指针（指向字符串数据的起始位置）
+        + 长度（字节数）
+    + 不拥有数据，只是对现有字符串的一段切片的引用。
 
-fn print_str(s: &str) {
+```rust
+fn main() {
+    // String：堆上分配，拥有所有权
+    let mut s: String = String::from("Hello");
+    s.push_str(", world"); // 可变
     println!("{}", s);
+
+    // &str：不可变引用，可以来自 String 或字面量
+    let s_literal: &str = "Hello"; // 存在于程序的只读内存中
+    let s_slice: &str = &s[0..5]; // 从 String 切片
+    println!("{} / {}", s_literal, s_slice);
+
+    // str（很少直接用）
+    // fn my_func(s: &str) { ... }  // 接口多用 &str
 }
 
-fn print_string(s: &String) {
-    println!("{}", s);
-}
-
-let s = String::from("hello");
-
-print_str(&s);      // ✅ OK：&String 自动解引用为 &str
-print_string(&s);   // ✅ OK：直接是 &String
-
-let slice = &s[..]; // 这是一个 &str
-print_str(slice);   // ✅ OK
-print_string(slice); // ❌ 错误：不能把 &str 当 &String
-
 ```
-
-
-+ 字面量是&str类型
-    + 硬编码进程序里的字符串值
-    + 在栈上
+## 转换
++ &str → String
 ```rust
-let s = "hello" //类型 &str
+let s1: &str = "Hello";
+let s2: String = s1.to_string(); // 或 String::from(s1)
 ```
 
-## slice
-+ 类型： `&str`
++ String → &str
 ```rust
-let s = String::from("hello world");
-
-let hello = &s[0..5];
-let world = &s[6..11];
-
-let slice = &s[..2];
-let slice = &s[4..];
+let s: String = String::from("Hello");
+let slice: &str = &s; // 自动解引用
 ```
 
-+ 字符串字面量是切片 `&str`
+## 使用场景
++ 用 &str → 函数参数，传入任何字符串切片（包括字面量和 String 的切片）
++ 用 String → 需要可变、可增长的字符串并拥有所有权
++ 用 str → 很少直接用，多用于类型签名中的 &str
 
-## String to &str
-+ &str to String
+
+## &str vs &String
++ &str
+    + 更通用：能引用字符串字面量（"abc"）、String 的切片、甚至部分字符串（&s[0..3]）。
+    + 适合做函数参数：
+
++ &String
+    + 只能引用一个完整的 String 对象，不能直接指向字面量
+    + &String 会自动解引用成 &str,反之不行
 ```rust
-String::from("hello,world")
-"hello,world".to_string()
-```
-
-+ String to &str
-    + deref 隐式强制转换
-```rust
-
-let s = String::from("hello,world!");
-//转&str
-say_hello(&s);
-say_hello(&s[..]);
-say_hello(s.as_str());
-
-
-fn say_hello(s: &str) {
-    println!("{}",s);
-}
-```
-
-## push
-+ 在原字符串上修改必须有`mut`
-```rust
-fn main() {
-    let mut s = String::from("Hello ");
-
-    s.push_str("rust");
-    println!("追加字符串 push_str() -> {}", s);
-
-    s.push('!');
-    println!("追加字符 push() -> {}", s);
-}
-```
-
-## insert
-```rust
-fn main() {
-    let mut s = String::from("Hello rust!");
-    s.insert(5, ',');
-    println!("插入字符 insert() -> {}", s);
-    s.insert_str(6, " I like");
-    println!("插入字符串 insert_str() -> {}", s);
-}
-```
-
-## replace
-+ 产生新的字符串 
-```rust
-fn main() {
-    let string_replace = String::from("I like rust. Learning rust is my favorite!");
-    let new_string_replace = string_replace.replace("rust", "RUST");
-    // let new_string_replace = string_replace.replacen("rust", "RUST",1);
-    // string_replace_range.replace_range(7..8, "R");
-    dbg!(new_string_replace);
-}
-```
-
-## delete
-+ 修改自身需要mut
-+ pop
-+ remove
-+ truncate
-+ clear
-
-## concatenate
-+ 要求右边是`&str`,相当于调用add(),产生新字符串，左侧的字符串所有权发生move
-```rust
-fn main() {
-    let string_append = String::from("hello ");
-    let string_rust = String::from("rust");
-    // &string_rust会自动解引用为&str
-    let result = string_append + &string_rust;
-    let mut result = result + "!"; // `result + "!"` 中的 `result` 是不可变的
-    result += "!!!";
-
-    println!("连接字符串 + -> {}", result);
-}
-```
-
-## format
-+ `let s = format!("{} {}!", s1, s2);`
-
-## 字符串转义
-+ `"\u{211D}"`
-+ `\x52\x75\x73\x74`
-+ `let raw_str = r"Escapes don't work here: \x3F \u{211D}";` 不转
-+ `let quotes = r#"And then I said: "There is no escape!""#;` 字符串中有双引号
-+ ` let longer_delimiter = r###"A string with "# in it. And even "##!"###;`字符串中有#号
-
-## utf8的处理
-+ 遍历UTF8
-```rust
-
-for c in "中国人".chars() {
-    println!("{}", c);
-}
-
-for b in "中国人".bytes() {
-    println!("{}", b);
-}
-
+let s = String::from("Hello");
+let slice: &str = &s; 
+// 栈：  s   ->  [ ptr | len=5 | capacity=5 ]  ---> 堆："Hello"
+// 栈： &s -> 指向 s（结构体）的引用
+// &str
+// 栈： slice -> [ ptr | len=5 ]
+// 它指向的是字符串数据（"Hello"）本身，而不是 String 结构体。
 
 ```
-
-+ 取子串
-    + utf8_slice
-
-## tips
-+ 字符串的底层的数据存储格式实际上是[ u8 ]
-    + string无法用索引去取字符，可能取出半个字符
-        + 对应中文字符，切片操作比较危险
