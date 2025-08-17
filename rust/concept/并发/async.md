@@ -1,5 +1,87 @@
 # rust async/await
++ Future + 状态机
+    + async 返回Future,表示未来会运行
+    + await可以执行Future,拿到结果
+    + async fn 在编译时会被编译成一个 状态机，实现了 Future trait
+    + poll 方法被运行时（例如 Tokio）不断调用，直到返回 Poll::Ready(val)，表示结果完成。
+    + Rust 的异步不是抢占式线程，而是 协作式任务。
+        + 抢占式：线程切换
+        + 协作
+            + .await时主动让出控制权
+            + 
+```rust
+async fn say_hello() -> String {
+    "Hello from async!".to_string()
+}
 
+#[tokio::main]  // 提供 async 运行时
+async fn main() {
+    let msg = say_hello().await;  // 等待 Future 完成
+    println!("{}", msg);
+}
+```
+
++ poll
+    + Future是个状态机
+    + poll：就是运行时用来 驱动 Future 前进一步 的方法。
+    + 执行poll
+        + 第一次创建Future
+            + Ready
+                + 直接返回结果
+            + Pending
+                + Future没好时Pending
+                    + IO操作
+                    + 定时器
+                + 并把一个 Waker 注册进去
+                    + I/O 完成后，操作系统（epoll/kqueue/io_uring）会通知运行时
+                    + 运行时用 Waker 把 Future 放回任务队列，再次调用 poll
+                    + 直到返回 Ready，任务才算真正完成。
+
+```rust
+pub trait Future {
+    type Output;
+    fn poll(
+        self: Pin<&mut Self>, 
+        cx: &mut Context<'_>
+    ) -> Poll<Self::Output>;
+}
+
+enum Poll<T> {
+    Ready(T),   // 任务完成，返回结果
+    Pending,    // 任务没完成，需要等一等
+}
+
+```
+
++ task queue / ready queue
+    + 在Tokio/async-std 这样的异步运行时中
+    + 存放 可以继续执行的 Future
+        + 运行时会不断从队列里取任务 → 调用它的 poll 方法
+    + 如果 Future 还没准备好 → 它返回 Pending，运行时把它挂起，不在队列里
+    + 一旦某个事件（比如 socket 可读）触发，运行时通过 Waker 把这个 Future 重新推回队列。
+
++ Waker
+    + Waker 本质上是一个指针，指向运行时的 任务调度器。
+    + 当某个 I/O 事件完成后（比如 epoll 通知 socket 可读）：
+        + 系统调用唤醒运行时。
+        + 运行时通过 Waker.wake() 把对应的 Future 重新推入队列。
+        + 下次事件循环时，这个任务会被取出并再次 poll。
+```rust
+loop {
+    // 1. 从就绪队列里取任务
+    while let Some(task) = ready_queue.pop() {
+        poll(task);
+    }
+
+    // 2. 如果没有就绪任务，就去等待 I/O 或定时器事件
+    //    (epoll/kqueue/io_uring 等)
+    wait_for_events();
+
+    // 3. 事件完成后，把相关任务通过 Waker 推回就绪队列
+}
+
+
+```
 ## async
 + Async开销是0
 + async与多线程多事并发模型，两者不互通
