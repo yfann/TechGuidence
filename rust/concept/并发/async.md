@@ -32,7 +32,7 @@ async fn main() {
                 + Future没好时Pending
                     + IO操作
                     + 定时器
-                + 并把一个 Waker 注册进去
+                + 并把一个 Waker 注册到运行时，然后挂起任务
                     + I/O 完成后，操作系统（epoll/kqueue/io_uring）会通知运行时
                     + 运行时用 Waker 把 Future 放回任务队列，再次调用 poll
                     + 直到返回 Ready，任务才算真正完成。
