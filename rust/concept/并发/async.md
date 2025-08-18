@@ -102,11 +102,29 @@ loop {
         + 等待异步调用完成，不会阻塞当前线程(等待的过程中当前方法可能挂起，线程去执行其他异步方法)
 
 
+## Pin
++ 保证某个值在内存中不会被移动(moved)
+    + 保证指针依然有效
 
+```rust
+pub struct Pin<P> {
+    pointer: P,
+}
+// Pin<Box<T>> 把堆固定住
+```
 
++ Unpin
+    + 大部分类是实现Unpin的，本身可以安全移动
+    + 如果一个类型 没有实现 Unpin（比如 Future），那就必须用 Pin 来保证它不被移动。
+    + 所有权move后，原地址失效
 
++ 在 async/await 里的作用
+    + Rust 编译器把 async fn 编译成一个 状态机（state machine），里面保存了指向自己局部变量的引用。
+    + 如果这个 Future 被随意移动，内部的指针就会失效。所以所有 Future 默认是 !Unpin，需要通过 Pin 固定。
 
-
++ 应用场景
+    + 自引用结构（self-referential struct）
+    + Future
 
 ## tips
 + 并发框架
