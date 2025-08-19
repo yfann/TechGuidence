@@ -126,6 +126,17 @@ pub struct Pin<P> {
     + 自引用结构（self-referential struct）
     + Future
 
+## .await与多线程
++ 线程 Future 执行器( executor )
+    + Future 可能会在线程间被移动，因此 async 语句块中的变量必须要能在线程间传递
+         +它内部的任何.await都可能导致它被切换到一个新线程上去执行
++ .await 时使用普通的锁也不安全
+    + 它可能会导致线程池被死锁
+    + 用futures::lock代替Mutex
+
+## async的什么周期
+
+
 ## tips
 + 并发框架
     + actix
