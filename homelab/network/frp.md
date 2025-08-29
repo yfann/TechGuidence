@@ -50,6 +50,9 @@
             + 握手发生在frpc端
             + 证书也在frpc端
 
++ tcpmux
+    + 一个端口复用多个TCP服务
+    + frps只能定义一个`tcpmuxHTTPConnectPort = 5002`
 
 + tcp vs https
     + tcp
@@ -90,6 +93,8 @@
     localPort = 443
     remotePort = 443
     ```
+
+
 
 
 ## frp支持的模式
@@ -152,7 +157,8 @@
     + 传统的 Web 服务器（Nginx / Apache）中,多个不同的域名可以共享同一个监听端口（80 / 443）
         + 服务器根据 HTTP Host 头 或 TLS SNI 来分流请求，找到对应的虚拟主机配置
 
-
++ SNI（Server Name Indication）
+    + 
 ## ref
 + [frp](https://gofrp.org/zh-cn/docs/overview/)
 + [github frp](https://github.com/fatedier/frp)
