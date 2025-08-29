@@ -5,6 +5,42 @@
 + 服务器证书
 + 客户端证书
 
+## Root CA（根证书颁发机构，Root Certificate Authority
++ 自签名
++ Root CA 通常离线保存，只用来签发少数中级 CA。
++ 操作系统和浏览器厂商会把可信的 Root CA 根证书预装在设备里。
+
+## 证书链（Certificate Chain）
++ [Root CA] ──签发──> [Intermediate CA] ──签发──> [example.com 的 SSL 证书]
++ 证书链是 一系列相互签发的证书
++ 服务器证书 (Server Certificate)
+    + 给具体的域名签发，例如 www.example.com。
++ 中级证书 (Intermediate CA Certificate)
+    + 由 Root CA 签发，负责给服务器颁发证书。
+    + 好处是 Root CA 不需要直接参与日常签发，提升安全性。
++ 根证书 (Root CA Certificate)
+    + 最顶层，自签名。
+    + 预装在操作系统、浏览器、手机等设备的受信任根证书库中
++ verify
+    + 服务器会把 服务器证书 + 中级证书 发给浏览器。
+    + 浏览器验证：
+        + 服务器证书 是否由 中级证书 签发；
+        + 中级证书 是否由 Root CA 签发；
+            + Intermediate CA 证书 包含它的签名值（由 Root CA 私钥生成）
+            + 客户端会取出 Root CA 公钥，对 Intermediate CA 证书中的签名进行验证
+        + root CA 是否在本地系统的受信任列表里。
+    + 如果都成立，就说明这条证书链是可信的。
+
+## digital signature(数字签名)
++ 对内容做hash生成Digest
++ 用私钥对Digest加密生成signature
+
++ 无法解决公钥被替换
+
+## digital certificate(数字证书)
++ CA用自己的私钥对公钥和相关信息一起加密生成Digital Certificate
++ 内容+signature+Digital certificate 一起发给对方
+    + 对方用CA的pub key从digital cert中拿到发送方的pub key
 
 
 ## tips
