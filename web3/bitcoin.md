@@ -25,6 +25,8 @@
 
 ## mining
 
+## tips
++ Bitcoin Improvement Proposals (BIPs).
 
 ## ref
 <!-- bitcoin trade -->
