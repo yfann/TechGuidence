@@ -25,19 +25,24 @@
 
 + http/https
     + customDomains
-        + 需要配置服务端DNS
-            + customDomains->frps ip
-        + Frps需要监听vhost_https_port（443）
-            ```toml
-            [web]
-            # FRPS 外部访问 HTTPS 的端口
-            vhost_https_port = 443
+        + 通过customDomains访问frps
+            + 需要配置服务端DNS
+                + customDomains->frps ip
+        + Frps需要监听
+            + vhost_http_port（80）
+            + vhost_https_port（443）
+                + frps 会自动生成一个临时证书
+                + 或者自己指定证书
+                ```toml
+                [web]
+                # FRPS 外部访问 HTTPS 的端口
+                vhost_https_port = 443
 
-            # TLS 证书和私钥（frps 负责终止 HTTPS）
-            # 如果你想 frpc 直接处理证书，可以用 type = tcp 穿透 443
-            tlsCertFile = "/etc/frp/fullchain.pem"
-            tlsKeyFile = "/etc/frp/privkey.pem"
-            ```
+                # TLS 证书和私钥（frps 负责终止 HTTPS）
+                # 如果你想 frpc 直接处理证书，可以用 type = tcp 穿透 443
+                tlsCertFile = "/etc/frp/fullchain.pem"
+                tlsKeyFile = "/etc/frp/privkey.pem"
+                ```
         + FRPS 会根据访问请求的 Host 头（域名）自动找到对应的 FRPC
         + 处理证书
             + frps知道域名，可以进行TLS握手
