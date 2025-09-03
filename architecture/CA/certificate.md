@@ -43,6 +43,46 @@
     + 对方用CA的pub key从digital cert中拿到发送方的pub key
 
 
+## 握手时SNI的验证
++ 客户端在握手时通过SNI把域名带过去，服务端就知道该返回哪个证书。
++ SNI ！= 证书域名，TLS 握手失败。
+```python
+from kubernetes_asyncio import client
+configuration = client.Configuration()
+configuration.host = "frp-sever-frps-internal..."
+configuration.tls_server_name = "ph-lws-xxxx"
+```
++ kubernetes_asyncio.client.ApiClient底层用aiohttp
+    + aiohttp.TCPConnector 默认会这样构建 SSL context：
+        + server_hostname（SNI）如果没特别指定，就等于你请求 URL 里的 host。
+        + 如果你传了一个 ssl context，并设置了 check_hostname 或 server_hostname，才会覆盖。
+
++ 当 host 是普通 DNS 时 → tls_server_name 被忽略。
+    + host被设置成SNI
+    + tls_server_name并不会自动传给 aiohttp 的 server_hostname 参数
+
++ 当 host 是 IP / localhost 时 → tls_server_name 生效。
+    + tls_server_name会被设置成SNI
+    + 默认 SNI = 127.0.0.1,但 127.0.0.1 不可能和证书匹配
+    + 这时你设置的 tls_server_name 就会被当成 fallback 使用（因为 aiohttp/OpenSSL 会自动把它塞进 server_hostname，否则握手直接失败）。
+
++ 指定SNI
+```py
+import ssl
+from aiohttp import TCPConnector
+from kubernetes_asyncio.client import ApiClient, Configuration
+
+configuration = build_configuration()
+
+ssl_context = ssl.create_default_context(cafile=configuration.ssl_ca_cert)
+ssl_context.check_hostname = True
+
+connector = TCPConnector(ssl=ssl_context, server_hostname=configuration.tls_server_name)
+
+api_client = ApiClient(configuration=configuration, connector=connector)
+
+```
+
 ## tips
 + root certificates
 + intermediates
@@ -52,6 +92,18 @@
 + .pem 导出导入时的证书格式
 + .p12 为把证书与中间证书及私钥加密放在一个文件中，为二进制文件
 + SAN(Subject Alternative Name)
++ 证书域名（Common Name / SAN
+    + 在 HTTPS / TLS 证书里，有两类跟域名相关的字段：
+        + Common Name (CN) —— 早期的域名字段
+            + CN = www.example.com
+        + Subject Alternative Name (SAN) —— 现在的标准字段
+            + DNS Name = www.example.com
+            + DNS Name = example.com
+    + 现代浏览器和客户端 只检查 SAN，不再依赖 CN
++ SNI（Server Name Indication）
+    + 在 TLS 握手开始时，客户端告诉服务端 “我想访问的域名”
+    + 有了 SNI，客户端在握手时把 域名带过去，服务端就知道该返回哪个证书。
+        + 这样，一个服务器 + 一个 IP，就可以托管多个 HTTPS 域名。
 
 ## ref
 + [SSH 证书登录教程](http://www.ruanyifeng.com/blog/2020/07/ssh-certificate.html)
