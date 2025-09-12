@@ -74,3 +74,5 @@ print a
 + [anaconda](https://www.continuum.io/downloads) //科学计算
 + Bobo http微框架
 + [kite](https://kite.com/)
+<!-- practice -->
++ [I'm Switching to Python and Actually Liking It](https://www.cesarsotovalero.net/blog/i-am-switching-to-python-and-actually-liking-it.html)
