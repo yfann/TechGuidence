@@ -33,3 +33,16 @@ settings = Settings()
 ```
 
 ## FastAPI
+
+## dataclasses 
+```py
+from dataclasses import dataclass
+
+@dataclass
+class Point:
+    x: int
+    y: int
+
+p = Point(1, 2)
+print(p)  # Output: Point(x=1, y=2)
+```
