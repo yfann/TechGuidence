@@ -15,8 +15,6 @@
 + [What is System Design – Learn System Design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
 
 <!-- todo -->
-+ network
-    + rust easytier
 + AI
     + gemini cli
 + 存储
@@ -27,5 +25,6 @@
     + 智能合约
 + leetcode
 + EDA
++ stream
 
 
