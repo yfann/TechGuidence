@@ -137,3 +137,5 @@ class BackgroundTasks:
         + 需要更精细的控制（取消、超时、异常处理）
 
 ## Starlette
++ 基于 ASGI 的轻量级 Python Web 框架
++ FastAPI = Starlette + Pydantic
