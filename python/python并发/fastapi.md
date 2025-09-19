@@ -81,3 +81,61 @@ CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "main:app", "--workers",
     + Web 服务器（Uvicorn/Hypercorn/Nginx） → ASGI Server → Python 应用
     + 应用可以挂起协程等待 I/O，不阻塞事件循环，轻松支持高并发。
     + I/O 密集型场景高效，单进程处理成百上千并发请求。
+
+
+## BackgroundTasks
++ 来自starlette.background， FastAPI底层依赖Starlette
++ 简化实现
+```py
+class BackgroundTasks:
+    def __init__(self):
+        self.tasks: List[BackgroundTask] = []
+
+    def add_task(self, func: Callable, *args, **kwargs):
+        self.tasks.append(BackgroundTask(func, *args, **kwargs))
+
+    async def __call__(self):
+        for task in self.tasks:
+            await task()
+# __call__ 方法会在请求结束后被调度执行
+# 串行执行 add_task() 注册的函数
+```
++ 依赖当前事件循环（asyncio）执行
++ 可以被依赖注入
+    + 每次请求到来时，FastAPI 会在内部构造一个新的 BackgroundTasks 实例。
+    + 它会和这个请求的 Request、Response 绑定在一起，保证任务只属于当前请求生命周期。
++ 什么周期
+    + 从请求开始 → 响应返回 → 执行后台任务 → 生命周期结束
+
++ 多个请求是并行执行(asyncio),一个请求内是串行执行(BackgroundTasks)
+
+
+## BackgroundTasks VS asyncio.create_task()
++ BackgroundTasks
+    + asyncio事件循环中执行
+        + 任务不会立刻放进事件循环，而是被 挂在 response.background 上
+        + 只有在 HTTP 响应发完后，Starlette 才会顺序执行这些任务
+    + Starlette/FastAPI 提供的工具
+    + 语义是 “在 HTTP 响应返回之后执行收尾任务”
+    + 生命周期和 请求绑定，不是全局调度
+    + 串行执行`add_task()`（task1 → task2 → …）
+        + 如果要并发，需要你自己在 handler 里用 asyncio.gather()
+    + 场景
+        + 轻量级 “收尾” 操作（日志、缓存更新、发通知）
+        + 不要求严格并发
+        + 希望语义清晰（“请求结束后执行”）
++ asyncio.create_task()
+    + asyncio事件循环中执行
+        + asyncio.create_task()调用时立即执行
+    + 原生 asyncio 提供的 API
+    + 语义是 “把一个协程对象放到事件循环中异步执行”
+    + 和请求/响应生命周期完全无关
+    + 并行执行`create_task()`让协程并发执行，可以天然并行
+    + 场景
+        + 需要真正的并发处理（多个任务并行）
+        + 与 HTTP 请求解耦的长期任务（比如跑一个持续的消费 loop）
+        + 需要更精细的控制（取消、超时、异常处理）
+
+## Starlette
++ 基于 ASGI 的轻量级 Python Web 框架
++ FastAPI = Starlette + Pydantic
