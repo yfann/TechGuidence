@@ -35,3 +35,7 @@
 
 ## llm
 + [tiny llm](https://skyzh.github.io/tiny-llm/)
+
+
+## bigdata
++ [big-data-textbook/](https://ghislainfourny.github.io/big-data-textbook/)
