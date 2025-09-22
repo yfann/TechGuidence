@@ -43,6 +43,21 @@
 + 把一个网络的 IP 地址转换成另一个网络 IP 地址的技术
 + 让局域网（LAN）里的多台设备共享一个公网 IP 上网
 
+## 外网访问家庭网络
++ 内网穿透
+    + frp
+    + ZeroTier
+    + Ngrok
++ DDNS
++ 群晖quick connect
++ VPN
+    + 口转发或UPnP的方式，VPN通过家庭网络的路由器进行配置
+    + 公网IP
+    + 第三方服务器,VPS
+    + tools
+        + Tailscale
+        + wireguard
+
 ## ref
 + [EasyTier)](https://github.com/EasyTier/EasyTier)
 + zerotier
