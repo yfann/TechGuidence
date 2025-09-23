@@ -49,6 +49,8 @@
     + ZeroTier
     + Ngrok
 + DDNS
++ 家庭有公网IP
+    + 端口映射(NAT)
 + 群晖quick connect
 + VPN
     + 口转发或UPnP的方式，VPN通过家庭网络的路由器进行配置
@@ -57,6 +59,13 @@
     + tools
         + Tailscale
         + wireguard
+
+
+## tips
++ CGNAT（运营商级 NAT）+ 内网地址(WAN口地址)
+    + 运营商没有分配公网ip
+    + 判断有没有公网IP
+        + 比较路由器WAN口IP和外部显示的公网IP是否一致
 
 ## ref
 + [EasyTier)](https://github.com/EasyTier/EasyTier)
