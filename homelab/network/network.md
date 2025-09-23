@@ -46,8 +46,11 @@
 ## 外网访问家庭网络
 + 内网穿透
     + frp
-    + ZeroTier
     + Ngrok
+    + DDNSTO(pc装客户端，手机通过域名访问不需要客户端)
+        + 家中DDNSTO客户端会和 DDNSTO 的云端服务器建立一条持久连接（隧道）
+        + Dynamic DNS Tunnel Service Online
+        + SaaS 版内网穿透。
 + DDNS
 + 家庭有公网IP
     + 端口映射(NAT)
@@ -56,9 +59,10 @@
     + 口转发或UPnP的方式，VPN通过家庭网络的路由器进行配置
     + 公网IP
     + 第三方服务器,VPS
-    + tools
+    + tools(手机，pc都要装客服端)
         + Tailscale
         + wireguard
+        + ZeroTier
 
 
 ## tips
