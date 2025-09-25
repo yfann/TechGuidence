@@ -1,5 +1,10 @@
 # bitcoin
 
+## public key
++ 接收bitcoin
+
+## private key
++ sign transactions to spend the funds
 
 ## trasaction
 + transaction as double-entry bookkeeping
