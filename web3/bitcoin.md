@@ -2,6 +2,7 @@
 
 ## public key
 + 接收bitcoin
++ 每次收bitcoin都用新的公钥，保护隐私
 
 ## private key
 + sign transactions to spend the funds
@@ -32,7 +33,9 @@
 
 ## tips
 + Bitcoin Improvement Proposals (BIPs).
-
++ P2PK
+    + pay to public key
+    + output script
 ## ref
 <!-- bitcoin trade -->
 + Bitcoin Average

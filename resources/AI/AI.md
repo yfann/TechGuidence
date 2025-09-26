@@ -86,3 +86,7 @@
 + [vanna](https://github.com/vanna-ai/vanna)
 + [genai-toolbox](https://github.com/googleapis/genai-toolbox)
     + MCP Toolbox for Databases
+
+
+## browser
++ [AIPex](https://github.com/AIPexStudio/AIPex)

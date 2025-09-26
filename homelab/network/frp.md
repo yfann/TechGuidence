@@ -168,3 +168,4 @@
 + [frp](https://gofrp.org/zh-cn/docs/overview/)
 + [github frp](https://github.com/fatedier/frp)
 + [frp download](https://github.com/fatedier/frp/releases)
++ [frpc-cli](https://github.com/openapphub/frpc-cli)
