@@ -24,7 +24,6 @@
     + 区块链
     + 智能合约
 + leetcode
-+ EDA
-+ stream
++ Paxos
 
 
