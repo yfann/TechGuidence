@@ -10,3 +10,6 @@
 + [mcp servers](https://mcpservers.org/)
 
 + [Cursor + MCP = 王炸！彻底颠覆我的 Cursor工作流，效率直接起飞！](https://zhuanlan.zhihu.com/p/28235501098)
+
+<!-- developer -->
++ [ts sdk](https://github.com/modelcontextprotocol/typescript-sdk)
