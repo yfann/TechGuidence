@@ -36,6 +36,10 @@
 + P2PK
     + pay to public key
     + output script
++ P2PKH
+    + paying to a public key hash 
++ Base58check Encoding
++ wallet import format (WIF) 
 ## ref
 <!-- bitcoin trade -->
 + Bitcoin Average
