@@ -8,6 +8,8 @@
 + DDIA
 + AI
     + gemini cli
+    + MCP
+        + typescript
 + 存储
     + rustfs
     + leveldb-rs
