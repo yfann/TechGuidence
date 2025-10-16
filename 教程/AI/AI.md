@@ -10,12 +10,7 @@
 + [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html)
 + [动手学深度学习](https://github.com/AccumulateMore/CV)
 
-## prompts
-+ [prompt-eng-interactive-tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
-    + Anthropic's Interactive Prompt Engineering Tutorial
-+ [Prompt Engineering Guide](https://www.promptingguide.ai/)
-+ [prompt-library](https://www.aiforeducation.io/prompt-library)
-+ [Awesome ChatGPT Prompts](https://prompts.chat/)
+
 
 ## Gen AI
 + [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)

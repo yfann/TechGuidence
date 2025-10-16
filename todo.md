@@ -5,7 +5,7 @@
     + GFS
     + Mapreduce
     + Bigtable: A Distributed Storage System for Structured Data∂
-+ [prompt-eng-interactive-tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
++ prompt-eng-interactive-tutorial
 + gemini cli sourcecode
 
 
