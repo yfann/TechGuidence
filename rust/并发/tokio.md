@@ -1,6 +1,9 @@
 ## tokio
 + tokio 是协作式的调度器
 
++ 多线程异步框架
+    + 异步runtime
+
 + asynchronous runtime
     + 事件驱动的
     + 基于任务的并发模型
