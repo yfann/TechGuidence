@@ -1,9 +1,17 @@
 # Model Context Protocol (MCP)
 
+## develop with ts
++ `npm install @modelcontextprotocol/server`
+
+## develop with python 
++ `pip install mcp`
+
+
 ## ref
 <!-- developer -->
-+ [ts sdk](https://github.com/modelcontextprotocol/typescript-sdk)
 + [MCP](https://modelcontextprotocol.io/introduction)
++ [official MCP](https://github.com/modelcontextprotocol)
++ [ts sdk](https://github.com/modelcontextprotocol/typescript-sdk)
 + [MCP (Model Context Protocol)，一篇就够了。](https://zhuanlan.zhihu.com/p/29001189476)
 
 <!-- mcp servers -->
