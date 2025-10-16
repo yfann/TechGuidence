@@ -5,7 +5,6 @@
     + GFS
     + Mapreduce
     + Bigtable: A Distributed Storage System for Structured Data∂
-+ prompt-eng-interactive-tutorial
 + gemini cli sourcecode
 
 
