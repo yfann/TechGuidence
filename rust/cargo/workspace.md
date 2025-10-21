@@ -1,7 +1,10 @@
 
 # cargo workspace
-+ 管理多个相关项目（Crates）
-    + 每个crate是个独立的rust项目
+
++ 一个workspace下管理多个crate项目
+    + 每个crate项目有独立cargo.toml
+    + crate项目可能会引用其他crate项目，有依赖关系
+
 + 复杂项目可以拆分成多个crate，通过workspace统一管理
 
 ## principle
@@ -23,8 +26,4 @@
 [workspace]
 members = ["member1", "path/to/member2", "crates/*"]
 exclude = ["crates/foo", "path/to/other"]
-
-
-
-
 ```

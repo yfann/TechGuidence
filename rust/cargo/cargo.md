@@ -16,6 +16,34 @@
     + 如何开发的是lib,则把 Cargo.lock 加入到 .gitignore 中。
 
 ## cmd
+<!-- install -->
++ `cargo install <name>`
+    + 从crates.io或本地源码安装一个可执行程序(binary crate)
+    + 安装到~/.cargo/bin/
+
++ `cargo add <pkg>`
+    + `cargo add tokio@1.35`
+        + `--dev`
+            + 开发依赖
+        + `--build`
+            + build依赖
+        + `--git <url>`
+            + 从git添加
+        + `--path ../mycrate`
+            + 从本地添加
+    + 自动修改Cargo.toml，添加依赖项
+
++ `cargo rm <name>`
+    + 删除依赖
+
++ `cargo get <name>`
+    +  查询依赖
+
++ `cargo update` 更新所有依赖到最新版本
+    + `cargo update -p <package ID>`只更新特定依赖
+
+
+<!-- create -->
 + `cargo new <project>` 
     + 创建bin项目
 
@@ -31,14 +59,11 @@
 + `cargo build` 默认debug
     + `cargo build --release`
 
+
+<!-- others -->
 + `cargo check` 检验编译是否能通过
 
-+  `cargo update` 更新所有依赖到最新版本
-    + `cargo update -p <package ID>`只更新特定依赖
-
 + `cargo test`
-
-+ `cargo add <pkg>`
 
 ## dependencies
 
@@ -86,3 +111,6 @@ proxy = "http://xxxx"
 + [指定依赖项](https://course.rs/cargo/reference/specify-deps.html)
 + [标准的 Package 目录结构](https://course.rs/cargo/guide/package-layout.html)
 + [The cargo book](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
+<!-- repo -->
++ [](lib.rs)
++ [](crates.io)
