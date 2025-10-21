@@ -34,9 +34,16 @@ deluan/navidrome:latest
 + `spotdl [urls]`
 
 
-
+## 网易ncm转mp3
++ `ncmdump -d <folder name>`
+    + 文件夹里的ncm转为mp3
++ `ncmdump -m`
+    + 删除原文件
 
 ## ref
+<!-- 网易云 -->
++ [ncmdump](https://github.com/taurusxin/ncmdump)
+<!-- 音乐播放 -->
 + [navidrome](https://www.navidrome.org/docs/installation/)
 <!-- downloader -->
 + [spotify-downloader Public](https://github.com/spotDL/spotify-downloader)
