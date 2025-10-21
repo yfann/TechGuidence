@@ -1,5 +1,5 @@
 ## install rust
-
++ `rustc --version`
 ## rustup
 <!-- windows -->
 + install Microsoft C++ Build Tools
