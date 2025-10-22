@@ -13,6 +13,26 @@
     + An asynchronous version of the standard library.
 
 
+## [tokio::main]
++ 启动异步运行时
+
+```rust
+#[tokio::main]
+async fn main() {
+    println!("hello");
+}
+
+// equals to 
+
+fn main() {
+    let mut rt = tokio::runtime::Runtime::new().unwrap();
+    rt.block_on(async {
+        println!("hello");
+    })
+}
+```
+
+
 
 ## spawn_blocking
 + 用spawn_blocking创建阻塞线程去完成cpu密集型任务
