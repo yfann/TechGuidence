@@ -70,7 +70,10 @@
     + chrome 插件，youtube总结和字幕
 + [KittenTTS](https://github.com/KittenML/KittenTTS)
     + text to voice
-
++ [handy](https://github.com/cjpais/Handy)
+    + speech to text
++ [podcast](https://github.com/justlovemaki/Podcast-Generator)
+    + text to podcast
 ## NLP
 + [read-bridge](https://github.com/WindChimeEcho/read-bridge)
     + AI分析句子
@@ -103,3 +106,4 @@
 
 ## chat
 + [deepchat](https://github.com/ThinkInAIXYZ/deepchat)
++ [musebot](https://github.com/yincongcyincong/MuseBot)
