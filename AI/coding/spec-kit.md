@@ -1,26 +1,35 @@
 # spec-kit
 + /constitution -> /specify -> /plan -> /tasks -> /implement
 
-+ /constitution
++ `/constitution <your input>`
     + 基本原则
     + 所有spec多会使用
-    + `/constitution <your input>`
+    
 
-+ /specify
-    + 新的feature,一般在新分支上执行
-    + /clarify
-        + /specify之后执行
-        + 让code agent检查时候还要未澄清的部分
-+ /plan
+ + `/specify <your input>`
+    + 新的feature,会自动创建新branch去实现
+    + what + why
+   
+
++ `/clarify`
+    + /specify之后执行
+    + 让code agent检查时候还要未澄清的部分，未指定的部分
+    
+
++ `/plan <your input>`
     + 具体要用的技术
+    + how
 
-+ /tasks
++ `/tasks`  
     + 转化为可执行的逻辑
-    + /analyze
-        + /tasks之后执行
-        + 查看plan之间是否有冲突
 
-+ /implement
+
++ `/analyze`
+    + /tasks之后执行
+    + 查看plan之间是否有冲突
+
+
++ `/implement`
     + 调用code agent 
 
 
