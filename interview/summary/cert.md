@@ -14,10 +14,14 @@
 + ca.key
     + CA的私钥
     + 签发tls.crt
+    + 签发证书
+        + 服务器公钥
+        + 域名
 
 + ca.crt
     + CA公钥证书
     + 表示签发者（Certificate Authority，CA）的公钥证书
+    + 操作系统/浏览器内置
     + 用途：
         + 用于验证 tls.crt
             + 客户端需要 ca.crt 来验证服务器身份。
@@ -44,3 +48,17 @@
         + der
             + 二进制
             + .der, .cer
+
++ self-signed certificate
+    + 证书的**签发者（Issuer）和持有者（Subject）**是同一个实体
+    + 没有被第三方 CA（证书颁发机构）签发
+    + process
+        + 自己生成 ca.crt + ca.key
+            + 用这个 CA 来签发“服务器证书”（server.crt）
+        + 或者直接生成一张自签证书（server.crt 自签自己）
+
++ 数字签名
+    + 内容 --hash---> digest ----私钥加密----> signature
+    
+## ref
++ [数字签名是什么](https://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
