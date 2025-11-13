@@ -8,10 +8,6 @@
 + 信任链
     + Root CA（根证书） ---签发--> Intermediate CA（中间CA，可选） ---签发--> End-Entity Certificate（服务器或客户端证书）
 
-
-## 双向tls
-
-
 ## 验证签名链
 
 ## tips
