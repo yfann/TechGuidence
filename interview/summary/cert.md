@@ -1,14 +1,19 @@
 
 
 ## PKI，Public Key Infrastructure
++ CA私钥签发证书
+    + CA证书验证签发的证书
+
 + CA 是 Certificate Authority（证书颁发机构）
     + 可信的签名者
     + 用自己的私钥为别人签发证书，证明“这个公钥属于某个主体（如网站、服务）”
     
 + 信任链
     + Root CA（根证书） ---签发--> Intermediate CA（中间CA，可选） ---签发--> End-Entity Certificate（服务器或客户端证书）
-
-## 验证签名链
+        + Intermediate CA 避免RootCA直接签发服务器证书，提升安全
+    + 验证
+        + 服务器会把 服务器证书 + Intermediate CA 发给浏览器
+            + 逐级验证
 
 ## tips
 + ca.key
@@ -59,6 +64,6 @@
 
 + 数字签名
     + 内容 --hash---> digest ----私钥加密----> signature
-    
+
 ## ref
 + [数字签名是什么](https://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
