@@ -46,7 +46,9 @@
 
 
 ## ref
+
 + [Everything I know about good system design](https://www.seangoedecke.com/good-system-design/)
+    + ()[https://www.ruanyifeng.com/blog/2025/08/weekly-issue-362.html]
     + 程序设计是组装代码，系统设计是组装服务
     + 数据库可以做成一个写入节点和多个只读副本
     + 耗时的操作要拆分出来，放在后台作业（即系统外部的单独服务）
