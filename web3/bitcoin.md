@@ -40,6 +40,8 @@
     + paying to a public key hash 
 + Base58check Encoding
 + wallet import format (WIF) 
+
+
 ## ref
 <!-- bitcoin trade -->
 + Bitcoin Average
