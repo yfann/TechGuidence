@@ -30,8 +30,12 @@
 ## ES
 + 倒排索引
 
+
+
+
 ## tips
 + redis
     + GeoHash
         + 地理查询
++ MVCC
 

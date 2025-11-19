@@ -49,6 +49,28 @@
     + 一个区块自己的区块哈希并没有记录在区块头部，而是通过计算区块头部的哈希得到的
     + 区块头部的Prev Hash记录了上一个区块的Block Hash
     + 如果交易内容被修改，Merkle Hash就会改变，Block Hash也会改变
+
++ 私钥
+    + 花bitcoin
+    + 私钥本质上是一个256位整数，记作k。根据比特币采用的ECDSA算法，可以推导出两个256位整数，记作(x, y)，这两个256位整数即为非压缩格式的公钥。
+    + 256位的随机整数
+        + 32个字节
+        + 十六进制字符串表示是64个字符
+        + Base58编码(带校验)
+            + 非压缩格式：37字节
+                + (0x80)+32字节+check(4字节)
+                + check：对(0x80+私钥)做两次SHA256，取开头4字节
+            + 压缩格式: 38Byte
+                + (0x80) + 32字节 + (0x01) + check(4字节)
+                + WIF编码
+                + K，L开头的字串
+
++ 公钥
+    + 接收bitcoin
+    + 可通过私钥算出，2*256位整数
+    + 可以直接从公钥计算地址
+
+
 ## ref
 <!-- web3 -->
 + [Get-Started-with-Web3](https://github.com/beihaili/Get-Started-with-Web3?tab=readme-ov-file)
