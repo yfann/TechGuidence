@@ -44,3 +44,6 @@
 
 ## bigdata
 + [big-data-textbook/](https://ghislainfourny.github.io/big-data-textbook/)
+
+## 数学
++ [Mathematical Foundations of Reinforcement Learning](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning)
