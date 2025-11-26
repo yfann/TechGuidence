@@ -99,3 +99,19 @@ Level-n（逐层查找）
 + 实现
     + Cassandra、HBase、RocksDB、LevelDB 都是 LSM Tree 的典型实现
     + 特别适合日志系统、时间序列数据库、KV 存储等写密集型场景
+
+## SSTable
+
+```pgsql
++-------------------+
+| Data Blocks       | <- 按 key 排序，连续写入磁盘
+|-------------------|
+| Meta Block        | <- 记录每个 Data Block 的 key 范围
+|-------------------|
+| Index Block       | <- 索引，用于快速定位 Data Block
+|-------------------|
+| Footer            | <- 保存 Index Block、Meta Block 的位置
++-------------------+
+
+Bloom Filter 判断key在不在
+```
