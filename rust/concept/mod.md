@@ -111,3 +111,6 @@ features=["fs"]
 
 + crate
     + 当前create根
+
++ 对lib crate来说
+    + `src/lib.rs` 是入口文件
