@@ -21,6 +21,18 @@
 
 + 原生热更新（Hot Code Upgrade）
 
+## 消息处理
++ 单个 Actor 对消息的处理永远是 one-by-one 的、顺序的 —— 即 同一时刻一个 Actor 只能处理一条消息
++ 但整个系统整体是并发的，因为 多个 Actor 可以同时处理各自的消息。
+
++ 消息处理
+    + 每个 Actor 内部都有一个 mailbox（消息队列）。
+    + Actor 从 mailbox 中 按顺序 取出消息处理。
+    + 不会存在并发处理多条消息的情况
+    + 保证了 Actor 内部状态不会遇到并发冲突，也就 避免了锁的需要。
+
+
+
 ## ref
 + [awesome-erlang-cn](https://github.com/hstcscolor/awesome-erlang-cn?tab=readme-ov-file)
 + [Erlang](https://learnyousomeerlang.com/content)
