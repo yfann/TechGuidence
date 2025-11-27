@@ -8,8 +8,9 @@
 
 + 文件即mod
 
+
 + `mod <name>;`
-    + 声明模块
+    + 是加载和编译模块
     + mod是私有的，只能在crate内使用
     + 并从外部文件加载其内容
         + 加载位置
@@ -19,6 +20,7 @@
 
 + `pub mod <name>;`
     + 声明并导出模块（crate 外也能访问）
+        + 是加载 + 对外公开模块
     + `use <crate_name>::<name>`
 
 ## 同文件中使用mod
@@ -129,5 +131,15 @@ features=["fs"]
 + crate
     + 当前create根
 
-+ 对lib crate来说
-    + `src/lib.rs` 是入口文件
+
++ `src/lib.rs` 
+    + 是lib类型的crate入口文件
+        + 外部引入此crate时的入口文件
+    + 也是crate内部所有代码的根模块
+        + 内部模块也必须在 lib.rs 声明，否则根本不会被编译。
+        + `mod xxx;` 就是在“告诉编译器把这个模块包含进项目”
+    + 作用
+        + 定义 crate 的模块结构
+        + 声明所有子模块（无论是否对外）
+        + 暴露对外 API（pub）
+        + 组织内部代码（private）
