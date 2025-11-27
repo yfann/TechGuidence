@@ -6,6 +6,8 @@
     + 允许feature控制模块加载
     + 编译期机构，不是运行时，不能动态加载
 
++ 文件即mod
+
 + `mod <name>;`
     + 声明模块，但不导出给外部
     + 并从外部文件加载其内容
@@ -32,7 +34,7 @@ fn main() {
 }
 ```
 
-## 不同文件中使用mod
+## 文件mod
 + math.rs(模块名和文件名相同)
 ```rust
 pub fn add(a: i32, b: i32) -> i32 {
@@ -47,23 +49,37 @@ mod math;
 math::add(...)
 ```
 
-## mod在文件夹中
-+ src/main.rs
-```rust
-mod math;
-```
+## 文件夹mod
 
-+ src/math/mod.rs
++ mod.rs
+    + 旧版rust表示目录模块
+    + `mod math` 会自动加载math/mod.rs
 ```rust
+// src/math/mod.rs
 pub mod add;
-```
 
-+ src/math/add.rs
-```rust
+// src/math/add.rs
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
+
+// src/main.rs
+mod math;
 ```
+
+
+
++ 新版结构
+```rust
+src/
+ ├── main.rs
+ ├── math.rs    <-- 取代 math/mod.rs
+ └── math/
+      └── add.rs
+// math.rs
+pub mod add;
+```
+
 
 ## 嵌套mod
 ```rust
