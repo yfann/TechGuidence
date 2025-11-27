@@ -9,7 +9,8 @@
 + 文件即mod
 
 + `mod <name>;`
-    + 声明模块，但不导出给外部
+    + 声明模块
+    + mod是私有的，只能在crate内使用
     + 并从外部文件加载其内容
         + 加载位置
             + <name>.rs
@@ -18,7 +19,7 @@
 
 + `pub mod <name>;`
     + 声明并导出模块（crate 外也能访问）
-        + 用户可以访问`<crate_name>::<name>`
+    + `use <crate_name>::<name>`
 
 ## 同文件中使用mod
 ```rust
