@@ -94,5 +94,14 @@ println!("{}", s); //会自动变成&s, &String->&str
 ```
 
 
+## 转换
++ `to_owned()`
+    + 引用转所有
+    + 总是创建新的
+    + 例如：
+        + `&str -> String`
+        + `&[T] -> Vec<T>`
+        + `&Path -> PathBuf`
+
 ## tips
 + Rust 只有在方法调用、函数参数、宏传参等场景会自动加 & 或 *
