@@ -102,6 +102,34 @@ println!("{}", s); //会自动变成&s, &String->&str
         + `&str -> String`
         + `&[T] -> Vec<T>`
         + `&Path -> PathBuf`
++ AsRef traint
+    + 借用转换（返回引用），零成本，不消耗所有权
+    + &self → &T
+```rust
+impl AsRef<Path> for String {
+    fn as_ref(&self) -> &Path {
+        Path::new(&self)
+    }
+}
+
+fn foo<P: AsRef<Path>>(p: P) {
+    let path: &Path = p.as_ref();
+}
+// String 可以转为 &Path
+```
++ Into traint
+    + 拥有转换（返回新值），可能分配，消耗所有权。
+    + self → T
+```rust
+pub trait Into<T> {
+    fn into(self) -> T;
+}
+
+
+let pb: PathBuf = "abc.txt".into();
+
+```
+
 
 ## tips
 + Rust 只有在方法调用、函数参数、宏传参等场景会自动加 & 或 *
