@@ -4,6 +4,9 @@
 ## Result<T, E>
 + Ok(T) / Err(E)
 + 可能成功或失败
++ Rust 的编译器要求 必须处理 Result，否则报错
+    + `result.unwrap()`
+        + 返回Ok内容或panic
 
 ## Option<T>
 + Some(T) / None
