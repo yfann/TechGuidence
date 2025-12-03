@@ -11,6 +11,26 @@
 + sized
     + 可以放在栈上
 
++ 引用的作用域 ≠ 变量的作用域
+    + 变量的作用域（scope of variable）
+        + 从创建起，到离开 {} 作用域结束。
+    + 引用的作用域（scope/lifetime of a borrow）
+        + 最后一次使用该引用为止（Rust 编译器会自动缩短它，这叫 Non-Lexical Lifetimes，NLL）
+```rust
+fn main() {
+    let mut x = 10;
+
+    let r = &x;        // 引用 r 创建
+    println!("{}", r); // 最后一次使用 r
+                       // ——> 到这里 r 的借用结束（NLL 自动缩短作用域）
+
+    let y = &mut x;    // OK，可变借用
+    *y = 20;
+}
+```
+
+
+
 ## 符号
 + `&` 引用，借用
     + 不可变借用
