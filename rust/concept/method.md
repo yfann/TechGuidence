@@ -17,16 +17,37 @@ let t = p.into_tuple(); // p 被 move 了
 ```
 + &self
     + 不能修改对象
+    + 可以通过RefCell修改内部变量
 ```rust
 impl Point {
     fn show(&self) {
         println!("({}, {})", self.x, self.y);
     }
 }
+
+use std::cell::RefCell;
+
+struct Inner {
+    value: RefCell<i32>,
+}
+
+struct Outer {
+    inner: Inner,
+}
+
+impl Outer {
+    fn update(&self, v: i32) {
+        *self.inner.value.borrow_mut() = v;
+    }
+}
+
+
 ```
 
 + &mut self
     + 可以修改对象
+    + 嵌套结构体中，若方法要修改内部数据，方法必须使用 &mut self
+        + 逐层传递可变性
 ```rust
 impl Point {
     fn move_to(&mut self, x: i32, y: i32) {
