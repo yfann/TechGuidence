@@ -9,7 +9,7 @@
     + ENTRIES 区：连续存放一条条记录。
     + RESTARTS 区：一串 u32，每个是一个 entry 开头的偏移（“重启点”）。
         + 每个restart占4B
-        + restart 点的 key 是完整的(SHARED=0)，BlockIter::seek会在 restart 点之间 二分查找，然后从最近的
+        + restart 点的 key 是完整的(SHARED=0)，BlockIter::seek会在 restart 点之间 二分查找，然后从最近的 restart 线性扫
             + 前缀压缩后，entry 之间不好随机跳转
         + restart 越多：
             + 二分更精细，线性扫更短
