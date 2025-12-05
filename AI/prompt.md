@@ -46,4 +46,9 @@ perform the requested task more efficiently.`
 + [Prompt Engineering Guide](https://www.promptingguide.ai/)
 + [prompt-library](https://www.aiforeducation.io/prompt-library)
 + [Awesome ChatGPT Prompts](https://prompts.chat/)
+<!-- nano banana -->
 + [Nano Banana Pro 提示词大全](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts/blob/main/README_zh.md)
++ [banana-prompt-quicker](https://github.com/glidea/banana-prompt-quicker)
+
+<!-- claude -->
++ [writing-a-good-claude-md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
