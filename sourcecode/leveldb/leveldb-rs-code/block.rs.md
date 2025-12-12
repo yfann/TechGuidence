@@ -16,9 +16,10 @@
             + 但多存了一些完整 key，压缩率稍差
     + N_RESTARTS：最后 4 字节，表示有多少个 restart。
 
-+ `[SHARED varint][NON_SHARED varint][VALSIZE varint][KEY bytes][VALUE bytes]`
-    + SHARED：这个 key 和前一个 key 共享的前缀长度。
-    + NON_SHARED：这个 key 独有的后缀长度。
-    + VALSIZE：value 长度。
-    + KEY: 实际存的是NON_SHARED部分（restart对应的key存的是完整的）
-    + VALUE: value内容
++ entry
+    + `[SHARED varint][NON_SHARED varint][VALSIZE varint][KEY bytes][VALUE bytes]`
+        + SHARED：这个 key 和前一个 key 共享的前缀长度。
+        + NON_SHARED：这个 key 独有的后缀长度。
+        + VALSIZE：value 长度。
+        + KEY: 实际存的是NON_SHARED部分（restart对应的key存的是完整的）
+        + VALUE: value内容
