@@ -23,6 +23,15 @@
         + 是加载 + 对外公开模块
     + `use <crate_name>::<name>`
 
+## create vs module
++ crate
+    +  一个独立的编译单元 
+    +  一个包
+    + 一个 binary（含 main.rs）或一个 library（含 lib.rs）
+    + 整个项目编译成一个 crate
++ module
+    + crate内部命名空间
+
 ## 同文件中使用mod
 ```rust
 mod math {

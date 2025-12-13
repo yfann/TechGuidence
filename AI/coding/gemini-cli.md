@@ -12,5 +12,6 @@
     + 退出
 
 ## ref
++ [Gemini CLI Tips and Tricks](https://github.com/addyosmani/gemini-cli-tips)
 + [gemini-cli](https://github.com/google-gemini/gemini-cli)
 + [cli commands](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md)
