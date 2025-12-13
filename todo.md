@@ -6,17 +6,10 @@
 
 <!-- todo -->
 + DDIA
-+ AI
-    + gemini cli
-    + MCP
-        + typescript
-+ 存储
-    + rustfs
-    + leveldb-rs
 + web3
-    + 区块链
-    + 智能合约
 + leetcode
 + Paxos
++ [MINI-LSM](https://skyzh.github.io/mini-lsm/)
 + https://mp.weixin.qq.com/s/3wyrIFf3pQh5EJ0NWbHOjA
-
++ [distributed database and distributed systems](https://github.com/pingcap/talent-plan)
++ [leveldb-rs](https://github.com/dermesser/leveldb-rs)
