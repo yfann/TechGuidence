@@ -115,3 +115,8 @@ Level-n（逐层查找）
 
 Bloom Filter 判断key在不在
 ```
+
+## write path
+![alt text](/img/LSM-write-path.png)
+
+## read path
