@@ -16,12 +16,25 @@
     + 如何开发的是lib,则把 Cargo.lock 加入到 .gitignore 中。
 
 ## cmd
-<!-- install -->
-+ `cargo install <name>`
-    + 从crates.io或本地源码安装一个可执行程序(binary crate)
-    + 安装到~/.cargo/bin/
++ `cargo --list`
+
+<!-- run -->
++ `cargo run` 
+    + 只会跑`src/main.rs`或`src/bin/<name>.rs`
+    + `cargo run --release`
+    + `cargo run -- <args>`
+    + `cargo run --bin <app name>`
+        + 如果一个项目有多个可执行bin
+
++ `cargo build` 默认debug
+    + `cargo build --release`
+
+<!-- add package -->
++ `cargo search <pkg>`
 
 + `cargo add <pkg>`
+    + 给项目添加依赖
+        + 自动修改当前项目的Cargo.toml，添加依赖项
     + `cargo add tokio@1.35`
         + `--dev`
             + 开发依赖
@@ -31,7 +44,7 @@
             + 从git添加
         + `--path ../mycrate`
             + 从本地添加
-    + 自动修改Cargo.toml，添加依赖项
+
 
 + `cargo rm <name>`
     + 删除依赖
@@ -43,24 +56,20 @@
     + `cargo update -p <package ID>`只更新特定依赖
 
 
-<!-- create -->
+<!-- create project-->
 + `cargo new <project>` 
     + 创建bin项目
 
 + `cargo new <lib name> --lib`
     + 创建lib项目
 
-+ `cargo run` run project under project folder
-    + `cargo run --release`
-    + `cargo run -- <args>`
-    + `cargo run --bin <app name>`
-        + 如果一个项目有多个可执行bin
-
-+ `cargo build` 默认debug
-    + `cargo build --release`
-
-
 <!-- others -->
++ `cargo install <cmd>`
+    + 安装命令行工具
+        + 从crates.io或本地源码安装一个可执行程序(binary crate)
+    + 安装到`~/.cargo/bin/`
+        + `echo $PATH | grep cargo`
+
 + `cargo check` 检验编译是否能通过
 
 + `cargo test`
