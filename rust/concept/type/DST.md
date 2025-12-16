@@ -1,7 +1,7 @@
 # DST(Dynamically Sized Type)
 + unsized(动态大小)
     + 不能在栈上创建，只能通过引用使用
-    + Rust必须在编译时知道类型的大小
+        + Rust必须在编译时知道类型的大小
     + 指针大小固定
 ```rust
 let x: Path = ...;  // ❌ 编译错误
@@ -19,7 +19,7 @@ struct Path {
 }
 
 ```
-+ DST
++ DST类型有：
     + Path
     + OsStr
     + str
