@@ -24,3 +24,22 @@ let lock = RwLock::new(10);
 }
 ```
 
+## std::sync::Mutex
++ Mutex vs MutexGuard
+    + Mutex<T>
+        + 锁 + 数据的容器
+    + MutexGuard
+        + 我当前持有这把锁的证明（RAII 对象）
++ drop()释放锁
++ quick start
+```rust
+use std::sync::Mutex;
+
+let m = Mutex::new(10);
+
+{
+    let mut guard = m.lock().unwrap(); //返回MutexGuard
+    *guard += 1;
+} // guard drop → 自动 unlock
+
+```
