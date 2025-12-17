@@ -43,3 +43,5 @@ let m = Mutex::new(10);
 } // guard drop → 自动 unlock
 
 ```
+
+## std::sync::atomic::AtomicUsize
