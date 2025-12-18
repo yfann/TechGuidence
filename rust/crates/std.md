@@ -92,3 +92,15 @@ fn main() {
 
 
 ```
+
+
+## std::mem::replace
++ 安全原地交换
+    + 取出字段值 + 写回新值
+```rust
+let mut x = 1;
+let old = std::mem::replace(&mut x, 2);
+
+assert_eq!(x, 2);
+assert_eq!(old, 1);
+```
