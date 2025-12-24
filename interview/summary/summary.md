@@ -7,8 +7,6 @@
     + 分布式锁
     + 一致性
 
-+ Oauth
-    + sessionn token
 
 + security
     + zero trust
