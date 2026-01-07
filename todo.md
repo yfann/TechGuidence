@@ -5,7 +5,6 @@
 + [What is System Design – Learn System Design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
 + DDIA
 + web3
-+ leetcode
 + Paxos
 + [MINI-LSM](https://skyzh.github.io/mini-lsm/)
 + [distributed database and distributed systems](https://github.com/pingcap/talent-plan)
