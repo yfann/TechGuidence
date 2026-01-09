@@ -38,8 +38,11 @@
     + 令牌发行者
 
 + sub（subject/主题)
+    + 在 OIDC / JWT 语境中，sub（Subject）是由身份提供方（IdP）生成的用户标识，其设计目标就是：
+        + 在给定 Issuer（iss）作用域内，稳定且唯一地标识一个用户
     + JWT所针对的主体或用户
     + 一般唯一标识,UserId
+    + (iss, sub) ⇒ 唯一标识一个用户
 
 + aud(Audience)
     + 预期接收令牌的一方

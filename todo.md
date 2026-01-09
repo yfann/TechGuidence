@@ -10,6 +10,8 @@
 + [distributed database and distributed systems](https://github.com/pingcap/talent-plan)
 + [leveldb-rs](https://github.com/dermesser/leveldb-rs)
 
-<!-- new -->
-+ polymarket
+<!-- todo -->
++ [polymarket](https://polymarket.com/)
++ [kalshi](https://kalshi.com/)
 + [disco](https://labs.google/disco)
++ [claudecode](https://code.claude.com/docs/en/skills)
