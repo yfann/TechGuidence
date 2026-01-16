@@ -22,6 +22,9 @@
 + vscode + rust-analyzer
 
 ## ref
++ [rustup](https://rustup.rs/)
+
+
 + [安装 Rust](https://course.rs/first-try/installation.html)
 + [rust install](https://www.rust-lang.org/tools/install)
 <!-- download -->
