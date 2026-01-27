@@ -12,9 +12,9 @@
 
 
 ## z-library
-+ x: @Z_Lib_official
++ 
 + [z-library](https://z-library.sk/)
-    + ...2012@163/.....dotyf
+    + x: @Z_Lib_official
 + [Awesome-Zlibrary](https://github.com/runningcheese/Awesome-Zlibrary)
 
 ## libgen
