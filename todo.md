@@ -15,4 +15,4 @@
 + [kalshi](https://kalshi.com/)
 + [disco](https://labs.google/disco)
 + [skill](https://code.claude.com/docs/en/skills)
-+ ClawdBot 
++ [ClawdBot](https://clawdbot.you/)
