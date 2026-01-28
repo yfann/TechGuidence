@@ -13,7 +13,8 @@
 + [official MCP](https://github.com/modelcontextprotocol)
 + [ts sdk](https://github.com/modelcontextprotocol/typescript-sdk)
 + [MCP (Model Context Protocol)，一篇就够了。](https://zhuanlan.zhihu.com/p/29001189476)
-
++ [mcp](https://mcp.so)
++ [windsurf mcp](https://docs.windsurf.com/windsurf/cascade/mcp)
 <!-- mcp servers -->
 + [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
 + [official mcp servers](https://github.com/modelcontextprotocol/servers)
