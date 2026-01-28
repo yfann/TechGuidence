@@ -14,6 +14,5 @@
 + [polymarket](https://polymarket.com/)
 + [kalshi](https://kalshi.com/)
 + [disco](https://labs.google/disco)
-+ [claudecode](https://code.claude.com/docs/en/skills)
++ [skill](https://code.claude.com/docs/en/skills)
 + ClawdBot 
-+ claude skill
