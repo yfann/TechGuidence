@@ -5,12 +5,15 @@
 + [What is System Design – Learn System Design](https://www.geeksforgeeks.org/what-is-system-design-learn-system-design/?ref=outind)
 + DDIA
 + web3
-+ leetcode
 + Paxos
 + [MINI-LSM](https://skyzh.github.io/mini-lsm/)
 + [distributed database and distributed systems](https://github.com/pingcap/talent-plan)
 + [leveldb-rs](https://github.com/dermesser/leveldb-rs)
 
-<!-- new -->
-+ polymarket
+<!-- todo -->
++ [polymarket](https://polymarket.com/)
++ [kalshi](https://kalshi.com/)
 + [disco](https://labs.google/disco)
++ [skill](https://code.claude.com/docs/en/skills)
++ [ClawdBot](https://clawdbot.you/)
++ [claude code](https://anthropic.skilljar.com/claude-code-in-action)

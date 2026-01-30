@@ -10,3 +10,13 @@
 + [让 Claude Code 使用其他模型](https://nekonull.me/share/claude-code-3rd-party-model/)
 + [Claude Code 最佳实践](https://zhuanlan.zhihu.com/p/1923376160475181271)
 + [Auto-generating pull request documentation with Claude Code and GitHub Actions](https://solmaz.io/log/2025/05/24/claude-code-pr-autodoc-action/?utm_source=chatgpt.com)
++ [国产大模型接入 Claude Code 教程：以 Doubao-Seed-Code 为例](https://www.ruanyifeng.com/blog/2025/11/doubao-seed-code.html)
++ [claude code](https://anthropic.skilljar.com/claude-code-in-action)
+
+<!-- skill -->
++ [Agent Skills](https://code.claude.com/docs/en/skills)
++ [claude agent skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
+
+
+<!-- plugin -->
++ [planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master?tab=readme-ov-file)

@@ -1,5 +1,5 @@
 # JWT
-+ Header.Payload.Signature
++ BASE64URL(header) . BASE64URL(payload) . BASE64URL(signature)
 
 ```json
 {
@@ -12,20 +12,37 @@
     "name": "John Doe",
     "iat": 1622782384
   },
-  "signature": "HMACSHA256(base64UrlEncode(header) + '.' + base64UrlEncode(payload), secretKey)"
+  "signature": "HMACSHA256(base64UrlEncode(header) + '.' + base64UrlEncode(payload), secret)"
 }
 ```
 
-## sub
-+ 
++ 签名和验签使用同一个secret
+    + signature = HMAC_SHA256(secret, signing_input)
+    + signing_input = encoded_header + "." + encoded_payload
+        + encoded_header  = Base64URL(header_json)
+        + encoded_payload = Base64URL(payload_json)
+
+
++ 验签(验证token)
+    1. 解析 header → alg
+    2. 用公钥 / secret
+    3. 对 signing_input 重新计算签名
+    4. 与 token 中 signature 比较
+
+
 
 ## claims
++ claims是Token中用来描述用户或上下文信息的数据字段
+    + JWT 的“内容声明”
 + iss(Issuer)
     + 令牌发行者
 
 + sub（subject/主题)
+    + 在 OIDC / JWT 语境中，sub（Subject）是由身份提供方（IdP）生成的用户标识，其设计目标就是：
+        + 在给定 Issuer（iss）作用域内，稳定且唯一地标识一个用户
     + JWT所针对的主体或用户
     + 一般唯一标识,UserId
+    + (iss, sub) ⇒ 唯一标识一个用户
 
 + aud(Audience)
     + 预期接收令牌的一方

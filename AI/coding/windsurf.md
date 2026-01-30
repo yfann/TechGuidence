@@ -42,10 +42,11 @@
 + file -> preferences -> windsurf settings -> search proxy -> detect proxy
     + for ai chat
 
-+ file -> preferences -> settings -> proxy -> http:proxy
++ file -> preferences -> settings -> proxy -> set http:proxy(And uncheck Proxy Strict SSL)
     + for windsurf extension
     + for `ctrl + i`
 
+<!-- others -->
 + settings
     + manual proxy
         + no proxy
