@@ -16,3 +16,4 @@
 + [disco](https://labs.google/disco)
 + [skill](https://code.claude.com/docs/en/skills)
 + [ClawdBot](https://clawdbot.you/)
++ [claude code](https://anthropic.skilljar.com/claude-code-in-action)
