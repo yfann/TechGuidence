@@ -1,10 +1,38 @@
 # Claude code
 
+
+## install
+
+<!-- mac -->
++ `curl -fsSL https://claude.ai/install.sh | bash`
++ `ls ~/.local/bin | grep claude`
++ `echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc`
++ `source ~/.zshrc`
++ `which claude`
+
+## cmd
++ `claude`
++ `claude "fix the build error"`
+    + Run a one-time task
++ `claude -p "explain this function"`
+    + Run one-off query, then exit
++ `claude -c`
+    + 	Continue most recent conversation in current directory
++ `claude -r`
+    + 	Resume a previous conversation
++ `/clear`
++ `/help`
++ `exit`
 ## CLAUDE.md
 
 ## warp vs Claude code
 
 ## ref
+<!-- official -->
++ [official claude code](https://claude.com/product/claude-code)
++ [claude code docs](https://code.claude.com/docs/en/overview)
+
+<!-- 教程 -->
 + [Claude Code is My Computer](https://steipete.me/posts/2025/claude-code-is-my-computer)
 + [Claude code](https://www.anthropic.com/claude-code)
 + [让 Claude Code 使用其他模型](https://nekonull.me/share/claude-code-3rd-party-model/)

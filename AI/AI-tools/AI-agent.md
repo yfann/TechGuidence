@@ -18,3 +18,4 @@
 + [mcp-agent](https://github.com/lastmile-ai/mcp-agent)
 + [WebAgent](https://github.com/Alibaba-NLP/WebAgent)
     + Information Seeking
++ [pi-mono](https://github.com/badlogic/pi-mono)
