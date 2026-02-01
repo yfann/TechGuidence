@@ -1,6 +1,10 @@
 # Moltbot(Clawbot)
 
 
+## install
+
++ `claude setup-token`
+
 ## ref
 + [clawdbot](https://clawdbot.you/)
 + [openclaw github](https://github.com/openclaw/openclaw)

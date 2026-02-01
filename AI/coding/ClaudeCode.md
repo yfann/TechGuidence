@@ -20,10 +20,40 @@
     + 	Continue most recent conversation in current directory
 + `claude -r`
     + 	Resume a previous conversation
+<!-- cmd -->
 + `/clear`
 + `/help`
++ `/init`
+    + create claude.md
 + `exit`
++ `esc`
+    + stop processing
++ `esc` * 2
+    + conversation to an earlier point 
+<!-- shortcut -->
++ `shift + Tab`
+    + accept without permission
++ `shift + Tab` * 2
+    + plan mode
+        + 广度
++ think,ultrathink
+    + think mode
+        + 深度
++ `#`
+    + memoery mode,给CLAUDE.md添加内容
+
+
++ `/compact`
+    + summarize the conversation
+
 ## CLAUDE.md
++ CLAUDE.md
+    + /init
+    + project level
++ CLAUDE.local.md
+    + not shared with other engineers
++ ~/.claude/CLAUDE.md
+    + machine level
 
 ## warp vs Claude code
 
