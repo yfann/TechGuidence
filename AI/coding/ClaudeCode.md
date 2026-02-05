@@ -87,3 +87,5 @@
 
 <!-- plugin -->
 + [planning-with-files](https://github.com/OthmanAdi/planning-with-files/tree/master?tab=readme-ov-file)
++ [everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+

@@ -1,0 +1,2 @@
+status event data:  {"message_type": "license.status", "data": {"correlation_id": "d3dd8f08-f745-4ce3-956f-4975d2bbe175", "license_status": [{"installed_id": 39, "status": "ACTIVE", "feature": "LoomCore"}]}}
+EcosystemInstancesManagement-CTNwSmHZ.js:3 status event data:  {"message_type": "license.status", "data": {"license_status": [{"installed_id": 147, "status": "INACTIVE", "feature": "app"}]}}
