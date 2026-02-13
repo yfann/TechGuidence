@@ -31,6 +31,7 @@
 
 <!-- book -->
 + Build a Large Language Model (From Scratch) 
++ [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
 
 
 <!-- 教学项目 -->
@@ -38,3 +39,7 @@
 + [nanochat](https://github.com/karpathy/nanochat)
     + AI 教学模型，演示 ChatGPT 的原理。你只需花费100美元租用 GPU 训练，就能自己训练出一个类似于 GPT-2 生成能力的可用模型
 + [nano-vllm](https://github.com/GeeeekExplorer/nano-vllm)
+
+
+<!-- ai可视化 -->
++ [understanding neural networks visually](https://visualrambling.space/neural-network/)
