@@ -9,6 +9,7 @@
 <!-- check clean ip -->
 + [ip 风控](ping0.cc)
 + [ipinfo.com](ipinfo.com)
+    + `curl -x <ip:port> -U <name:pwd> ipinfo.io`
 + [www.ipip.net](www.ipip.net)
 
 ## ref
