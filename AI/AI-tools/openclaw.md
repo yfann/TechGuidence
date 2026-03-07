@@ -2,6 +2,17 @@
 
 
 ## install
++ `curl -fsSL https://openclaw.ai/install.sh | bash`
+
+## config
++ `openclaw onboard --install-daemon`
+
+
+## operation
++ `openclaw gateway status`
++ `openclaw dashboard`
+    + UI
+
 
 + `claude setup-token`
 
