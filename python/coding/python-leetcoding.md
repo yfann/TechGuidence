@@ -1,6 +1,6 @@
 
-
-## python stack
+# python leetcoding
+##  stack
 ```python
 # stack1
 stack=[]
@@ -13,4 +13,10 @@ from collections import deque
 stack=deque()
 stack.append(1)
 stack.pop()
+```
+
+## array
+```python
+for i,v in enumerate(arr):
+    print(i,v)
 ```
