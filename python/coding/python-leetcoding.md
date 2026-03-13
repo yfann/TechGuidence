@@ -19,4 +19,7 @@ stack.pop()
 ```python
 for i,v in enumerate(arr):
     print(i,v)
+
+b=[0]*3
+a=[1]+[2]
 ```

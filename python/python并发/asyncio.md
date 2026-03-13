@@ -59,6 +59,11 @@
 
 ## Coroutine
 + `async def`开启一个协程
+    + 直接调用是不会执行，只是返回一个待执行的coroutine对象，没有把他交给事件循环执行
++ `await ....`
+    + 交给事件循环执行，并等待结果
++ `asyncio.create_task(...)`
+    + 交给事件循环后台执行，不等待
 
 ## python协程(Coroutine) VS 线程
 
