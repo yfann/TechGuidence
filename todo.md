@@ -18,4 +18,10 @@
 + [ClawdBot](https://clawdbot.you/)
 + [claude code](https://anthropic.skilljar.com/claude-code-in-action)
 + [gorse](https://github.com/gorse-io/gorse)
+
+
++ [agent-safehouse](https://github.com/eugene1g/agent-safehouse)
+    + 一个 macOS 沙箱工具，用来在沙箱里运行 AI 编程工具。
 + next.js
++ pipegate
++ nanobot
