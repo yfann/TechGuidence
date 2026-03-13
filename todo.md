@@ -18,3 +18,4 @@
 + [ClawdBot](https://clawdbot.you/)
 + [claude code](https://anthropic.skilljar.com/claude-code-in-action)
 + [gorse](https://github.com/gorse-io/gorse)
++ next.js
