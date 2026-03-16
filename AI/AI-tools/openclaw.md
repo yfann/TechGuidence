@@ -3,18 +3,34 @@
 
 ## install
 + `curl -fsSL https://openclaw.ai/install.sh | bash`
-
-## config
+<!-- onboard -->
 + `openclaw onboard --install-daemon`
 
 
 ## operation
++ `openclaw status`
 + `openclaw gateway status`
 + `openclaw dashboard`
-    + UI
+    + http://127.0.0.1:18789/
++ `openclaw update`
++ `openclaw plugins list`
++ `openclaw config show`
 
-
+## models
++ qwen
 + `claude setup-token`
+
+## setup feishu channel
++ `openclaw plugins install @m1heng-clawd/feishu`
++ `openclaw config set channels.feishu.appId <app id>`
++ `openclaw config set channels.feishu.appSecret <app secret>`
++ `openclaw config set channels.feishu.enabled true`
++ `openclaw config set channels.feishu.connectionMode websocket`
++ `openclaw config set channels.feishu.dmPolicy pairing`
++ `openclaw config set channels.feishu.groupPolicy allowlist`
++ `openclaw config set channels.feishu.requireMention true`
++ `openclaw gateway restart`
++ `openclaw pairing approve feishu <pairing code>`
 
 ## ref
 + [clawdbot](https://clawdbot.you/)
