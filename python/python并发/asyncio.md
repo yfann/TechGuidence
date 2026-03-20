@@ -64,6 +64,8 @@
     + 交给事件循环执行，并等待结果
 + `asyncio.create_task(...)`
     + 交给事件循环后台执行，不等待
++ `asyncio.gather(...)`
+    + 消费多个coroutine对象
 
 ## python协程(Coroutine) VS 线程
 
