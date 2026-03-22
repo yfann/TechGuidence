@@ -1,5 +1,5 @@
 # Agentic AI
-
++ Degrees of autonomy
 
 ## ref
 + [agentic-ai](https://github.com/datawhalechina/agentic-ai)
