@@ -37,6 +37,7 @@
 + [openclaw](https://clawhub.ai/)
 + [clawhub](https://clawhub.ai/)
 + [openclaw github](https://github.com/openclaw/openclaw)
++ [pi-mono](https://github.com/badlogic/pi-mono/tree/main)
 
 <!-- install -->
 + [保姆级 OpenClaw （原 Clawdbot）飞书对接教程 手把手教你搭建 AI 助手](https://developer.aliyun.com/article/1709615)
