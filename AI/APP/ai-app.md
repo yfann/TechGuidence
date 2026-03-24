@@ -8,8 +8,12 @@
     + 分析网易云音乐歌单
 + [nowigetit](https://nowigetit.us/)
     + 帮助理解scientific PDF
-
++ [MimicThem](https://github.com/zhanchey/MimicThem)
+    + 小红书复刻
 <!-- tools -->
 + [skills-manager](https://github.com/xingkongliang/skills-manager)
 + [gorse](https://github.com/gorse-io/gorse)
     + AI powered recommender system engine
+
+<!-- openclaw -->
++ [信息过载时代，我的漏斗式阅读工作流](https://shawnxie.top/blogs/tools/read-flow-2026.html#llm-%E8%B5%8B%E8%83%BD)

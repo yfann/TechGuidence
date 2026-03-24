@@ -48,7 +48,3 @@
 ## 数学
 + [Mathematical Foundations of Reinforcement Learning](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning)
 
-
-## agent
-+ [agentic-ai](https://github.com/datawhalechina/agentic-ai)
-+ [吴恩达 agentic ai](https://learn.deeplearning.ai/courses/agentic-ai/lesson/pu5xbv/welcome!)
