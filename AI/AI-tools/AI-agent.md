@@ -7,6 +7,7 @@
     + Parallelization
     + Orchestrator-workers
     + Evaluator-optimizer
+
 ## ref
 + [agents](https://github.com/ed-donner/agents)
     + 6 week journey to code and deploy AI Agents with OpenAI Agents SDK, CrewAI, LangGraph, AutoGen and MCP
@@ -19,3 +20,5 @@
 + [WebAgent](https://github.com/Alibaba-NLP/WebAgent)
     + Information Seeking
 + [pi-mono](https://github.com/badlogic/pi-mono)
++ [agent-safehouse](https://github.com/eugene1g/agent-safehouse)
+    + 一个 macOS 沙箱工具，用来在沙箱里运行 AI 编程工具。

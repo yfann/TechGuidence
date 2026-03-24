@@ -6,28 +6,16 @@
 + DDIA
 + web3
 + Paxos
-+ [MINI-LSM](https://skyzh.github.io/mini-lsm/)
 + [distributed database and distributed systems](https://github.com/pingcap/talent-plan)
-+ [leveldb-rs](https://github.com/dermesser/leveldb-rs)
++ next.js
 
-<!-- todo -->
+## marketing
 + [polymarket](https://polymarket.com/)
 + [kalshi](https://kalshi.com/)
-+ [disco](https://labs.google/disco)
-+ [skill](https://code.claude.com/docs/en/skills)
-+ [ClawdBot](https://clawdbot.you/)
-+ [claude code](https://anthropic.skilljar.com/claude-code-in-action)
-+ [gorse](https://github.com/gorse-io/gorse)
-
-
-+ [agent-safehouse](https://github.com/eugene1g/agent-safehouse)
-    + 一个 macOS 沙箱工具，用来在沙箱里运行 AI 编程工具。
-+ next.js
-+ pipegate
-+ nanobot
-
 
 ## AI
 + game
 + animation
 + LoRA
++ agent
+    + nanobot
