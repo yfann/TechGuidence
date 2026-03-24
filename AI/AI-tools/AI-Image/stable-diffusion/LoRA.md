@@ -8,7 +8,10 @@
 + Stable Diffusion 是“模型本体”，LoRA 是“给模型打补丁的方法”
     + SD: 文本生图
     + LoRA: SD的基础上定制风格
-
++ Stable Diffusion + Checkpoint → 才能生成图片
+    + Checkpoint是模型参数
+    + Stable Diffusion是模型框架
+    
 ## text to Image
 + Stable Diffusion
     + Latent Diffusion Model (LDM)
