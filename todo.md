@@ -25,3 +25,9 @@
 + next.js
 + pipegate
 + nanobot
+
+
+## AI
++ game
++ animation
++ LoRA

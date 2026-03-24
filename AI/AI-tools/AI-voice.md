@@ -1,9 +1,5 @@
 ## ai voice
-+ [aTrain](https://github.com/JuergenFleiss/aTrain)
-    + 语言转文字，识别说话人
-+ [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
-+ [Audio Transcription](https://podcast.zeabur.app/)
-    + 播客转文本
+
 + [hacker-news](https://github.com/ccbikai/hacker-news?tab=readme-ov-file)
 + [DeepSRT]()
     + chrome 插件，youtube总结和字幕
@@ -14,3 +10,14 @@
 + [podcast](https://github.com/justlovemaki/Podcast-Generator)
     + text to podcast
 + openai-whisper
+
+
+## voice to text
++ [aTrain](https://github.com/JuergenFleiss/aTrain)
+    + 语言转文字，识别说话人
++ [Audio Transcription](https://podcast.zeabur.app/)
+    + 播客转文本
+
+## clone voice
++ [elevenlabs](https://elevenlabs.io)
++ [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
