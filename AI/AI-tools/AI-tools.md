@@ -59,21 +59,7 @@
 + [Cherry Studio](https://github.com/CherryHQ/cherry-studio)
     +  Cherry Studio is a desktop client that supports for multiple LLM providers.
 
-## ai voice
-+ [aTrain](https://github.com/JuergenFleiss/aTrain)
-    + 语音识别
-+ [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
-+ [Audio Transcription](https://podcast.zeabur.app/)
-    + 播客转文本
-+ [hacker-news](https://github.com/ccbikai/hacker-news?tab=readme-ov-file)
-+ [DeepSRT]()
-    + chrome 插件，youtube总结和字幕
-+ [KittenTTS](https://github.com/KittenML/KittenTTS)
-    + text to voice
-+ [handy](https://github.com/cjpais/Handy)
-    + speech to text
-+ [podcast](https://github.com/justlovemaki/Podcast-Generator)
-    + text to podcast
+
 ## NLP
 + [read-bridge](https://github.com/WindChimeEcho/read-bridge)
     + AI分析句子
