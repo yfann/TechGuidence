@@ -46,3 +46,4 @@
 + [openclaw docs](https://docs.openclaw.ai/start/getting-started)
 + [今天，分享Clawdbot记忆系统最佳工程实践](https://zhuanlan.zhihu.com/p/2000210748878632708)
 + [awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases)
++ [16GB 内存的极限：我在 M4 Mac Mini 上OpenClaw + oMLX 的部署踩坑全过程](https://zhuanlan.zhihu.com/p/2019883129645576759)
