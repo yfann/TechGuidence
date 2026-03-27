@@ -1,5 +1,12 @@
 
 ## ref
+<!-- text to Image -->
++ nano-banana-2
++ [MAI-Image-2](https://microsoft.ai/news/introducing-MAI-Image-2/)
++ Midjourney
++ DALL·E
+    + OpenAI
+<!-- tools -->
 + [segment-anything](https://github.com/facebookresearch/segment-anything)
     + 图片分割，抠图
     + 图片序列，视频
@@ -17,3 +24,6 @@
 + [olmocr](https://github.com/allenai/olmocr)
 + [Awesome-Nano-Banana-images](https://github.com/PicoTrex/Awesome-Nano-Banana-images)
 + [Z-Image](https://github.com/Tongyi-MAI/Z-Image)
+
+<!-- resources -->
++ pixiv
