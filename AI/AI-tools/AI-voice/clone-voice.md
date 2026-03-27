@@ -24,12 +24,6 @@ demucs output.wav
 ```
 
 ## 自动提取人声
-+ `conda create -n peppa-audio python=3.10 -y`
-+ `conda activate peppa-audio`
-+ `conda install -c conda-forge ffmpeg libsndfile -y`
-+ `pip install torch torchaudio`
++ `conda create -n diarization-env python=3.10 -y`
++ `conda activate diarization-env`
 + `pip install pyannote.audio`
-    + 说话人分离
-+ `pip install librosa soundfile pydub`
-+ `pip install silero-vad`
-+ `python -c "import torchaudio; print(torchaudio.list_audio_backends())"`

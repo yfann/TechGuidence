@@ -4,8 +4,12 @@
 
 
 ## cmd
-+ `conda create -n ai python=3.10`
-+ `conda activate ai`
++ `conda create -n <name> python=3.10`
+    + `conda activate <name>`
+    + `conda deactivate`
++ `conda env list`
++ `conda list`
++ `conda remove -n myenv --all`
 
 
 ## AI项目依赖链
