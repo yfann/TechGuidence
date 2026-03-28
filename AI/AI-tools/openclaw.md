@@ -6,13 +6,16 @@
 <!-- onboard -->
 + `openclaw onboard --install-daemon`
 
+<!-- update -->
++ `openclaw update`
+<!-- repair -->
++ `openclaw doctor --repair`
 
 ## operation
 + `openclaw status`
 + `openclaw gateway status`
 + `openclaw dashboard`
     + http://127.0.0.1:18789/
-+ `openclaw update`
 + `openclaw plugins list`
 + `openclaw config show`
 
@@ -31,6 +34,9 @@
 + `openclaw config set channels.feishu.requireMention true`
 + `openclaw gateway restart`
 + `openclaw pairing approve feishu <pairing code>`
+
+## setup wechat
++ `npx -y @tencent-weixin/openclaw-weixin-cli@latest install`
 
 ## ref
 <!-- official -->
