@@ -29,6 +29,10 @@
 ## ref
 + [Prompt caching: 10x cheaper LLM tokens, but how?](https://ngrok.com/blog/prompt-caching/)
 
+<!-- docs -->
++ [AI到底聪明在哪——从手机人脸识别说起](https://wmyskxz.cn/wiki/whats_ai/1/)
+
+
 <!-- book -->
 + Build a Large Language Model (From Scratch) 
 + [Understanding Machine Learning: From Theory to Algorithms](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html)
