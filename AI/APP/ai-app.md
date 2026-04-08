@@ -10,6 +10,8 @@
     + 帮助理解scientific PDF
 + [MimicThem](https://github.com/zhanchey/MimicThem)
     + 小红书复刻
++ [ArcReel](https://github.com/ArcReel/ArcReel)
+    + AI Agent 驱动的开源视频生成工作台 — 小说→角色/场景/道具设计→剧本→分镜图→视频
 <!-- tools -->
 + [skills-manager](https://github.com/xingkongliang/skills-manager)
 + [gorse](https://github.com/gorse-io/gorse)
