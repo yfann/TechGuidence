@@ -1,6 +1,17 @@
 
+# nanobot
 
-## code
+## tech
++ channel
+    + websocket
+        + WebSocket 是“客户端主动连出去”，Webhook 是“服务器被动等别人连进来”
+            + webhook需要 公网
+    + webhook
+        + 第三方系统事件发生时回调你提供的webhook url
+
+
+
+## source code
 
 + loop.py
 + context.py
