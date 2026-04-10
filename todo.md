@@ -20,3 +20,8 @@
 + agent
     + nanobot
 + MAI
+
+
+## rust
++ mini-lsm
++ tantivy
