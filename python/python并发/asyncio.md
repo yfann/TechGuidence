@@ -223,6 +223,9 @@ finally:
     lock.release()
 ```
 
+## asyncio.Semaphore
++ 并发量控制
+
 ## tips
 + 异步阻塞
     + async中使用了time.sleep(),会阻塞整个事件循环
