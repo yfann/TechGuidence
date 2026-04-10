@@ -1,4 +1,29 @@
 # asyncio 
++ 单线程并发模型
+    + 避免锁
+    + 高性能 I/O
+    + 可预测执行顺序
++ asyncio.run(main())
+    + 主事件循环
+    + 内部为
+    ```py
+    new_event_loop()
+    → set_event_loop()
+    → run_until_complete()
+    → close()
+    ```
++ event loop 是 asyncio 的调度器
+    + 协程是被 event loop 调度的任务
+    + event loop 本质是一个 while 循环（调度器）
+    + 一个线程不可能同时执行两个“调度主循环”
+    + 一个 loop 不能跨线程使用
+
++ loop和线程一一对应
+    + 一个线程最多只能有一个“正在运行”的 event loop，
+    + 而一个 event loop 只属于一个线程。
+    + Thread（线程）
+        └── Event Loop（事件循环）
+                └── Tasks / Coroutines（协程任务）
 
 ## await
 + 挂起当前协程，释放 CPU 控制权
@@ -115,6 +140,46 @@
     + queue.get()取出数据后，queue.task_done()标记task完成, queue.join()才能知道任务完成 
     + queue.join()等待所有任务完成，然后继续执行
         + 任务多少根据queue.put()的数量来定
+
+
+
+## asyncio.get_running_loop()
++ 返回当前线程中正在运行的 event loop
++ 用途
+```py
+# 创建异步任务
+loop = asyncio.get_running_loop()
+loop.create_task(coro())
+
+# 执行阻塞代码
+loop = asyncio.get_running_loop()
+
+result = await loop.run_in_executor(
+    None,  # 默认线程池
+    blocking_func
+)
+
+# 定时任务
+loop.call_later(2, callback)
+```
+
+## asyncio.new_event_loop()
++ 创建新事件循环
+    + 一般在子线程中使用
+```py
+import asyncio
+import threading
+
+def worker():
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
+    loop.run_until_complete(asyncio.sleep(1))
+    loop.close()
+
+threading.Thread(target=worker).start()
+```
+
 ## tips
 + 异步阻塞
     + async中使用了time.sleep(),会阻塞整个事件循环
