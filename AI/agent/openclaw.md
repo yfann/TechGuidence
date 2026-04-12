@@ -25,16 +25,17 @@
 + `openclaw`
 + `openclaw status`
 + `openclaw gateway status`
-+ `openclaw channels list`
++ `openclaw plugins list`
 + `openclaw config show`
 
 <!-- channel -->
-+ `openclaw plugins list`
++ `openclaw  channels list`
 + openclaw channels add
 
 <!-- models -->
 + `openclaw models set qwen-portal/coder-model`
 + `openclaw models list`
+
 <!-- web ui -->
 + `openclaw dashboard`
     + http://127.0.0.1:18789/
@@ -60,7 +61,8 @@
 + `openclaw gateway restart`
 + `openclaw pairing approve feishu <pairing code>`
 <!-- wechat -->
-+ `openclaw plugins install "@tencent-weixin/openclaw-weixin@latest"`
++ `npx -y @tencent-weixin/openclaw-weixin-cli@latest install`
+    + 一定要npx安装，出现二维码后微信插件->clawbot->扫码
 
 
 
@@ -68,9 +70,12 @@
 ## ~/.openclaw/openclaw.json
 + 配置模型key
 
+
+
+
 ## pulgin
 <!-- install plugin -->
-+ `openclaw plugins install "@tencent-weixin/openclaw-weixin@latest"`
++ `openclaw plugins install <name>`
 + `openclaw gateway restart`
 + `openclaw plugins list`
 + ~/.openclaw/openclaw.json
