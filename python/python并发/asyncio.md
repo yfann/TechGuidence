@@ -180,6 +180,52 @@ def worker():
 threading.Thread(target=worker).start()
 ```
 
+## asyncio.wait_for()
++ 在指定时间内等待一个协程完成，否则就取消它并抛出超时异常
++ await 一个 Task + 注册一个定时器
+
+
+
+
+## asyncio.Lock()
++ 协程之间的互斥锁（mutex
+    + 保证同一时间只有一个协程可以进入某个临界区（critical section
+
++ 单线程的并发问题
+    + coroutine在await时会切换执行
+    + 共享变量/资源可能被“交叉修改”
+    + 这就产生了“竞态条件”（race condition）
+
++ 原理
+    + 内部维护一个状态：locked / unlocked
+    + 和一个等待队列（FIFO）
+    + action
+        + 获取锁 -> 如果锁被占用 → 当前协程被挂起（await）
+        + 锁释放后 → 唤醒下一个等待者
+        + 不会阻塞线程，只是让协程“排队等待”
+
++ code
+```py
+lock = asyncio.Lock()
+
+async def incr():
+    global counter
+    async with lock:
+        tmp = counter
+        await asyncio.sleep(0)
+        counter = tmp + 1
+
+# ==
+await lock.acquire()
+try:
+    ...
+finally:
+    lock.release()
+```
+
+## asyncio.Semaphore
++ 并发量控制
+
 ## tips
 + 异步阻塞
     + async中使用了time.sleep(),会阻塞整个事件循环

@@ -1,6 +1,5 @@
-# rss-reading
-
-## install FreshRSS
+## rss-reading
++ install FreshRSS
 ```sh
 docker run -d --restart unless-stopped --log-opt max-size=10m \
   -p 8080:80 \
@@ -15,3 +14,5 @@ docker run -d --restart unless-stopped --log-opt max-size=10m \
 
 ## ref
 + [FreshRSS](https://github.com/FreshRSS/FreshRSS/tree/edge/Docker)
++ [epub-tts](https://github.com/rafael1mc/epub-tts)
+    + epub to voice
