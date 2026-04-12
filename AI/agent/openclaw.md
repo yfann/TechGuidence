@@ -11,7 +11,6 @@
 
 + `openclaw --version`
 
-
 <!-- update -->
 + `openclaw update`
 <!-- repair -->
@@ -19,19 +18,34 @@
 
 
 
-
 ## operation
++ `openclaw gateway restart`
+
+<!-- status -->
 + `openclaw`
 + `openclaw status`
 + `openclaw gateway status`
-+ `openclaw dashboard`
-    + http://127.0.0.1:18789/
-+ `openclaw plugins list`
++ `openclaw channels list`
 + `openclaw config show`
 
-## models
+<!-- channel -->
++ `openclaw plugins list`
++ openclaw channels add
+
+<!-- models -->
 + `openclaw models set qwen-portal/coder-model`
 + `openclaw models list`
+<!-- web ui -->
++ `openclaw dashboard`
+    + http://127.0.0.1:18789/
+<!-- tui -->
++ `openclaw tui`
+    + `/model minimax-portal/MiniMax-M2.7`
+<!-- model -->
+
+
+
+
 
 ## channel
 <!-- feishu -->
@@ -47,6 +61,21 @@
 + `openclaw pairing approve feishu <pairing code>`
 <!-- wechat -->
 + `openclaw plugins install "@tencent-weixin/openclaw-weixin@latest"`
+
+
+
+
+## ~/.openclaw/openclaw.json
++ 配置模型key
+
+## pulgin
+<!-- install plugin -->
++ `openclaw plugins install "@tencent-weixin/openclaw-weixin@latest"`
++ `openclaw gateway restart`
++ `openclaw plugins list`
++ ~/.openclaw/openclaw.json
+    + plugins.allow
+
 
 ## ref
 <!-- official -->
