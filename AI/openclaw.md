@@ -1,27 +1,17 @@
 # Openclaw(Moltbot/Clawbot)
 
 
-
 ## install
-
-+ install openclaw
-    + `npm install -g openclaw@latest`
-+ install gateway
-    + `openclaw onboard --install-daemon`
-
-+ `openclaw --version`
-
++ `curl -fsSL https://openclaw.ai/install.sh | bash`
+<!-- onboard -->
++ `openclaw onboard --install-daemon`
 
 <!-- update -->
 + `openclaw update`
 <!-- repair -->
-+ `openclaw doctor`
-
-
-
++ `openclaw doctor --repair`
 
 ## operation
-+ `openclaw`
 + `openclaw status`
 + `openclaw gateway status`
 + `openclaw dashboard`
@@ -30,11 +20,13 @@
 + `openclaw config show`
 
 ## models
-+ `openclaw models set qwen-portal/coder-model`
++ qwen
++ `claude setup-token`
++ `openclaw models auth login --provider qwen-portal`
 + `openclaw models list`
+    + `openclaw models set --provider qwen-portal --model qwen-plus` 
 
-## channel
-<!-- feishu -->
+## setup feishu channel
 + `openclaw plugins install @m1heng-clawd/feishu`
 + `openclaw config set channels.feishu.appId <app id>`
 + `openclaw config set channels.feishu.appSecret <app secret>`
@@ -45,16 +37,17 @@
 + `openclaw config set channels.feishu.requireMention true`
 + `openclaw gateway restart`
 + `openclaw pairing approve feishu <pairing code>`
-<!-- wechat -->
-+ `openclaw plugins install "@tencent-weixin/openclaw-weixin@latest"`
+
+## setup wechat
++ `npx -y @tencent-weixin/openclaw-weixin-cli@latest install`
 
 ## ref
 <!-- official -->
-+ [openclaw](https://openclaw.ai/)
++ [openclaw](https://clawhub.ai/)
 + [clawhub](https://clawhub.ai/)
 + [openclaw github](https://github.com/openclaw/openclaw)
 + [pi-mono](https://github.com/badlogic/pi-mono/tree/main)
-+ [cli](docs.openclaw.ai/cli)
+
 <!-- install -->
 + [保姆级 OpenClaw （原 Clawdbot）飞书对接教程 手把手教你搭建 AI 助手](https://developer.aliyun.com/article/1709615)
 
