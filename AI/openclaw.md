@@ -1,55 +1,32 @@
 # Openclaw(Moltbot/Clawbot)
 
 
-
 ## install
-
-+ install openclaw
-    + `npm install -g openclaw@latest`
-+ install gateway
-    + `openclaw onboard --install-daemon`
-
-+ `openclaw --version`
++ `curl -fsSL https://openclaw.ai/install.sh | bash`
+<!-- onboard -->
++ `openclaw onboard --install-daemon`
 
 <!-- update -->
 + `openclaw update`
 <!-- repair -->
-+ `openclaw doctor`
-
-
++ `openclaw doctor --repair`
 
 ## operation
-+ `openclaw gateway restart`
-
-<!-- status -->
-+ `openclaw`
 + `openclaw status`
 + `openclaw gateway status`
++ `openclaw dashboard`
+    + http://127.0.0.1:18789/
 + `openclaw plugins list`
 + `openclaw config show`
 
-<!-- channel -->
-+ `openclaw  channels list`
-+ openclaw channels add
-
-<!-- models -->
-+ `openclaw models set qwen-portal/coder-model`
+## models
++ qwen
++ `claude setup-token`
++ `openclaw models auth login --provider qwen-portal`
 + `openclaw models list`
+    + `openclaw models set --provider qwen-portal --model qwen-plus` 
 
-<!-- web ui -->
-+ `openclaw dashboard`
-    + http://127.0.0.1:18789/
-<!-- tui -->
-+ `openclaw tui`
-    + `/model minimax-portal/MiniMax-M2.7`
-<!-- model -->
-
-
-
-
-
-## channel
-<!-- feishu -->
+## setup feishu channel
 + `openclaw plugins install @m1heng-clawd/feishu`
 + `openclaw config set channels.feishu.appId <app id>`
 + `openclaw config set channels.feishu.appSecret <app secret>`
@@ -60,35 +37,17 @@
 + `openclaw config set channels.feishu.requireMention true`
 + `openclaw gateway restart`
 + `openclaw pairing approve feishu <pairing code>`
-<!-- wechat -->
+
+## setup wechat
 + `npx -y @tencent-weixin/openclaw-weixin-cli@latest install`
-    + 一定要npx安装，出现二维码后微信插件->clawbot->扫码
-
-
-
-
-## ~/.openclaw/openclaw.json
-+ 配置模型key
-
-
-
-
-## pulgin
-<!-- install plugin -->
-+ `openclaw plugins install <name>`
-+ `openclaw gateway restart`
-+ `openclaw plugins list`
-+ ~/.openclaw/openclaw.json
-    + plugins.allow
-
 
 ## ref
 <!-- official -->
-+ [openclaw](https://openclaw.ai/)
++ [openclaw](https://clawhub.ai/)
 + [clawhub](https://clawhub.ai/)
 + [openclaw github](https://github.com/openclaw/openclaw)
 + [pi-mono](https://github.com/badlogic/pi-mono/tree/main)
-+ [cli](docs.openclaw.ai/cli)
+
 <!-- install -->
 + [保姆级 OpenClaw （原 Clawdbot）飞书对接教程 手把手教你搭建 AI 助手](https://developer.aliyun.com/article/1709615)
 

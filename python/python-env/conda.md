@@ -10,7 +10,8 @@
 + `conda env list`
 + `conda list`
 + `conda remove -n myenv --all`
-
++ `conda deactivate`
+    + 退出当前环境
 
 ## AI项目依赖链
 + pip管不了底层依赖，Conda可以
