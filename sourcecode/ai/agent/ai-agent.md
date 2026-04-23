@@ -1,5 +1,11 @@
 
 
+
+## streaming mode
++ Transfer-Encoding: chunked
++ SSE
++ WebSocket
+
 ##  ref
 + [eva](https://github.com/usepr/eva)
     + mini agent
