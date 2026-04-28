@@ -19,3 +19,9 @@
 
 <!-- openclaw -->
 + [信息过载时代，我的漏斗式阅读工作流](https://shawnxie.top/blogs/tools/read-flow-2026.html#llm-%E8%B5%8B%E8%83%BD)
+
+
+
+<!-- learning -->
++ [hi-kid](https://github.com/xiaochong/hi-kid)
+    + HiKid - Your AI English Pal. A desktop app built with React and TypeScript, targeting children in non-English-speaking countries who want to practice English speaking and listening.

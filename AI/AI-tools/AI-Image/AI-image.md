@@ -1,11 +1,5 @@
 
 ## ref
-<!-- text to Image -->
-+ nano-banana-2
-+ [MAI-Image-2](https://microsoft.ai/news/introducing-MAI-Image-2/)
-+ Midjourney
-+ DALL·E
-    + OpenAI
 <!-- tools -->
 + [segment-anything](https://github.com/facebookresearch/segment-anything)
     + 图片分割，抠图
@@ -27,3 +21,19 @@
 
 <!-- resources -->
 + pixiv
+
+
+<!-- application -->
++ [flipbook](https://flipbook.page/)
+    + 用户输入一个主题，它会自动生成详细解释的图片
+
+
+<!-- image model -->
++ [GPT Images 2.0](https://chatgpt.com/images/)
+    + [awesome gpt image 2](https://github.com/YouMind-OpenLab/awesome-gpt-image-2)
++ nano-banana-2
+    + [gemini 水印去除](https://watermarkzero.org/)
++ [MAI-Image-2](https://microsoft.ai/news/introducing-MAI-Image-2/)
++ Midjourney
++ DALL·E
+    + OpenAI
