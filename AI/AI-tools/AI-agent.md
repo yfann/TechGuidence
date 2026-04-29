@@ -22,3 +22,6 @@
 + [pi-mono](https://github.com/badlogic/pi-mono)
 + [agent-safehouse](https://github.com/eugene1g/agent-safehouse)
     + 一个 macOS 沙箱工具，用来在沙箱里运行 AI 编程工具。
+
+
++ [everything-claude-code](https://zread.ai/affaan-m/everything-claude-code/1-overview)
