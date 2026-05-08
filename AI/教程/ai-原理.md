@@ -27,10 +27,10 @@
 
 
 ## ref
-+ [Prompt caching: 10x cheaper LLM tokens, but how?](https://ngrok.com/blog/prompt-caching/)
-
 <!-- docs -->
 + [AI到底聪明在哪——从手机人脸识别说起](https://wmyskxz.cn/wiki/whats_ai/1/)
++ [how-llms-work](https://ynarwal.github.io/how-llms-work/)
+
 
 
 <!-- book -->
@@ -45,5 +45,11 @@
 + [nano-vllm](https://github.com/GeeeekExplorer/nano-vllm)
 + [MicroGPT explained interactively](https://growingswe.com/blog/microgpt)
 
+
+
 <!-- ai可视化 -->
 + [understanding neural networks visually](https://visualrambling.space/neural-network/)
+
+
+<!-- others -->
++ [Prompt caching: 10x cheaper LLM tokens, but how?](https://ngrok.com/blog/prompt-caching/)

@@ -11,3 +11,8 @@
 2. 顶部菜单选择terminal
 3. `csrutil disable`  禁用SIP
     + `csrutil enable` 启用SIP
+
+
+## ref
++ [auge](https://auge.franzai.com/)
+    + 视觉识别

@@ -13,6 +13,9 @@
     + proxychains4 的 Rust 实现，指定某个进程走代理链。
 + [tunelo](https://github.com/jiweiyuan/tunelo)
     + 本地服务暴露到公网
++ [tunnix](https://github.com/aeroxy/tunnix)
+    + An encrypted SOCKS5/HTTP proxy tunnel over HTTP/SSE — built for environments where only plain HTTP works.
+
 <!-- check clean ip -->
 + [ip 风控](ping0.cc)
 + [ipinfo.com](ipinfo.com)
