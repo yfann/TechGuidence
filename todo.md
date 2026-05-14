@@ -14,13 +14,10 @@
 + [kalshi](https://kalshi.com/)
 
 ## AI
-+ game
-+ animation
 + LoRA
-+ agent
-    + nanobot
-+ MAI
-
++ nanobot
++ llm wiki
++ fara-7B
 
 ## rust
 + mini-lsm
