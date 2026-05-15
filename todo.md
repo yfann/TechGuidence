@@ -18,6 +18,7 @@
 + nanobot
 + llm wiki
 + fara-7B
++ understand
 
 ## rust
 + mini-lsm
