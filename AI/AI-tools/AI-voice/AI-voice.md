@@ -21,3 +21,7 @@
 ## clone voice
 + [elevenlabs](https://elevenlabs.io)
 + [cloning voice](https://anyvoice.net/zh/ai-voice-cloning)
+
+
+## text to voice
++ [abogen](https://github.com/denizsafak/abogen)
