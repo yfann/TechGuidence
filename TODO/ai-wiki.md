@@ -2,9 +2,14 @@
 
 
 ## ref
+<!-- base line -->
++ [llm wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+
 <!-- tools -->
 + [markitdown](https://github.com/microsoft/markitdown)
 + obsidian
++ Obsidian Web Clipper
+    + chrome插件： web page to markdown
 
 <!-- practice -->
 + [llm-wiki-karpathy](https://github.com/balukosuri/llm-wiki-karpathy/tree/main)
@@ -19,3 +24,4 @@
 
 <!-- projects -->
 + [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
++ [llm_wiki](https://github.com/nashsu/llm_wiki)
