@@ -25,6 +25,7 @@
 
 ## 微积分
 + [calculus_beginners](https://math.mit.edu/~djk/calculus_beginners/)
++ [微积分其实很容易/Calculus Made Easy ](https://github.com/KeyAI/calculusmadeeasy-zh)
 
 ## 概率
 + [看见概率论](https://probability.visualized.fun/)

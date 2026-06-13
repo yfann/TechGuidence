@@ -23,3 +23,10 @@
 ## rust
 + mini-lsm
 + tantivy
+
+
+
+## source code
++ [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
++ nanobot
++ mini-lsm
