@@ -1,6 +1,12 @@
 
 
 ## ref
+<!-- explore -->
++ [deepwiki](https://deepwiki.com/)
+    + github repo的 wiki
+
+
+    
 + [feedme](https://feedme.icu/)
 + [ruanyifeng](https://www.ruanyifeng.com/blog/)
 + [reddit top](https://reddit-top.pages.dev/)

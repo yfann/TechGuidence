@@ -22,6 +22,7 @@
 
 <!-- projects -->
 + [llm_wiki](https://github.com/nashsu/llm_wiki)
+    + [deepwiki](https://deepwiki.com/elusivenguyen-dev/LLM-wiki)
 + [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
 + [LLM-wiki](https://github.com/Ss1024sS/LLM-wiki?utm_source=chatgpt.com)
 + [llm-wiki-karpathy](https://github.com/balukosuri/llm-wiki-karpathy/tree/main)
