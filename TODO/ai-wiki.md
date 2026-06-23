@@ -1,9 +1,14 @@
 
 
+## llm wiki
 
-## llm_wiki
-+ 公司使用要
-    + Setting -> Network -> Enable proxy
++ There are three layers:
+
+**Raw sources** — your curated collection of source documents. Articles, papers, images, data files. These are immutable — the LLM reads from them but never modifies them. This is your source of truth.
+
+**The wiki** — a directory of LLM-generated markdown files. Summaries, entity pages, concept pages, comparisons, an overview, a synthesis. The LLM owns this layer entirely. It creates pages, updates them when new sources arrive, maintains cross-references, and keeps everything consistent. You read it; the LLM writes it.
+
+**The schema** — a document (e.g. CLAUDE.md for Claude Code or AGENTS.md for Codex) that tells the LLM how the wiki is structured, what the conventions are, and what workflows to follow when ingesting sources, answering questions, or maintaining the wiki.
 
 
 
@@ -26,14 +31,12 @@
 + [personal-llm-wiki/claude.md](https://github.com/Erber102/personal-llm-wiki/blob/main/claude.md)
 
 
-<!-- projects -->
+<!-- solutions -->
 + [llm_wiki](https://github.com/nashsu/llm_wiki)
     + [deepwiki](https://deepwiki.com/elusivenguyen-dev/LLM-wiki)
 
 + [LLM-wiki](https://github.com/Ss1024sS/LLM-wiki?utm_source=chatgpt.com)
 + [llm-wiki-karpathy](https://github.com/balukosuri/llm-wiki-karpathy/tree/main)
 
-
-<!-- solution obsidian-->
 + [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
     + [claude-obsidian-ai-second-brain](https://agricidaniel.com/blog/claude-obsidian-ai-second-brain)
