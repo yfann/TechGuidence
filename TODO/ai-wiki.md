@@ -1,6 +1,12 @@
 
 
 
+## llm_wiki
++ 公司使用要
+    + Setting -> Network -> Enable proxy
+
+
+
 ## ref
 <!-- base line -->
 + [llm wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
@@ -23,6 +29,11 @@
 <!-- projects -->
 + [llm_wiki](https://github.com/nashsu/llm_wiki)
     + [deepwiki](https://deepwiki.com/elusivenguyen-dev/LLM-wiki)
-+ [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
+
 + [LLM-wiki](https://github.com/Ss1024sS/LLM-wiki?utm_source=chatgpt.com)
 + [llm-wiki-karpathy](https://github.com/balukosuri/llm-wiki-karpathy/tree/main)
+
+
+<!-- solution obsidian-->
++ [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
+    + [claude-obsidian-ai-second-brain](https://agricidaniel.com/blog/claude-obsidian-ai-second-brain)
