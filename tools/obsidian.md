@@ -11,6 +11,8 @@
 + `ctrl + p`
     + Download attachments for current file
 
+
+
 ## ref
 + [obsidian docs](https://obsidian.md/zh/help/)
 
@@ -23,3 +25,6 @@
 
 <!-- plugins -->
 + Dataview is an Obsidian plugin that runs queries over page frontmatter. If your LLM adds YAML frontmatter to wiki pages (tags, dates, source counts), Dataview can generate dynamic tables and lists.
+
++ [Excalidraw](https://excalidraw.com/)
+    + 自由画图
