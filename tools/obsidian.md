@@ -28,5 +28,5 @@
 
 + [Excalidraw](https://excalidraw.com/)
     + 自由画图
-+ anotator
++ annotator
     + read pdf,epub
