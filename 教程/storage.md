@@ -8,7 +8,7 @@
 + [write-you-a-vector-db](https://github.com/skyzh/write-you-a-vector-db)
 + [CMU 计算机科学本科/研究生的数据库系统课程](https://15445.courses.cs.cmu.edu/fall2022/)
 + [Things you didn't know about indexes](https://jon.chrt.dev/2026/04/15/things-you-didnt-know-about-indexes.html)
-
++ [build redis](https://shipthatcode.com/courses/build-redis)
 
 <!-- storage -->
 + [storage-book](https://github.com/Lularible/storage-book/tree/master/chapters)
