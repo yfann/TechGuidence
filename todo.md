@@ -9,6 +9,9 @@
 + [distributed database and distributed systems](https://github.com/pingcap/talent-plan)
 + next.js
 
++ [图解分布式系统原理](https://www.codedump.info/dist-system-cn/)
++ [en to jp](https://kellenok.github.io/cure-script/about.html)
+
 ## marketing
 + [polymarket](https://polymarket.com/)
 + [kalshi](https://kalshi.com/)
