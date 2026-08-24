@@ -2,7 +2,7 @@
 
 ## ref
 
-
++ [图解分布式系统原理](https://www.codedump.info/dist-system-cn/)
 + [Distributed systems for fun and profit](https://github.com/mixu/distsysbook?tab=readme-ov-file)
 + [浅谈分布式存储系统数据分布方法](http://catkang.github.io/2017/12/17/data-placement.html)
 
