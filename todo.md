@@ -22,6 +22,7 @@
 + llm wiki
 + fara-7B
 + understand
++ [rea](https://github.com/morluto/rea)
 
 ## rust
 + mini-lsm
