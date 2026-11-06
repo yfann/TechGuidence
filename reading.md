@@ -12,3 +12,6 @@
 + [reddit top](https://reddit-top.pages.dev/)
 + [github trending](https://github.com/trending)
 + [Top Hacker News](https://www.tophn.co/)
+    + [hacker books](https://hackerbooks.org/topic/fantasy)
+    + [hackerpodcasts](https://www.hackerpodcasts.org/)
+    + [hackertube](https://hackertube.org/)
