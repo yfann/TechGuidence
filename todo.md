@@ -34,3 +34,4 @@
 + [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
 + nanobot
 + mini-lsm
++ [huangguo](https://github.com/zxsos/HGhubX)
